@@ -1,0 +1,33 @@
+# keys and local settings
+.env
+.env.*
+!.env.example
+
+# environments and caches
+.venv/
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+.pytest_cache/
+
+# run outputs and LLM answer caches (share results as zips, not in git)
+runs/
+**/runs/
+**/cache/
+**/llm_cache/
+*.log
+
+# data: only READMEs go into git; dev data comes as a zip from the data owner
+data/*
+!data/README.md
+!data/dev/
+data/dev/*
+!data/dev/README.md
+
+# never in this repo: test answers and private ID maps (they live in the private data-eval repo)
+**/gold/test*
+**/*test*gold*.jsonl
+**/gold_variants_test*.jsonl
+id_map*
+*private*
