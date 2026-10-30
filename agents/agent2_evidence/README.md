@@ -22,7 +22,7 @@ v14.12
 ## dev 실행 (한 줄)
 
 ```bash
-# 예: python3 -m agents.agents.agent2_evidence.run --input patients=data/dev/input/patients.jsonl --out runs/agent2_dev
+# 예: python3 -m agents.agent2_evidence.run --input patients=data/dev/input/patients.jsonl --out runs/agent2_dev
 ```
 
 ## 모듈화 전후 확인 기준

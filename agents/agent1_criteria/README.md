@@ -20,7 +20,7 @@ ClinicalTrials.gov에서 시험(⓪)과 선정·제외 기준 원문(①-a)을 �
 ## dev 실행 (한 줄)
 
 ```bash
-# 예: python3 -m agents.agents.agent1_criteria.run --input patients=data/dev/input/patients.jsonl --out runs/agent1_dev
+# 예: python3 -m agents.agent1_criteria.run --input patients=data/dev/input/patients.jsonl --out runs/agent1_dev
 ```
 
 ## 모듈화 전후 확인 기준

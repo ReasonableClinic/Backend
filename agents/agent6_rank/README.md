@@ -21,7 +21,7 @@ Evidence Graph를 읽어 환자별 시험 순위를 매기고(공통 형식 6.4)
 ## dev 실행 (한 줄)
 
 ```bash
-# 예: python3 -m agents.agents.agent6_rank.run --input patients=data/dev/input/patients.jsonl --out runs/agent6_dev
+# 예: python3 -m agents.agent6_rank.run --input patients=data/dev/input/patients.jsonl --out runs/agent6_dev
 ```
 
 ## 모듈화 전후 확인 기준

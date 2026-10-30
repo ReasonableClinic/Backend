@@ -23,7 +23,7 @@ a5u-0.2.0
 ## dev 실행 (한 줄)
 
 ```bash
-# 예: python3 -m agents.agents.agent5_acquire.expired_unsupported.run --input patients=data/dev/input/patients.jsonl --out runs/agent5_dev
+# 예: python3 -m agents.agent5_acquire.expired_unsupported.run --input patients=data/dev/input/patients.jsonl --out runs/agent5_dev
 ```
 
 ## 모듈화 전후 확인 기준

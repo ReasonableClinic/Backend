@@ -22,7 +22,7 @@ UNKNOWN/MISSING 중 기록 찾기(`med_record_check`, `med_history_check`, `lab_
 ## dev 실행 (한 줄)
 
 ```bash
-# 예: python3 -m agents.agents.agent5_acquire.missing.run --input patients=data/dev/input/patients.jsonl --out runs/agent5_dev
+# 예: python3 -m agents.agent5_acquire.missing.run --input patients=data/dev/input/patients.jsonl --out runs/agent5_dev
 ```
 
 ## 모듈화 전후 확인 기준
