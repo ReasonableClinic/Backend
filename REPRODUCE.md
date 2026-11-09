@@ -21,7 +21,7 @@ B는 보고서와 **같은 숫자**가 나와야 합니다(다른 줄은 5장). 
 | 받을 것 | 위치 | 내용 |
 | --- | --- | --- |
 | backend 레포 | https://github.com/ReasonableClinic/Backend | 에이전트 코드(고정 버전 그대로), 통합 파이프라인 `pipeline/`, API `api/`, `reproduce.sh` |
-| 웹 화면 레포 | https://github.com/ReasonableClinic/Healthcare-web | 웹 화면 web_demo_v3.11 (`index.html`, `app.js`, 번역 `data/ko.json`·`card_ko.json`, 통합 최종과 같은 데모 묶음) |
+| 웹 화면 레포 | https://github.com/ReasonableClinic/Healthcare-web | 웹 화면 web_demo_v3.12 (`index.html`, `app.js`, 번역 `data/ko.json`·`card_ko.json`, 통합 최종과 같은 데모 묶음) |
 | `replay_pack.zip` | backend 레포 Release | dev 데이터·정답, Agent 1 캐시, Agent 3 LLM 답 캐시, 원본 실행 출력, 데모 데이터. **test 파일 없음** |
 | `test_pack.zip` (선택) | https://github.com/ReasonableClinic/data-eval Release | test 입력·정답(기본 30명 + 변형 34명), 변형 순위 정답, Agent 2 test 근거 v14.9, Agent 3 test 출력·캐시, 채점 기록 |
 
@@ -55,7 +55,7 @@ trialtrace/                        (backend 레포)
 | Agent 5 추가 정보 카드 | a5u-0.2.0 + a5j-0.3.1 | `agents/agent5_acquire/` |
 | Agent 6 순위·설명 | a6-0.4.14 (dev·데모), a6-0.4.0 + 용어 사전 06fc5ffa… (test) | `agents/agent6_rank/`, a6-0.4.0은 replay `extra/agent6_a6-0.4.0/` |
 | 통합 | 통합 최종 (11/09, `통합_최종.zip` sha256 a2456c45e1cf, backend-0.1.1 다음 판) | `pipeline/`, `api/` |
-| 웹 화면 | web_demo_v3.11 (데이터는 통합 최종 출력과 같음) | 별도 레포 Healthcare-web |
+| 웹 화면 | web_demo_v3.12 (데이터는 통합 최종 출력과 같음) | 별도 레포 Healthcare-web |
 
 ## 3. A. 데모
 
@@ -96,6 +96,15 @@ TRIALTRACE_TEST_DIR=../trialtrace_test bash reproduce.sh     # + test
 
 레포 파일 + Release zip 2개만으로 `TRIALTRACE_TEST_DIR=… bash reproduce.sh`를 돌린 결과(macOS, Python 3.13, 약 35초): 46줄 중 42줄 OK, 4줄 KNOWN(5.1·5.2), DIFF 0. Agent 3 dev 재생은 공식 출력과 바이트 단위로 같고 API 호출 0입니다.
 
+### 파이프라인으로 이어 돌리기 (`run_pipeline`)
+
+전체 실행: `python3 -m pipeline.run_pipeline --data data/dev --evidence data/dev/evidence/evidence_dev_haiku_v14_12.jsonl --out runs/pipeline_dev` (Agent 3 → 4 → 5 → 6, 키 없이 replay). 보고 수치 확인: `bash reproduce.sh`. `replay_pack`을 덮은 폴더(`cp -R replay/. .` 또는 `reproduce.sh`가 만든 `_repro/`)에서 돌립니다.
+
+- 각 단계는 `agents/<에이전트>/run.py`의 `run(inputs, out_dir, config)`가 받은 패키지의 CLI를 `reproduce.sh`와 같은 명령으로 부릅니다. 결과는 `runs/pipeline_dev/<agent>/`, 기록은 `runs/pipeline_dev/manifest.json`(단계별 버전·입력·출력 sha256, 근거 ID 확인).
+- Agent 1(`--only agent1 --trial-ids <목록>`, 캐시 적중만)과 Agent 2(고정 근거를 검사해 그대로 넘김)는 기본 순서에 없습니다.
+- 2026-11-09 확인 (dev 기본 19명·54쌍): Agent 3 호출 0(캐시 61), 판정 줄이 공식 실행과 내용이 같음 / Agent 4 판정 1,044, 바꾼 판정 8, CONFLICT 0→3, 시험 판정 변경 0 (`reproduce.sh` 출력과 같음) / Agent 5 a5j 카드 167장(환자 15명), 114 / 53 (바이트 단위로 같음), a5u 35장 / Agent 6 브리핑 38개 근거·내용 검사 실패 0, 순위 15/19, 첫 시험 15/19 (dev 기본만이라 `run_dev.sh`의 41/55와 대상이 다름).
+- 줄 순서만 다릅니다: `--split dev`만 주면 Agent 3은 쌍 목록을 `gold/gold.jsonl` 순서로 읽고, 파이프라인은 입력 `input/pairs.jsonl` 순서(같은 54쌍)로 읽습니다. 그래서 `agent3_out.jsonl` 줄 순서, 그래프 2개(SYN-0001, SYN-0015)의 개념 노드 표기 대소문자("Migraine"/"migraine"), a5u 카드 번호(`…:01`)가 달라집니다. 정렬하면 판정·근거·카드 내용은 모두 같습니다(쌍 목록을 gold 순서로 주면 바이트 단위로 같음).
+
 ## 5. 알려진 차이와 한계
 
 ### 5.1 Agent 1 "3,831/3,856줄 일치"는 출처를 찾지 못함
@@ -111,7 +120,7 @@ TRIALTRACE_TEST_DIR=../trialtrace_test bash reproduce.sh     # + test
 - 갱신 고리에서 결핵 기준 E09는 음성 결과 후에도 UNKNOWN/MISSING입니다(Agent 3 `pc:strict_normal_finding_inference`). 화면은 의료진 확인 카드(`[답 받음·의료진 확인 중]`)로 넘깁니다.
 - `agents/agent5_acquire/scripts/run_loop.py`(C 단계 갱신 고리)의 Agent 4 경로는 `../agent4_v1`입니다. 데모 데이터는 v2로 돌려도 같습니다(SYN-0010 바꾼 판정 0).
 - a6-0.4.14 변조 숫자 검출 72.6%: 새 문장 "국내 N곳", "N상 연구"의 숫자를 내용 검사가 대조하지 않습니다. 틀 문장 데모는 영향 없습니다.
-- 웹 화면 v3.11은 v3.2에서 남았던 3가지(`answered_review` 카드를 원래 카드의 후속으로 짝짓기, 환자 모드 "할 일 카드 없이 남음" 태그 제거, `answered_review` 이름표)를 v3.9에서 반영했고, v3.11에서 면책 고지 문구를 확정했습니다. 화면 데이터는 backend-0.1.1 `data/`와 바이트 단위로 같습니다.
+- 웹 화면 v3.12(v3.11 + 2차 판정 대상 기준 E09를 1·2차 모두 같은 묶음에 표시, 판정 데이터 그대로)는 v3.2에서 남았던 3가지(`answered_review` 카드를 원래 카드의 후속으로 짝짓기, 환자 모드 "할 일 카드 없이 남음" 태그 제거, `answered_review` 이름표)를 v3.9에서 반영했고, v3.11에서 면책 고지 문구를 확정했습니다. 화면 데이터는 backend-0.1.1 `data/`와 바이트 단위로 같습니다.
 - 통합 최종(backend-0.1.1과 같은 묶음) 원본은 Windows에서 만들어져 줄바꿈이 CRLF라, 묶음 안 `evidence_sha256` 값만 다시 만든 묶음과 다릅니다(내용은 같음, `reproduce.sh`가 확인).
 - Agent 6 용어 사전은 AI 언어 검토만 거쳤습니다(임상 전문가 검토 전).
 - test 점수는 a3-0.3.0 + a6-0.4.0 고정 조합입니다. dev 수치와 버전이 다릅니다. a3-0.3.0 test 실행의 LLM 답 캐시(224개)는 test_pack `agent3_llm_cache_test/`에 기록용으로 있고, 코드가 바뀐 a3-0.3.1로는 재생되지 않습니다.

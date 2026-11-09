@@ -30,8 +30,8 @@ STATES = [("SYN-0010", "before", "dev"), ("SYN-0010", "after", "loop"), ("SYN-00
 BUILD = os.path.join(BACKEND, "build")      # staged inputs and intermediate outputs, per state
 OUT = os.path.join(BACKEND, "data")         # what the web page and the API serve
 
-# Web screen: the separate repo ReasonableClinic/Healthcare-web (final v3.11), cloned next to this repo, or the
+# Web screen: the separate repo ReasonableClinic/Healthcare-web (final v3.12), cloned next to this repo, or the
 # folder in TRIALTRACE_WEB. Its translation files are inputs owned by the web part; build_demo copies them into data/.
 WEB = os.environ.get("TRIALTRACE_WEB") or os.path.join(os.path.dirname(BACKEND), "Healthcare-web")
-WEB_LABEL = "Healthcare-web = web_demo_final_v3.11 (zip sha256 5901bc2f039050c7…)"
+WEB_LABEL = "Healthcare-web = web_demo_final_v3.12 (zip sha256 dd69dac1aae1f11a…)"
 TRANSLATIONS = [os.path.join(WEB, "data", "ko.json"), os.path.join(WEB, "data", "card_ko.json")]

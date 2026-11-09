@@ -1,7 +1,7 @@
 # 임상시험 매칭 에이전트 — backend
 
 환자 기록과 임상시험 기준을 비교해, 판정마다 근거를 붙인 **Evidence Graph**를 만드는 에이전트 묶음입니다.
-웹 화면은 별도 레포 [Healthcare-web](https://github.com/ReasonableClinic/Healthcare-web)(web_demo_v3.11)에 있고, test 정답·채점은 data-eval 레포 Release `test_pack.zip`에 있습니다.
+웹 화면은 별도 레포 [Healthcare-web](https://github.com/ReasonableClinic/Healthcare-web)(web_demo_v3.12)에 있고, test 정답·채점은 data-eval 레포 Release `test_pack.zip`에 있습니다.
 
 ## 흐름
 
@@ -60,6 +60,8 @@ cp .env.example .env                                       # 쓰는 키만 채�
 python3 -m unittest discover -s tests                      # 뼈대 규칙 검사
 ```
 
+- 전체 실행: `python3 -m pipeline.run_pipeline --data data/dev --evidence data/dev/evidence/evidence_dev_haiku_v14_12.jsonl --out runs/pipeline_dev` (Agent 3 → 4 → 5 → 6, 키 없이 replay. `replay_pack.zip`을 레포 위에 푼 뒤). 보고 수치 확인: `bash reproduce.sh`. 자세한 것은 [REPRODUCE.md](REPRODUCE.md).
+
 ## 현재 버전 (2026-11-09, 제출 고정)
 
 | 구성 | 확정 버전 | 비고 |
@@ -71,6 +73,6 @@ python3 -m unittest discover -s tests                      # 뼈대 규칙 검�
 | 5 | a5u-0.2.0 + a5j-0.3.1 | |
 | 6 | a6-0.4.14 (데모·dev), a6-0.4.0 + 사전 06fc5ffa… (test) | a6-0.4.0은 `replay_pack.zip`의 `extra/` |
 | 통합 | 통합 최종 11/09 (`pipeline/`, `api/`, backend-0.1.1 다음 판) | 경로만 레포 안으로, 화면 폴더는 `../Healthcare-web` (`pipeline/config.py`) |
-| 웹 | web_demo_v3.11 (별도 레포 Healthcare-web) | 데이터는 통합 최종 출력과 같음. `api.server`가 옆 폴더 `../Healthcare-web`을 `/`로 띄우고, `build_demo`가 그 번역 2개를 `data/`로 복사 |
+| 웹 | web_demo_v3.12 (별도 레포 Healthcare-web) | 데이터는 통합 최종 출력과 같음. `api.server`가 옆 폴더 `../Healthcare-web`을 `/`로 띄우고, `build_demo`가 그 번역 2개를 `data/`로 복사 |
 
 평가자 실행·재현 방법: [REPRODUCE.md](REPRODUCE.md) (`bash reproduce.sh`, API 키 없음).

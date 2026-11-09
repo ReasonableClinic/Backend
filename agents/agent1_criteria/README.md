@@ -1,5 +1,9 @@
 # Agent 1 — Trial Parsing Agent
 
+> **backend 파이프라인 진입점 (`run.py`, 레포 루트에서 dev 한 줄):**
+> `python3 -m agents.agent1_criteria.run --input trial_ids=<NCT 목록 파일> --out runs/a1   # 캐시에 있는 시험만 (replay_pack), 없으면 멈춤`
+> 전체는 `python3 -m pipeline.run_pipeline` (REPRODUCE.md). 아래는 받은 패키지의 원래 README입니다.
+
 임상시험 기준 원문 → 공통 형식 ⓪ Trial + ①(a+b) Criterion. Agent 2가 환자 쪽 번역기라면 Agent 1은 시험 쪽 번역기다. 둘 다 `concepts.json`(같은 사전)을 쓰므로 Agent 3이 두 출력을 같은 어휘로 비교할 수 있다.
 
 ```

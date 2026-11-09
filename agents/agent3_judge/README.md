@@ -1,5 +1,9 @@
 # Agent 3 — Eligibility Reasoner
 
+> **backend 파이프라인 진입점 (`run.py`, 레포 루트에서 dev 한 줄):**
+> `python3 -m agents.agent3_judge.run --input patients=data/dev/input/patients.jsonl --input pairs=data/dev/input/pairs.jsonl --input criteria=data/dev/reference/criteria.jsonl --input evidence=data/dev/evidence/evidence_dev_haiku_v14_12.jsonl --out runs/a3   # --llm replay, API 호출 0`
+> 전체는 `python3 -m pipeline.run_pipeline` (REPRODUCE.md). 아래는 받은 패키지의 원래 README입니다.
+
 환자-임상시험 쌍마다 기준 하나하나를 **PASS / FAIL / UNKNOWN / CONFLICT**로 판정하고, 판정마다 Agent 2의 근거 ID를 붙이고, 공통 형식 6.1 규칙으로 시험 판정(eligible / potential / ineligible)을 집계한 뒤, Agent 4~6과 웹 화면이 함께 쓰는 **Evidence Graph**를 남깁니다 (예성 페이지 기준 설계).
 
 - 입력: ② 환자 기록, ⓪ 시험, ① 기준, ③ 근거(Agent 2 v13.7)

@@ -1,5 +1,9 @@
 # 에이전트 6 (추천 순위·브리핑) a6-0.4.14 — dev 개발판 (2026-11-05). test 채점 버전은 a6-0.4.0 + 사전 `06fc5ffa…` (고정)
 
+> **backend 파이프라인 진입점 (`run.py`, 레포 루트에서 dev 한 줄):**
+> `python3 -m agents.agent6_rank.run --input judgments=runs/a4/agent3_out.jsonl --input graph=runs/a4/graph --input trials=data/dev/reference/trials.jsonl --input evidence=data/dev/evidence/evidence_dev_haiku_v14_12.jsonl --out runs/a6   # 검사 실패 시 멈춤`
+> 전체는 `python3 -m pipeline.run_pipeline` (REPRODUCE.md). 아래는 받은 패키지의 원래 README입니다.
+
 키트 `for_agent6_v1`(합성 담당)에서 시작했습니다. 데이터 `for_agent456_v5.zip`은 키트와 같은 것을 이 폴더에 두고 씁니다(이 zip에는 넣지 않음). dev만 사용합니다.
 
 ## 실행

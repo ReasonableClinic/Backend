@@ -5,6 +5,7 @@ file can be used from day one.
 
     python3 -m pipeline.run_pipeline --data data/dev --evidence data/dev/evidence/evidence_dev_haiku_v14_12.jsonl \
         --out runs/pipeline_dev [--only agent3,agent4] [--loop 2]
+    python3 -m pipeline.run_pipeline ... --only agent1 --trial-ids <file: one NCT id per line>
 
 The agent-5 loop (answers -> agent2 update -> agent3 partial re-judge -> agent4) runs at most --loop times and stops
 early when no judgment changes. It is wired once agents 2-5 are connected.
@@ -28,6 +29,7 @@ def main():
     ap.add_argument("--out", required=True)
     ap.add_argument("--only", help="comma list of agents to run (default: all in ORDER)")
     ap.add_argument("--loop", type=int, default=0, help="agent-5 loop rounds (0 = off)")
+    ap.add_argument("--trial-ids", help="NCT id list for agent1 (only with --only agent1)")
     ap.add_argument("--run-id")
     a = ap.parse_args()
     load_env()
@@ -37,6 +39,10 @@ def main():
     files = {"patients": f"{a.data}/input/patients.jsonl", "pairs": f"{a.data}/input/pairs.jsonl",
              "trials": f"{a.data}/reference/trials.jsonl", "criteria": f"{a.data}/reference/criteria.jsonl",
              "evidence": a.evidence}
+    if os.path.exists(f"{a.data}/reference/concepts.json"):
+        files["concepts"] = f"{a.data}/reference/concepts.json"
+    if a.trial_ids:
+        files["trial_ids"] = a.trial_ids
     for k, p in files.items():
         if not os.path.exists(p):
             sys.exit(f"STOP: input {k} not found: {p}")
