@@ -1,7 +1,7 @@
 # 임상시험 매칭 에이전트 — backend
 
 환자 기록과 임상시험 기준을 비교해, 판정마다 근거를 붙인 **Evidence Graph**를 만드는 에이전트 묶음입니다.
-웹 화면(frontend)은 별도 레포이고, 정답·채점(data-eval)은 비공개 레포입니다.
+웹 화면은 별도 레포 [Healthcare-web](https://github.com/ReasonableClinic/Healthcare-web)(web_demo_v3.11)에 있고, test 정답·채점은 data-eval 레포 Release `test_pack.zip`에 있습니다.
 
 ## 흐름
 
@@ -60,13 +60,17 @@ cp .env.example .env                                       # 쓰는 키만 채�
 python3 -m unittest discover -s tests                      # 뼈대 규칙 검사
 ```
 
-## 현재 버전 (2026-10-28)
+## 현재 버전 (2026-11-09, 제출 고정)
 
-| 에이전트 | 확정 버전 | 비고 |
+| 구성 | 확정 버전 | 비고 |
 | --- | --- | --- |
-| 1 | ①-b dev v2 final / test v1 | |
-| 2 | v14.12 (dev 근거 키트 v14.12, test 근거 v14.9 고정) | `.env`·Langfuse 추적 적용 |
-| 3 | a3-0.3.0 + p07 + claude-sonnet-5-5 | test 1회 실행 완료 |
-| 4 | 개발 시작 | 묶음 for_agent456_v5 |
-| 5 | a5u-0.2.0 (expired_unsupported) | missing 쪽 개발 중 |
-| 6 | 개발 전 | |
+| 1 | agent1 (캐시 200개 = dev 197 + 3) | `agents/agent1_criteria/`, 캐시는 Release `replay_pack.zip` |
+| 2 | v14.12 (dev·데모), test 근거 v14.9 고정 | 근거 파일은 Release zip |
+| 3 | a3-0.3.1 + p07 + claude-sonnet-5-5 (dev), test 출력은 a3-0.3.0 | LLM 답 캐시는 Release zip (`--llm replay`) |
+| 4 | v2 (LLM 없음) | |
+| 5 | a5u-0.2.0 + a5j-0.3.1 | |
+| 6 | a6-0.4.14 (데모·dev), a6-0.4.0 + 사전 06fc5ffa… (test) | a6-0.4.0은 `replay_pack.zip`의 `extra/` |
+| 통합 | backend-0.1.1 (`pipeline/`, `api/`) | 경로만 레포 안으로 바꿈 (`pipeline/config.py`) |
+| 웹 | web_demo_v3.11 (별도 레포 Healthcare-web) | 데이터는 backend-0.1.1 출력과 같음. `api.server`가 옆 폴더 `../Healthcare-web`을 `/`로 띄움 |
+
+평가자 실행·재현 방법: [REPRODUCE.md](REPRODUCE.md) (`bash reproduce.sh`, API 키 없음).

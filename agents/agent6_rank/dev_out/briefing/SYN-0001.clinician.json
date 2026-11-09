@@ -1,0 +1,422 @@
+{
+ "patient_id": "SYN-0001",
+ "as_of": "2026-10-01",
+ "audience": "clinician",
+ "graph_file": "SYN-0001.json",
+ "ranking": [
+  "NCT07765914"
+ ],
+ "also_mentioned": [],
+ "sentences": [
+  {
+   "text": "환자 SYN-0001, 기준일 2026-10-01",
+   "refs": [],
+   "kind": "meta"
+  },
+  {
+   "text": "1. NCT07765914 Zuberitamab in the First Episode of Paediatric Nephrotic Syndrome",
+   "refs": [
+    "trial:NCT07765914"
+   ],
+   "kind": "heading"
+  },
+  {
+   "text": "시험 판정: potential (남은 항목 10개)",
+   "refs": [
+    "label:NCT07765914"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "국내 모집 기관 없음 (모집 국가: China)",
+   "refs": [
+    "trial:NCT07765914"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "Arms — EXPERIMENTAL: Biological: Zuberitamab + Drug: standard corticosteroid treatment; ACTIVE_COMPARATOR: Drug: standard corticosteroid treatment",
+   "refs": [
+    "trial:NCT07765914"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07765914-I01 [inclusion] 미확인 (근거 불충분) → 다음: clinician_confirmation",
+   "refs": [
+    "crit:NCT07765914-I01",
+    "dec:NCT07765914:NCT07765914-I01:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Whether remission meets the 2023 IPNA definition (UPCR <=0.2 mg/mg or 3+ consecutive negative/trace dipstick days) and the newly diagnosed SSNS label",
+   "refs": [
+    "dec:NCT07765914:NCT07765914-I01:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07765914-I02 [inclusion] 충족",
+   "refs": [
+    "crit:NCT07765914-I02",
+    "dec:NCT07765914:NCT07765914-I02:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"eGFR (bedside Schwartz) 140 mL/min/1.73m2 (ref >90)\" (SYN-0001-D08, 2026-09-30)",
+   "refs": [
+    "ev:SYN-0001-EV224",
+    "src:SYN-0001-D08:703-754"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   계산: egfr 140 mL/min/1.73m2 >= 90 mL/min/1.73m2, 측정 2026-09-30 (1일 전)",
+   "refs": [
+    "calc:NCT07765914:NCT07765914-I02"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07765914-I03 [inclusion] 미확인 (기록 없음) → 다음: new_test",
+   "refs": [
+    "crit:NCT07765914-I03",
+    "dec:NCT07765914:NCT07765914-I03:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Peripheral blood CD19+/CD20+ B-cell percentage of lymphocytes",
+   "refs": [
+    "dec:NCT07765914:NCT07765914-I03:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07765914-I04 [inclusion] 미확인 (기록 없음) → 다음: med_history_check",
+   "refs": [
+    "crit:NCT07765914-I04",
+    "dec:NCT07765914:NCT07765914-I04:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07765914-E01 [exclusion] 미확인 (기록 없음) → 다음: clinician_confirmation",
+   "refs": [
+    "crit:NCT07765914-E01",
+    "dec:NCT07765914:NCT07765914-E01:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Clinician confirmation that no secondary or known-etiology cause exists (diagnosis is idiopathic, presumed MCD, no biopsy)",
+   "refs": [
+    "dec:NCT07765914:NCT07765914-E01:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07765914-E02 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT07765914-E02",
+    "dec:NCT07765914:NCT07765914-E02:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"WBC 11.9 x10^3/uL (ref 5.0-14.5)\" (SYN-0001-D08, 2026-09-30)",
+   "refs": [
+    "ev:SYN-0001-EV206",
+    "src:SYN-0001-D08:71-103"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Neutrophils 72 % (ref 35-65) H; absolute 8.6 x10^3/uL (ref 1.5-8.0) H\" (SYN-0001-D08, 2026-09-30)",
+   "refs": [
+    "ev:SYN-0001-EV212",
+    "src:SYN-0001-D08:262-331"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Hemoglobin 13.6 g/dL (ref 11.5-15.5)\" (SYN-0001-D08, 2026-09-30)",
+   "refs": [
+    "ev:SYN-0001-EV208",
+    "src:SYN-0001-D08:136-172"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Platelets 412 x10^3/uL (ref 150-450)\" (SYN-0001-D08, 2026-09-30)",
+   "refs": [
+    "ev:SYN-0001-EV211",
+    "src:SYN-0001-D08:225-261"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"AST 27 U/L (ref 15-45)\" (SYN-0001-D08, 2026-09-30)",
+   "refs": [
+    "ev:SYN-0001-EV232",
+    "src:SYN-0001-D08:997-1019"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"ALT 21 U/L (ref 10-40)\" (SYN-0001-D08, 2026-09-30)",
+   "refs": [
+    "ev:SYN-0001-EV233",
+    "src:SYN-0001-D08:1020-1042"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"ANA negative\" (SYN-0001-D07, 2026-09-30)",
+   "refs": [
+    "ev:SYN-0001-EV053",
+    "src:SYN-0001-D07:330-342"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"C3 normal\" (SYN-0001-D07, 2026-09-30)",
+   "refs": [
+    "ev:SYN-0001-EV052",
+    "src:SYN-0001-D07:319-328"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07765914-E03 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT07765914-E03",
+    "dec:NCT07765914:NCT07765914-E03:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"No documented complications (no thrombosis, no infection).\" (SYN-0001-D07, 2026-09-30)",
+   "refs": [
+    "ev:SYN-0001-EV187",
+    "src:SYN-0001-D07:3739-3797"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"No prior thromboembolism, no prior serious infections, no malignancy.\" (SYN-0001-D07, 2026-09-30)",
+   "refs": [
+    "ev:SYN-0001-EV093",
+    "src:SYN-0001-D07:1351-1420"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"HBsAg negative\" (SYN-0001-D07, 2026-09-30)",
+   "refs": [
+    "ev:SYN-0001-EV054",
+    "src:SYN-0001-D07:344-358"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Hepatitis C antibody nonreactive\" (SYN-0001-D08, 2026-09-30)",
+   "refs": [
+    "ev:SYN-0001-EV241",
+    "src:SYN-0001-D08:1333-1365"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"HIV-1/2 Ag/Ab nonreactive\" (SYN-0001-D08, 2026-09-30)",
+   "refs": [
+    "ev:SYN-0001-EV242",
+    "src:SYN-0001-D08:1366-1391"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07765914-E04 [exclusion] 미확인 (기록 없음) → 다음: med_record_check",
+   "refs": [
+    "crit:NCT07765914-E04",
+    "dec:NCT07765914:NCT07765914-E04:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Date and type of any vaccine received in the last 30 days",
+   "refs": [
+    "dec:NCT07765914:NCT07765914-E04:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07765914-E05 [exclusion] 미확인 (기록 없음) → 다음: med_history_check",
+   "refs": [
+    "crit:NCT07765914-E05",
+    "dec:NCT07765914:NCT07765914-E05:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07765914-E06 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT07765914-E06",
+    "dec:NCT07765914:NCT07765914-E06:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"No other cardiac, pulmonary, hepatic, renal, autoimmune, endocrine or neurologic history.\" (SYN-0001-D07, 2026-09-30)",
+   "refs": [
+    "ev:SYN-0001-EV085",
+    "src:SYN-0001-D07:1261-1350"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"BP normal.\" (SYN-0001-D07, 2026-09-30)",
+   "refs": [
+    "ev:SYN-0001-EV268",
+    "src:SYN-0001-D07:3714-3724"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"BP 106/64 (~75th-90th percentile for age/height)\" (SYN-0001-D07, 2026-09-30)",
+   "refs": [
+    "ev:SYN-0001-EV078",
+    "src:SYN-0001-D07:994-1042"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"CV: no chest pain, palpitations.\" (SYN-0001-D07, 2026-09-30)",
+   "refs": [
+    "ev:SYN-0001-EV132",
+    "src:SYN-0001-D07:2404-2436"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"CV: no chest pain, palpitations.\" (SYN-0001-D07, 2026-09-30)",
+   "refs": [
+    "ev:SYN-0001-EV133",
+    "src:SYN-0001-D07:2404-2436"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07765914-E07 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT07765914-E07",
+    "dec:NCT07765914:NCT07765914-E07:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"No other cardiac, pulmonary, hepatic, renal, autoimmune, endocrine or neurologic history.\" (SYN-0001-D07, 2026-09-30)",
+   "refs": [
+    "ev:SYN-0001-EV085",
+    "src:SYN-0001-D07:1261-1350"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"No other cardiac, pulmonary, hepatic, renal, autoimmune, endocrine or neurologic history.\" (SYN-0001-D07, 2026-09-30)",
+   "refs": [
+    "ev:SYN-0001-EV087",
+    "src:SYN-0001-D07:1261-1350"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"No other cardiac, pulmonary, hepatic, renal, autoimmune, endocrine or neurologic history.\" (SYN-0001-D07, 2026-09-30)",
+   "refs": [
+    "ev:SYN-0001-EV090",
+    "src:SYN-0001-D07:1261-1350"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"No other cardiac, pulmonary, hepatic, renal, autoimmune, endocrine or neurologic history.\" (SYN-0001-D07, 2026-09-30)",
+   "refs": [
+    "ev:SYN-0001-EV091",
+    "src:SYN-0001-D07:1261-1350"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07765914-E08 [exclusion] 미확인 (기록 없음) → 다음: clinician_confirmation",
+   "refs": [
+    "crit:NCT07765914-E08",
+    "dec:NCT07765914:NCT07765914-E08:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Explicit absence of primary immunodeficiency",
+   "refs": [
+    "dec:NCT07765914:NCT07765914-E08:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07765914-E09 [exclusion] 미확인 (기록 없음) → 다음: med_history_check",
+   "refs": [
+    "crit:NCT07765914-E09",
+    "dec:NCT07765914:NCT07765914-E09:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Whether patient ever had an organ transplant",
+   "refs": [
+    "dec:NCT07765914:NCT07765914-E09:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07765914-E10 [exclusion] 미확인 (기록 없음) → 다음: patient_question",
+   "refs": [
+    "crit:NCT07765914-E10",
+    "dec:NCT07765914:NCT07765914-E10:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Allergy to methylprednisolone, Zuberitamab excipients, sulfamethoxazole, or G6PD deficiency",
+   "refs": [
+    "dec:NCT07765914:NCT07765914-E10:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07765914-E11 [exclusion] 미확인 (기록 없음) → 다음: clinician_confirmation",
+   "refs": [
+    "crit:NCT07765914-E11",
+    "dec:NCT07765914:NCT07765914-E11:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Investigator judgment on suitability",
+   "refs": [
+    "dec:NCT07765914:NCT07765914-E11:r1"
+   ],
+   "kind": "fact"
+  }
+ ],
+ "evidence": {
+  "files": [
+   "evidence_dev_haiku_v14_12.jsonl",
+   "evidence_dev_variants_haiku_v14_12.jsonl"
+  ],
+  "sha256": "daba4f5f1e16ec2eefc47311f5c13f85e6b5f218c85424f08f9af3d9bab09124",
+  "id_series": "haiku",
+  "graph_ev_nodes_checked": 2240
+ },
+ "agent6": "a6-0.4.14"
+}

@@ -1,0 +1,6210 @@
+{
+ "patient_id": "SYN-0002",
+ "as_of": "2026-10-01",
+ "version": 1,
+ "nodes": [
+  {
+   "id": "trial:NCT07436988",
+   "kind": "trial",
+   "title": "Affordable Made-in-India Microspheres for Liver Cancer Therapy"
+  },
+  {
+   "id": "crit:NCT07436988-I01",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Age greater than or equal to 18 years (male or female)",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07436988:NCT07436988-I01:r1",
+   "kind": "decision",
+   "trial_id": "NCT07436988",
+   "criterion_id": "NCT07436988-I01",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "age_rule"
+   ],
+   "note": "age 61.57 y vs [18.0, None]",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0002-EV002",
+   "kind": "evidence",
+   "concept": "birth_date",
+   "term": null,
+   "value": "1965-03-08",
+   "unit": null,
+   "observed_date": "2025-11-03",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:birth_date",
+   "kind": "concept",
+   "concept": "birth_date",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0002-D01:6-21",
+   "kind": "source",
+   "doc_id": "SYN-0002-D01",
+   "doc_type": "registration",
+   "span": [
+    6,
+    21
+   ],
+   "text": "DOB 1965-03-08."
+  },
+  {
+   "id": "calc:NCT07436988:NCT07436988-I01",
+   "kind": "calculation",
+   "name": "age_at_as_of",
+   "value": 61.567,
+   "lo": 18.0,
+   "hi": null
+  },
+  {
+   "id": "crit:NCT07436988-I02",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Histologically or radiologically confirmed diagnosis of HCC deemed inoperable",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07436988:NCT07436988-I02:r1",
+   "kind": "decision",
+   "trial_id": "NCT07436988",
+   "criterion_id": "NCT07436988-I02",
+   "status": "UNKNOWN",
+   "reason": "UNSUPPORTED",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "HCC is radiologically confirmed (LI-RADS 5, arterial enhancement and washout), but nobody documents it as inoperable. Only 'no liver resection' is recorded.",
+   "missing_fact": "Whether the HCC is deemed inoperable (unresectable) by a clinician",
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0002-EV009",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "3 lesions in right lobe (4.1, 2.6, 2.0 cm) with arterial enhancement and washout",
+   "value": true,
+   "unit": null,
+   "observed_date": "2025-11-03",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:symptom_finding:3 lesions in right lobe (4.1, 2.6, 2.0 cm) with arterial enhancement and washout",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "3 lesions in right lobe (4.1, 2.6, 2.0 cm) with arterial enhancement and washout"
+  },
+  {
+   "id": "src:SYN-0002-D02:125-217",
+   "kind": "source",
+   "doc_id": "SYN-0002-D02",
+   "doc_type": "clinic_note",
+   "span": [
+    125,
+    217
+   ],
+   "text": "Dynamic CT: 3 lesions in right lobe (4.1, 2.6, 2.0 cm) with arterial enhancement and washout"
+  },
+  {
+   "id": "ev:SYN-0002-EV127",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "Hepatocellular carcinoma",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-15",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:diagnosis:hepatocellular carcinoma",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "Hepatocellular carcinoma"
+  },
+  {
+   "id": "src:SYN-0002-D09:1055-1101",
+   "kind": "source",
+   "doc_id": "SYN-0002-D09",
+   "doc_type": "clinic_note",
+   "span": [
+    1055,
+    1101
+   ],
+   "text": "Hepatocellular carcinoma, multifocal - dx 2025"
+  },
+  {
+   "id": "ev:SYN-0002-EV018",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "persistent viable tumor segment 7",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-08-20",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:diagnosis:persistent viable tumor segment 7",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "persistent viable tumor segment 7"
+  },
+  {
+   "id": "src:SYN-0002-D05:0-111",
+   "kind": "source",
+   "doc_id": "SYN-0002-D05",
+   "doc_type": "imaging_report",
+   "span": [
+    0,
+    111
+   ],
+   "text": "Liver MRI: persistent viable tumor in segment 7 (2.8 cm) and new 1.5 cm arterial-enhancing lesion in segment 5."
+  },
+  {
+   "id": "crit:NCT07436988-I03",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Barcelona Clinic Liver Cancer stage B with ECOG performance status between 0 and 2",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07436988:NCT07436988-I03:r1",
+   "kind": "decision",
+   "trial_id": "NCT07436988",
+   "criterion_id": "NCT07436988-I03",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "BCLC B documented on 2026-09-15 and ECOG 0 is within 0-2.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0002-EV216",
+   "kind": "evidence",
+   "concept": "cancer_stage",
+   "term": null,
+   "value": "BCLC B",
+   "unit": null,
+   "observed_date": "2026-09-15",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:cancer_stage",
+   "kind": "concept",
+   "concept": "cancer_stage",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0002-D09:3157-3263",
+   "kind": "source",
+   "doc_id": "SYN-0002-D09",
+   "doc_type": "clinic_note",
+   "span": [
+    3157,
+    3263
+   ],
+   "text": "Stage: HCC BCLC B (multifocal, confined to right lobe, no macrovascular invasion, no extrahepatic disease)"
+  },
+  {
+   "id": "ev:SYN-0002-EV241",
+   "kind": "evidence",
+   "concept": "cancer_stage",
+   "term": null,
+   "value": "BCLC B",
+   "unit": null,
+   "observed_date": "2026-09-15",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "src:SYN-0002-D09:3642-3728",
+   "kind": "source",
+   "doc_id": "SYN-0002-D09",
+   "doc_type": "clinic_note",
+   "span": [
+    3642,
+    3728
+   ],
+   "text": "Multifocal HCC, BCLC B, progressing after 2 TACE with viable tumor in segments 7 and 5"
+  },
+  {
+   "id": "ev:SYN-0002-EV215",
+   "kind": "evidence",
+   "concept": "ecog",
+   "term": null,
+   "value": 0,
+   "unit": "points",
+   "observed_date": "2026-09-15",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:ecog",
+   "kind": "concept",
+   "concept": "ecog",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0002-D09:3129-3154",
+   "kind": "source",
+   "doc_id": "SYN-0002-D09",
+   "doc_type": "clinic_note",
+   "span": [
+    3129,
+    3154
+   ],
+   "text": "ECOG performance status 0"
+  },
+  {
+   "id": "crit:NCT07436988-I04",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "At least one measurable lesion with longest diameter greater than or equal to 5 cm on cross sectional imaging",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07436988:NCT07436988-I04:r1",
+   "kind": "decision",
+   "trial_id": "NCT07436988",
+   "criterion_id": "NCT07436988-I04",
+   "status": "FAIL",
+   "reason": "VIOLATED",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Latest MRI (-42d, within 90d) shows largest lesions 2.8 cm and 1.5 cm, both under 5 cm. The earlier 4.1 cm lesion is also under 5 cm.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0002-EV321",
+   "kind": "evidence",
+   "concept": "measurable_disease",
+   "term": "viable tumor 28 mm",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-08-20",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:measurable_disease:viable tumor 28 mm",
+   "kind": "concept",
+   "concept": "measurable_disease",
+   "term": "viable tumor 28 mm"
+  },
+  {
+   "id": "ev:SYN-0002-EV111",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "persistent viable tumor in segment 7 2.8 cm",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-08-20",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:symptom_finding:persistent viable tumor in segment 7 2.8 cm",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "persistent viable tumor in segment 7 2.8 cm"
+  },
+  {
+   "id": "src:SYN-0002-D09:559-710",
+   "kind": "source",
+   "doc_id": "SYN-0002-D09",
+   "doc_type": "clinic_note",
+   "span": [
+    559,
+    710
+   ],
+   "text": "MRI 2026-08-20 showed persistent viable tumor in segment 7 (2.8 cm) and a new 1.5 cm arterial-enhancing lesion in segment 5, with no vascular invasion."
+  },
+  {
+   "id": "ev:SYN-0002-EV112",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "new 1.5 cm arterial-enhancing lesion in segment 5",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-08-20",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:symptom_finding:new 1.5 cm arterial-enhancing lesion in segment 5",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "new 1.5 cm arterial-enhancing lesion in segment 5"
+  },
+  {
+   "id": "crit:NCT07436988-I05",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Portal vein thrombosis may be present or absent",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07436988:NCT07436988-I05:r1",
+   "kind": "decision",
+   "trial_id": "NCT07436988",
+   "criterion_id": "NCT07436988-I05",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Portal vein thrombosis may be present or absent, so either state is acceptable. The record shows no portal vein invasion.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0002-EV020",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "vascular invasion",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-08-20",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:symptom_finding:vascular invasion",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "vascular invasion"
+  },
+  {
+   "id": "src:SYN-0002-D05:112-133",
+   "kind": "source",
+   "doc_id": "SYN-0002-D05",
+   "doc_type": "imaging_report",
+   "span": [
+    112,
+    133
+   ],
+   "text": "No vascular invasion."
+  },
+  {
+   "id": "ev:SYN-0002-EV107",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "portal vein invasion",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-15",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:symptom_finding:portal vein invasion",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "portal vein invasion"
+  },
+  {
+   "id": "src:SYN-0002-D09:164-432",
+   "kind": "source",
+   "doc_id": "SYN-0002-D09",
+   "doc_type": "clinic_note",
+   "span": [
+    164,
+    432
+   ],
+   "text": "61-year-old man with chronic HBV cirrhosis (Child-Pugh A) and multifocal HCC, BCLC B. Dx 2025-11: 3 right-lobe lesions (4.1, 2.6, 2.0 cm), LI-RADS 5, no portal vein invasion, no extrahepatic spread, AFP 412. cTACE #1 on 2025-12-05 (lipiodol + doxorubicin), uneventful."
+  },
+  {
+   "id": "crit:NCT07436988-I06",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Laboratory criteria: Serum creatinine less than or equal to 1.5 mg per dL; Total bilirubin less than or equal to 2.0 mg per dL; AST or ALT less than or equal to 5 times upper limit of normal; Leukocyte count greater than or equal to 1500 per microliter; Platelet count greater than or equal to 50000 per microliter; Prothrombin time less than or equal to 1.3 times control or INR less than or equal to 1.5",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07436988:NCT07436988-I06:r1",
+   "kind": "decision",
+   "trial_id": "NCT07436988",
+   "criterion_id": "NCT07436988-I06",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "lab_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "placeholder",
+   "missing_fact": "Nothing meets the 'missing' definition here; all parts are met except the leukocyte unit conversion",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07436988-I07",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Karnofsky performance status greater than 70",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07436988:NCT07436988-I07:r1",
+   "kind": "decision",
+   "trial_id": "NCT07436988",
+   "criterion_id": "NCT07436988-I07",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No Karnofsky score is recorded. ECOG 0 is documented but no conversion is given in the record.",
+   "missing_fact": "A documented Karnofsky performance status value",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07436988-I08",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Ability and willingness to provide written informed consent for participation in the IEC approved protocol",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07436988:NCT07436988-I08:r1",
+   "kind": "decision",
+   "trial_id": "NCT07436988",
+   "criterion_id": "NCT07436988-I08",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "admin"
+   ],
+   "note": "consent/compliance item: not decidable from the record",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07436988-E01",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Women of childbearing potential who are unwilling or unable to use effective contraception or who are pregnant or lactating",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07436988:NCT07436988-E01:r1",
+   "kind": "decision",
+   "trial_id": "NCT07436988",
+   "criterion_id": "NCT07436988-E01",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "impossible",
+    "sex_rule"
+   ],
+   "note": "applies only to women; patient is male",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0002-EV001",
+   "kind": "evidence",
+   "concept": "sex",
+   "term": null,
+   "value": "male",
+   "unit": null,
+   "observed_date": "2025-11-03",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:sex",
+   "kind": "concept",
+   "concept": "sex",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0002-D01:0-5",
+   "kind": "source",
+   "doc_id": "SYN-0002-D01",
+   "doc_type": "registration",
+   "span": [
+    0,
+    5
+   ],
+   "text": "Male."
+  },
+  {
+   "id": "crit:NCT07436988-E02",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Child Pugh class C liver function",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07436988:NCT07436988-E02:r1",
+   "kind": "decision",
+   "trial_id": "NCT07436988",
+   "criterion_id": "NCT07436988-E02",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "structured_categorical"
+   ],
+   "note": "child_pugh = class A vs in ['C']",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0002-EV296",
+   "kind": "evidence",
+   "concept": "child_pugh",
+   "term": null,
+   "value": "class A",
+   "unit": null,
+   "observed_date": "2026-09-15",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:child_pugh",
+   "kind": "concept",
+   "concept": "child_pugh",
+   "term": null
+  },
+  {
+   "id": "calc:NCT07436988:NCT07436988-E02",
+   "kind": "calculation",
+   "concept": "child_pugh",
+   "operator": "in",
+   "threshold": [
+    "C"
+   ],
+   "unit": null,
+   "value": "class A",
+   "observed_date": "2026-09-15",
+   "note": "child_pugh = class A vs in ['C']"
+  },
+  {
+   "id": "crit:NCT07436988-E03",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Presence of extrahepatic metastases",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07436988:NCT07436988-E03:r1",
+   "kind": "decision",
+   "trial_id": "NCT07436988",
+   "criterion_id": "NCT07436988-E03",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Explicitly no extrahepatic spread and no extrahepatic disease on 2026-09-15.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0002-EV012",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "extrahepatic spread",
+   "value": false,
+   "unit": null,
+   "observed_date": "2025-11-03",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:symptom_finding:extrahepatic spread",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "extrahepatic spread"
+  },
+  {
+   "id": "src:SYN-0002-D02:230-278",
+   "kind": "source",
+   "doc_id": "SYN-0002-D02",
+   "doc_type": "clinic_note",
+   "span": [
+    230,
+    278
+   ],
+   "text": "No portal vein invasion, no extrahepatic spread."
+  },
+  {
+   "id": "ev:SYN-0002-EV219",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "extrahepatic disease",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-15",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:extrahepatic disease",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "extrahepatic disease"
+  },
+  {
+   "id": "crit:NCT07436988-E04",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Severe chronic pulmonary disease with hypoxemia or NYHA class three or four heart failure",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07436988:NCT07436988-E04:r1",
+   "kind": "decision",
+   "trial_id": "NCT07436988",
+   "criterion_id": "NCT07436988-E04",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation"
+   ],
+   "note": "Blanket negation of cardiac and pulmonary history covers chronic heart failure and lung disease. SpO2 98% on room air.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0002-EV131",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "cardiac history",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-15",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "past"
+  },
+  {
+   "id": "concept:diagnosis:cardiac history",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "cardiac history"
+  },
+  {
+   "id": "src:SYN-0002-D09:1241-1321",
+   "kind": "source",
+   "doc_id": "SYN-0002-D09",
+   "doc_type": "clinic_note",
+   "span": [
+    1241,
+    1321
+   ],
+   "text": "No other cardiac, pulmonary, renal, autoimmune, endocrine or neurologic history."
+  },
+  {
+   "id": "ev:SYN-0002-EV132",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "pulmonary history",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-15",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "past"
+  },
+  {
+   "id": "concept:diagnosis:pulmonary history",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "pulmonary history"
+  },
+  {
+   "id": "ev:SYN-0002-EV194",
+   "kind": "evidence",
+   "concept": "spo2",
+   "term": null,
+   "value": 98,
+   "unit": "%",
+   "observed_date": "2026-09-15",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:spo2",
+   "kind": "concept",
+   "concept": "spo2",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0002-D09:2610-2631",
+   "kind": "source",
+   "doc_id": "SYN-0002-D09",
+   "doc_type": "clinic_note",
+   "span": [
+    2610,
+    2631
+   ],
+   "text": "SpO2 98% on room air."
+  },
+  {
+   "id": "crit:NCT07436988-E05",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Myocardial infarction within the past six months",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07436988:NCT07436988-E05:r1",
+   "kind": "decision",
+   "trial_id": "NCT07436988",
+   "criterion_id": "NCT07436988-E05",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation"
+   ],
+   "note": "No cardiac history documented. Chronic history is covered by the blanket negation, and the patient has no chest pain or palpitations.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07436988-E06",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Unstable arrhythmia or symptomatic cardiac disease",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07436988:NCT07436988-E06:r1",
+   "kind": "decision",
+   "trial_id": "NCT07436988",
+   "criterion_id": "NCT07436988-E06",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation"
+   ],
+   "note": "No cardiac history, no palpitations, regular rate and rhythm.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0002-EV167",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "palpitations",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-15",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:symptom_finding:palpitations",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "palpitations"
+  },
+  {
+   "id": "src:SYN-0002-D09:2186-2225",
+   "kind": "source",
+   "doc_id": "SYN-0002-D09",
+   "doc_type": "clinic_note",
+   "span": [
+    2186,
+    2225
+   ],
+   "text": "CV: no chest pain, palpitations, edema."
+  },
+  {
+   "id": "ev:SYN-0002-EV200",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "regular rate and rhythm",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-15",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:symptom_finding:regular rate and rhythm",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "regular rate and rhythm"
+  },
+  {
+   "id": "src:SYN-0002-D09:2752-2791",
+   "kind": "source",
+   "doc_id": "SYN-0002-D09",
+   "doc_type": "clinic_note",
+   "span": [
+    2752,
+    2791
+   ],
+   "text": "CV: regular rate and rhythm, no murmur."
+  },
+  {
+   "id": "crit:NCT07436988-E07",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Any other serious uncontrolled illness that in the investigator's opinion would compromise study participation",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07436988:NCT07436988-E07:r1",
+   "kind": "decision",
+   "trial_id": "NCT07436988",
+   "criterion_id": "NCT07436988-E07",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No uncontrolled illness is documented, but this is an investigator-judgment criterion and cannot be decided from the record.",
+   "missing_fact": "Investigator's opinion on any serious uncontrolled illness",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07436988-E08",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "History of other malignancy except adequately treated basal cell carcinoma or cervical carcinoma in situ within the last five years",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07436988:NCT07436988-E08:r1",
+   "kind": "decision",
+   "trial_id": "NCT07436988",
+   "criterion_id": "NCT07436988-E08",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Explicit 'No prior malignancy'; the current HCC is the trial's target condition.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0002-EV138",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "prior malignancy",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-15",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "past"
+  },
+  {
+   "id": "concept:diagnosis:prior malignancy",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "prior malignancy"
+  },
+  {
+   "id": "src:SYN-0002-D09:1335-1355",
+   "kind": "source",
+   "doc_id": "SYN-0002-D09",
+   "doc_type": "clinic_note",
+   "span": [
+    1335,
+    1355
+   ],
+   "text": "No prior malignancy."
+  },
+  {
+   "id": "crit:NCT07436988-E09",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Major surgery within four weeks prior to enrolment",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07436988:NCT07436988-E09:r1",
+   "kind": "decision",
+   "trial_id": "NCT07436988",
+   "criterion_id": "NCT07436988-E09",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "The record lists only a 1982 appendectomy and two TACEs; no recent surgery is stated, but there is no explicit negation.",
+   "missing_fact": "Confirmation that no major surgery occurred within the last 4 weeks",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07436988-E10",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Active uncontrolled bacterial infection requiring systemic therapy",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07436988:NCT07436988-E10:r1",
+   "kind": "decision",
+   "trial_id": "NCT07436988",
+   "criterion_id": "NCT07436988-E10",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No infection or antibiotic is documented; afebrile and the medication list shows no antibiotics, but there is no explicit statement.",
+   "missing_fact": "Whether any active bacterial infection requiring systemic therapy exists",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07436988-E11",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Liver rupture, tumor penetration of the liver capsule, tumor invasion of the biliary system, or biliary obstruction",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07436988:NCT07436988-E11:r1",
+   "kind": "decision",
+   "trial_id": "NCT07436988",
+   "criterion_id": "NCT07436988-E11",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_record_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No jaundice and no vascular invasion, but nothing explicitly addresses biliary invasion, capsule penetration, or rupture.",
+   "missing_fact": "Imaging statement on liver capsule penetration, biliary invasion or obstruction",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07436988-E12",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Known allergy or hypersensitivity to any component of the investigational or comparator microspheres",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07436988:NCT07436988-E12:r1",
+   "kind": "decision",
+   "trial_id": "NCT07436988",
+   "criterion_id": "NCT07436988-E12",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "NKDA is recorded, but a drug-allergy denial does not clearly cover device or microsphere components.",
+   "missing_fact": "Allergy to microsphere components (resin, glass, rhenium/yttrium carriers)",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07436988-E13",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Prior treatment with Selective Internal Radiation Therapy (SIRT)",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07436988:NCT07436988-E13:r1",
+   "kind": "decision",
+   "trial_id": "NCT07436988",
+   "criterion_id": "NCT07436988-E13",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_history_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "list_inference",
+    "pc:strict_list_inference"
+   ],
+   "note": "[inferable PASS from SYN-0002-EV143] Liver-directed treatment history is stated as 'otherwise only the 2 TACE procedures', and no resection or ablation, so no SIRT is recorded.",
+   "missing_fact": null,
+   "derived_from": "SYN-0002-EV143"
+  },
+  {
+   "id": "crit:NCT07436988-E14",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Estimated overall survival less than one month",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07436988:NCT07436988-E14:r1",
+   "kind": "decision",
+   "trial_id": "NCT07436988",
+   "criterion_id": "NCT07436988-E14",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No survival estimate is recorded; the patient is well, ECOG 0, Child-Pugh A, but that does not state an estimate.",
+   "missing_fact": "A documented life-expectancy estimate",
+   "derived_from": null
+  },
+  {
+   "id": "label:NCT07436988",
+   "kind": "trial_decision",
+   "label": "ineligible",
+   "why": [
+    "FAIL NCT07436988-I04"
+   ],
+   "by": "agent3"
+  },
+  {
+   "id": "trial:NCT06582017",
+   "kind": "trial",
+   "title": "Safety, PK and Efficacy of QXL138AM in Patients With Solid Tumors and Multiple Myeloma"
+  },
+  {
+   "id": "crit:NCT06582017-I01",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Participants with Solid Tumors; Histopathologically confirmed diagnosis of an advanced, unresectable, or metastatic solid tumor (ovarian, pancreatic, urothelial, renal, hepatocellular, gastrointestinal (GI), lung, prostate, and breast cancer).; Have progressed despite standard therapies, or for whom conventional therapy is not effective or tolerable, as judged by the Investigator. Patients must have no available therapeutic options known to confer clinical benefit for their tumor type.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06582017:NCT06582017-I01:r1",
+   "kind": "decision",
+   "trial_id": "NCT06582017",
+   "criterion_id": "NCT06582017-I01",
+   "status": "UNKNOWN",
+   "reason": "UNSUPPORTED",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Multifocal HCC, BCLC B, progressing after 2 TACE, but only LI-RADS 5 imaging; no histology; systemic options still under discussion.",
+   "missing_fact": "Histopathological confirmation of HCC and investigator judgment that no standard therapeutic options remain",
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0002-EV242",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "multifocal hepatocellular carcinoma",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-15",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:diagnosis:multifocal hepatocellular carcinoma",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "multifocal hepatocellular carcinoma"
+  },
+  {
+   "id": "ev:SYN-0002-EV247",
+   "kind": "evidence",
+   "concept": "treatment_plan",
+   "term": "further TACE",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-15",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "planned"
+  },
+  {
+   "id": "concept:treatment_plan:further tace",
+   "kind": "concept",
+   "concept": "treatment_plan",
+   "term": "further TACE"
+  },
+  {
+   "id": "src:SYN-0002-D09:3780-3811",
+   "kind": "source",
+   "doc_id": "SYN-0002-D09",
+   "doc_type": "clinic_note",
+   "span": [
+    3780,
+    3811
+   ],
+   "text": "Further TACE of limited benefit"
+  },
+  {
+   "id": "crit:NCT06582017-I03",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "An Eastern Cooperative Oncology Group (ECOG) performance status scale of 0, 1, or 2 at Screening",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06582017:NCT06582017-I03:r1",
+   "kind": "decision",
+   "trial_id": "NCT06582017",
+   "criterion_id": "NCT06582017-I03",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "structured_numeric"
+   ],
+   "note": "ecog = 0 points (2026-09-02, -29d) vs <= 2 -> met",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0002-EV034",
+   "kind": "evidence",
+   "concept": "ecog",
+   "term": null,
+   "value": 0,
+   "unit": "points",
+   "observed_date": "2026-09-02",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "src:SYN-0002-D07:61-68",
+   "kind": "source",
+   "doc_id": "SYN-0002-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    61,
+    68
+   ],
+   "text": "ECOG 0."
+  },
+  {
+   "id": "calc:NCT06582017:NCT06582017-I03",
+   "kind": "calculation",
+   "concept": "ecog",
+   "operator": "<=",
+   "threshold": 2,
+   "unit": null,
+   "value": 0,
+   "value_unit": "points",
+   "observed_date": "2026-09-02",
+   "days_before": 29,
+   "note": "ecog = 0 points (2026-09-02, -29d) vs <= 2 -> met"
+  },
+  {
+   "id": "crit:NCT06582017-I04",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Must have at least 1 measurable lesion by RECIST version 1.1 (solid tumors only), or evaluable disease by IMWG Uniform Response Criteria (multiple myeloma only)",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06582017:NCT06582017-I04:r1",
+   "kind": "decision",
+   "trial_id": "NCT06582017",
+   "criterion_id": "NCT06582017-I04",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "MRI 42 days ago: viable tumor 2.8 cm in segment 7 is measurable (>=10 mm); within 90 days.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06582017-I05",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Adequate organ function and bone marrow reserve",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06582017:NCT06582017-I05:r1",
+   "kind": "decision",
+   "trial_id": "NCT06582017",
+   "criterion_id": "NCT06582017-I05",
+   "status": "UNKNOWN",
+   "reason": "UNSUPPORTED",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Creatinine, ANC, Hb fine; platelets 88 low, bilirubin 1.4 and AST 52 mildly high; no thresholds given.",
+   "missing_fact": "Protocol-defined thresholds for adequate organ function and marrow reserve",
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0002-EV045",
+   "kind": "evidence",
+   "concept": "platelet_count",
+   "term": null,
+   "value": 88,
+   "unit": "10^9/L",
+   "observed_date": "2026-09-14",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:platelet_count",
+   "kind": "concept",
+   "concept": "platelet_count",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0002-D08:235-267",
+   "kind": "source",
+   "doc_id": "SYN-0002-D08",
+   "doc_type": "lab_result",
+   "span": [
+    235,
+    267
+   ],
+   "text": "Platelets 88 x10^9/L (150-400) L"
+  },
+  {
+   "id": "ev:SYN-0002-EV064",
+   "kind": "evidence",
+   "concept": "bilirubin_total",
+   "term": null,
+   "value": 1.4,
+   "unit": "mg/dL",
+   "observed_date": "2026-09-14",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:bilirubin_total",
+   "kind": "concept",
+   "concept": "bilirubin_total",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0002-D08:895-932",
+   "kind": "source",
+   "doc_id": "SYN-0002-D08",
+   "doc_type": "lab_result",
+   "span": [
+    895,
+    932
+   ],
+   "text": "Total bilirubin 1.4 mg/dL (0.2-1.2) H"
+  },
+  {
+   "id": "ev:SYN-0002-EV066",
+   "kind": "evidence",
+   "concept": "ast",
+   "term": null,
+   "value": 52,
+   "unit": "U/L",
+   "observed_date": "2026-09-14",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:ast",
+   "kind": "concept",
+   "concept": "ast",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0002-D08:972-992",
+   "kind": "source",
+   "doc_id": "SYN-0002-D08",
+   "doc_type": "lab_result",
+   "span": [
+    972,
+    992
+   ],
+   "text": "AST 52 U/L (10-40) H"
+  },
+  {
+   "id": "ev:SYN-0002-EV056",
+   "kind": "evidence",
+   "concept": "creatinine",
+   "term": null,
+   "value": 0.9,
+   "unit": "mg/dL",
+   "observed_date": "2026-09-14",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:creatinine",
+   "kind": "concept",
+   "concept": "creatinine",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0002-D08:636-666",
+   "kind": "source",
+   "doc_id": "SYN-0002-D08",
+   "doc_type": "lab_result",
+   "span": [
+    636,
+    666
+   ],
+   "text": "Creatinine 0.9 mg/dL (0.7-1.3)"
+  },
+  {
+   "id": "ev:SYN-0002-EV040",
+   "kind": "evidence",
+   "concept": "hemoglobin",
+   "term": null,
+   "value": 13.2,
+   "unit": "g/dL",
+   "observed_date": "2026-09-14",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:hemoglobin",
+   "kind": "concept",
+   "concept": "hemoglobin",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0002-D08:106-140",
+   "kind": "source",
+   "doc_id": "SYN-0002-D08",
+   "doc_type": "lab_result",
+   "span": [
+    106,
+    140
+   ],
+   "text": "Hemoglobin 13.2 g/dL (13.5-17.5) L"
+  },
+  {
+   "id": "crit:NCT06582017-I06",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Adequate cardiac function as estimated by left ventricular ejection fraction",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06582017:NCT06582017-I06:r1",
+   "kind": "decision",
+   "trial_id": "NCT06582017",
+   "criterion_id": "NCT06582017-I06",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "new_test",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No LVEF in record; absence of cardiac history does not give an ejection fraction.",
+   "missing_fact": "Left ventricular ejection fraction (echo/MUGA)",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06582017-I07",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Female participants of child-bearing potential must: Have a negative serum pregnancy test at screening and a negative pregnancy test at Week 1 Day 1 prior to first dose of QXL138AM, AND; Agree to use at least 1 highly effective method of contraception for the duration of study participation, and for 120 days after last dose of QXL138AM.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06582017:NCT06582017-I07:r1",
+   "kind": "decision",
+   "trial_id": "NCT06582017",
+   "criterion_id": "NCT06582017-I07",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "impossible",
+    "sex_rule"
+   ],
+   "note": "applies only to women; patient is male",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06582017-I08",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "8. Male participants of child-bearing potential must: Agree to use at least 1 highly effective method of contraception for the duration of study participation, and for 120 days after last dose of QXL138AM, AND; Refrain from sperm donation prior to the first dose of investigational product through 120 days following the last dose of QXL138AM.",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06582017:NCT06582017-I08:r1",
+   "kind": "decision",
+   "trial_id": "NCT06582017",
+   "criterion_id": "NCT06582017-I08",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Male patient; no statement of willingness to use contraception or refrain from sperm donation.",
+   "missing_fact": "Patient's agreement to contraception and refraining from sperm donation",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06582017-E01",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "New York Heart Association Class III or IV cardiac disease, myocardial infarction within the past 6 months, unstable arrhythmia, a history of risk factors for Torsades de Pointes (TdP), including heart failure, hypokalemia, and family history of long QTc syndrome, or evidence of ischemia on ECG. Symptomatic ischemic heart disease or unstable angina pectoris; or history of cardiac angioplasty, cardiac stenting, or coronary artery bypass graft. A clinically significant baseline prolongation of QT/QTcF interval at screening.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06582017:NCT06582017-E01:r1",
+   "kind": "decision",
+   "trial_id": "NCT06582017",
+   "criterion_id": "NCT06582017-E01",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "new_test",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation"
+   ],
+   "note": "Chronic cardiac history negated, but no ECG/QTc; blanket negation does not cover ECG values.",
+   "missing_fact": "Baseline ECG with QTc and absence of ischemia/arrhythmia",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06582017-E02",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "The use of concomitant medications that may significantly prolong the QT/QTc interval.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06582017:NCT06582017-E02:r1",
+   "kind": "decision",
+   "trial_id": "NCT06582017",
+   "criterion_id": "NCT06582017-E02",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_history_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "list_inference",
+    "pc:strict_list_inference"
+   ],
+   "note": "[inferable PASS from SYN-0002-EV147] Reconciled list: only entecavir and carvedilol, no recently stopped; neither is a known significant QT-prolonging drug.",
+   "missing_fact": null,
+   "derived_from": "SYN-0002-EV147"
+  },
+  {
+   "id": "crit:NCT06582017-E03",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Active, uncontrolled bacterial, viral, or fungal infections requiring systemic therapy.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06582017:NCT06582017-E03:r1",
+   "kind": "decision",
+   "trial_id": "NCT06582017",
+   "criterion_id": "NCT06582017-E03",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No infection documented; HBV is controlled on entecavir, but only afebrile/normal findings, no explicit negation of infection.",
+   "missing_fact": "Statement that no active infection requiring systemic therapy exists",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06582017-E04",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Known hypersensitivity to the investigational product or components (anti-CD138 IgG1 antibody, Interferon A2a and/or the formulation excipients: histidine, sucrose, arginine, polysorbate 80).",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06582017:NCT06582017-E04:r1",
+   "kind": "decision",
+   "trial_id": "NCT06582017",
+   "criterion_id": "NCT06582017-E04",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "NKDA documented, but specific components not addressed; unlikely exposure history.",
+   "missing_fact": "Hypersensitivity to anti-CD138 antibody, interferon A2a or excipients",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06582017-E05",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Female participant is lactating.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06582017:NCT06582017-E05:r1",
+   "kind": "decision",
+   "trial_id": "NCT06582017",
+   "criterion_id": "NCT06582017-E05",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "impossible",
+    "sex_rule"
+   ],
+   "note": "applies only to women; patient is male",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06582017-E06",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Any other clinically significant comorbidities.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06582017:NCT06582017-E06:r1",
+   "kind": "decision",
+   "trial_id": "NCT06582017",
+   "criterion_id": "NCT06582017-E06",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Investigator-judgment criterion; portal hypertension/varices present but significance not documented.",
+   "missing_fact": "Investigator judgment on clinically significant comorbidities",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06582017-E07",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Received prior anticancer therapy within 28 days or 5x the half-life (whichever is shorter) prior to the first dose of investigational product.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06582017:NCT06582017-E07:r1",
+   "kind": "decision",
+   "trial_id": "NCT06582017",
+   "criterion_id": "NCT06582017-E07",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_history_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "list_inference",
+    "pc:strict_list_inference"
+   ],
+   "note": "[inferable PASS from SYN-0002-EV147] Last anticancer therapy TACE #2 205 days ago; reconciled meds show no current anticancer drug; only 2 TACE.",
+   "missing_fact": null,
+   "derived_from": "SYN-0002-EV147"
+  },
+  {
+   "id": "crit:NCT06582017-E08",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Participants who received wide-field radiation therapy within 4 weeks prior to first dose of investigational product, (2 weeks for limited field radiation therapy)",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06582017:NCT06582017-E08:r1",
+   "kind": "decision",
+   "trial_id": "NCT06582017",
+   "criterion_id": "NCT06582017-E08",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Procedure list says 'otherwise only 2 TACE' but radiation not explicitly denied; weak inference.",
+   "missing_fact": "Whether any radiation therapy was given in last 4 weeks",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06582017-E09",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Major surgery within 30 days before first dose of investigational product",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06582017:NCT06582017-E09:r1",
+   "kind": "decision",
+   "trial_id": "NCT06582017",
+   "criterion_id": "NCT06582017-E09",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_history_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "list_inference",
+    "pc:strict_list_inference"
+   ],
+   "note": "[inferable PASS from SYN-0002-EV143] Procedures limited to appendectomy 1982 and TACE; no major surgery in last 30 days.",
+   "missing_fact": null,
+   "derived_from": "SYN-0002-EV143"
+  },
+  {
+   "id": "crit:NCT06582017-E10",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Chronic use of systemic corticosteroids of more than 20 mg/day of prednisone or equivalent.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06582017:NCT06582017-E10:r1",
+   "kind": "decision",
+   "trial_id": "NCT06582017",
+   "criterion_id": "NCT06582017-E10",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_history_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "list_inference",
+    "pc:strict_list_inference"
+   ],
+   "note": "[inferable PASS from SYN-0002-EV147] Reconciled medication list has only entecavir and carvedilol; no corticosteroid.",
+   "missing_fact": null,
+   "derived_from": "SYN-0002-EV147"
+  },
+  {
+   "id": "crit:NCT06582017-E11",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Active, clinically significant liver disease such as Hepatitis B or C, autoimmune hepatitis, or cirrhosis (Child Hugh Stage B or C).",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06582017:NCT06582017-E11:r1",
+   "kind": "decision",
+   "trial_id": "NCT06582017",
+   "criterion_id": "NCT06582017-E11",
+   "status": "UNKNOWN",
+   "reason": "UNSUPPORTED",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Child-Pugh A so cirrhosis part not met, but HBsAg reactive HBV with cirrhosis; 'active' not decided.",
+   "missing_fact": "Whether chronic HBV (HBsAg+, DNA suppressed) counts as active clinically significant liver disease",
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0002-EV074",
+   "kind": "evidence",
+   "concept": "hepatitis_b",
+   "term": "HBsAg",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-14",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:hepatitis_b:hbsag",
+   "kind": "concept",
+   "concept": "hepatitis_b",
+   "term": "HBsAg"
+  },
+  {
+   "id": "src:SYN-0002-D08:1180-1211",
+   "kind": "source",
+   "doc_id": "SYN-0002-D08",
+   "doc_type": "lab_result",
+   "span": [
+    1180,
+    1211
+   ],
+   "text": "HBsAg reactive (non-reactive) H"
+  },
+  {
+   "id": "ev:SYN-0002-EV101",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "cirrhosis",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-15",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:diagnosis:cirrhosis",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "cirrhosis"
+  },
+  {
+   "id": "ev:SYN-0002-EV281",
+   "kind": "evidence",
+   "concept": "hbv_dna",
+   "term": null,
+   "value": 10,
+   "unit": "IU/mL",
+   "observed_date": "2026-09-14",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:hbv_dna",
+   "kind": "concept",
+   "concept": "hbv_dna",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0002-D08:1250-1282",
+   "kind": "source",
+   "doc_id": "SYN-0002-D08",
+   "doc_type": "lab_result",
+   "span": [
+    1250,
+    1282
+   ],
+   "text": "HBV DNA not detected (<10 IU/mL)"
+  },
+  {
+   "id": "crit:NCT06582017-E12",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Current or history of mood disorder such as major depression per DSM-5 within past two years not controlled with current therapy.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06582017:NCT06582017-E12:r1",
+   "kind": "decision",
+   "trial_id": "NCT06582017",
+   "criterion_id": "NCT06582017-E12",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Psych review negative and no neurologic history; no mood disorder documented, nothing to be uncontrolled.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0002-EV186",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "psychiatric symptoms",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-15",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:symptom_finding:psychiatric symptoms",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "psychiatric symptoms"
+  },
+  {
+   "id": "src:SYN-0002-D09:2496-2512",
+   "kind": "source",
+   "doc_id": "SYN-0002-D09",
+   "doc_type": "clinic_note",
+   "span": [
+    2496,
+    2512
+   ],
+   "text": "Psych: negative."
+  },
+  {
+   "id": "ev:SYN-0002-EV136",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "neurologic history",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-15",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "past"
+  },
+  {
+   "id": "concept:diagnosis:neurologic history",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "neurologic history"
+  },
+  {
+   "id": "crit:NCT06582017-E13",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Active autoimmune disorders not controlled with current therapy.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06582017:NCT06582017-E13:r1",
+   "kind": "decision",
+   "trial_id": "NCT06582017",
+   "criterion_id": "NCT06582017-E13",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation"
+   ],
+   "note": "No autoimmune history documented.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0002-EV134",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "autoimmune history",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-15",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "past"
+  },
+  {
+   "id": "concept:diagnosis:autoimmune history",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "autoimmune history"
+  },
+  {
+   "id": "crit:NCT06582017-E14",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Active endocrine disorders including hypothyroidism, hyperthyroidism, hypoglycemia, hyperglycemia, and diabetes mellitus not controlled with current therapy.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06582017:NCT06582017-E14:r1",
+   "kind": "decision",
+   "trial_id": "NCT06582017",
+   "criterion_id": "NCT06582017-E14",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation"
+   ],
+   "note": "No endocrine history, no diabetes; TSH, glucose and HbA1c normal.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0002-EV135",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "endocrine history",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-15",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "past"
+  },
+  {
+   "id": "concept:diagnosis:endocrine history",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "endocrine history"
+  },
+  {
+   "id": "ev:SYN-0002-EV137",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "diabetes",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-15",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:diagnosis:diabetes",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "diabetes"
+  },
+  {
+   "id": "src:SYN-0002-D09:1322-1334",
+   "kind": "source",
+   "doc_id": "SYN-0002-D09",
+   "doc_type": "clinic_note",
+   "span": [
+    1322,
+    1334
+   ],
+   "text": "No diabetes."
+  },
+  {
+   "id": "ev:SYN-0002-EV085",
+   "kind": "evidence",
+   "concept": "tsh",
+   "term": null,
+   "value": 2.1,
+   "unit": "mIU/L",
+   "observed_date": "2026-09-14",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:tsh",
+   "kind": "concept",
+   "concept": "tsh",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0002-D08:1467-1490",
+   "kind": "source",
+   "doc_id": "SYN-0002-D08",
+   "doc_type": "lab_result",
+   "span": [
+    1467,
+    1490
+   ],
+   "text": "TSH 2.1 mIU/L (0.4-4.0)"
+  },
+  {
+   "id": "ev:SYN-0002-EV080",
+   "kind": "evidence",
+   "concept": "hba1c",
+   "term": null,
+   "value": 5.4,
+   "unit": "%",
+   "observed_date": "2026-09-14",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:hba1c",
+   "kind": "concept",
+   "concept": "hba1c",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0002-D08:1339-1357",
+   "kind": "source",
+   "doc_id": "SYN-0002-D08",
+   "doc_type": "lab_result",
+   "span": [
+    1339,
+    1357
+   ],
+   "text": "HbA1c 5.4 % (<5.7)"
+  },
+  {
+   "id": "crit:NCT06582017-I02",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Participants with Multiple Myeloma; Have progressed despite standard therapies, or for whom conventional therapy is not effective or tolerable, as judged by the Investigator.; Patients must have failed at least 3 prior therapies for myeloma and should have had prior exposure to a proteosome inhibitor, an IMiD, and an anti-CD38-directed therapy. 2. Male or female participants >=18 years of age at the time of informed consent",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06582017:NCT06582017-I02:r1",
+   "kind": "decision",
+   "trial_id": "NCT06582017",
+   "criterion_id": "NCT06582017-I02",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": false,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Multiple myeloma criterion; patient has HCC and belongs to solid tumor cohort.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "label:NCT06582017",
+   "kind": "trial_decision",
+   "label": "potential",
+   "why": [
+    "UNKNOWN/UNSUPPORTED NCT06582017-I01",
+    "UNKNOWN/UNSUPPORTED NCT06582017-I05",
+    "UNKNOWN/MISSING NCT06582017-I06",
+    "UNKNOWN/UNSUPPORTED NCT06582017-E11"
+   ],
+   "by": "agent3"
+  },
+  {
+   "id": "trial:NCT07774247",
+   "kind": "trial",
+   "title": "Atezolizumab, Bevacizumab, and Tocilizumab in Advanced Hepatocellular Carcinoma"
+  },
+  {
+   "id": "crit:NCT07774247-I01",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Histologically, cytologically, or radiologically confirmed diagnosis of locally advanced, metastatic, and/or unresectable hepatocellular carcinoma (HCC).",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07774247:NCT07774247-I01:r1",
+   "kind": "decision",
+   "trial_id": "NCT07774247",
+   "criterion_id": "NCT07774247-I01",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Multifocal HCC, BCLC B, LI-RADS 5 imaging, progressing after 2 TACE.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07774247-I02",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Age >=19 years at the time of signing the informed consent form (ICF).",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07774247:NCT07774247-I02:r1",
+   "kind": "decision",
+   "trial_id": "NCT07774247",
+   "criterion_id": "NCT07774247-I02",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "age_rule"
+   ],
+   "note": "age 61.57 y vs [19.0, None]",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "calc:NCT07774247:NCT07774247-I02",
+   "kind": "calculation",
+   "name": "age_at_as_of",
+   "value": 61.567,
+   "lo": 19.0,
+   "hi": null
+  },
+  {
+   "id": "crit:NCT07774247-I03",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Eastern Cooperative Oncology Group (ECOG) performance status of 0 or 1 within 7 days prior to the first dose of study drug.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07774247:NCT07774247-I03:r1",
+   "kind": "decision",
+   "trial_id": "NCT07774247",
+   "criterion_id": "NCT07774247-I03",
+   "status": "UNKNOWN",
+   "reason": "EXPIRED",
+   "action": "new_test",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "structured_numeric",
+    "expired_criterion"
+   ],
+   "note": "ecog = 0 is 29 days old; window 7 days",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "calc:NCT07774247:NCT07774247-I03",
+   "kind": "calculation",
+   "concept": "ecog",
+   "operator": "<=",
+   "threshold": 1,
+   "unit": null,
+   "value": 0,
+   "value_unit": "points",
+   "observed_date": "2026-09-02",
+   "days_before": 29,
+   "window_days": 7,
+   "window_source": "criterion",
+   "note": "ecog = 0 is 29 days old; window 7 days"
+  },
+  {
+   "id": "crit:NCT07774247-I04",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Child-Pugh class A (score 5-6) within 7 days prior to the first dose of study drug.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07774247:NCT07774247-I04:r1",
+   "kind": "decision",
+   "trial_id": "NCT07774247",
+   "criterion_id": "NCT07774247-I04",
+   "status": "UNKNOWN",
+   "reason": "EXPIRED",
+   "action": "new_test",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "structured_numeric",
+    "expired_criterion"
+   ],
+   "note": "child_pugh = 6 is 29 days old; window 7 days",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0002-EV266",
+   "kind": "evidence",
+   "concept": "child_pugh",
+   "term": null,
+   "value": 6,
+   "unit": "points",
+   "observed_date": "2026-09-02",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "src:SYN-0002-D07:32-45",
+   "kind": "source",
+   "doc_id": "SYN-0002-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    32,
+    45
+   ],
+   "text": "Child-Pugh A6"
+  },
+  {
+   "id": "calc:NCT07774247:NCT07774247-I04",
+   "kind": "calculation",
+   "concept": "child_pugh",
+   "operator": "between",
+   "threshold": [
+    5,
+    6
+   ],
+   "unit": null,
+   "value": 6,
+   "value_unit": "points",
+   "observed_date": "2026-09-02",
+   "days_before": 29,
+   "window_days": 7,
+   "window_source": "criterion",
+   "note": "child_pugh = 6 is 29 days old; window 7 days"
+  },
+  {
+   "id": "crit:NCT07774247-I05",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Disease not amenable to curative surgical and/or locoregional therapy.; Patients who have experienced disease progression after prior surgical and/or locoregional therapy are eligible.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07774247:NCT07774247-I05:r1",
+   "kind": "decision",
+   "trial_id": "NCT07774247",
+   "criterion_id": "NCT07774247-I05",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Progression after 2 TACE with viable tumor; such patients are explicitly eligible.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07774247-I06",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Ability to provide written informed consent prior to initiation of any study-specific procedures, including agreement to comply with the requirements and restrictions listed in this protocol.",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07774247:NCT07774247-I06:r1",
+   "kind": "decision",
+   "trial_id": "NCT07774247",
+   "criterion_id": "NCT07774247-I06",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "admin"
+   ],
+   "note": "consent/compliance item: not decidable from the record",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07774247-I07",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "No prior systemic therapy for hepatocellular carcinoma, including investigational agents.; Prior use of herbal or traditional medicines with known or potential anticancer activity is permitted only if discontinued prior to initiation of study treatment.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07774247:NCT07774247-I07:r1",
+   "kind": "decision",
+   "trial_id": "NCT07774247",
+   "criterion_id": "NCT07774247-I07",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_history_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "list_inference",
+    "pc:strict_list_inference"
+   ],
+   "note": "[inferable PASS from SYN-0002-EV147] Reconciled med list has only entecavir and carvedilol; only 2 TACE otherwise; no herbals. Immunotherapy only planned.",
+   "missing_fact": null,
+   "derived_from": "SYN-0002-EV147"
+  },
+  {
+   "id": "crit:NCT07774247-I08",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Estimated life expectancy of at least 3 months.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07774247:NCT07774247-I08:r1",
+   "kind": "decision",
+   "trial_id": "NCT07774247",
+   "criterion_id": "NCT07774247-I08",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No life expectancy documented; not inferred from ECOG 0.",
+   "missing_fact": "Clinician estimate of life expectancy (>=3 months)",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07774247-I09",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "At least one measurable lesion according to RECIST version 1.1.; Patients who have received prior locoregional therapy (e.g., radiofrequency ablation, percutaneous ethanol or acetic acid injection, cryoablation, high-intensity focused ultrasound, transarterial chemoembolization, or transarterial embolization) are eligible if the target lesion has not been previously treated or if the lesion has demonstrated progression within the treated area per RECIST v1.1.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07774247:NCT07774247-I09:r1",
+   "kind": "decision",
+   "trial_id": "NCT07774247",
+   "criterion_id": "NCT07774247-I09",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "28 mm viable tumor progressing in treated area plus new untreated 1.5 cm segment 5 lesion.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0002-EV019",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "arterial-enhancing lesion segment 5",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-08-20",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:diagnosis:arterial-enhancing lesion segment 5",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "arterial-enhancing lesion segment 5"
+  },
+  {
+   "id": "crit:NCT07774247-I10",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Adequate hematologic and organ function, as defined by the following laboratory values obtained within 7 days prior to the first dose of study drug (no blood transfusion or albumin administration within 2 weeks prior to or during screening to meet eligibility criteria).; Absolute neutrophil count (ANC) >= 1.5 x 109/L (>=1500/μL); Lymphocyte count >= 0.5 x 109/L (>=500/μL); Platelet count >= 100 x 109/L (>=100,000/μL); Hemoglobin >= 90 g/L (>=9.0 g/dL); AST, ALT, and ALP <= 5 x ULN; Total bilirubin <= 3 x ULN; Serum creatinine <= 1.5 x ULN or creatinine clearance >=50 mL/min (calculated using the Cockcroft-Gault formula); Albumin >= 28 g/L (>=2.8 g/dL); For patients not receiving anticoagulants: INR or aPTT <=1.5 x ULN, patients receiving low-molecular-weight heparin are eligible.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07774247:NCT07774247-I10:r1",
+   "kind": "decision",
+   "trial_id": "NCT07774247",
+   "criterion_id": "NCT07774247-I10",
+   "status": "UNKNOWN",
+   "reason": "EXPIRED",
+   "action": "new_test",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "All labs are 17 days old, outside the 7-day window; platelet 88 is already below threshold.",
+   "missing_fact": "Labs within 7 days before first dose (platelets 88 on -17d is below 100)",
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0002-EV046",
+   "kind": "evidence",
+   "concept": "anc",
+   "term": null,
+   "value": 2.32,
+   "unit": "10^9/L",
+   "observed_date": "2026-09-14",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:anc",
+   "kind": "concept",
+   "concept": "anc",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0002-D08:268-313",
+   "kind": "source",
+   "doc_id": "SYN-0002-D08",
+   "doc_type": "lab_result",
+   "span": [
+    268,
+    313
+   ],
+   "text": "Neutrophils 58 % / ANC 2.32 x10^9/L (1.8-7.7)"
+  },
+  {
+   "id": "crit:NCT07774247-I11",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Documented hepatitis virus status based on screening tests for HBV and HCV.; For patients with active HBV infection: HBV DNA <500 IU/mL during screening, initiation of antiviral therapy at least 14 days prior to the first dose of study drug, and willingness to continue antiviral therapy throughout the study.; For patients with active or prior HCV infection: negative HCV RNA (PCR).; Patients with co-infection of HBV and HCV are not eligible.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07774247:NCT07774247-I11:r1",
+   "kind": "decision",
+   "trial_id": "NCT07774247",
+   "criterion_id": "NCT07774247-I11",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "HBsAg+, HBV DNA <10 IU/mL, entecavir since 2015 and continuing; anti-HCV non-reactive, so no coinfection.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0002-EV078",
+   "kind": "evidence",
+   "concept": "hepatitis_c",
+   "term": "Anti-HCV",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-14",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:hepatitis_c:anti-hcv",
+   "kind": "concept",
+   "concept": "hepatitis_c",
+   "term": "Anti-HCV"
+  },
+  {
+   "id": "src:SYN-0002-D08:1283-1304",
+   "kind": "source",
+   "doc_id": "SYN-0002-D08",
+   "doc_type": "lab_result",
+   "span": [
+    1283,
+    1304
+   ],
+   "text": "Anti-HCV non-reactive"
+  },
+  {
+   "id": "ev:SYN-0002-EV148",
+   "kind": "evidence",
+   "concept": "medication",
+   "term": "entecavir 0.5 mg daily",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-15",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:medication:entecavir 0.5 mg daily",
+   "kind": "concept",
+   "concept": "medication",
+   "term": "entecavir 0.5 mg daily"
+  },
+  {
+   "id": "src:SYN-0002-D09:1609-1647",
+   "kind": "source",
+   "doc_id": "SYN-0002-D09",
+   "doc_type": "clinic_note",
+   "span": [
+    1609,
+    1647
+   ],
+   "text": "Entecavir 0.5 mg PO daily (since 2015)"
+  },
+  {
+   "id": "ev:SYN-0002-EV252",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "hepatitis B virus cirrhosis",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-15",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:diagnosis:hepatitis b virus cirrhosis",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "hepatitis B virus cirrhosis"
+  },
+  {
+   "id": "src:SYN-0002-D09:4165-4211",
+   "kind": "source",
+   "doc_id": "SYN-0002-D09",
+   "doc_type": "clinic_note",
+   "span": [
+    4165,
+    4211
+   ],
+   "text": "HBV cirrhosis: continue entecavir 0.5 mg daily"
+  },
+  {
+   "id": "crit:NCT07774247-I12",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Reproductive status: Female patients must not be pregnant or breastfeeding.; Negative serum pregnancy test within 72 hours prior to the first dose of study drug.; Female patients must agree not to breastfeed from the time of consent until at least 6 months after the last dose of study drug.; Females of childbearing potential and non-sterilized males must agree to use two effective methods of contraception during the study and for at least 6 months after the last dose.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07774247:NCT07774247-I12:r1",
+   "kind": "decision",
+   "trial_id": "NCT07774247",
+   "criterion_id": "NCT07774247-I12",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Female items are void for a male, but the male contraception agreement is not documented.",
+   "missing_fact": "Male patient's agreement to two effective contraception methods (sterilization status)",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07774247-I13",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Left ventricular ejection fraction (LVEF) >=50% as assessed by echocardiogram or MUGA scan, with no severe valvular disease or clinically significant arrhythmia.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07774247:NCT07774247-I13:r1",
+   "kind": "decision",
+   "trial_id": "NCT07774247",
+   "criterion_id": "NCT07774247-I13",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "new_test",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No echo or MUGA result; the cardiac-history blanket negation does not cover measurements.",
+   "missing_fact": "LVEF by echocardiogram or MUGA",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07774247-I14",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Corrected QT interval using Fridericia's formula (QTcF) <=470 msec.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07774247:NCT07774247-I14:r1",
+   "kind": "decision",
+   "trial_id": "NCT07774247",
+   "criterion_id": "NCT07774247-I14",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "new_test",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No ECG or QTc in the record.",
+   "missing_fact": "ECG with QTcF value",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07774247-I15",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Willingness to provide blood samples.",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07774247:NCT07774247-I15:r1",
+   "kind": "decision",
+   "trial_id": "NCT07774247",
+   "criterion_id": "NCT07774247-I15",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Willingness not documented.",
+   "missing_fact": "Patient's willingness to provide blood samples",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07774247-E01",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Prior systemic therapy for locally advanced, metastatic, and/or unresectable hepatocellular carcinoma, including chemotherapy, biologic therapy, immunotherapy, hormonal therapy, or investigational agents.; Prior adjuvant therapy is permitted if disease recurrence occurred at least 6 months after completion of the last treatment, including adjuvant therapy and radiotherapy.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07774247:NCT07774247-E01:r1",
+   "kind": "decision",
+   "trial_id": "NCT07774247",
+   "criterion_id": "NCT07774247-E01",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_history_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "list_inference",
+    "pc:strict_list_inference"
+   ],
+   "note": "[inferable PASS from SYN-0002-EV147] No systemic therapy on reconciled list; only 2 TACE (locoregional); immunotherapy only planned.",
+   "missing_fact": null,
+   "derived_from": "SYN-0002-EV147"
+  },
+  {
+   "id": "crit:NCT07774247-E02",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Presence of multiple primary malignancies.; Exceptions include completely resected basal cell carcinoma, stage I squamous cell carcinoma, carcinoma in situ, intramucosal carcinoma, superficial bladder cancer, or other malignancies with no recurrence for >=5 years.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07774247:NCT07774247-E02:r1",
+   "kind": "decision",
+   "trial_id": "NCT07774247",
+   "criterion_id": "NCT07774247-E02",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "'No prior malignancy' documented; only the HCC is present.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07774247-E03",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Known fibrolamellar hepatocellular carcinoma, sarcomatoid hepatocellular carcinoma, or mixed hepatocellular-cholangiocarcinoma.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07774247:NCT07774247-E03:r1",
+   "kind": "decision",
+   "trial_id": "NCT07774247",
+   "criterion_id": "NCT07774247-E03",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_record_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No histology; diagnosis is radiological and subtype is not mentioned.",
+   "missing_fact": "Histological subtype of HCC (fibrolamellar, sarcomatoid, mixed HCC-CCA excluded)",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07774247-E04",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Untreated or incompletely treated esophageal or gastric varices with bleeding or high risk of bleeding: Patients must undergo esophagogastroduodenoscopy (EGD) prior to enrollment, and all varices must be evaluated and treated according to institutional standard of care. If evaluation has been performed within 6 months prior to the first dose of study drug, repeat evaluation is not required.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07774247:NCT07774247-E04:r1",
+   "kind": "decision",
+   "trial_id": "NCT07774247",
+   "criterion_id": "NCT07774247-E04",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "EGD 2026-07 within 6 months: small varices, no red signs, no variceal bleeding history, on carvedilol.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0002-EV128",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "small esophageal varices without red signs",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-07-01",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:diagnosis:small esophageal varices without red signs",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "small esophageal varices without red signs"
+  },
+  {
+   "id": "src:SYN-0002-D09:1105-1157",
+   "kind": "source",
+   "doc_id": "SYN-0002-D09",
+   "doc_type": "clinic_note",
+   "span": [
+    1105,
+    1157
+   ],
+   "text": "Small esophageal varices, no red signs - EGD 2026-07"
+  },
+  {
+   "id": "ev:SYN-0002-EV036",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "esophageal varices with red signs",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-02",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:symptom_finding:esophageal varices with red signs",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "esophageal varices with red signs"
+  },
+  {
+   "id": "src:SYN-0002-D07:69-124",
+   "kind": "source",
+   "doc_id": "SYN-0002-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    69,
+    124
+   ],
+   "text": "EGD 2026-07: small esophageal varices without red signs"
+  },
+  {
+   "id": "ev:SYN-0002-EV140",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "variceal bleeding",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-15",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "past"
+  },
+  {
+   "id": "concept:diagnosis:variceal bleeding",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "variceal bleeding"
+  },
+  {
+   "id": "src:SYN-0002-D09:1356-1423",
+   "kind": "source",
+   "doc_id": "SYN-0002-D09",
+   "doc_type": "clinic_note",
+   "span": [
+    1356,
+    1423
+   ],
+   "text": "No history of ascites, variceal bleeding or hepatic encephalopathy."
+  },
+  {
+   "id": "ev:SYN-0002-EV149",
+   "kind": "evidence",
+   "concept": "medication",
+   "term": "carvedilol 6.25 mg BID",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-15",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:medication:carvedilol 6.25 mg bid",
+   "kind": "concept",
+   "concept": "medication",
+   "term": "carvedilol 6.25 mg BID"
+  },
+  {
+   "id": "src:SYN-0002-D09:1650-1710",
+   "kind": "source",
+   "doc_id": "SYN-0002-D09",
+   "doc_type": "clinic_note",
+   "span": [
+    1650,
+    1710
+   ],
+   "text": "Carvedilol 6.25 mg PO BID (since 2026-07, for small varices)"
+  },
+  {
+   "id": "crit:NCT07774247-E05",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Residual toxicities from prior therapy that, in the investigator's opinion, may interfere with safety evaluation of the study drug, or patients for whom the possibility of surgical resection cannot be completely excluded at the time of enrollment.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07774247:NCT07774247-E05:r1",
+   "kind": "decision",
+   "trial_id": "NCT07774247",
+   "criterion_id": "NCT07774247-E05",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Post-embolization syndrome resolved; no documented residual toxicity; resectability not addressed.",
+   "missing_fact": "Investigator judgment on residual toxicity and on whether surgical resection can be excluded",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07774247-E06",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "History of severe hypersensitivity reactions to other monoclonal antibody products.; Prior exposure to or hypersensitivity to anti-PD-1, anti-PD-L1, anti-PD-L2, anti-CD137 antibodies, or other agents targeting T-cell regulation.; Known hypersensitivity or allergy to atezolizumab, bevacizumab, or tocilizumab.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07774247:NCT07774247-E06:r1",
+   "kind": "decision",
+   "trial_id": "NCT07774247",
+   "criterion_id": "NCT07774247-E06",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_history_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "list_inference",
+    "pc:strict_list_inference"
+   ],
+   "note": "[inferable PASS from SYN-0002-EV147] NKDA; no prior systemic or immunotherapy on reconciled lists.",
+   "missing_fact": null,
+   "derived_from": "SYN-0002-EV147"
+  },
+  {
+   "id": "crit:NCT07774247-E07",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Active autoimmune disease or a history of chronic or recurrent autoimmune disease, or use of systemic immunosuppressive medications within 2 weeks prior to the first dose of study drug.; Patients with hypothyroidism requiring only hormone replacement therapy, vitiligo, psoriasis not requiring systemic treatment, or other conditions deemed stable and safe by the investigator may be eligible.; Patients with primary or secondary immunodeficiency or active immunodeficiency are excluded.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07774247:NCT07774247-E07:r1",
+   "kind": "decision",
+   "trial_id": "NCT07774247",
+   "criterion_id": "NCT07774247-E07",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_history_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation",
+    "list_inference",
+    "pc:strict_list_inference"
+   ],
+   "note": "[inferable PASS from SYN-0002-EV147] No autoimmune history; no immunosuppressants on reconciled list; HIV negative.",
+   "missing_fact": null,
+   "derived_from": "SYN-0002-EV147"
+  },
+  {
+   "id": "crit:NCT07774247-E08",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Current or prior history of interstitial lung disease or pulmonary fibrosis diagnosed based on imaging or clinical findings.; Patients with radiation pneumonitis may be eligible if clinically stable (beyond the acute phase) without concern for recurrence.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07774247:NCT07774247-E08:r1",
+   "kind": "decision",
+   "trial_id": "NCT07774247",
+   "criterion_id": "NCT07774247-E08",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation",
+    "pc:blanket_out_of_scope"
+   ],
+   "note": "[blanket negation out of A1 scope] No pulmonary history documented.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07774247-E09",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Known central nervous system (CNS) metastases.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07774247:NCT07774247-E09:r1",
+   "kind": "decision",
+   "trial_id": "NCT07774247",
+   "criterion_id": "NCT07774247-E09",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Explicit 'no extrahepatic disease' and no extrahepatic spread; no neurologic history.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07774247-E10",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Presence of clinically significant pericardial effusion, pleural effusion, or ascites requiring treatment.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07774247:NCT07774247-E10:r1",
+   "kind": "decision",
+   "trial_id": "NCT07774247",
+   "criterion_id": "NCT07774247-E10",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_history_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation",
+    "list_inference",
+    "pc:strict_list_inference"
+   ],
+   "note": "[inferable PASS from SYN-0002-EV147] No ascites; no pulmonary or cardiac history; no diuretics or other treatment on reconciled list.",
+   "missing_fact": null,
+   "derived_from": "SYN-0002-EV147"
+  },
+  {
+   "id": "crit:NCT07774247-E11",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Uncontrolled tumor-related pain: patients requiring chronic use of nonsteroidal anti-inflammatory drugs (NSAIDs) for pain control during study treatment are excluded.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07774247:NCT07774247-E11:r1",
+   "kind": "decision",
+   "trial_id": "NCT07774247",
+   "criterion_id": "NCT07774247-E11",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No abdominal pain and no NSAIDs.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0002-EV116",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "abdominal pain",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-15",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:symptom_finding:abdominal pain",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "abdominal pain"
+  },
+  {
+   "id": "src:SYN-0002-D09:783-858",
+   "kind": "source",
+   "doc_id": "SYN-0002-D09",
+   "doc_type": "clinic_note",
+   "span": [
+    783,
+    858
+   ],
+   "text": "Full activity, no abdominal pain, no weight loss, no jaundice, no bleeding."
+  },
+  {
+   "id": "ev:SYN-0002-EV151",
+   "kind": "evidence",
+   "concept": "medication",
+   "term": "NSAIDs",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-15",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:medication:nsaids",
+   "kind": "concept",
+   "concept": "medication",
+   "term": "NSAIDs"
+  },
+  {
+   "id": "src:SYN-0002-D09:1744-1787",
+   "kind": "source",
+   "doc_id": "SYN-0002-D09",
+   "doc_type": "clinic_note",
+   "span": [
+    1744,
+    1787
+   ],
+   "text": "No NSAIDs, anticoagulants or antiplatelets."
+  },
+  {
+   "id": "crit:NCT07774247-E12",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "History of transient ischemic attack or cerebrovascular accident within 180 days prior to enrollment.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07774247:NCT07774247-E12:r1",
+   "kind": "decision",
+   "trial_id": "NCT07774247",
+   "criterion_id": "NCT07774247-E12",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Neurologic blanket negation does not cover an acute event within a window; no stroke mention.",
+   "missing_fact": "Whether any TIA/stroke occurred in the last 180 days",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07774247-E13",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "History of significant cardiovascular disease, including any of the following: Myocardial infarction within 180 days prior to enrollment.; Uncontrolled angina within 180 days prior to enrollment; Congestive heart failure classified as New York Heart Association (NYHA) Class III or IV.; Uncontrolled hypertension despite appropriate medical management (e.g., systolic blood pressure >=150 mmHg or diastolic blood pressure >=90 mmHg persisting for >=24 hours).; Arrhythmia requiring treatment.; Significant vascular disease, including recent peripheral arterial thrombosis or aneurysm requiring surgical intervention.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07774247:NCT07774247-E13:r1",
+   "kind": "decision",
+   "trial_id": "NCT07774247",
+   "criterion_id": "NCT07774247-E13",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "BP 124 and chronic cardiac history negated, but recent MI and vascular events are not covered.",
+   "missing_fact": "No MI or angina in last 180 days and no recent arterial thrombosis or aneurysm requiring surgery",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07774247-E14",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Uncontrolled diabetes mellitus.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07774247:NCT07774247-E14:r1",
+   "kind": "decision",
+   "trial_id": "NCT07774247",
+   "criterion_id": "NCT07774247-E14",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "'No diabetes' documented; HbA1c 5.4%.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07774247-E15",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Systemic infection requiring treatment within 14 days prior to the first dose of study drug and treated with intravenous antibiotics (prophylactic use of oral antibiotics is permitted).",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07774247:NCT07774247-E15:r1",
+   "kind": "decision",
+   "trial_id": "NCT07774247",
+   "criterion_id": "NCT07774247-E15",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_history_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "list_inference",
+    "pc:strict_list_inference"
+   ],
+   "note": "[inferable PASS from SYN-0002-EV147] No IV antibiotics on reconciled list; no recently stopped meds.",
+   "missing_fact": null,
+   "derived_from": "SYN-0002-EV147"
+  },
+  {
+   "id": "crit:NCT07774247-E16",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Use of systemic corticosteroids (>10 mg/day of prednisolone or equivalent) or other immunosuppressive medications within 28 days prior to the first dose of study drug (excluding short-term use for diagnostic, prophylactic, or similar purposes).",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07774247:NCT07774247-E16:r1",
+   "kind": "decision",
+   "trial_id": "NCT07774247",
+   "criterion_id": "NCT07774247-E16",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_history_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "list_inference",
+    "pc:strict_list_inference"
+   ],
+   "note": "[inferable PASS from SYN-0002-EV147] Reconciled list has no corticosteroids or immunosuppressants; none recently stopped.",
+   "missing_fact": null,
+   "derived_from": "SYN-0002-EV147"
+  },
+  {
+   "id": "crit:NCT07774247-E17",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Patients who received anticancer therapy (e.g., cytotoxic chemotherapy, targeted therapy, immunotherapy) within 28 days prior to the first dose of study drug.; Adjuvant therapy completed more than 6 months prior is permitted.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07774247:NCT07774247-E17:r1",
+   "kind": "decision",
+   "trial_id": "NCT07774247",
+   "criterion_id": "NCT07774247-E17",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_history_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "list_inference",
+    "pc:strict_list_inference"
+   ],
+   "note": "[inferable PASS from SYN-0002-EV147] Last TACE 205 days ago; no anticancer drugs on reconciled list.",
+   "missing_fact": null,
+   "derived_from": "SYN-0002-EV147"
+  },
+  {
+   "id": "crit:NCT07774247-E18",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Pleurodesis or pericardiodesis within 28 days prior to the first dose of study drug.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07774247:NCT07774247-E18:r1",
+   "kind": "decision",
+   "trial_id": "NCT07774247",
+   "criterion_id": "NCT07774247-E18",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_history_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "list_inference",
+    "pc:strict_list_inference"
+   ],
+   "note": "[inferable PASS from SYN-0002-EV143] Procedure history lists only appendectomy and 2 TACE; no pleurodesis.",
+   "missing_fact": null,
+   "derived_from": "SYN-0002-EV143"
+  },
+  {
+   "id": "crit:NCT07774247-E19",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Current or recent (within 2 weeks) use of aspirin (>325 mg/day) or antiplatelet agents such as clopidogrel, dipyridamole, ticlopidine, or cilostazol for therapeutic purposes: prophylactic anticoagulation is permitted if INR <1.5 × ULN and aPTT is within normal limits.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07774247:NCT07774247-E19:r1",
+   "kind": "decision",
+   "trial_id": "NCT07774247",
+   "criterion_id": "NCT07774247-E19",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Explicitly no antiplatelets, anticoagulants or NSAIDs.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0002-EV153",
+   "kind": "evidence",
+   "concept": "medication",
+   "term": "antiplatelets",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-15",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:medication:antiplatelets",
+   "kind": "concept",
+   "concept": "medication",
+   "term": "antiplatelets"
+  },
+  {
+   "id": "ev:SYN-0002-EV152",
+   "kind": "evidence",
+   "concept": "medication",
+   "term": "anticoagulants",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-15",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:medication:anticoagulants",
+   "kind": "concept",
+   "concept": "medication",
+   "term": "anticoagulants"
+  },
+  {
+   "id": "crit:NCT07774247-E20",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Major surgery under general anesthesia within 28 days prior to the first dose of study drug.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07774247:NCT07774247-E20:r1",
+   "kind": "decision",
+   "trial_id": "NCT07774247",
+   "criterion_id": "NCT07774247-E20",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Surgical history lists only appendectomy 1982 and TACEs; no explicit denial of recent surgery, so recent surgery is not ruled out.",
+   "missing_fact": "Whether any major surgery under general anesthesia occurred within 28 days of first dose",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07774247-E21",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Surgery under local anesthesia within 14 days prior to the first dose of study drug.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07774247:NCT07774247-E21:r1",
+   "kind": "decision",
+   "trial_id": "NCT07774247",
+   "criterion_id": "NCT07774247-E21",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No mention of recent local-anesthesia surgery; the record does not explicitly deny it.",
+   "missing_fact": "Whether any surgery under local anesthesia occurred within 14 days of first dose",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07774247-E22",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Palliative radiotherapy within 28 days prior to the first dose of study drug, or radiotherapy to bone metastases within 14 days prior to the first dose.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07774247:NCT07774247-E22:r1",
+   "kind": "decision",
+   "trial_id": "NCT07774247",
+   "criterion_id": "NCT07774247-E22",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No radiotherapy documented anywhere; no explicit denial. No bone metastases or bone pain.",
+   "missing_fact": "Whether the patient had palliative radiotherapy within 28 days (or bone radiotherapy within 14 days)",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07774247-E23",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Positive test for any of the following: HIV-1 antibody, HIV-2 antibody.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07774247:NCT07774247-E23:r1",
+   "kind": "decision",
+   "trial_id": "NCT07774247",
+   "criterion_id": "NCT07774247-E23",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "HIV-1/2 Ag/Ab non-reactive on 2026-09-14 (-17d); the criterion concerns the test itself, so the result settles it.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0002-EV079",
+   "kind": "evidence",
+   "concept": "hiv",
+   "term": "HIV-1/2 Ag/Ab",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-14",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:hiv:hiv-1/2 ag/ab",
+   "kind": "concept",
+   "concept": "hiv",
+   "term": "HIV-1/2 Ag/Ab"
+  },
+  {
+   "id": "src:SYN-0002-D08:1305-1331",
+   "kind": "source",
+   "doc_id": "SYN-0002-D08",
+   "doc_type": "lab_result",
+   "span": [
+    1305,
+    1331
+   ],
+   "text": "HIV-1/2 Ag/Ab non-reactive"
+  },
+  {
+   "id": "crit:NCT07774247-E24",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Pregnant or breastfeeding patients, or those with a possibility of pregnancy or plans to become pregnant.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07774247:NCT07774247-E24:r1",
+   "kind": "decision",
+   "trial_id": "NCT07774247",
+   "criterion_id": "NCT07774247-E24",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "impossible",
+    "sex_rule"
+   ],
+   "note": "applies only to women; patient is male",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07774247-E25",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Patients who received unapproved or investigational agents (e.g., investigational drugs, unapproved drug combinations, or unapproved formulations) within 28 days prior to enrollment.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07774247:NCT07774247-E25:r1",
+   "kind": "decision",
+   "trial_id": "NCT07774247",
+   "criterion_id": "NCT07774247-E25",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_history_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Reconciled list shows entecavir and carvedilol only; investigational options are only discussed (planned). Not an explicit denial, and no one-off investigational use is documented.",
+   "missing_fact": "Whether any investigational/unapproved agent was received within 28 days",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07774247-E26",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Patients deemed unable to provide informed consent due to comorbid conditions such as dementia.",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07774247:NCT07774247-E26:r1",
+   "kind": "decision",
+   "trial_id": "NCT07774247",
+   "criterion_id": "NCT07774247-E26",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "admin"
+   ],
+   "note": "consent/compliance item: not decidable from the record",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07774247-E27",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Patients unable or unwilling to sign the informed consent form.",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07774247:NCT07774247-E27:r1",
+   "kind": "decision",
+   "trial_id": "NCT07774247",
+   "criterion_id": "NCT07774247-E27",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "admin"
+   ],
+   "note": "consent/compliance item: not decidable from the record",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07774247-E28",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Known pre-existing central nervous system demyelinating disorders or seizure disorders.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07774247:NCT07774247-E28:r1",
+   "kind": "decision",
+   "trial_id": "NCT07774247",
+   "criterion_id": "NCT07774247-E28",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation"
+   ],
+   "note": "'No other ... neurologic history' covers chronic CNS demyelinating and seizure disorders; no neurologic diagnosis recorded.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07774247-E29",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Known active diverticulitis, chronic ulcerative lower gastrointestinal disease (e.g., Crohn's disease, ulcerative colitis), or other symptomatic lower gastrointestinal conditions that may predispose patients to gastrointestinal perforation.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07774247:NCT07774247-E29:r1",
+   "kind": "decision",
+   "trial_id": "NCT07774247",
+   "criterion_id": "NCT07774247-E29",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_record_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No lower GI disease is mentioned. GI review of systems is negative, but there is no blanket GI negation, so absence is not established.",
+   "missing_fact": "Presence of diverticulitis, IBD, or other symptomatic lower GI condition",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07774247-E30",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Current active infection or history of recurrent infections, including but not limited to tuberculosis, atypical mycobacterial infection, herpes zoster, or other bacterial, viral, fungal, or mycobacterial infections (excluding fungal nail bed infections).",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07774247:NCT07774247-E30:r1",
+   "kind": "decision",
+   "trial_id": "NCT07774247",
+   "criterion_id": "NCT07774247-E30",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Afebrile and well-appearing, but normal findings do not rule out infection history. Chronic HBV is controlled and noted, but no explicit infection denial.",
+   "missing_fact": "History of recurrent infections, TB, herpes zoster, or other current active infection",
+   "derived_from": null
+  },
+  {
+   "id": "label:NCT07774247",
+   "kind": "trial_decision",
+   "label": "potential",
+   "why": [
+    "UNKNOWN/EXPIRED NCT07774247-I03",
+    "UNKNOWN/EXPIRED NCT07774247-I04",
+    "UNKNOWN/MISSING NCT07774247-I07",
+    "UNKNOWN/MISSING NCT07774247-I08",
+    "UNKNOWN/EXPIRED NCT07774247-I10",
+    "UNKNOWN/MISSING NCT07774247-I12",
+    "UNKNOWN/MISSING NCT07774247-I13",
+    "UNKNOWN/MISSING NCT07774247-I14"
+   ],
+   "by": "agent3"
+  }
+ ],
+ "edges": [
+  [
+   "trial:NCT07436988",
+   "has_criterion",
+   "crit:NCT07436988-I01"
+  ],
+  [
+   "crit:NCT07436988-I01",
+   "decided_as",
+   "dec:NCT07436988:NCT07436988-I01:r1"
+  ],
+  [
+   "crit:NCT07436988-I01",
+   "requires",
+   "concept:birth_date"
+  ],
+  [
+   "concept:birth_date",
+   "observed_as",
+   "ev:SYN-0002-EV002"
+  ],
+  [
+   "ev:SYN-0002-EV002",
+   "derived_from",
+   "src:SYN-0002-D01:6-21"
+  ],
+  [
+   "ev:SYN-0002-EV002",
+   "supports",
+   "dec:NCT07436988:NCT07436988-I01:r1"
+  ],
+  [
+   "calc:NCT07436988:NCT07436988-I01",
+   "computes",
+   "dec:NCT07436988:NCT07436988-I01:r1"
+  ],
+  [
+   "trial:NCT07436988",
+   "has_criterion",
+   "crit:NCT07436988-I02"
+  ],
+  [
+   "crit:NCT07436988-I02",
+   "decided_as",
+   "dec:NCT07436988:NCT07436988-I02:r1"
+  ],
+  [
+   "crit:NCT07436988-I02",
+   "requires",
+   "concept:symptom_finding:3 lesions in right lobe (4.1, 2.6, 2.0 cm) with arterial enhancement and washout"
+  ],
+  [
+   "concept:symptom_finding:3 lesions in right lobe (4.1, 2.6, 2.0 cm) with arterial enhancement and washout",
+   "observed_as",
+   "ev:SYN-0002-EV009"
+  ],
+  [
+   "ev:SYN-0002-EV009",
+   "derived_from",
+   "src:SYN-0002-D02:125-217"
+  ],
+  [
+   "ev:SYN-0002-EV009",
+   "insufficient_for",
+   "dec:NCT07436988:NCT07436988-I02:r1"
+  ],
+  [
+   "crit:NCT07436988-I02",
+   "requires",
+   "concept:diagnosis:hepatocellular carcinoma"
+  ],
+  [
+   "concept:diagnosis:hepatocellular carcinoma",
+   "observed_as",
+   "ev:SYN-0002-EV127"
+  ],
+  [
+   "ev:SYN-0002-EV127",
+   "derived_from",
+   "src:SYN-0002-D09:1055-1101"
+  ],
+  [
+   "ev:SYN-0002-EV127",
+   "insufficient_for",
+   "dec:NCT07436988:NCT07436988-I02:r1"
+  ],
+  [
+   "crit:NCT07436988-I02",
+   "requires",
+   "concept:diagnosis:persistent viable tumor segment 7"
+  ],
+  [
+   "concept:diagnosis:persistent viable tumor segment 7",
+   "observed_as",
+   "ev:SYN-0002-EV018"
+  ],
+  [
+   "ev:SYN-0002-EV018",
+   "derived_from",
+   "src:SYN-0002-D05:0-111"
+  ],
+  [
+   "ev:SYN-0002-EV018",
+   "insufficient_for",
+   "dec:NCT07436988:NCT07436988-I02:r1"
+  ],
+  [
+   "trial:NCT07436988",
+   "has_criterion",
+   "crit:NCT07436988-I03"
+  ],
+  [
+   "crit:NCT07436988-I03",
+   "decided_as",
+   "dec:NCT07436988:NCT07436988-I03:r1"
+  ],
+  [
+   "crit:NCT07436988-I03",
+   "requires",
+   "concept:cancer_stage"
+  ],
+  [
+   "concept:cancer_stage",
+   "observed_as",
+   "ev:SYN-0002-EV216"
+  ],
+  [
+   "ev:SYN-0002-EV216",
+   "derived_from",
+   "src:SYN-0002-D09:3157-3263"
+  ],
+  [
+   "ev:SYN-0002-EV216",
+   "supports",
+   "dec:NCT07436988:NCT07436988-I03:r1"
+  ],
+  [
+   "concept:cancer_stage",
+   "observed_as",
+   "ev:SYN-0002-EV241"
+  ],
+  [
+   "ev:SYN-0002-EV241",
+   "derived_from",
+   "src:SYN-0002-D09:3642-3728"
+  ],
+  [
+   "ev:SYN-0002-EV241",
+   "supports",
+   "dec:NCT07436988:NCT07436988-I03:r1"
+  ],
+  [
+   "crit:NCT07436988-I03",
+   "requires",
+   "concept:ecog"
+  ],
+  [
+   "concept:ecog",
+   "observed_as",
+   "ev:SYN-0002-EV215"
+  ],
+  [
+   "ev:SYN-0002-EV215",
+   "derived_from",
+   "src:SYN-0002-D09:3129-3154"
+  ],
+  [
+   "ev:SYN-0002-EV215",
+   "supports",
+   "dec:NCT07436988:NCT07436988-I03:r1"
+  ],
+  [
+   "trial:NCT07436988",
+   "has_criterion",
+   "crit:NCT07436988-I04"
+  ],
+  [
+   "crit:NCT07436988-I04",
+   "decided_as",
+   "dec:NCT07436988:NCT07436988-I04:r1"
+  ],
+  [
+   "crit:NCT07436988-I04",
+   "requires",
+   "concept:measurable_disease:viable tumor 28 mm"
+  ],
+  [
+   "concept:measurable_disease:viable tumor 28 mm",
+   "observed_as",
+   "ev:SYN-0002-EV321"
+  ],
+  [
+   "ev:SYN-0002-EV321",
+   "derived_from",
+   "src:SYN-0002-D05:0-111"
+  ],
+  [
+   "ev:SYN-0002-EV321",
+   "supports",
+   "dec:NCT07436988:NCT07436988-I04:r1"
+  ],
+  [
+   "crit:NCT07436988-I04",
+   "requires",
+   "concept:symptom_finding:persistent viable tumor in segment 7 2.8 cm"
+  ],
+  [
+   "concept:symptom_finding:persistent viable tumor in segment 7 2.8 cm",
+   "observed_as",
+   "ev:SYN-0002-EV111"
+  ],
+  [
+   "ev:SYN-0002-EV111",
+   "derived_from",
+   "src:SYN-0002-D09:559-710"
+  ],
+  [
+   "ev:SYN-0002-EV111",
+   "supports",
+   "dec:NCT07436988:NCT07436988-I04:r1"
+  ],
+  [
+   "crit:NCT07436988-I04",
+   "requires",
+   "concept:symptom_finding:new 1.5 cm arterial-enhancing lesion in segment 5"
+  ],
+  [
+   "concept:symptom_finding:new 1.5 cm arterial-enhancing lesion in segment 5",
+   "observed_as",
+   "ev:SYN-0002-EV112"
+  ],
+  [
+   "ev:SYN-0002-EV112",
+   "derived_from",
+   "src:SYN-0002-D09:559-710"
+  ],
+  [
+   "ev:SYN-0002-EV112",
+   "supports",
+   "dec:NCT07436988:NCT07436988-I04:r1"
+  ],
+  [
+   "trial:NCT07436988",
+   "has_criterion",
+   "crit:NCT07436988-I05"
+  ],
+  [
+   "crit:NCT07436988-I05",
+   "decided_as",
+   "dec:NCT07436988:NCT07436988-I05:r1"
+  ],
+  [
+   "crit:NCT07436988-I05",
+   "requires",
+   "concept:symptom_finding:vascular invasion"
+  ],
+  [
+   "concept:symptom_finding:vascular invasion",
+   "observed_as",
+   "ev:SYN-0002-EV020"
+  ],
+  [
+   "ev:SYN-0002-EV020",
+   "derived_from",
+   "src:SYN-0002-D05:112-133"
+  ],
+  [
+   "ev:SYN-0002-EV020",
+   "supports",
+   "dec:NCT07436988:NCT07436988-I05:r1"
+  ],
+  [
+   "crit:NCT07436988-I05",
+   "requires",
+   "concept:symptom_finding:portal vein invasion"
+  ],
+  [
+   "concept:symptom_finding:portal vein invasion",
+   "observed_as",
+   "ev:SYN-0002-EV107"
+  ],
+  [
+   "ev:SYN-0002-EV107",
+   "derived_from",
+   "src:SYN-0002-D09:164-432"
+  ],
+  [
+   "ev:SYN-0002-EV107",
+   "supports",
+   "dec:NCT07436988:NCT07436988-I05:r1"
+  ],
+  [
+   "trial:NCT07436988",
+   "has_criterion",
+   "crit:NCT07436988-I06"
+  ],
+  [
+   "crit:NCT07436988-I06",
+   "decided_as",
+   "dec:NCT07436988:NCT07436988-I06:r1"
+  ],
+  [
+   "trial:NCT07436988",
+   "has_criterion",
+   "crit:NCT07436988-I07"
+  ],
+  [
+   "crit:NCT07436988-I07",
+   "decided_as",
+   "dec:NCT07436988:NCT07436988-I07:r1"
+  ],
+  [
+   "trial:NCT07436988",
+   "has_criterion",
+   "crit:NCT07436988-I08"
+  ],
+  [
+   "crit:NCT07436988-I08",
+   "decided_as",
+   "dec:NCT07436988:NCT07436988-I08:r1"
+  ],
+  [
+   "trial:NCT07436988",
+   "has_criterion",
+   "crit:NCT07436988-E01"
+  ],
+  [
+   "crit:NCT07436988-E01",
+   "decided_as",
+   "dec:NCT07436988:NCT07436988-E01:r1"
+  ],
+  [
+   "crit:NCT07436988-E01",
+   "requires",
+   "concept:sex"
+  ],
+  [
+   "concept:sex",
+   "observed_as",
+   "ev:SYN-0002-EV001"
+  ],
+  [
+   "ev:SYN-0002-EV001",
+   "derived_from",
+   "src:SYN-0002-D01:0-5"
+  ],
+  [
+   "ev:SYN-0002-EV001",
+   "supports",
+   "dec:NCT07436988:NCT07436988-E01:r1"
+  ],
+  [
+   "trial:NCT07436988",
+   "has_criterion",
+   "crit:NCT07436988-E02"
+  ],
+  [
+   "crit:NCT07436988-E02",
+   "decided_as",
+   "dec:NCT07436988:NCT07436988-E02:r1"
+  ],
+  [
+   "crit:NCT07436988-E02",
+   "requires",
+   "concept:child_pugh"
+  ],
+  [
+   "concept:child_pugh",
+   "observed_as",
+   "ev:SYN-0002-EV296"
+  ],
+  [
+   "ev:SYN-0002-EV296",
+   "derived_from",
+   "src:SYN-0002-D09:164-432"
+  ],
+  [
+   "ev:SYN-0002-EV296",
+   "supports",
+   "dec:NCT07436988:NCT07436988-E02:r1"
+  ],
+  [
+   "calc:NCT07436988:NCT07436988-E02",
+   "computes",
+   "dec:NCT07436988:NCT07436988-E02:r1"
+  ],
+  [
+   "trial:NCT07436988",
+   "has_criterion",
+   "crit:NCT07436988-E03"
+  ],
+  [
+   "crit:NCT07436988-E03",
+   "decided_as",
+   "dec:NCT07436988:NCT07436988-E03:r1"
+  ],
+  [
+   "crit:NCT07436988-E03",
+   "requires",
+   "concept:symptom_finding:extrahepatic spread"
+  ],
+  [
+   "concept:symptom_finding:extrahepatic spread",
+   "observed_as",
+   "ev:SYN-0002-EV012"
+  ],
+  [
+   "ev:SYN-0002-EV012",
+   "derived_from",
+   "src:SYN-0002-D02:230-278"
+  ],
+  [
+   "ev:SYN-0002-EV012",
+   "supports",
+   "dec:NCT07436988:NCT07436988-E03:r1"
+  ],
+  [
+   "crit:NCT07436988-E03",
+   "requires",
+   "concept:diagnosis:extrahepatic disease"
+  ],
+  [
+   "concept:diagnosis:extrahepatic disease",
+   "observed_as",
+   "ev:SYN-0002-EV219"
+  ],
+  [
+   "ev:SYN-0002-EV219",
+   "derived_from",
+   "src:SYN-0002-D09:3157-3263"
+  ],
+  [
+   "ev:SYN-0002-EV219",
+   "supports",
+   "dec:NCT07436988:NCT07436988-E03:r1"
+  ],
+  [
+   "trial:NCT07436988",
+   "has_criterion",
+   "crit:NCT07436988-E04"
+  ],
+  [
+   "crit:NCT07436988-E04",
+   "decided_as",
+   "dec:NCT07436988:NCT07436988-E04:r1"
+  ],
+  [
+   "crit:NCT07436988-E04",
+   "requires",
+   "concept:diagnosis:cardiac history"
+  ],
+  [
+   "concept:diagnosis:cardiac history",
+   "observed_as",
+   "ev:SYN-0002-EV131"
+  ],
+  [
+   "ev:SYN-0002-EV131",
+   "derived_from",
+   "src:SYN-0002-D09:1241-1321"
+  ],
+  [
+   "ev:SYN-0002-EV131",
+   "supports",
+   "dec:NCT07436988:NCT07436988-E04:r1"
+  ],
+  [
+   "crit:NCT07436988-E04",
+   "requires",
+   "concept:diagnosis:pulmonary history"
+  ],
+  [
+   "concept:diagnosis:pulmonary history",
+   "observed_as",
+   "ev:SYN-0002-EV132"
+  ],
+  [
+   "ev:SYN-0002-EV132",
+   "derived_from",
+   "src:SYN-0002-D09:1241-1321"
+  ],
+  [
+   "ev:SYN-0002-EV132",
+   "supports",
+   "dec:NCT07436988:NCT07436988-E04:r1"
+  ],
+  [
+   "crit:NCT07436988-E04",
+   "requires",
+   "concept:spo2"
+  ],
+  [
+   "concept:spo2",
+   "observed_as",
+   "ev:SYN-0002-EV194"
+  ],
+  [
+   "ev:SYN-0002-EV194",
+   "derived_from",
+   "src:SYN-0002-D09:2610-2631"
+  ],
+  [
+   "ev:SYN-0002-EV194",
+   "supports",
+   "dec:NCT07436988:NCT07436988-E04:r1"
+  ],
+  [
+   "trial:NCT07436988",
+   "has_criterion",
+   "crit:NCT07436988-E05"
+  ],
+  [
+   "crit:NCT07436988-E05",
+   "decided_as",
+   "dec:NCT07436988:NCT07436988-E05:r1"
+  ],
+  [
+   "crit:NCT07436988-E05",
+   "requires",
+   "concept:diagnosis:cardiac history"
+  ],
+  [
+   "ev:SYN-0002-EV131",
+   "supports",
+   "dec:NCT07436988:NCT07436988-E05:r1"
+  ],
+  [
+   "trial:NCT07436988",
+   "has_criterion",
+   "crit:NCT07436988-E06"
+  ],
+  [
+   "crit:NCT07436988-E06",
+   "decided_as",
+   "dec:NCT07436988:NCT07436988-E06:r1"
+  ],
+  [
+   "crit:NCT07436988-E06",
+   "requires",
+   "concept:diagnosis:cardiac history"
+  ],
+  [
+   "ev:SYN-0002-EV131",
+   "supports",
+   "dec:NCT07436988:NCT07436988-E06:r1"
+  ],
+  [
+   "crit:NCT07436988-E06",
+   "requires",
+   "concept:symptom_finding:palpitations"
+  ],
+  [
+   "concept:symptom_finding:palpitations",
+   "observed_as",
+   "ev:SYN-0002-EV167"
+  ],
+  [
+   "ev:SYN-0002-EV167",
+   "derived_from",
+   "src:SYN-0002-D09:2186-2225"
+  ],
+  [
+   "ev:SYN-0002-EV167",
+   "supports",
+   "dec:NCT07436988:NCT07436988-E06:r1"
+  ],
+  [
+   "crit:NCT07436988-E06",
+   "requires",
+   "concept:symptom_finding:regular rate and rhythm"
+  ],
+  [
+   "concept:symptom_finding:regular rate and rhythm",
+   "observed_as",
+   "ev:SYN-0002-EV200"
+  ],
+  [
+   "ev:SYN-0002-EV200",
+   "derived_from",
+   "src:SYN-0002-D09:2752-2791"
+  ],
+  [
+   "ev:SYN-0002-EV200",
+   "supports",
+   "dec:NCT07436988:NCT07436988-E06:r1"
+  ],
+  [
+   "trial:NCT07436988",
+   "has_criterion",
+   "crit:NCT07436988-E07"
+  ],
+  [
+   "crit:NCT07436988-E07",
+   "decided_as",
+   "dec:NCT07436988:NCT07436988-E07:r1"
+  ],
+  [
+   "trial:NCT07436988",
+   "has_criterion",
+   "crit:NCT07436988-E08"
+  ],
+  [
+   "crit:NCT07436988-E08",
+   "decided_as",
+   "dec:NCT07436988:NCT07436988-E08:r1"
+  ],
+  [
+   "crit:NCT07436988-E08",
+   "requires",
+   "concept:diagnosis:prior malignancy"
+  ],
+  [
+   "concept:diagnosis:prior malignancy",
+   "observed_as",
+   "ev:SYN-0002-EV138"
+  ],
+  [
+   "ev:SYN-0002-EV138",
+   "derived_from",
+   "src:SYN-0002-D09:1335-1355"
+  ],
+  [
+   "ev:SYN-0002-EV138",
+   "supports",
+   "dec:NCT07436988:NCT07436988-E08:r1"
+  ],
+  [
+   "trial:NCT07436988",
+   "has_criterion",
+   "crit:NCT07436988-E09"
+  ],
+  [
+   "crit:NCT07436988-E09",
+   "decided_as",
+   "dec:NCT07436988:NCT07436988-E09:r1"
+  ],
+  [
+   "trial:NCT07436988",
+   "has_criterion",
+   "crit:NCT07436988-E10"
+  ],
+  [
+   "crit:NCT07436988-E10",
+   "decided_as",
+   "dec:NCT07436988:NCT07436988-E10:r1"
+  ],
+  [
+   "trial:NCT07436988",
+   "has_criterion",
+   "crit:NCT07436988-E11"
+  ],
+  [
+   "crit:NCT07436988-E11",
+   "decided_as",
+   "dec:NCT07436988:NCT07436988-E11:r1"
+  ],
+  [
+   "trial:NCT07436988",
+   "has_criterion",
+   "crit:NCT07436988-E12"
+  ],
+  [
+   "crit:NCT07436988-E12",
+   "decided_as",
+   "dec:NCT07436988:NCT07436988-E12:r1"
+  ],
+  [
+   "trial:NCT07436988",
+   "has_criterion",
+   "crit:NCT07436988-E13"
+  ],
+  [
+   "crit:NCT07436988-E13",
+   "decided_as",
+   "dec:NCT07436988:NCT07436988-E13:r1"
+  ],
+  [
+   "trial:NCT07436988",
+   "has_criterion",
+   "crit:NCT07436988-E14"
+  ],
+  [
+   "crit:NCT07436988-E14",
+   "decided_as",
+   "dec:NCT07436988:NCT07436988-E14:r1"
+  ],
+  [
+   "trial:NCT07436988",
+   "labelled",
+   "label:NCT07436988"
+  ],
+  [
+   "trial:NCT06582017",
+   "has_criterion",
+   "crit:NCT06582017-I01"
+  ],
+  [
+   "crit:NCT06582017-I01",
+   "decided_as",
+   "dec:NCT06582017:NCT06582017-I01:r1"
+  ],
+  [
+   "crit:NCT06582017-I01",
+   "requires",
+   "concept:diagnosis:multifocal hepatocellular carcinoma"
+  ],
+  [
+   "concept:diagnosis:multifocal hepatocellular carcinoma",
+   "observed_as",
+   "ev:SYN-0002-EV242"
+  ],
+  [
+   "ev:SYN-0002-EV242",
+   "derived_from",
+   "src:SYN-0002-D09:3642-3728"
+  ],
+  [
+   "ev:SYN-0002-EV242",
+   "insufficient_for",
+   "dec:NCT06582017:NCT06582017-I01:r1"
+  ],
+  [
+   "crit:NCT06582017-I01",
+   "requires",
+   "concept:cancer_stage"
+  ],
+  [
+   "ev:SYN-0002-EV216",
+   "insufficient_for",
+   "dec:NCT06582017:NCT06582017-I01:r1"
+  ],
+  [
+   "crit:NCT06582017-I01",
+   "requires",
+   "concept:treatment_plan:further tace"
+  ],
+  [
+   "concept:treatment_plan:further tace",
+   "observed_as",
+   "ev:SYN-0002-EV247"
+  ],
+  [
+   "ev:SYN-0002-EV247",
+   "derived_from",
+   "src:SYN-0002-D09:3780-3811"
+  ],
+  [
+   "ev:SYN-0002-EV247",
+   "insufficient_for",
+   "dec:NCT06582017:NCT06582017-I01:r1"
+  ],
+  [
+   "trial:NCT06582017",
+   "has_criterion",
+   "crit:NCT06582017-I03"
+  ],
+  [
+   "crit:NCT06582017-I03",
+   "decided_as",
+   "dec:NCT06582017:NCT06582017-I03:r1"
+  ],
+  [
+   "crit:NCT06582017-I03",
+   "requires",
+   "concept:ecog"
+  ],
+  [
+   "concept:ecog",
+   "observed_as",
+   "ev:SYN-0002-EV034"
+  ],
+  [
+   "ev:SYN-0002-EV034",
+   "derived_from",
+   "src:SYN-0002-D07:61-68"
+  ],
+  [
+   "ev:SYN-0002-EV034",
+   "supports",
+   "dec:NCT06582017:NCT06582017-I03:r1"
+  ],
+  [
+   "calc:NCT06582017:NCT06582017-I03",
+   "computes",
+   "dec:NCT06582017:NCT06582017-I03:r1"
+  ],
+  [
+   "trial:NCT06582017",
+   "has_criterion",
+   "crit:NCT06582017-I04"
+  ],
+  [
+   "crit:NCT06582017-I04",
+   "decided_as",
+   "dec:NCT06582017:NCT06582017-I04:r1"
+  ],
+  [
+   "crit:NCT06582017-I04",
+   "requires",
+   "concept:measurable_disease:viable tumor 28 mm"
+  ],
+  [
+   "ev:SYN-0002-EV321",
+   "supports",
+   "dec:NCT06582017:NCT06582017-I04:r1"
+  ],
+  [
+   "crit:NCT06582017-I04",
+   "requires",
+   "concept:diagnosis:persistent viable tumor segment 7"
+  ],
+  [
+   "ev:SYN-0002-EV018",
+   "supports",
+   "dec:NCT06582017:NCT06582017-I04:r1"
+  ],
+  [
+   "trial:NCT06582017",
+   "has_criterion",
+   "crit:NCT06582017-I05"
+  ],
+  [
+   "crit:NCT06582017-I05",
+   "decided_as",
+   "dec:NCT06582017:NCT06582017-I05:r1"
+  ],
+  [
+   "crit:NCT06582017-I05",
+   "requires",
+   "concept:platelet_count"
+  ],
+  [
+   "concept:platelet_count",
+   "observed_as",
+   "ev:SYN-0002-EV045"
+  ],
+  [
+   "ev:SYN-0002-EV045",
+   "derived_from",
+   "src:SYN-0002-D08:235-267"
+  ],
+  [
+   "ev:SYN-0002-EV045",
+   "insufficient_for",
+   "dec:NCT06582017:NCT06582017-I05:r1"
+  ],
+  [
+   "crit:NCT06582017-I05",
+   "requires",
+   "concept:bilirubin_total"
+  ],
+  [
+   "concept:bilirubin_total",
+   "observed_as",
+   "ev:SYN-0002-EV064"
+  ],
+  [
+   "ev:SYN-0002-EV064",
+   "derived_from",
+   "src:SYN-0002-D08:895-932"
+  ],
+  [
+   "ev:SYN-0002-EV064",
+   "insufficient_for",
+   "dec:NCT06582017:NCT06582017-I05:r1"
+  ],
+  [
+   "crit:NCT06582017-I05",
+   "requires",
+   "concept:ast"
+  ],
+  [
+   "concept:ast",
+   "observed_as",
+   "ev:SYN-0002-EV066"
+  ],
+  [
+   "ev:SYN-0002-EV066",
+   "derived_from",
+   "src:SYN-0002-D08:972-992"
+  ],
+  [
+   "ev:SYN-0002-EV066",
+   "insufficient_for",
+   "dec:NCT06582017:NCT06582017-I05:r1"
+  ],
+  [
+   "crit:NCT06582017-I05",
+   "requires",
+   "concept:creatinine"
+  ],
+  [
+   "concept:creatinine",
+   "observed_as",
+   "ev:SYN-0002-EV056"
+  ],
+  [
+   "ev:SYN-0002-EV056",
+   "derived_from",
+   "src:SYN-0002-D08:636-666"
+  ],
+  [
+   "ev:SYN-0002-EV056",
+   "insufficient_for",
+   "dec:NCT06582017:NCT06582017-I05:r1"
+  ],
+  [
+   "crit:NCT06582017-I05",
+   "requires",
+   "concept:hemoglobin"
+  ],
+  [
+   "concept:hemoglobin",
+   "observed_as",
+   "ev:SYN-0002-EV040"
+  ],
+  [
+   "ev:SYN-0002-EV040",
+   "derived_from",
+   "src:SYN-0002-D08:106-140"
+  ],
+  [
+   "ev:SYN-0002-EV040",
+   "insufficient_for",
+   "dec:NCT06582017:NCT06582017-I05:r1"
+  ],
+  [
+   "trial:NCT06582017",
+   "has_criterion",
+   "crit:NCT06582017-I06"
+  ],
+  [
+   "crit:NCT06582017-I06",
+   "decided_as",
+   "dec:NCT06582017:NCT06582017-I06:r1"
+  ],
+  [
+   "trial:NCT06582017",
+   "has_criterion",
+   "crit:NCT06582017-I07"
+  ],
+  [
+   "crit:NCT06582017-I07",
+   "decided_as",
+   "dec:NCT06582017:NCT06582017-I07:r1"
+  ],
+  [
+   "crit:NCT06582017-I07",
+   "requires",
+   "concept:sex"
+  ],
+  [
+   "ev:SYN-0002-EV001",
+   "supports",
+   "dec:NCT06582017:NCT06582017-I07:r1"
+  ],
+  [
+   "trial:NCT06582017",
+   "has_criterion",
+   "crit:NCT06582017-I08"
+  ],
+  [
+   "crit:NCT06582017-I08",
+   "decided_as",
+   "dec:NCT06582017:NCT06582017-I08:r1"
+  ],
+  [
+   "trial:NCT06582017",
+   "has_criterion",
+   "crit:NCT06582017-E01"
+  ],
+  [
+   "crit:NCT06582017-E01",
+   "decided_as",
+   "dec:NCT06582017:NCT06582017-E01:r1"
+  ],
+  [
+   "trial:NCT06582017",
+   "has_criterion",
+   "crit:NCT06582017-E02"
+  ],
+  [
+   "crit:NCT06582017-E02",
+   "decided_as",
+   "dec:NCT06582017:NCT06582017-E02:r1"
+  ],
+  [
+   "trial:NCT06582017",
+   "has_criterion",
+   "crit:NCT06582017-E03"
+  ],
+  [
+   "crit:NCT06582017-E03",
+   "decided_as",
+   "dec:NCT06582017:NCT06582017-E03:r1"
+  ],
+  [
+   "trial:NCT06582017",
+   "has_criterion",
+   "crit:NCT06582017-E04"
+  ],
+  [
+   "crit:NCT06582017-E04",
+   "decided_as",
+   "dec:NCT06582017:NCT06582017-E04:r1"
+  ],
+  [
+   "trial:NCT06582017",
+   "has_criterion",
+   "crit:NCT06582017-E05"
+  ],
+  [
+   "crit:NCT06582017-E05",
+   "decided_as",
+   "dec:NCT06582017:NCT06582017-E05:r1"
+  ],
+  [
+   "crit:NCT06582017-E05",
+   "requires",
+   "concept:sex"
+  ],
+  [
+   "ev:SYN-0002-EV001",
+   "supports",
+   "dec:NCT06582017:NCT06582017-E05:r1"
+  ],
+  [
+   "trial:NCT06582017",
+   "has_criterion",
+   "crit:NCT06582017-E06"
+  ],
+  [
+   "crit:NCT06582017-E06",
+   "decided_as",
+   "dec:NCT06582017:NCT06582017-E06:r1"
+  ],
+  [
+   "trial:NCT06582017",
+   "has_criterion",
+   "crit:NCT06582017-E07"
+  ],
+  [
+   "crit:NCT06582017-E07",
+   "decided_as",
+   "dec:NCT06582017:NCT06582017-E07:r1"
+  ],
+  [
+   "trial:NCT06582017",
+   "has_criterion",
+   "crit:NCT06582017-E08"
+  ],
+  [
+   "crit:NCT06582017-E08",
+   "decided_as",
+   "dec:NCT06582017:NCT06582017-E08:r1"
+  ],
+  [
+   "trial:NCT06582017",
+   "has_criterion",
+   "crit:NCT06582017-E09"
+  ],
+  [
+   "crit:NCT06582017-E09",
+   "decided_as",
+   "dec:NCT06582017:NCT06582017-E09:r1"
+  ],
+  [
+   "trial:NCT06582017",
+   "has_criterion",
+   "crit:NCT06582017-E10"
+  ],
+  [
+   "crit:NCT06582017-E10",
+   "decided_as",
+   "dec:NCT06582017:NCT06582017-E10:r1"
+  ],
+  [
+   "trial:NCT06582017",
+   "has_criterion",
+   "crit:NCT06582017-E11"
+  ],
+  [
+   "crit:NCT06582017-E11",
+   "decided_as",
+   "dec:NCT06582017:NCT06582017-E11:r1"
+  ],
+  [
+   "crit:NCT06582017-E11",
+   "requires",
+   "concept:hepatitis_b:hbsag"
+  ],
+  [
+   "concept:hepatitis_b:hbsag",
+   "observed_as",
+   "ev:SYN-0002-EV074"
+  ],
+  [
+   "ev:SYN-0002-EV074",
+   "derived_from",
+   "src:SYN-0002-D08:1180-1211"
+  ],
+  [
+   "ev:SYN-0002-EV074",
+   "insufficient_for",
+   "dec:NCT06582017:NCT06582017-E11:r1"
+  ],
+  [
+   "crit:NCT06582017-E11",
+   "requires",
+   "concept:diagnosis:cirrhosis"
+  ],
+  [
+   "concept:diagnosis:cirrhosis",
+   "observed_as",
+   "ev:SYN-0002-EV101"
+  ],
+  [
+   "ev:SYN-0002-EV101",
+   "derived_from",
+   "src:SYN-0002-D09:164-432"
+  ],
+  [
+   "ev:SYN-0002-EV101",
+   "insufficient_for",
+   "dec:NCT06582017:NCT06582017-E11:r1"
+  ],
+  [
+   "crit:NCT06582017-E11",
+   "requires",
+   "concept:child_pugh"
+  ],
+  [
+   "ev:SYN-0002-EV296",
+   "insufficient_for",
+   "dec:NCT06582017:NCT06582017-E11:r1"
+  ],
+  [
+   "crit:NCT06582017-E11",
+   "requires",
+   "concept:hbv_dna"
+  ],
+  [
+   "concept:hbv_dna",
+   "observed_as",
+   "ev:SYN-0002-EV281"
+  ],
+  [
+   "ev:SYN-0002-EV281",
+   "derived_from",
+   "src:SYN-0002-D08:1250-1282"
+  ],
+  [
+   "ev:SYN-0002-EV281",
+   "insufficient_for",
+   "dec:NCT06582017:NCT06582017-E11:r1"
+  ],
+  [
+   "trial:NCT06582017",
+   "has_criterion",
+   "crit:NCT06582017-E12"
+  ],
+  [
+   "crit:NCT06582017-E12",
+   "decided_as",
+   "dec:NCT06582017:NCT06582017-E12:r1"
+  ],
+  [
+   "crit:NCT06582017-E12",
+   "requires",
+   "concept:symptom_finding:psychiatric symptoms"
+  ],
+  [
+   "concept:symptom_finding:psychiatric symptoms",
+   "observed_as",
+   "ev:SYN-0002-EV186"
+  ],
+  [
+   "ev:SYN-0002-EV186",
+   "derived_from",
+   "src:SYN-0002-D09:2496-2512"
+  ],
+  [
+   "ev:SYN-0002-EV186",
+   "supports",
+   "dec:NCT06582017:NCT06582017-E12:r1"
+  ],
+  [
+   "crit:NCT06582017-E12",
+   "requires",
+   "concept:diagnosis:neurologic history"
+  ],
+  [
+   "concept:diagnosis:neurologic history",
+   "observed_as",
+   "ev:SYN-0002-EV136"
+  ],
+  [
+   "ev:SYN-0002-EV136",
+   "derived_from",
+   "src:SYN-0002-D09:1241-1321"
+  ],
+  [
+   "ev:SYN-0002-EV136",
+   "supports",
+   "dec:NCT06582017:NCT06582017-E12:r1"
+  ],
+  [
+   "trial:NCT06582017",
+   "has_criterion",
+   "crit:NCT06582017-E13"
+  ],
+  [
+   "crit:NCT06582017-E13",
+   "decided_as",
+   "dec:NCT06582017:NCT06582017-E13:r1"
+  ],
+  [
+   "crit:NCT06582017-E13",
+   "requires",
+   "concept:diagnosis:autoimmune history"
+  ],
+  [
+   "concept:diagnosis:autoimmune history",
+   "observed_as",
+   "ev:SYN-0002-EV134"
+  ],
+  [
+   "ev:SYN-0002-EV134",
+   "derived_from",
+   "src:SYN-0002-D09:1241-1321"
+  ],
+  [
+   "ev:SYN-0002-EV134",
+   "supports",
+   "dec:NCT06582017:NCT06582017-E13:r1"
+  ],
+  [
+   "trial:NCT06582017",
+   "has_criterion",
+   "crit:NCT06582017-E14"
+  ],
+  [
+   "crit:NCT06582017-E14",
+   "decided_as",
+   "dec:NCT06582017:NCT06582017-E14:r1"
+  ],
+  [
+   "crit:NCT06582017-E14",
+   "requires",
+   "concept:diagnosis:endocrine history"
+  ],
+  [
+   "concept:diagnosis:endocrine history",
+   "observed_as",
+   "ev:SYN-0002-EV135"
+  ],
+  [
+   "ev:SYN-0002-EV135",
+   "derived_from",
+   "src:SYN-0002-D09:1241-1321"
+  ],
+  [
+   "ev:SYN-0002-EV135",
+   "supports",
+   "dec:NCT06582017:NCT06582017-E14:r1"
+  ],
+  [
+   "crit:NCT06582017-E14",
+   "requires",
+   "concept:diagnosis:diabetes"
+  ],
+  [
+   "concept:diagnosis:diabetes",
+   "observed_as",
+   "ev:SYN-0002-EV137"
+  ],
+  [
+   "ev:SYN-0002-EV137",
+   "derived_from",
+   "src:SYN-0002-D09:1322-1334"
+  ],
+  [
+   "ev:SYN-0002-EV137",
+   "supports",
+   "dec:NCT06582017:NCT06582017-E14:r1"
+  ],
+  [
+   "crit:NCT06582017-E14",
+   "requires",
+   "concept:tsh"
+  ],
+  [
+   "concept:tsh",
+   "observed_as",
+   "ev:SYN-0002-EV085"
+  ],
+  [
+   "ev:SYN-0002-EV085",
+   "derived_from",
+   "src:SYN-0002-D08:1467-1490"
+  ],
+  [
+   "ev:SYN-0002-EV085",
+   "supports",
+   "dec:NCT06582017:NCT06582017-E14:r1"
+  ],
+  [
+   "crit:NCT06582017-E14",
+   "requires",
+   "concept:hba1c"
+  ],
+  [
+   "concept:hba1c",
+   "observed_as",
+   "ev:SYN-0002-EV080"
+  ],
+  [
+   "ev:SYN-0002-EV080",
+   "derived_from",
+   "src:SYN-0002-D08:1339-1357"
+  ],
+  [
+   "ev:SYN-0002-EV080",
+   "supports",
+   "dec:NCT06582017:NCT06582017-E14:r1"
+  ],
+  [
+   "trial:NCT06582017",
+   "has_criterion",
+   "crit:NCT06582017-I02"
+  ],
+  [
+   "crit:NCT06582017-I02",
+   "decided_as",
+   "dec:NCT06582017:NCT06582017-I02:r1"
+  ],
+  [
+   "crit:NCT06582017-I02",
+   "requires",
+   "concept:diagnosis:multifocal hepatocellular carcinoma"
+  ],
+  [
+   "ev:SYN-0002-EV242",
+   "supports",
+   "dec:NCT06582017:NCT06582017-I02:r1"
+  ],
+  [
+   "trial:NCT06582017",
+   "labelled",
+   "label:NCT06582017"
+  ],
+  [
+   "trial:NCT07774247",
+   "has_criterion",
+   "crit:NCT07774247-I01"
+  ],
+  [
+   "crit:NCT07774247-I01",
+   "decided_as",
+   "dec:NCT07774247:NCT07774247-I01:r1"
+  ],
+  [
+   "crit:NCT07774247-I01",
+   "requires",
+   "concept:diagnosis:multifocal hepatocellular carcinoma"
+  ],
+  [
+   "ev:SYN-0002-EV242",
+   "supports",
+   "dec:NCT07774247:NCT07774247-I01:r1"
+  ],
+  [
+   "crit:NCT07774247-I01",
+   "requires",
+   "concept:cancer_stage"
+  ],
+  [
+   "ev:SYN-0002-EV216",
+   "supports",
+   "dec:NCT07774247:NCT07774247-I01:r1"
+  ],
+  [
+   "crit:NCT07774247-I01",
+   "requires",
+   "concept:symptom_finding:3 lesions in right lobe (4.1, 2.6, 2.0 cm) with arterial enhancement and washout"
+  ],
+  [
+   "ev:SYN-0002-EV009",
+   "supports",
+   "dec:NCT07774247:NCT07774247-I01:r1"
+  ],
+  [
+   "trial:NCT07774247",
+   "has_criterion",
+   "crit:NCT07774247-I02"
+  ],
+  [
+   "crit:NCT07774247-I02",
+   "decided_as",
+   "dec:NCT07774247:NCT07774247-I02:r1"
+  ],
+  [
+   "crit:NCT07774247-I02",
+   "requires",
+   "concept:birth_date"
+  ],
+  [
+   "ev:SYN-0002-EV002",
+   "supports",
+   "dec:NCT07774247:NCT07774247-I02:r1"
+  ],
+  [
+   "calc:NCT07774247:NCT07774247-I02",
+   "computes",
+   "dec:NCT07774247:NCT07774247-I02:r1"
+  ],
+  [
+   "trial:NCT07774247",
+   "has_criterion",
+   "crit:NCT07774247-I03"
+  ],
+  [
+   "crit:NCT07774247-I03",
+   "decided_as",
+   "dec:NCT07774247:NCT07774247-I03:r1"
+  ],
+  [
+   "crit:NCT07774247-I03",
+   "requires",
+   "concept:ecog"
+  ],
+  [
+   "ev:SYN-0002-EV034",
+   "expired_for",
+   "dec:NCT07774247:NCT07774247-I03:r1"
+  ],
+  [
+   "calc:NCT07774247:NCT07774247-I03",
+   "computes",
+   "dec:NCT07774247:NCT07774247-I03:r1"
+  ],
+  [
+   "trial:NCT07774247",
+   "has_criterion",
+   "crit:NCT07774247-I04"
+  ],
+  [
+   "crit:NCT07774247-I04",
+   "decided_as",
+   "dec:NCT07774247:NCT07774247-I04:r1"
+  ],
+  [
+   "crit:NCT07774247-I04",
+   "requires",
+   "concept:child_pugh"
+  ],
+  [
+   "concept:child_pugh",
+   "observed_as",
+   "ev:SYN-0002-EV266"
+  ],
+  [
+   "ev:SYN-0002-EV266",
+   "derived_from",
+   "src:SYN-0002-D07:32-45"
+  ],
+  [
+   "ev:SYN-0002-EV266",
+   "expired_for",
+   "dec:NCT07774247:NCT07774247-I04:r1"
+  ],
+  [
+   "calc:NCT07774247:NCT07774247-I04",
+   "computes",
+   "dec:NCT07774247:NCT07774247-I04:r1"
+  ],
+  [
+   "trial:NCT07774247",
+   "has_criterion",
+   "crit:NCT07774247-I05"
+  ],
+  [
+   "crit:NCT07774247-I05",
+   "decided_as",
+   "dec:NCT07774247:NCT07774247-I05:r1"
+  ],
+  [
+   "crit:NCT07774247-I05",
+   "requires",
+   "concept:cancer_stage"
+  ],
+  [
+   "ev:SYN-0002-EV241",
+   "supports",
+   "dec:NCT07774247:NCT07774247-I05:r1"
+  ],
+  [
+   "crit:NCT07774247-I05",
+   "requires",
+   "concept:diagnosis:persistent viable tumor segment 7"
+  ],
+  [
+   "ev:SYN-0002-EV018",
+   "supports",
+   "dec:NCT07774247:NCT07774247-I05:r1"
+  ],
+  [
+   "trial:NCT07774247",
+   "has_criterion",
+   "crit:NCT07774247-I06"
+  ],
+  [
+   "crit:NCT07774247-I06",
+   "decided_as",
+   "dec:NCT07774247:NCT07774247-I06:r1"
+  ],
+  [
+   "trial:NCT07774247",
+   "has_criterion",
+   "crit:NCT07774247-I07"
+  ],
+  [
+   "crit:NCT07774247-I07",
+   "decided_as",
+   "dec:NCT07774247:NCT07774247-I07:r1"
+  ],
+  [
+   "trial:NCT07774247",
+   "has_criterion",
+   "crit:NCT07774247-I08"
+  ],
+  [
+   "crit:NCT07774247-I08",
+   "decided_as",
+   "dec:NCT07774247:NCT07774247-I08:r1"
+  ],
+  [
+   "trial:NCT07774247",
+   "has_criterion",
+   "crit:NCT07774247-I09"
+  ],
+  [
+   "crit:NCT07774247-I09",
+   "decided_as",
+   "dec:NCT07774247:NCT07774247-I09:r1"
+  ],
+  [
+   "crit:NCT07774247-I09",
+   "requires",
+   "concept:measurable_disease:viable tumor 28 mm"
+  ],
+  [
+   "ev:SYN-0002-EV321",
+   "supports",
+   "dec:NCT07774247:NCT07774247-I09:r1"
+  ],
+  [
+   "crit:NCT07774247-I09",
+   "requires",
+   "concept:diagnosis:arterial-enhancing lesion segment 5"
+  ],
+  [
+   "concept:diagnosis:arterial-enhancing lesion segment 5",
+   "observed_as",
+   "ev:SYN-0002-EV019"
+  ],
+  [
+   "ev:SYN-0002-EV019",
+   "derived_from",
+   "src:SYN-0002-D05:0-111"
+  ],
+  [
+   "ev:SYN-0002-EV019",
+   "supports",
+   "dec:NCT07774247:NCT07774247-I09:r1"
+  ],
+  [
+   "crit:NCT07774247-I09",
+   "requires",
+   "concept:cancer_stage"
+  ],
+  [
+   "ev:SYN-0002-EV241",
+   "supports",
+   "dec:NCT07774247:NCT07774247-I09:r1"
+  ],
+  [
+   "trial:NCT07774247",
+   "has_criterion",
+   "crit:NCT07774247-I10"
+  ],
+  [
+   "crit:NCT07774247-I10",
+   "decided_as",
+   "dec:NCT07774247:NCT07774247-I10:r1"
+  ],
+  [
+   "crit:NCT07774247-I10",
+   "requires",
+   "concept:platelet_count"
+  ],
+  [
+   "ev:SYN-0002-EV045",
+   "expired_for",
+   "dec:NCT07774247:NCT07774247-I10:r1"
+  ],
+  [
+   "crit:NCT07774247-I10",
+   "requires",
+   "concept:anc"
+  ],
+  [
+   "concept:anc",
+   "observed_as",
+   "ev:SYN-0002-EV046"
+  ],
+  [
+   "ev:SYN-0002-EV046",
+   "derived_from",
+   "src:SYN-0002-D08:268-313"
+  ],
+  [
+   "ev:SYN-0002-EV046",
+   "expired_for",
+   "dec:NCT07774247:NCT07774247-I10:r1"
+  ],
+  [
+   "crit:NCT07774247-I10",
+   "requires",
+   "concept:bilirubin_total"
+  ],
+  [
+   "ev:SYN-0002-EV064",
+   "expired_for",
+   "dec:NCT07774247:NCT07774247-I10:r1"
+  ],
+  [
+   "trial:NCT07774247",
+   "has_criterion",
+   "crit:NCT07774247-I11"
+  ],
+  [
+   "crit:NCT07774247-I11",
+   "decided_as",
+   "dec:NCT07774247:NCT07774247-I11:r1"
+  ],
+  [
+   "crit:NCT07774247-I11",
+   "requires",
+   "concept:hbv_dna"
+  ],
+  [
+   "ev:SYN-0002-EV281",
+   "supports",
+   "dec:NCT07774247:NCT07774247-I11:r1"
+  ],
+  [
+   "crit:NCT07774247-I11",
+   "requires",
+   "concept:hepatitis_b:hbsag"
+  ],
+  [
+   "ev:SYN-0002-EV074",
+   "supports",
+   "dec:NCT07774247:NCT07774247-I11:r1"
+  ],
+  [
+   "crit:NCT07774247-I11",
+   "requires",
+   "concept:hepatitis_c:anti-hcv"
+  ],
+  [
+   "concept:hepatitis_c:anti-hcv",
+   "observed_as",
+   "ev:SYN-0002-EV078"
+  ],
+  [
+   "ev:SYN-0002-EV078",
+   "derived_from",
+   "src:SYN-0002-D08:1283-1304"
+  ],
+  [
+   "ev:SYN-0002-EV078",
+   "supports",
+   "dec:NCT07774247:NCT07774247-I11:r1"
+  ],
+  [
+   "crit:NCT07774247-I11",
+   "requires",
+   "concept:medication:entecavir 0.5 mg daily"
+  ],
+  [
+   "concept:medication:entecavir 0.5 mg daily",
+   "observed_as",
+   "ev:SYN-0002-EV148"
+  ],
+  [
+   "ev:SYN-0002-EV148",
+   "derived_from",
+   "src:SYN-0002-D09:1609-1647"
+  ],
+  [
+   "ev:SYN-0002-EV148",
+   "supports",
+   "dec:NCT07774247:NCT07774247-I11:r1"
+  ],
+  [
+   "crit:NCT07774247-I11",
+   "requires",
+   "concept:diagnosis:hepatitis b virus cirrhosis"
+  ],
+  [
+   "concept:diagnosis:hepatitis b virus cirrhosis",
+   "observed_as",
+   "ev:SYN-0002-EV252"
+  ],
+  [
+   "ev:SYN-0002-EV252",
+   "derived_from",
+   "src:SYN-0002-D09:4165-4211"
+  ],
+  [
+   "ev:SYN-0002-EV252",
+   "supports",
+   "dec:NCT07774247:NCT07774247-I11:r1"
+  ],
+  [
+   "trial:NCT07774247",
+   "has_criterion",
+   "crit:NCT07774247-I12"
+  ],
+  [
+   "crit:NCT07774247-I12",
+   "decided_as",
+   "dec:NCT07774247:NCT07774247-I12:r1"
+  ],
+  [
+   "trial:NCT07774247",
+   "has_criterion",
+   "crit:NCT07774247-I13"
+  ],
+  [
+   "crit:NCT07774247-I13",
+   "decided_as",
+   "dec:NCT07774247:NCT07774247-I13:r1"
+  ],
+  [
+   "trial:NCT07774247",
+   "has_criterion",
+   "crit:NCT07774247-I14"
+  ],
+  [
+   "crit:NCT07774247-I14",
+   "decided_as",
+   "dec:NCT07774247:NCT07774247-I14:r1"
+  ],
+  [
+   "trial:NCT07774247",
+   "has_criterion",
+   "crit:NCT07774247-I15"
+  ],
+  [
+   "crit:NCT07774247-I15",
+   "decided_as",
+   "dec:NCT07774247:NCT07774247-I15:r1"
+  ],
+  [
+   "trial:NCT07774247",
+   "has_criterion",
+   "crit:NCT07774247-E01"
+  ],
+  [
+   "crit:NCT07774247-E01",
+   "decided_as",
+   "dec:NCT07774247:NCT07774247-E01:r1"
+  ],
+  [
+   "trial:NCT07774247",
+   "has_criterion",
+   "crit:NCT07774247-E02"
+  ],
+  [
+   "crit:NCT07774247-E02",
+   "decided_as",
+   "dec:NCT07774247:NCT07774247-E02:r1"
+  ],
+  [
+   "crit:NCT07774247-E02",
+   "requires",
+   "concept:diagnosis:prior malignancy"
+  ],
+  [
+   "ev:SYN-0002-EV138",
+   "supports",
+   "dec:NCT07774247:NCT07774247-E02:r1"
+  ],
+  [
+   "trial:NCT07774247",
+   "has_criterion",
+   "crit:NCT07774247-E03"
+  ],
+  [
+   "crit:NCT07774247-E03",
+   "decided_as",
+   "dec:NCT07774247:NCT07774247-E03:r1"
+  ],
+  [
+   "trial:NCT07774247",
+   "has_criterion",
+   "crit:NCT07774247-E04"
+  ],
+  [
+   "crit:NCT07774247-E04",
+   "decided_as",
+   "dec:NCT07774247:NCT07774247-E04:r1"
+  ],
+  [
+   "crit:NCT07774247-E04",
+   "requires",
+   "concept:diagnosis:small esophageal varices without red signs"
+  ],
+  [
+   "concept:diagnosis:small esophageal varices without red signs",
+   "observed_as",
+   "ev:SYN-0002-EV128"
+  ],
+  [
+   "ev:SYN-0002-EV128",
+   "derived_from",
+   "src:SYN-0002-D09:1105-1157"
+  ],
+  [
+   "ev:SYN-0002-EV128",
+   "supports",
+   "dec:NCT07774247:NCT07774247-E04:r1"
+  ],
+  [
+   "crit:NCT07774247-E04",
+   "requires",
+   "concept:symptom_finding:esophageal varices with red signs"
+  ],
+  [
+   "concept:symptom_finding:esophageal varices with red signs",
+   "observed_as",
+   "ev:SYN-0002-EV036"
+  ],
+  [
+   "ev:SYN-0002-EV036",
+   "derived_from",
+   "src:SYN-0002-D07:69-124"
+  ],
+  [
+   "ev:SYN-0002-EV036",
+   "supports",
+   "dec:NCT07774247:NCT07774247-E04:r1"
+  ],
+  [
+   "crit:NCT07774247-E04",
+   "requires",
+   "concept:diagnosis:variceal bleeding"
+  ],
+  [
+   "concept:diagnosis:variceal bleeding",
+   "observed_as",
+   "ev:SYN-0002-EV140"
+  ],
+  [
+   "ev:SYN-0002-EV140",
+   "derived_from",
+   "src:SYN-0002-D09:1356-1423"
+  ],
+  [
+   "ev:SYN-0002-EV140",
+   "supports",
+   "dec:NCT07774247:NCT07774247-E04:r1"
+  ],
+  [
+   "crit:NCT07774247-E04",
+   "requires",
+   "concept:medication:carvedilol 6.25 mg bid"
+  ],
+  [
+   "concept:medication:carvedilol 6.25 mg bid",
+   "observed_as",
+   "ev:SYN-0002-EV149"
+  ],
+  [
+   "ev:SYN-0002-EV149",
+   "derived_from",
+   "src:SYN-0002-D09:1650-1710"
+  ],
+  [
+   "ev:SYN-0002-EV149",
+   "supports",
+   "dec:NCT07774247:NCT07774247-E04:r1"
+  ],
+  [
+   "trial:NCT07774247",
+   "has_criterion",
+   "crit:NCT07774247-E05"
+  ],
+  [
+   "crit:NCT07774247-E05",
+   "decided_as",
+   "dec:NCT07774247:NCT07774247-E05:r1"
+  ],
+  [
+   "trial:NCT07774247",
+   "has_criterion",
+   "crit:NCT07774247-E06"
+  ],
+  [
+   "crit:NCT07774247-E06",
+   "decided_as",
+   "dec:NCT07774247:NCT07774247-E06:r1"
+  ],
+  [
+   "trial:NCT07774247",
+   "has_criterion",
+   "crit:NCT07774247-E07"
+  ],
+  [
+   "crit:NCT07774247-E07",
+   "decided_as",
+   "dec:NCT07774247:NCT07774247-E07:r1"
+  ],
+  [
+   "trial:NCT07774247",
+   "has_criterion",
+   "crit:NCT07774247-E08"
+  ],
+  [
+   "crit:NCT07774247-E08",
+   "decided_as",
+   "dec:NCT07774247:NCT07774247-E08:r1"
+  ],
+  [
+   "trial:NCT07774247",
+   "has_criterion",
+   "crit:NCT07774247-E09"
+  ],
+  [
+   "crit:NCT07774247-E09",
+   "decided_as",
+   "dec:NCT07774247:NCT07774247-E09:r1"
+  ],
+  [
+   "crit:NCT07774247-E09",
+   "requires",
+   "concept:diagnosis:extrahepatic disease"
+  ],
+  [
+   "ev:SYN-0002-EV219",
+   "supports",
+   "dec:NCT07774247:NCT07774247-E09:r1"
+  ],
+  [
+   "crit:NCT07774247-E09",
+   "requires",
+   "concept:symptom_finding:extrahepatic spread"
+  ],
+  [
+   "ev:SYN-0002-EV012",
+   "supports",
+   "dec:NCT07774247:NCT07774247-E09:r1"
+  ],
+  [
+   "trial:NCT07774247",
+   "has_criterion",
+   "crit:NCT07774247-E10"
+  ],
+  [
+   "crit:NCT07774247-E10",
+   "decided_as",
+   "dec:NCT07774247:NCT07774247-E10:r1"
+  ],
+  [
+   "trial:NCT07774247",
+   "has_criterion",
+   "crit:NCT07774247-E11"
+  ],
+  [
+   "crit:NCT07774247-E11",
+   "decided_as",
+   "dec:NCT07774247:NCT07774247-E11:r1"
+  ],
+  [
+   "crit:NCT07774247-E11",
+   "requires",
+   "concept:symptom_finding:abdominal pain"
+  ],
+  [
+   "concept:symptom_finding:abdominal pain",
+   "observed_as",
+   "ev:SYN-0002-EV116"
+  ],
+  [
+   "ev:SYN-0002-EV116",
+   "derived_from",
+   "src:SYN-0002-D09:783-858"
+  ],
+  [
+   "ev:SYN-0002-EV116",
+   "supports",
+   "dec:NCT07774247:NCT07774247-E11:r1"
+  ],
+  [
+   "crit:NCT07774247-E11",
+   "requires",
+   "concept:medication:nsaids"
+  ],
+  [
+   "concept:medication:nsaids",
+   "observed_as",
+   "ev:SYN-0002-EV151"
+  ],
+  [
+   "ev:SYN-0002-EV151",
+   "derived_from",
+   "src:SYN-0002-D09:1744-1787"
+  ],
+  [
+   "ev:SYN-0002-EV151",
+   "supports",
+   "dec:NCT07774247:NCT07774247-E11:r1"
+  ],
+  [
+   "trial:NCT07774247",
+   "has_criterion",
+   "crit:NCT07774247-E12"
+  ],
+  [
+   "crit:NCT07774247-E12",
+   "decided_as",
+   "dec:NCT07774247:NCT07774247-E12:r1"
+  ],
+  [
+   "trial:NCT07774247",
+   "has_criterion",
+   "crit:NCT07774247-E13"
+  ],
+  [
+   "crit:NCT07774247-E13",
+   "decided_as",
+   "dec:NCT07774247:NCT07774247-E13:r1"
+  ],
+  [
+   "trial:NCT07774247",
+   "has_criterion",
+   "crit:NCT07774247-E14"
+  ],
+  [
+   "crit:NCT07774247-E14",
+   "decided_as",
+   "dec:NCT07774247:NCT07774247-E14:r1"
+  ],
+  [
+   "crit:NCT07774247-E14",
+   "requires",
+   "concept:diagnosis:diabetes"
+  ],
+  [
+   "ev:SYN-0002-EV137",
+   "supports",
+   "dec:NCT07774247:NCT07774247-E14:r1"
+  ],
+  [
+   "crit:NCT07774247-E14",
+   "requires",
+   "concept:hba1c"
+  ],
+  [
+   "ev:SYN-0002-EV080",
+   "supports",
+   "dec:NCT07774247:NCT07774247-E14:r1"
+  ],
+  [
+   "trial:NCT07774247",
+   "has_criterion",
+   "crit:NCT07774247-E15"
+  ],
+  [
+   "crit:NCT07774247-E15",
+   "decided_as",
+   "dec:NCT07774247:NCT07774247-E15:r1"
+  ],
+  [
+   "trial:NCT07774247",
+   "has_criterion",
+   "crit:NCT07774247-E16"
+  ],
+  [
+   "crit:NCT07774247-E16",
+   "decided_as",
+   "dec:NCT07774247:NCT07774247-E16:r1"
+  ],
+  [
+   "trial:NCT07774247",
+   "has_criterion",
+   "crit:NCT07774247-E17"
+  ],
+  [
+   "crit:NCT07774247-E17",
+   "decided_as",
+   "dec:NCT07774247:NCT07774247-E17:r1"
+  ],
+  [
+   "trial:NCT07774247",
+   "has_criterion",
+   "crit:NCT07774247-E18"
+  ],
+  [
+   "crit:NCT07774247-E18",
+   "decided_as",
+   "dec:NCT07774247:NCT07774247-E18:r1"
+  ],
+  [
+   "trial:NCT07774247",
+   "has_criterion",
+   "crit:NCT07774247-E19"
+  ],
+  [
+   "crit:NCT07774247-E19",
+   "decided_as",
+   "dec:NCT07774247:NCT07774247-E19:r1"
+  ],
+  [
+   "crit:NCT07774247-E19",
+   "requires",
+   "concept:medication:antiplatelets"
+  ],
+  [
+   "concept:medication:antiplatelets",
+   "observed_as",
+   "ev:SYN-0002-EV153"
+  ],
+  [
+   "ev:SYN-0002-EV153",
+   "derived_from",
+   "src:SYN-0002-D09:1744-1787"
+  ],
+  [
+   "ev:SYN-0002-EV153",
+   "supports",
+   "dec:NCT07774247:NCT07774247-E19:r1"
+  ],
+  [
+   "crit:NCT07774247-E19",
+   "requires",
+   "concept:medication:anticoagulants"
+  ],
+  [
+   "concept:medication:anticoagulants",
+   "observed_as",
+   "ev:SYN-0002-EV152"
+  ],
+  [
+   "ev:SYN-0002-EV152",
+   "derived_from",
+   "src:SYN-0002-D09:1744-1787"
+  ],
+  [
+   "ev:SYN-0002-EV152",
+   "supports",
+   "dec:NCT07774247:NCT07774247-E19:r1"
+  ],
+  [
+   "trial:NCT07774247",
+   "has_criterion",
+   "crit:NCT07774247-E20"
+  ],
+  [
+   "crit:NCT07774247-E20",
+   "decided_as",
+   "dec:NCT07774247:NCT07774247-E20:r1"
+  ],
+  [
+   "trial:NCT07774247",
+   "has_criterion",
+   "crit:NCT07774247-E21"
+  ],
+  [
+   "crit:NCT07774247-E21",
+   "decided_as",
+   "dec:NCT07774247:NCT07774247-E21:r1"
+  ],
+  [
+   "trial:NCT07774247",
+   "has_criterion",
+   "crit:NCT07774247-E22"
+  ],
+  [
+   "crit:NCT07774247-E22",
+   "decided_as",
+   "dec:NCT07774247:NCT07774247-E22:r1"
+  ],
+  [
+   "trial:NCT07774247",
+   "has_criterion",
+   "crit:NCT07774247-E23"
+  ],
+  [
+   "crit:NCT07774247-E23",
+   "decided_as",
+   "dec:NCT07774247:NCT07774247-E23:r1"
+  ],
+  [
+   "crit:NCT07774247-E23",
+   "requires",
+   "concept:hiv:hiv-1/2 ag/ab"
+  ],
+  [
+   "concept:hiv:hiv-1/2 ag/ab",
+   "observed_as",
+   "ev:SYN-0002-EV079"
+  ],
+  [
+   "ev:SYN-0002-EV079",
+   "derived_from",
+   "src:SYN-0002-D08:1305-1331"
+  ],
+  [
+   "ev:SYN-0002-EV079",
+   "supports",
+   "dec:NCT07774247:NCT07774247-E23:r1"
+  ],
+  [
+   "trial:NCT07774247",
+   "has_criterion",
+   "crit:NCT07774247-E24"
+  ],
+  [
+   "crit:NCT07774247-E24",
+   "decided_as",
+   "dec:NCT07774247:NCT07774247-E24:r1"
+  ],
+  [
+   "crit:NCT07774247-E24",
+   "requires",
+   "concept:sex"
+  ],
+  [
+   "ev:SYN-0002-EV001",
+   "supports",
+   "dec:NCT07774247:NCT07774247-E24:r1"
+  ],
+  [
+   "trial:NCT07774247",
+   "has_criterion",
+   "crit:NCT07774247-E25"
+  ],
+  [
+   "crit:NCT07774247-E25",
+   "decided_as",
+   "dec:NCT07774247:NCT07774247-E25:r1"
+  ],
+  [
+   "trial:NCT07774247",
+   "has_criterion",
+   "crit:NCT07774247-E26"
+  ],
+  [
+   "crit:NCT07774247-E26",
+   "decided_as",
+   "dec:NCT07774247:NCT07774247-E26:r1"
+  ],
+  [
+   "trial:NCT07774247",
+   "has_criterion",
+   "crit:NCT07774247-E27"
+  ],
+  [
+   "crit:NCT07774247-E27",
+   "decided_as",
+   "dec:NCT07774247:NCT07774247-E27:r1"
+  ],
+  [
+   "trial:NCT07774247",
+   "has_criterion",
+   "crit:NCT07774247-E28"
+  ],
+  [
+   "crit:NCT07774247-E28",
+   "decided_as",
+   "dec:NCT07774247:NCT07774247-E28:r1"
+  ],
+  [
+   "crit:NCT07774247-E28",
+   "requires",
+   "concept:diagnosis:neurologic history"
+  ],
+  [
+   "ev:SYN-0002-EV136",
+   "supports",
+   "dec:NCT07774247:NCT07774247-E28:r1"
+  ],
+  [
+   "trial:NCT07774247",
+   "has_criterion",
+   "crit:NCT07774247-E29"
+  ],
+  [
+   "crit:NCT07774247-E29",
+   "decided_as",
+   "dec:NCT07774247:NCT07774247-E29:r1"
+  ],
+  [
+   "trial:NCT07774247",
+   "has_criterion",
+   "crit:NCT07774247-E30"
+  ],
+  [
+   "crit:NCT07774247-E30",
+   "decided_as",
+   "dec:NCT07774247:NCT07774247-E30:r1"
+  ],
+  [
+   "trial:NCT07774247",
+   "labelled",
+   "label:NCT07774247"
+  ]
+ ]
+}

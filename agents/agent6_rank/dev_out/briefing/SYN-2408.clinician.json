@@ -1,0 +1,443 @@
+{
+ "patient_id": "SYN-2408",
+ "as_of": "2026-10-01",
+ "audience": "clinician",
+ "graph_file": "SYN-2408.json",
+ "ranking": [
+  "NCT06159673"
+ ],
+ "also_mentioned": [
+  "NCT07589595"
+ ],
+ "sentences": [
+  {
+   "text": "환자 SYN-2408, 기준일 2026-10-01",
+   "refs": [],
+   "kind": "meta"
+  },
+  {
+   "text": "1. NCT06159673 ACP-204 in Adults With Alzheimer's Disease Psychosis",
+   "refs": [
+    "trial:NCT06159673"
+   ],
+   "kind": "heading"
+  },
+  {
+   "text": "시험 판정: potential (남은 항목 14개)",
+   "refs": [
+    "label:NCT06159673"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "재확인 권장: 노트는 해당 조건이 없다고 적었는데 판정은 미확인: NCT06159673-I03, NCT06159673-I06, NCT06159673-I08",
+   "refs": [
+    "dec:NCT06159673:NCT06159673-I03:r1",
+    "dec:NCT06159673:NCT06159673-I06:r1",
+    "dec:NCT06159673:NCT06159673-I08:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "국내 모집 기관 5곳",
+   "refs": [
+    "trial:NCT06159673"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "Arms — EXPERIMENTAL: Drug: ACP-204; EXPERIMENTAL: Drug: ACP-204; PLACEBO_COMPARATOR: Drug: Placebo",
+   "refs": [
+    "trial:NCT06159673"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06159673-I01 [inclusion] 충족",
+   "refs": [
+    "crit:NCT06159673-I01",
+    "dec:NCT06159673:NCT06159673-I01:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"74 y/o woman\" (SYN-2408-D08, 2026-09-22)",
+   "refs": [
+    "ev:SYN-2408-EV086",
+    "src:SYN-2408-D08:154-166"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   계산: age 74 years between [55, 95] years, 측정 2026-09-22 (9일 전)",
+   "refs": [
+    "calc:NCT06159673:NCT06159673-I01"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06159673-I02 [inclusion] 충족",
+   "refs": [
+    "crit:NCT06159673-I02",
+    "dec:NCT06159673:NCT06159673-I02:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Dx: mild cognitive impairment due to Alzheimer's disease (biomarker confirmed).\" (SYN-2408-D06, 2026-06-17)",
+   "refs": [
+    "ev:SYN-2408-EV031",
+    "src:SYN-2408-D06:0-79"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Mild cognitive impairment due to Alzheimer's disease, biomarker confirmed\" (SYN-2408-D08, 2026-09-22)",
+   "refs": [
+    "ev:SYN-2408-EV200",
+    "src:SYN-2408-D08:3091-3164"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06159673-I03 [inclusion] 미확인 (기록 없음) → 다음: clinician_confirmation",
+   "refs": [
+    "crit:NCT06159673-I03",
+    "dec:NCT06159673:NCT06159673-I03:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Whether patient meets IPA criteria for psychosis in neurocognitive disorder",
+   "refs": [
+    "dec:NCT06159673:NCT06159673-I03:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06159673-I04 [inclusion] 충족",
+   "refs": [
+    "crit:NCT06159673-I04",
+    "dec:NCT06159673:NCT06159673-I04:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"CSF: amyloid-beta 42/40 ratio 0.048 (low)\" (SYN-2408-D05, 2026-06-03)",
+   "refs": [
+    "ev:SYN-2408-EV027",
+    "src:SYN-2408-D05:0-41"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"p-tau181 78 pg/mL (elevated)\" (SYN-2408-D05, 2026-06-03)",
+   "refs": [
+    "ev:SYN-2408-EV028",
+    "src:SYN-2408-D05:43-71"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06159673-I05 [inclusion] 충족",
+   "refs": [
+    "crit:NCT06159673-I05",
+    "dec:NCT06159673:NCT06159673-I05:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"MRI brain: mild bilateral hippocampal atrophy (MTA 2).\" (SYN-2408-D04, 2026-05-13)",
+   "refs": [
+    "ev:SYN-2408-EV023",
+    "src:SYN-2408-D04:0-54"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06159673-I06 [inclusion] 미확인 (기록 없음) → 다음: clinician_confirmation",
+   "refs": [
+    "crit:NCT06159673-I06",
+    "dec:NCT06159673:NCT06159673-I06:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Whether patient meets IPA criteria for psychosis in neurocognitive disorder",
+   "refs": [
+    "dec:NCT06159673:NCT06159673-I06:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06159673-I07 [inclusion] 충족",
+   "refs": [
+    "crit:NCT06159673-I07",
+    "dec:NCT06159673:NCT06159673-I07:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"MMSE 23/30.\" (SYN-2408-D07, 2026-09-22)",
+   "refs": [
+    "ev:SYN-2408-EV039",
+    "src:SYN-2408-D07:30-41"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   계산: mmse 23 points between [6, 24] , 측정 2026-09-22 (9일 전)",
+   "refs": [
+    "calc:NCT06159673:NCT06159673-I07"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06159673-I08 [inclusion] 미확인 (기록 없음) → 다음: clinician_confirmation",
+   "refs": [
+    "crit:NCT06159673-I08",
+    "dec:NCT06159673:NCT06159673-I08:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Presence and duration of psychotic symptoms (delusions/hallucinations)",
+   "refs": [
+    "dec:NCT06159673:NCT06159673-I08:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06159673-I09 [inclusion] 미확인 (기록 없음) → 다음: patient_question",
+   "refs": [
+    "crit:NCT06159673-I09",
+    "dec:NCT06159673:NCT06159673-I09:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Whether living arrangements are stable with no planned changes",
+   "refs": [
+    "dec:NCT06159673:NCT06159673-I09:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06159673-I10 [inclusion] 충족",
+   "refs": [
+    "crit:NCT06159673-I10",
+    "dec:NCT06159673:NCT06159673-I10:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Husband present and corroborates history.\" (SYN-2408-D08, 2026-09-22)",
+   "refs": [
+    "ev:SYN-2408-EV085",
+    "src:SYN-2408-D08:106-147"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06159673-I11 [inclusion] 미확인 (기록 없음) → 다음: patient_question",
+   "refs": [
+    "crit:NCT06159673-I11",
+    "dec:NCT06159673:NCT06159673-I11:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Whether patient and husband can complete all study visits together",
+   "refs": [
+    "dec:NCT06159673:NCT06159673-I11:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06159673-I12 [inclusion] 충족",
+   "refs": [
+    "crit:NCT06159673-I12",
+    "dec:NCT06159673:NCT06159673-I12:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Donepezil 10 mg PO daily - started 2026 (5 mg on 2026-06-17, increased to 10 mg after 4 weeks)\" (SYN-2408-D08, 2026-09-22)",
+   "refs": [
+    "ev:SYN-2408-EV136",
+    "src:SYN-2408-D08:1329-1423"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Continue donepezil 10 mg daily, take with evening meal for nausea.\" (SYN-2408-D08, 2026-09-22)",
+   "refs": [
+    "ev:SYN-2408-EV203",
+    "src:SYN-2408-D08:3211-3277"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06159673-E01 [exclusion] 미확인 (기록 없음) → 다음: clinician_confirmation",
+   "refs": [
+    "crit:NCT06159673-E01",
+    "dec:NCT06159673:NCT06159673-E01:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Protocol's list of prohibited medications to compare with current meds",
+   "refs": [
+    "dec:NCT06159673:NCT06159673-E01:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06159673-E02 [exclusion] 미확인 (기록 없음) → 다음: clinician_confirmation",
+   "refs": [
+    "crit:NCT06159673-E02",
+    "dec:NCT06159673:NCT06159673-E02:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Hospice/palliative care or bedridden status",
+   "refs": [
+    "dec:NCT06159673:NCT06159673-E02:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06159673-E03 [exclusion] 미확인 (기록 없음) → 다음: patient_question",
+   "refs": [
+    "crit:NCT06159673-E03",
+    "dec:NCT06159673:NCT06159673-E03:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Whether skilled nursing care is required",
+   "refs": [
+    "dec:NCT06159673:NCT06159673-E03:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06159673-E04 [exclusion] 미확인 (기록 없음) → 다음: clinician_confirmation",
+   "refs": [
+    "crit:NCT06159673-E04",
+    "dec:NCT06159673:NCT06159673-E04:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Presence of psychotic symptoms and their attribution",
+   "refs": [
+    "dec:NCT06159673:NCT06159673-E04:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06159673-E05 [exclusion] 미확인 (근거 불충분) → 다음: clinician_confirmation",
+   "refs": [
+    "crit:NCT06159673-E05",
+    "dec:NCT06159673:NCT06159673-E05:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Whether cortical microbleeds represent cerebral amyloid angiopathy",
+   "refs": [
+    "dec:NCT06159673:NCT06159673-E05:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06159673-E06 [exclusion] 미확인 (기록 없음) → 다음: med_record_check",
+   "refs": [
+    "crit:NCT06159673-E06",
+    "dec:NCT06159673:NCT06159673-E06:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Atrial fibrillation diagnosis or ECG",
+   "refs": [
+    "dec:NCT06159673:NCT06159673-E06:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06159673-E07 [exclusion] 미확인 (기록 없음) → 다음: clinician_confirmation",
+   "refs": [
+    "crit:NCT06159673-E07",
+    "dec:NCT06159673:NCT06159673-E07:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Orthostatic hypotension symptoms/orthostatic BP",
+   "refs": [
+    "dec:NCT06159673:NCT06159673-E07:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06159673-E08 [exclusion] 미확인 (기록 없음) → 다음: clinician_confirmation",
+   "refs": [
+    "crit:NCT06159673-E08",
+    "dec:NCT06159673:NCT06159673-E08:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Protocol-defined exclusionary lab thresholds",
+   "refs": [
+    "dec:NCT06159673:NCT06159673-E08:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06159673-E09 [exclusion] 미확인 (기록 없음) → 다음: med_history_check",
+   "refs": [
+    "crit:NCT06159673-E09",
+    "dec:NCT06159673:NCT06159673-E09:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "참고: FAIL 하나로 제외된 시험 (순위에는 넣지 않음, 그 기준만 확인하면 판정이 바뀔 수 있음)",
+   "refs": [
+    "trial:NCT07589595"
+   ],
+   "kind": "heading"
+  },
+  {
+   "text": "NCT07589595 A Study of Donanemab (LY3002813) in Participants With Early Cognitive Decline (TRAILBLAZER-ALZ 7): NCT07589595-I03 [inclusion] 불충족",
+   "refs": [
+    "crit:NCT07589595-I03",
+    "dec:NCT07589595:NCT07589595-I03:r1",
+    "label:NCT07589595",
+    "trial:NCT07589595"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   노트: moca = 19 points (2026-09-22, -9d) vs >= 20 -> not met",
+   "refs": [
+    "dec:NCT07589595:NCT07589595-I03:r1"
+   ],
+   "kind": "fact"
+  }
+ ],
+ "evidence": {
+  "files": [
+   "evidence_dev_haiku_v14_12.jsonl",
+   "evidence_dev_variants_haiku_v14_12.jsonl"
+  ],
+  "sha256": "daba4f5f1e16ec2eefc47311f5c13f85e6b5f218c85424f08f9af3d9bab09124",
+  "id_series": "haiku",
+  "graph_ev_nodes_checked": 2240
+ },
+ "agent6": "a6-0.4.14"
+}

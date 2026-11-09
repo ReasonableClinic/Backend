@@ -1,0 +1,1776 @@
+[
+ {
+  "key": "age",
+  "name": "Age",
+  "type": "demographic",
+  "unit": "years"
+ },
+ {
+  "key": "sex",
+  "name": "Sex",
+  "type": "demographic",
+  "unit": null,
+  "aliases": [
+   "male",
+   "female"
+  ]
+ },
+ {
+  "key": "nationality",
+  "name": "Nationality",
+  "type": "demographic",
+  "unit": null,
+  "aliases": [
+   "nationality"
+  ]
+ },
+ {
+  "key": "birth_date",
+  "name": "Date of birth",
+  "type": "demographic",
+  "unit": null,
+  "aliases": [
+   "DOB",
+   "date of birth"
+  ]
+ },
+ {
+  "key": "body_weight",
+  "name": "Body weight",
+  "type": "vital",
+  "unit": "kg",
+  "aliases": [
+   "Wt",
+   "weight"
+  ],
+  "alt_units": {
+   "lb": 0.453592
+  },
+  "code": {
+   "system": "LOINC",
+   "code": "29463-7"
+  }
+ },
+ {
+  "key": "body_height",
+  "name": "Body height",
+  "type": "vital",
+  "unit": "cm",
+  "aliases": [
+   "Ht",
+   "height"
+  ],
+  "alt_units": {
+   "m": 100
+  },
+  "code": {
+   "system": "LOINC",
+   "code": "8302-2"
+  }
+ },
+ {
+  "key": "bmi",
+  "name": "Body mass index",
+  "type": "vital",
+  "unit": "kg/m2",
+  "aliases": [
+   "BMI",
+   "body mass index"
+  ],
+  "code": {
+   "system": "LOINC",
+   "code": "39156-5"
+  }
+ },
+ {
+  "key": "blood_pressure",
+  "name": "Blood pressure (systolic/diastolic)",
+  "type": "vital",
+  "unit": "mmHg",
+  "aliases": [
+   "BP",
+   "blood pressure"
+  ]
+ },
+ {
+  "key": "heart_rate",
+  "name": "Heart rate",
+  "type": "vital",
+  "unit": "/min",
+  "aliases": [
+   "HR",
+   "heart rate",
+   "pulse"
+  ],
+  "alt_units": {
+   "bpm": 1,
+   "beats/min": 1
+  },
+  "code": {
+   "system": "LOINC",
+   "code": "8867-4"
+  }
+ },
+ {
+  "key": "body_temperature",
+  "name": "Body temperature",
+  "type": "vital",
+  "unit": "C",
+  "aliases": [
+   "T",
+   "Temp",
+   "temperature"
+  ],
+  "code": {
+   "system": "LOINC",
+   "code": "8310-5"
+  }
+ },
+ {
+  "key": "respiratory_rate",
+  "name": "Respiratory rate",
+  "type": "vital",
+  "unit": "/min",
+  "aliases": [
+   "RR",
+   "respiratory rate"
+  ],
+  "code": {
+   "system": "LOINC",
+   "code": "9279-1"
+  }
+ },
+ {
+  "key": "spo2",
+  "name": "Oxygen saturation",
+  "type": "vital",
+  "unit": "%",
+  "aliases": [
+   "SpO2",
+   "O2 sat",
+   "oxygen saturation"
+  ],
+  "code": {
+   "system": "LOINC",
+   "code": "59408-5"
+  }
+ },
+ {
+  "key": "hemoglobin",
+  "name": "Hemoglobin",
+  "type": "lab",
+  "unit": "g/dL",
+  "aliases": [
+   "Hemoglobin",
+   "Haemoglobin",
+   "Hb",
+   "Hgb"
+  ],
+  "alt_units": {
+   "g/L": 0.1
+  },
+  "code": {
+   "system": "LOINC",
+   "code": "718-7"
+  }
+ },
+ {
+  "key": "platelet_count",
+  "name": "Platelet count",
+  "type": "lab",
+  "unit": "10^9/L",
+  "aliases": [
+   "Platelets",
+   "Platelet count",
+   "PLT",
+   "plt",
+   "Plt"
+  ],
+  "alt_units": {
+   "x10^9/L": 1,
+   "x10^3/uL": 1,
+   "10^3/uL": 1,
+   "/uL": 0.001,
+   "/mm3": 0.001,
+   "/µL": 0.001,
+   "/cu.mm": 0.001,
+   "/cumm": 0.001,
+   "/cmm": 0.001,
+   "cells/uL": 0.001,
+   "cells/mm3": 0.001,
+   "/ml": 0.001,
+   "10^12/L": 1000
+  },
+  "code": {
+   "system": "LOINC",
+   "code": "777-3"
+  }
+ },
+ {
+  "key": "wbc",
+  "name": "White blood cell count",
+  "type": "lab",
+  "unit": "10^9/L",
+  "aliases": [
+   "WBC",
+   "white blood cell",
+   "white cell count"
+  ],
+  "alt_units": {
+   "x10^9/L": 1,
+   "x10^3/uL": 1,
+   "10^3/uL": 1,
+   "/mm3": 0.001,
+   "/uL": 0.001,
+   "/µL": 0.001,
+   "/cu.mm": 0.001,
+   "/cumm": 0.001,
+   "/cmm": 0.001,
+   "cells/uL": 0.001,
+   "cells/mm3": 0.001,
+   "/ml": 0.001
+  },
+  "code": {
+   "system": "LOINC",
+   "code": "6690-2"
+  }
+ },
+ {
+  "key": "anc",
+  "name": "Absolute neutrophil count",
+  "type": "lab",
+  "unit": "10^9/L",
+  "aliases": [
+   "ANC",
+   "Neutrophils",
+   "absolute neutrophil count"
+  ],
+  "alt_units": {
+   "x10^9/L": 1,
+   "x10^3/uL": 1,
+   "/uL": 0.001,
+   "/mm3": 0.001,
+   "/µL": 0.001,
+   "/cu.mm": 0.001,
+   "/cumm": 0.001,
+   "/cmm": 0.001,
+   "cells/uL": 0.001,
+   "cells/mm3": 0.001,
+   "/ml": 0.001
+  },
+  "code": {
+   "system": "LOINC",
+   "code": "751-8"
+  }
+ },
+ {
+  "key": "creatinine",
+  "name": "Serum creatinine",
+  "type": "lab",
+  "unit": "mg/dL",
+  "aliases": [
+   "Creatinine",
+   "Cr",
+   "SCr"
+  ],
+  "alt_units": {
+   "umol/L": 0.0113
+  },
+  "code": {
+   "system": "LOINC",
+   "code": "2160-0"
+  }
+ },
+ {
+  "key": "egfr",
+  "name": "Estimated GFR",
+  "type": "lab",
+  "unit": "mL/min/1.73m2",
+  "aliases": [
+   "eGFR",
+   "GFR"
+  ],
+  "alt_units": {
+   "mL/min/1.73": 1,
+   "mL/min/1.73 m2": 1,
+   "mL/min": 1
+  },
+  "code": {
+   "system": "LOINC",
+   "code": "62238-1"
+  }
+ },
+ {
+  "key": "creatinine_clearance",
+  "name": "Creatinine clearance",
+  "type": "lab",
+  "unit": "mL/min",
+  "aliases": [
+   "CrCl",
+   "creatinine clearance"
+  ]
+ },
+ {
+  "key": "bilirubin_total",
+  "name": "Total bilirubin",
+  "type": "lab",
+  "unit": "mg/dL",
+  "aliases": [
+   "Total bilirubin",
+   "bilirubin",
+   "T bili",
+   "TBil"
+  ],
+  "alt_units": {
+   "umol/L": 0.0585
+  },
+  "code": {
+   "system": "LOINC",
+   "code": "1975-2"
+  }
+ },
+ {
+  "key": "ast",
+  "name": "Aspartate aminotransferase",
+  "type": "lab",
+  "unit": "U/L",
+  "aliases": [
+   "AST",
+   "SGOT"
+  ],
+  "code": {
+   "system": "LOINC",
+   "code": "1920-8"
+  },
+  "alt_units": {
+   "IU/L": 1
+  }
+ },
+ {
+  "key": "alt",
+  "name": "Alanine aminotransferase",
+  "type": "lab",
+  "unit": "U/L",
+  "aliases": [
+   "ALT",
+   "SGPT"
+  ],
+  "code": {
+   "system": "LOINC",
+   "code": "1742-6"
+  },
+  "alt_units": {
+   "IU/L": 1
+  }
+ },
+ {
+  "key": "albumin",
+  "name": "Serum albumin",
+  "type": "lab",
+  "unit": "g/dL",
+  "aliases": [
+   "Albumin",
+   "serum albumin",
+   "Alb"
+  ],
+  "alt_units": {
+   "g/L": 0.1
+  },
+  "code": {
+   "system": "LOINC",
+   "code": "1751-7"
+  }
+ },
+ {
+  "key": "inr",
+  "name": "INR",
+  "type": "lab",
+  "unit": "ratio",
+  "aliases": [
+   "INR"
+  ],
+  "code": {
+   "system": "LOINC",
+   "code": "6301-6"
+  }
+ },
+ {
+  "key": "hba1c",
+  "name": "Hemoglobin A1c",
+  "type": "lab",
+  "unit": "%",
+  "aliases": [
+   "HbA1c",
+   "A1c",
+   "hemoglobin A1c"
+  ],
+  "code": {
+   "system": "LOINC",
+   "code": "4548-4"
+  }
+ },
+ {
+  "key": "glucose",
+  "name": "Glucose",
+  "type": "lab",
+  "unit": "mg/dL",
+  "aliases": [
+   "Glucose",
+   "fasting glucose",
+   "blood glucose",
+   "FPG"
+  ],
+  "alt_units": {
+   "mmol/L": 18.016
+  },
+  "code": {
+   "system": "LOINC",
+   "code": "2345-7"
+  }
+ },
+ {
+  "key": "potassium",
+  "name": "Potassium",
+  "type": "lab",
+  "unit": "mmol/L",
+  "aliases": [
+   "Potassium",
+   "K"
+  ],
+  "alt_units": {
+   "mEq/L": 1
+  },
+  "code": {
+   "system": "LOINC",
+   "code": "2823-3"
+  }
+ },
+ {
+  "key": "sodium",
+  "name": "Sodium",
+  "type": "lab",
+  "unit": "mmol/L",
+  "aliases": [
+   "Sodium",
+   "Na"
+  ],
+  "alt_units": {
+   "mEq/L": 1
+  },
+  "code": {
+   "system": "LOINC",
+   "code": "2951-2"
+  }
+ },
+ {
+  "key": "tsh",
+  "name": "Thyroid stimulating hormone",
+  "type": "lab",
+  "unit": "mIU/L",
+  "aliases": [
+   "TSH"
+  ],
+  "alt_units": {
+   "uIU/mL": 1
+  },
+  "code": {
+   "system": "LOINC",
+   "code": "3016-3"
+  }
+ },
+ {
+  "key": "free_t4",
+  "name": "Free thyroxine",
+  "type": "lab",
+  "unit": "ng/dL",
+  "aliases": [
+   "Free T4",
+   "FT4",
+   "fT4"
+  ],
+  "alt_units": {
+   "pmol/L": 0.0777
+  },
+  "code": {
+   "system": "LOINC",
+   "code": "3024-7"
+  }
+ },
+ {
+  "key": "total_t3",
+  "name": "Total triiodothyronine",
+  "type": "lab",
+  "unit": "ng/dL",
+  "aliases": [
+   "Total T3",
+   "T3"
+  ]
+ },
+ {
+  "key": "triglycerides",
+  "name": "Triglycerides",
+  "type": "lab",
+  "unit": "mg/dL",
+  "aliases": [
+   "Triglycerides",
+   "TG"
+  ],
+  "alt_units": {
+   "mmol/L": 88.57
+  },
+  "code": {
+   "system": "LOINC",
+   "code": "2571-8"
+  }
+ },
+ {
+  "key": "ldl_cholesterol",
+  "name": "LDL cholesterol",
+  "type": "lab",
+  "unit": "mg/dL",
+  "aliases": [
+   "LDL cholesterol",
+   "LDL",
+   "LDL-C"
+  ],
+  "alt_units": {
+   "mmol/L": 38.67
+  },
+  "code": {
+   "system": "LOINC",
+   "code": "13457-7"
+  }
+ },
+ {
+  "key": "total_cholesterol",
+  "name": "Total cholesterol",
+  "type": "lab",
+  "unit": "mg/dL",
+  "aliases": [
+   "Total cholesterol",
+   "cholesterol"
+  ],
+  "alt_units": {
+   "mmol/L": 38.67
+  },
+  "code": {
+   "system": "LOINC",
+   "code": "2093-3"
+  }
+ },
+ {
+  "key": "urine_protein_creatinine_ratio",
+  "name": "Urine protein/creatinine ratio",
+  "type": "lab",
+  "unit": "mg/mg",
+  "aliases": [
+   "UPCR",
+   "urine protein/creatinine ratio",
+   "protein/creatinine ratio"
+  ],
+  "alt_units": {
+   "g/g": 1,
+   "mg/g": 0.001,
+   "mg/mmol": 0.00885
+  }
+ },
+ {
+  "key": "urine_albumin_creatinine_ratio",
+  "name": "Urine albumin/creatinine ratio",
+  "type": "lab",
+  "unit": "mg/g",
+  "aliases": [
+   "UACR",
+   "urine albumin/creatinine ratio",
+   "urine albumin/creatinine",
+   "albumin/creatinine"
+  ],
+  "alt_units": {
+   "mg/mmol": 8.84
+  }
+ },
+ {
+  "key": "crp",
+  "name": "C-reactive protein",
+  "type": "lab",
+  "unit": "mg/L",
+  "aliases": [
+   "CRP",
+   "C-reactive protein"
+  ],
+  "alt_units": {
+   "mg/dL": 10
+  },
+  "code": {
+   "system": "LOINC",
+   "code": "1988-5"
+  }
+ },
+ {
+  "key": "lipase",
+  "name": "Lipase",
+  "type": "lab",
+  "unit": "U/L",
+  "aliases": [
+   "Lipase"
+  ],
+  "code": {
+   "system": "LOINC",
+   "code": "3040-3"
+  },
+  "alt_units": {
+   "IU/L": 1
+  }
+ },
+ {
+  "key": "hcg",
+  "name": "Pregnancy test (hCG)",
+  "type": "lab",
+  "unit": null,
+  "aliases": [
+   "hCG",
+   "beta-hCG",
+   "pregnancy test"
+  ]
+ },
+ {
+  "key": "hepatitis_b",
+  "name": "Hepatitis B markers (HBsAg, anti-HBc, HBV DNA)",
+  "type": "lab",
+  "unit": null,
+  "aliases": [
+   "HBsAg",
+   "anti-HBc",
+   "HBV DNA",
+   "hepatitis B"
+  ]
+ },
+ {
+  "key": "hepatitis_c",
+  "name": "Hepatitis C markers (anti-HCV, HCV RNA)",
+  "type": "lab",
+  "unit": null,
+  "aliases": [
+   "anti-HCV",
+   "HCV antibody",
+   "HCV RNA",
+   "hepatitis C"
+  ]
+ },
+ {
+  "key": "hiv",
+  "name": "HIV status",
+  "type": "lab",
+  "unit": null,
+  "aliases": [
+   "HIV"
+  ]
+ },
+ {
+  "key": "lvef",
+  "name": "Left ventricular ejection fraction",
+  "type": "measurement",
+  "unit": "%",
+  "aliases": [
+   "LVEF",
+   "ejection fraction",
+   "EF"
+  ],
+  "code": {
+   "system": "LOINC",
+   "code": "10230-1"
+  }
+ },
+ {
+  "key": "qtc",
+  "name": "Corrected QT interval",
+  "type": "measurement",
+  "unit": "ms",
+  "aliases": [
+   "QTc",
+   "QTcF"
+  ]
+ },
+ {
+  "key": "pulmonary_function",
+  "name": "Pulmonary function (FVC, FEV1, DLCO)",
+  "type": "measurement",
+  "unit": null,
+  "aliases": [
+   "FVC",
+   "FEV1",
+   "DLCO"
+  ]
+ },
+ {
+  "key": "ecog",
+  "name": "ECOG performance status",
+  "type": "measurement",
+  "unit": "points",
+  "aliases": [
+   "ECOG",
+   "performance status",
+   "PS"
+  ]
+ },
+ {
+  "key": "karnofsky",
+  "name": "Karnofsky performance status",
+  "type": "measurement",
+  "unit": "%",
+  "aliases": [
+   "Karnofsky",
+   "KPS"
+  ]
+ },
+ {
+  "key": "pregnancy",
+  "name": "Pregnancy / lactation status",
+  "type": "condition",
+  "unit": null,
+  "aliases": [
+   "pregnant",
+   "pregnancy",
+   "lactating",
+   "breastfeeding",
+   "postpartum"
+  ]
+ },
+ {
+  "key": "contraception",
+  "name": "Contraception use",
+  "type": "behavior",
+  "unit": null,
+  "aliases": [
+   "contraception",
+   "contraceptive",
+   "condoms",
+   "IUD"
+  ]
+ },
+ {
+  "key": "smoking",
+  "name": "Tobacco use",
+  "type": "behavior",
+  "unit": null,
+  "aliases": [
+   "smoker",
+   "smoking",
+   "tobacco",
+   "pack-years"
+  ]
+ },
+ {
+  "key": "alcohol",
+  "name": "Alcohol use",
+  "type": "behavior",
+  "unit": null,
+  "aliases": [
+   "alcohol",
+   "drinks"
+  ]
+ },
+ {
+  "key": "substance_use",
+  "name": "Illicit substance use",
+  "type": "behavior",
+  "unit": null,
+  "aliases": [
+   "substance use",
+   "illicit",
+   "drug use"
+  ]
+ },
+ {
+  "key": "allergy",
+  "name": "Drug allergy",
+  "type": "condition",
+  "unit": null,
+  "aliases": [
+   "NKDA",
+   "allergy",
+   "allergies",
+   "allergic"
+  ]
+ },
+ {
+  "key": "diagnosis",
+  "name": "Diagnosis / medical history (value = condition as written)",
+  "type": "condition",
+  "unit": null
+ },
+ {
+  "key": "cancer_stage",
+  "name": "Cancer stage / TNM",
+  "type": "condition",
+  "unit": null,
+  "aliases": [
+   "stage",
+   "TNM"
+  ]
+ },
+ {
+  "key": "tumor_marker",
+  "name": "Tumor histology and biomarkers (ER, PR, HER2, PD-L1, EGFR, ALK, KRAS ...)",
+  "type": "condition",
+  "unit": null
+ },
+ {
+  "key": "metastasis",
+  "name": "Metastatic disease",
+  "type": "condition",
+  "unit": null,
+  "aliases": [
+   "metastasis",
+   "metastases",
+   "metastatic"
+  ]
+ },
+ {
+  "key": "medication",
+  "name": "Medication received (value = drug as written)",
+  "type": "drug",
+  "unit": null
+ },
+ {
+  "key": "procedure",
+  "name": "Procedure / surgery / radiotherapy (value = as written)",
+  "type": "procedure",
+  "unit": null
+ },
+ {
+  "key": "treatment_plan",
+  "name": "Planned or discussed treatment (not received)",
+  "type": "other",
+  "unit": null
+ },
+ {
+  "key": "social_history",
+  "name": "Social history: occupation, living situation, guardian or caregiver, activities (value = as written)",
+  "type": "other",
+  "unit": null
+ },
+ {
+  "key": "symptom_finding",
+  "name": "Symptom, sign or exam / imaging finding (value = as written)",
+  "type": "condition",
+  "unit": null
+ },
+ {
+  "key": "lab_other",
+  "name": "Other laboratory result (value = as written)",
+  "type": "lab",
+  "unit": null
+ },
+ {
+  "key": "lymphocyte_count",
+  "name": "Absolute lymphocyte count",
+  "type": "lab",
+  "unit": "10^9/L",
+  "code": {
+   "system": "LOINC",
+   "code": "731-0"
+  },
+  "aliases": [
+   "ALC",
+   "lymphocytes"
+  ],
+  "alt_units": {
+   "/uL": 0.001,
+   "/mm3": 0.001
+  }
+ },
+ {
+  "key": "eosinophil_count",
+  "name": "Blood eosinophil count",
+  "type": "lab",
+  "unit": "10^9/L",
+  "code": {
+   "system": "LOINC",
+   "code": "711-2"
+  },
+  "aliases": [
+   "eosinophils",
+   "EOS"
+  ],
+  "alt_units": {
+   "/uL": 0.001,
+   "cells/uL": 0.001,
+   "/mm3": 0.001
+  }
+ },
+ {
+  "key": "aptt",
+  "name": "Activated partial thromboplastin time",
+  "type": "lab",
+  "unit": "s",
+  "aliases": [
+   "aPTT",
+   "PTT"
+  ]
+ },
+ {
+  "key": "pt",
+  "name": "Prothrombin time",
+  "type": "lab",
+  "unit": "s",
+  "code": {
+   "system": "LOINC",
+   "code": "5902-2"
+  },
+  "aliases": [
+   "PT"
+  ]
+ },
+ {
+  "key": "calcium",
+  "name": "Serum calcium",
+  "type": "lab",
+  "unit": "mg/dL",
+  "code": {
+   "system": "LOINC",
+   "code": "17861-6"
+  },
+  "aliases": [
+   "Ca",
+   "corrected calcium"
+  ],
+  "alt_units": {
+   "mmol/L": 4.008
+  }
+ },
+ {
+  "key": "magnesium",
+  "name": "Serum magnesium",
+  "type": "lab",
+  "unit": "mg/dL",
+  "code": {
+   "system": "LOINC",
+   "code": "19123-9"
+  },
+  "aliases": [
+   "Mg"
+  ],
+  "alt_units": {
+   "mmol/L": 2.431
+  }
+ },
+ {
+  "key": "phosphate",
+  "name": "Serum phosphate",
+  "type": "lab",
+  "unit": "mg/dL",
+  "code": {
+   "system": "LOINC",
+   "code": "2777-1"
+  },
+  "aliases": [
+   "phosphorus",
+   "PO4"
+  ],
+  "alt_units": {
+   "mmol/L": 3.097
+  }
+ },
+ {
+  "key": "uric_acid",
+  "name": "Serum uric acid",
+  "type": "lab",
+  "unit": "mg/dL",
+  "code": {
+   "system": "LOINC",
+   "code": "3084-1"
+  },
+  "aliases": [
+   "urate",
+   "sUA"
+  ],
+  "alt_units": {
+   "umol/L": 0.0168
+  }
+ },
+ {
+  "key": "ldh",
+  "name": "Lactate dehydrogenase",
+  "type": "lab",
+  "unit": "U/L",
+  "code": {
+   "system": "LOINC",
+   "code": "2532-0"
+  },
+  "aliases": [
+   "LDH"
+  ],
+  "alt_units": {
+   "IU/L": 1
+  }
+ },
+ {
+  "key": "alp",
+  "name": "Alkaline phosphatase",
+  "type": "lab",
+  "unit": "U/L",
+  "code": {
+   "system": "LOINC",
+   "code": "6768-6"
+  },
+  "aliases": [
+   "ALP",
+   "alkaline phosphatase"
+  ],
+  "alt_units": {
+   "IU/L": 1
+  }
+ },
+ {
+  "key": "ggt",
+  "name": "Gamma-glutamyl transferase",
+  "type": "lab",
+  "unit": "U/L",
+  "aliases": [
+   "GGT"
+  ],
+  "alt_units": {
+   "IU/L": 1
+  }
+ },
+ {
+  "key": "bun",
+  "name": "Blood urea nitrogen",
+  "type": "lab",
+  "unit": "mg/dL",
+  "code": {
+   "system": "LOINC",
+   "code": "3094-0"
+  },
+  "aliases": [
+   "BUN",
+   "urea"
+  ],
+  "alt_units": {
+   "mmol/L": 2.801
+  }
+ },
+ {
+  "key": "esr",
+  "name": "Erythrocyte sedimentation rate",
+  "type": "lab",
+  "unit": "mm/h",
+  "code": {
+   "system": "LOINC",
+   "code": "30341-2"
+  },
+  "aliases": [
+   "ESR"
+  ]
+ },
+ {
+  "key": "amylase",
+  "name": "Serum amylase",
+  "type": "lab",
+  "unit": "U/L",
+  "code": {
+   "system": "LOINC",
+   "code": "1798-8"
+  },
+  "aliases": [
+   "amylase"
+  ],
+  "alt_units": {
+   "IU/L": 1
+  }
+ },
+ {
+  "key": "hdl_cholesterol",
+  "name": "HDL cholesterol",
+  "type": "lab",
+  "unit": "mg/dL",
+  "code": {
+   "system": "LOINC",
+   "code": "2085-9"
+  },
+  "aliases": [
+   "HDL",
+   "HDL-C"
+  ],
+  "alt_units": {
+   "mmol/L": 38.67
+  }
+ },
+ {
+  "key": "psa",
+  "name": "Prostate-specific antigen",
+  "type": "lab",
+  "unit": "ng/mL",
+  "code": {
+   "system": "LOINC",
+   "code": "2857-1"
+  },
+  "aliases": [
+   "PSA"
+  ]
+ },
+ {
+  "key": "cd4_count",
+  "name": "CD4 T-cell count",
+  "type": "lab",
+  "unit": "cells/uL",
+  "code": {
+   "system": "LOINC",
+   "code": "24467-3"
+  },
+  "aliases": [
+   "CD4",
+   "CD4 count"
+  ]
+ },
+ {
+  "key": "hiv_viral_load",
+  "name": "HIV-1 RNA viral load",
+  "type": "lab",
+  "unit": "copies/mL",
+  "aliases": [
+   "HIV RNA",
+   "viral load",
+   "HIV-1 RNA"
+  ]
+ },
+ {
+  "key": "hbv_dna",
+  "name": "HBV DNA",
+  "type": "lab",
+  "unit": "IU/mL",
+  "aliases": [
+   "HBV DNA",
+   "hepatitis B viral load"
+  ]
+ },
+ {
+  "key": "ige",
+  "name": "Total IgE",
+  "type": "lab",
+  "unit": "IU/mL",
+  "code": {
+   "system": "LOINC",
+   "code": "19113-0"
+  },
+  "aliases": [
+   "IgE"
+  ]
+ },
+ {
+  "key": "c_peptide",
+  "name": "C-peptide",
+  "type": "lab",
+  "unit": "ng/mL",
+  "code": {
+   "system": "LOINC",
+   "code": "1986-9"
+  },
+  "aliases": [
+   "C-peptide",
+   "fasting C-peptide"
+  ],
+  "alt_units": {
+   "nmol/L": 3.02
+  }
+ },
+ {
+  "key": "urine_protein_24h",
+  "name": "24-hour urine protein",
+  "type": "lab",
+  "unit": "g/24h",
+  "aliases": [
+   "proteinuria",
+   "24h urine protein",
+   "urinary protein"
+  ],
+  "alt_units": {
+   "mg/24h": 0.001
+  }
+ },
+ {
+  "key": "islet_autoantibodies",
+  "name": "Islet autoantibodies (GAD, IA-2, ZnT8, IAA)",
+  "type": "lab",
+  "unit": null,
+  "aliases": [
+   "GAD antibody",
+   "IA-2",
+   "ZnT8",
+   "autoantibody"
+  ]
+ },
+ {
+  "key": "pd_l1_expression",
+  "name": "PD-L1 expression (TPS/CPS)",
+  "type": "lab",
+  "unit": "%",
+  "aliases": [
+   "PD-L1",
+   "TPS",
+   "CPS"
+  ]
+ },
+ {
+  "key": "biomarker",
+  "name": "Tumor / genetic biomarker (use term: EGFR mutation, KRAS G12C, HER2, MSI-H, BRCA, ALK, MGMT ...)",
+  "type": "lab",
+  "unit": null,
+  "aliases": [
+   "mutation",
+   "amplification",
+   "rearrangement",
+   "MSI",
+   "dMMR"
+  ]
+ },
+ {
+  "key": "systolic_bp",
+  "name": "Systolic blood pressure",
+  "type": "vital",
+  "unit": "mmHg",
+  "code": {
+   "system": "LOINC",
+   "code": "8480-6"
+  },
+  "aliases": [
+   "SBP",
+   "systolic"
+  ]
+ },
+ {
+  "key": "diastolic_bp",
+  "name": "Diastolic blood pressure",
+  "type": "vital",
+  "unit": "mmHg",
+  "code": {
+   "system": "LOINC",
+   "code": "8462-4"
+  },
+  "aliases": [
+   "DBP",
+   "diastolic"
+  ]
+ },
+ {
+  "key": "fev1",
+  "name": "FEV1 (% predicted)",
+  "type": "measurement",
+  "unit": "%",
+  "aliases": [
+   "FEV1",
+   "forced expiratory volume"
+  ],
+  "alt_units": {
+   "% predicted": 1,
+   "%pred": 1
+  }
+ },
+ {
+  "key": "fvc",
+  "name": "FVC (% predicted)",
+  "type": "measurement",
+  "unit": "%",
+  "aliases": [
+   "FVC",
+   "forced vital capacity"
+  ],
+  "alt_units": {
+   "% predicted": 1,
+   "%pred": 1
+  }
+ },
+ {
+  "key": "dlco",
+  "name": "DLCO (% predicted)",
+  "type": "measurement",
+  "unit": "%",
+  "aliases": [
+   "DLCO",
+   "diffusing capacity"
+  ],
+  "alt_units": {
+   "% predicted": 1,
+   "%pred": 1
+  }
+ },
+ {
+  "key": "bmd_tscore",
+  "name": "Bone mineral density T-score",
+  "type": "measurement",
+  "unit": "SD",
+  "aliases": [
+   "T-score",
+   "BMD",
+   "DXA"
+  ]
+ },
+ {
+  "key": "life_expectancy",
+  "name": "Estimated life expectancy",
+  "type": "measurement",
+  "unit": "months",
+  "aliases": [
+   "life expectancy"
+  ],
+  "alt_units": {
+   "weeks": 0.23,
+   "years": 12,
+   "days": 0.0329
+  }
+ },
+ {
+  "key": "nyha_class",
+  "name": "NYHA functional class",
+  "type": "measurement",
+  "unit": "points",
+  "aliases": [
+   "NYHA"
+  ]
+ },
+ {
+  "key": "child_pugh",
+  "name": "Child-Pugh class / score",
+  "type": "measurement",
+  "unit": "points",
+  "aliases": [
+   "Child-Pugh",
+   "Child Pugh"
+  ]
+ },
+ {
+  "key": "sofa_score",
+  "name": "SOFA score",
+  "type": "measurement",
+  "unit": "points",
+  "aliases": [
+   "SOFA"
+  ]
+ },
+ {
+  "key": "apache_ii",
+  "name": "APACHE II score",
+  "type": "measurement",
+  "unit": "points",
+  "aliases": [
+   "APACHE"
+  ]
+ },
+ {
+  "key": "ctsi",
+  "name": "CT severity index (pancreatitis)",
+  "type": "measurement",
+  "unit": "points",
+  "aliases": [
+   "CTSI",
+   "Balthazar"
+  ]
+ },
+ {
+  "key": "mmse",
+  "name": "MMSE",
+  "type": "measurement",
+  "unit": "points",
+  "aliases": [
+   "MMSE",
+   "Mini-Mental"
+  ]
+ },
+ {
+  "key": "moca",
+  "name": "MoCA",
+  "type": "measurement",
+  "unit": "points",
+  "aliases": [
+   "MoCA"
+  ]
+ },
+ {
+  "key": "cdr",
+  "name": "Clinical Dementia Rating",
+  "type": "measurement",
+  "unit": "points",
+  "aliases": [
+   "CDR"
+  ]
+ },
+ {
+  "key": "easi",
+  "name": "EASI score",
+  "type": "measurement",
+  "unit": "points",
+  "aliases": [
+   "EASI"
+  ]
+ },
+ {
+  "key": "das28",
+  "name": "DAS28",
+  "type": "measurement",
+  "unit": "points",
+  "aliases": [
+   "DAS28",
+   "DAS28-CRP",
+   "DAS28-ESR"
+  ]
+ },
+ {
+  "key": "cdai",
+  "name": "CDAI (Crohn)",
+  "type": "measurement",
+  "unit": "points",
+  "aliases": [
+   "CDAI"
+  ]
+ },
+ {
+  "key": "mayo_score",
+  "name": "Mayo score (UC)",
+  "type": "measurement",
+  "unit": "points",
+  "aliases": [
+   "Mayo",
+   "modified Mayo"
+  ]
+ },
+ {
+  "key": "hbi",
+  "name": "Harvey-Bradshaw Index",
+  "type": "measurement",
+  "unit": "points",
+  "aliases": [
+   "HBI",
+   "Harvey-Bradshaw"
+  ]
+ },
+ {
+  "key": "sledai",
+  "name": "SLEDAI",
+  "type": "measurement",
+  "unit": "points",
+  "aliases": [
+   "SLEDAI",
+   "SLEDAI-2K"
+  ]
+ },
+ {
+  "key": "updrs",
+  "name": "MDS-UPDRS",
+  "type": "measurement",
+  "unit": "points",
+  "aliases": [
+   "UPDRS"
+  ]
+ },
+ {
+  "key": "edss",
+  "name": "EDSS",
+  "type": "measurement",
+  "unit": "points",
+  "aliases": [
+   "EDSS"
+  ]
+ },
+ {
+  "key": "madrs",
+  "name": "MADRS",
+  "type": "measurement",
+  "unit": "points",
+  "aliases": [
+   "MADRS"
+  ]
+ },
+ {
+  "key": "hamd",
+  "name": "HAM-D",
+  "type": "measurement",
+  "unit": "points",
+  "aliases": [
+   "HAM-D",
+   "Hamilton"
+  ]
+ },
+ {
+  "key": "phq9",
+  "name": "PHQ-9",
+  "type": "measurement",
+  "unit": "points",
+  "aliases": [
+   "PHQ-9",
+   "PHQ"
+  ]
+ },
+ {
+  "key": "acq",
+  "name": "Asthma Control Questionnaire",
+  "type": "measurement",
+  "unit": "points",
+  "aliases": [
+   "ACQ",
+   "ACQ-5",
+   "ACT"
+  ]
+ },
+ {
+  "key": "mrss",
+  "name": "Modified Rodnan skin score",
+  "type": "measurement",
+  "unit": "points",
+  "aliases": [
+   "mRSS"
+  ]
+ },
+ {
+  "key": "hit6",
+  "name": "HIT-6",
+  "type": "measurement",
+  "unit": "points",
+  "aliases": [
+   "HIT-6"
+  ]
+ },
+ {
+  "key": "monthly_migraine_days",
+  "name": "Monthly migraine days",
+  "type": "measurement",
+  "unit": "days/month",
+  "aliases": [
+   "MMD",
+   "migraine days",
+   "headache days"
+  ],
+  "alt_units": {
+   "days": 1,
+   "times/month": 1
+  }
+ },
+ {
+  "key": "childbearing_potential",
+  "name": "Woman of childbearing potential",
+  "type": "demographic",
+  "unit": null,
+  "aliases": [
+   "WOCBP",
+   "childbearing potential",
+   "postmenopausal",
+   "surgically sterile"
+  ]
+ },
+ {
+  "key": "menopausal_status",
+  "name": "Menopausal status",
+  "type": "demographic",
+  "unit": null,
+  "aliases": [
+   "postmenopausal",
+   "premenopausal",
+   "perimenopausal"
+  ]
+ },
+ {
+  "key": "measurable_disease",
+  "name": "Measurable disease (RECIST / other)",
+  "type": "condition",
+  "unit": null,
+  "aliases": [
+   "measurable disease",
+   "RECIST",
+   "evaluable disease"
+  ]
+ },
+ {
+  "key": "prior_treatment_lines",
+  "name": "Number of prior lines of systemic therapy",
+  "type": "measurement",
+  "unit": "lines",
+  "aliases": [
+   "prior lines",
+   "line of therapy",
+   "previously treated"
+  ]
+ },
+ {
+  "key": "weight_change",
+  "name": "Body weight change (percent)",
+  "type": "measurement",
+  "unit": "%"
+ },
+ {
+  "key": "blood_pressure_percentile",
+  "name": "Blood pressure percentile for age/sex/height (pediatric)",
+  "type": "measurement",
+  "unit": "percentile"
+ },
+ {
+  "key": "fev1_fvc_ratio",
+  "name": "FEV1/FVC ratio",
+  "type": "measurement",
+  "unit": "%",
+  "alt_units": {
+   "ratio": 100
+  }
+ },
+ {
+  "key": "nt_probnp",
+  "name": "N-terminal pro B-type natriuretic peptide",
+  "type": "lab",
+  "unit": "pg/mL",
+  "code": {
+   "system": "LOINC",
+   "code": "33762-6"
+  },
+  "aliases": [
+   "NT-proBNP",
+   "NTproBNP",
+   "NT proBNP"
+  ],
+  "alt_units": {
+   "ng/L": 1
+  }
+ },
+ {
+  "key": "igg",
+  "name": "Immunoglobulin G, serum",
+  "type": "lab",
+  "unit": "mg/dL",
+  "code": {
+   "system": "LOINC",
+   "code": "2465-3"
+  },
+  "aliases": [
+   "IgG",
+   "total IgG"
+  ],
+  "alt_units": {
+   "g/L": 100
+  }
+ },
+ {
+  "key": "fecal_elastase",
+  "name": "Fecal elastase-1",
+  "type": "lab",
+  "unit": "ug/g",
+  "aliases": [
+   "FE-1",
+   "fecal elastase"
+  ],
+  "alt_units": {
+   "µg/g": 1
+  }
+ },
+ {
+  "key": "axial_length",
+  "name": "Ocular axial length",
+  "type": "measurement",
+  "unit": "mm",
+  "aliases": [
+   "axial length",
+   "AL"
+  ]
+ },
+ {
+  "key": "six_minute_walk_distance",
+  "name": "6-minute walk test distance",
+  "type": "measurement",
+  "unit": "m",
+  "aliases": [
+   "6MWD",
+   "6MWT",
+   "6-minute walk"
+  ],
+  "alt_units": {
+   "meters": 1
+  }
+ },
+ {
+  "key": "cat_score",
+  "name": "COPD Assessment Test (CAT) score",
+  "type": "measurement",
+  "unit": "points",
+  "aliases": [
+   "CAT",
+   "COPD Assessment Test"
+  ]
+ },
+ {
+  "key": "clinical_activity_score",
+  "name": "Clinical Activity Score for Graves' orbitopathy (CAS)",
+  "type": "measurement",
+  "unit": "points",
+  "aliases": [
+   "CAS"
+  ]
+ },
+ {
+  "key": "intraocular_pressure",
+  "name": "Intraocular pressure",
+  "type": "measurement",
+  "unit": "mmHg",
+  "aliases": [
+   "IOP"
+  ]
+ },
+ {
+  "key": "visual_acuity",
+  "name": "Visual acuity (decimal; Snellen 6/12 = 0.5)",
+  "type": "measurement",
+  "unit": null,
+  "aliases": [
+   "VA",
+   "BCVA"
+  ]
+ },
+ {
+  "key": "proptosis_exophthalmometry",
+  "name": "Proptosis by exophthalmometry",
+  "type": "measurement",
+  "unit": "mm",
+  "aliases": [
+   "proptosis",
+   "exophthalmometry",
+   "eyeball protrusion"
+  ]
+ },
+ {
+  "key": "oxygen_flow_rate",
+  "name": "Supplemental oxygen flow rate",
+  "type": "measurement",
+  "unit": "L/min"
+ },
+ {
+  "key": "administrative",
+  "name": "Administrative / consent / compliance item (not judged from records)",
+  "type": "other",
+  "unit": null,
+  "aliases": [
+   "informed consent",
+   "willing to comply",
+   "able to attend"
+  ]
+ },
+ {
+  "key": "migraine_attack_frequency",
+  "name": "Migraine attack frequency",
+  "type": "measurement",
+  "unit": "attacks/month",
+  "aliases": [
+   "migraine attacks per month",
+   "attacks/month"
+  ]
+ },
+ {
+  "key": "clinical_trial_participation",
+  "name": "Current or recent participation in another clinical trial / investigational product (boolean: exists / not_exists)",
+  "type": "condition",
+  "unit": null,
+  "aliases": [
+   "clinical trial participation",
+   "participation in another clinical trial",
+   "investigational drug",
+   "investigational device",
+   "investigational product",
+   "another interventional study"
+  ]
+ }
+]

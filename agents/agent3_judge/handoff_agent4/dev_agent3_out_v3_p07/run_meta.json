@@ -1,0 +1,22 @@
+{
+ "agent3_version": "a3-0.3.0-dev",
+ "prompt_version": "p07",
+ "llm": "anthropic",
+ "salt": "",
+ "model": "claude-sonnet-5-5",
+ "policy": {
+  "list_inference": "strict",
+  "blanket_negation": "on",
+  "default_window": true
+ },
+ "evidence": "/home/claude/agent3_final/agent3_kit/evidence_dev_haiku_v14_7.jsonl",
+ "pairs": 54,
+ "usage": {
+  "calls": 27,
+  "cache_hits": 34,
+  "input_tokens": 90853,
+  "output_tokens": 121389,
+  "cache_read_input_tokens": 505511,
+  "cache_creation_input_tokens": 87767
+ }
+}

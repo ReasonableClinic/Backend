@@ -1,0 +1,2666 @@
+{
+ "patient_id": "SYN-0008",
+ "as_of": "2026-10-01",
+ "version": 1,
+ "nodes": [
+  {
+   "id": "trial:NCT06908096",
+   "kind": "trial",
+   "title": "Epstein-Barr Virus (EBV) gH/gL/gp42-Ferritin Nanoparticle Vaccine With or Without gp350-Ferritin in Healthy Adults With or Without EBV Infection"
+  },
+  {
+   "id": "crit:NCT06908096-I01",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "18 to 29 years old.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06908096:NCT06908096-I01:r1",
+   "kind": "decision",
+   "trial_id": "NCT06908096",
+   "criterion_id": "NCT06908096-I01",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "age_rule"
+   ],
+   "note": "age 19.62 y vs [18.0, 29.0]",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0008-EV002",
+   "kind": "evidence",
+   "concept": "birth_date",
+   "term": null,
+   "value": "2007-02-17",
+   "unit": null,
+   "observed_date": "2026-09-21",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:birth_date",
+   "kind": "concept",
+   "concept": "birth_date",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0008-D01:6-21",
+   "kind": "source",
+   "doc_id": "SYN-0008-D01",
+   "doc_type": "registration",
+   "span": [
+    6,
+    21
+   ],
+   "text": "DOB 2007-02-17."
+  },
+  {
+   "id": "calc:NCT06908096:NCT06908096-I01",
+   "kind": "calculation",
+   "name": "age_at_as_of",
+   "value": 19.619,
+   "lo": 18.0,
+   "hi": 29.0
+  },
+  {
+   "id": "crit:NCT06908096-I02",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Able to provide informed consent.",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06908096:NCT06908096-I02:r1",
+   "kind": "decision",
+   "trial_id": "NCT06908096",
+   "criterion_id": "NCT06908096-I02",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "admin"
+   ],
+   "note": "consent/compliance item: not decidable from the record",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06908096-I03",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Willingness to allow storage of blood and saliva for future research.",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06908096:NCT06908096-I03:r1",
+   "kind": "decision",
+   "trial_id": "NCT06908096",
+   "criterion_id": "NCT06908096-I03",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "admin"
+   ],
+   "note": "consent/compliance item: not decidable from the record",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06908096-I04",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "In good general health as evidenced by medical history, physical examination, and laboratory screening results.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06908096:NCT06908096-I04:r1",
+   "kind": "decision",
+   "trial_id": "NCT06908096",
+   "criterion_id": "NCT06908096-I04",
+   "status": "UNKNOWN",
+   "reason": "UNSUPPORTED",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Active mononucleosis with mild splenomegaly and transaminitis; the degree of 'good health' is a judgment not documented.",
+   "missing_fact": "Clinician judgment on whether current improving mononucleosis with mild splenomegaly and transaminitis counts as good general health",
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0008-EV151",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "acute EBV infectious mononucleosis",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-30",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:diagnosis:acute ebv infectious mononucleosis",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "acute EBV infectious mononucleosis"
+  },
+  {
+   "id": "src:SYN-0008-D06:3443-3536",
+   "kind": "source",
+   "doc_id": "SYN-0008-D06",
+   "doc_type": "clinic_note",
+   "span": [
+    3443,
+    3536
+   ],
+   "text": "Acute EBV infectious mononucleosis, improving, with mild splenomegaly and mild transaminitis."
+  },
+  {
+   "id": "ev:SYN-0008-EV152",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "mild transaminitis",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-30",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:diagnosis:mild transaminitis",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "mild transaminitis"
+  },
+  {
+   "id": "crit:NCT06908096-I05",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Participant is willing to forgo receipt of a licensed, live vaccine in the 30 days preceding each dose of vaccine or in the 30 days following each dose of vaccine. Any FDA-approved inactivated, subunit, or replication-defective vaccine (such as COVID-19, influenza, tetanus, etc.) can be used >=14 days before or >=14 days after administration of the study vaccine.",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06908096:NCT06908096-I05:r1",
+   "kind": "decision",
+   "trial_id": "NCT06908096",
+   "criterion_id": "NCT06908096-I05",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "admin"
+   ],
+   "note": "consent/compliance item: not decidable from the record",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06908096-I06",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Participants of reproductive potential who are sexually active with a partner who can impregnate them: use of highly effective continuous contraception for at least 30 days prior to Day 0 and agreement to continue use until 60 days after the last dose of vaccine. Contraceptive requirements: Because the effects of EBV gH/gL/gp42-FNP and EBV gp350-ferritin vaccines on the developing human fetus are unknown, sexually active participants of childbearing potential must agree to use highly effective contraception as outlined below before study entry and until 60 days after the last dose of vaccine. Participants of childbearing potential must have a negative pregnancy test before receiving each dose of the EBV gH/gL/gp42-FNP vaccine. During the course of the study, if a participant becomes pregnant or suspects they are pregnant, then they should inform the study staff and their primary care physician immediately.",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06908096:NCT06908096-I06:r1",
+   "kind": "decision",
+   "trial_id": "NCT06908096",
+   "criterion_id": "NCT06908096-I06",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "impossible_condition"
+   ],
+   "note": "Male patient; item concerns participants who can become pregnant, so it cannot apply.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0008-EV001",
+   "kind": "evidence",
+   "concept": "sex",
+   "term": null,
+   "value": "male",
+   "unit": null,
+   "observed_date": "2026-09-21",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:sex",
+   "kind": "concept",
+   "concept": "sex",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0008-D01:0-5",
+   "kind": "source",
+   "doc_id": "SYN-0008-D01",
+   "doc_type": "registration",
+   "span": [
+    0,
+    5
+   ],
+   "text": "Male."
+  },
+  {
+   "id": "crit:NCT06908096-I07",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Acceptable forms of contraception are: Intrauterine device (IUD) or equivalent.; Hormonal contraceptive (eg, consistent, timely, and continuous use of contraceptive pill, patch, ring, implant, or injection that has reached full efficacy prior to dosing). If the participant uses a contraceptive pill, patch, or ring, then a barrier method (eg, internal/external condom, cap, or diaphragm plus spermicide) must also be used at the time of potentially reproductive sexual activity.; A stable, long-term monogamous relationship with a partner who does not pose any potential pregnancy risk, eg, has undergone a vasectomy at least 6 months prior to the first dose of vaccine or is of the same sex as the participant.; A hysterectomy and/or a bilateral tubal ligation or bilateral oophorectomy.",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06908096:NCT06908096-I07:r1",
+   "kind": "decision",
+   "trial_id": "NCT06908096",
+   "criterion_id": "NCT06908096-I07",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "impossible_condition"
+   ],
+   "note": "Contraception list for participants who can become pregnant; patient is male, so not applicable.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06908096-I08",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Acceptable forms of contraception for participants who can impregnate a partner include one of the following: External condom plus spermicide, used during sexual intercourse, even if the partner uses a contraceptive pill, patch, or ring.; A vasectomy completed at least 6 months before the first dose of vaccine.; Continuously and completely abstaining from sexual intercourse with a partner of childbearing potential from the first dose of vaccine until 30 days after the last dose. Acceptable contraception for partners of childbearing potential of participants who can impregnate them include one of the following: IUD or equivalent.; Hormonal contraceptive (eg, pill, patch, ring, implant, or an injection used consistently and that has reached full effect prior to the first dose of vaccine).; Hysterectomy and/or a bilateral tubal ligation or bilateral oophorectomy.",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06908096:NCT06908096-I08:r1",
+   "kind": "decision",
+   "trial_id": "NCT06908096",
+   "criterion_id": "NCT06908096-I08",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Male patient, so the item may apply; no contraception or sexual history is recorded.",
+   "missing_fact": "Sexual activity with a partner of childbearing potential and willingness to use an acceptable contraception method or abstain",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06908096-I09",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Hemoglobin within institutional normal limits or if not, then assessed and deemed not clinically significant by PI or designee",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06908096:NCT06908096-I09:r1",
+   "kind": "decision",
+   "trial_id": "NCT06908096",
+   "criterion_id": "NCT06908096-I09",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Hemoglobin 146 g/L (ref 130-175) on -1d, within normal limits.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0008-EV164",
+   "kind": "evidence",
+   "concept": "hemoglobin",
+   "term": null,
+   "value": 14.6,
+   "unit": "g/dL",
+   "observed_date": "2026-09-30",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:hemoglobin",
+   "kind": "concept",
+   "concept": "hemoglobin",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0008-D07:148-180",
+   "kind": "source",
+   "doc_id": "SYN-0008-D07",
+   "doc_type": "lab_result",
+   "span": [
+    148,
+    180
+   ],
+   "text": "Hemoglobin 146 g/L (ref 130-175)"
+  },
+  {
+   "id": "crit:NCT06908096-I10",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "White blood cell count and differential either within institutional normal reference range or if not then assessed and deemed not clinically significant by PI or designee",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06908096:NCT06908096-I10:r1",
+   "kind": "decision",
+   "trial_id": "NCT06908096",
+   "criterion_id": "NCT06908096-I10",
+   "status": "UNKNOWN",
+   "reason": "UNSUPPORTED",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "WBC 9.6 is normal, but the differential is abnormal (atypical lymphocytes 6% H) and no PI assessment is documented.",
+   "missing_fact": "PI assessment of whether atypical lymphocytes 6% (ref 0) are clinically significant",
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0008-EV162",
+   "kind": "evidence",
+   "concept": "wbc",
+   "term": null,
+   "value": 9.6,
+   "unit": "10^9/L",
+   "observed_date": "2026-09-30",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:wbc",
+   "kind": "concept",
+   "concept": "wbc",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0008-D07:86-116",
+   "kind": "source",
+   "doc_id": "SYN-0008-D07",
+   "doc_type": "lab_result",
+   "span": [
+    86,
+    116
+   ],
+   "text": "WBC 9.6 x10^9/L (ref 4.0-11.0)"
+  },
+  {
+   "id": "ev:SYN-0008-EV171",
+   "kind": "evidence",
+   "concept": "lab_other",
+   "term": "atypical lymphocytes",
+   "value": "6%",
+   "unit": null,
+   "observed_date": "2026-09-30",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:lab_other:atypical lymphocytes",
+   "kind": "concept",
+   "concept": "lab_other",
+   "term": "atypical lymphocytes"
+  },
+  {
+   "id": "src:SYN-0008-D07:364-397",
+   "kind": "source",
+   "doc_id": "SYN-0008-D07",
+   "doc_type": "lab_result",
+   "span": [
+    364,
+    397
+   ],
+   "text": "Atypical lymphocytes 6% H (ref 0)"
+  },
+  {
+   "id": "crit:NCT06908096-I11",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Total lymphocyte count (lymphocyte absolute) > 800 cells/microL",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06908096:NCT06908096-I11:r1",
+   "kind": "decision",
+   "trial_id": "NCT06908096",
+   "criterion_id": "NCT06908096-I11",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "structured_numeric"
+   ],
+   "note": "lymphocyte_count = 4.7 10^9/L (2026-09-30, -1d) vs > 0.8 [x0.001 (/uL -> 10^9/L)] -> met",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0008-EV170",
+   "kind": "evidence",
+   "concept": "lymphocyte_count",
+   "term": null,
+   "value": 4.7,
+   "unit": "10^9/L",
+   "observed_date": "2026-09-30",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:lymphocyte_count",
+   "kind": "concept",
+   "concept": "lymphocyte_count",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0008-D07:319-347",
+   "kind": "source",
+   "doc_id": "SYN-0008-D07",
+   "doc_type": "lab_result",
+   "span": [
+    319,
+    347
+   ],
+   "text": "Lymphocytes 49% (4.7 x10^9/L"
+  },
+  {
+   "id": "calc:NCT06908096:NCT06908096-I11",
+   "kind": "calculation",
+   "concept": "lymphocyte_count",
+   "operator": ">",
+   "threshold": 800,
+   "unit": "/uL",
+   "value": 4.7,
+   "value_unit": "10^9/L",
+   "observed_date": "2026-09-30",
+   "days_before": 1,
+   "threshold_in_base_unit": 0.8,
+   "note": "lymphocyte_count = 4.7 10^9/L (2026-09-30, -1d) vs > 0.8 [x0.001 (/uL -> 10^9/L)] -> met"
+  },
+  {
+   "id": "crit:NCT06908096-I12",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Platelet count equal to 125,000-500,000/microL",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06908096:NCT06908096-I12:r1",
+   "kind": "decision",
+   "trial_id": "NCT06908096",
+   "criterion_id": "NCT06908096-I12",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "structured_numeric"
+   ],
+   "note": "platelet_count = 188 10^9/L (2026-09-30, -1d) vs between [125.0, 500.0] [x0.001 (/uL -> 10^9/L)] -> met",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0008-EV167",
+   "kind": "evidence",
+   "concept": "platelet_count",
+   "term": null,
+   "value": 188,
+   "unit": "10^9/L",
+   "observed_date": "2026-09-30",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:platelet_count",
+   "kind": "concept",
+   "concept": "platelet_count",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0008-D07:240-275",
+   "kind": "source",
+   "doc_id": "SYN-0008-D07",
+   "doc_type": "lab_result",
+   "span": [
+    240,
+    275
+   ],
+   "text": "Platelets 188 x10^9/L (ref 150-400)"
+  },
+  {
+   "id": "calc:NCT06908096:NCT06908096-I12",
+   "kind": "calculation",
+   "concept": "platelet_count",
+   "operator": "between",
+   "threshold": [
+    125000,
+    500000
+   ],
+   "unit": "/uL",
+   "value": 188,
+   "value_unit": "10^9/L",
+   "observed_date": "2026-09-30",
+   "days_before": 1,
+   "threshold_in_base_unit": [
+    125.0,
+    500.0
+   ],
+   "note": "platelet_count = 188 10^9/L (2026-09-30, -1d) vs between [125.0, 500.0] [x0.001 (/uL -> 10^9/L)] -> met"
+  },
+  {
+   "id": "crit:NCT06908096-I13",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Alanine aminotransferase <1.25 x upper limit of normal (ULN)",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06908096:NCT06908096-I13:r1",
+   "kind": "decision",
+   "trial_id": "NCT06908096",
+   "criterion_id": "NCT06908096-I13",
+   "status": "FAIL",
+   "reason": "VIOLATED",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "ALT 74 U/L with ref 7-55 on the line; 1.25 x ULN = 68.75, so ALT is above the limit.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0008-EV187",
+   "kind": "evidence",
+   "concept": "alt",
+   "term": null,
+   "value": 74,
+   "unit": "U/L",
+   "observed_date": "2026-09-30",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:alt",
+   "kind": "concept",
+   "concept": "alt",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0008-D07:891-914",
+   "kind": "source",
+   "doc_id": "SYN-0008-D07",
+   "doc_type": "lab_result",
+   "span": [
+    891,
+    914
+   ],
+   "text": "ALT 74 U/L (ref 7-55) H"
+  },
+  {
+   "id": "crit:NCT06908096-I14",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Serum IgG >600 mg/dL",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06908096:NCT06908096-I14:r1",
+   "kind": "decision",
+   "trial_id": "NCT06908096",
+   "criterion_id": "NCT06908096-I14",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "new_test",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No IgG result in the record.",
+   "missing_fact": "Serum IgG level",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06908096-E01",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Pregnant, breastfeeding, or planning to become pregnant while participating through 60 days after the last dose of vaccine.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06908096:NCT06908096-E01:r1",
+   "kind": "decision",
+   "trial_id": "NCT06908096",
+   "criterion_id": "NCT06908096-E01",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "impossible",
+    "sex_rule"
+   ],
+   "note": "applies only to women; patient is male",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06908096-E02",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Participant has received any of the following: More than 10 days of systemic immunosuppressive medications (>=10 mg prednisone dose or its equivalent) or cytotoxic medication within the 30 days prior to first dose of vaccine or immunomodulating therapy within 180 days prior to first dose of vaccine.; Blood products, including immunoglobulin products, within 120 days prior to first dose of vaccine.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06908096:NCT06908096-E02:r1",
+   "kind": "decision",
+   "trial_id": "NCT06908096",
+   "criterion_id": "NCT06908096-E02",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Reconciled med list shows only acetaminophen, so no immunosuppressants; blood products are not addressed, so only partly settled.",
+   "missing_fact": "Receipt of blood products or immunoglobulin within 120 days",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06908096-E03",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Investigational research agents within 30 days prior to first dose or planning to receive investigational products while on study.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06908096:NCT06908096-E03:r1",
+   "kind": "decision",
+   "trial_id": "NCT06908096",
+   "criterion_id": "NCT06908096-E03",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No investigational agents on the reconciled list, but the future-plan part is not documented.",
+   "missing_fact": "Recent investigational agent use or plan to receive investigational products during the study",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06908096-E04",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Allergy treatment with antigen injections, unless on a maintenance schedule of shots no more frequently than once per month.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06908096:NCT06908096-E04:r1",
+   "kind": "decision",
+   "trial_id": "NCT06908096",
+   "criterion_id": "NCT06908096-E04",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_history_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "list_inference",
+    "pc:strict_list_inference"
+   ],
+   "note": "[inferable PASS from clinic_note 2026-09-30 (reconciled medication list)] Reconciled list with 'no other prescription, OTC or supplement use'; no antigen injections listed.",
+   "missing_fact": null,
+   "derived_from": "clinic_note 2026-09-30 (reconciled medication list)"
+  },
+  {
+   "id": "crit:NCT06908096-E05",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Prior participant in an EBV vaccine clinical trial.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06908096:NCT06908096-E05:r1",
+   "kind": "decision",
+   "trial_id": "NCT06908096",
+   "criterion_id": "NCT06908096-E05",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Not mentioned in the record.",
+   "missing_fact": "Prior participation in an EBV vaccine clinical trial",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06908096-E06",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Participant has any of the following: Febrile illness within 14 days of the first dose of vaccine.; Body habitus such that it is difficult to confirm location of the deltoid muscle for safe intramuscular injection.; History of serious reactions to vaccines.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06908096:NCT06908096-E06:r1",
+   "kind": "decision",
+   "trial_id": "NCT06908096",
+   "criterion_id": "NCT06908096-E06",
+   "status": "FAIL",
+   "reason": "VIOLATED",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Fever up to 39C 10 days ago, resolved about 6 days ago; febrile illness falls within 14 days of as_of.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0008-EV005",
+   "kind": "evidence",
+   "concept": "age",
+   "term": null,
+   "value": 19,
+   "unit": "years",
+   "observed_date": "2026-09-21",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:age",
+   "kind": "concept",
+   "concept": "age",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0008-D02:16-90",
+   "kind": "source",
+   "doc_id": "SYN-0008-D02",
+   "doc_type": "clinic_note",
+   "span": [
+    16,
+    90
+   ],
+   "text": "19M with 6 days of fever up to 39C, severe sore throat and marked fatigue."
+  },
+  {
+   "id": "ev:SYN-0008-EV031",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "fever",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-30",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:symptom_finding:fever",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "fever"
+  },
+  {
+   "id": "src:SYN-0008-D06:269-336",
+   "kind": "source",
+   "doc_id": "SYN-0008-D06",
+   "doc_type": "clinic_note",
+   "span": [
+    269,
+    336
+   ],
+   "text": "Fever resolved about 5 days ago, now afebrile without antipyretics."
+  },
+  {
+   "id": "crit:NCT06908096-E07",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Hereditary, acquired, or idiopathic forms of angioedema.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06908096:NCT06908096-E07:r1",
+   "kind": "decision",
+   "trial_id": "NCT06908096",
+   "criterion_id": "NCT06908096-E07",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Angioedema explicitly denied (in the amoxicillin reaction context); no angioedema diagnosis recorded.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0008-EV063",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "angioedema",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-30",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:symptom_finding:angioedema",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "angioedema"
+  },
+  {
+   "id": "src:SYN-0008-D06:1041-1091",
+   "kind": "source",
+   "doc_id": "SYN-0008-D06",
+   "doc_type": "clinic_note",
+   "span": [
+    1041,
+    1091
+   ],
+   "text": "no urticaria, angioedema or breathing difficulty)."
+  },
+  {
+   "id": "crit:NCT06908096-E08",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Idiopathic urticaria within the past year.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06908096:NCT06908096-E08:r1",
+   "kind": "decision",
+   "trial_id": "NCT06908096",
+   "criterion_id": "NCT06908096-E08",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Urticaria explicitly denied; no urticaria diagnosis recorded.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0008-EV062",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "urticaria",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-30",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:symptom_finding:urticaria",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "urticaria"
+  },
+  {
+   "id": "crit:NCT06908096-E09",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Asthma that is not well-controlled or required emergent care, urgent care, hospitalization, or intubation during the past 2 years or that requires the use of oral or intravenous steroids.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06908096:NCT06908096-E09:r1",
+   "kind": "decision",
+   "trial_id": "NCT06908096",
+   "criterion_id": "NCT06908096-E09",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation"
+   ],
+   "note": "No pulmonary history; no wheeze or cough; no steroid use.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0008-EV051",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "pulmonary history",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-30",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:pulmonary history",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "pulmonary history"
+  },
+  {
+   "id": "src:SYN-0008-D06:797-888",
+   "kind": "source",
+   "doc_id": "SYN-0008-D06",
+   "doc_type": "clinic_note",
+   "span": [
+    797,
+    888
+   ],
+   "text": "No other cardiac, pulmonary, hepatic, renal, autoimmune, hematologic or neurologic history."
+  },
+  {
+   "id": "crit:NCT06908096-E10",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Diabetes mellitus type 1 or type 2, excluding a history of gestational diabetes.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06908096:NCT06908096-E10:r1",
+   "kind": "decision",
+   "trial_id": "NCT06908096",
+   "criterion_id": "NCT06908096-E10",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Not mentioned; the blanket negation does not cover endocrine disease, and a normal glucose does not exclude diabetes.",
+   "missing_fact": "Diabetes history",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06908096-E11",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Clinically significant autoimmune disease or immunodeficiency.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06908096:NCT06908096-E11:r1",
+   "kind": "decision",
+   "trial_id": "NCT06908096",
+   "criterion_id": "NCT06908096-E11",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_record_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Autoimmune history is denied (EV054) but immunodeficiency is not addressed, so only partly settled.",
+   "missing_fact": "Absence of immunodeficiency",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06908096-E12",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Hypertension that is not well-controlled.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06908096:NCT06908096-E12:r1",
+   "kind": "decision",
+   "trial_id": "NCT06908096",
+   "criterion_id": "NCT06908096-E12",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "BP 118/70 yesterday; the record contradicts uncontrolled hypertension. Only the father has hypertension.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0008-EV042",
+   "kind": "evidence",
+   "concept": "blood_pressure",
+   "term": null,
+   "value": "118/70",
+   "unit": "mmHg",
+   "observed_date": "2026-09-30",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:blood_pressure",
+   "kind": "concept",
+   "concept": "blood_pressure",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0008-D06:660-670",
+   "kind": "source",
+   "doc_id": "SYN-0008-D06",
+   "doc_type": "clinic_note",
+   "span": [
+    660,
+    670
+   ],
+   "text": "BP 118/70."
+  },
+  {
+   "id": "ev:SYN-0008-EV225",
+   "kind": "evidence",
+   "concept": "systolic_bp",
+   "term": null,
+   "value": 118,
+   "unit": "mmHg",
+   "observed_date": "2026-09-30",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:systolic_bp",
+   "kind": "concept",
+   "concept": "systolic_bp",
+   "term": null
+  },
+  {
+   "id": "ev:SYN-0008-EV226",
+   "kind": "evidence",
+   "concept": "diastolic_bp",
+   "term": null,
+   "value": 70,
+   "unit": "mmHg",
+   "observed_date": "2026-09-30",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:diastolic_bp",
+   "kind": "concept",
+   "concept": "diastolic_bp",
+   "term": null
+  },
+  {
+   "id": "crit:NCT06908096-E13",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Thyroid disease that is not well-controlled.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06908096:NCT06908096-E13:r1",
+   "kind": "decision",
+   "trial_id": "NCT06908096",
+   "criterion_id": "NCT06908096-E13",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No mention of thyroid disease.",
+   "missing_fact": "Thyroid disease history or thyroid function",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06908096-E14",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Bleeding disorder diagnosed by doctor (eg, factor deficiency, coagulopathy, or platelet disorder requiring special precautions).",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06908096:NCT06908096-E14:r1",
+   "kind": "decision",
+   "trial_id": "NCT06908096",
+   "criterion_id": "NCT06908096-E14",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation"
+   ],
+   "note": "No hematologic history; no bruising or bleeding; platelets 188.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0008-EV055",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "hematologic history",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-30",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:hematologic history",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "hematologic history"
+  },
+  {
+   "id": "crit:NCT06908096-E15",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Significant bruising or bleeding difficulties with intramuscular injections or blood draws.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06908096:NCT06908096-E15:r1",
+   "kind": "decision",
+   "trial_id": "NCT06908096",
+   "criterion_id": "NCT06908096-E15",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_record_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "normal_finding_inference",
+    "pc:strict_normal_finding_inference"
+   ],
+   "note": "[inferable PASS from normal findings] No easy bruising, bleeding or epistaxis documented; platelets normal; injections and blood draws not specifically described.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06908096-E16",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Malignancy that is active or treated malignancy for which there is no reasonable assurance of sustained cure or malignancy that is likely to recur during the study period.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06908096:NCT06908096-E16:r1",
+   "kind": "decision",
+   "trial_id": "NCT06908096",
+   "criterion_id": "NCT06908096-E16",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "'No prior malignancy' stated explicitly.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0008-EV057",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "prior malignancy",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-30",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:prior malignancy",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "prior malignancy"
+  },
+  {
+   "id": "src:SYN-0008-D06:889-909",
+   "kind": "source",
+   "doc_id": "SYN-0008-D06",
+   "doc_type": "clinic_note",
+   "span": [
+    889,
+    909
+   ],
+   "text": "No prior malignancy."
+  },
+  {
+   "id": "crit:NCT06908096-E17",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Seizure disorder other than a history of 1) febrile seizures, 2) seizures secondary to alcohol withdrawal more than 3 years ago, or 3) seizures that have not required treatment within the past 3 years.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06908096:NCT06908096-E17:r1",
+   "kind": "decision",
+   "trial_id": "NCT06908096",
+   "criterion_id": "NCT06908096-E17",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation"
+   ],
+   "note": "No neurologic history covers a chronic seizure disorder.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0008-EV056",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "neurologic history",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-30",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:neurologic history",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "neurologic history"
+  },
+  {
+   "id": "crit:NCT06908096-E18",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Asplenia, functional asplenia, or any condition resulting in absence or removal of the spleen.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06908096:NCT06908096-E18:r1",
+   "kind": "decision",
+   "trial_id": "NCT06908096",
+   "criterion_id": "NCT06908096-E18",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Spleen present and enlarged on ultrasound; no prior splenic injury or surgery.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0008-EV138",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "splenomegaly 13.4 cm craniocaudal",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-30",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:symptom_finding:splenomegaly 13.4 cm craniocaudal",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "splenomegaly 13.4 cm craniocaudal"
+  },
+  {
+   "id": "src:SYN-0008-D06:3001-3138",
+   "kind": "source",
+   "doc_id": "SYN-0008-D06",
+   "doc_type": "clinic_note",
+   "span": [
+    3001,
+    3138
+   ],
+   "text": "Abdominal ultrasound 2026-09-28: spleen 13.4 cm craniocaudal (mild splenomegaly), homogeneous, no focal lesion or subcapsular collection."
+  },
+  {
+   "id": "ev:SYN-0008-EV058",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "prior splenic injury",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-30",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:prior splenic injury",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "prior splenic injury"
+  },
+  {
+   "id": "src:SYN-0008-D06:910-934",
+   "kind": "source",
+   "doc_id": "SYN-0008-D06",
+   "doc_type": "clinic_note",
+   "span": [
+    910,
+    934
+   ],
+   "text": "No prior splenic injury."
+  },
+  {
+   "id": "ev:SYN-0008-EV060",
+   "kind": "evidence",
+   "concept": "procedure",
+   "term": "prior surgery",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-30",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:procedure:prior surgery",
+   "kind": "concept",
+   "concept": "procedure",
+   "term": "prior surgery"
+  },
+  {
+   "id": "src:SYN-0008-D06:941-946",
+   "kind": "source",
+   "doc_id": "SYN-0008-D06",
+   "doc_type": "clinic_note",
+   "span": [
+    941,
+    946
+   ],
+   "text": "None."
+  },
+  {
+   "id": "crit:NCT06908096-E19",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "History of Guillain-Barre Syndrome.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06908096:NCT06908096-E19:r1",
+   "kind": "decision",
+   "trial_id": "NCT06908096",
+   "criterion_id": "NCT06908096-E19",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation"
+   ],
+   "note": "No neurologic history covers Guillain-Barre syndrome.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06908096-E20",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Alcohol or drug abuse or addiction.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06908096:NCT06908096-E20:r1",
+   "kind": "decision",
+   "trial_id": "NCT06908096",
+   "criterion_id": "NCT06908096-E20",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Occasional alcohol only and no recreational drugs.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0008-EV077",
+   "kind": "evidence",
+   "concept": "alcohol",
+   "term": "occasional, 2-3 drinks/weekend before illness, none since onset",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-30",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "past"
+  },
+  {
+   "id": "concept:alcohol:occasional, 2-3 drinks/weekend before illness, none since onset",
+   "kind": "concept",
+   "concept": "alcohol",
+   "term": "occasional, 2-3 drinks/weekend before illness, none since onset"
+  },
+  {
+   "id": "src:SYN-0008-D06:1505-1578",
+   "kind": "source",
+   "doc_id": "SYN-0008-D06",
+   "doc_type": "clinic_note",
+   "span": [
+    1505,
+    1578
+   ],
+   "text": "Alcohol: occasional, 2-3 drinks/weekend before illness, none since onset."
+  },
+  {
+   "id": "ev:SYN-0008-EV078",
+   "kind": "evidence",
+   "concept": "substance_use",
+   "term": "recreational drugs",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-30",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:substance_use:recreational drugs",
+   "kind": "concept",
+   "concept": "substance_use",
+   "term": "recreational drugs"
+  },
+  {
+   "id": "src:SYN-0008-D06:1579-1601",
+   "kind": "source",
+   "doc_id": "SYN-0008-D06",
+   "doc_type": "clinic_note",
+   "span": [
+    1579,
+    1601
+   ],
+   "text": "No recreational drugs."
+  },
+  {
+   "id": "crit:NCT06908096-E21",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "HIV infection.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06908096:NCT06908096-E21:r1",
+   "kind": "decision",
+   "trial_id": "NCT06908096",
+   "criterion_id": "NCT06908096-E21",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "HIV-1/2 Ag/Ab negative yesterday.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0008-EV197",
+   "kind": "evidence",
+   "concept": "hiv",
+   "term": "HIV-1/2 Ag/Ab",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-30",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:hiv:hiv-1/2 ag/ab",
+   "kind": "concept",
+   "concept": "hiv",
+   "term": "HIV-1/2 Ag/Ab"
+  },
+  {
+   "id": "src:SYN-0008-D07:1180-1203",
+   "kind": "source",
+   "doc_id": "SYN-0008-D07",
+   "doc_type": "lab_result",
+   "span": [
+    1180,
+    1203
+   ],
+   "text": "HIV-1/2 Ag/Ab: negative"
+  },
+  {
+   "id": "crit:NCT06908096-E22",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Any medical, psychiatric, or social condition that, in the judgement of the investigator, is a contraindication to protocol participation or impairs the participant's ability to give informed consent.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06908096:NCT06908096-E22:r1",
+   "kind": "decision",
+   "trial_id": "NCT06908096",
+   "criterion_id": "NCT06908096-E22",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Investigator-judgment criterion with no documented problem.",
+   "missing_fact": "Investigator judgment on any contraindicating condition",
+   "derived_from": null
+  },
+  {
+   "id": "label:NCT06908096",
+   "kind": "trial_decision",
+   "label": "ineligible",
+   "why": [
+    "FAIL NCT06908096-I13",
+    "FAIL NCT06908096-E06"
+   ],
+   "by": "agent3"
+  }
+ ],
+ "edges": [
+  [
+   "trial:NCT06908096",
+   "has_criterion",
+   "crit:NCT06908096-I01"
+  ],
+  [
+   "crit:NCT06908096-I01",
+   "decided_as",
+   "dec:NCT06908096:NCT06908096-I01:r1"
+  ],
+  [
+   "crit:NCT06908096-I01",
+   "requires",
+   "concept:birth_date"
+  ],
+  [
+   "concept:birth_date",
+   "observed_as",
+   "ev:SYN-0008-EV002"
+  ],
+  [
+   "ev:SYN-0008-EV002",
+   "derived_from",
+   "src:SYN-0008-D01:6-21"
+  ],
+  [
+   "ev:SYN-0008-EV002",
+   "supports",
+   "dec:NCT06908096:NCT06908096-I01:r1"
+  ],
+  [
+   "calc:NCT06908096:NCT06908096-I01",
+   "computes",
+   "dec:NCT06908096:NCT06908096-I01:r1"
+  ],
+  [
+   "trial:NCT06908096",
+   "has_criterion",
+   "crit:NCT06908096-I02"
+  ],
+  [
+   "crit:NCT06908096-I02",
+   "decided_as",
+   "dec:NCT06908096:NCT06908096-I02:r1"
+  ],
+  [
+   "trial:NCT06908096",
+   "has_criterion",
+   "crit:NCT06908096-I03"
+  ],
+  [
+   "crit:NCT06908096-I03",
+   "decided_as",
+   "dec:NCT06908096:NCT06908096-I03:r1"
+  ],
+  [
+   "trial:NCT06908096",
+   "has_criterion",
+   "crit:NCT06908096-I04"
+  ],
+  [
+   "crit:NCT06908096-I04",
+   "decided_as",
+   "dec:NCT06908096:NCT06908096-I04:r1"
+  ],
+  [
+   "crit:NCT06908096-I04",
+   "requires",
+   "concept:diagnosis:acute ebv infectious mononucleosis"
+  ],
+  [
+   "concept:diagnosis:acute ebv infectious mononucleosis",
+   "observed_as",
+   "ev:SYN-0008-EV151"
+  ],
+  [
+   "ev:SYN-0008-EV151",
+   "derived_from",
+   "src:SYN-0008-D06:3443-3536"
+  ],
+  [
+   "ev:SYN-0008-EV151",
+   "insufficient_for",
+   "dec:NCT06908096:NCT06908096-I04:r1"
+  ],
+  [
+   "crit:NCT06908096-I04",
+   "requires",
+   "concept:diagnosis:mild transaminitis"
+  ],
+  [
+   "concept:diagnosis:mild transaminitis",
+   "observed_as",
+   "ev:SYN-0008-EV152"
+  ],
+  [
+   "ev:SYN-0008-EV152",
+   "derived_from",
+   "src:SYN-0008-D06:3443-3536"
+  ],
+  [
+   "ev:SYN-0008-EV152",
+   "insufficient_for",
+   "dec:NCT06908096:NCT06908096-I04:r1"
+  ],
+  [
+   "trial:NCT06908096",
+   "has_criterion",
+   "crit:NCT06908096-I05"
+  ],
+  [
+   "crit:NCT06908096-I05",
+   "decided_as",
+   "dec:NCT06908096:NCT06908096-I05:r1"
+  ],
+  [
+   "trial:NCT06908096",
+   "has_criterion",
+   "crit:NCT06908096-I06"
+  ],
+  [
+   "crit:NCT06908096-I06",
+   "decided_as",
+   "dec:NCT06908096:NCT06908096-I06:r1"
+  ],
+  [
+   "crit:NCT06908096-I06",
+   "requires",
+   "concept:sex"
+  ],
+  [
+   "concept:sex",
+   "observed_as",
+   "ev:SYN-0008-EV001"
+  ],
+  [
+   "ev:SYN-0008-EV001",
+   "derived_from",
+   "src:SYN-0008-D01:0-5"
+  ],
+  [
+   "ev:SYN-0008-EV001",
+   "supports",
+   "dec:NCT06908096:NCT06908096-I06:r1"
+  ],
+  [
+   "trial:NCT06908096",
+   "has_criterion",
+   "crit:NCT06908096-I07"
+  ],
+  [
+   "crit:NCT06908096-I07",
+   "decided_as",
+   "dec:NCT06908096:NCT06908096-I07:r1"
+  ],
+  [
+   "crit:NCT06908096-I07",
+   "requires",
+   "concept:sex"
+  ],
+  [
+   "ev:SYN-0008-EV001",
+   "supports",
+   "dec:NCT06908096:NCT06908096-I07:r1"
+  ],
+  [
+   "trial:NCT06908096",
+   "has_criterion",
+   "crit:NCT06908096-I08"
+  ],
+  [
+   "crit:NCT06908096-I08",
+   "decided_as",
+   "dec:NCT06908096:NCT06908096-I08:r1"
+  ],
+  [
+   "trial:NCT06908096",
+   "has_criterion",
+   "crit:NCT06908096-I09"
+  ],
+  [
+   "crit:NCT06908096-I09",
+   "decided_as",
+   "dec:NCT06908096:NCT06908096-I09:r1"
+  ],
+  [
+   "crit:NCT06908096-I09",
+   "requires",
+   "concept:hemoglobin"
+  ],
+  [
+   "concept:hemoglobin",
+   "observed_as",
+   "ev:SYN-0008-EV164"
+  ],
+  [
+   "ev:SYN-0008-EV164",
+   "derived_from",
+   "src:SYN-0008-D07:148-180"
+  ],
+  [
+   "ev:SYN-0008-EV164",
+   "supports",
+   "dec:NCT06908096:NCT06908096-I09:r1"
+  ],
+  [
+   "trial:NCT06908096",
+   "has_criterion",
+   "crit:NCT06908096-I10"
+  ],
+  [
+   "crit:NCT06908096-I10",
+   "decided_as",
+   "dec:NCT06908096:NCT06908096-I10:r1"
+  ],
+  [
+   "crit:NCT06908096-I10",
+   "requires",
+   "concept:wbc"
+  ],
+  [
+   "concept:wbc",
+   "observed_as",
+   "ev:SYN-0008-EV162"
+  ],
+  [
+   "ev:SYN-0008-EV162",
+   "derived_from",
+   "src:SYN-0008-D07:86-116"
+  ],
+  [
+   "ev:SYN-0008-EV162",
+   "insufficient_for",
+   "dec:NCT06908096:NCT06908096-I10:r1"
+  ],
+  [
+   "crit:NCT06908096-I10",
+   "requires",
+   "concept:lab_other:atypical lymphocytes"
+  ],
+  [
+   "concept:lab_other:atypical lymphocytes",
+   "observed_as",
+   "ev:SYN-0008-EV171"
+  ],
+  [
+   "ev:SYN-0008-EV171",
+   "derived_from",
+   "src:SYN-0008-D07:364-397"
+  ],
+  [
+   "ev:SYN-0008-EV171",
+   "insufficient_for",
+   "dec:NCT06908096:NCT06908096-I10:r1"
+  ],
+  [
+   "trial:NCT06908096",
+   "has_criterion",
+   "crit:NCT06908096-I11"
+  ],
+  [
+   "crit:NCT06908096-I11",
+   "decided_as",
+   "dec:NCT06908096:NCT06908096-I11:r1"
+  ],
+  [
+   "crit:NCT06908096-I11",
+   "requires",
+   "concept:lymphocyte_count"
+  ],
+  [
+   "concept:lymphocyte_count",
+   "observed_as",
+   "ev:SYN-0008-EV170"
+  ],
+  [
+   "ev:SYN-0008-EV170",
+   "derived_from",
+   "src:SYN-0008-D07:319-347"
+  ],
+  [
+   "ev:SYN-0008-EV170",
+   "supports",
+   "dec:NCT06908096:NCT06908096-I11:r1"
+  ],
+  [
+   "calc:NCT06908096:NCT06908096-I11",
+   "computes",
+   "dec:NCT06908096:NCT06908096-I11:r1"
+  ],
+  [
+   "trial:NCT06908096",
+   "has_criterion",
+   "crit:NCT06908096-I12"
+  ],
+  [
+   "crit:NCT06908096-I12",
+   "decided_as",
+   "dec:NCT06908096:NCT06908096-I12:r1"
+  ],
+  [
+   "crit:NCT06908096-I12",
+   "requires",
+   "concept:platelet_count"
+  ],
+  [
+   "concept:platelet_count",
+   "observed_as",
+   "ev:SYN-0008-EV167"
+  ],
+  [
+   "ev:SYN-0008-EV167",
+   "derived_from",
+   "src:SYN-0008-D07:240-275"
+  ],
+  [
+   "ev:SYN-0008-EV167",
+   "supports",
+   "dec:NCT06908096:NCT06908096-I12:r1"
+  ],
+  [
+   "calc:NCT06908096:NCT06908096-I12",
+   "computes",
+   "dec:NCT06908096:NCT06908096-I12:r1"
+  ],
+  [
+   "trial:NCT06908096",
+   "has_criterion",
+   "crit:NCT06908096-I13"
+  ],
+  [
+   "crit:NCT06908096-I13",
+   "decided_as",
+   "dec:NCT06908096:NCT06908096-I13:r1"
+  ],
+  [
+   "crit:NCT06908096-I13",
+   "requires",
+   "concept:alt"
+  ],
+  [
+   "concept:alt",
+   "observed_as",
+   "ev:SYN-0008-EV187"
+  ],
+  [
+   "ev:SYN-0008-EV187",
+   "derived_from",
+   "src:SYN-0008-D07:891-914"
+  ],
+  [
+   "ev:SYN-0008-EV187",
+   "supports",
+   "dec:NCT06908096:NCT06908096-I13:r1"
+  ],
+  [
+   "trial:NCT06908096",
+   "has_criterion",
+   "crit:NCT06908096-I14"
+  ],
+  [
+   "crit:NCT06908096-I14",
+   "decided_as",
+   "dec:NCT06908096:NCT06908096-I14:r1"
+  ],
+  [
+   "trial:NCT06908096",
+   "has_criterion",
+   "crit:NCT06908096-E01"
+  ],
+  [
+   "crit:NCT06908096-E01",
+   "decided_as",
+   "dec:NCT06908096:NCT06908096-E01:r1"
+  ],
+  [
+   "crit:NCT06908096-E01",
+   "requires",
+   "concept:sex"
+  ],
+  [
+   "ev:SYN-0008-EV001",
+   "supports",
+   "dec:NCT06908096:NCT06908096-E01:r1"
+  ],
+  [
+   "trial:NCT06908096",
+   "has_criterion",
+   "crit:NCT06908096-E02"
+  ],
+  [
+   "crit:NCT06908096-E02",
+   "decided_as",
+   "dec:NCT06908096:NCT06908096-E02:r1"
+  ],
+  [
+   "trial:NCT06908096",
+   "has_criterion",
+   "crit:NCT06908096-E03"
+  ],
+  [
+   "crit:NCT06908096-E03",
+   "decided_as",
+   "dec:NCT06908096:NCT06908096-E03:r1"
+  ],
+  [
+   "trial:NCT06908096",
+   "has_criterion",
+   "crit:NCT06908096-E04"
+  ],
+  [
+   "crit:NCT06908096-E04",
+   "decided_as",
+   "dec:NCT06908096:NCT06908096-E04:r1"
+  ],
+  [
+   "trial:NCT06908096",
+   "has_criterion",
+   "crit:NCT06908096-E05"
+  ],
+  [
+   "crit:NCT06908096-E05",
+   "decided_as",
+   "dec:NCT06908096:NCT06908096-E05:r1"
+  ],
+  [
+   "trial:NCT06908096",
+   "has_criterion",
+   "crit:NCT06908096-E06"
+  ],
+  [
+   "crit:NCT06908096-E06",
+   "decided_as",
+   "dec:NCT06908096:NCT06908096-E06:r1"
+  ],
+  [
+   "crit:NCT06908096-E06",
+   "requires",
+   "concept:age"
+  ],
+  [
+   "concept:age",
+   "observed_as",
+   "ev:SYN-0008-EV005"
+  ],
+  [
+   "ev:SYN-0008-EV005",
+   "derived_from",
+   "src:SYN-0008-D02:16-90"
+  ],
+  [
+   "ev:SYN-0008-EV005",
+   "supports",
+   "dec:NCT06908096:NCT06908096-E06:r1"
+  ],
+  [
+   "crit:NCT06908096-E06",
+   "requires",
+   "concept:symptom_finding:fever"
+  ],
+  [
+   "concept:symptom_finding:fever",
+   "observed_as",
+   "ev:SYN-0008-EV031"
+  ],
+  [
+   "ev:SYN-0008-EV031",
+   "derived_from",
+   "src:SYN-0008-D06:269-336"
+  ],
+  [
+   "ev:SYN-0008-EV031",
+   "supports",
+   "dec:NCT06908096:NCT06908096-E06:r1"
+  ],
+  [
+   "trial:NCT06908096",
+   "has_criterion",
+   "crit:NCT06908096-E07"
+  ],
+  [
+   "crit:NCT06908096-E07",
+   "decided_as",
+   "dec:NCT06908096:NCT06908096-E07:r1"
+  ],
+  [
+   "crit:NCT06908096-E07",
+   "requires",
+   "concept:symptom_finding:angioedema"
+  ],
+  [
+   "concept:symptom_finding:angioedema",
+   "observed_as",
+   "ev:SYN-0008-EV063"
+  ],
+  [
+   "ev:SYN-0008-EV063",
+   "derived_from",
+   "src:SYN-0008-D06:1041-1091"
+  ],
+  [
+   "ev:SYN-0008-EV063",
+   "supports",
+   "dec:NCT06908096:NCT06908096-E07:r1"
+  ],
+  [
+   "trial:NCT06908096",
+   "has_criterion",
+   "crit:NCT06908096-E08"
+  ],
+  [
+   "crit:NCT06908096-E08",
+   "decided_as",
+   "dec:NCT06908096:NCT06908096-E08:r1"
+  ],
+  [
+   "crit:NCT06908096-E08",
+   "requires",
+   "concept:symptom_finding:urticaria"
+  ],
+  [
+   "concept:symptom_finding:urticaria",
+   "observed_as",
+   "ev:SYN-0008-EV062"
+  ],
+  [
+   "ev:SYN-0008-EV062",
+   "derived_from",
+   "src:SYN-0008-D06:1041-1091"
+  ],
+  [
+   "ev:SYN-0008-EV062",
+   "supports",
+   "dec:NCT06908096:NCT06908096-E08:r1"
+  ],
+  [
+   "trial:NCT06908096",
+   "has_criterion",
+   "crit:NCT06908096-E09"
+  ],
+  [
+   "crit:NCT06908096-E09",
+   "decided_as",
+   "dec:NCT06908096:NCT06908096-E09:r1"
+  ],
+  [
+   "crit:NCT06908096-E09",
+   "requires",
+   "concept:diagnosis:pulmonary history"
+  ],
+  [
+   "concept:diagnosis:pulmonary history",
+   "observed_as",
+   "ev:SYN-0008-EV051"
+  ],
+  [
+   "ev:SYN-0008-EV051",
+   "derived_from",
+   "src:SYN-0008-D06:797-888"
+  ],
+  [
+   "ev:SYN-0008-EV051",
+   "supports",
+   "dec:NCT06908096:NCT06908096-E09:r1"
+  ],
+  [
+   "trial:NCT06908096",
+   "has_criterion",
+   "crit:NCT06908096-E10"
+  ],
+  [
+   "crit:NCT06908096-E10",
+   "decided_as",
+   "dec:NCT06908096:NCT06908096-E10:r1"
+  ],
+  [
+   "trial:NCT06908096",
+   "has_criterion",
+   "crit:NCT06908096-E11"
+  ],
+  [
+   "crit:NCT06908096-E11",
+   "decided_as",
+   "dec:NCT06908096:NCT06908096-E11:r1"
+  ],
+  [
+   "trial:NCT06908096",
+   "has_criterion",
+   "crit:NCT06908096-E12"
+  ],
+  [
+   "crit:NCT06908096-E12",
+   "decided_as",
+   "dec:NCT06908096:NCT06908096-E12:r1"
+  ],
+  [
+   "crit:NCT06908096-E12",
+   "requires",
+   "concept:blood_pressure"
+  ],
+  [
+   "concept:blood_pressure",
+   "observed_as",
+   "ev:SYN-0008-EV042"
+  ],
+  [
+   "ev:SYN-0008-EV042",
+   "derived_from",
+   "src:SYN-0008-D06:660-670"
+  ],
+  [
+   "ev:SYN-0008-EV042",
+   "supports",
+   "dec:NCT06908096:NCT06908096-E12:r1"
+  ],
+  [
+   "crit:NCT06908096-E12",
+   "requires",
+   "concept:systolic_bp"
+  ],
+  [
+   "concept:systolic_bp",
+   "observed_as",
+   "ev:SYN-0008-EV225"
+  ],
+  [
+   "ev:SYN-0008-EV225",
+   "derived_from",
+   "src:SYN-0008-D06:660-670"
+  ],
+  [
+   "ev:SYN-0008-EV225",
+   "supports",
+   "dec:NCT06908096:NCT06908096-E12:r1"
+  ],
+  [
+   "crit:NCT06908096-E12",
+   "requires",
+   "concept:diastolic_bp"
+  ],
+  [
+   "concept:diastolic_bp",
+   "observed_as",
+   "ev:SYN-0008-EV226"
+  ],
+  [
+   "ev:SYN-0008-EV226",
+   "derived_from",
+   "src:SYN-0008-D06:660-670"
+  ],
+  [
+   "ev:SYN-0008-EV226",
+   "supports",
+   "dec:NCT06908096:NCT06908096-E12:r1"
+  ],
+  [
+   "trial:NCT06908096",
+   "has_criterion",
+   "crit:NCT06908096-E13"
+  ],
+  [
+   "crit:NCT06908096-E13",
+   "decided_as",
+   "dec:NCT06908096:NCT06908096-E13:r1"
+  ],
+  [
+   "trial:NCT06908096",
+   "has_criterion",
+   "crit:NCT06908096-E14"
+  ],
+  [
+   "crit:NCT06908096-E14",
+   "decided_as",
+   "dec:NCT06908096:NCT06908096-E14:r1"
+  ],
+  [
+   "crit:NCT06908096-E14",
+   "requires",
+   "concept:diagnosis:hematologic history"
+  ],
+  [
+   "concept:diagnosis:hematologic history",
+   "observed_as",
+   "ev:SYN-0008-EV055"
+  ],
+  [
+   "ev:SYN-0008-EV055",
+   "derived_from",
+   "src:SYN-0008-D06:797-888"
+  ],
+  [
+   "ev:SYN-0008-EV055",
+   "supports",
+   "dec:NCT06908096:NCT06908096-E14:r1"
+  ],
+  [
+   "trial:NCT06908096",
+   "has_criterion",
+   "crit:NCT06908096-E15"
+  ],
+  [
+   "crit:NCT06908096-E15",
+   "decided_as",
+   "dec:NCT06908096:NCT06908096-E15:r1"
+  ],
+  [
+   "trial:NCT06908096",
+   "has_criterion",
+   "crit:NCT06908096-E16"
+  ],
+  [
+   "crit:NCT06908096-E16",
+   "decided_as",
+   "dec:NCT06908096:NCT06908096-E16:r1"
+  ],
+  [
+   "crit:NCT06908096-E16",
+   "requires",
+   "concept:diagnosis:prior malignancy"
+  ],
+  [
+   "concept:diagnosis:prior malignancy",
+   "observed_as",
+   "ev:SYN-0008-EV057"
+  ],
+  [
+   "ev:SYN-0008-EV057",
+   "derived_from",
+   "src:SYN-0008-D06:889-909"
+  ],
+  [
+   "ev:SYN-0008-EV057",
+   "supports",
+   "dec:NCT06908096:NCT06908096-E16:r1"
+  ],
+  [
+   "trial:NCT06908096",
+   "has_criterion",
+   "crit:NCT06908096-E17"
+  ],
+  [
+   "crit:NCT06908096-E17",
+   "decided_as",
+   "dec:NCT06908096:NCT06908096-E17:r1"
+  ],
+  [
+   "crit:NCT06908096-E17",
+   "requires",
+   "concept:diagnosis:neurologic history"
+  ],
+  [
+   "concept:diagnosis:neurologic history",
+   "observed_as",
+   "ev:SYN-0008-EV056"
+  ],
+  [
+   "ev:SYN-0008-EV056",
+   "derived_from",
+   "src:SYN-0008-D06:797-888"
+  ],
+  [
+   "ev:SYN-0008-EV056",
+   "supports",
+   "dec:NCT06908096:NCT06908096-E17:r1"
+  ],
+  [
+   "trial:NCT06908096",
+   "has_criterion",
+   "crit:NCT06908096-E18"
+  ],
+  [
+   "crit:NCT06908096-E18",
+   "decided_as",
+   "dec:NCT06908096:NCT06908096-E18:r1"
+  ],
+  [
+   "crit:NCT06908096-E18",
+   "requires",
+   "concept:symptom_finding:splenomegaly 13.4 cm craniocaudal"
+  ],
+  [
+   "concept:symptom_finding:splenomegaly 13.4 cm craniocaudal",
+   "observed_as",
+   "ev:SYN-0008-EV138"
+  ],
+  [
+   "ev:SYN-0008-EV138",
+   "derived_from",
+   "src:SYN-0008-D06:3001-3138"
+  ],
+  [
+   "ev:SYN-0008-EV138",
+   "supports",
+   "dec:NCT06908096:NCT06908096-E18:r1"
+  ],
+  [
+   "crit:NCT06908096-E18",
+   "requires",
+   "concept:diagnosis:prior splenic injury"
+  ],
+  [
+   "concept:diagnosis:prior splenic injury",
+   "observed_as",
+   "ev:SYN-0008-EV058"
+  ],
+  [
+   "ev:SYN-0008-EV058",
+   "derived_from",
+   "src:SYN-0008-D06:910-934"
+  ],
+  [
+   "ev:SYN-0008-EV058",
+   "supports",
+   "dec:NCT06908096:NCT06908096-E18:r1"
+  ],
+  [
+   "crit:NCT06908096-E18",
+   "requires",
+   "concept:procedure:prior surgery"
+  ],
+  [
+   "concept:procedure:prior surgery",
+   "observed_as",
+   "ev:SYN-0008-EV060"
+  ],
+  [
+   "ev:SYN-0008-EV060",
+   "derived_from",
+   "src:SYN-0008-D06:941-946"
+  ],
+  [
+   "ev:SYN-0008-EV060",
+   "supports",
+   "dec:NCT06908096:NCT06908096-E18:r1"
+  ],
+  [
+   "trial:NCT06908096",
+   "has_criterion",
+   "crit:NCT06908096-E19"
+  ],
+  [
+   "crit:NCT06908096-E19",
+   "decided_as",
+   "dec:NCT06908096:NCT06908096-E19:r1"
+  ],
+  [
+   "crit:NCT06908096-E19",
+   "requires",
+   "concept:diagnosis:neurologic history"
+  ],
+  [
+   "ev:SYN-0008-EV056",
+   "supports",
+   "dec:NCT06908096:NCT06908096-E19:r1"
+  ],
+  [
+   "trial:NCT06908096",
+   "has_criterion",
+   "crit:NCT06908096-E20"
+  ],
+  [
+   "crit:NCT06908096-E20",
+   "decided_as",
+   "dec:NCT06908096:NCT06908096-E20:r1"
+  ],
+  [
+   "crit:NCT06908096-E20",
+   "requires",
+   "concept:alcohol:occasional, 2-3 drinks/weekend before illness, none since onset"
+  ],
+  [
+   "concept:alcohol:occasional, 2-3 drinks/weekend before illness, none since onset",
+   "observed_as",
+   "ev:SYN-0008-EV077"
+  ],
+  [
+   "ev:SYN-0008-EV077",
+   "derived_from",
+   "src:SYN-0008-D06:1505-1578"
+  ],
+  [
+   "ev:SYN-0008-EV077",
+   "supports",
+   "dec:NCT06908096:NCT06908096-E20:r1"
+  ],
+  [
+   "crit:NCT06908096-E20",
+   "requires",
+   "concept:substance_use:recreational drugs"
+  ],
+  [
+   "concept:substance_use:recreational drugs",
+   "observed_as",
+   "ev:SYN-0008-EV078"
+  ],
+  [
+   "ev:SYN-0008-EV078",
+   "derived_from",
+   "src:SYN-0008-D06:1579-1601"
+  ],
+  [
+   "ev:SYN-0008-EV078",
+   "supports",
+   "dec:NCT06908096:NCT06908096-E20:r1"
+  ],
+  [
+   "trial:NCT06908096",
+   "has_criterion",
+   "crit:NCT06908096-E21"
+  ],
+  [
+   "crit:NCT06908096-E21",
+   "decided_as",
+   "dec:NCT06908096:NCT06908096-E21:r1"
+  ],
+  [
+   "crit:NCT06908096-E21",
+   "requires",
+   "concept:hiv:hiv-1/2 ag/ab"
+  ],
+  [
+   "concept:hiv:hiv-1/2 ag/ab",
+   "observed_as",
+   "ev:SYN-0008-EV197"
+  ],
+  [
+   "ev:SYN-0008-EV197",
+   "derived_from",
+   "src:SYN-0008-D07:1180-1203"
+  ],
+  [
+   "ev:SYN-0008-EV197",
+   "supports",
+   "dec:NCT06908096:NCT06908096-E21:r1"
+  ],
+  [
+   "trial:NCT06908096",
+   "has_criterion",
+   "crit:NCT06908096-E22"
+  ],
+  [
+   "crit:NCT06908096-E22",
+   "decided_as",
+   "dec:NCT06908096:NCT06908096-E22:r1"
+  ],
+  [
+   "trial:NCT06908096",
+   "labelled",
+   "label:NCT06908096"
+  ]
+ ]
+}

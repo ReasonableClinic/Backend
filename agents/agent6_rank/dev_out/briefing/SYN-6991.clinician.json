@@ -1,0 +1,56 @@
+{
+ "patient_id": "SYN-6991",
+ "as_of": "2026-10-01",
+ "audience": "clinician",
+ "graph_file": "SYN-6991.json",
+ "ranking": [],
+ "also_mentioned": [
+  "NCT06600412"
+ ],
+ "sentences": [
+  {
+   "text": "환자 SYN-6991, 기준일 2026-10-01",
+   "refs": [],
+   "kind": "meta"
+  },
+  {
+   "text": "추천할 시험 없음 (eligible·potential 없음)",
+   "refs": [],
+   "kind": "meta"
+  },
+  {
+   "text": "참고: FAIL 하나로 제외된 시험 (순위에는 넣지 않음, 그 기준만 확인하면 판정이 바뀔 수 있음)",
+   "refs": [
+    "trial:NCT06600412"
+   ],
+   "kind": "heading"
+  },
+  {
+   "text": "NCT06600412 The Evaluation of the Drug R3R01 for the Excretion of Protein in the Urine in Patients With Diabetic Kidney Disease.: NCT06600412-I04 [inclusion] 불충족",
+   "refs": [
+    "crit:NCT06600412-I04",
+    "dec:NCT06600412:NCT06600412-I04:r1",
+    "label:NCT06600412",
+    "trial:NCT06600412"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   노트: Reconciled med list has no lipid-lowering agent; statin only planned for discussion, so no stable treatment.",
+   "refs": [
+    "dec:NCT06600412:NCT06600412-I04:r1"
+   ],
+   "kind": "fact"
+  }
+ ],
+ "evidence": {
+  "files": [
+   "evidence_dev_haiku_v14_12.jsonl",
+   "evidence_dev_variants_haiku_v14_12.jsonl"
+  ],
+  "sha256": "daba4f5f1e16ec2eefc47311f5c13f85e6b5f218c85424f08f9af3d9bab09124",
+  "id_series": "haiku",
+  "graph_ev_nodes_checked": 2240
+ },
+ "agent6": "a6-0.4.14"
+}

@@ -1,0 +1,7294 @@
+{
+ "patient_id": "SYN-0010",
+ "as_of": "2026-10-01",
+ "version": 1,
+ "nodes": [
+  {
+   "id": "trial:NCT05428488",
+   "kind": "trial",
+   "title": "Efficacy of a Sequential Treatment Strategy in Rheumatoid Arthritis"
+  },
+  {
+   "id": "crit:NCT05428488-I01",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Aged between 18 or above",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT05428488:NCT05428488-I01:r1",
+   "kind": "decision",
+   "trial_id": "NCT05428488",
+   "criterion_id": "NCT05428488-I01",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "age_rule"
+   ],
+   "note": "age 46.39 y vs [18.0, None]",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0010-EV002",
+   "kind": "evidence",
+   "concept": "birth_date",
+   "term": null,
+   "value": "1980-05-11",
+   "unit": null,
+   "observed_date": "2026-03-05",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:birth_date",
+   "kind": "concept",
+   "concept": "birth_date",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0010-D01:8-23",
+   "kind": "source",
+   "doc_id": "SYN-0010-D01",
+   "doc_type": "registration",
+   "span": [
+    8,
+    23
+   ],
+   "text": "DOB 1980-05-11."
+  },
+  {
+   "id": "calc:NCT05428488:NCT05428488-I01",
+   "kind": "calculation",
+   "name": "age_at_as_of",
+   "value": 46.392,
+   "lo": 18.0,
+   "hi": null
+  },
+  {
+   "id": "crit:NCT05428488-I02",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Rheumatoid arthritis according to ACR-EULAR 2010 (American College of Rheumatology-European League Against Rheumatism)",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT05428488:NCT05428488-I02:r1",
+   "kind": "decision",
+   "trial_id": "NCT05428488",
+   "criterion_id": "NCT05428488-I02",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "RA diagnosed 2026-03, seropositive, symmetric polyarthritis, erosion. Diagnosis documented; ACR-EULAR score not stated but diagnosis recorded.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0010-EV038",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "seropositive rheumatoid arthritis",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:diagnosis:seropositive rheumatoid arthritis",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "seropositive rheumatoid arthritis"
+  },
+  {
+   "id": "src:SYN-0010-D07:76-145",
+   "kind": "source",
+   "doc_id": "SYN-0010-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    76,
+    145
+   ],
+   "text": "Seropositive RA with persistent active synovitis despite methotrexate"
+  },
+  {
+   "id": "ev:SYN-0010-EV047",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "rheumatoid arthritis",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:diagnosis:rheumatoid arthritis",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "rheumatoid arthritis"
+  },
+  {
+   "id": "src:SYN-0010-D07:244-311",
+   "kind": "source",
+   "doc_id": "SYN-0010-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    244,
+    311
+   ],
+   "text": "RA diagnosed 2026-03 (symmetric polyarthritis of MCPs, PIPs, wrists"
+  },
+  {
+   "id": "crit:NCT05428488-I03",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "ACPA positive",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT05428488:NCT05428488-I03:r1",
+   "kind": "decision",
+   "trial_id": "NCT05428488",
+   "criterion_id": "NCT05428488-I03",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Anti-CCP >300 U/mL, i.e. ACPA positive.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0010-EV046",
+   "kind": "evidence",
+   "concept": "lab_other",
+   "term": "anti-CCP",
+   "value": 300,
+   "unit": "U/mL",
+   "observed_date": "2026-09-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:lab_other:anti-ccp",
+   "kind": "concept",
+   "concept": "lab_other",
+   "term": "anti-CCP"
+  },
+  {
+   "id": "src:SYN-0010-D07:224-242",
+   "kind": "source",
+   "doc_id": "SYN-0010-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    224,
+    242
+   ],
+   "text": "anti-CCP >300 U/mL"
+  },
+  {
+   "id": "crit:NCT05428488-I04",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Under methotrexate or leflunomide treatment for at least 3 months",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT05428488:NCT05428488-I04:r1",
+   "kind": "decision",
+   "trial_id": "NCT05428488",
+   "criterion_id": "NCT05428488-I04",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Methotrexate 20 mg weekly for 5 months, adherent, started 2026-03; over 3 months.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0010-EV027",
+   "kind": "evidence",
+   "concept": "medication",
+   "term": "methotrexate 20 mg weekly",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:medication:methotrexate 20 mg weekly",
+   "kind": "concept",
+   "concept": "medication",
+   "term": "methotrexate 20 mg weekly"
+  },
+  {
+   "id": "src:SYN-0010-D05:0-49",
+   "kind": "source",
+   "doc_id": "SYN-0010-D05",
+   "doc_type": "clinic_note",
+   "span": [
+    0,
+    49
+   ],
+   "text": "Methotrexate 20 mg weekly for 5 months, adherent."
+  },
+  {
+   "id": "ev:SYN-0010-EV050",
+   "kind": "evidence",
+   "concept": "medication",
+   "term": "methotrexate 20 mg weekly",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "src:SYN-0010-D07:355-456",
+   "kind": "source",
+   "doc_id": "SYN-0010-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    355,
+    456
+   ],
+   "text": "Methotrexate started 15 mg weekly, up-titrated to 20 mg weekly on 2026-04-02, adherent, taken orally."
+  },
+  {
+   "id": "crit:NCT05428488-I05",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "DAS28-CRP>3.2 under methotrexate or leflunomide calculated with CRP dated less than 7 days from baseline",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT05428488:NCT05428488-I05:r1",
+   "kind": "decision",
+   "trial_id": "NCT05428488",
+   "criterion_id": "NCT05428488-I05",
+   "status": "UNKNOWN",
+   "reason": "EXPIRED",
+   "action": "new_test",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "structured_numeric",
+    "expired_criterion"
+   ],
+   "note": "das28 = 5.1 is 21 days old; window 7 days",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0010-EV161",
+   "kind": "evidence",
+   "concept": "das28",
+   "term": null,
+   "value": 5.1,
+   "unit": "points",
+   "observed_date": "2026-09-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:das28",
+   "kind": "concept",
+   "concept": "das28",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0010-D07:2991-3012",
+   "kind": "source",
+   "doc_id": "SYN-0010-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    2991,
+    3012
+   ],
+   "text": "DAS28-CRP 5.1 (high)."
+  },
+  {
+   "id": "calc:NCT05428488:NCT05428488-I05",
+   "kind": "calculation",
+   "concept": "das28",
+   "operator": ">",
+   "threshold": 3.2,
+   "unit": null,
+   "value": 5.1,
+   "value_unit": "points",
+   "observed_date": "2026-09-10",
+   "days_before": 21,
+   "window_days": 7,
+   "window_source": "criterion",
+   "note": "das28 = 5.1 is 21 days old; window 7 days"
+  },
+  {
+   "id": "crit:NCT05428488-I06",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Escape under synthetic background treatment defined by an elevation of C-reactive protein (CRP) (CRP> 5mg/L ) or Erythrocyte sedimentation rate (ESR) (for men: > age in years/2 ; for women: > age (+10) /2)) within the last 6 months before baseline",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT05428488:NCT05428488-I06:r1",
+   "kind": "decision",
+   "trial_id": "NCT05428488",
+   "criterion_id": "NCT05428488-I06",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "CRP 23 mg/L (>5) and ESR 44 (>28) within 6 months while on methotrexate.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0010-EV215",
+   "kind": "evidence",
+   "concept": "crp",
+   "term": null,
+   "value": 23.0,
+   "unit": "mg/L",
+   "observed_date": "2026-09-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:crp",
+   "kind": "concept",
+   "concept": "crp",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0010-D08:952-975",
+   "kind": "source",
+   "doc_id": "SYN-0010-D08",
+   "doc_type": "lab_result",
+   "span": [
+    952,
+    975
+   ],
+   "text": "CRP 2.3 mg/dL (<0.5, H)"
+  },
+  {
+   "id": "ev:SYN-0010-EV216",
+   "kind": "evidence",
+   "concept": "esr",
+   "term": null,
+   "value": 44,
+   "unit": "mm/h",
+   "observed_date": "2026-09-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:esr",
+   "kind": "concept",
+   "concept": "esr",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0010-D08:976-997",
+   "kind": "source",
+   "doc_id": "SYN-0010-D08",
+   "doc_type": "lab_result",
+   "span": [
+    976,
+    997
+   ],
+   "text": "ESR 44 mm/h (0-20, H)"
+  },
+  {
+   "id": "crit:NCT05428488-I07",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Targeted DMARDs (biological and targeted synthetic DMARDs) naïve",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT05428488:NCT05428488-I07:r1",
+   "kind": "decision",
+   "trial_id": "NCT05428488",
+   "criterion_id": "NCT05428488-I07",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No prior biologic or JAK inhibitor; biologic only planned.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0010-EV096",
+   "kind": "evidence",
+   "concept": "medication",
+   "term": "biologic",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:medication:biologic",
+   "kind": "concept",
+   "concept": "medication",
+   "term": "biologic"
+  },
+  {
+   "id": "src:SYN-0010-D07:1652-1687",
+   "kind": "source",
+   "doc_id": "SYN-0010-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    1652,
+    1687
+   ],
+   "text": "No prior biologic or JAK inhibitor."
+  },
+  {
+   "id": "ev:SYN-0010-EV097",
+   "kind": "evidence",
+   "concept": "medication",
+   "term": "JAK inhibitor",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:medication:jak inhibitor",
+   "kind": "concept",
+   "concept": "medication",
+   "term": "JAK inhibitor"
+  },
+  {
+   "id": "crit:NCT05428488-I08",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Indication for a TNF inhibitor",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT05428488:NCT05428488-I08:r1",
+   "kind": "decision",
+   "trial_id": "NCT05428488",
+   "criterion_id": "NCT05428488-I08",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "High disease activity despite MTX; plan to add biologic or JAK inhibitor. TNF inhibitor not named specifically but biologic indication documented.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0010-EV166",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "seropositive rheumatoid arthritis",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "src:SYN-0010-D07:3138-3254",
+   "kind": "source",
+   "doc_id": "SYN-0010-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    3138,
+    3254
+   ],
+   "text": "Seropositive RA with high disease activity despite 5 months of methotrexate 20 mg weekly plus low dose prednisolone."
+  },
+  {
+   "id": "ev:SYN-0010-EV173",
+   "kind": "evidence",
+   "concept": "treatment_plan",
+   "term": "biologic",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "planned"
+  },
+  {
+   "id": "concept:treatment_plan:biologic",
+   "kind": "concept",
+   "concept": "treatment_plan",
+   "term": "biologic"
+  },
+  {
+   "id": "src:SYN-0010-D07:3320-3360",
+   "kind": "source",
+   "doc_id": "SYN-0010-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    3320,
+    3360
+   ],
+   "text": "Plan to add a biologic or JAK inhibitor."
+  },
+  {
+   "id": "crit:NCT05428488-E01",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Subject unable to read or/and write",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT05428488:NCT05428488-E01:r1",
+   "kind": "decision",
+   "trial_id": "NCT05428488",
+   "criterion_id": "NCT05428488-E01",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "admin"
+   ],
+   "note": "consent/compliance item: not decidable from the record",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT05428488-E02",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Planned longer stay outside the region that prevents compliance with the visit plan",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT05428488:NCT05428488-E02:r1",
+   "kind": "decision",
+   "trial_id": "NCT05428488",
+   "criterion_id": "NCT05428488-E02",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "admin"
+   ],
+   "note": "consent/compliance item: not decidable from the record",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT05428488-E03",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Subject unable to sign informed consent form",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT05428488:NCT05428488-E03:r1",
+   "kind": "decision",
+   "trial_id": "NCT05428488",
+   "criterion_id": "NCT05428488-E03",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "admin"
+   ],
+   "note": "consent/compliance item: not decidable from the record",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT05428488-E04",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Subject not covered by public health insurance",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT05428488:NCT05428488-E04:r1",
+   "kind": "decision",
+   "trial_id": "NCT05428488",
+   "criterion_id": "NCT05428488-E04",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No insurance information in the record.",
+   "missing_fact": "Whether the patient is covered by public health insurance",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT05428488-E05",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Dementia",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT05428488:NCT05428488-E05:r1",
+   "kind": "decision",
+   "trial_id": "NCT05428488",
+   "criterion_id": "NCT05428488-E05",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation"
+   ],
+   "note": "No neurologic history; neuro grossly intact; age 46.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0010-EV077",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "neurologic history",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:neurologic history",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "neurologic history"
+  },
+  {
+   "id": "src:SYN-0010-D07:998-1076",
+   "kind": "source",
+   "doc_id": "SYN-0010-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    998,
+    1076
+   ],
+   "text": "No other cardiac, pulmonary, hepatic, renal, autoimmune or neurologic history."
+  },
+  {
+   "id": "crit:NCT05428488-E06",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Fibromyalgia",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT05428488:NCT05428488-E06:r1",
+   "kind": "decision",
+   "trial_id": "NCT05428488",
+   "criterion_id": "NCT05428488-E06",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Fibromyalgia not mentioned; not covered by listed blanket negation.",
+   "missing_fact": "Whether fibromyalgia has been diagnosed or excluded",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT05428488-E07",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Contra-indications to TNF inhibitor and/or Abatacept",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT05428488:NCT05428488-E07:r1",
+   "kind": "decision",
+   "trial_id": "NCT05428488",
+   "criterion_id": "NCT05428488-E07",
+   "status": "UNKNOWN",
+   "reason": "UNSUPPORTED",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Treated latent TB 2018; QuantiFERON pending. Hepatitis/HIV negative; contraindication not settled.",
+   "missing_fact": "TB screening (QuantiFERON) result and clinician judgment on TNF inhibitor/abatacept contraindications",
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0010-EV014",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "latent tuberculosis",
+   "value": true,
+   "unit": null,
+   "observed_date": "2018-01-01",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "past"
+  },
+  {
+   "id": "concept:diagnosis:latent tuberculosis",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "latent tuberculosis"
+  },
+  {
+   "id": "src:SYN-0010-D02:281-328",
+   "kind": "source",
+   "doc_id": "SYN-0010-D02",
+   "doc_type": "clinic_note",
+   "span": [
+    281,
+    328
+   ],
+   "text": "Treated latent TB in 2018 (9 months isoniazid)."
+  },
+  {
+   "id": "ev:SYN-0010-EV235",
+   "kind": "evidence",
+   "concept": "lab_other",
+   "term": "QuantiFERON-TB",
+   "value": "pending",
+   "unit": null,
+   "observed_date": "2026-09-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:lab_other:quantiferon-tb",
+   "kind": "concept",
+   "concept": "lab_other",
+   "term": "QuantiFERON-TB"
+  },
+  {
+   "id": "src:SYN-0010-D08:1523-1559",
+   "kind": "source",
+   "doc_id": "SYN-0010-D08",
+   "doc_type": "lab_result",
+   "span": [
+    1523,
+    1559
+   ],
+   "text": "QuantiFERON-TB: sent, result pending"
+  },
+  {
+   "id": "crit:NCT05428488-E08",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Absence of tuberculosis screening in the previous 3 months before baseline",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT05428488:NCT05428488-E08:r1",
+   "kind": "decision",
+   "trial_id": "NCT05428488",
+   "criterion_id": "NCT05428488-E08",
+   "status": "UNKNOWN",
+   "reason": "UNSUPPORTED",
+   "action": "lab_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Chest X-ray clear and QuantiFERON sent but pending; screening not yet complete.",
+   "missing_fact": "Completed TB screening result (QuantiFERON) within 3 months",
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0010-EV252",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "chest X-ray abnormality",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:symptom_finding:chest x-ray abnormality",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "chest X-ray abnormality"
+  },
+  {
+   "id": "src:SYN-0010-D05:260-278",
+   "kind": "source",
+   "doc_id": "SYN-0010-D05",
+   "doc_type": "clinic_note",
+   "span": [
+    260,
+    278
+   ],
+   "text": "Chest X-ray clear."
+  },
+  {
+   "id": "crit:NCT05428488-E09",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Patient with untreated active tuberculosis",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT05428488:NCT05428488-E09:r1",
+   "kind": "decision",
+   "trial_id": "NCT05428488",
+   "criterion_id": "NCT05428488-E09",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "TB was latent, treated and completed in 2018; no active TB; chest X-ray clear, no symptoms.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0010-EV070",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "latent TB infection",
+   "value": true,
+   "unit": null,
+   "observed_date": "2018-01-01",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "past"
+  },
+  {
+   "id": "concept:diagnosis:latent tb infection",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "latent TB infection"
+  },
+  {
+   "id": "src:SYN-0010-D07:923-997",
+   "kind": "source",
+   "doc_id": "SYN-0010-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    923,
+    997
+   ],
+   "text": "Latent TB infection, 2018, treated with isoniazid for 9 months, completed."
+  },
+  {
+   "id": "crit:NCT05428488-E10",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Patient who cannot be followed during 48 weeks",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT05428488:NCT05428488-E10:r1",
+   "kind": "decision",
+   "trial_id": "NCT05428488",
+   "criterion_id": "NCT05428488-E10",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No information on follow-up feasibility.",
+   "missing_fact": "Whether patient can attend follow-up for 48 weeks",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT05428488-E11",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Drug addiction, addiction to alcohol",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT05428488:NCT05428488-E11:r1",
+   "kind": "decision",
+   "trial_id": "NCT05428488",
+   "criterion_id": "NCT05428488-E11",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No recreational substances; alcohol rare, under 2 drinks per month.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0010-EV100",
+   "kind": "evidence",
+   "concept": "substance_use",
+   "term": null,
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:substance_use",
+   "kind": "concept",
+   "concept": "substance_use",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0010-D07:1815-1842",
+   "kind": "source",
+   "doc_id": "SYN-0010-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    1815,
+    1842
+   ],
+   "text": "No recreational substances."
+  },
+  {
+   "id": "ev:SYN-0010-EV099",
+   "kind": "evidence",
+   "concept": "alcohol",
+   "term": "rare, under 2 drinks per month",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:alcohol:rare, under 2 drinks per month",
+   "kind": "concept",
+   "concept": "alcohol",
+   "term": "rare, under 2 drinks per month"
+  },
+  {
+   "id": "src:SYN-0010-D07:1734-1814",
+   "kind": "source",
+   "doc_id": "SYN-0010-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    1734,
+    1814
+   ],
+   "text": "Alcohol rare, under 2 drinks per month, advised to keep minimal on methotrexate."
+  },
+  {
+   "id": "crit:NCT05428488-E12",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Protected populations according to the French Public Health Code Articles L1121-5,6,8 (For example, pregnant, parturient or lactating women, prisoners, adults under guardianship or otherwise unable to consent).",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT05428488:NCT05428488-E12:r1",
+   "kind": "decision",
+   "trial_id": "NCT05428488",
+   "criterion_id": "NCT05428488-E12",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Not pregnant (hCG negative), but lactation and guardianship not documented.",
+   "missing_fact": "Lactation status, guardianship or inability to consent",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT05428488-E13",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Women of child bearing potential, unless they are using an effective method of birth control",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT05428488:NCT05428488-E13:r1",
+   "kind": "decision",
+   "trial_id": "NCT05428488",
+   "criterion_id": "NCT05428488-E13",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Premenopausal but using effective contraception (progestin implant).",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0010-EV090",
+   "kind": "evidence",
+   "concept": "contraception",
+   "term": "progestin implant",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:contraception:progestin implant",
+   "kind": "concept",
+   "concept": "contraception",
+   "term": "progestin implant"
+  },
+  {
+   "id": "src:SYN-0010-D07:1490-1538",
+   "kind": "source",
+   "doc_id": "SYN-0010-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    1490,
+    1538
+   ],
+   "text": "Progestin implant for contraception (since 2024)"
+  },
+  {
+   "id": "ev:SYN-0010-EV185",
+   "kind": "evidence",
+   "concept": "contraception",
+   "term": "progestin implant",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "src:SYN-0010-D07:3628-3694",
+   "kind": "source",
+   "doc_id": "SYN-0010-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    3628,
+    3694
+   ],
+   "text": "Contraception: progestin implant in place, not planning pregnancy."
+  },
+  {
+   "id": "crit:NCT05428488-E14",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Patient under law protection",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT05428488:NCT05428488-E14:r1",
+   "kind": "decision",
+   "trial_id": "NCT05428488",
+   "criterion_id": "NCT05428488-E14",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Not mentioned in the record.",
+   "missing_fact": "Whether patient is under law protection/guardianship",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT05428488-E15",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Prisoners",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT05428488:NCT05428488-E15:r1",
+   "kind": "decision",
+   "trial_id": "NCT05428488",
+   "criterion_id": "NCT05428488-E15",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Not mentioned; patient is working nurse but no explicit statement.",
+   "missing_fact": "Whether the patient is a prisoner",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT05428488-E16",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Subject who are in a dependency or employment with the sponsor or the investigator",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT05428488:NCT05428488-E16:r1",
+   "kind": "decision",
+   "trial_id": "NCT05428488",
+   "criterion_id": "NCT05428488-E16",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Works as a nurse; employer not stated.",
+   "missing_fact": "Whether she is employed by or dependent on the sponsor or investigator",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT05428488-E17",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Participation in another interventional clinical trial or administration of an investigational product within the last 4 weeks before the screening date",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT05428488:NCT05428488-E17:r1",
+   "kind": "decision",
+   "trial_id": "NCT05428488",
+   "criterion_id": "NCT05428488-E17",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No mention of trial participation or investigational products.",
+   "missing_fact": "Participation in another interventional trial in last 4 weeks",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT05428488-E18",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Subject with moderate to severe heart failure (class 3 or class 4 cardiac disease as defined by the New York Heart Association Functional Classification)",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT05428488:NCT05428488-E18:r1",
+   "kind": "decision",
+   "trial_id": "NCT05428488",
+   "criterion_id": "NCT05428488-E18",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation"
+   ],
+   "note": "No cardiac history; no dyspnea, edema or murmur.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0010-EV072",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "cardiac history",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:cardiac history",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "cardiac history"
+  },
+  {
+   "id": "crit:NCT05428488-E19",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Patients had a history of chronic obstructive pulmonary disease (COPD) and heavy smoking",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT05428488:NCT05428488-E19:r1",
+   "kind": "decision",
+   "trial_id": "NCT05428488",
+   "criterion_id": "NCT05428488-E19",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation"
+   ],
+   "note": "No pulmonary history; never smoker (0 pack-years).",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0010-EV073",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "pulmonary history",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:pulmonary history",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "pulmonary history"
+  },
+  {
+   "id": "ev:SYN-0010-EV098",
+   "kind": "evidence",
+   "concept": "smoking",
+   "term": null,
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:smoking",
+   "kind": "concept",
+   "concept": "smoking",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0010-D07:1705-1733",
+   "kind": "source",
+   "doc_id": "SYN-0010-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    1705,
+    1733
+   ],
+   "text": "Never smoker (0 pack-years)."
+  },
+  {
+   "id": "crit:NCT05428488-E20",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Patients had a planned surgical procedure at least 30 days before the screening day",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT05428488:NCT05428488-E20:r1",
+   "kind": "decision",
+   "trial_id": "NCT05428488",
+   "criterion_id": "NCT05428488-E20",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_record_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "normal_finding_inference",
+    "pc:strict_normal_finding_inference"
+   ],
+   "note": "[inferable PASS from normal findings] No other surgery in history; no planned surgery in the treatment plan.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT05428488-E21",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Known allergy or intolerance to an anti-TNF therapy",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT05428488:NCT05428488-E21:r1",
+   "kind": "decision",
+   "trial_id": "NCT05428488",
+   "criterion_id": "NCT05428488-E21",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No prior biologic exposure, NKDA; no known anti-TNF allergy or intolerance.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0010-EV085",
+   "kind": "evidence",
+   "concept": "allergy",
+   "term": "no known drug allergies",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:allergy:no known drug allergies",
+   "kind": "concept",
+   "concept": "allergy",
+   "term": "no known drug allergies"
+  },
+  {
+   "id": "src:SYN-0010-D07:1247-1252",
+   "kind": "source",
+   "doc_id": "SYN-0010-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    1247,
+    1252
+   ],
+   "text": "NKDA."
+  },
+  {
+   "id": "crit:NCT05428488-E22",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Hypersensitivity to the Abatacept or to any of its excipients",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT05428488:NCT05428488-E22:r1",
+   "kind": "decision",
+   "trial_id": "NCT05428488",
+   "criterion_id": "NCT05428488-E22",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "NKDA documented; no abatacept exposure.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT05428488-E23",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Patient with untreated active hepatitis B",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT05428488:NCT05428488-E23:r1",
+   "kind": "decision",
+   "trial_id": "NCT05428488",
+   "criterion_id": "NCT05428488-E23",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "HBsAg and anti-HBc negative 21 days ago.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0010-EV229",
+   "kind": "evidence",
+   "concept": "hepatitis_b",
+   "term": "Hepatitis B surface antigen",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:hepatitis_b:hepatitis b surface antigen",
+   "kind": "concept",
+   "concept": "hepatitis_b",
+   "term": "Hepatitis B surface antigen"
+  },
+  {
+   "id": "src:SYN-0010-D08:1352-1388",
+   "kind": "source",
+   "doc_id": "SYN-0010-D08",
+   "doc_type": "lab_result",
+   "span": [
+    1352,
+    1388
+   ],
+   "text": "Hepatitis B surface antigen negative"
+  },
+  {
+   "id": "ev:SYN-0010-EV230",
+   "kind": "evidence",
+   "concept": "hepatitis_b",
+   "term": "hepatitis B core antibody negative",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:hepatitis_b:hepatitis b core antibody negative",
+   "kind": "concept",
+   "concept": "hepatitis_b",
+   "term": "hepatitis B core antibody negative"
+  },
+  {
+   "id": "src:SYN-0010-D08:1389-1431",
+   "kind": "source",
+   "doc_id": "SYN-0010-D08",
+   "doc_type": "lab_result",
+   "span": [
+    1389,
+    1431
+   ],
+   "text": "Hepatitis B core antibody (total) negative"
+  },
+  {
+   "id": "crit:NCT05428488-E24",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Patient vaccinated with a live vaccine within 30 days prior to screening",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT05428488:NCT05428488-E24:r1",
+   "kind": "decision",
+   "trial_id": "NCT05428488",
+   "criterion_id": "NCT05428488-E24",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Recent vaccination not documented; 'Recently stopped: none' concerns medications only.",
+   "missing_fact": "Whether a live vaccine was given in last 30 days",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT05428488-E25",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Patients with an Inflammatory Bowel Disease (IBD) (loss of chance if switching from an anti-TNF to abatacept)",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT05428488:NCT05428488-E25:r1",
+   "kind": "decision",
+   "trial_id": "NCT05428488",
+   "criterion_id": "NCT05428488-E25",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation"
+   ],
+   "note": "No other autoimmune history; no diarrhea or abdominal pain.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0010-EV076",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "autoimmune history",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:autoimmune history",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "autoimmune history"
+  },
+  {
+   "id": "ev:SYN-0010-EV122",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "diarrhea",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:symptom_finding:diarrhea",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "diarrhea"
+  },
+  {
+   "id": "src:SYN-0010-D07:2167-2373",
+   "kind": "source",
+   "doc_id": "SYN-0010-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    2167,
+    2373
+   ],
+   "text": "Negative for fever, night sweats, weight loss, cough, hemoptysis, dyspnea, chest pain, abdominal pain, diarrhea, dysuria, rash, dry eyes or mouth, Raynaud, oral ulcers, headache, focal weakness or numbness."
+  },
+  {
+   "id": "label:NCT05428488",
+   "kind": "trial_decision",
+   "label": "potential",
+   "why": [
+    "UNKNOWN/EXPIRED NCT05428488-I05",
+    "UNKNOWN/UNSUPPORTED NCT05428488-E07",
+    "UNKNOWN/UNSUPPORTED NCT05428488-E08"
+   ],
+   "by": "agent3"
+  },
+  {
+   "id": "trial:NCT02714634",
+   "kind": "trial",
+   "title": "Clinical Trial Evaluating Methotrexate or Leflunomide + Targeted Therapy Versus Methotrexate or Leflunomide + Sulfasalazine + Hydroxychloroquine in Patients With Rheumatoid Arthritis and Insufficient Response to Methotrexate or Leflunomide"
+  },
+  {
+   "id": "crit:NCT02714634-I01",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Patient with rheumatoid arthritis according to EULAR/ACR 2010 criteria",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT02714634:NCT02714634-I01:r1",
+   "kind": "decision",
+   "trial_id": "NCT02714634",
+   "criterion_id": "NCT02714634-I01",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "RA diagnosed 2026-03 with symmetric polyarthritis, seropositive, erosion; clinician-diagnosed RA. ACR/EULAR score not explicitly stated but diagnosis is documented.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT02714634-I02",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "DAS28-CRP>3.2",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT02714634:NCT02714634-I02:r1",
+   "kind": "decision",
+   "trial_id": "NCT02714634",
+   "criterion_id": "NCT02714634-I02",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "structured_numeric"
+   ],
+   "note": "das28 = 5.1 points (2026-09-10, -21d) vs > 3.2 -> met",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "calc:NCT02714634:NCT02714634-I02",
+   "kind": "calculation",
+   "concept": "das28",
+   "operator": ">",
+   "threshold": 3.2,
+   "unit": null,
+   "value": 5.1,
+   "value_unit": "points",
+   "observed_date": "2026-09-10",
+   "days_before": 21,
+   "note": "das28 = 5.1 points (2026-09-10, -21d) vs > 3.2 -> met"
+  },
+  {
+   "id": "crit:NCT02714634-I03",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Insufficient response to methotrexate at a weekly dose>=15mg after at least 3 months or to leflunomide at a dose of 10 (in case 20 mg are not well tolerated) to 20 mg per day after 3 months of treatment",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT02714634:NCT02714634-I03:r1",
+   "kind": "decision",
+   "trial_id": "NCT02714634",
+   "criterion_id": "NCT02714634-I03",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Methotrexate 20 mg weekly for 5 months, adherent, with high disease activity despite treatment.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT02714634-I04",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "RA radiographic erosions and/or serum rheumatoid factor associated to anti-Cyclic Citrullinated Peptide (Anti-CCP)",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT02714634:NCT02714634-I04:r1",
+   "kind": "decision",
+   "trial_id": "NCT02714634",
+   "criterion_id": "NCT02714634-I04",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Erosion at right MCP2 on X-ray; also RF 128 and anti-CCP >300.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0010-EV049",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "erosion at right MCP2 on hand X-ray",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:symptom_finding:erosion at right mcp2 on hand x-ray",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "erosion at right MCP2 on hand X-ray"
+  },
+  {
+   "id": "src:SYN-0010-D07:313-354",
+   "kind": "source",
+   "doc_id": "SYN-0010-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    313,
+    354
+   ],
+   "text": "one erosion at right MCP2 on hand X-ray)."
+  },
+  {
+   "id": "ev:SYN-0010-EV045",
+   "kind": "evidence",
+   "concept": "lab_other",
+   "term": "rheumatoid factor",
+   "value": 128,
+   "unit": "IU/mL",
+   "observed_date": "2026-09-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:lab_other:rheumatoid factor",
+   "kind": "concept",
+   "concept": "lab_other",
+   "term": "rheumatoid factor"
+  },
+  {
+   "id": "src:SYN-0010-D07:205-222",
+   "kind": "source",
+   "doc_id": "SYN-0010-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    205,
+    222
+   ],
+   "text": "with RF 128 IU/mL"
+  },
+  {
+   "id": "crit:NCT02714634-I05",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Age greater or equal to 18 years",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT02714634:NCT02714634-I05:r1",
+   "kind": "decision",
+   "trial_id": "NCT02714634",
+   "criterion_id": "NCT02714634-I05",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "age_rule"
+   ],
+   "note": "age 46.39 y vs [18.0, None]",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "calc:NCT02714634:NCT02714634-I05",
+   "kind": "calculation",
+   "name": "age_at_as_of",
+   "value": 46.392,
+   "lo": 18.0,
+   "hi": null
+  },
+  {
+   "id": "crit:NCT02714634-I06",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Written informed consent, dated and signed before initiating any trial-related procedure",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT02714634:NCT02714634-I06:r1",
+   "kind": "decision",
+   "trial_id": "NCT02714634",
+   "criterion_id": "NCT02714634-I06",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "admin"
+   ],
+   "note": "consent/compliance item: not decidable from the record",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT02714634-I07",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Affiliation to a social insurance system",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT02714634:NCT02714634-I07:r1",
+   "kind": "decision",
+   "trial_id": "NCT02714634",
+   "criterion_id": "NCT02714634-I07",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Insurance affiliation not mentioned in the record.",
+   "missing_fact": "Whether the patient is affiliated to a social insurance system",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT02714634-I08",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Women of child bearing potential, negative β-HCG assay (Human chorionic gonadotropin)",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT02714634:NCT02714634-I08:r1",
+   "kind": "decision",
+   "trial_id": "NCT02714634",
+   "criterion_id": "NCT02714634-I08",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Premenopausal woman of childbearing potential; urine hCG negative 21 days ago.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0010-EV110",
+   "kind": "evidence",
+   "concept": "hcg",
+   "term": null,
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:hcg",
+   "kind": "concept",
+   "concept": "hcg",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0010-D07:2090-2115",
+   "kind": "source",
+   "doc_id": "SYN-0010-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    2090,
+    2115
+   ],
+   "text": "Urine hCG negative today."
+  },
+  {
+   "id": "ev:SYN-0010-EV246",
+   "kind": "evidence",
+   "concept": "hcg",
+   "term": null,
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "src:SYN-0010-D08:1755-1774",
+   "kind": "source",
+   "doc_id": "SYN-0010-D08",
+   "doc_type": "lab_result",
+   "span": [
+    1755,
+    1774
+   ],
+   "text": "Urine hCG negative."
+  },
+  {
+   "id": "crit:NCT02714634-I09",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Effective method of birth control during the study and continuing after the discontinuation of the investigational drug or study. The duration will depend on the drug used (referred to the summary product characteristic).",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT02714634:NCT02714634-I09:r1",
+   "kind": "decision",
+   "trial_id": "NCT02714634",
+   "criterion_id": "NCT02714634-I09",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Progestin implant in place since 2024, an effective contraceptive method.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT02714634-E01",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Previous treatment with or contraindication to targeted therapies (biologic or JAK/STAT inhibitor)",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT02714634:NCT02714634-E01:r1",
+   "kind": "decision",
+   "trial_id": "NCT02714634",
+   "criterion_id": "NCT02714634-E01",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No prior biologic/JAK use (denied), but contraindication not addressed; TB screening pending and latent TB history.",
+   "missing_fact": "Whether any contraindication to biologics or JAK inhibitors exists",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT02714634-E02",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Previous treatment with triple therapy",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT02714634:NCT02714634-E02:r1",
+   "kind": "decision",
+   "trial_id": "NCT02714634",
+   "criterion_id": "NCT02714634-E02",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_history_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "list_inference",
+    "pc:strict_list_inference"
+   ],
+   "note": "[inferable PASS from SYN-0010-EV086] No other DMARDs used; only methotrexate with folic acid and prednisolone on reconciled list.",
+   "missing_fact": null,
+   "derived_from": "SYN-0010-EV086"
+  },
+  {
+   "id": "crit:NCT02714634-E03",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Other inflammatory arthritis except RA associated with Sjögren's syndrome",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT02714634:NCT02714634-E03:r1",
+   "kind": "decision",
+   "trial_id": "NCT02714634",
+   "criterion_id": "NCT02714634-E03",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation"
+   ],
+   "note": "No other autoimmune history; no inflammatory arthritis other than RA documented.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT02714634-E04",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Contraindication to all biologics/ JAK/STAT inhibitors or to methotrexate, leflunomide, sulfasalazine and hydroxychloroquine",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT02714634:NCT02714634-E04:r1",
+   "kind": "decision",
+   "trial_id": "NCT02714634",
+   "criterion_id": "NCT02714634-E04",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "NKDA and tolerating methotrexate, but contraindication to all listed drugs not addressed.",
+   "missing_fact": "Whether contraindication exists to all biologics/JAK inhibitors or all conventional DMARDs",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT02714634-E05",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Corticosteroids at a dose >15 mg/d of equivalent prednisone for at least 4 weeks before the inclusion",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT02714634:NCT02714634-E05:r1",
+   "kind": "decision",
+   "trial_id": "NCT02714634",
+   "criterion_id": "NCT02714634-E05",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Prednisolone 5 mg daily since 2026-04, below 15 mg/d threshold.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0010-EV089",
+   "kind": "evidence",
+   "concept": "medication",
+   "term": "prednisolone 5 mg daily",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:medication:prednisolone 5 mg daily",
+   "kind": "concept",
+   "concept": "medication",
+   "term": "prednisolone 5 mg daily"
+  },
+  {
+   "id": "src:SYN-0010-D07:1413-1487",
+   "kind": "source",
+   "doc_id": "SYN-0010-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    1413,
+    1487
+   ],
+   "text": "Prednisolone 5 mg PO daily (started 2026-03 at 7.5 mg, 5 mg since 2026-04)"
+  },
+  {
+   "id": "ev:SYN-0010-EV172",
+   "kind": "evidence",
+   "concept": "medication",
+   "term": "prednisolone 5 mg",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:medication:prednisolone 5 mg",
+   "kind": "concept",
+   "concept": "medication",
+   "term": "prednisolone 5 mg"
+  },
+  {
+   "id": "src:SYN-0010-D07:3255-3319",
+   "kind": "source",
+   "doc_id": "SYN-0010-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    3255,
+    3319
+   ],
+   "text": "Continue methotrexate, folic acid and prednisolone 5 mg for now."
+  },
+  {
+   "id": "crit:NCT02714634-E06",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Absence of tuberculosis screening",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT02714634:NCT02714634-E06:r1",
+   "kind": "decision",
+   "trial_id": "NCT02714634",
+   "criterion_id": "NCT02714634-E06",
+   "status": "UNKNOWN",
+   "reason": "UNSUPPORTED",
+   "action": "lab_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Chest X-ray clear but IGRA pending; no completed TB screening result; last TB test 2018.",
+   "missing_fact": "Result of the pending QuantiFERON-TB (IGRA)",
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0010-EV176",
+   "kind": "evidence",
+   "concept": "treatment_plan",
+   "term": "IGRA",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "planned"
+  },
+  {
+   "id": "concept:treatment_plan:igra",
+   "kind": "concept",
+   "concept": "treatment_plan",
+   "term": "IGRA"
+  },
+  {
+   "id": "src:SYN-0010-D07:3401-3449",
+   "kind": "source",
+   "doc_id": "SYN-0010-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    3401,
+    3449
+   ],
+   "text": "Order IGRA now and review the repeat chest X-ray"
+  },
+  {
+   "id": "crit:NCT02714634-E07",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Patient who cannot be followed during 12 months",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT02714634:NCT02714634-E07:r1",
+   "kind": "decision",
+   "trial_id": "NCT02714634",
+   "criterion_id": "NCT02714634-E07",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Follow-up feasibility not documented.",
+   "missing_fact": "Whether the patient can be followed for 12 months",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT02714634-E08",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Pregnancy, breastfeeding, desire of pregnancy in the 12 months",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT02714634:NCT02714634-E08:r1",
+   "kind": "decision",
+   "trial_id": "NCT02714634",
+   "criterion_id": "NCT02714634-E08",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Not pregnant, hCG negative, not planning pregnancy; breastfeeding not mentioned but no sign of it.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0010-EV108",
+   "kind": "evidence",
+   "concept": "pregnancy",
+   "term": null,
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:pregnancy",
+   "kind": "concept",
+   "concept": "pregnancy",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0010-D07:2052-2089",
+   "kind": "source",
+   "doc_id": "SYN-0010-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    2052,
+    2089
+   ],
+   "text": "Not pregnant, not planning pregnancy."
+  },
+  {
+   "id": "crit:NCT02714634-E09",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Drug addiction, addiction to alcohol",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT02714634:NCT02714634-E09:r1",
+   "kind": "decision",
+   "trial_id": "NCT02714634",
+   "criterion_id": "NCT02714634-E09",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No recreational substances; alcohol rare, under 2 drinks per month.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT02714634-E10",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Participation in a clinical study with an investigational product within 4 weeks prior to the start of the study treatment",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT02714634:NCT02714634-E10:r1",
+   "kind": "decision",
+   "trial_id": "NCT02714634",
+   "criterion_id": "NCT02714634-E10",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No mention of clinical study participation.",
+   "missing_fact": "Participation in any investigational-product study within 4 weeks",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT02714634-E11",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Women of child bearing potential, unless they are using an effective method of birth control",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT02714634:NCT02714634-E11:r1",
+   "kind": "decision",
+   "trial_id": "NCT02714634",
+   "criterion_id": "NCT02714634-E11",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Uses an effective method (progestin implant), so exclusion does not apply.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT02714634-E12",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Patient under law protection",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT02714634:NCT02714634-E12:r1",
+   "kind": "decision",
+   "trial_id": "NCT02714634",
+   "criterion_id": "NCT02714634-E12",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Legal protection status not mentioned.",
+   "missing_fact": "Whether patient is under law protection",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT02714634-E13",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Prisoners",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT02714634:NCT02714634-E13:r1",
+   "kind": "decision",
+   "trial_id": "NCT02714634",
+   "criterion_id": "NCT02714634-E13",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Prisoner status not mentioned.",
+   "missing_fact": "Whether patient is a prisoner",
+   "derived_from": null
+  },
+  {
+   "id": "label:NCT02714634",
+   "kind": "trial_decision",
+   "label": "potential",
+   "why": [
+    "UNKNOWN/UNSUPPORTED NCT02714634-E06"
+   ],
+   "by": "agent3"
+  },
+  {
+   "id": "trial:NCT07409103",
+   "kind": "trial",
+   "title": "A Study to Assess the Safety and Efficacy of Different Doses of ELV001 to Treat Active Rheumatoid Arthritis in Patients With an Inadequate Response to Methotrexate and Tumor Necrosis Factor Inhibition (START SYNERGY)"
+  },
+  {
+   "id": "crit:NCT07409103-I01",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Provided written informed consent to participate to the study and are able and willing to adhere to the study protocol.",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07409103:NCT07409103-I01:r1",
+   "kind": "decision",
+   "trial_id": "NCT07409103",
+   "criterion_id": "NCT07409103-I01",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "admin"
+   ],
+   "note": "consent/compliance item: not decidable from the record",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07409103-I02",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Male or female, 18 to 75 years of age, at the time of signing the informed consent.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07409103:NCT07409103-I02:r1",
+   "kind": "decision",
+   "trial_id": "NCT07409103",
+   "criterion_id": "NCT07409103-I02",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "age_rule"
+   ],
+   "note": "age 46.39 y vs [18.0, 75.0]",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "calc:NCT07409103:NCT07409103-I02",
+   "kind": "calculation",
+   "name": "age_at_as_of",
+   "value": 46.392,
+   "lo": 18.0,
+   "hi": 75.0
+  },
+  {
+   "id": "crit:NCT07409103-I03",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Body mass index (BMI) between 18.5 and 32.0 kg/m2 and minimum weight of 50 kg at the Screening Visit.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07409103:NCT07409103-I03:r1",
+   "kind": "decision",
+   "trial_id": "NCT07409103",
+   "criterion_id": "NCT07409103-I03",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "BMI 25.0 within 18.5-32.0 and weight 68 kg >= 50 kg, 21 days ago.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0010-EV063",
+   "kind": "evidence",
+   "concept": "bmi",
+   "term": null,
+   "value": 25.0,
+   "unit": "kg/m2",
+   "observed_date": "2026-09-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:bmi",
+   "kind": "concept",
+   "concept": "bmi",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0010-D07:760-775",
+   "kind": "source",
+   "doc_id": "SYN-0010-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    760,
+    775
+   ],
+   "text": "BMI 25.0 kg/m2."
+  },
+  {
+   "id": "ev:SYN-0010-EV062",
+   "kind": "evidence",
+   "concept": "body_weight",
+   "term": null,
+   "value": 68,
+   "unit": "kg",
+   "observed_date": "2026-09-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:body_weight",
+   "kind": "concept",
+   "concept": "body_weight",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0010-D07:746-759",
+   "kind": "source",
+   "doc_id": "SYN-0010-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    746,
+    759
+   ],
+   "text": "Weight 68 kg."
+  },
+  {
+   "id": "crit:NCT07409103-I04",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Have a diagnosis of adult onset RA and fulfill the 2010 American College of Rheumatology (ACR)/European League Against Rheumatism (EULAR) classification criteria (Aletaha et al. 2010) for at least 6 months prior to Screening.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07409103:NCT07409103-I04:r1",
+   "kind": "decision",
+   "trial_id": "NCT07409103",
+   "criterion_id": "NCT07409103-I04",
+   "status": "UNKNOWN",
+   "reason": "UNSUPPORTED",
+   "action": "med_record_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "RA diagnosed 2026-03 (~210 days before); ACR/EULAR 2010 criteria fulfillment not explicitly stated, though RF, anti-CCP and joint involvement are documented.",
+   "missing_fact": "Confirmation of diagnosis fulfilling 2010 ACR/EULAR criteria at least 6 months before screening",
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0010-EV011",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "RA",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-03-05",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:diagnosis:ra",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "RA"
+  },
+  {
+   "id": "src:SYN-0010-D02:198-204",
+   "kind": "source",
+   "doc_id": "SYN-0010-D02",
+   "doc_type": "clinic_note",
+   "span": [
+    198,
+    204
+   ],
+   "text": "Dx RA."
+  },
+  {
+   "id": "crit:NCT07409103-I05",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Have active RA defined by a DAS28-CRP >= 3.2 and the presence of >= 3 swollen joints (based on 66 joint count) and >= 3 tender joints (based on 68 joint count) at Screening and Baseline. The distal interphalangeal joint should be evaluated but not included in the total count to determine eligibility.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07409103:NCT07409103-I05:r1",
+   "kind": "decision",
+   "trial_id": "NCT07409103",
+   "criterion_id": "NCT07409103-I05",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "DAS28-CRP 5.1, 7 swollen and 9 tender joints (>=3 each); joint count method (66/68) not stated but counts well above threshold.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0010-EV251",
+   "kind": "evidence",
+   "concept": "das28",
+   "term": null,
+   "value": 5.1,
+   "unit": "points",
+   "observed_date": "2026-09-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "src:SYN-0010-D05:106-127",
+   "kind": "source",
+   "doc_id": "SYN-0010-D05",
+   "doc_type": "clinic_note",
+   "span": [
+    106,
+    127
+   ],
+   "text": "DAS28-CRP 5.1 (high)."
+  },
+  {
+   "id": "ev:SYN-0010-EV029",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "swollen joints 7",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:symptom_finding:swollen joints 7",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "swollen joints 7"
+  },
+  {
+   "id": "src:SYN-0010-D05:67-83",
+   "kind": "source",
+   "doc_id": "SYN-0010-D05",
+   "doc_type": "clinic_note",
+   "span": [
+    67,
+    83
+   ],
+   "text": "swollen joints 7"
+  },
+  {
+   "id": "ev:SYN-0010-EV028",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "Tender joints 9",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:symptom_finding:tender joints 9",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "Tender joints 9"
+  },
+  {
+   "id": "src:SYN-0010-D05:50-65",
+   "kind": "source",
+   "doc_id": "SYN-0010-D05",
+   "doc_type": "clinic_note",
+   "span": [
+    50,
+    65
+   ],
+   "text": "Tender joints 9"
+  },
+  {
+   "id": "crit:NCT07409103-I06",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Have C-reactive protein (CRP) >= upper limit of normal (ULN) at Screening.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07409103:NCT07409103-I06:r1",
+   "kind": "decision",
+   "trial_id": "NCT07409103",
+   "criterion_id": "NCT07409103-I06",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "CRP 2.3 mg/dL with reference <0.5, flagged H, so above ULN (21 days ago).",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07409103-I07",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Have adequate hematologic function at Screening AND at Baseline.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07409103:NCT07409103-I07:r1",
+   "kind": "decision",
+   "trial_id": "NCT07409103",
+   "criterion_id": "NCT07409103-I07",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "WBC, Hb 12.0, platelets, ANC within reference ranges on 2026-09-10; baseline timepoint not yet available.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0010-EV187",
+   "kind": "evidence",
+   "concept": "wbc",
+   "term": null,
+   "value": 7.6,
+   "unit": "10^9/L",
+   "observed_date": "2026-09-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:wbc",
+   "kind": "concept",
+   "concept": "wbc",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0010-D08:61-87",
+   "kind": "source",
+   "doc_id": "SYN-0010-D08",
+   "doc_type": "lab_result",
+   "span": [
+    61,
+    87
+   ],
+   "text": "WBC 7.6 x10^9/L (4.0-11.0)"
+  },
+  {
+   "id": "ev:SYN-0010-EV189",
+   "kind": "evidence",
+   "concept": "hemoglobin",
+   "term": null,
+   "value": 12.0,
+   "unit": "g/dL",
+   "observed_date": "2026-09-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:hemoglobin",
+   "kind": "concept",
+   "concept": "hemoglobin",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0010-D08:116-148",
+   "kind": "source",
+   "doc_id": "SYN-0010-D08",
+   "doc_type": "lab_result",
+   "span": [
+    116,
+    148
+   ],
+   "text": "Hemoglobin 12.0 g/dL (12.0-15.5)"
+  },
+  {
+   "id": "ev:SYN-0010-EV194",
+   "kind": "evidence",
+   "concept": "platelet_count",
+   "term": null,
+   "value": 372,
+   "unit": "10^9/L",
+   "observed_date": "2026-09-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:platelet_count",
+   "kind": "concept",
+   "concept": "platelet_count",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0010-D08:237-268",
+   "kind": "source",
+   "doc_id": "SYN-0010-D08",
+   "doc_type": "lab_result",
+   "span": [
+    237,
+    268
+   ],
+   "text": "Platelets 372 x10^9/L (150-400)"
+  },
+  {
+   "id": "ev:SYN-0010-EV195",
+   "kind": "evidence",
+   "concept": "anc",
+   "term": null,
+   "value": 4.9,
+   "unit": "10^9/L",
+   "observed_date": "2026-09-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:anc",
+   "kind": "concept",
+   "concept": "anc",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0010-D08:269-302",
+   "kind": "source",
+   "doc_id": "SYN-0010-D08",
+   "doc_type": "lab_result",
+   "span": [
+    269,
+    302
+   ],
+   "text": "Neutrophils 4.9 x10^9/L (1.8-7.5)"
+  },
+  {
+   "id": "crit:NCT07409103-I08",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Have adequate liver and renal function at Screening.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07409103:NCT07409103-I08:r1",
+   "kind": "decision",
+   "trial_id": "NCT07409103",
+   "criterion_id": "NCT07409103-I08",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "AST, bilirubin normal, ALT 1.1x ULN, creatinine normal, eGFR 109; adequate liver and renal function.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0010-EV213",
+   "kind": "evidence",
+   "concept": "ast",
+   "term": null,
+   "value": 29,
+   "unit": "U/L",
+   "observed_date": "2026-09-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:ast",
+   "kind": "concept",
+   "concept": "ast",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0010-D08:864-882",
+   "kind": "source",
+   "doc_id": "SYN-0010-D08",
+   "doc_type": "lab_result",
+   "span": [
+    864,
+    882
+   ],
+   "text": "AST 29 U/L (10-35)"
+  },
+  {
+   "id": "ev:SYN-0010-EV214",
+   "kind": "evidence",
+   "concept": "alt",
+   "term": null,
+   "value": 36,
+   "unit": "U/L",
+   "observed_date": "2026-09-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:alt",
+   "kind": "concept",
+   "concept": "alt",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0010-D08:883-928",
+   "kind": "source",
+   "doc_id": "SYN-0010-D08",
+   "doc_type": "lab_result",
+   "span": [
+    883,
+    928
+   ],
+   "text": "ALT 36 U/L (7-35, flagged H, within 1.1x ULN)"
+  },
+  {
+   "id": "ev:SYN-0010-EV211",
+   "kind": "evidence",
+   "concept": "bilirubin_total",
+   "term": null,
+   "value": 0.6,
+   "unit": "mg/dL",
+   "observed_date": "2026-09-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:bilirubin_total",
+   "kind": "concept",
+   "concept": "bilirubin_total",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0010-D08:808-843",
+   "kind": "source",
+   "doc_id": "SYN-0010-D08",
+   "doc_type": "lab_result",
+   "span": [
+    808,
+    843
+   ],
+   "text": "Total bilirubin 0.6 mg/dL (0.2-1.2)"
+  },
+  {
+   "id": "ev:SYN-0010-EV205",
+   "kind": "evidence",
+   "concept": "creatinine",
+   "term": null,
+   "value": 0.67,
+   "unit": "mg/dL",
+   "observed_date": "2026-09-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:creatinine",
+   "kind": "concept",
+   "concept": "creatinine",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0010-D08:607-640",
+   "kind": "source",
+   "doc_id": "SYN-0010-D08",
+   "doc_type": "lab_result",
+   "span": [
+    607,
+    640
+   ],
+   "text": "Creatinine 0.67 mg/dL (0.50-1.00)"
+  },
+  {
+   "id": "ev:SYN-0010-EV206",
+   "kind": "evidence",
+   "concept": "egfr",
+   "term": null,
+   "value": 109,
+   "unit": "mL/min/1.73m2",
+   "observed_date": "2026-09-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:egfr",
+   "kind": "concept",
+   "concept": "egfr",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0010-D08:641-684",
+   "kind": "source",
+   "doc_id": "SYN-0010-D08",
+   "doc_type": "lab_result",
+   "span": [
+    641,
+    684
+   ],
+   "text": "eGFR (CKD-EPI 2021) 109 mL/min/1.73m2 (>90)"
+  },
+  {
+   "id": "crit:NCT07409103-I09",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Are currently treated with MTX (methotrexate) with folic acid supplementation according to local standard-of-care. The maximum dose of MTX is 25 mg/week for oral use and 20 mg/week for parenteral use. The minimum dose is 15 mg/week, except in case of intolerance or side effects when doses of 7.5 mg/week or above are acceptable. MTX should have been used for at least 6 months, of which at least 3 months at a stable dose.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07409103:NCT07409103-I09:r1",
+   "kind": "decision",
+   "trial_id": "NCT07409103",
+   "criterion_id": "NCT07409103-I09",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Oral MTX 20 mg weekly with folic acid, dose stable since 2026-04-02 (~6 months); started 2026-03 (~6.5 months).",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0010-EV087",
+   "kind": "evidence",
+   "concept": "medication",
+   "term": "methotrexate 20 mg weekly",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "src:SYN-0010-D07:1293-1369",
+   "kind": "source",
+   "doc_id": "SYN-0010-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    1293,
+    1369
+   ],
+   "text": "Methotrexate 20 mg PO weekly (started 2026-03 at 15 mg, 20 mg since 2026-04)"
+  },
+  {
+   "id": "ev:SYN-0010-EV088",
+   "kind": "evidence",
+   "concept": "medication",
+   "term": "folic acid 5 mg weekly",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:medication:folic acid 5 mg weekly",
+   "kind": "concept",
+   "concept": "medication",
+   "term": "folic acid 5 mg weekly"
+  },
+  {
+   "id": "src:SYN-0010-D07:1372-1410",
+   "kind": "source",
+   "doc_id": "SYN-0010-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    1372,
+    1410
+   ],
+   "text": "Folic acid 5 mg PO weekly (since 2026)"
+  },
+  {
+   "id": "ev:SYN-0010-EV015",
+   "kind": "evidence",
+   "concept": "medication",
+   "term": "methotrexate 20 mg weekly",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-04-02",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "src:SYN-0010-D03:0-42",
+   "kind": "source",
+   "doc_id": "SYN-0010-D03",
+   "doc_type": "medication_record",
+   "span": [
+    0,
+    42
+   ],
+   "text": "Methotrexate 20 mg PO weekly (up-titrated)"
+  },
+  {
+   "id": "crit:NCT07409103-I10",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Are currently treated with a TNFi for at least 6 months, of which at least 3 months at a stable dose. Participants should have demonstrated a partial response to the TNFi, as evidenced by the Investigator or treating physician based on DAS28-CRP, SDAI, CDAI or any other measure of disease activity as per local treatment guidelines.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07409103:NCT07409103-I10:r1",
+   "kind": "decision",
+   "trial_id": "NCT07409103",
+   "criterion_id": "NCT07409103-I10",
+   "status": "FAIL",
+   "reason": "VIOLATED",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No prior biologic or JAK inhibitor; biologic only planned. Not currently on a TNFi.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07409103-I11",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "The following therapies for RA are permitted during the study, if the dose is stable for >= 4 weeks prior to Screening: hydroxychloroquine up to 400 mg/day, oral prednisone <= 7.5 mg daily or equivalent corticosteroid dose. Prior treatment with other csDMARDs, bDMARDs, or tsDMARD is permitted as long as these treatments have been stopped at least 2 months prior to Screening, with exception of cell depleting therapies (eg, rituximab), which should have been stopped at least 12 months prior to Screening.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07409103:NCT07409103-I11:r1",
+   "kind": "decision",
+   "trial_id": "NCT07409103",
+   "criterion_id": "NCT07409103-I11",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Prednisolone 5 mg (<=7.5) stable since 2026-04; no other DMARDs, biologics or tsDMARDs used.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0010-EV094",
+   "kind": "evidence",
+   "concept": "medication",
+   "term": "NSAIDs",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:medication:nsaids",
+   "kind": "concept",
+   "concept": "medication",
+   "term": "NSAIDs"
+  },
+  {
+   "id": "src:SYN-0010-D07:1620-1651",
+   "kind": "source",
+   "doc_id": "SYN-0010-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    1620,
+    1651
+   ],
+   "text": "No NSAIDs or other DMARDs used."
+  },
+  {
+   "id": "ev:SYN-0010-EV095",
+   "kind": "evidence",
+   "concept": "medication",
+   "term": "other DMARDs",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:medication:other dmards",
+   "kind": "concept",
+   "concept": "medication",
+   "term": "other DMARDs"
+  },
+  {
+   "id": "crit:NCT07409103-I12",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Female participants of childbearing potential must: Have a negative serum pregnancy test at Screening and a negative urine pregnancy test within 24 hours prior to first dosing.; Use highly effective contraception from signing the informed consent until at least 90 days after the last dosing.; Not donate ova from signing the informed consent until at least 90 days after the last dosing.",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07409103:NCT07409103-I12:r1",
+   "kind": "decision",
+   "trial_id": "NCT07409103",
+   "criterion_id": "NCT07409103-I12",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Premenopausal with implant and negative urine hCG, but serum test and donation/contraception commitments are not documented.",
+   "missing_fact": "Serum pregnancy test at screening, urine test within 24h of dosing, and agreement to contraception and no ova donation for 90 days",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07409103-I13",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Male participants must use condoms and partners of childbearing potential must use highly effective contraception until at least 90 days after the last dosing. Male participants must not donate sperm until at least 90 days after the last dosing",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07409103:NCT07409103-I13:r1",
+   "kind": "decision",
+   "trial_id": "NCT07409103",
+   "criterion_id": "NCT07409103-I13",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Patient is female; male-only requirement cannot apply.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0010-EV001",
+   "kind": "evidence",
+   "concept": "sex",
+   "term": null,
+   "value": "female",
+   "unit": null,
+   "observed_date": "2026-03-05",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:sex",
+   "kind": "concept",
+   "concept": "sex",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0010-D01:0-7",
+   "kind": "source",
+   "doc_id": "SYN-0010-D01",
+   "doc_type": "registration",
+   "span": [
+    0,
+    7
+   ],
+   "text": "Female."
+  },
+  {
+   "id": "crit:NCT07409103-E01",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Class IV RA according to ACR revised response criteria.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07409103:NCT07409103-E01:r1",
+   "kind": "decision",
+   "trial_id": "NCT07409103",
+   "criterion_id": "NCT07409103-E01",
+   "status": "UNKNOWN",
+   "reason": "UNSUPPORTED",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "HAQ-DI 1.4 and grip difficulty with work tasks, but functional class is not documented; no deformity noted.",
+   "missing_fact": "ACR functional class of the patient",
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0010-EV162",
+   "kind": "evidence",
+   "concept": "lab_other",
+   "term": "HAQ-DI",
+   "value": 1.4,
+   "unit": null,
+   "observed_date": "2026-09-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:lab_other:haq-di",
+   "kind": "concept",
+   "concept": "lab_other",
+   "term": "HAQ-DI"
+  },
+  {
+   "id": "src:SYN-0010-D07:3013-3024",
+   "kind": "source",
+   "doc_id": "SYN-0010-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    3013,
+    3024
+   ],
+   "text": "HAQ-DI 1.4."
+  },
+  {
+   "id": "ev:SYN-0010-EV147",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "deformity",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:symptom_finding:deformity",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "deformity"
+  },
+  {
+   "id": "src:SYN-0010-D07:2772-2804",
+   "kind": "source",
+   "doc_id": "SYN-0010-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    2772,
+    2804
+   ],
+   "text": "No deformity or ulnar deviation."
+  },
+  {
+   "id": "crit:NCT07409103-E02",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Have been treated with more than 1 previous bDMARDs or tsDMARDs, excluding the current TNFi.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07409103:NCT07409103-E02:r1",
+   "kind": "decision",
+   "trial_id": "NCT07409103",
+   "criterion_id": "NCT07409103-E02",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No prior biologic or JAK inhibitor, so not more than 1 previous bDMARD/tsDMARD.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07409103-E03",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Has a secondary non-response to the TNFi due to anti-drug antibodies, as assessed by the Investigator.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07409103:NCT07409103-E03:r1",
+   "kind": "decision",
+   "trial_id": "NCT07409103",
+   "criterion_id": "NCT07409103-E03",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Never on a TNFi/biologic, so no secondary non-response due to anti-drug antibodies.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07409103-E04",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Have a dose change of MTX or TNFi within the last 3 months before Baseline, or a dose change of hydroxychloroquine or oral prednisolone within the last 4 weeks before Baseline.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07409103:NCT07409103-E04:r1",
+   "kind": "decision",
+   "trial_id": "NCT07409103",
+   "criterion_id": "NCT07409103-E04",
+   "status": "FAIL",
+   "reason": "VIOLATED",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "MTX stable since 2026-04 (~6 months) and prednisolone 5 mg since 2026-04 (>4 weeks); no dose change in the windows. Exclusion not met.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07409103-E05",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Have oral prednisone > 7.5 mg/day equivalent or parenteral corticosteroids within the last 4 weeks before Baseline.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07409103:NCT07409103-E05:r1",
+   "kind": "decision",
+   "trial_id": "NCT07409103",
+   "criterion_id": "NCT07409103-E05",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Prednisolone 5 mg daily (<=7.5); no parenteral corticosteroids documented in the reconciled list (no recent stops).",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0010-EV091",
+   "kind": "evidence",
+   "concept": "medication",
+   "term": "Recently",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:medication:recently",
+   "kind": "concept",
+   "concept": "medication",
+   "term": "Recently"
+  },
+  {
+   "id": "src:SYN-0010-D07:1539-1562",
+   "kind": "source",
+   "doc_id": "SYN-0010-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    1539,
+    1562
+   ],
+   "text": "Recently stopped: none."
+  },
+  {
+   "id": "crit:NCT07409103-E06",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Have intra-articular corticosteroids within the last 4 weeks before Baseline.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07409103:NCT07409103-E06:r1",
+   "kind": "decision",
+   "trial_id": "NCT07409103",
+   "criterion_id": "NCT07409103-E06",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_history_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "list_inference",
+    "pc:strict_list_inference"
+   ],
+   "note": "[inferable PASS from SYN-0010-EV086] Reconciled current medication list shows no intra-articular steroid; recently stopped: none.",
+   "missing_fact": null,
+   "derived_from": "SYN-0010-EV086"
+  },
+  {
+   "id": "crit:NCT07409103-E07",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Had any other csDMARD, bDMARD, or immunosuppressive drug in the last 2 months.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07409103:NCT07409103-E07:r1",
+   "kind": "decision",
+   "trial_id": "NCT07409103",
+   "criterion_id": "NCT07409103-E07",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No other DMARDs, biologics or JAKi used; recently stopped none. MTX is the allowed background drug.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07409103-E08",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Had any cell depletion therapy (eg, rituximab) in the last 12 months.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07409103:NCT07409103-E08:r1",
+   "kind": "decision",
+   "trial_id": "NCT07409103",
+   "criterion_id": "NCT07409103-E08",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No prior biologic and no other DMARDs, so no cell-depleting therapy.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07409103-E09",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Have QT interval corrected for heart rate (QTc) using Fridericia's correction (QTcF) > 450 ms for males or QTcF > 470 ms for females either at Screening or Baseline, based on safety 12-lead electrocardiogram (ECG). Have a Screening or Baseline ECG with second- or third-degree atrioventricular block, bundle branch block, arrhythmia (but not sinus arrhythmia or supraventricular premature beats), or illegible QT interval.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07409103:NCT07409103-E09:r1",
+   "kind": "decision",
+   "trial_id": "NCT07409103",
+   "criterion_id": "NCT07409103-E09",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "new_test",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No ECG documented; regular heart rate on exam does not settle it.",
+   "missing_fact": "12-lead ECG with QTcF and conduction/arrhythmia findings at screening",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07409103-E10",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Have evidence of interstitial lung disease (ILD) based on either medical history, clinical signs and symptoms, imaging and/or lung function test, independently of the etiology of the ILD.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07409103:NCT07409103-E10:r1",
+   "kind": "decision",
+   "trial_id": "NCT07409103",
+   "criterion_id": "NCT07409103-E10",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation"
+   ],
+   "note": "No pulmonary history, clear chest X-ray, no crackles, no cough or dyspnea; no ILD evidence.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0010-EV263",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "chest X-ray abnormality",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "src:SYN-0010-D07:3098-3116",
+   "kind": "source",
+   "doc_id": "SYN-0010-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    3098,
+    3116
+   ],
+   "text": "Chest X-ray clear."
+  },
+  {
+   "id": "ev:SYN-0010-EV138",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "crackles",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:symptom_finding:crackles",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "crackles"
+  },
+  {
+   "id": "src:SYN-0010-D07:2519-2556",
+   "kind": "source",
+   "doc_id": "SYN-0010-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    2519,
+    2556
+   ],
+   "text": "Resp: clear bilaterally, no crackles."
+  },
+  {
+   "id": "crit:NCT07409103-E11",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Have a condition which could interfere with drug absorption including but not limited to short bowel syndrome.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07409103:NCT07409103-E11:r1",
+   "kind": "decision",
+   "trial_id": "NCT07409103",
+   "criterion_id": "NCT07409103-E11",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_record_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No explicit statement; only no other surgery, no GI symptoms, and no GI intolerance on methotrexate. Not stated.",
+   "missing_fact": "Whether any malabsorptive condition exists",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07409103-E12",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Have presence of 1 or more significant concurrent medical conditions, which could interfere with the treatment and/or the study per Investigator judgment, including but not limited to the following: poorly controlled diabetes or hypertension; chronic kidney disease stage IIIb, IV, or V; symptomatic heart failure (New York Heart Association class II, III, or IV); myocardial infarction or unstable angina pectoris within the past 12 months prior to randomization; severe chronic pulmonary disease (eg, requiring oxygen therapy); and major chronic inflammatory disease or connective tissue disease other than RA.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07409103:NCT07409103-E12:r1",
+   "kind": "decision",
+   "trial_id": "NCT07409103",
+   "criterion_id": "NCT07409103-E12",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation",
+    "pc:blanket_out_of_scope"
+   ],
+   "note": "[blanket negation out of A1 scope] No cardiac, pulmonary, renal, autoimmune history; no diabetes; BP 122/76; eGFR 109. No significant concurrent condition documented.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07409103-E13",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Have a history of chronic alcohol abuse, IV drug abuse or illicit drug abuse within 1 year before Screening.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07409103:NCT07409103-E13:r1",
+   "kind": "decision",
+   "trial_id": "NCT07409103",
+   "criterion_id": "NCT07409103-E13",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Alcohol rare (<2 drinks/month); no recreational substances.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07409103-E14",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Have a diagnosis or history of malignant disease, with the exceptions of basal cell or squamous epithelial carcinomas of the skin that have been resected with no evidence of metastatic disease for 3 years.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07409103:NCT07409103-E14:r1",
+   "kind": "decision",
+   "trial_id": "NCT07409103",
+   "criterion_id": "NCT07409103-E14",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Explicit 'No prior malignancy'.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0010-EV079",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "prior malignancy",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:prior malignancy",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "prior malignancy"
+  },
+  {
+   "id": "src:SYN-0010-D07:1090-1110",
+   "kind": "source",
+   "doc_id": "SYN-0010-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    1090,
+    1110
+   ],
+   "text": "No prior malignancy."
+  },
+  {
+   "id": "crit:NCT07409103-E15",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Have had any surgical procedure (except for minor surgery requiring local or no anesthesia and without any complications or sequelae) within 12 weeks prior to Screening, or any planned surgical procedure scheduled to occur during the study.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07409103:NCT07409103-E15:r1",
+   "kind": "decision",
+   "trial_id": "NCT07409103",
+   "criterion_id": "NCT07409103-E15",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Only childhood tonsillectomy; no other surgery. No planned surgery documented.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0010-EV083",
+   "kind": "evidence",
+   "concept": "procedure",
+   "term": "tonsillectomy",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "past"
+  },
+  {
+   "id": "concept:procedure:tonsillectomy",
+   "kind": "concept",
+   "concept": "procedure",
+   "term": "tonsillectomy"
+  },
+  {
+   "id": "src:SYN-0010-D07:1189-1216",
+   "kind": "source",
+   "doc_id": "SYN-0010-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    1189,
+    1216
+   ],
+   "text": "Tonsillectomy in childhood."
+  },
+  {
+   "id": "ev:SYN-0010-EV084",
+   "kind": "evidence",
+   "concept": "procedure",
+   "term": "other surgery",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:procedure:other surgery",
+   "kind": "concept",
+   "concept": "procedure",
+   "term": "other surgery"
+  },
+  {
+   "id": "src:SYN-0010-D07:1217-1234",
+   "kind": "source",
+   "doc_id": "SYN-0010-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    1217,
+    1234
+   ],
+   "text": "No other surgery."
+  },
+  {
+   "id": "crit:NCT07409103-E16",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Have received a Bacillus Calmette-Guerin (BCG) vaccination or BCG treatment within 12 months of Screening; or received any other live vaccine(s) (ie, live attenuated) within 3 months of Screening, or intend to receive a live vaccine during the study.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07409103:NCT07409103-E16:r1",
+   "kind": "decision",
+   "trial_id": "NCT07409103",
+   "criterion_id": "NCT07409103-E16",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Vaccination history not documented; the medication list is not a vaccine record.",
+   "missing_fact": "BCG within 12 months or other live vaccine within 3 months, or planned live vaccine",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07409103-E17",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Have had any of the following types of infection within 3 months of Screening or develops any of these infections before the randomization visit: Serious (requiring hospitalization, and/or parenteral antibiotic treatment),; Opportunistic, as defined in (Winthrop et al. 2015) (note, Herpes zoster infection is considered active and ongoing until all vesicles are dry and crusted over),; Chronic (duration of symptoms, signs, and/or treatment of 6 weeks or longer),; Recurring (including, but not limited to herpes simplex, herpes zoster, recurring cellulitis, chronic osteomyelitis). Participants with recurrent nonserious infections such as cellulitis and uncomplicated orolabial and/or genital herpes may be enrolled at the discretion of the Investigator when deemed not to place participants at an increased risk of complications.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07409103:NCT07409103-E17:r1",
+   "kind": "decision",
+   "trial_id": "NCT07409103",
+   "criterion_id": "NCT07409103-E17",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No history of serious or recurrent infection (lifetime denial covers last 3 months).",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0010-EV081",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "serious infection",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:serious infection",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "serious infection"
+  },
+  {
+   "id": "src:SYN-0010-D07:1119-1164",
+   "kind": "source",
+   "doc_id": "SYN-0010-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    1119,
+    1164
+   ],
+   "text": "No history of serious or recurrent infection."
+  },
+  {
+   "id": "ev:SYN-0010-EV082",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "recurrent infection",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:recurrent infection",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "recurrent infection"
+  },
+  {
+   "id": "crit:NCT07409103-E18",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Have any of the following: Human immunodeficiency virus (HIV) infection,; Current infection with hepatitis B virus (HBV) (ie, positive for hepatitis B surface antigen and/or polymerase chain reaction [PCR] positive for HBV DNA),; Current infection with hepatitis C virus (HCV) (ie, positive for HCV RNA),; Active tuberculosis (TB).",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07409103:NCT07409103-E18:r1",
+   "kind": "decision",
+   "trial_id": "NCT07409103",
+   "criterion_id": "NCT07409103-E18",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "lab_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "HIV, HBsAg, HCV negative; clear chest X-ray and no TB symptoms, but active TB not explicitly ruled out (IGRA pending).",
+   "missing_fact": "Active TB exclusion: QuantiFERON pending, no explicit statement of no active TB",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07409103-E19",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Have or have had latent TB infection (LTBI) that has not been treated with a complete course of appropriate therapy as defined by the World Health Organization (WHO) and/or the United States Centers for Disease Control and Prevention (CDC). Participants with LTBI who have been adequately treated are eligible for the study.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07409103:NCT07409103-E19:r1",
+   "kind": "decision",
+   "trial_id": "NCT07409103",
+   "criterion_id": "NCT07409103-E19",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "LTBI in 2018 treated with a completed 9-month isoniazid course, which is adequate therapy.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0010-EV071",
+   "kind": "evidence",
+   "concept": "medication",
+   "term": "isoniazid for 9 months",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "past"
+  },
+  {
+   "id": "concept:medication:isoniazid for 9 months",
+   "kind": "concept",
+   "concept": "medication",
+   "term": "isoniazid for 9 months"
+  },
+  {
+   "id": "crit:NCT07409103-E20",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Current or recent acute active infection (ie, participants must have had no symptoms and/or signs of confirmed or suspected infection and must have completed any appropriate anti-infective treatment within 30 days of Baseline); or fever of 100.5°F (38°C) or above at Screening or Baseline.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07409103:NCT07409103-E20:r1",
+   "kind": "decision",
+   "trial_id": "NCT07409103",
+   "criterion_id": "NCT07409103-E20",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Temp 36.7 C 21 days ago, no fever, no infection symptoms on ROS and exam; no anti-infective treatment recorded recently.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0010-EV066",
+   "kind": "evidence",
+   "concept": "body_temperature",
+   "term": null,
+   "value": 36.7,
+   "unit": "C",
+   "observed_date": "2026-09-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:body_temperature",
+   "kind": "concept",
+   "concept": "body_temperature",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0010-D07:811-845",
+   "kind": "source",
+   "doc_id": "SYN-0010-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    811,
+    845
+   ],
+   "text": "Temp 36.7 C. SpO2 98% on room air."
+  },
+  {
+   "id": "ev:SYN-0010-EV114",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "fever",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:symptom_finding:fever",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "fever"
+  },
+  {
+   "id": "ev:SYN-0010-EV056",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "fever",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "src:SYN-0010-D07:639-670",
+   "kind": "source",
+   "doc_id": "SYN-0010-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    639,
+    670
+   ],
+   "text": "No fever, weight loss, or rash."
+  },
+  {
+   "id": "crit:NCT07409103-E21",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Any other concurrent severe and/or uncontrolled medical, surgical or psychiatric and/or social condition which, in the view of the Investigator, could compromise the participant's safety or ability to participate in the study and make them unsuitable for participation.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07409103:NCT07409103-E21:r1",
+   "kind": "decision",
+   "trial_id": "NCT07409103",
+   "criterion_id": "NCT07409103-E21",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No documented severe or uncontrolled condition; investigator-judgment criterion, so cannot be settled from the record.",
+   "missing_fact": "Investigator judgment on any severe or uncontrolled medical, surgical, psychiatric or social condition",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07409103-E22",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Use of other investigational medicinal products within 12 weeks or at least 5 half-lives (whichever is longer) before study drug administration.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07409103:NCT07409103-E22:r1",
+   "kind": "decision",
+   "trial_id": "NCT07409103",
+   "criterion_id": "NCT07409103-E22",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Medication reconciliation lists no investigational product, but no explicit statement about investigational drugs or trial participation.",
+   "missing_fact": "Participation in any investigational medicinal product trial within the last 12 weeks",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07409103-E23",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Women who are pregnant or breast-feeding or planning to become pregnant during the study.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07409103:NCT07409103-E23:r1",
+   "kind": "decision",
+   "trial_id": "NCT07409103",
+   "criterion_id": "NCT07409103-E23",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Not pregnant, urine hCG negative, not planning pregnancy; breast-feeding not mentioned but the pregnancy parts are denied.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0010-EV037",
+   "kind": "evidence",
+   "concept": "pregnancy",
+   "term": null,
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-10",
+   "certainty": "reported",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "src:SYN-0010-D06:64-87",
+   "kind": "source",
+   "doc_id": "SYN-0010-D06",
+   "doc_type": "patient_interview",
+   "span": [
+    64,
+    87
+   ],
+   "text": "Not planning pregnancy."
+  },
+  {
+   "id": "label:NCT07409103",
+   "kind": "trial_decision",
+   "label": "ineligible",
+   "why": [
+    "FAIL NCT07409103-I10",
+    "FAIL NCT07409103-E04"
+   ],
+   "by": "agent3"
+  }
+ ],
+ "edges": [
+  [
+   "trial:NCT05428488",
+   "has_criterion",
+   "crit:NCT05428488-I01"
+  ],
+  [
+   "crit:NCT05428488-I01",
+   "decided_as",
+   "dec:NCT05428488:NCT05428488-I01:r1"
+  ],
+  [
+   "crit:NCT05428488-I01",
+   "requires",
+   "concept:birth_date"
+  ],
+  [
+   "concept:birth_date",
+   "observed_as",
+   "ev:SYN-0010-EV002"
+  ],
+  [
+   "ev:SYN-0010-EV002",
+   "derived_from",
+   "src:SYN-0010-D01:8-23"
+  ],
+  [
+   "ev:SYN-0010-EV002",
+   "supports",
+   "dec:NCT05428488:NCT05428488-I01:r1"
+  ],
+  [
+   "calc:NCT05428488:NCT05428488-I01",
+   "computes",
+   "dec:NCT05428488:NCT05428488-I01:r1"
+  ],
+  [
+   "trial:NCT05428488",
+   "has_criterion",
+   "crit:NCT05428488-I02"
+  ],
+  [
+   "crit:NCT05428488-I02",
+   "decided_as",
+   "dec:NCT05428488:NCT05428488-I02:r1"
+  ],
+  [
+   "crit:NCT05428488-I02",
+   "requires",
+   "concept:diagnosis:seropositive rheumatoid arthritis"
+  ],
+  [
+   "concept:diagnosis:seropositive rheumatoid arthritis",
+   "observed_as",
+   "ev:SYN-0010-EV038"
+  ],
+  [
+   "ev:SYN-0010-EV038",
+   "derived_from",
+   "src:SYN-0010-D07:76-145"
+  ],
+  [
+   "ev:SYN-0010-EV038",
+   "supports",
+   "dec:NCT05428488:NCT05428488-I02:r1"
+  ],
+  [
+   "crit:NCT05428488-I02",
+   "requires",
+   "concept:diagnosis:rheumatoid arthritis"
+  ],
+  [
+   "concept:diagnosis:rheumatoid arthritis",
+   "observed_as",
+   "ev:SYN-0010-EV047"
+  ],
+  [
+   "ev:SYN-0010-EV047",
+   "derived_from",
+   "src:SYN-0010-D07:244-311"
+  ],
+  [
+   "ev:SYN-0010-EV047",
+   "supports",
+   "dec:NCT05428488:NCT05428488-I02:r1"
+  ],
+  [
+   "trial:NCT05428488",
+   "has_criterion",
+   "crit:NCT05428488-I03"
+  ],
+  [
+   "crit:NCT05428488-I03",
+   "decided_as",
+   "dec:NCT05428488:NCT05428488-I03:r1"
+  ],
+  [
+   "crit:NCT05428488-I03",
+   "requires",
+   "concept:lab_other:anti-ccp"
+  ],
+  [
+   "concept:lab_other:anti-ccp",
+   "observed_as",
+   "ev:SYN-0010-EV046"
+  ],
+  [
+   "ev:SYN-0010-EV046",
+   "derived_from",
+   "src:SYN-0010-D07:224-242"
+  ],
+  [
+   "ev:SYN-0010-EV046",
+   "supports",
+   "dec:NCT05428488:NCT05428488-I03:r1"
+  ],
+  [
+   "trial:NCT05428488",
+   "has_criterion",
+   "crit:NCT05428488-I04"
+  ],
+  [
+   "crit:NCT05428488-I04",
+   "decided_as",
+   "dec:NCT05428488:NCT05428488-I04:r1"
+  ],
+  [
+   "crit:NCT05428488-I04",
+   "requires",
+   "concept:medication:methotrexate 20 mg weekly"
+  ],
+  [
+   "concept:medication:methotrexate 20 mg weekly",
+   "observed_as",
+   "ev:SYN-0010-EV027"
+  ],
+  [
+   "ev:SYN-0010-EV027",
+   "derived_from",
+   "src:SYN-0010-D05:0-49"
+  ],
+  [
+   "ev:SYN-0010-EV027",
+   "supports",
+   "dec:NCT05428488:NCT05428488-I04:r1"
+  ],
+  [
+   "concept:medication:methotrexate 20 mg weekly",
+   "observed_as",
+   "ev:SYN-0010-EV050"
+  ],
+  [
+   "ev:SYN-0010-EV050",
+   "derived_from",
+   "src:SYN-0010-D07:355-456"
+  ],
+  [
+   "ev:SYN-0010-EV050",
+   "supports",
+   "dec:NCT05428488:NCT05428488-I04:r1"
+  ],
+  [
+   "trial:NCT05428488",
+   "has_criterion",
+   "crit:NCT05428488-I05"
+  ],
+  [
+   "crit:NCT05428488-I05",
+   "decided_as",
+   "dec:NCT05428488:NCT05428488-I05:r1"
+  ],
+  [
+   "crit:NCT05428488-I05",
+   "requires",
+   "concept:das28"
+  ],
+  [
+   "concept:das28",
+   "observed_as",
+   "ev:SYN-0010-EV161"
+  ],
+  [
+   "ev:SYN-0010-EV161",
+   "derived_from",
+   "src:SYN-0010-D07:2991-3012"
+  ],
+  [
+   "ev:SYN-0010-EV161",
+   "expired_for",
+   "dec:NCT05428488:NCT05428488-I05:r1"
+  ],
+  [
+   "calc:NCT05428488:NCT05428488-I05",
+   "computes",
+   "dec:NCT05428488:NCT05428488-I05:r1"
+  ],
+  [
+   "trial:NCT05428488",
+   "has_criterion",
+   "crit:NCT05428488-I06"
+  ],
+  [
+   "crit:NCT05428488-I06",
+   "decided_as",
+   "dec:NCT05428488:NCT05428488-I06:r1"
+  ],
+  [
+   "crit:NCT05428488-I06",
+   "requires",
+   "concept:crp"
+  ],
+  [
+   "concept:crp",
+   "observed_as",
+   "ev:SYN-0010-EV215"
+  ],
+  [
+   "ev:SYN-0010-EV215",
+   "derived_from",
+   "src:SYN-0010-D08:952-975"
+  ],
+  [
+   "ev:SYN-0010-EV215",
+   "supports",
+   "dec:NCT05428488:NCT05428488-I06:r1"
+  ],
+  [
+   "crit:NCT05428488-I06",
+   "requires",
+   "concept:esr"
+  ],
+  [
+   "concept:esr",
+   "observed_as",
+   "ev:SYN-0010-EV216"
+  ],
+  [
+   "ev:SYN-0010-EV216",
+   "derived_from",
+   "src:SYN-0010-D08:976-997"
+  ],
+  [
+   "ev:SYN-0010-EV216",
+   "supports",
+   "dec:NCT05428488:NCT05428488-I06:r1"
+  ],
+  [
+   "trial:NCT05428488",
+   "has_criterion",
+   "crit:NCT05428488-I07"
+  ],
+  [
+   "crit:NCT05428488-I07",
+   "decided_as",
+   "dec:NCT05428488:NCT05428488-I07:r1"
+  ],
+  [
+   "crit:NCT05428488-I07",
+   "requires",
+   "concept:medication:biologic"
+  ],
+  [
+   "concept:medication:biologic",
+   "observed_as",
+   "ev:SYN-0010-EV096"
+  ],
+  [
+   "ev:SYN-0010-EV096",
+   "derived_from",
+   "src:SYN-0010-D07:1652-1687"
+  ],
+  [
+   "ev:SYN-0010-EV096",
+   "supports",
+   "dec:NCT05428488:NCT05428488-I07:r1"
+  ],
+  [
+   "crit:NCT05428488-I07",
+   "requires",
+   "concept:medication:jak inhibitor"
+  ],
+  [
+   "concept:medication:jak inhibitor",
+   "observed_as",
+   "ev:SYN-0010-EV097"
+  ],
+  [
+   "ev:SYN-0010-EV097",
+   "derived_from",
+   "src:SYN-0010-D07:1652-1687"
+  ],
+  [
+   "ev:SYN-0010-EV097",
+   "supports",
+   "dec:NCT05428488:NCT05428488-I07:r1"
+  ],
+  [
+   "trial:NCT05428488",
+   "has_criterion",
+   "crit:NCT05428488-I08"
+  ],
+  [
+   "crit:NCT05428488-I08",
+   "decided_as",
+   "dec:NCT05428488:NCT05428488-I08:r1"
+  ],
+  [
+   "crit:NCT05428488-I08",
+   "requires",
+   "concept:diagnosis:seropositive rheumatoid arthritis"
+  ],
+  [
+   "concept:diagnosis:seropositive rheumatoid arthritis",
+   "observed_as",
+   "ev:SYN-0010-EV166"
+  ],
+  [
+   "ev:SYN-0010-EV166",
+   "derived_from",
+   "src:SYN-0010-D07:3138-3254"
+  ],
+  [
+   "ev:SYN-0010-EV166",
+   "supports",
+   "dec:NCT05428488:NCT05428488-I08:r1"
+  ],
+  [
+   "crit:NCT05428488-I08",
+   "requires",
+   "concept:treatment_plan:biologic"
+  ],
+  [
+   "concept:treatment_plan:biologic",
+   "observed_as",
+   "ev:SYN-0010-EV173"
+  ],
+  [
+   "ev:SYN-0010-EV173",
+   "derived_from",
+   "src:SYN-0010-D07:3320-3360"
+  ],
+  [
+   "ev:SYN-0010-EV173",
+   "supports",
+   "dec:NCT05428488:NCT05428488-I08:r1"
+  ],
+  [
+   "trial:NCT05428488",
+   "has_criterion",
+   "crit:NCT05428488-E01"
+  ],
+  [
+   "crit:NCT05428488-E01",
+   "decided_as",
+   "dec:NCT05428488:NCT05428488-E01:r1"
+  ],
+  [
+   "trial:NCT05428488",
+   "has_criterion",
+   "crit:NCT05428488-E02"
+  ],
+  [
+   "crit:NCT05428488-E02",
+   "decided_as",
+   "dec:NCT05428488:NCT05428488-E02:r1"
+  ],
+  [
+   "trial:NCT05428488",
+   "has_criterion",
+   "crit:NCT05428488-E03"
+  ],
+  [
+   "crit:NCT05428488-E03",
+   "decided_as",
+   "dec:NCT05428488:NCT05428488-E03:r1"
+  ],
+  [
+   "trial:NCT05428488",
+   "has_criterion",
+   "crit:NCT05428488-E04"
+  ],
+  [
+   "crit:NCT05428488-E04",
+   "decided_as",
+   "dec:NCT05428488:NCT05428488-E04:r1"
+  ],
+  [
+   "trial:NCT05428488",
+   "has_criterion",
+   "crit:NCT05428488-E05"
+  ],
+  [
+   "crit:NCT05428488-E05",
+   "decided_as",
+   "dec:NCT05428488:NCT05428488-E05:r1"
+  ],
+  [
+   "crit:NCT05428488-E05",
+   "requires",
+   "concept:diagnosis:neurologic history"
+  ],
+  [
+   "concept:diagnosis:neurologic history",
+   "observed_as",
+   "ev:SYN-0010-EV077"
+  ],
+  [
+   "ev:SYN-0010-EV077",
+   "derived_from",
+   "src:SYN-0010-D07:998-1076"
+  ],
+  [
+   "ev:SYN-0010-EV077",
+   "supports",
+   "dec:NCT05428488:NCT05428488-E05:r1"
+  ],
+  [
+   "trial:NCT05428488",
+   "has_criterion",
+   "crit:NCT05428488-E06"
+  ],
+  [
+   "crit:NCT05428488-E06",
+   "decided_as",
+   "dec:NCT05428488:NCT05428488-E06:r1"
+  ],
+  [
+   "trial:NCT05428488",
+   "has_criterion",
+   "crit:NCT05428488-E07"
+  ],
+  [
+   "crit:NCT05428488-E07",
+   "decided_as",
+   "dec:NCT05428488:NCT05428488-E07:r1"
+  ],
+  [
+   "crit:NCT05428488-E07",
+   "requires",
+   "concept:diagnosis:latent tuberculosis"
+  ],
+  [
+   "concept:diagnosis:latent tuberculosis",
+   "observed_as",
+   "ev:SYN-0010-EV014"
+  ],
+  [
+   "ev:SYN-0010-EV014",
+   "derived_from",
+   "src:SYN-0010-D02:281-328"
+  ],
+  [
+   "ev:SYN-0010-EV014",
+   "insufficient_for",
+   "dec:NCT05428488:NCT05428488-E07:r1"
+  ],
+  [
+   "crit:NCT05428488-E07",
+   "requires",
+   "concept:lab_other:quantiferon-tb"
+  ],
+  [
+   "concept:lab_other:quantiferon-tb",
+   "observed_as",
+   "ev:SYN-0010-EV235"
+  ],
+  [
+   "ev:SYN-0010-EV235",
+   "derived_from",
+   "src:SYN-0010-D08:1523-1559"
+  ],
+  [
+   "ev:SYN-0010-EV235",
+   "insufficient_for",
+   "dec:NCT05428488:NCT05428488-E07:r1"
+  ],
+  [
+   "trial:NCT05428488",
+   "has_criterion",
+   "crit:NCT05428488-E08"
+  ],
+  [
+   "crit:NCT05428488-E08",
+   "decided_as",
+   "dec:NCT05428488:NCT05428488-E08:r1"
+  ],
+  [
+   "crit:NCT05428488-E08",
+   "requires",
+   "concept:symptom_finding:chest x-ray abnormality"
+  ],
+  [
+   "concept:symptom_finding:chest x-ray abnormality",
+   "observed_as",
+   "ev:SYN-0010-EV252"
+  ],
+  [
+   "ev:SYN-0010-EV252",
+   "derived_from",
+   "src:SYN-0010-D05:260-278"
+  ],
+  [
+   "ev:SYN-0010-EV252",
+   "insufficient_for",
+   "dec:NCT05428488:NCT05428488-E08:r1"
+  ],
+  [
+   "crit:NCT05428488-E08",
+   "requires",
+   "concept:lab_other:quantiferon-tb"
+  ],
+  [
+   "ev:SYN-0010-EV235",
+   "insufficient_for",
+   "dec:NCT05428488:NCT05428488-E08:r1"
+  ],
+  [
+   "trial:NCT05428488",
+   "has_criterion",
+   "crit:NCT05428488-E09"
+  ],
+  [
+   "crit:NCT05428488-E09",
+   "decided_as",
+   "dec:NCT05428488:NCT05428488-E09:r1"
+  ],
+  [
+   "crit:NCT05428488-E09",
+   "requires",
+   "concept:diagnosis:latent tb infection"
+  ],
+  [
+   "concept:diagnosis:latent tb infection",
+   "observed_as",
+   "ev:SYN-0010-EV070"
+  ],
+  [
+   "ev:SYN-0010-EV070",
+   "derived_from",
+   "src:SYN-0010-D07:923-997"
+  ],
+  [
+   "ev:SYN-0010-EV070",
+   "supports",
+   "dec:NCT05428488:NCT05428488-E09:r1"
+  ],
+  [
+   "crit:NCT05428488-E09",
+   "requires",
+   "concept:symptom_finding:chest x-ray abnormality"
+  ],
+  [
+   "ev:SYN-0010-EV252",
+   "supports",
+   "dec:NCT05428488:NCT05428488-E09:r1"
+  ],
+  [
+   "trial:NCT05428488",
+   "has_criterion",
+   "crit:NCT05428488-E10"
+  ],
+  [
+   "crit:NCT05428488-E10",
+   "decided_as",
+   "dec:NCT05428488:NCT05428488-E10:r1"
+  ],
+  [
+   "trial:NCT05428488",
+   "has_criterion",
+   "crit:NCT05428488-E11"
+  ],
+  [
+   "crit:NCT05428488-E11",
+   "decided_as",
+   "dec:NCT05428488:NCT05428488-E11:r1"
+  ],
+  [
+   "crit:NCT05428488-E11",
+   "requires",
+   "concept:substance_use"
+  ],
+  [
+   "concept:substance_use",
+   "observed_as",
+   "ev:SYN-0010-EV100"
+  ],
+  [
+   "ev:SYN-0010-EV100",
+   "derived_from",
+   "src:SYN-0010-D07:1815-1842"
+  ],
+  [
+   "ev:SYN-0010-EV100",
+   "supports",
+   "dec:NCT05428488:NCT05428488-E11:r1"
+  ],
+  [
+   "crit:NCT05428488-E11",
+   "requires",
+   "concept:alcohol:rare, under 2 drinks per month"
+  ],
+  [
+   "concept:alcohol:rare, under 2 drinks per month",
+   "observed_as",
+   "ev:SYN-0010-EV099"
+  ],
+  [
+   "ev:SYN-0010-EV099",
+   "derived_from",
+   "src:SYN-0010-D07:1734-1814"
+  ],
+  [
+   "ev:SYN-0010-EV099",
+   "supports",
+   "dec:NCT05428488:NCT05428488-E11:r1"
+  ],
+  [
+   "trial:NCT05428488",
+   "has_criterion",
+   "crit:NCT05428488-E12"
+  ],
+  [
+   "crit:NCT05428488-E12",
+   "decided_as",
+   "dec:NCT05428488:NCT05428488-E12:r1"
+  ],
+  [
+   "trial:NCT05428488",
+   "has_criterion",
+   "crit:NCT05428488-E13"
+  ],
+  [
+   "crit:NCT05428488-E13",
+   "decided_as",
+   "dec:NCT05428488:NCT05428488-E13:r1"
+  ],
+  [
+   "crit:NCT05428488-E13",
+   "requires",
+   "concept:contraception:progestin implant"
+  ],
+  [
+   "concept:contraception:progestin implant",
+   "observed_as",
+   "ev:SYN-0010-EV090"
+  ],
+  [
+   "ev:SYN-0010-EV090",
+   "derived_from",
+   "src:SYN-0010-D07:1490-1538"
+  ],
+  [
+   "ev:SYN-0010-EV090",
+   "supports",
+   "dec:NCT05428488:NCT05428488-E13:r1"
+  ],
+  [
+   "concept:contraception:progestin implant",
+   "observed_as",
+   "ev:SYN-0010-EV185"
+  ],
+  [
+   "ev:SYN-0010-EV185",
+   "derived_from",
+   "src:SYN-0010-D07:3628-3694"
+  ],
+  [
+   "ev:SYN-0010-EV185",
+   "supports",
+   "dec:NCT05428488:NCT05428488-E13:r1"
+  ],
+  [
+   "trial:NCT05428488",
+   "has_criterion",
+   "crit:NCT05428488-E14"
+  ],
+  [
+   "crit:NCT05428488-E14",
+   "decided_as",
+   "dec:NCT05428488:NCT05428488-E14:r1"
+  ],
+  [
+   "trial:NCT05428488",
+   "has_criterion",
+   "crit:NCT05428488-E15"
+  ],
+  [
+   "crit:NCT05428488-E15",
+   "decided_as",
+   "dec:NCT05428488:NCT05428488-E15:r1"
+  ],
+  [
+   "trial:NCT05428488",
+   "has_criterion",
+   "crit:NCT05428488-E16"
+  ],
+  [
+   "crit:NCT05428488-E16",
+   "decided_as",
+   "dec:NCT05428488:NCT05428488-E16:r1"
+  ],
+  [
+   "trial:NCT05428488",
+   "has_criterion",
+   "crit:NCT05428488-E17"
+  ],
+  [
+   "crit:NCT05428488-E17",
+   "decided_as",
+   "dec:NCT05428488:NCT05428488-E17:r1"
+  ],
+  [
+   "trial:NCT05428488",
+   "has_criterion",
+   "crit:NCT05428488-E18"
+  ],
+  [
+   "crit:NCT05428488-E18",
+   "decided_as",
+   "dec:NCT05428488:NCT05428488-E18:r1"
+  ],
+  [
+   "crit:NCT05428488-E18",
+   "requires",
+   "concept:diagnosis:cardiac history"
+  ],
+  [
+   "concept:diagnosis:cardiac history",
+   "observed_as",
+   "ev:SYN-0010-EV072"
+  ],
+  [
+   "ev:SYN-0010-EV072",
+   "derived_from",
+   "src:SYN-0010-D07:998-1076"
+  ],
+  [
+   "ev:SYN-0010-EV072",
+   "supports",
+   "dec:NCT05428488:NCT05428488-E18:r1"
+  ],
+  [
+   "trial:NCT05428488",
+   "has_criterion",
+   "crit:NCT05428488-E19"
+  ],
+  [
+   "crit:NCT05428488-E19",
+   "decided_as",
+   "dec:NCT05428488:NCT05428488-E19:r1"
+  ],
+  [
+   "crit:NCT05428488-E19",
+   "requires",
+   "concept:diagnosis:pulmonary history"
+  ],
+  [
+   "concept:diagnosis:pulmonary history",
+   "observed_as",
+   "ev:SYN-0010-EV073"
+  ],
+  [
+   "ev:SYN-0010-EV073",
+   "derived_from",
+   "src:SYN-0010-D07:998-1076"
+  ],
+  [
+   "ev:SYN-0010-EV073",
+   "supports",
+   "dec:NCT05428488:NCT05428488-E19:r1"
+  ],
+  [
+   "crit:NCT05428488-E19",
+   "requires",
+   "concept:smoking"
+  ],
+  [
+   "concept:smoking",
+   "observed_as",
+   "ev:SYN-0010-EV098"
+  ],
+  [
+   "ev:SYN-0010-EV098",
+   "derived_from",
+   "src:SYN-0010-D07:1705-1733"
+  ],
+  [
+   "ev:SYN-0010-EV098",
+   "supports",
+   "dec:NCT05428488:NCT05428488-E19:r1"
+  ],
+  [
+   "trial:NCT05428488",
+   "has_criterion",
+   "crit:NCT05428488-E20"
+  ],
+  [
+   "crit:NCT05428488-E20",
+   "decided_as",
+   "dec:NCT05428488:NCT05428488-E20:r1"
+  ],
+  [
+   "trial:NCT05428488",
+   "has_criterion",
+   "crit:NCT05428488-E21"
+  ],
+  [
+   "crit:NCT05428488-E21",
+   "decided_as",
+   "dec:NCT05428488:NCT05428488-E21:r1"
+  ],
+  [
+   "crit:NCT05428488-E21",
+   "requires",
+   "concept:medication:biologic"
+  ],
+  [
+   "ev:SYN-0010-EV096",
+   "supports",
+   "dec:NCT05428488:NCT05428488-E21:r1"
+  ],
+  [
+   "crit:NCT05428488-E21",
+   "requires",
+   "concept:allergy:no known drug allergies"
+  ],
+  [
+   "concept:allergy:no known drug allergies",
+   "observed_as",
+   "ev:SYN-0010-EV085"
+  ],
+  [
+   "ev:SYN-0010-EV085",
+   "derived_from",
+   "src:SYN-0010-D07:1247-1252"
+  ],
+  [
+   "ev:SYN-0010-EV085",
+   "supports",
+   "dec:NCT05428488:NCT05428488-E21:r1"
+  ],
+  [
+   "trial:NCT05428488",
+   "has_criterion",
+   "crit:NCT05428488-E22"
+  ],
+  [
+   "crit:NCT05428488-E22",
+   "decided_as",
+   "dec:NCT05428488:NCT05428488-E22:r1"
+  ],
+  [
+   "crit:NCT05428488-E22",
+   "requires",
+   "concept:allergy:no known drug allergies"
+  ],
+  [
+   "ev:SYN-0010-EV085",
+   "supports",
+   "dec:NCT05428488:NCT05428488-E22:r1"
+  ],
+  [
+   "trial:NCT05428488",
+   "has_criterion",
+   "crit:NCT05428488-E23"
+  ],
+  [
+   "crit:NCT05428488-E23",
+   "decided_as",
+   "dec:NCT05428488:NCT05428488-E23:r1"
+  ],
+  [
+   "crit:NCT05428488-E23",
+   "requires",
+   "concept:hepatitis_b:hepatitis b surface antigen"
+  ],
+  [
+   "concept:hepatitis_b:hepatitis b surface antigen",
+   "observed_as",
+   "ev:SYN-0010-EV229"
+  ],
+  [
+   "ev:SYN-0010-EV229",
+   "derived_from",
+   "src:SYN-0010-D08:1352-1388"
+  ],
+  [
+   "ev:SYN-0010-EV229",
+   "supports",
+   "dec:NCT05428488:NCT05428488-E23:r1"
+  ],
+  [
+   "crit:NCT05428488-E23",
+   "requires",
+   "concept:hepatitis_b:hepatitis b core antibody negative"
+  ],
+  [
+   "concept:hepatitis_b:hepatitis b core antibody negative",
+   "observed_as",
+   "ev:SYN-0010-EV230"
+  ],
+  [
+   "ev:SYN-0010-EV230",
+   "derived_from",
+   "src:SYN-0010-D08:1389-1431"
+  ],
+  [
+   "ev:SYN-0010-EV230",
+   "supports",
+   "dec:NCT05428488:NCT05428488-E23:r1"
+  ],
+  [
+   "trial:NCT05428488",
+   "has_criterion",
+   "crit:NCT05428488-E24"
+  ],
+  [
+   "crit:NCT05428488-E24",
+   "decided_as",
+   "dec:NCT05428488:NCT05428488-E24:r1"
+  ],
+  [
+   "trial:NCT05428488",
+   "has_criterion",
+   "crit:NCT05428488-E25"
+  ],
+  [
+   "crit:NCT05428488-E25",
+   "decided_as",
+   "dec:NCT05428488:NCT05428488-E25:r1"
+  ],
+  [
+   "crit:NCT05428488-E25",
+   "requires",
+   "concept:diagnosis:autoimmune history"
+  ],
+  [
+   "concept:diagnosis:autoimmune history",
+   "observed_as",
+   "ev:SYN-0010-EV076"
+  ],
+  [
+   "ev:SYN-0010-EV076",
+   "derived_from",
+   "src:SYN-0010-D07:998-1076"
+  ],
+  [
+   "ev:SYN-0010-EV076",
+   "supports",
+   "dec:NCT05428488:NCT05428488-E25:r1"
+  ],
+  [
+   "crit:NCT05428488-E25",
+   "requires",
+   "concept:symptom_finding:diarrhea"
+  ],
+  [
+   "concept:symptom_finding:diarrhea",
+   "observed_as",
+   "ev:SYN-0010-EV122"
+  ],
+  [
+   "ev:SYN-0010-EV122",
+   "derived_from",
+   "src:SYN-0010-D07:2167-2373"
+  ],
+  [
+   "ev:SYN-0010-EV122",
+   "supports",
+   "dec:NCT05428488:NCT05428488-E25:r1"
+  ],
+  [
+   "trial:NCT05428488",
+   "labelled",
+   "label:NCT05428488"
+  ],
+  [
+   "trial:NCT02714634",
+   "has_criterion",
+   "crit:NCT02714634-I01"
+  ],
+  [
+   "crit:NCT02714634-I01",
+   "decided_as",
+   "dec:NCT02714634:NCT02714634-I01:r1"
+  ],
+  [
+   "crit:NCT02714634-I01",
+   "requires",
+   "concept:diagnosis:seropositive rheumatoid arthritis"
+  ],
+  [
+   "ev:SYN-0010-EV038",
+   "supports",
+   "dec:NCT02714634:NCT02714634-I01:r1"
+  ],
+  [
+   "crit:NCT02714634-I01",
+   "requires",
+   "concept:diagnosis:rheumatoid arthritis"
+  ],
+  [
+   "ev:SYN-0010-EV047",
+   "supports",
+   "dec:NCT02714634:NCT02714634-I01:r1"
+  ],
+  [
+   "trial:NCT02714634",
+   "has_criterion",
+   "crit:NCT02714634-I02"
+  ],
+  [
+   "crit:NCT02714634-I02",
+   "decided_as",
+   "dec:NCT02714634:NCT02714634-I02:r1"
+  ],
+  [
+   "crit:NCT02714634-I02",
+   "requires",
+   "concept:das28"
+  ],
+  [
+   "ev:SYN-0010-EV161",
+   "supports",
+   "dec:NCT02714634:NCT02714634-I02:r1"
+  ],
+  [
+   "calc:NCT02714634:NCT02714634-I02",
+   "computes",
+   "dec:NCT02714634:NCT02714634-I02:r1"
+  ],
+  [
+   "trial:NCT02714634",
+   "has_criterion",
+   "crit:NCT02714634-I03"
+  ],
+  [
+   "crit:NCT02714634-I03",
+   "decided_as",
+   "dec:NCT02714634:NCT02714634-I03:r1"
+  ],
+  [
+   "crit:NCT02714634-I03",
+   "requires",
+   "concept:diagnosis:seropositive rheumatoid arthritis"
+  ],
+  [
+   "ev:SYN-0010-EV166",
+   "supports",
+   "dec:NCT02714634:NCT02714634-I03:r1"
+  ],
+  [
+   "crit:NCT02714634-I03",
+   "requires",
+   "concept:medication:methotrexate 20 mg weekly"
+  ],
+  [
+   "ev:SYN-0010-EV050",
+   "supports",
+   "dec:NCT02714634:NCT02714634-I03:r1"
+  ],
+  [
+   "ev:SYN-0010-EV027",
+   "supports",
+   "dec:NCT02714634:NCT02714634-I03:r1"
+  ],
+  [
+   "trial:NCT02714634",
+   "has_criterion",
+   "crit:NCT02714634-I04"
+  ],
+  [
+   "crit:NCT02714634-I04",
+   "decided_as",
+   "dec:NCT02714634:NCT02714634-I04:r1"
+  ],
+  [
+   "crit:NCT02714634-I04",
+   "requires",
+   "concept:symptom_finding:erosion at right mcp2 on hand x-ray"
+  ],
+  [
+   "concept:symptom_finding:erosion at right mcp2 on hand x-ray",
+   "observed_as",
+   "ev:SYN-0010-EV049"
+  ],
+  [
+   "ev:SYN-0010-EV049",
+   "derived_from",
+   "src:SYN-0010-D07:313-354"
+  ],
+  [
+   "ev:SYN-0010-EV049",
+   "supports",
+   "dec:NCT02714634:NCT02714634-I04:r1"
+  ],
+  [
+   "crit:NCT02714634-I04",
+   "requires",
+   "concept:lab_other:rheumatoid factor"
+  ],
+  [
+   "concept:lab_other:rheumatoid factor",
+   "observed_as",
+   "ev:SYN-0010-EV045"
+  ],
+  [
+   "ev:SYN-0010-EV045",
+   "derived_from",
+   "src:SYN-0010-D07:205-222"
+  ],
+  [
+   "ev:SYN-0010-EV045",
+   "supports",
+   "dec:NCT02714634:NCT02714634-I04:r1"
+  ],
+  [
+   "crit:NCT02714634-I04",
+   "requires",
+   "concept:lab_other:anti-ccp"
+  ],
+  [
+   "ev:SYN-0010-EV046",
+   "supports",
+   "dec:NCT02714634:NCT02714634-I04:r1"
+  ],
+  [
+   "trial:NCT02714634",
+   "has_criterion",
+   "crit:NCT02714634-I05"
+  ],
+  [
+   "crit:NCT02714634-I05",
+   "decided_as",
+   "dec:NCT02714634:NCT02714634-I05:r1"
+  ],
+  [
+   "crit:NCT02714634-I05",
+   "requires",
+   "concept:birth_date"
+  ],
+  [
+   "ev:SYN-0010-EV002",
+   "supports",
+   "dec:NCT02714634:NCT02714634-I05:r1"
+  ],
+  [
+   "calc:NCT02714634:NCT02714634-I05",
+   "computes",
+   "dec:NCT02714634:NCT02714634-I05:r1"
+  ],
+  [
+   "trial:NCT02714634",
+   "has_criterion",
+   "crit:NCT02714634-I06"
+  ],
+  [
+   "crit:NCT02714634-I06",
+   "decided_as",
+   "dec:NCT02714634:NCT02714634-I06:r1"
+  ],
+  [
+   "trial:NCT02714634",
+   "has_criterion",
+   "crit:NCT02714634-I07"
+  ],
+  [
+   "crit:NCT02714634-I07",
+   "decided_as",
+   "dec:NCT02714634:NCT02714634-I07:r1"
+  ],
+  [
+   "trial:NCT02714634",
+   "has_criterion",
+   "crit:NCT02714634-I08"
+  ],
+  [
+   "crit:NCT02714634-I08",
+   "decided_as",
+   "dec:NCT02714634:NCT02714634-I08:r1"
+  ],
+  [
+   "crit:NCT02714634-I08",
+   "requires",
+   "concept:hcg"
+  ],
+  [
+   "concept:hcg",
+   "observed_as",
+   "ev:SYN-0010-EV110"
+  ],
+  [
+   "ev:SYN-0010-EV110",
+   "derived_from",
+   "src:SYN-0010-D07:2090-2115"
+  ],
+  [
+   "ev:SYN-0010-EV110",
+   "supports",
+   "dec:NCT02714634:NCT02714634-I08:r1"
+  ],
+  [
+   "concept:hcg",
+   "observed_as",
+   "ev:SYN-0010-EV246"
+  ],
+  [
+   "ev:SYN-0010-EV246",
+   "derived_from",
+   "src:SYN-0010-D08:1755-1774"
+  ],
+  [
+   "ev:SYN-0010-EV246",
+   "supports",
+   "dec:NCT02714634:NCT02714634-I08:r1"
+  ],
+  [
+   "trial:NCT02714634",
+   "has_criterion",
+   "crit:NCT02714634-I09"
+  ],
+  [
+   "crit:NCT02714634-I09",
+   "decided_as",
+   "dec:NCT02714634:NCT02714634-I09:r1"
+  ],
+  [
+   "crit:NCT02714634-I09",
+   "requires",
+   "concept:contraception:progestin implant"
+  ],
+  [
+   "ev:SYN-0010-EV090",
+   "supports",
+   "dec:NCT02714634:NCT02714634-I09:r1"
+  ],
+  [
+   "ev:SYN-0010-EV185",
+   "supports",
+   "dec:NCT02714634:NCT02714634-I09:r1"
+  ],
+  [
+   "trial:NCT02714634",
+   "has_criterion",
+   "crit:NCT02714634-E01"
+  ],
+  [
+   "crit:NCT02714634-E01",
+   "decided_as",
+   "dec:NCT02714634:NCT02714634-E01:r1"
+  ],
+  [
+   "trial:NCT02714634",
+   "has_criterion",
+   "crit:NCT02714634-E02"
+  ],
+  [
+   "crit:NCT02714634-E02",
+   "decided_as",
+   "dec:NCT02714634:NCT02714634-E02:r1"
+  ],
+  [
+   "trial:NCT02714634",
+   "has_criterion",
+   "crit:NCT02714634-E03"
+  ],
+  [
+   "crit:NCT02714634-E03",
+   "decided_as",
+   "dec:NCT02714634:NCT02714634-E03:r1"
+  ],
+  [
+   "crit:NCT02714634-E03",
+   "requires",
+   "concept:diagnosis:autoimmune history"
+  ],
+  [
+   "ev:SYN-0010-EV076",
+   "supports",
+   "dec:NCT02714634:NCT02714634-E03:r1"
+  ],
+  [
+   "trial:NCT02714634",
+   "has_criterion",
+   "crit:NCT02714634-E04"
+  ],
+  [
+   "crit:NCT02714634-E04",
+   "decided_as",
+   "dec:NCT02714634:NCT02714634-E04:r1"
+  ],
+  [
+   "trial:NCT02714634",
+   "has_criterion",
+   "crit:NCT02714634-E05"
+  ],
+  [
+   "crit:NCT02714634-E05",
+   "decided_as",
+   "dec:NCT02714634:NCT02714634-E05:r1"
+  ],
+  [
+   "crit:NCT02714634-E05",
+   "requires",
+   "concept:medication:prednisolone 5 mg daily"
+  ],
+  [
+   "concept:medication:prednisolone 5 mg daily",
+   "observed_as",
+   "ev:SYN-0010-EV089"
+  ],
+  [
+   "ev:SYN-0010-EV089",
+   "derived_from",
+   "src:SYN-0010-D07:1413-1487"
+  ],
+  [
+   "ev:SYN-0010-EV089",
+   "supports",
+   "dec:NCT02714634:NCT02714634-E05:r1"
+  ],
+  [
+   "crit:NCT02714634-E05",
+   "requires",
+   "concept:medication:prednisolone 5 mg"
+  ],
+  [
+   "concept:medication:prednisolone 5 mg",
+   "observed_as",
+   "ev:SYN-0010-EV172"
+  ],
+  [
+   "ev:SYN-0010-EV172",
+   "derived_from",
+   "src:SYN-0010-D07:3255-3319"
+  ],
+  [
+   "ev:SYN-0010-EV172",
+   "supports",
+   "dec:NCT02714634:NCT02714634-E05:r1"
+  ],
+  [
+   "trial:NCT02714634",
+   "has_criterion",
+   "crit:NCT02714634-E06"
+  ],
+  [
+   "crit:NCT02714634-E06",
+   "decided_as",
+   "dec:NCT02714634:NCT02714634-E06:r1"
+  ],
+  [
+   "crit:NCT02714634-E06",
+   "requires",
+   "concept:lab_other:quantiferon-tb"
+  ],
+  [
+   "ev:SYN-0010-EV235",
+   "insufficient_for",
+   "dec:NCT02714634:NCT02714634-E06:r1"
+  ],
+  [
+   "crit:NCT02714634-E06",
+   "requires",
+   "concept:symptom_finding:chest x-ray abnormality"
+  ],
+  [
+   "ev:SYN-0010-EV252",
+   "insufficient_for",
+   "dec:NCT02714634:NCT02714634-E06:r1"
+  ],
+  [
+   "crit:NCT02714634-E06",
+   "requires",
+   "concept:treatment_plan:igra"
+  ],
+  [
+   "concept:treatment_plan:igra",
+   "observed_as",
+   "ev:SYN-0010-EV176"
+  ],
+  [
+   "ev:SYN-0010-EV176",
+   "derived_from",
+   "src:SYN-0010-D07:3401-3449"
+  ],
+  [
+   "ev:SYN-0010-EV176",
+   "insufficient_for",
+   "dec:NCT02714634:NCT02714634-E06:r1"
+  ],
+  [
+   "trial:NCT02714634",
+   "has_criterion",
+   "crit:NCT02714634-E07"
+  ],
+  [
+   "crit:NCT02714634-E07",
+   "decided_as",
+   "dec:NCT02714634:NCT02714634-E07:r1"
+  ],
+  [
+   "trial:NCT02714634",
+   "has_criterion",
+   "crit:NCT02714634-E08"
+  ],
+  [
+   "crit:NCT02714634-E08",
+   "decided_as",
+   "dec:NCT02714634:NCT02714634-E08:r1"
+  ],
+  [
+   "crit:NCT02714634-E08",
+   "requires",
+   "concept:pregnancy"
+  ],
+  [
+   "concept:pregnancy",
+   "observed_as",
+   "ev:SYN-0010-EV108"
+  ],
+  [
+   "ev:SYN-0010-EV108",
+   "derived_from",
+   "src:SYN-0010-D07:2052-2089"
+  ],
+  [
+   "ev:SYN-0010-EV108",
+   "supports",
+   "dec:NCT02714634:NCT02714634-E08:r1"
+  ],
+  [
+   "crit:NCT02714634-E08",
+   "requires",
+   "concept:hcg"
+  ],
+  [
+   "ev:SYN-0010-EV110",
+   "supports",
+   "dec:NCT02714634:NCT02714634-E08:r1"
+  ],
+  [
+   "trial:NCT02714634",
+   "has_criterion",
+   "crit:NCT02714634-E09"
+  ],
+  [
+   "crit:NCT02714634-E09",
+   "decided_as",
+   "dec:NCT02714634:NCT02714634-E09:r1"
+  ],
+  [
+   "crit:NCT02714634-E09",
+   "requires",
+   "concept:substance_use"
+  ],
+  [
+   "ev:SYN-0010-EV100",
+   "supports",
+   "dec:NCT02714634:NCT02714634-E09:r1"
+  ],
+  [
+   "crit:NCT02714634-E09",
+   "requires",
+   "concept:alcohol:rare, under 2 drinks per month"
+  ],
+  [
+   "ev:SYN-0010-EV099",
+   "supports",
+   "dec:NCT02714634:NCT02714634-E09:r1"
+  ],
+  [
+   "trial:NCT02714634",
+   "has_criterion",
+   "crit:NCT02714634-E10"
+  ],
+  [
+   "crit:NCT02714634-E10",
+   "decided_as",
+   "dec:NCT02714634:NCT02714634-E10:r1"
+  ],
+  [
+   "trial:NCT02714634",
+   "has_criterion",
+   "crit:NCT02714634-E11"
+  ],
+  [
+   "crit:NCT02714634-E11",
+   "decided_as",
+   "dec:NCT02714634:NCT02714634-E11:r1"
+  ],
+  [
+   "crit:NCT02714634-E11",
+   "requires",
+   "concept:contraception:progestin implant"
+  ],
+  [
+   "ev:SYN-0010-EV090",
+   "supports",
+   "dec:NCT02714634:NCT02714634-E11:r1"
+  ],
+  [
+   "ev:SYN-0010-EV185",
+   "supports",
+   "dec:NCT02714634:NCT02714634-E11:r1"
+  ],
+  [
+   "trial:NCT02714634",
+   "has_criterion",
+   "crit:NCT02714634-E12"
+  ],
+  [
+   "crit:NCT02714634-E12",
+   "decided_as",
+   "dec:NCT02714634:NCT02714634-E12:r1"
+  ],
+  [
+   "trial:NCT02714634",
+   "has_criterion",
+   "crit:NCT02714634-E13"
+  ],
+  [
+   "crit:NCT02714634-E13",
+   "decided_as",
+   "dec:NCT02714634:NCT02714634-E13:r1"
+  ],
+  [
+   "trial:NCT02714634",
+   "labelled",
+   "label:NCT02714634"
+  ],
+  [
+   "trial:NCT07409103",
+   "has_criterion",
+   "crit:NCT07409103-I01"
+  ],
+  [
+   "crit:NCT07409103-I01",
+   "decided_as",
+   "dec:NCT07409103:NCT07409103-I01:r1"
+  ],
+  [
+   "trial:NCT07409103",
+   "has_criterion",
+   "crit:NCT07409103-I02"
+  ],
+  [
+   "crit:NCT07409103-I02",
+   "decided_as",
+   "dec:NCT07409103:NCT07409103-I02:r1"
+  ],
+  [
+   "crit:NCT07409103-I02",
+   "requires",
+   "concept:birth_date"
+  ],
+  [
+   "ev:SYN-0010-EV002",
+   "supports",
+   "dec:NCT07409103:NCT07409103-I02:r1"
+  ],
+  [
+   "calc:NCT07409103:NCT07409103-I02",
+   "computes",
+   "dec:NCT07409103:NCT07409103-I02:r1"
+  ],
+  [
+   "trial:NCT07409103",
+   "has_criterion",
+   "crit:NCT07409103-I03"
+  ],
+  [
+   "crit:NCT07409103-I03",
+   "decided_as",
+   "dec:NCT07409103:NCT07409103-I03:r1"
+  ],
+  [
+   "crit:NCT07409103-I03",
+   "requires",
+   "concept:bmi"
+  ],
+  [
+   "concept:bmi",
+   "observed_as",
+   "ev:SYN-0010-EV063"
+  ],
+  [
+   "ev:SYN-0010-EV063",
+   "derived_from",
+   "src:SYN-0010-D07:760-775"
+  ],
+  [
+   "ev:SYN-0010-EV063",
+   "supports",
+   "dec:NCT07409103:NCT07409103-I03:r1"
+  ],
+  [
+   "crit:NCT07409103-I03",
+   "requires",
+   "concept:body_weight"
+  ],
+  [
+   "concept:body_weight",
+   "observed_as",
+   "ev:SYN-0010-EV062"
+  ],
+  [
+   "ev:SYN-0010-EV062",
+   "derived_from",
+   "src:SYN-0010-D07:746-759"
+  ],
+  [
+   "ev:SYN-0010-EV062",
+   "supports",
+   "dec:NCT07409103:NCT07409103-I03:r1"
+  ],
+  [
+   "trial:NCT07409103",
+   "has_criterion",
+   "crit:NCT07409103-I04"
+  ],
+  [
+   "crit:NCT07409103-I04",
+   "decided_as",
+   "dec:NCT07409103:NCT07409103-I04:r1"
+  ],
+  [
+   "crit:NCT07409103-I04",
+   "requires",
+   "concept:diagnosis:rheumatoid arthritis"
+  ],
+  [
+   "ev:SYN-0010-EV047",
+   "insufficient_for",
+   "dec:NCT07409103:NCT07409103-I04:r1"
+  ],
+  [
+   "crit:NCT07409103-I04",
+   "requires",
+   "concept:diagnosis:ra"
+  ],
+  [
+   "concept:diagnosis:ra",
+   "observed_as",
+   "ev:SYN-0010-EV011"
+  ],
+  [
+   "ev:SYN-0010-EV011",
+   "derived_from",
+   "src:SYN-0010-D02:198-204"
+  ],
+  [
+   "ev:SYN-0010-EV011",
+   "insufficient_for",
+   "dec:NCT07409103:NCT07409103-I04:r1"
+  ],
+  [
+   "trial:NCT07409103",
+   "has_criterion",
+   "crit:NCT07409103-I05"
+  ],
+  [
+   "crit:NCT07409103-I05",
+   "decided_as",
+   "dec:NCT07409103:NCT07409103-I05:r1"
+  ],
+  [
+   "crit:NCT07409103-I05",
+   "requires",
+   "concept:das28"
+  ],
+  [
+   "concept:das28",
+   "observed_as",
+   "ev:SYN-0010-EV251"
+  ],
+  [
+   "ev:SYN-0010-EV251",
+   "derived_from",
+   "src:SYN-0010-D05:106-127"
+  ],
+  [
+   "ev:SYN-0010-EV251",
+   "supports",
+   "dec:NCT07409103:NCT07409103-I05:r1"
+  ],
+  [
+   "crit:NCT07409103-I05",
+   "requires",
+   "concept:symptom_finding:swollen joints 7"
+  ],
+  [
+   "concept:symptom_finding:swollen joints 7",
+   "observed_as",
+   "ev:SYN-0010-EV029"
+  ],
+  [
+   "ev:SYN-0010-EV029",
+   "derived_from",
+   "src:SYN-0010-D05:67-83"
+  ],
+  [
+   "ev:SYN-0010-EV029",
+   "supports",
+   "dec:NCT07409103:NCT07409103-I05:r1"
+  ],
+  [
+   "crit:NCT07409103-I05",
+   "requires",
+   "concept:symptom_finding:tender joints 9"
+  ],
+  [
+   "concept:symptom_finding:tender joints 9",
+   "observed_as",
+   "ev:SYN-0010-EV028"
+  ],
+  [
+   "ev:SYN-0010-EV028",
+   "derived_from",
+   "src:SYN-0010-D05:50-65"
+  ],
+  [
+   "ev:SYN-0010-EV028",
+   "supports",
+   "dec:NCT07409103:NCT07409103-I05:r1"
+  ],
+  [
+   "trial:NCT07409103",
+   "has_criterion",
+   "crit:NCT07409103-I06"
+  ],
+  [
+   "crit:NCT07409103-I06",
+   "decided_as",
+   "dec:NCT07409103:NCT07409103-I06:r1"
+  ],
+  [
+   "crit:NCT07409103-I06",
+   "requires",
+   "concept:crp"
+  ],
+  [
+   "ev:SYN-0010-EV215",
+   "supports",
+   "dec:NCT07409103:NCT07409103-I06:r1"
+  ],
+  [
+   "trial:NCT07409103",
+   "has_criterion",
+   "crit:NCT07409103-I07"
+  ],
+  [
+   "crit:NCT07409103-I07",
+   "decided_as",
+   "dec:NCT07409103:NCT07409103-I07:r1"
+  ],
+  [
+   "crit:NCT07409103-I07",
+   "requires",
+   "concept:wbc"
+  ],
+  [
+   "concept:wbc",
+   "observed_as",
+   "ev:SYN-0010-EV187"
+  ],
+  [
+   "ev:SYN-0010-EV187",
+   "derived_from",
+   "src:SYN-0010-D08:61-87"
+  ],
+  [
+   "ev:SYN-0010-EV187",
+   "supports",
+   "dec:NCT07409103:NCT07409103-I07:r1"
+  ],
+  [
+   "crit:NCT07409103-I07",
+   "requires",
+   "concept:hemoglobin"
+  ],
+  [
+   "concept:hemoglobin",
+   "observed_as",
+   "ev:SYN-0010-EV189"
+  ],
+  [
+   "ev:SYN-0010-EV189",
+   "derived_from",
+   "src:SYN-0010-D08:116-148"
+  ],
+  [
+   "ev:SYN-0010-EV189",
+   "supports",
+   "dec:NCT07409103:NCT07409103-I07:r1"
+  ],
+  [
+   "crit:NCT07409103-I07",
+   "requires",
+   "concept:platelet_count"
+  ],
+  [
+   "concept:platelet_count",
+   "observed_as",
+   "ev:SYN-0010-EV194"
+  ],
+  [
+   "ev:SYN-0010-EV194",
+   "derived_from",
+   "src:SYN-0010-D08:237-268"
+  ],
+  [
+   "ev:SYN-0010-EV194",
+   "supports",
+   "dec:NCT07409103:NCT07409103-I07:r1"
+  ],
+  [
+   "crit:NCT07409103-I07",
+   "requires",
+   "concept:anc"
+  ],
+  [
+   "concept:anc",
+   "observed_as",
+   "ev:SYN-0010-EV195"
+  ],
+  [
+   "ev:SYN-0010-EV195",
+   "derived_from",
+   "src:SYN-0010-D08:269-302"
+  ],
+  [
+   "ev:SYN-0010-EV195",
+   "supports",
+   "dec:NCT07409103:NCT07409103-I07:r1"
+  ],
+  [
+   "trial:NCT07409103",
+   "has_criterion",
+   "crit:NCT07409103-I08"
+  ],
+  [
+   "crit:NCT07409103-I08",
+   "decided_as",
+   "dec:NCT07409103:NCT07409103-I08:r1"
+  ],
+  [
+   "crit:NCT07409103-I08",
+   "requires",
+   "concept:ast"
+  ],
+  [
+   "concept:ast",
+   "observed_as",
+   "ev:SYN-0010-EV213"
+  ],
+  [
+   "ev:SYN-0010-EV213",
+   "derived_from",
+   "src:SYN-0010-D08:864-882"
+  ],
+  [
+   "ev:SYN-0010-EV213",
+   "supports",
+   "dec:NCT07409103:NCT07409103-I08:r1"
+  ],
+  [
+   "crit:NCT07409103-I08",
+   "requires",
+   "concept:alt"
+  ],
+  [
+   "concept:alt",
+   "observed_as",
+   "ev:SYN-0010-EV214"
+  ],
+  [
+   "ev:SYN-0010-EV214",
+   "derived_from",
+   "src:SYN-0010-D08:883-928"
+  ],
+  [
+   "ev:SYN-0010-EV214",
+   "supports",
+   "dec:NCT07409103:NCT07409103-I08:r1"
+  ],
+  [
+   "crit:NCT07409103-I08",
+   "requires",
+   "concept:bilirubin_total"
+  ],
+  [
+   "concept:bilirubin_total",
+   "observed_as",
+   "ev:SYN-0010-EV211"
+  ],
+  [
+   "ev:SYN-0010-EV211",
+   "derived_from",
+   "src:SYN-0010-D08:808-843"
+  ],
+  [
+   "ev:SYN-0010-EV211",
+   "supports",
+   "dec:NCT07409103:NCT07409103-I08:r1"
+  ],
+  [
+   "crit:NCT07409103-I08",
+   "requires",
+   "concept:creatinine"
+  ],
+  [
+   "concept:creatinine",
+   "observed_as",
+   "ev:SYN-0010-EV205"
+  ],
+  [
+   "ev:SYN-0010-EV205",
+   "derived_from",
+   "src:SYN-0010-D08:607-640"
+  ],
+  [
+   "ev:SYN-0010-EV205",
+   "supports",
+   "dec:NCT07409103:NCT07409103-I08:r1"
+  ],
+  [
+   "crit:NCT07409103-I08",
+   "requires",
+   "concept:egfr"
+  ],
+  [
+   "concept:egfr",
+   "observed_as",
+   "ev:SYN-0010-EV206"
+  ],
+  [
+   "ev:SYN-0010-EV206",
+   "derived_from",
+   "src:SYN-0010-D08:641-684"
+  ],
+  [
+   "ev:SYN-0010-EV206",
+   "supports",
+   "dec:NCT07409103:NCT07409103-I08:r1"
+  ],
+  [
+   "trial:NCT07409103",
+   "has_criterion",
+   "crit:NCT07409103-I09"
+  ],
+  [
+   "crit:NCT07409103-I09",
+   "decided_as",
+   "dec:NCT07409103:NCT07409103-I09:r1"
+  ],
+  [
+   "crit:NCT07409103-I09",
+   "requires",
+   "concept:medication:methotrexate 20 mg weekly"
+  ],
+  [
+   "concept:medication:methotrexate 20 mg weekly",
+   "observed_as",
+   "ev:SYN-0010-EV087"
+  ],
+  [
+   "ev:SYN-0010-EV087",
+   "derived_from",
+   "src:SYN-0010-D07:1293-1369"
+  ],
+  [
+   "ev:SYN-0010-EV087",
+   "supports",
+   "dec:NCT07409103:NCT07409103-I09:r1"
+  ],
+  [
+   "crit:NCT07409103-I09",
+   "requires",
+   "concept:medication:folic acid 5 mg weekly"
+  ],
+  [
+   "concept:medication:folic acid 5 mg weekly",
+   "observed_as",
+   "ev:SYN-0010-EV088"
+  ],
+  [
+   "ev:SYN-0010-EV088",
+   "derived_from",
+   "src:SYN-0010-D07:1372-1410"
+  ],
+  [
+   "ev:SYN-0010-EV088",
+   "supports",
+   "dec:NCT07409103:NCT07409103-I09:r1"
+  ],
+  [
+   "concept:medication:methotrexate 20 mg weekly",
+   "observed_as",
+   "ev:SYN-0010-EV015"
+  ],
+  [
+   "ev:SYN-0010-EV015",
+   "derived_from",
+   "src:SYN-0010-D03:0-42"
+  ],
+  [
+   "ev:SYN-0010-EV015",
+   "supports",
+   "dec:NCT07409103:NCT07409103-I09:r1"
+  ],
+  [
+   "ev:SYN-0010-EV050",
+   "supports",
+   "dec:NCT07409103:NCT07409103-I09:r1"
+  ],
+  [
+   "trial:NCT07409103",
+   "has_criterion",
+   "crit:NCT07409103-I10"
+  ],
+  [
+   "crit:NCT07409103-I10",
+   "decided_as",
+   "dec:NCT07409103:NCT07409103-I10:r1"
+  ],
+  [
+   "crit:NCT07409103-I10",
+   "requires",
+   "concept:medication:biologic"
+  ],
+  [
+   "ev:SYN-0010-EV096",
+   "supports",
+   "dec:NCT07409103:NCT07409103-I10:r1"
+  ],
+  [
+   "crit:NCT07409103-I10",
+   "requires",
+   "concept:treatment_plan:biologic"
+  ],
+  [
+   "ev:SYN-0010-EV173",
+   "supports",
+   "dec:NCT07409103:NCT07409103-I10:r1"
+  ],
+  [
+   "trial:NCT07409103",
+   "has_criterion",
+   "crit:NCT07409103-I11"
+  ],
+  [
+   "crit:NCT07409103-I11",
+   "decided_as",
+   "dec:NCT07409103:NCT07409103-I11:r1"
+  ],
+  [
+   "crit:NCT07409103-I11",
+   "requires",
+   "concept:medication:prednisolone 5 mg daily"
+  ],
+  [
+   "ev:SYN-0010-EV089",
+   "supports",
+   "dec:NCT07409103:NCT07409103-I11:r1"
+  ],
+  [
+   "crit:NCT07409103-I11",
+   "requires",
+   "concept:medication:nsaids"
+  ],
+  [
+   "concept:medication:nsaids",
+   "observed_as",
+   "ev:SYN-0010-EV094"
+  ],
+  [
+   "ev:SYN-0010-EV094",
+   "derived_from",
+   "src:SYN-0010-D07:1620-1651"
+  ],
+  [
+   "ev:SYN-0010-EV094",
+   "supports",
+   "dec:NCT07409103:NCT07409103-I11:r1"
+  ],
+  [
+   "crit:NCT07409103-I11",
+   "requires",
+   "concept:medication:other dmards"
+  ],
+  [
+   "concept:medication:other dmards",
+   "observed_as",
+   "ev:SYN-0010-EV095"
+  ],
+  [
+   "ev:SYN-0010-EV095",
+   "derived_from",
+   "src:SYN-0010-D07:1620-1651"
+  ],
+  [
+   "ev:SYN-0010-EV095",
+   "supports",
+   "dec:NCT07409103:NCT07409103-I11:r1"
+  ],
+  [
+   "crit:NCT07409103-I11",
+   "requires",
+   "concept:medication:biologic"
+  ],
+  [
+   "ev:SYN-0010-EV096",
+   "supports",
+   "dec:NCT07409103:NCT07409103-I11:r1"
+  ],
+  [
+   "trial:NCT07409103",
+   "has_criterion",
+   "crit:NCT07409103-I12"
+  ],
+  [
+   "crit:NCT07409103-I12",
+   "decided_as",
+   "dec:NCT07409103:NCT07409103-I12:r1"
+  ],
+  [
+   "trial:NCT07409103",
+   "has_criterion",
+   "crit:NCT07409103-I13"
+  ],
+  [
+   "crit:NCT07409103-I13",
+   "decided_as",
+   "dec:NCT07409103:NCT07409103-I13:r1"
+  ],
+  [
+   "crit:NCT07409103-I13",
+   "requires",
+   "concept:sex"
+  ],
+  [
+   "concept:sex",
+   "observed_as",
+   "ev:SYN-0010-EV001"
+  ],
+  [
+   "ev:SYN-0010-EV001",
+   "derived_from",
+   "src:SYN-0010-D01:0-7"
+  ],
+  [
+   "ev:SYN-0010-EV001",
+   "supports",
+   "dec:NCT07409103:NCT07409103-I13:r1"
+  ],
+  [
+   "trial:NCT07409103",
+   "has_criterion",
+   "crit:NCT07409103-E01"
+  ],
+  [
+   "crit:NCT07409103-E01",
+   "decided_as",
+   "dec:NCT07409103:NCT07409103-E01:r1"
+  ],
+  [
+   "crit:NCT07409103-E01",
+   "requires",
+   "concept:das28"
+  ],
+  [
+   "ev:SYN-0010-EV161",
+   "insufficient_for",
+   "dec:NCT07409103:NCT07409103-E01:r1"
+  ],
+  [
+   "crit:NCT07409103-E01",
+   "requires",
+   "concept:lab_other:haq-di"
+  ],
+  [
+   "concept:lab_other:haq-di",
+   "observed_as",
+   "ev:SYN-0010-EV162"
+  ],
+  [
+   "ev:SYN-0010-EV162",
+   "derived_from",
+   "src:SYN-0010-D07:3013-3024"
+  ],
+  [
+   "ev:SYN-0010-EV162",
+   "insufficient_for",
+   "dec:NCT07409103:NCT07409103-E01:r1"
+  ],
+  [
+   "crit:NCT07409103-E01",
+   "requires",
+   "concept:symptom_finding:deformity"
+  ],
+  [
+   "concept:symptom_finding:deformity",
+   "observed_as",
+   "ev:SYN-0010-EV147"
+  ],
+  [
+   "ev:SYN-0010-EV147",
+   "derived_from",
+   "src:SYN-0010-D07:2772-2804"
+  ],
+  [
+   "ev:SYN-0010-EV147",
+   "insufficient_for",
+   "dec:NCT07409103:NCT07409103-E01:r1"
+  ],
+  [
+   "trial:NCT07409103",
+   "has_criterion",
+   "crit:NCT07409103-E02"
+  ],
+  [
+   "crit:NCT07409103-E02",
+   "decided_as",
+   "dec:NCT07409103:NCT07409103-E02:r1"
+  ],
+  [
+   "crit:NCT07409103-E02",
+   "requires",
+   "concept:medication:biologic"
+  ],
+  [
+   "ev:SYN-0010-EV096",
+   "supports",
+   "dec:NCT07409103:NCT07409103-E02:r1"
+  ],
+  [
+   "crit:NCT07409103-E02",
+   "requires",
+   "concept:medication:jak inhibitor"
+  ],
+  [
+   "ev:SYN-0010-EV097",
+   "supports",
+   "dec:NCT07409103:NCT07409103-E02:r1"
+  ],
+  [
+   "trial:NCT07409103",
+   "has_criterion",
+   "crit:NCT07409103-E03"
+  ],
+  [
+   "crit:NCT07409103-E03",
+   "decided_as",
+   "dec:NCT07409103:NCT07409103-E03:r1"
+  ],
+  [
+   "crit:NCT07409103-E03",
+   "requires",
+   "concept:medication:biologic"
+  ],
+  [
+   "ev:SYN-0010-EV096",
+   "supports",
+   "dec:NCT07409103:NCT07409103-E03:r1"
+  ],
+  [
+   "trial:NCT07409103",
+   "has_criterion",
+   "crit:NCT07409103-E04"
+  ],
+  [
+   "crit:NCT07409103-E04",
+   "decided_as",
+   "dec:NCT07409103:NCT07409103-E04:r1"
+  ],
+  [
+   "crit:NCT07409103-E04",
+   "requires",
+   "concept:medication:prednisolone 5 mg daily"
+  ],
+  [
+   "ev:SYN-0010-EV089",
+   "supports",
+   "dec:NCT07409103:NCT07409103-E04:r1"
+  ],
+  [
+   "crit:NCT07409103-E04",
+   "requires",
+   "concept:medication:methotrexate 20 mg weekly"
+  ],
+  [
+   "ev:SYN-0010-EV087",
+   "supports",
+   "dec:NCT07409103:NCT07409103-E04:r1"
+  ],
+  [
+   "trial:NCT07409103",
+   "has_criterion",
+   "crit:NCT07409103-E05"
+  ],
+  [
+   "crit:NCT07409103-E05",
+   "decided_as",
+   "dec:NCT07409103:NCT07409103-E05:r1"
+  ],
+  [
+   "crit:NCT07409103-E05",
+   "requires",
+   "concept:medication:prednisolone 5 mg daily"
+  ],
+  [
+   "ev:SYN-0010-EV089",
+   "supports",
+   "dec:NCT07409103:NCT07409103-E05:r1"
+  ],
+  [
+   "crit:NCT07409103-E05",
+   "requires",
+   "concept:medication:recently"
+  ],
+  [
+   "concept:medication:recently",
+   "observed_as",
+   "ev:SYN-0010-EV091"
+  ],
+  [
+   "ev:SYN-0010-EV091",
+   "derived_from",
+   "src:SYN-0010-D07:1539-1562"
+  ],
+  [
+   "ev:SYN-0010-EV091",
+   "supports",
+   "dec:NCT07409103:NCT07409103-E05:r1"
+  ],
+  [
+   "trial:NCT07409103",
+   "has_criterion",
+   "crit:NCT07409103-E06"
+  ],
+  [
+   "crit:NCT07409103-E06",
+   "decided_as",
+   "dec:NCT07409103:NCT07409103-E06:r1"
+  ],
+  [
+   "trial:NCT07409103",
+   "has_criterion",
+   "crit:NCT07409103-E07"
+  ],
+  [
+   "crit:NCT07409103-E07",
+   "decided_as",
+   "dec:NCT07409103:NCT07409103-E07:r1"
+  ],
+  [
+   "crit:NCT07409103-E07",
+   "requires",
+   "concept:medication:nsaids"
+  ],
+  [
+   "ev:SYN-0010-EV094",
+   "supports",
+   "dec:NCT07409103:NCT07409103-E07:r1"
+  ],
+  [
+   "crit:NCT07409103-E07",
+   "requires",
+   "concept:medication:other dmards"
+  ],
+  [
+   "ev:SYN-0010-EV095",
+   "supports",
+   "dec:NCT07409103:NCT07409103-E07:r1"
+  ],
+  [
+   "crit:NCT07409103-E07",
+   "requires",
+   "concept:medication:biologic"
+  ],
+  [
+   "ev:SYN-0010-EV096",
+   "supports",
+   "dec:NCT07409103:NCT07409103-E07:r1"
+  ],
+  [
+   "crit:NCT07409103-E07",
+   "requires",
+   "concept:medication:recently"
+  ],
+  [
+   "ev:SYN-0010-EV091",
+   "supports",
+   "dec:NCT07409103:NCT07409103-E07:r1"
+  ],
+  [
+   "trial:NCT07409103",
+   "has_criterion",
+   "crit:NCT07409103-E08"
+  ],
+  [
+   "crit:NCT07409103-E08",
+   "decided_as",
+   "dec:NCT07409103:NCT07409103-E08:r1"
+  ],
+  [
+   "crit:NCT07409103-E08",
+   "requires",
+   "concept:medication:biologic"
+  ],
+  [
+   "ev:SYN-0010-EV096",
+   "supports",
+   "dec:NCT07409103:NCT07409103-E08:r1"
+  ],
+  [
+   "crit:NCT07409103-E08",
+   "requires",
+   "concept:medication:other dmards"
+  ],
+  [
+   "ev:SYN-0010-EV095",
+   "supports",
+   "dec:NCT07409103:NCT07409103-E08:r1"
+  ],
+  [
+   "trial:NCT07409103",
+   "has_criterion",
+   "crit:NCT07409103-E09"
+  ],
+  [
+   "crit:NCT07409103-E09",
+   "decided_as",
+   "dec:NCT07409103:NCT07409103-E09:r1"
+  ],
+  [
+   "trial:NCT07409103",
+   "has_criterion",
+   "crit:NCT07409103-E10"
+  ],
+  [
+   "crit:NCT07409103-E10",
+   "decided_as",
+   "dec:NCT07409103:NCT07409103-E10:r1"
+  ],
+  [
+   "crit:NCT07409103-E10",
+   "requires",
+   "concept:diagnosis:pulmonary history"
+  ],
+  [
+   "ev:SYN-0010-EV073",
+   "supports",
+   "dec:NCT07409103:NCT07409103-E10:r1"
+  ],
+  [
+   "crit:NCT07409103-E10",
+   "requires",
+   "concept:symptom_finding:chest x-ray abnormality"
+  ],
+  [
+   "concept:symptom_finding:chest x-ray abnormality",
+   "observed_as",
+   "ev:SYN-0010-EV263"
+  ],
+  [
+   "ev:SYN-0010-EV263",
+   "derived_from",
+   "src:SYN-0010-D07:3098-3116"
+  ],
+  [
+   "ev:SYN-0010-EV263",
+   "supports",
+   "dec:NCT07409103:NCT07409103-E10:r1"
+  ],
+  [
+   "crit:NCT07409103-E10",
+   "requires",
+   "concept:symptom_finding:crackles"
+  ],
+  [
+   "concept:symptom_finding:crackles",
+   "observed_as",
+   "ev:SYN-0010-EV138"
+  ],
+  [
+   "ev:SYN-0010-EV138",
+   "derived_from",
+   "src:SYN-0010-D07:2519-2556"
+  ],
+  [
+   "ev:SYN-0010-EV138",
+   "supports",
+   "dec:NCT07409103:NCT07409103-E10:r1"
+  ],
+  [
+   "trial:NCT07409103",
+   "has_criterion",
+   "crit:NCT07409103-E11"
+  ],
+  [
+   "crit:NCT07409103-E11",
+   "decided_as",
+   "dec:NCT07409103:NCT07409103-E11:r1"
+  ],
+  [
+   "trial:NCT07409103",
+   "has_criterion",
+   "crit:NCT07409103-E12"
+  ],
+  [
+   "crit:NCT07409103-E12",
+   "decided_as",
+   "dec:NCT07409103:NCT07409103-E12:r1"
+  ],
+  [
+   "trial:NCT07409103",
+   "has_criterion",
+   "crit:NCT07409103-E13"
+  ],
+  [
+   "crit:NCT07409103-E13",
+   "decided_as",
+   "dec:NCT07409103:NCT07409103-E13:r1"
+  ],
+  [
+   "crit:NCT07409103-E13",
+   "requires",
+   "concept:alcohol:rare, under 2 drinks per month"
+  ],
+  [
+   "ev:SYN-0010-EV099",
+   "supports",
+   "dec:NCT07409103:NCT07409103-E13:r1"
+  ],
+  [
+   "crit:NCT07409103-E13",
+   "requires",
+   "concept:substance_use"
+  ],
+  [
+   "ev:SYN-0010-EV100",
+   "supports",
+   "dec:NCT07409103:NCT07409103-E13:r1"
+  ],
+  [
+   "trial:NCT07409103",
+   "has_criterion",
+   "crit:NCT07409103-E14"
+  ],
+  [
+   "crit:NCT07409103-E14",
+   "decided_as",
+   "dec:NCT07409103:NCT07409103-E14:r1"
+  ],
+  [
+   "crit:NCT07409103-E14",
+   "requires",
+   "concept:diagnosis:prior malignancy"
+  ],
+  [
+   "concept:diagnosis:prior malignancy",
+   "observed_as",
+   "ev:SYN-0010-EV079"
+  ],
+  [
+   "ev:SYN-0010-EV079",
+   "derived_from",
+   "src:SYN-0010-D07:1090-1110"
+  ],
+  [
+   "ev:SYN-0010-EV079",
+   "supports",
+   "dec:NCT07409103:NCT07409103-E14:r1"
+  ],
+  [
+   "trial:NCT07409103",
+   "has_criterion",
+   "crit:NCT07409103-E15"
+  ],
+  [
+   "crit:NCT07409103-E15",
+   "decided_as",
+   "dec:NCT07409103:NCT07409103-E15:r1"
+  ],
+  [
+   "crit:NCT07409103-E15",
+   "requires",
+   "concept:procedure:tonsillectomy"
+  ],
+  [
+   "concept:procedure:tonsillectomy",
+   "observed_as",
+   "ev:SYN-0010-EV083"
+  ],
+  [
+   "ev:SYN-0010-EV083",
+   "derived_from",
+   "src:SYN-0010-D07:1189-1216"
+  ],
+  [
+   "ev:SYN-0010-EV083",
+   "supports",
+   "dec:NCT07409103:NCT07409103-E15:r1"
+  ],
+  [
+   "crit:NCT07409103-E15",
+   "requires",
+   "concept:procedure:other surgery"
+  ],
+  [
+   "concept:procedure:other surgery",
+   "observed_as",
+   "ev:SYN-0010-EV084"
+  ],
+  [
+   "ev:SYN-0010-EV084",
+   "derived_from",
+   "src:SYN-0010-D07:1217-1234"
+  ],
+  [
+   "ev:SYN-0010-EV084",
+   "supports",
+   "dec:NCT07409103:NCT07409103-E15:r1"
+  ],
+  [
+   "trial:NCT07409103",
+   "has_criterion",
+   "crit:NCT07409103-E16"
+  ],
+  [
+   "crit:NCT07409103-E16",
+   "decided_as",
+   "dec:NCT07409103:NCT07409103-E16:r1"
+  ],
+  [
+   "trial:NCT07409103",
+   "has_criterion",
+   "crit:NCT07409103-E17"
+  ],
+  [
+   "crit:NCT07409103-E17",
+   "decided_as",
+   "dec:NCT07409103:NCT07409103-E17:r1"
+  ],
+  [
+   "crit:NCT07409103-E17",
+   "requires",
+   "concept:diagnosis:serious infection"
+  ],
+  [
+   "concept:diagnosis:serious infection",
+   "observed_as",
+   "ev:SYN-0010-EV081"
+  ],
+  [
+   "ev:SYN-0010-EV081",
+   "derived_from",
+   "src:SYN-0010-D07:1119-1164"
+  ],
+  [
+   "ev:SYN-0010-EV081",
+   "supports",
+   "dec:NCT07409103:NCT07409103-E17:r1"
+  ],
+  [
+   "crit:NCT07409103-E17",
+   "requires",
+   "concept:diagnosis:recurrent infection"
+  ],
+  [
+   "concept:diagnosis:recurrent infection",
+   "observed_as",
+   "ev:SYN-0010-EV082"
+  ],
+  [
+   "ev:SYN-0010-EV082",
+   "derived_from",
+   "src:SYN-0010-D07:1119-1164"
+  ],
+  [
+   "ev:SYN-0010-EV082",
+   "supports",
+   "dec:NCT07409103:NCT07409103-E17:r1"
+  ],
+  [
+   "trial:NCT07409103",
+   "has_criterion",
+   "crit:NCT07409103-E18"
+  ],
+  [
+   "crit:NCT07409103-E18",
+   "decided_as",
+   "dec:NCT07409103:NCT07409103-E18:r1"
+  ],
+  [
+   "trial:NCT07409103",
+   "has_criterion",
+   "crit:NCT07409103-E19"
+  ],
+  [
+   "crit:NCT07409103-E19",
+   "decided_as",
+   "dec:NCT07409103:NCT07409103-E19:r1"
+  ],
+  [
+   "crit:NCT07409103-E19",
+   "requires",
+   "concept:diagnosis:latent tb infection"
+  ],
+  [
+   "ev:SYN-0010-EV070",
+   "supports",
+   "dec:NCT07409103:NCT07409103-E19:r1"
+  ],
+  [
+   "crit:NCT07409103-E19",
+   "requires",
+   "concept:medication:isoniazid for 9 months"
+  ],
+  [
+   "concept:medication:isoniazid for 9 months",
+   "observed_as",
+   "ev:SYN-0010-EV071"
+  ],
+  [
+   "ev:SYN-0010-EV071",
+   "derived_from",
+   "src:SYN-0010-D07:923-997"
+  ],
+  [
+   "ev:SYN-0010-EV071",
+   "supports",
+   "dec:NCT07409103:NCT07409103-E19:r1"
+  ],
+  [
+   "trial:NCT07409103",
+   "has_criterion",
+   "crit:NCT07409103-E20"
+  ],
+  [
+   "crit:NCT07409103-E20",
+   "decided_as",
+   "dec:NCT07409103:NCT07409103-E20:r1"
+  ],
+  [
+   "crit:NCT07409103-E20",
+   "requires",
+   "concept:body_temperature"
+  ],
+  [
+   "concept:body_temperature",
+   "observed_as",
+   "ev:SYN-0010-EV066"
+  ],
+  [
+   "ev:SYN-0010-EV066",
+   "derived_from",
+   "src:SYN-0010-D07:811-845"
+  ],
+  [
+   "ev:SYN-0010-EV066",
+   "supports",
+   "dec:NCT07409103:NCT07409103-E20:r1"
+  ],
+  [
+   "crit:NCT07409103-E20",
+   "requires",
+   "concept:symptom_finding:fever"
+  ],
+  [
+   "concept:symptom_finding:fever",
+   "observed_as",
+   "ev:SYN-0010-EV114"
+  ],
+  [
+   "ev:SYN-0010-EV114",
+   "derived_from",
+   "src:SYN-0010-D07:2167-2373"
+  ],
+  [
+   "ev:SYN-0010-EV114",
+   "supports",
+   "dec:NCT07409103:NCT07409103-E20:r1"
+  ],
+  [
+   "concept:symptom_finding:fever",
+   "observed_as",
+   "ev:SYN-0010-EV056"
+  ],
+  [
+   "ev:SYN-0010-EV056",
+   "derived_from",
+   "src:SYN-0010-D07:639-670"
+  ],
+  [
+   "ev:SYN-0010-EV056",
+   "supports",
+   "dec:NCT07409103:NCT07409103-E20:r1"
+  ],
+  [
+   "trial:NCT07409103",
+   "has_criterion",
+   "crit:NCT07409103-E21"
+  ],
+  [
+   "crit:NCT07409103-E21",
+   "decided_as",
+   "dec:NCT07409103:NCT07409103-E21:r1"
+  ],
+  [
+   "trial:NCT07409103",
+   "has_criterion",
+   "crit:NCT07409103-E22"
+  ],
+  [
+   "crit:NCT07409103-E22",
+   "decided_as",
+   "dec:NCT07409103:NCT07409103-E22:r1"
+  ],
+  [
+   "trial:NCT07409103",
+   "has_criterion",
+   "crit:NCT07409103-E23"
+  ],
+  [
+   "crit:NCT07409103-E23",
+   "decided_as",
+   "dec:NCT07409103:NCT07409103-E23:r1"
+  ],
+  [
+   "crit:NCT07409103-E23",
+   "requires",
+   "concept:pregnancy"
+  ],
+  [
+   "ev:SYN-0010-EV108",
+   "supports",
+   "dec:NCT07409103:NCT07409103-E23:r1"
+  ],
+  [
+   "crit:NCT07409103-E23",
+   "requires",
+   "concept:hcg"
+  ],
+  [
+   "ev:SYN-0010-EV110",
+   "supports",
+   "dec:NCT07409103:NCT07409103-E23:r1"
+  ],
+  [
+   "concept:pregnancy",
+   "observed_as",
+   "ev:SYN-0010-EV037"
+  ],
+  [
+   "ev:SYN-0010-EV037",
+   "derived_from",
+   "src:SYN-0010-D06:64-87"
+  ],
+  [
+   "ev:SYN-0010-EV037",
+   "supports",
+   "dec:NCT07409103:NCT07409103-E23:r1"
+  ],
+  [
+   "trial:NCT07409103",
+   "labelled",
+   "label:NCT07409103"
+  ]
+ ]
+}

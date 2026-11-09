@@ -1,0 +1,7259 @@
+{
+ "patient_id": "SYN-0001",
+ "as_of": "2026-10-01",
+ "version": 1,
+ "nodes": [
+  {
+   "id": "trial:NCT07765914",
+   "kind": "trial",
+   "title": "Zuberitamab in the First Episode of Paediatric Nephrotic Syndrome"
+  },
+  {
+   "id": "crit:NCT07765914-I01",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Newly diagnosed steroid-sensitive nephrotic syndrome (SSNS) according to the 2023 IPNA criteria, who achieved complete remission after steroid induction therapy prior to study entry, defined as UPCR (based on first morning void or 24 h urine sample) <= 20 mg/mmol (0.2 mg/mg), or negative or trace dipstick on three or more consecutive days.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07765914:NCT07765914-I01:r1",
+   "kind": "decision",
+   "trial_id": "NCT07765914",
+   "criterion_id": "NCT07765914-I01",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "New steroid-responsive nephrotic syndrome in remission. Home dipsticks negative to trace for 4 days meets the dipstick alternative, though UPCR 0.3 is above 0.2.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0001-EV069",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "home urine dipstick monitoring",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-30",
+   "certainty": "reported",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:symptom_finding:home urine dipstick monitoring",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "home urine dipstick monitoring"
+  },
+  {
+   "id": "src:SYN-0001-D07:718-797",
+   "kind": "source",
+   "doc_id": "SYN-0001-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    718,
+    797
+   ],
+   "text": "Mother has been checking home dipsticks: negative to trace for the last 4 days."
+  },
+  {
+   "id": "ev:SYN-0001-EV179",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "remission",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-30",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:diagnosis:remission",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "remission"
+  },
+  {
+   "id": "src:SYN-0001-D07:3497-3575",
+   "kind": "source",
+   "doc_id": "SYN-0001-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    3497,
+    3575
+   ],
+   "text": "Remission reached within about 2 weeks of steroids (steroid-sensitive course)."
+  },
+  {
+   "id": "ev:SYN-0001-EV192",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "idiopathic nephrotic syndrome",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-30",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:diagnosis:idiopathic nephrotic syndrome",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "Idiopathic nephrotic syndrome"
+  },
+  {
+   "id": "src:SYN-0001-D07:3915-4044",
+   "kind": "source",
+   "doc_id": "SYN-0001-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    3915,
+    4044
+   ],
+   "text": "Idiopathic nephrotic syndrome, presumed minimal change disease, steroid-responsive, in remission on day 15 of daily prednisolone."
+  },
+  {
+   "id": "crit:NCT07765914-I02",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "An estimated glomerular filtration rate >= 90 mL/min/ 1.73 m2 at study entry.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07765914:NCT07765914-I02:r1",
+   "kind": "decision",
+   "trial_id": "NCT07765914",
+   "criterion_id": "NCT07765914-I02",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "structured_numeric"
+   ],
+   "note": "egfr = 140 mL/min/1.73m2 (2026-09-30, -1d) vs >= 90 -> met",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0001-EV224",
+   "kind": "evidence",
+   "concept": "egfr",
+   "term": null,
+   "value": 140,
+   "unit": "mL/min/1.73m2",
+   "observed_date": "2026-09-30",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:egfr",
+   "kind": "concept",
+   "concept": "egfr",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0001-D08:703-754",
+   "kind": "source",
+   "doc_id": "SYN-0001-D08",
+   "doc_type": "lab_result",
+   "span": [
+    703,
+    754
+   ],
+   "text": "eGFR (bedside Schwartz) 140 mL/min/1.73m2 (ref >90)"
+  },
+  {
+   "id": "calc:NCT07765914:NCT07765914-I02",
+   "kind": "calculation",
+   "concept": "egfr",
+   "operator": ">=",
+   "threshold": 90,
+   "unit": "mL/min/1.73m2",
+   "value": 140,
+   "value_unit": "mL/min/1.73m2",
+   "observed_date": "2026-09-30",
+   "days_before": 1,
+   "note": "egfr = 140 mL/min/1.73m2 (2026-09-30, -1d) vs >= 90 -> met"
+  },
+  {
+   "id": "crit:NCT07765914-I03",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Peripheral blood CD20+ (detected as CD19+) cells >= 1% of total lymphocytes.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07765914:NCT07765914-I03:r1",
+   "kind": "decision",
+   "trial_id": "NCT07765914",
+   "criterion_id": "NCT07765914-I03",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "new_test",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Lymphocyte count is present but no CD19/CD20 subset is documented.",
+   "missing_fact": "Peripheral blood CD19+/CD20+ B-cell percentage of total lymphocytes",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07765914-I04",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "No use of other immunosuppressants within 3 months prior to study entry, other than steroids for nephrotic syndrome.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07765914:NCT07765914-I04:r1",
+   "kind": "decision",
+   "trial_id": "NCT07765914",
+   "criterion_id": "NCT07765914-I04",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_history_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "list_inference",
+    "pc:strict_list_inference"
+   ],
+   "note": "[inferable PASS from SYN-0001-EV098] Reconciled medication list shows only prednisolone, emollient and PRN hydrocortisone cream. Recently stopped: none. No other immunosuppressant.",
+   "missing_fact": null,
+   "derived_from": "SYN-0001-EV098"
+  },
+  {
+   "id": "crit:NCT07765914-E01",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Known etiology including congenital nephrotic syndrome, IgA nephropathy, Henoch-Schönlein purpura nephritis, lupus nephritis, or other secondary nephrotic syndromes.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07765914:NCT07765914-E01:r1",
+   "kind": "decision",
+   "trial_id": "NCT07765914",
+   "criterion_id": "NCT07765914-E01",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation"
+   ],
+   "note": "Diagnosis is idiopathic nephrotic syndrome with no hematuria, normal C3 and negative ANA. No other renal history.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0001-EV088",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "other renal history",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-30",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:other renal history",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "other renal history"
+  },
+  {
+   "id": "src:SYN-0001-D07:1261-1350",
+   "kind": "source",
+   "doc_id": "SYN-0001-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    1261,
+    1350
+   ],
+   "text": "No other cardiac, pulmonary, hepatic, renal, autoimmune, endocrine or neurologic history."
+  },
+  {
+   "id": "crit:NCT07765914-E02",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Patients exhibiting any of the following abnormal clinical laboratory values: leukopenia (white blood cells <= 3.0 × 10^9/L), absolute neutrophil count < 1.5 × 10^9/L; moderate to severe anemia (hemoglobin < 9.0 g/dL); thrombocytopenia (platelet count < 100 × 10^12/L); alanine aminotransferase (ALT) or aspartate aminotransferase (AST) > 2.5 times the upper limit of normal; positive for any autoimmune markers (ANA, ENA, ANCA, etc.) or decreased complement C3 levels.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07765914:NCT07765914-E02:r1",
+   "kind": "decision",
+   "trial_id": "NCT07765914",
+   "criterion_id": "NCT07765914-E02",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "lab_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "WBC, ANC, Hb, platelets, ALT/AST, ANA and C3 are all fine. ENA and ANCA are not documented, so the criterion is only partly settled.",
+   "missing_fact": "ENA/ANCA (other autoimmune marker) results",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07765914-E03",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Evidence of the following infections: severe or opportunistic infection within the previous 6 months (active tuberculosis or history of tuberculosis or suspected tuberculosis; chronic active infections such as EBV, CMV; active hepatitis B presentation or history, or hepatitis C or hepatitis B virus carrier; HIV infection; or other active viral infections).",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07765914:NCT07765914-E03:r1",
+   "kind": "decision",
+   "trial_id": "NCT07765914",
+   "criterion_id": "NCT07765914-E03",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No serious infection, HBsAg negative, HCV and HIV nonreactive. TB, EBV and CMV not addressed, so only partly settled.",
+   "missing_fact": "Tuberculosis history/screening and EBV/CMV status",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07765914-E04",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Receipt of live vaccine within one month prior to study entry.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07765914:NCT07765914-E04:r1",
+   "kind": "decision",
+   "trial_id": "NCT07765914",
+   "criterion_id": "NCT07765914-E04",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_record_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Only 'up to date per mother'. Recent live vaccine is not documented either way.",
+   "missing_fact": "Date and type of most recent vaccinations (any live vaccine within 30 days)",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07765914-E05",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "History of previous use of biological agents.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07765914:NCT07765914-E05:r1",
+   "kind": "decision",
+   "trial_id": "NCT07765914",
+   "criterion_id": "NCT07765914-E05",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_history_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Reconciled list covers current and recent drugs only. No lifetime treatment history is stated.",
+   "missing_fact": "Lifetime history of biological agent use",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07765914-E06",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Current examination suggestive of heart failure, severe arrhythmia, angina pectoris (CTCAE Grade 4), or uncontrolled blood pressure.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07765914:NCT07765914-E06:r1",
+   "kind": "decision",
+   "trial_id": "NCT07765914",
+   "criterion_id": "NCT07765914-E06",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation"
+   ],
+   "note": "No cardiac history; BP 106/64 normal today; HR 84, no chest pain or palpitations, no murmur.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0001-EV085",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "other cardiac history",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-30",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:other cardiac history",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "other cardiac history"
+  },
+  {
+   "id": "ev:SYN-0001-EV078",
+   "kind": "evidence",
+   "concept": "blood_pressure",
+   "term": null,
+   "value": "106/64",
+   "unit": "mmHg",
+   "observed_date": "2026-09-30",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:blood_pressure",
+   "kind": "concept",
+   "concept": "blood_pressure",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0001-D07:994-1042",
+   "kind": "source",
+   "doc_id": "SYN-0001-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    994,
+    1042
+   ],
+   "text": "BP 106/64 (~75th-90th percentile for age/height)"
+  },
+  {
+   "id": "ev:SYN-0001-EV268",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "BP normal.",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-30",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:symptom_finding:bp normal.",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "BP normal."
+  },
+  {
+   "id": "src:SYN-0001-D07:3714-3724",
+   "kind": "source",
+   "doc_id": "SYN-0001-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    3714,
+    3724
+   ],
+   "text": "BP normal."
+  },
+  {
+   "id": "ev:SYN-0001-EV132",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "chest pain",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-30",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:symptom_finding:chest pain",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "chest pain"
+  },
+  {
+   "id": "src:SYN-0001-D07:2404-2436",
+   "kind": "source",
+   "doc_id": "SYN-0001-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    2404,
+    2436
+   ],
+   "text": "CV: no chest pain, palpitations."
+  },
+  {
+   "id": "ev:SYN-0001-EV133",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "palpitations",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-30",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:symptom_finding:palpitations",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "palpitations"
+  },
+  {
+   "id": "ev:SYN-0001-EV160",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "murmur",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-30",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:symptom_finding:murmur",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "murmur"
+  },
+  {
+   "id": "src:SYN-0001-D07:2924-2959",
+   "kind": "source",
+   "doc_id": "SYN-0001-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    2924,
+    2959
+   ],
+   "text": "Heart RRR, normal S1/S2, no murmur."
+  },
+  {
+   "id": "crit:NCT07765914-E07",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Severe diseases of vital organs such as the brain or liver, or suffering from hematological or endocrine system disorders.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07765914:NCT07765914-E07:r1",
+   "kind": "decision",
+   "trial_id": "NCT07765914",
+   "criterion_id": "NCT07765914-E07",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_record_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Hepatic, neurologic and endocrine histories are negated. Hematological disorders are not covered by the blanket negation; normal CBC is not proof of absence.",
+   "missing_fact": "History of hematological disorders (hepatic, neurologic, endocrine history are denied)",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07765914-E08",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Diagnosis of co-existing autoimmune diseases, primary immunodeficiency, or malignancy.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07765914:NCT07765914-E08:r1",
+   "kind": "decision",
+   "trial_id": "NCT07765914",
+   "criterion_id": "NCT07765914-E08",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_record_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Autoimmune history and malignancy are denied (EV089, EV094). Primary immunodeficiency is not addressed.",
+   "missing_fact": "Presence or absence of primary immunodeficiency diagnosis",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07765914-E09",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "History of organ transplantation (excluding cornea and hair transplants).",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07765914:NCT07765914-E09:r1",
+   "kind": "decision",
+   "trial_id": "NCT07765914",
+   "criterion_id": "NCT07765914-E09",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Prior surgery recorded as none, which rules out organ transplantation.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0001-EV095",
+   "kind": "evidence",
+   "concept": "procedure",
+   "term": "prior surgery",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-30",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:procedure:prior surgery",
+   "kind": "concept",
+   "concept": "procedure",
+   "term": "prior surgery"
+  },
+  {
+   "id": "src:SYN-0001-D07:1445-1450",
+   "kind": "source",
+   "doc_id": "SYN-0001-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    1445,
+    1450
+   ],
+   "text": "None."
+  },
+  {
+   "id": "crit:NCT07765914-E10",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Known allergy to methylprednisolone, Zuberitamab injection active ingredients or any excipients, sulfamethoxazole (or a contraindication to this drug due to G6PD deficiency).",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07765914:NCT07765914-E10:r1",
+   "kind": "decision",
+   "trial_id": "NCT07765914",
+   "criterion_id": "NCT07765914-E10",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "NKDA documented, so no known allergy to methylprednisolone or sulfamethoxazole; steroid already tolerated.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0001-EV096",
+   "kind": "evidence",
+   "concept": "allergy",
+   "term": "no known drug allergies",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-30",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:allergy:no known drug allergies",
+   "kind": "concept",
+   "concept": "allergy",
+   "term": "no known drug allergies"
+  },
+  {
+   "id": "src:SYN-0001-D07:1463-1468",
+   "kind": "source",
+   "doc_id": "SYN-0001-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    1463,
+    1468
+   ],
+   "text": "NKDA."
+  },
+  {
+   "id": "crit:NCT07765914-E11",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Investigator's judgment that the patient is unsuitable for participation in this study (e.g., patient is highly likely to be lost to follow-up or provide false results, such as alcohol dependence or psychiatric illness).",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07765914:NCT07765914-E11:r1",
+   "kind": "decision",
+   "trial_id": "NCT07765914",
+   "criterion_id": "NCT07765914-E11",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No documented problem; this is an investigator-judgment item.",
+   "missing_fact": "Investigator's judgment on suitability and follow-up reliability",
+   "derived_from": null
+  },
+  {
+   "id": "label:NCT07765914",
+   "kind": "trial_decision",
+   "label": "potential",
+   "why": [
+    "UNKNOWN/MISSING NCT07765914-I03",
+    "UNKNOWN/MISSING NCT07765914-I04"
+   ],
+   "by": "agent3"
+  },
+  {
+   "id": "trial:NCT05003986",
+   "kind": "trial",
+   "title": "Study of Sparsentan Treatment in Pediatrics With Proteinuric Glomerular Diseases"
+  },
+  {
+   "id": "crit:NCT05003986-I01",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "The subject or parent/legal guardian (as appropriate) is willing and able to provide signed informed consent/assent, and where required, the subject is willing to provide assent before any screening procedures per local requirements.",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT05003986:NCT05003986-I01:r1",
+   "kind": "decision",
+   "trial_id": "NCT05003986",
+   "criterion_id": "NCT05003986-I01",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "admin"
+   ],
+   "note": "consent/compliance item: not decidable from the record",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT05003986-I02",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "The subject has an estimated glomerular filtration rate (eGFR) >=30 mL/min/1.73 m2 at screening.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT05003986:NCT05003986-I02:r1",
+   "kind": "decision",
+   "trial_id": "NCT05003986",
+   "criterion_id": "NCT05003986-I02",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "structured_numeric"
+   ],
+   "note": "egfr = 140 mL/min/1.73m2 (2026-09-30, -1d) vs >= 30 -> met",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "calc:NCT05003986:NCT05003986-I02",
+   "kind": "calculation",
+   "concept": "egfr",
+   "operator": ">=",
+   "threshold": 30,
+   "unit": "mL/min/1.73m2",
+   "value": 140,
+   "value_unit": "mL/min/1.73m2",
+   "observed_date": "2026-09-30",
+   "days_before": 1,
+   "note": "egfr = 140 mL/min/1.73m2 (2026-09-30, -1d) vs >= 30 -> met"
+  },
+  {
+   "id": "crit:NCT05003986-I03",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "The subject has a mean seated blood pressure between the 5th and 95th percentile for sex and height.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT05003986:NCT05003986-I03:r1",
+   "kind": "decision",
+   "trial_id": "NCT05003986",
+   "criterion_id": "NCT05003986-I03",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "BP 106/64 yesterday, documented at about the 75th-90th percentile for age/height, inside 5th-95th.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT05003986-I04",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "The subject is male or female >=1 year at screening and <18 years of age at Day 1 (Baseline).",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT05003986:NCT05003986-I04:r1",
+   "kind": "decision",
+   "trial_id": "NCT05003986",
+   "criterion_id": "NCT05003986-I04",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "age_rule"
+   ],
+   "note": "age 7.37 y vs [1.0, 18.0]",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0001-EV002",
+   "kind": "evidence",
+   "concept": "birth_date",
+   "term": null,
+   "value": "2019-05-20",
+   "unit": null,
+   "observed_date": "2026-09-14",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:birth_date",
+   "kind": "concept",
+   "concept": "birth_date",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0001-D01:6-21",
+   "kind": "source",
+   "doc_id": "SYN-0001-D01",
+   "doc_type": "registration",
+   "span": [
+    6,
+    21
+   ],
+   "text": "DOB 2019-05-20."
+  },
+  {
+   "id": "calc:NCT05003986:NCT05003986-I04",
+   "kind": "calculation",
+   "name": "age_at_as_of",
+   "value": 7.367,
+   "lo": 1.0,
+   "hi": 18.0
+  },
+  {
+   "id": "crit:NCT05003986-I05",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "The subject has a UP/C >=1.5 g/g (170 mg/mmol) at screening AND one of the following:",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT05003986:NCT05003986-I05:r1",
+   "kind": "decision",
+   "trial_id": "NCT05003986",
+   "criterion_id": "NCT05003986-I05",
+   "status": "FAIL",
+   "reason": "VIOLATED",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Current UPCR 0.3-0.4 mg/mg (same as g/g), below 1.5 after steroid-induced remission.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0001-EV255",
+   "kind": "evidence",
+   "concept": "urine_protein_creatinine_ratio",
+   "term": null,
+   "value": 0.3,
+   "unit": "mg/mg",
+   "observed_date": "2026-09-30",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:urine_protein_creatinine_ratio",
+   "kind": "concept",
+   "concept": "urine_protein_creatinine_ratio",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0001-D08:1702-1753",
+   "kind": "source",
+   "doc_id": "SYN-0001-D08",
+   "doc_type": "lab_result",
+   "span": [
+    1702,
+    1753
+   ],
+   "text": "Urine protein/creatinine ratio 0.3 mg/mg (ref <0.2)"
+  },
+  {
+   "id": "ev:SYN-0001-EV038",
+   "kind": "evidence",
+   "concept": "urine_protein_creatinine_ratio",
+   "term": null,
+   "value": 0.4,
+   "unit": "mg/mg",
+   "observed_date": "2026-09-29",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "src:SYN-0001-D06:30-71",
+   "kind": "source",
+   "doc_id": "SYN-0001-D06",
+   "doc_type": "lab_result",
+   "span": [
+    30,
+    71
+   ],
+   "text": "Urine protein/creatinine ratio 0.4 mg/mg."
+  },
+  {
+   "id": "crit:NCT05003986-I06",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Kidney biopsy-proven FSGS or MCD histological patterns and clinical presentation consistent with primary FSGS or MCD and qualifying proteinuria at screening despite history or ongoing treatment with corticosteroids and/or other immunosuppressive disease-modifying agents.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT05003986:NCT05003986-I06:r1",
+   "kind": "decision",
+   "trial_id": "NCT05003986",
+   "criterion_id": "NCT05003986-I06",
+   "status": "FAIL",
+   "reason": "VIOLATED",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No kidney biopsy was done and none is planned; MCD is only presumed. Proteinuria is also not qualifying now.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0001-EV057",
+   "kind": "evidence",
+   "concept": "procedure",
+   "term": "kidney biopsy",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-30",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:procedure:kidney biopsy",
+   "kind": "concept",
+   "concept": "procedure",
+   "term": "kidney biopsy"
+  },
+  {
+   "id": "src:SYN-0001-D07:377-445",
+   "kind": "source",
+   "doc_id": "SYN-0001-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    377,
+    445
+   ],
+   "text": "Started prednisolone 50 mg daily (60 mg/m2) on 09-16 without biopsy."
+  },
+  {
+   "id": "ev:SYN-0001-EV196",
+   "kind": "evidence",
+   "concept": "treatment_plan",
+   "term": "kidney biopsy",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-30",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "planned"
+  },
+  {
+   "id": "concept:treatment_plan:kidney biopsy",
+   "kind": "concept",
+   "concept": "treatment_plan",
+   "term": "kidney biopsy"
+  },
+  {
+   "id": "src:SYN-0001-D07:4158-4185",
+   "kind": "source",
+   "doc_id": "SYN-0001-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    4158,
+    4185
+   ],
+   "text": "Biopsy still not indicated."
+  },
+  {
+   "id": "crit:NCT05003986-I07",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Documentation of a genetic mutation in a podocyte protein associated with FSGS or MCD. Subjects with a documented podocytic mutation do not require kidney biopsy.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT05003986:NCT05003986-I07:r1",
+   "kind": "decision",
+   "trial_id": "NCT05003986",
+   "criterion_id": "NCT05003986-I07",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_record_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No genetic testing is mentioned in the record.",
+   "missing_fact": "Result of any genetic testing for podocyte protein mutations",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT05003986-I08",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Kidney biopsy-proven FSGS histological pattern with medical history and clinical presentation consistent with maladaptive cause of the lesion. Note: The kidney biopsy may have been performed at any time in the past but must include light microscopy and electron microscopy characteristics and/or immunofluorescence findings consistent with FSGS or MCD.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT05003986:NCT05003986-I08:r1",
+   "kind": "decision",
+   "trial_id": "NCT05003986",
+   "criterion_id": "NCT05003986-I08",
+   "status": "FAIL",
+   "reason": "VIOLATED",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Requires biopsy-proven FSGS; no biopsy was done and the working diagnosis is presumed MCD.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT05003986-I09",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "The subject is male or female >=2 years at screening and <18 years of age at Day 1 (Baseline).",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT05003986:NCT05003986-I09:r1",
+   "kind": "decision",
+   "trial_id": "NCT05003986",
+   "criterion_id": "NCT05003986-I09",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "age_rule"
+   ],
+   "note": "age 7.37 y vs [2.0, 18.0]",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "calc:NCT05003986:NCT05003986-I09",
+   "kind": "calculation",
+   "name": "age_at_as_of",
+   "value": 7.367,
+   "lo": 2.0,
+   "hi": 18.0
+  },
+  {
+   "id": "crit:NCT05003986-I10",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "The subject has UP/C >=0.6 g/g (68 mg/mmol) at screening AND one of the following diagnoses:",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT05003986:NCT05003986-I10:r1",
+   "kind": "decision",
+   "trial_id": "NCT05003986",
+   "criterion_id": "NCT05003986-I10",
+   "status": "FAIL",
+   "reason": "VIOLATED",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Current UPCR 0.3 mg/mg is below 0.6; the diagnoses listed (IgAN, IgAV, AS) are not documented.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT05003986-I11",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Kidney biopsy-confirmed IgAN, IgAV, or AS",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT05003986:NCT05003986-I11:r1",
+   "kind": "decision",
+   "trial_id": "NCT05003986",
+   "criterion_id": "NCT05003986-I11",
+   "status": "FAIL",
+   "reason": "VIOLATED",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No biopsy was done; the diagnosis is idiopathic nephrotic syndrome, not IgAN, IgAV or AS.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT05003986-I12",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Diagnosis of AS by genetic testing (pathogenic X-linked Collagen, Type IV, Alpha-5 (COL4A5) mutation OR autosomal-recessive mutations in both alleles of Collagen, Type IV, Alpha-3 (COL4A3) and/or Collagen, Type IV, Alpha-4 (COL4A4) OR autosomal-dominant COL4A3 and/or COL4A4 and digenic mutations [ie, simultaneous mutations in 2 of the COL4A3, COL4A4, and COL4A5 genes])",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT05003986:NCT05003986-I12:r1",
+   "kind": "decision",
+   "trial_id": "NCT05003986",
+   "criterion_id": "NCT05003986-I12",
+   "status": "FAIL",
+   "reason": "VIOLATED",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation"
+   ],
+   "note": "No other renal history, so no Alport diagnosis; no genetic testing documented.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT05003986-I13",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "The subject is male or female >=8 years at screening and <18 years of age at Day 1 (Baseline).",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT05003986:NCT05003986-I13:r1",
+   "kind": "decision",
+   "trial_id": "NCT05003986",
+   "criterion_id": "NCT05003986-I13",
+   "status": "FAIL",
+   "reason": "VIOLATED",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "age_rule"
+   ],
+   "note": "age 7.37 y vs [8.0, 18.0]",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "calc:NCT05003986:NCT05003986-I13",
+   "kind": "calculation",
+   "name": "age_at_as_of",
+   "value": 7.367,
+   "lo": 8.0,
+   "hi": 18.0
+  },
+  {
+   "id": "crit:NCT05003986-I14",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "The subject has UP/C >=1.0 g/g (113 mg/mmol) at screening AND has kidney biopsy-confirmed IgAN",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT05003986:NCT05003986-I14:r1",
+   "kind": "decision",
+   "trial_id": "NCT05003986",
+   "criterion_id": "NCT05003986-I14",
+   "status": "FAIL",
+   "reason": "VIOLATED",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Current UPCR 0.3 mg/mg is below 1.0, and there is no biopsy-confirmed IgAN.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT05003986-I15",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Subject weighs >=40 kg",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT05003986:NCT05003986-I15:r1",
+   "kind": "decision",
+   "trial_id": "NCT05003986",
+   "criterion_id": "NCT05003986-I15",
+   "status": "FAIL",
+   "reason": "VIOLATED",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "structured_numeric"
+   ],
+   "note": "body_weight = 24.6 kg (2026-09-30, -1d) vs >= 40 -> not met",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0001-EV074",
+   "kind": "evidence",
+   "concept": "body_weight",
+   "term": null,
+   "value": 24.6,
+   "unit": "kg",
+   "observed_date": "2026-09-30",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:body_weight",
+   "kind": "concept",
+   "concept": "body_weight",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0001-D07:883-911",
+   "kind": "source",
+   "doc_id": "SYN-0001-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    883,
+    911
+   ],
+   "text": "Wt 24.6 kg (~45th percentile"
+  },
+  {
+   "id": "calc:NCT05003986:NCT05003986-I15",
+   "kind": "calculation",
+   "concept": "body_weight",
+   "operator": ">=",
+   "threshold": 40,
+   "unit": "kg",
+   "value": 24.6,
+   "value_unit": "kg",
+   "observed_date": "2026-09-30",
+   "days_before": 1,
+   "note": "body_weight = 24.6 kg (2026-09-30, -1d) vs >= 40 -> not met"
+  },
+  {
+   "id": "crit:NCT05003986-I16",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "The subject has been on ACEI and/or ARB therapy for at least 12 weeks prior to screening",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT05003986:NCT05003986-I16:r1",
+   "kind": "decision",
+   "trial_id": "NCT05003986",
+   "criterion_id": "NCT05003986-I16",
+   "status": "FAIL",
+   "reason": "VIOLATED",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "list_inference"
+   ],
+   "note": "Reconciled medication list has no ACEI/ARB; the only systemic drug, prednisolone, started 15 days ago.",
+   "missing_fact": null,
+   "derived_from": "SYN-0001-EV098"
+  },
+  {
+   "id": "ev:SYN-0001-EV098",
+   "kind": "evidence",
+   "concept": "medication",
+   "term": "MEDICATIONS",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-30",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:medication:medications",
+   "kind": "concept",
+   "concept": "medication",
+   "term": "MEDICATIONS"
+  },
+  {
+   "id": "src:SYN-0001-D07:1487-1511",
+   "kind": "source",
+   "doc_id": "SYN-0001-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    1487,
+    1511
+   ],
+   "text": "MEDICATIONS (reconciled)"
+  },
+  {
+   "id": "ev:SYN-0001-EV099",
+   "kind": "evidence",
+   "concept": "medication",
+   "term": "prednisolone 50 mg daily",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-30",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:medication:prednisolone 50 mg daily",
+   "kind": "concept",
+   "concept": "medication",
+   "term": "prednisolone 50 mg daily"
+  },
+  {
+   "id": "src:SYN-0001-D07:1515-1542",
+   "kind": "source",
+   "doc_id": "SYN-0001-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    1515,
+    1542
+   ],
+   "text": "Prednisolone 50 mg PO daily"
+  },
+  {
+   "id": "crit:NCT05003986-E01",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "The subject weighs <7.3 kg at screening.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT05003986:NCT05003986-E01:r1",
+   "kind": "decision",
+   "trial_id": "NCT05003986",
+   "criterion_id": "NCT05003986-E01",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "structured_numeric"
+   ],
+   "note": "body_weight = 24.6 kg (2026-09-30, -1d) vs < 7.3 -> not met",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "calc:NCT05003986:NCT05003986-E01",
+   "kind": "calculation",
+   "concept": "body_weight",
+   "operator": "<",
+   "threshold": 7.3,
+   "unit": "kg",
+   "value": 24.6,
+   "value_unit": "kg",
+   "observed_date": "2026-09-30",
+   "days_before": 1,
+   "note": "body_weight = 24.6 kg (2026-09-30, -1d) vs < 7.3 -> not met"
+  },
+  {
+   "id": "crit:NCT05003986-E02",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "The subject has FSGS or MCD histological pattern secondary to viral infections, drug toxicities, or malignancies.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT05003986:NCT05003986-E02:r1",
+   "kind": "decision",
+   "trial_id": "NCT05003986",
+   "criterion_id": "NCT05003986-E02",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_record_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "normal_finding_inference",
+    "pc:strict_normal_finding_inference"
+   ],
+   "note": "[inferable PASS from normal findings] Idiopathic (primary) course; no malignancy, no infection, HBV/HCV/HIV negative, no NSAIDs.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT05003986-E03",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "The subject has immunoglobulin A (IgA) glomerular deposits not in the context of primary IgAN or IgAV (ie, secondary to another condition; eg, systemic lupus erythematosus and liver cirrhosis).",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT05003986:NCT05003986-E03:r1",
+   "kind": "decision",
+   "trial_id": "NCT05003986",
+   "criterion_id": "NCT05003986-E03",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_record_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Nothing in the record addresses glomerular IgA deposits.",
+   "missing_fact": "Renal pathology (IgA deposits) result; no biopsy was done",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT05003986-E04",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "The subject has had an acute onset or presentation of glomerular disease or a diagnostic biopsy or a relapse of glomerular disease requiring new or different class of immunosuppressive treatment (including, but not limited to, systemic corticosteroids, calcineurin inhibitors and mycophenolate mofetil, abatacept, cyclophosphamide, rituximab, ofatumumab, and ocrelizumab) within 6 months before screening.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT05003986:NCT05003986-E04:r1",
+   "kind": "decision",
+   "trial_id": "NCT05003986",
+   "criterion_id": "NCT05003986-E04",
+   "status": "FAIL",
+   "reason": "VIOLATED",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Acute onset of nephrotic syndrome 09/2026 with systemic prednisolone started 2026-09-16, within 6 months.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0001-EV084",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "Idiopathic nephrotic syndrome",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-30",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "src:SYN-0001-D07:1204-1260",
+   "kind": "source",
+   "doc_id": "SYN-0001-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    1204,
+    1260
+   ],
+   "text": "Idiopathic nephrotic syndrome, dx 09/2026 (this episode)"
+  },
+  {
+   "id": "ev:SYN-0001-EV100",
+   "kind": "evidence",
+   "concept": "medication",
+   "term": "prednisolone 50 mg daily",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-30",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "src:SYN-0001-D07:1544-1582",
+   "kind": "source",
+   "doc_id": "SYN-0001-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    1544,
+    1582
+   ],
+   "text": "started 2026-09-16 (dispensed 28 days)"
+  },
+  {
+   "id": "ev:SYN-0001-EV032",
+   "kind": "evidence",
+   "concept": "medication",
+   "term": "prednisolone 60 mg/m2/day",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-16",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:medication:prednisolone 60 mg/m2/day",
+   "kind": "concept",
+   "concept": "medication",
+   "term": "prednisolone 60 mg/m2/day"
+  },
+  {
+   "id": "src:SYN-0001-D04:149-181",
+   "kind": "source",
+   "doc_id": "SYN-0001-D04",
+   "doc_type": "clinic_note",
+   "span": [
+    149,
+    181
+   ],
+   "text": "Start prednisolone 60 mg/m2/day."
+  },
+  {
+   "id": "crit:NCT05003986-E05",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Subjects taking chronic immunosuppressive medications (including systemic steroids) not on a stable dose for >=1 month before screening.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT05003986:NCT05003986-E05:r1",
+   "kind": "decision",
+   "trial_id": "NCT05003986",
+   "criterion_id": "NCT05003986-E05",
+   "status": "FAIL",
+   "reason": "VIOLATED",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Systemic prednisolone started only 15 days ago, so not on a stable dose for 1 month, and a taper is planned.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0001-EV195",
+   "kind": "evidence",
+   "concept": "medication",
+   "term": "prednisolone 50 mg daily",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-30",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "src:SYN-0001-D07:4045-4157",
+   "kind": "source",
+   "doc_id": "SYN-0001-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    4045,
+    4157
+   ],
+   "text": "Continue prednisolone 50 mg daily to complete the daily course, then taper to alternate-day dosing per protocol."
+  },
+  {
+   "id": "crit:NCT05003986-E06",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "The subject requires any of the prohibited concomitant medications as defined in the study protocol.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT05003986:NCT05003986-E06:r1",
+   "kind": "decision",
+   "trial_id": "NCT05003986",
+   "criterion_id": "NCT05003986-E06",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "The prohibited medication list is not available to compare.",
+   "missing_fact": "Protocol's prohibited medication list compared with the patient's current drugs (prednisolone, topical steroid)",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT05003986-E07",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "The subject has undergone any organ transplantation, with the exception of corneal transplants.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT05003986:NCT05003986-E07:r1",
+   "kind": "decision",
+   "trial_id": "NCT05003986",
+   "criterion_id": "NCT05003986-E07",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No prior surgery documented ('None'), so no transplant.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT05003986-E08",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "The subject has a documented history of congenital or acquired heart failure (modified Ross heart failure classification for children Class II to Class IV) and/or previous hospitalization for heart failure or unexplained dyspnea, orthopnea, paroxysmal nocturnal dyspnea, ascites, and/or peripheral edema.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT05003986:NCT05003986-E08:r1",
+   "kind": "decision",
+   "trial_id": "NCT05003986",
+   "criterion_id": "NCT05003986-E08",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation"
+   ],
+   "note": "No cardiac history; the past edema and ascites were attributed to nephrotic syndrome, not heart failure.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT05003986-E09",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "The subject has hemodynamically significant cardiac valvular disease.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT05003986:NCT05003986-E09:r1",
+   "kind": "decision",
+   "trial_id": "NCT05003986",
+   "criterion_id": "NCT05003986-E09",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation"
+   ],
+   "note": "No cardiac history and no murmur on exam.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT05003986-E10",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "The subject has clinically significant congenital vascular disease.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT05003986:NCT05003986-E10:r1",
+   "kind": "decision",
+   "trial_id": "NCT05003986",
+   "criterion_id": "NCT05003986-E10",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_record_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Vascular system is not covered by the blanket negation and is not mentioned.",
+   "missing_fact": "Whether any congenital vascular disease exists",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT05003986-E11",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "The subject has jaundice, hepatitis, or known hepatobiliary disease, or alanine aminotransferase and/or aspartate aminotransferase >2 times the upper limit of the normal range at screening.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT05003986:NCT05003986-E11:r1",
+   "kind": "decision",
+   "trial_id": "NCT05003986",
+   "criterion_id": "NCT05003986-E11",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "ALT 21 (ref 10-40), AST 27 (ref 15-45), bilirubin normal; no hepatic history; HBsAg and HCV negative.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0001-EV233",
+   "kind": "evidence",
+   "concept": "alt",
+   "term": null,
+   "value": 21,
+   "unit": "U/L",
+   "observed_date": "2026-09-30",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:alt",
+   "kind": "concept",
+   "concept": "alt",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0001-D08:1020-1042",
+   "kind": "source",
+   "doc_id": "SYN-0001-D08",
+   "doc_type": "lab_result",
+   "span": [
+    1020,
+    1042
+   ],
+   "text": "ALT 21 U/L (ref 10-40)"
+  },
+  {
+   "id": "ev:SYN-0001-EV232",
+   "kind": "evidence",
+   "concept": "ast",
+   "term": null,
+   "value": 27,
+   "unit": "U/L",
+   "observed_date": "2026-09-30",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:ast",
+   "kind": "concept",
+   "concept": "ast",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0001-D08:997-1019",
+   "kind": "source",
+   "doc_id": "SYN-0001-D08",
+   "doc_type": "lab_result",
+   "span": [
+    997,
+    1019
+   ],
+   "text": "AST 27 U/L (ref 15-45)"
+  },
+  {
+   "id": "ev:SYN-0001-EV235",
+   "kind": "evidence",
+   "concept": "bilirubin_total",
+   "term": null,
+   "value": 0.4,
+   "unit": "mg/dL",
+   "observed_date": "2026-09-30",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:bilirubin_total",
+   "kind": "concept",
+   "concept": "bilirubin_total",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0001-D08:1086-1125",
+   "kind": "source",
+   "doc_id": "SYN-0001-D08",
+   "doc_type": "lab_result",
+   "span": [
+    1086,
+    1125
+   ],
+   "text": "Total bilirubin 0.4 mg/dL (ref 0.2-1.0)"
+  },
+  {
+   "id": "ev:SYN-0001-EV087",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "other hepatic history",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-30",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:other hepatic history",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "other hepatic history"
+  },
+  {
+   "id": "crit:NCT05003986-E12",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "The subject has a history of malignancy within the past 2 years.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT05003986:NCT05003986-E12:r1",
+   "kind": "decision",
+   "trial_id": "NCT05003986",
+   "criterion_id": "NCT05003986-E12",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Explicit 'no malignancy'.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0001-EV094",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "malignancy",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-30",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:malignancy",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "malignancy"
+  },
+  {
+   "id": "src:SYN-0001-D07:1351-1420",
+   "kind": "source",
+   "doc_id": "SYN-0001-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    1351,
+    1420
+   ],
+   "text": "No prior thromboembolism, no prior serious infections, no malignancy."
+  },
+  {
+   "id": "crit:NCT05003986-E13",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "The subject has a screening hematocrit <27% (0.27 L/L) or a hemoglobin value <9 g/dL (90 g/L).",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT05003986:NCT05003986-E13:r1",
+   "kind": "decision",
+   "trial_id": "NCT05003986",
+   "criterion_id": "NCT05003986-E13",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Hemoglobin 13.6 g/dL and hematocrit 40.1%, both above thresholds.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0001-EV208",
+   "kind": "evidence",
+   "concept": "hemoglobin",
+   "term": null,
+   "value": 13.6,
+   "unit": "g/dL",
+   "observed_date": "2026-09-30",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:hemoglobin",
+   "kind": "concept",
+   "concept": "hemoglobin",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0001-D08:136-172",
+   "kind": "source",
+   "doc_id": "SYN-0001-D08",
+   "doc_type": "lab_result",
+   "span": [
+    136,
+    172
+   ],
+   "text": "Hemoglobin 13.6 g/dL (ref 11.5-15.5)"
+  },
+  {
+   "id": "ev:SYN-0001-EV209",
+   "kind": "evidence",
+   "concept": "lab_other",
+   "term": "Hematocrit",
+   "value": 40.1,
+   "unit": "%",
+   "observed_date": "2026-09-30",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:lab_other:hematocrit",
+   "kind": "concept",
+   "concept": "lab_other",
+   "term": "Hematocrit"
+  },
+  {
+   "id": "src:SYN-0001-D08:173-202",
+   "kind": "source",
+   "doc_id": "SYN-0001-D08",
+   "doc_type": "lab_result",
+   "span": [
+    173,
+    202
+   ],
+   "text": "Hematocrit 40.1 % (ref 35-45)"
+  },
+  {
+   "id": "crit:NCT05003986-E14",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "The subject has a screening potassium value >5.5 milliequivalent (mEq)/L (5.5 mmol/L).",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT05003986:NCT05003986-E14:r1",
+   "kind": "decision",
+   "trial_id": "NCT05003986",
+   "criterion_id": "NCT05003986-E14",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "structured_numeric"
+   ],
+   "note": "potassium = 4.0 mmol/L (2026-09-30, -1d) vs > 5.5 [x1 (mEq/L -> mmol/L)] -> not met",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0001-EV219",
+   "kind": "evidence",
+   "concept": "potassium",
+   "term": null,
+   "value": 4.0,
+   "unit": "mmol/L",
+   "observed_date": "2026-09-30",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:potassium",
+   "kind": "concept",
+   "concept": "potassium",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0001-D08:539-573",
+   "kind": "source",
+   "doc_id": "SYN-0001-D08",
+   "doc_type": "lab_result",
+   "span": [
+    539,
+    573
+   ],
+   "text": "Potassium 4.0 mmol/L (ref 3.5-5.0)"
+  },
+  {
+   "id": "calc:NCT05003986:NCT05003986-E14",
+   "kind": "calculation",
+   "concept": "potassium",
+   "operator": ">",
+   "threshold": 5.5,
+   "unit": "mEq/L",
+   "value": 4.0,
+   "value_unit": "mmol/L",
+   "observed_date": "2026-09-30",
+   "days_before": 1,
+   "threshold_in_base_unit": 5.5,
+   "note": "potassium = 4.0 mmol/L (2026-09-30, -1d) vs > 5.5 [x1 (mEq/L -> mmol/L)] -> not met"
+  },
+  {
+   "id": "crit:NCT05003986-E15",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "The subject has any abnormal clinical laboratory screening values that are considered by the Investigator to be clinically significant.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT05003986:NCT05003986-E15:r1",
+   "kind": "decision",
+   "trial_id": "NCT05003986",
+   "criterion_id": "NCT05003986-E15",
+   "status": "UNKNOWN",
+   "reason": "UNSUPPORTED",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Abnormal labs are present but no clinical-significance judgment is documented.",
+   "missing_fact": "Investigator's judgment on clinical significance of low albumin, high lipids, low calcium and low vitamin D",
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0001-EV231",
+   "kind": "evidence",
+   "concept": "albumin",
+   "term": null,
+   "value": 2.8,
+   "unit": "g/dL",
+   "observed_date": "2026-09-30",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:albumin",
+   "kind": "concept",
+   "concept": "albumin",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0001-D08:964-996",
+   "kind": "source",
+   "doc_id": "SYN-0001-D08",
+   "doc_type": "lab_result",
+   "span": [
+    964,
+    996
+   ],
+   "text": "Albumin 2.8 g/dL (ref 3.8-5.4) L"
+  },
+  {
+   "id": "ev:SYN-0001-EV236",
+   "kind": "evidence",
+   "concept": "total_cholesterol",
+   "term": null,
+   "value": 252,
+   "unit": "mg/dL",
+   "observed_date": "2026-09-30",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:total_cholesterol",
+   "kind": "concept",
+   "concept": "total_cholesterol",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0001-D08:1154-1194",
+   "kind": "source",
+   "doc_id": "SYN-0001-D08",
+   "doc_type": "lab_result",
+   "span": [
+    1154,
+    1194
+   ],
+   "text": "Total cholesterol 252 mg/dL (ref <170) H"
+  },
+  {
+   "id": "ev:SYN-0001-EV226",
+   "kind": "evidence",
+   "concept": "calcium",
+   "term": "Calcium",
+   "value": 8.5,
+   "unit": "mg/dL",
+   "observed_date": "2026-09-30",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:calcium:calcium",
+   "kind": "concept",
+   "concept": "calcium",
+   "term": "Calcium"
+  },
+  {
+   "id": "src:SYN-0001-D08:794-828",
+   "kind": "source",
+   "doc_id": "SYN-0001-D08",
+   "doc_type": "lab_result",
+   "span": [
+    794,
+    828
+   ],
+   "text": "Calcium 8.5 mg/dL (ref 8.8-10.8) L"
+  },
+  {
+   "id": "ev:SYN-0001-EV240",
+   "kind": "evidence",
+   "concept": "lab_other",
+   "term": "25-OH vitamin D",
+   "value": 24,
+   "unit": "ng/mL",
+   "observed_date": "2026-09-30",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:lab_other:25-oh vitamin d",
+   "kind": "concept",
+   "concept": "lab_other",
+   "term": "25-OH vitamin D"
+  },
+  {
+   "id": "src:SYN-0001-D08:1293-1332",
+   "kind": "source",
+   "doc_id": "SYN-0001-D08",
+   "doc_type": "lab_result",
+   "span": [
+    1293,
+    1332
+   ],
+   "text": "25-OH vitamin D 24 ng/mL (ref 30-100) L"
+  },
+  {
+   "id": "crit:NCT05003986-E16",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "The subject has a history of allergic response to any angiotensin II antagonist or endothelin receptor antagonist, including sparsentan, or has a hypersensitivity to any of the excipients in the study medication.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT05003986:NCT05003986-E16:r1",
+   "kind": "decision",
+   "trial_id": "NCT05003986",
+   "criterion_id": "NCT05003986-E16",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "NKDA and no food allergy documented.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0001-EV097",
+   "kind": "evidence",
+   "concept": "allergy",
+   "term": "food allergy",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-30",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:allergy:food allergy",
+   "kind": "concept",
+   "concept": "allergy",
+   "term": "food allergy"
+  },
+  {
+   "id": "src:SYN-0001-D07:1469-1485",
+   "kind": "source",
+   "doc_id": "SYN-0001-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    1469,
+    1485
+   ],
+   "text": "No food allergy."
+  },
+  {
+   "id": "crit:NCT05003986-E17",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "The female subject is pregnant, plans to become pregnant during the course of the study, or is breastfeeding.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT05003986:NCT05003986-E17:r1",
+   "kind": "decision",
+   "trial_id": "NCT05003986",
+   "criterion_id": "NCT05003986-E17",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "impossible",
+    "sex_rule"
+   ],
+   "note": "applies only to women; patient is male",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0001-EV001",
+   "kind": "evidence",
+   "concept": "sex",
+   "term": null,
+   "value": "male",
+   "unit": null,
+   "observed_date": "2026-09-14",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:sex",
+   "kind": "concept",
+   "concept": "sex",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0001-D01:0-5",
+   "kind": "source",
+   "doc_id": "SYN-0001-D01",
+   "doc_type": "registration",
+   "span": [
+    0,
+    5
+   ],
+   "text": "Male."
+  },
+  {
+   "id": "crit:NCT05003986-E18",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Female subjects of childbearing potential, beginning at menarche, who do not agree to use 1 highly reliable (ie, can achieve a failure rate of <1% per year) method of contraception from 7 days before the first dose of the study medication until 28 days after the last dose of study medication. Examples of highly reliable contraception methods include stable oral, implanted, transdermal, or injected contraceptive hormones associated with the inhibition of ovulation or an intrauterine device. One additional barrier method must also be used during vaginal sexual activity, such as a diaphragm, diaphragm with spermicide (preferred), or male partner's use of male condom or male condom with spermicide (preferred), from Day 1/Randomization until 28 days after the last dose of study medication. Female subjects of childbearing potential are defined as those who are fertile after menarche, unless permanently sterile; permanent sterilization methods include hysterectomy, bilateral salpingectomy, and bilateral oophorectomy. All female subjects of childbearing potential must have a negative serum pregnancy test result at screening (Visit 1) and a negative urine pregnancy test result, with positive results confirmed by serum, at every study visit from Day 1 (Visit 3) and after. Note: Before menarche, pregnancy testing and contraceptive use are not required. However, subjects and their parents/legal guardians must be advised that, immediately upon menarche, subjects will be required to begin pregnancy testing and initiate contraceptive use. This requirement cannot be waived.",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT05003986:NCT05003986-E18:r1",
+   "kind": "decision",
+   "trial_id": "NCT05003986",
+   "criterion_id": "NCT05003986-E18",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Male patient, so the female-only contraception requirement cannot apply.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT05003986-E19",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "The subject has participated in a study of another study medication within 28 days before screening or plans to participate in such a study during the course of this study.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT05003986:NCT05003986-E19:r1",
+   "kind": "decision",
+   "trial_id": "NCT05003986",
+   "criterion_id": "NCT05003986-E19",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Record does not address other study participation.",
+   "missing_fact": "Participation in another investigational drug study within 28 days or plans to join one",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT05003986-E20",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "The subject has had prior exposure to sparsentan.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT05003986:NCT05003986-E20:r1",
+   "kind": "decision",
+   "trial_id": "NCT05003986",
+   "criterion_id": "NCT05003986-E20",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_history_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "list_inference",
+    "pc:strict_list_inference"
+   ],
+   "note": "[inferable PASS from SYN-0001-EV098] Reconciled medication list shows no sparsentan; nothing recently stopped; disease newly diagnosed 09/2026.",
+   "missing_fact": null,
+   "derived_from": "SYN-0001-EV098"
+  },
+  {
+   "id": "crit:NCT05003986-E21",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "The subject or parent/legal guardian (as appropriate), in the opinion of the Investigator, are unable to adhere to the requirements of the study including but not limited to, a history of noncompliance and/or any other reason that causes the Investigator to believe the subject would not be a good candidate for the study.",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT05003986:NCT05003986-E21:r1",
+   "kind": "decision",
+   "trial_id": "NCT05003986",
+   "criterion_id": "NCT05003986-E21",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "admin"
+   ],
+   "note": "consent/compliance item: not decidable from the record",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT05003986-E22",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "For Population 3 - the subject is unable to swallow the study medication tablets whole.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT05003986:NCT05003986-E22:r1",
+   "kind": "decision",
+   "trial_id": "NCT05003986",
+   "criterion_id": "NCT05003986-E22",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": false,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Applies only to Population 3 (IgAN); patient fits Population 1 (presumed MCD).",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "label:NCT05003986",
+   "kind": "trial_decision",
+   "label": "ineligible",
+   "why": [
+    "FAIL NCT05003986-I05",
+    "FAIL NCT05003986-I06",
+    "FAIL NCT05003986-I08",
+    "FAIL NCT05003986-I10",
+    "FAIL NCT05003986-I11",
+    "FAIL NCT05003986-I12",
+    "FAIL NCT05003986-I13",
+    "FAIL NCT05003986-I14",
+    "FAIL NCT05003986-I15",
+    "FAIL NCT05003986-I16",
+    "FAIL NCT05003986-E04",
+    "FAIL NCT05003986-E05"
+   ],
+   "by": "agent3"
+  },
+  {
+   "id": "trial:NCT07674147",
+   "kind": "trial",
+   "title": "RD06-05 Universal CD19/BCMA CAR-T for Refractory Pediatric Autoimmune Diseases"
+  },
+  {
+   "id": "crit:NCT07674147-I01",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Voluntary participation with signed informed consent from patient or legal guardian.",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07674147:NCT07674147-I01:r1",
+   "kind": "decision",
+   "trial_id": "NCT07674147",
+   "criterion_id": "NCT07674147-I01",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "admin"
+   ],
+   "note": "consent/compliance item: not decidable from the record",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07674147-I02",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Age >=5 to <20 years, male or female.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07674147:NCT07674147-I02:r1",
+   "kind": "decision",
+   "trial_id": "NCT07674147",
+   "criterion_id": "NCT07674147-I02",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "age_rule"
+   ],
+   "note": "age 7.37 y vs [5.0, 20.0]",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "calc:NCT07674147:NCT07674147-I02",
+   "kind": "calculation",
+   "name": "age_at_as_of",
+   "value": 7.367,
+   "lo": 5.0,
+   "hi": 20.0
+  },
+  {
+   "id": "crit:NCT07674147-I03",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Important organ function meeting the following requirements (excluding abnormalities related to autoimmune disease activity): a) Bone marrow: ANC >=1.0x10^9/L, hemoglobin >=60 g/L, platelets >=30x10^9/L; b) Liver: ALT <=3xULN (except IIM-related elevation), AST <=3xULN, total bilirubin <=2xULN (<=3xULN for Gilbert syndrome); c) Kidney: eGFR >=30 mL/min/1.73m^2 (lower eGFR or on renal replacement may be allowed if benefit > risk by investigator judgment); d) Cardiac: LVEF >=55% by echocardiogram; e) Pulmonary: No severe lung disease, SpO2 >=92%.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07674147:NCT07674147-I03:r1",
+   "kind": "decision",
+   "trial_id": "NCT07674147",
+   "criterion_id": "NCT07674147-I03",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "new_test",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Marrow, liver, kidney labs and SpO2 99% meet the thresholds, but no LVEF is recorded, so the line is only partly settled.",
+   "missing_fact": "LVEF by echocardiogram",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07674147-I04",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Negative serum or urine pregnancy test for females of childbearing potential at screening.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07674147:NCT07674147-I04:r1",
+   "kind": "decision",
+   "trial_id": "NCT07674147",
+   "criterion_id": "NCT07674147-I04",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "impossible_condition"
+   ],
+   "note": "Patient is male, so a pregnancy test does not apply.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07674147-I05",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Females of childbearing potential must use highly effective contraception from at least 28 days before lymphodepletion through 12 months post-infusion. Males must use effective barrier contraception and not donate sperm from start of lymphodepletion through 12 months post-infusion.",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07674147:NCT07674147-I05:r1",
+   "kind": "decision",
+   "trial_id": "NCT07674147",
+   "criterion_id": "NCT07674147-I05",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Male patient, so the male contraception clause applies; no agreement is documented.",
+   "missing_fact": "Agreement of patient/guardian to barrier contraception and no sperm donation",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07674147-I23",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Meets 2025 KDIGO definition of steroid-resistant nephrotic syndrome.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07674147:NCT07674147-I23:r1",
+   "kind": "decision",
+   "trial_id": "NCT07674147",
+   "criterion_id": "NCT07674147-I23",
+   "status": "FAIL",
+   "reason": "VIOLATED",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Remission within about 2 weeks of steroids, a steroid-sensitive course, so not steroid-resistant.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07674147-I24",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "At least one of: a) failed to achieve remission after 12 months of two different mechanism steroid-sparing agents (at least one calcineurin inhibitor); b) no remission after 3-6 months of one CNI with benefit > risk; c) intolerance to conventional therapy; d) coexisting systemic disease requiring long-term immunosuppression.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07674147:NCT07674147-I24:r1",
+   "kind": "decision",
+   "trial_id": "NCT07674147",
+   "criterion_id": "NCT07674147-I24",
+   "status": "FAIL",
+   "reason": "VIOLATED",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "list_inference"
+   ],
+   "note": "In remission after 15 days of steroids; reconciled list shows no steroid-sparing agent or CNI; only mild steroid effects; no systemic disease.",
+   "missing_fact": null,
+   "derived_from": "SYN-0001-EV098"
+  },
+  {
+   "id": "crit:NCT07674147-I25",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Prior kidney biopsy showing minimal change disease (MCD) or focal segmental glomerulosclerosis (FSGS).",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07674147:NCT07674147-I25:r1",
+   "kind": "decision",
+   "trial_id": "NCT07674147",
+   "criterion_id": "NCT07674147-I25",
+   "status": "FAIL",
+   "reason": "VIOLATED",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No kidney biopsy was done and none is planned; MCD is only presumed.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07674147-E01",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Co-existing autoimmune disease that may interfere with disease activity attribution or add safety risk (unless stable >=3 months and approved).",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07674147:NCT07674147-E01:r1",
+   "kind": "decision",
+   "trial_id": "NCT07674147",
+   "criterion_id": "NCT07674147-E01",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation"
+   ],
+   "note": "No other autoimmune history; ANA negative; only atopic dermatitis, which is stable.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0001-EV089",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "other autoimmune history",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-30",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:other autoimmune history",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "other autoimmune history"
+  },
+  {
+   "id": "crit:NCT07674147-E02",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Prior B-cell/ASC depletion therapy: a) Anti-CD20 or T-cell engager within 3 months (allowed if >3-6 months and CD19+ B-cells > LLN); b) Prior CD19 and BCMA dual-targeted therapy, or CD19 or BCMA targeted therapy within 6 months (allowed if >6 months and B-cells > LLN); c) Other B-cell/ASC targeted therapies require approval.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07674147:NCT07674147-E02:r1",
+   "kind": "decision",
+   "trial_id": "NCT07674147",
+   "criterion_id": "NCT07674147-E02",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_history_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Current medications are reconciled but lifetime B-cell-depleting therapy history is not stated.",
+   "missing_fact": "Any prior anti-CD20, T-cell engager, CD19 or BCMA therapy",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07674147-E03",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Rapidly progressive glomerulonephritis (RPGN): >=50% crescents on biopsy, or doubling of serum creatinine within 2 months, or investigator judgment.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07674147:NCT07674147-E03:r1",
+   "kind": "decision",
+   "trial_id": "NCT07674147",
+   "criterion_id": "NCT07674147-E03",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_record_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "normal_finding_inference",
+    "pc:strict_normal_finding_inference"
+   ],
+   "note": "[inferable PASS from normal findings] Creatinine 0.38 to 0.36 mg/dL, no doubling in 2 months; remission on steroids; no biopsy crescents or RPGN documented.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07674147-E04",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Cardiac disease: NYHA class III/IV heart failure, MI, angioplasty/stent, unstable angina, or other severe cardiac disease within 12 months.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07674147:NCT07674147-E04:r1",
+   "kind": "decision",
+   "trial_id": "NCT07674147",
+   "criterion_id": "NCT07674147-E04",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation"
+   ],
+   "note": "No cardiac history, no prior surgery, no chest pain or palpitations.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07674147-E05",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Severe CNS disease (traumatic brain injury, impaired consciousness, epilepsy, cerebrovascular ischemia/hemorrhage) that may affect compliance or assessment.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07674147:NCT07674147-E05:r1",
+   "kind": "decision",
+   "trial_id": "NCT07674147",
+   "criterion_id": "NCT07674147-E05",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation"
+   ],
+   "note": "No neurologic history; no seizures.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0001-EV091",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "other neurologic history",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-30",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:other neurologic history",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "other neurologic history"
+  },
+  {
+   "id": "ev:SYN-0001-EV148",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "seizures",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-30",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:symptom_finding:seizures",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "seizures"
+  },
+  {
+   "id": "src:SYN-0001-D07:2638-2685",
+   "kind": "source",
+   "doc_id": "SYN-0001-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    2638,
+    2685
+   ],
+   "text": "Neuro: no headache, visual change, or seizures."
+  },
+  {
+   "id": "crit:NCT07674147-E06",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Malignancy history except cured non-melanoma skin cancer or carcinoma in situ, unless disease-free for >=3 years.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07674147:NCT07674147-E06:r1",
+   "kind": "decision",
+   "trial_id": "NCT07674147",
+   "criterion_id": "NCT07674147-E06",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Explicitly no malignancy.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07674147-E07",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Primary immunodeficiency.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07674147:NCT07674147-E07:r1",
+   "kind": "decision",
+   "trial_id": "NCT07674147",
+   "criterion_id": "NCT07674147-E07",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_record_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Primary immunodeficiency is not mentioned; the negations on serious infections and autoimmune history do not cover it.",
+   "missing_fact": "Whether a primary immunodeficiency has been diagnosed or excluded",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07674147-E08",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Uncontrolled infection (simple UTI or upper respiratory infection allowed).",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07674147:NCT07674147-E08:r1",
+   "kind": "decision",
+   "trial_id": "NCT07674147",
+   "criterion_id": "NCT07674147-E08",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Explicit 'no infection' documented; afebrile. The prior URI was a month ago and is allowed.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0001-EV187",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "infection",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-30",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:infection",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "infection"
+  },
+  {
+   "id": "src:SYN-0001-D07:3739-3797",
+   "kind": "source",
+   "doc_id": "SYN-0001-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    3739,
+    3797
+   ],
+   "text": "No documented complications (no thrombosis, no infection)."
+  },
+  {
+   "id": "crit:NCT07674147-E09",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Known history of HIV, hepatitis C, or syphilis infection.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07674147:NCT07674147-E09:r1",
+   "kind": "decision",
+   "trial_id": "NCT07674147",
+   "criterion_id": "NCT07674147-E09",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "HIV and HCV nonreactive, but syphilis is not mentioned, so the line is not fully settled.",
+   "missing_fact": "History of syphilis infection (HIV and HCV tests are nonreactive, syphilis never addressed)",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07674147-E10",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Active or latent hepatitis B infection.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07674147:NCT07674147-E10:r1",
+   "kind": "decision",
+   "trial_id": "NCT07674147",
+   "criterion_id": "NCT07674147-E10",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "HBsAg negative on 09-14 and 09-30; no hepatitis B history recorded.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0001-EV243",
+   "kind": "evidence",
+   "concept": "hepatitis_b",
+   "term": "Hepatitis B sAg",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-30",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:hepatitis_b:hepatitis b sag",
+   "kind": "concept",
+   "concept": "hepatitis_b",
+   "term": "Hepatitis B sAg"
+  },
+  {
+   "id": "src:SYN-0001-D08:1392-1432",
+   "kind": "source",
+   "doc_id": "SYN-0001-D08",
+   "doc_type": "lab_result",
+   "span": [
+    1392,
+    1432
+   ],
+   "text": "(Hepatitis B sAg negative on 2026-09-14)"
+  },
+  {
+   "id": "ev:SYN-0001-EV054",
+   "kind": "evidence",
+   "concept": "hepatitis_b",
+   "term": "HBsAg",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-30",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:hepatitis_b:hbsag",
+   "kind": "concept",
+   "concept": "hepatitis_b",
+   "term": "HBsAg"
+  },
+  {
+   "id": "src:SYN-0001-D07:344-358",
+   "kind": "source",
+   "doc_id": "SYN-0001-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    344,
+    358
+   ],
+   "text": "HBsAg negative"
+  },
+  {
+   "id": "crit:NCT07674147-E11",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Positive EBV or CMV DNA or IgM at screening.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07674147:NCT07674147-E11:r1",
+   "kind": "decision",
+   "trial_id": "NCT07674147",
+   "criterion_id": "NCT07674147-E11",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "new_test",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No EBV or CMV testing in the record.",
+   "missing_fact": "EBV and CMV DNA/IgM screening results",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07674147-E12",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "History of recurrent tuberculosis.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07674147:NCT07674147-E12:r1",
+   "kind": "decision",
+   "trial_id": "NCT07674147",
+   "criterion_id": "NCT07674147-E12",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Explicit denial of any prior serious infections covers recurrent tuberculosis.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0001-EV093",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "prior serious infections",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-30",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:prior serious infections",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "prior serious infections"
+  },
+  {
+   "id": "crit:NCT07674147-E13",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Prior CAR-T or other transgenic immune cell therapy.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07674147:NCT07674147-E13:r1",
+   "kind": "decision",
+   "trial_id": "NCT07674147",
+   "criterion_id": "NCT07674147-E13",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_history_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "The reconciled list covers current and recent drugs only; prior cell therapy is not addressed.",
+   "missing_fact": "Prior CAR-T or transgenic cell therapy history",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07674147-E14",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Live attenuated vaccine within 4 weeks before enrollment.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07674147:NCT07674147-E14:r1",
+   "kind": "decision",
+   "trial_id": "NCT07674147",
+   "criterion_id": "NCT07674147-E14",
+   "status": "UNKNOWN",
+   "reason": "UNSUPPORTED",
+   "action": "med_record_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Only 'up to date per mother'; no vaccine dates or types.",
+   "missing_fact": "Date and type of the most recent vaccination (live attenuated within 28 days?)",
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0001-EV266",
+   "kind": "evidence",
+   "concept": "social_history",
+   "term": "up to date per mother",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-30",
+   "certainty": "reported",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:social_history:up to date per mother",
+   "kind": "concept",
+   "concept": "social_history",
+   "term": "up to date per mother"
+  },
+  {
+   "id": "src:SYN-0001-D07:1821-1843",
+   "kind": "source",
+   "doc_id": "SYN-0001-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    1821,
+    1843
+   ],
+   "text": "Up to date per mother."
+  },
+  {
+   "id": "crit:NCT07674147-E15",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Allergy to any component of the cell therapy product.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07674147:NCT07674147-E15:r1",
+   "kind": "decision",
+   "trial_id": "NCT07674147",
+   "criterion_id": "NCT07674147-E15",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "NKDA and no food allergy documented; no allergy recorded.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07674147-E16",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Hypersensitivity to tacrolimus or prior grade >=3 tacrolimus-related toxicity requiring hospitalization (exceptions may be approved).",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07674147:NCT07674147-E16:r1",
+   "kind": "decision",
+   "trial_id": "NCT07674147",
+   "criterion_id": "NCT07674147-E16",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "NKDA, so no hypersensitivity to tacrolimus; no prior tacrolimus toxicity recorded.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07674147-E17",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Participation in another clinical trial within 30 days before screening.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07674147:NCT07674147-E17:r1",
+   "kind": "decision",
+   "trial_id": "NCT07674147",
+   "criterion_id": "NCT07674147-E17",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Trial participation is not mentioned anywhere in the record.",
+   "missing_fact": "Participation in another clinical trial within 30 days",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07674147-E18",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Pregnancy, breastfeeding, or unwillingness to use effective contraception.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07674147:NCT07674147-E18:r1",
+   "kind": "decision",
+   "trial_id": "NCT07674147",
+   "criterion_id": "NCT07674147-E18",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "impossible",
+    "sex_rule"
+   ],
+   "note": "applies only to women; patient is male",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07674147-E19",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Any other condition judged by investigator as unsuitable for study.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07674147:NCT07674147-E19:r1",
+   "kind": "decision",
+   "trial_id": "NCT07674147",
+   "criterion_id": "NCT07674147-E19",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Investigator-judgment criterion with no documented problem.",
+   "missing_fact": "Investigator judgment of suitability",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07674147-E32",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Prior chlorambucil, bone marrow transplant, or total lymphoid irradiation.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07674147:NCT07674147-E32:r1",
+   "kind": "decision",
+   "trial_id": "NCT07674147",
+   "criterion_id": "NCT07674147-E32",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_history_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Not mentioned; the cohort scope is unclear, so it is kept applicable.",
+   "missing_fact": "Prior chlorambucil, bone marrow transplant or total lymphoid irradiation",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07674147-E34",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Other cause of chronic kidney disease (diabetic nephropathy, other primary glomerulopathy) that may interfere.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07674147:NCT07674147-E34:r1",
+   "kind": "decision",
+   "trial_id": "NCT07674147",
+   "criterion_id": "NCT07674147-E34",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation"
+   ],
+   "note": "No other renal history; renal function normal. The nephrotic syndrome is the target condition.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0001-EV183",
+   "kind": "evidence",
+   "concept": "creatinine",
+   "term": null,
+   "value": 0.38,
+   "unit": "mg/dL",
+   "observed_date": "2026-09-30",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:creatinine",
+   "kind": "concept",
+   "concept": "creatinine",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0001-D07:3672-3713",
+   "kind": "source",
+   "doc_id": "SYN-0001-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    3672,
+    3713
+   ],
+   "text": "Renal function normal (Cr 0.38 on 09-14)."
+  },
+  {
+   "id": "crit:NCT07674147-E35",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Uncontrolled blood pressure.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07674147:NCT07674147-E35:r1",
+   "kind": "decision",
+   "trial_id": "NCT07674147",
+   "criterion_id": "NCT07674147-E35",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "BP 106/64 yesterday, documented 'BP normal'; not uncontrolled.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07674147-E37",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Secondary nephrotic syndrome/proteinuria (infection-related, drug-related, systemic disease) that may interfere.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07674147:NCT07674147-E37:r1",
+   "kind": "decision",
+   "trial_id": "NCT07674147",
+   "criterion_id": "NCT07674147-E37",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Diagnosed as idiopathic nephrotic syndrome; ANA, HBV, HCV, HIV negative and no NSAIDs, so no secondary cause recorded.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0001-EV043",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "idiopathic nephrotic syndrome",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-30",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "src:SYN-0001-D07:0-157",
+   "kind": "source",
+   "doc_id": "SYN-0001-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    0,
+    157
+   ],
+   "text": "Pediatric nephrology follow-up, comprehensive H&P. 7-yo boy, day 15 of daily prednisolone for idiopathic nephrotic syndrome, presumed minimal change disease."
+  },
+  {
+   "id": "crit:NCT07674147-E38",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "On maintenance dialysis, need for immediate renal replacement, or expected dialysis/transplant within 12 months.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07674147:NCT07674147-E38:r1",
+   "kind": "decision",
+   "trial_id": "NCT07674147",
+   "criterion_id": "NCT07674147-E38",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_record_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "normal_finding_inference",
+    "pc:strict_normal_finding_inference"
+   ],
+   "note": "[inferable PASS from normal findings] eGFR 140 and normal creatinine, in remission; no dialysis or transplant need recorded.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07674147-E39",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Prior treatments: ACEi/ARB dose change within 4 weeks; glucocorticoid dose adjustment within 2 weeks or need for >10 mg/day prednisone equivalent;",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07674147:NCT07674147-E39:r1",
+   "kind": "decision",
+   "trial_id": "NCT07674147",
+   "criterion_id": "NCT07674147-E39",
+   "status": "FAIL",
+   "reason": "VIOLATED",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Current prednisolone 50 mg daily (>10 mg/day) started 2026-09-16, with taper planned. The criterion lists 'need for >10 mg/day' as excluding, so the patient meets it.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07674147-E40",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "disease flare requiring increased steroids (>10 mg/day) or new immunosuppression during screening.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07674147:NCT07674147-E40:r1",
+   "kind": "decision",
+   "trial_id": "NCT07674147",
+   "criterion_id": "NCT07674147-E40",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Patient is in remission with 0 relapses on steroids. No flare requiring increased steroids or new immunosuppression is documented.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0001-EV180",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "relapses",
+   "value": 0,
+   "unit": null,
+   "observed_date": "2026-09-30",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:symptom_finding:relapses",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "relapses"
+  },
+  {
+   "id": "src:SYN-0001-D07:3576-3588",
+   "kind": "source",
+   "doc_id": "SYN-0001-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    3576,
+    3588
+   ],
+   "text": "Relapses: 0."
+  },
+  {
+   "id": "crit:NCT07674147-I06",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Diagnosis of SLE by 2019 EULAR/ACR or 2012 SLICC criteria.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07674147:NCT07674147-I06:r1",
+   "kind": "decision",
+   "trial_id": "NCT07674147",
+   "criterion_id": "NCT07674147-I06",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": false,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "SLE cohort criterion; patient belongs to the nephrotic syndrome cohort.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07674147-I07",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "If renal involvement: kidney biopsy within 2 years showing active nephritis (class III, IV, V, or combination). Renal involvement defined as proteinuria >0.15g/24h, or hematuria, or eGFR <90.Inadequate response to standard therapy: high-dose glucocorticoid (>=1 mg/kg/d prednisone equivalent) + hydroxychloroquine + at least 2 DMARDs for 3 months, or intolerance, or unable to taper steroid to <=5 mg/day at 6 months.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07674147:NCT07674147-I07:r1",
+   "kind": "decision",
+   "trial_id": "NCT07674147",
+   "criterion_id": "NCT07674147-I07",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "lab_check",
+   "applicable": false,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "SLE cohort criterion; not applicable to this patient.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07674147-I08",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Positive ANA, anti-dsDNA, or anti-Smith antibody.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07674147:NCT07674147-I08:r1",
+   "kind": "decision",
+   "trial_id": "NCT07674147",
+   "criterion_id": "NCT07674147-I08",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "lab_check",
+   "applicable": false,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "SLE cohort criterion; not applicable to this patient.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07674147-I09",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "SLEDAI-2K >=8 and clinical SLEDAI-2K >=4 (renal proteinuria >0.5g/24h or UPCR >500 mg/g or active urinary sediment may waive the clinical SLEDAI-2K requirement).",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07674147:NCT07674147-I09:r1",
+   "kind": "decision",
+   "trial_id": "NCT07674147",
+   "criterion_id": "NCT07674147-I09",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "lab_check",
+   "applicable": false,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "SLE cohort criterion; not applicable to this patient.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07674147-I10",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Physician Global Assessment (PGA) >=1.0 (0-3 VAS).",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07674147:NCT07674147-I10:r1",
+   "kind": "decision",
+   "trial_id": "NCT07674147",
+   "criterion_id": "NCT07674147-I10",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": false,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "SLE cohort criterion; not applicable to this patient.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07674147-I11",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Diagnosis of SSc by 2013 ACR/EULAR criteria.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07674147:NCT07674147-I11:r1",
+   "kind": "decision",
+   "trial_id": "NCT07674147",
+   "criterion_id": "NCT07674147-I11",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": false,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "SSc cohort criterion; not applicable to this patient.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07674147-I12",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Diffuse cutaneous SSc.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07674147:NCT07674147-I12:r1",
+   "kind": "decision",
+   "trial_id": "NCT07674147",
+   "criterion_id": "NCT07674147-I12",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": false,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "SSc cohort criterion; not applicable to this patient.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07674147-I13",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Evidence of active disease (e.g., new SSc within 2 years, new skin involvement or worsening mRSS within 6 months, tendon friction rubs, lung function decline, ILD progression).",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07674147:NCT07674147-I13:r1",
+   "kind": "decision",
+   "trial_id": "NCT07674147",
+   "criterion_id": "NCT07674147-I13",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": false,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "SSc cohort criterion; not applicable to this patient.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07674147-I14",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "FVC >=50% and DLCO >=45% predicted.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07674147:NCT07674147-I14:r1",
+   "kind": "decision",
+   "trial_id": "NCT07674147",
+   "criterion_id": "NCT07674147-I14",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "lab_check",
+   "applicable": false,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "SSc cohort criterion; not applicable to this patient.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07674147-I15",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Failed or relapsed on conventional therapy (glucocorticoid >0.5 mg/kg/d prednisone equivalent + at least two immunomodulators for >6 months).",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07674147:NCT07674147-I15:r1",
+   "kind": "decision",
+   "trial_id": "NCT07674147",
+   "criterion_id": "NCT07674147-I15",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_history_check",
+   "applicable": false,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "SSc cohort criterion; not applicable to this patient.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07674147-I16",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Diagnosis of IIM (dermatomyositis, antisynthetase syndrome, IMNM) by 2017 ACR/EULAR criteria (probability >=55%).",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07674147:NCT07674147-I16:r1",
+   "kind": "decision",
+   "trial_id": "NCT07674147",
+   "criterion_id": "NCT07674147-I16",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": false,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "IIM cohort criterion; not applicable to this patient.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07674147-I17",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Active disease: at least 2 of 6 core set abnormalities (MMT-8<142, PhGA >=2 cm, PtGA >=2 cm, extra-muscular MDAAT >=2 cm, PedsQL >=60, CK >=1.5xULN).",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07674147:NCT07674147-I17:r1",
+   "kind": "decision",
+   "trial_id": "NCT07674147",
+   "criterion_id": "NCT07674147-I17",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": false,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "IIM cohort criterion; not applicable to this patient.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07674147-I18",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Positive myositis-specific autoantibody.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07674147:NCT07674147-I18:r1",
+   "kind": "decision",
+   "trial_id": "NCT07674147",
+   "criterion_id": "NCT07674147-I18",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "lab_check",
+   "applicable": false,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "IIM cohort criterion; not applicable to this patient.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07674147-I19",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Failed or relapsed on conventional therapy (glucocorticoid >1 mg/kg/d prednisone equivalent + at least 2 immunomodulators for >=6 months).",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07674147:NCT07674147-I19:r1",
+   "kind": "decision",
+   "trial_id": "NCT07674147",
+   "criterion_id": "NCT07674147-I19",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_history_check",
+   "applicable": false,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "IIM cohort criterion; not applicable to this patient.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07674147-I20",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Biopsy-confirmed IgA nephropathy.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07674147:NCT07674147-I20:r1",
+   "kind": "decision",
+   "trial_id": "NCT07674147",
+   "criterion_id": "NCT07674147-I20",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": false,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "IgAN cohort criterion; not applicable to this patient.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07674147-I21",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "On ACEi/ARB for >=3 months, and at least one of: a) proteinuria >=500 mg/24h or UPCR >=0.5 mg/mg after >=3 months of steroid + at least one immunosuppressant/biologic; b) eGFR decline >50% within 3 months; c)",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07674147:NCT07674147-I21:r1",
+   "kind": "decision",
+   "trial_id": "NCT07674147",
+   "criterion_id": "NCT07674147-I21",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "lab_check",
+   "applicable": false,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "IgAN cohort criterion; not applicable to this patient.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07674147-I22",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "intolerance to conventional therapy with benefit > risk.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07674147:NCT07674147-I22:r1",
+   "kind": "decision",
+   "trial_id": "NCT07674147",
+   "criterion_id": "NCT07674147-I22",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_history_check",
+   "applicable": false,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Fragment of the IgAN cohort option list; not applicable to this patient.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07674147-E20",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Active/unstable neuropsychiatric lupus (seizures, psychosis, organic brain syndrome, CVA, encephalitis, CNS vasculitis) within 90 days requiring intervention.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07674147:NCT07674147-E20:r1",
+   "kind": "decision",
+   "trial_id": "NCT07674147",
+   "criterion_id": "NCT07674147-E20",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": false,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Lupus-cohort item; the patient has no lupus (ANA negative) and no seizures or neurologic history.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07674147-E21",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Prior treatments: belimumab/telitacicept within 4 weeks; ianalumab within 8 weeks unless B-cells > LLN; >1 systemic NSAID within 14 days; inability to wash out NSAID before disease activity assessment; intra-articular/IM glucocorticoid within 6 weeks; immunosuppressant doses above specified limits; initiation or dose change of hydroxychloroquine within 8 weeks; ACEi/ARB/SGLT2 inhibitor dose change within 4 weeks.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07674147:NCT07674147-E21:r1",
+   "kind": "decision",
+   "trial_id": "NCT07674147",
+   "criterion_id": "NCT07674147-E21",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": false,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "SLE-cohort treatment item; the patient is not in the SLE cohort. No NSAIDs recorded.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0001-EV107",
+   "kind": "evidence",
+   "concept": "medication",
+   "term": "NSAIDs",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-30",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:medication:nsaids",
+   "kind": "concept",
+   "concept": "medication",
+   "term": "NSAIDs"
+  },
+  {
+   "id": "src:SYN-0001-D07:1762-1804",
+   "kind": "source",
+   "doc_id": "SYN-0001-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    1762,
+    1804
+   ],
+   "text": "No NSAIDs, no antibiotics, no supplements."
+  },
+  {
+   "id": "crit:NCT07674147-E22",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Disease flare requiring increased corticosteroids (>20 mg/day prednisone equivalent) or new immunosuppression during screening.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07674147:NCT07674147-E22:r1",
+   "kind": "decision",
+   "trial_id": "NCT07674147",
+   "criterion_id": "NCT07674147-E22",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": false,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Lupus-cohort flare item; not applicable to this nephrotic syndrome patient.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07674147-E23",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Severe rhabdomyolysis or CK >=20xULN.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07674147:NCT07674147-E23:r1",
+   "kind": "decision",
+   "trial_id": "NCT07674147",
+   "criterion_id": "NCT07674147-E23",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": false,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Myositis-cohort CK item; not applicable to this patient.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07674147-E24",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "FVC <=60% predicted, or DLCO <=70% predicted, or worsening lung function compared to prior 3-12 months.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07674147:NCT07674147-E24:r1",
+   "kind": "decision",
+   "trial_id": "NCT07674147",
+   "criterion_id": "NCT07674147-E24",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": false,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "SSc-cohort lung function item; the patient has no SSc and no FVC value.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07674147-E25",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Anti-centromere antibody positive without ATA or anti-RNAP3.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07674147:NCT07674147-E25:r1",
+   "kind": "decision",
+   "trial_id": "NCT07674147",
+   "criterion_id": "NCT07674147-E25",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": false,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "SSc-cohort antibody item; not applicable to this patient.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07674147-E26",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Clinically significant respiratory disease other than ILD (severe COPD, severe asthma, recent severe respiratory infection, smoking).",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07674147:NCT07674147-E26:r1",
+   "kind": "decision",
+   "trial_id": "NCT07674147",
+   "criterion_id": "NCT07674147-E26",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": false,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation",
+    "pc:blanket_out_of_scope"
+   ],
+   "note": "[blanket negation out of A1 scope] SSc-cohort item; the patient also has no chronic pulmonary history.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07674147-E27",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "FVC <50% or DLCO <40% predicted.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07674147:NCT07674147-E27:r1",
+   "kind": "decision",
+   "trial_id": "NCT07674147",
+   "criterion_id": "NCT07674147-E27",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": false,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "SSc-cohort lung function item; not applicable to this patient.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07674147-E28",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "On lung transplant list or expected within 12 months.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07674147:NCT07674147-E28:r1",
+   "kind": "decision",
+   "trial_id": "NCT07674147",
+   "criterion_id": "NCT07674147-E28",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": false,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "SSc-cohort lung transplant item; not applicable to this patient.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07674147-E29",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "History of scleroderma renal crisis within 6 months.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07674147:NCT07674147-E29:r1",
+   "kind": "decision",
+   "trial_id": "NCT07674147",
+   "criterion_id": "NCT07674147-E29",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": false,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "SSc-cohort scleroderma renal crisis item; not applicable to this patient.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07674147-E30",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "SSc-like disorders (morphea, eosinophilic fasciitis, etc.).",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07674147:NCT07674147-E30:r1",
+   "kind": "decision",
+   "trial_id": "NCT07674147",
+   "criterion_id": "NCT07674147-E30",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": false,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "SSc-cohort item on SSc-like disorders; not applicable to this patient.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07674147-E31",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Antifibrotic drugs within 4 weeks (colchicine, D-penicillamine, pirfenidone, tyrosine kinase inhibitors).",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07674147:NCT07674147-E31:r1",
+   "kind": "decision",
+   "trial_id": "NCT07674147",
+   "criterion_id": "NCT07674147-E31",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": false,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "SSc-cohort antifibrotic item; not applicable to this patient.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07674147-E33",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Secondary IgAN (cirrhosis, celiac disease, HIV, malignancy).",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07674147:NCT07674147-E33:r1",
+   "kind": "decision",
+   "trial_id": "NCT07674147",
+   "criterion_id": "NCT07674147-E33",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": false,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "IgAN-cohort item; the patient has idiopathic nephrotic syndrome, not IgAN.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07674147-E36",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Prior treatments: hydroxychloroquine dose change within 8 weeks; biologics (infliximab, eculizumab, canakinumab) within 4 weeks; prednisone >30 mg/day or unstable dose; endothelin receptor antagonist within 4 weeks before lymphodepletion.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07674147:NCT07674147-E36:r1",
+   "kind": "decision",
+   "trial_id": "NCT07674147",
+   "criterion_id": "NCT07674147-E36",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": false,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "IgAN/SLE-cohort treatment item; not the patient's cohort. Current prednisolone 50 mg/day is noted but not applied.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "label:NCT07674147",
+   "kind": "trial_decision",
+   "label": "ineligible",
+   "why": [
+    "FAIL NCT07674147-I23",
+    "FAIL NCT07674147-I24",
+    "FAIL NCT07674147-I25",
+    "FAIL NCT07674147-E39"
+   ],
+   "by": "agent3"
+  }
+ ],
+ "edges": [
+  [
+   "trial:NCT07765914",
+   "has_criterion",
+   "crit:NCT07765914-I01"
+  ],
+  [
+   "crit:NCT07765914-I01",
+   "decided_as",
+   "dec:NCT07765914:NCT07765914-I01:r1"
+  ],
+  [
+   "crit:NCT07765914-I01",
+   "requires",
+   "concept:symptom_finding:home urine dipstick monitoring"
+  ],
+  [
+   "concept:symptom_finding:home urine dipstick monitoring",
+   "observed_as",
+   "ev:SYN-0001-EV069"
+  ],
+  [
+   "ev:SYN-0001-EV069",
+   "derived_from",
+   "src:SYN-0001-D07:718-797"
+  ],
+  [
+   "ev:SYN-0001-EV069",
+   "supports",
+   "dec:NCT07765914:NCT07765914-I01:r1"
+  ],
+  [
+   "crit:NCT07765914-I01",
+   "requires",
+   "concept:diagnosis:remission"
+  ],
+  [
+   "concept:diagnosis:remission",
+   "observed_as",
+   "ev:SYN-0001-EV179"
+  ],
+  [
+   "ev:SYN-0001-EV179",
+   "derived_from",
+   "src:SYN-0001-D07:3497-3575"
+  ],
+  [
+   "ev:SYN-0001-EV179",
+   "supports",
+   "dec:NCT07765914:NCT07765914-I01:r1"
+  ],
+  [
+   "crit:NCT07765914-I01",
+   "requires",
+   "concept:diagnosis:idiopathic nephrotic syndrome"
+  ],
+  [
+   "concept:diagnosis:idiopathic nephrotic syndrome",
+   "observed_as",
+   "ev:SYN-0001-EV192"
+  ],
+  [
+   "ev:SYN-0001-EV192",
+   "derived_from",
+   "src:SYN-0001-D07:3915-4044"
+  ],
+  [
+   "ev:SYN-0001-EV192",
+   "supports",
+   "dec:NCT07765914:NCT07765914-I01:r1"
+  ],
+  [
+   "trial:NCT07765914",
+   "has_criterion",
+   "crit:NCT07765914-I02"
+  ],
+  [
+   "crit:NCT07765914-I02",
+   "decided_as",
+   "dec:NCT07765914:NCT07765914-I02:r1"
+  ],
+  [
+   "crit:NCT07765914-I02",
+   "requires",
+   "concept:egfr"
+  ],
+  [
+   "concept:egfr",
+   "observed_as",
+   "ev:SYN-0001-EV224"
+  ],
+  [
+   "ev:SYN-0001-EV224",
+   "derived_from",
+   "src:SYN-0001-D08:703-754"
+  ],
+  [
+   "ev:SYN-0001-EV224",
+   "supports",
+   "dec:NCT07765914:NCT07765914-I02:r1"
+  ],
+  [
+   "calc:NCT07765914:NCT07765914-I02",
+   "computes",
+   "dec:NCT07765914:NCT07765914-I02:r1"
+  ],
+  [
+   "trial:NCT07765914",
+   "has_criterion",
+   "crit:NCT07765914-I03"
+  ],
+  [
+   "crit:NCT07765914-I03",
+   "decided_as",
+   "dec:NCT07765914:NCT07765914-I03:r1"
+  ],
+  [
+   "trial:NCT07765914",
+   "has_criterion",
+   "crit:NCT07765914-I04"
+  ],
+  [
+   "crit:NCT07765914-I04",
+   "decided_as",
+   "dec:NCT07765914:NCT07765914-I04:r1"
+  ],
+  [
+   "trial:NCT07765914",
+   "has_criterion",
+   "crit:NCT07765914-E01"
+  ],
+  [
+   "crit:NCT07765914-E01",
+   "decided_as",
+   "dec:NCT07765914:NCT07765914-E01:r1"
+  ],
+  [
+   "crit:NCT07765914-E01",
+   "requires",
+   "concept:diagnosis:idiopathic nephrotic syndrome"
+  ],
+  [
+   "ev:SYN-0001-EV192",
+   "supports",
+   "dec:NCT07765914:NCT07765914-E01:r1"
+  ],
+  [
+   "crit:NCT07765914-E01",
+   "requires",
+   "concept:diagnosis:other renal history"
+  ],
+  [
+   "concept:diagnosis:other renal history",
+   "observed_as",
+   "ev:SYN-0001-EV088"
+  ],
+  [
+   "ev:SYN-0001-EV088",
+   "derived_from",
+   "src:SYN-0001-D07:1261-1350"
+  ],
+  [
+   "ev:SYN-0001-EV088",
+   "supports",
+   "dec:NCT07765914:NCT07765914-E01:r1"
+  ],
+  [
+   "trial:NCT07765914",
+   "has_criterion",
+   "crit:NCT07765914-E02"
+  ],
+  [
+   "crit:NCT07765914-E02",
+   "decided_as",
+   "dec:NCT07765914:NCT07765914-E02:r1"
+  ],
+  [
+   "trial:NCT07765914",
+   "has_criterion",
+   "crit:NCT07765914-E03"
+  ],
+  [
+   "crit:NCT07765914-E03",
+   "decided_as",
+   "dec:NCT07765914:NCT07765914-E03:r1"
+  ],
+  [
+   "trial:NCT07765914",
+   "has_criterion",
+   "crit:NCT07765914-E04"
+  ],
+  [
+   "crit:NCT07765914-E04",
+   "decided_as",
+   "dec:NCT07765914:NCT07765914-E04:r1"
+  ],
+  [
+   "trial:NCT07765914",
+   "has_criterion",
+   "crit:NCT07765914-E05"
+  ],
+  [
+   "crit:NCT07765914-E05",
+   "decided_as",
+   "dec:NCT07765914:NCT07765914-E05:r1"
+  ],
+  [
+   "trial:NCT07765914",
+   "has_criterion",
+   "crit:NCT07765914-E06"
+  ],
+  [
+   "crit:NCT07765914-E06",
+   "decided_as",
+   "dec:NCT07765914:NCT07765914-E06:r1"
+  ],
+  [
+   "crit:NCT07765914-E06",
+   "requires",
+   "concept:diagnosis:other cardiac history"
+  ],
+  [
+   "concept:diagnosis:other cardiac history",
+   "observed_as",
+   "ev:SYN-0001-EV085"
+  ],
+  [
+   "ev:SYN-0001-EV085",
+   "derived_from",
+   "src:SYN-0001-D07:1261-1350"
+  ],
+  [
+   "ev:SYN-0001-EV085",
+   "supports",
+   "dec:NCT07765914:NCT07765914-E06:r1"
+  ],
+  [
+   "crit:NCT07765914-E06",
+   "requires",
+   "concept:blood_pressure"
+  ],
+  [
+   "concept:blood_pressure",
+   "observed_as",
+   "ev:SYN-0001-EV078"
+  ],
+  [
+   "ev:SYN-0001-EV078",
+   "derived_from",
+   "src:SYN-0001-D07:994-1042"
+  ],
+  [
+   "ev:SYN-0001-EV078",
+   "supports",
+   "dec:NCT07765914:NCT07765914-E06:r1"
+  ],
+  [
+   "crit:NCT07765914-E06",
+   "requires",
+   "concept:symptom_finding:bp normal."
+  ],
+  [
+   "concept:symptom_finding:bp normal.",
+   "observed_as",
+   "ev:SYN-0001-EV268"
+  ],
+  [
+   "ev:SYN-0001-EV268",
+   "derived_from",
+   "src:SYN-0001-D07:3714-3724"
+  ],
+  [
+   "ev:SYN-0001-EV268",
+   "supports",
+   "dec:NCT07765914:NCT07765914-E06:r1"
+  ],
+  [
+   "crit:NCT07765914-E06",
+   "requires",
+   "concept:symptom_finding:chest pain"
+  ],
+  [
+   "concept:symptom_finding:chest pain",
+   "observed_as",
+   "ev:SYN-0001-EV132"
+  ],
+  [
+   "ev:SYN-0001-EV132",
+   "derived_from",
+   "src:SYN-0001-D07:2404-2436"
+  ],
+  [
+   "ev:SYN-0001-EV132",
+   "supports",
+   "dec:NCT07765914:NCT07765914-E06:r1"
+  ],
+  [
+   "crit:NCT07765914-E06",
+   "requires",
+   "concept:symptom_finding:palpitations"
+  ],
+  [
+   "concept:symptom_finding:palpitations",
+   "observed_as",
+   "ev:SYN-0001-EV133"
+  ],
+  [
+   "ev:SYN-0001-EV133",
+   "derived_from",
+   "src:SYN-0001-D07:2404-2436"
+  ],
+  [
+   "ev:SYN-0001-EV133",
+   "supports",
+   "dec:NCT07765914:NCT07765914-E06:r1"
+  ],
+  [
+   "crit:NCT07765914-E06",
+   "requires",
+   "concept:symptom_finding:murmur"
+  ],
+  [
+   "concept:symptom_finding:murmur",
+   "observed_as",
+   "ev:SYN-0001-EV160"
+  ],
+  [
+   "ev:SYN-0001-EV160",
+   "derived_from",
+   "src:SYN-0001-D07:2924-2959"
+  ],
+  [
+   "ev:SYN-0001-EV160",
+   "supports",
+   "dec:NCT07765914:NCT07765914-E06:r1"
+  ],
+  [
+   "trial:NCT07765914",
+   "has_criterion",
+   "crit:NCT07765914-E07"
+  ],
+  [
+   "crit:NCT07765914-E07",
+   "decided_as",
+   "dec:NCT07765914:NCT07765914-E07:r1"
+  ],
+  [
+   "trial:NCT07765914",
+   "has_criterion",
+   "crit:NCT07765914-E08"
+  ],
+  [
+   "crit:NCT07765914-E08",
+   "decided_as",
+   "dec:NCT07765914:NCT07765914-E08:r1"
+  ],
+  [
+   "trial:NCT07765914",
+   "has_criterion",
+   "crit:NCT07765914-E09"
+  ],
+  [
+   "crit:NCT07765914-E09",
+   "decided_as",
+   "dec:NCT07765914:NCT07765914-E09:r1"
+  ],
+  [
+   "crit:NCT07765914-E09",
+   "requires",
+   "concept:procedure:prior surgery"
+  ],
+  [
+   "concept:procedure:prior surgery",
+   "observed_as",
+   "ev:SYN-0001-EV095"
+  ],
+  [
+   "ev:SYN-0001-EV095",
+   "derived_from",
+   "src:SYN-0001-D07:1445-1450"
+  ],
+  [
+   "ev:SYN-0001-EV095",
+   "supports",
+   "dec:NCT07765914:NCT07765914-E09:r1"
+  ],
+  [
+   "trial:NCT07765914",
+   "has_criterion",
+   "crit:NCT07765914-E10"
+  ],
+  [
+   "crit:NCT07765914-E10",
+   "decided_as",
+   "dec:NCT07765914:NCT07765914-E10:r1"
+  ],
+  [
+   "crit:NCT07765914-E10",
+   "requires",
+   "concept:allergy:no known drug allergies"
+  ],
+  [
+   "concept:allergy:no known drug allergies",
+   "observed_as",
+   "ev:SYN-0001-EV096"
+  ],
+  [
+   "ev:SYN-0001-EV096",
+   "derived_from",
+   "src:SYN-0001-D07:1463-1468"
+  ],
+  [
+   "ev:SYN-0001-EV096",
+   "supports",
+   "dec:NCT07765914:NCT07765914-E10:r1"
+  ],
+  [
+   "trial:NCT07765914",
+   "has_criterion",
+   "crit:NCT07765914-E11"
+  ],
+  [
+   "crit:NCT07765914-E11",
+   "decided_as",
+   "dec:NCT07765914:NCT07765914-E11:r1"
+  ],
+  [
+   "trial:NCT07765914",
+   "labelled",
+   "label:NCT07765914"
+  ],
+  [
+   "trial:NCT05003986",
+   "has_criterion",
+   "crit:NCT05003986-I01"
+  ],
+  [
+   "crit:NCT05003986-I01",
+   "decided_as",
+   "dec:NCT05003986:NCT05003986-I01:r1"
+  ],
+  [
+   "trial:NCT05003986",
+   "has_criterion",
+   "crit:NCT05003986-I02"
+  ],
+  [
+   "crit:NCT05003986-I02",
+   "decided_as",
+   "dec:NCT05003986:NCT05003986-I02:r1"
+  ],
+  [
+   "crit:NCT05003986-I02",
+   "requires",
+   "concept:egfr"
+  ],
+  [
+   "ev:SYN-0001-EV224",
+   "supports",
+   "dec:NCT05003986:NCT05003986-I02:r1"
+  ],
+  [
+   "calc:NCT05003986:NCT05003986-I02",
+   "computes",
+   "dec:NCT05003986:NCT05003986-I02:r1"
+  ],
+  [
+   "trial:NCT05003986",
+   "has_criterion",
+   "crit:NCT05003986-I03"
+  ],
+  [
+   "crit:NCT05003986-I03",
+   "decided_as",
+   "dec:NCT05003986:NCT05003986-I03:r1"
+  ],
+  [
+   "crit:NCT05003986-I03",
+   "requires",
+   "concept:blood_pressure"
+  ],
+  [
+   "ev:SYN-0001-EV078",
+   "supports",
+   "dec:NCT05003986:NCT05003986-I03:r1"
+  ],
+  [
+   "trial:NCT05003986",
+   "has_criterion",
+   "crit:NCT05003986-I04"
+  ],
+  [
+   "crit:NCT05003986-I04",
+   "decided_as",
+   "dec:NCT05003986:NCT05003986-I04:r1"
+  ],
+  [
+   "crit:NCT05003986-I04",
+   "requires",
+   "concept:birth_date"
+  ],
+  [
+   "concept:birth_date",
+   "observed_as",
+   "ev:SYN-0001-EV002"
+  ],
+  [
+   "ev:SYN-0001-EV002",
+   "derived_from",
+   "src:SYN-0001-D01:6-21"
+  ],
+  [
+   "ev:SYN-0001-EV002",
+   "supports",
+   "dec:NCT05003986:NCT05003986-I04:r1"
+  ],
+  [
+   "calc:NCT05003986:NCT05003986-I04",
+   "computes",
+   "dec:NCT05003986:NCT05003986-I04:r1"
+  ],
+  [
+   "trial:NCT05003986",
+   "has_criterion",
+   "crit:NCT05003986-I05"
+  ],
+  [
+   "crit:NCT05003986-I05",
+   "decided_as",
+   "dec:NCT05003986:NCT05003986-I05:r1"
+  ],
+  [
+   "crit:NCT05003986-I05",
+   "requires",
+   "concept:urine_protein_creatinine_ratio"
+  ],
+  [
+   "concept:urine_protein_creatinine_ratio",
+   "observed_as",
+   "ev:SYN-0001-EV255"
+  ],
+  [
+   "ev:SYN-0001-EV255",
+   "derived_from",
+   "src:SYN-0001-D08:1702-1753"
+  ],
+  [
+   "ev:SYN-0001-EV255",
+   "supports",
+   "dec:NCT05003986:NCT05003986-I05:r1"
+  ],
+  [
+   "concept:urine_protein_creatinine_ratio",
+   "observed_as",
+   "ev:SYN-0001-EV038"
+  ],
+  [
+   "ev:SYN-0001-EV038",
+   "derived_from",
+   "src:SYN-0001-D06:30-71"
+  ],
+  [
+   "ev:SYN-0001-EV038",
+   "supports",
+   "dec:NCT05003986:NCT05003986-I05:r1"
+  ],
+  [
+   "trial:NCT05003986",
+   "has_criterion",
+   "crit:NCT05003986-I06"
+  ],
+  [
+   "crit:NCT05003986-I06",
+   "decided_as",
+   "dec:NCT05003986:NCT05003986-I06:r1"
+  ],
+  [
+   "crit:NCT05003986-I06",
+   "requires",
+   "concept:procedure:kidney biopsy"
+  ],
+  [
+   "concept:procedure:kidney biopsy",
+   "observed_as",
+   "ev:SYN-0001-EV057"
+  ],
+  [
+   "ev:SYN-0001-EV057",
+   "derived_from",
+   "src:SYN-0001-D07:377-445"
+  ],
+  [
+   "ev:SYN-0001-EV057",
+   "supports",
+   "dec:NCT05003986:NCT05003986-I06:r1"
+  ],
+  [
+   "crit:NCT05003986-I06",
+   "requires",
+   "concept:treatment_plan:kidney biopsy"
+  ],
+  [
+   "concept:treatment_plan:kidney biopsy",
+   "observed_as",
+   "ev:SYN-0001-EV196"
+  ],
+  [
+   "ev:SYN-0001-EV196",
+   "derived_from",
+   "src:SYN-0001-D07:4158-4185"
+  ],
+  [
+   "ev:SYN-0001-EV196",
+   "supports",
+   "dec:NCT05003986:NCT05003986-I06:r1"
+  ],
+  [
+   "trial:NCT05003986",
+   "has_criterion",
+   "crit:NCT05003986-I07"
+  ],
+  [
+   "crit:NCT05003986-I07",
+   "decided_as",
+   "dec:NCT05003986:NCT05003986-I07:r1"
+  ],
+  [
+   "trial:NCT05003986",
+   "has_criterion",
+   "crit:NCT05003986-I08"
+  ],
+  [
+   "crit:NCT05003986-I08",
+   "decided_as",
+   "dec:NCT05003986:NCT05003986-I08:r1"
+  ],
+  [
+   "crit:NCT05003986-I08",
+   "requires",
+   "concept:procedure:kidney biopsy"
+  ],
+  [
+   "ev:SYN-0001-EV057",
+   "supports",
+   "dec:NCT05003986:NCT05003986-I08:r1"
+  ],
+  [
+   "trial:NCT05003986",
+   "has_criterion",
+   "crit:NCT05003986-I09"
+  ],
+  [
+   "crit:NCT05003986-I09",
+   "decided_as",
+   "dec:NCT05003986:NCT05003986-I09:r1"
+  ],
+  [
+   "crit:NCT05003986-I09",
+   "requires",
+   "concept:birth_date"
+  ],
+  [
+   "ev:SYN-0001-EV002",
+   "supports",
+   "dec:NCT05003986:NCT05003986-I09:r1"
+  ],
+  [
+   "calc:NCT05003986:NCT05003986-I09",
+   "computes",
+   "dec:NCT05003986:NCT05003986-I09:r1"
+  ],
+  [
+   "trial:NCT05003986",
+   "has_criterion",
+   "crit:NCT05003986-I10"
+  ],
+  [
+   "crit:NCT05003986-I10",
+   "decided_as",
+   "dec:NCT05003986:NCT05003986-I10:r1"
+  ],
+  [
+   "crit:NCT05003986-I10",
+   "requires",
+   "concept:urine_protein_creatinine_ratio"
+  ],
+  [
+   "ev:SYN-0001-EV255",
+   "supports",
+   "dec:NCT05003986:NCT05003986-I10:r1"
+  ],
+  [
+   "trial:NCT05003986",
+   "has_criterion",
+   "crit:NCT05003986-I11"
+  ],
+  [
+   "crit:NCT05003986-I11",
+   "decided_as",
+   "dec:NCT05003986:NCT05003986-I11:r1"
+  ],
+  [
+   "crit:NCT05003986-I11",
+   "requires",
+   "concept:procedure:kidney biopsy"
+  ],
+  [
+   "ev:SYN-0001-EV057",
+   "supports",
+   "dec:NCT05003986:NCT05003986-I11:r1"
+  ],
+  [
+   "trial:NCT05003986",
+   "has_criterion",
+   "crit:NCT05003986-I12"
+  ],
+  [
+   "crit:NCT05003986-I12",
+   "decided_as",
+   "dec:NCT05003986:NCT05003986-I12:r1"
+  ],
+  [
+   "crit:NCT05003986-I12",
+   "requires",
+   "concept:diagnosis:other renal history"
+  ],
+  [
+   "ev:SYN-0001-EV088",
+   "supports",
+   "dec:NCT05003986:NCT05003986-I12:r1"
+  ],
+  [
+   "trial:NCT05003986",
+   "has_criterion",
+   "crit:NCT05003986-I13"
+  ],
+  [
+   "crit:NCT05003986-I13",
+   "decided_as",
+   "dec:NCT05003986:NCT05003986-I13:r1"
+  ],
+  [
+   "crit:NCT05003986-I13",
+   "requires",
+   "concept:birth_date"
+  ],
+  [
+   "ev:SYN-0001-EV002",
+   "supports",
+   "dec:NCT05003986:NCT05003986-I13:r1"
+  ],
+  [
+   "calc:NCT05003986:NCT05003986-I13",
+   "computes",
+   "dec:NCT05003986:NCT05003986-I13:r1"
+  ],
+  [
+   "trial:NCT05003986",
+   "has_criterion",
+   "crit:NCT05003986-I14"
+  ],
+  [
+   "crit:NCT05003986-I14",
+   "decided_as",
+   "dec:NCT05003986:NCT05003986-I14:r1"
+  ],
+  [
+   "crit:NCT05003986-I14",
+   "requires",
+   "concept:urine_protein_creatinine_ratio"
+  ],
+  [
+   "ev:SYN-0001-EV255",
+   "supports",
+   "dec:NCT05003986:NCT05003986-I14:r1"
+  ],
+  [
+   "trial:NCT05003986",
+   "has_criterion",
+   "crit:NCT05003986-I15"
+  ],
+  [
+   "crit:NCT05003986-I15",
+   "decided_as",
+   "dec:NCT05003986:NCT05003986-I15:r1"
+  ],
+  [
+   "crit:NCT05003986-I15",
+   "requires",
+   "concept:body_weight"
+  ],
+  [
+   "concept:body_weight",
+   "observed_as",
+   "ev:SYN-0001-EV074"
+  ],
+  [
+   "ev:SYN-0001-EV074",
+   "derived_from",
+   "src:SYN-0001-D07:883-911"
+  ],
+  [
+   "ev:SYN-0001-EV074",
+   "supports",
+   "dec:NCT05003986:NCT05003986-I15:r1"
+  ],
+  [
+   "calc:NCT05003986:NCT05003986-I15",
+   "computes",
+   "dec:NCT05003986:NCT05003986-I15:r1"
+  ],
+  [
+   "trial:NCT05003986",
+   "has_criterion",
+   "crit:NCT05003986-I16"
+  ],
+  [
+   "crit:NCT05003986-I16",
+   "decided_as",
+   "dec:NCT05003986:NCT05003986-I16:r1"
+  ],
+  [
+   "crit:NCT05003986-I16",
+   "requires",
+   "concept:medication:medications"
+  ],
+  [
+   "concept:medication:medications",
+   "observed_as",
+   "ev:SYN-0001-EV098"
+  ],
+  [
+   "ev:SYN-0001-EV098",
+   "derived_from",
+   "src:SYN-0001-D07:1487-1511"
+  ],
+  [
+   "ev:SYN-0001-EV098",
+   "supports",
+   "dec:NCT05003986:NCT05003986-I16:r1"
+  ],
+  [
+   "crit:NCT05003986-I16",
+   "requires",
+   "concept:medication:prednisolone 50 mg daily"
+  ],
+  [
+   "concept:medication:prednisolone 50 mg daily",
+   "observed_as",
+   "ev:SYN-0001-EV099"
+  ],
+  [
+   "ev:SYN-0001-EV099",
+   "derived_from",
+   "src:SYN-0001-D07:1515-1542"
+  ],
+  [
+   "ev:SYN-0001-EV099",
+   "supports",
+   "dec:NCT05003986:NCT05003986-I16:r1"
+  ],
+  [
+   "trial:NCT05003986",
+   "has_criterion",
+   "crit:NCT05003986-E01"
+  ],
+  [
+   "crit:NCT05003986-E01",
+   "decided_as",
+   "dec:NCT05003986:NCT05003986-E01:r1"
+  ],
+  [
+   "crit:NCT05003986-E01",
+   "requires",
+   "concept:body_weight"
+  ],
+  [
+   "ev:SYN-0001-EV074",
+   "supports",
+   "dec:NCT05003986:NCT05003986-E01:r1"
+  ],
+  [
+   "calc:NCT05003986:NCT05003986-E01",
+   "computes",
+   "dec:NCT05003986:NCT05003986-E01:r1"
+  ],
+  [
+   "trial:NCT05003986",
+   "has_criterion",
+   "crit:NCT05003986-E02"
+  ],
+  [
+   "crit:NCT05003986-E02",
+   "decided_as",
+   "dec:NCT05003986:NCT05003986-E02:r1"
+  ],
+  [
+   "trial:NCT05003986",
+   "has_criterion",
+   "crit:NCT05003986-E03"
+  ],
+  [
+   "crit:NCT05003986-E03",
+   "decided_as",
+   "dec:NCT05003986:NCT05003986-E03:r1"
+  ],
+  [
+   "trial:NCT05003986",
+   "has_criterion",
+   "crit:NCT05003986-E04"
+  ],
+  [
+   "crit:NCT05003986-E04",
+   "decided_as",
+   "dec:NCT05003986:NCT05003986-E04:r1"
+  ],
+  [
+   "crit:NCT05003986-E04",
+   "requires",
+   "concept:diagnosis:idiopathic nephrotic syndrome"
+  ],
+  [
+   "concept:diagnosis:idiopathic nephrotic syndrome",
+   "observed_as",
+   "ev:SYN-0001-EV084"
+  ],
+  [
+   "ev:SYN-0001-EV084",
+   "derived_from",
+   "src:SYN-0001-D07:1204-1260"
+  ],
+  [
+   "ev:SYN-0001-EV084",
+   "supports",
+   "dec:NCT05003986:NCT05003986-E04:r1"
+  ],
+  [
+   "crit:NCT05003986-E04",
+   "requires",
+   "concept:medication:prednisolone 50 mg daily"
+  ],
+  [
+   "concept:medication:prednisolone 50 mg daily",
+   "observed_as",
+   "ev:SYN-0001-EV100"
+  ],
+  [
+   "ev:SYN-0001-EV100",
+   "derived_from",
+   "src:SYN-0001-D07:1544-1582"
+  ],
+  [
+   "ev:SYN-0001-EV100",
+   "supports",
+   "dec:NCT05003986:NCT05003986-E04:r1"
+  ],
+  [
+   "crit:NCT05003986-E04",
+   "requires",
+   "concept:medication:prednisolone 60 mg/m2/day"
+  ],
+  [
+   "concept:medication:prednisolone 60 mg/m2/day",
+   "observed_as",
+   "ev:SYN-0001-EV032"
+  ],
+  [
+   "ev:SYN-0001-EV032",
+   "derived_from",
+   "src:SYN-0001-D04:149-181"
+  ],
+  [
+   "ev:SYN-0001-EV032",
+   "supports",
+   "dec:NCT05003986:NCT05003986-E04:r1"
+  ],
+  [
+   "trial:NCT05003986",
+   "has_criterion",
+   "crit:NCT05003986-E05"
+  ],
+  [
+   "crit:NCT05003986-E05",
+   "decided_as",
+   "dec:NCT05003986:NCT05003986-E05:r1"
+  ],
+  [
+   "crit:NCT05003986-E05",
+   "requires",
+   "concept:medication:prednisolone 50 mg daily"
+  ],
+  [
+   "ev:SYN-0001-EV100",
+   "supports",
+   "dec:NCT05003986:NCT05003986-E05:r1"
+  ],
+  [
+   "concept:medication:prednisolone 50 mg daily",
+   "observed_as",
+   "ev:SYN-0001-EV195"
+  ],
+  [
+   "ev:SYN-0001-EV195",
+   "derived_from",
+   "src:SYN-0001-D07:4045-4157"
+  ],
+  [
+   "ev:SYN-0001-EV195",
+   "supports",
+   "dec:NCT05003986:NCT05003986-E05:r1"
+  ],
+  [
+   "trial:NCT05003986",
+   "has_criterion",
+   "crit:NCT05003986-E06"
+  ],
+  [
+   "crit:NCT05003986-E06",
+   "decided_as",
+   "dec:NCT05003986:NCT05003986-E06:r1"
+  ],
+  [
+   "trial:NCT05003986",
+   "has_criterion",
+   "crit:NCT05003986-E07"
+  ],
+  [
+   "crit:NCT05003986-E07",
+   "decided_as",
+   "dec:NCT05003986:NCT05003986-E07:r1"
+  ],
+  [
+   "crit:NCT05003986-E07",
+   "requires",
+   "concept:procedure:prior surgery"
+  ],
+  [
+   "ev:SYN-0001-EV095",
+   "supports",
+   "dec:NCT05003986:NCT05003986-E07:r1"
+  ],
+  [
+   "trial:NCT05003986",
+   "has_criterion",
+   "crit:NCT05003986-E08"
+  ],
+  [
+   "crit:NCT05003986-E08",
+   "decided_as",
+   "dec:NCT05003986:NCT05003986-E08:r1"
+  ],
+  [
+   "crit:NCT05003986-E08",
+   "requires",
+   "concept:diagnosis:other cardiac history"
+  ],
+  [
+   "ev:SYN-0001-EV085",
+   "supports",
+   "dec:NCT05003986:NCT05003986-E08:r1"
+  ],
+  [
+   "trial:NCT05003986",
+   "has_criterion",
+   "crit:NCT05003986-E09"
+  ],
+  [
+   "crit:NCT05003986-E09",
+   "decided_as",
+   "dec:NCT05003986:NCT05003986-E09:r1"
+  ],
+  [
+   "crit:NCT05003986-E09",
+   "requires",
+   "concept:diagnosis:other cardiac history"
+  ],
+  [
+   "ev:SYN-0001-EV085",
+   "supports",
+   "dec:NCT05003986:NCT05003986-E09:r1"
+  ],
+  [
+   "crit:NCT05003986-E09",
+   "requires",
+   "concept:symptom_finding:murmur"
+  ],
+  [
+   "ev:SYN-0001-EV160",
+   "supports",
+   "dec:NCT05003986:NCT05003986-E09:r1"
+  ],
+  [
+   "trial:NCT05003986",
+   "has_criterion",
+   "crit:NCT05003986-E10"
+  ],
+  [
+   "crit:NCT05003986-E10",
+   "decided_as",
+   "dec:NCT05003986:NCT05003986-E10:r1"
+  ],
+  [
+   "trial:NCT05003986",
+   "has_criterion",
+   "crit:NCT05003986-E11"
+  ],
+  [
+   "crit:NCT05003986-E11",
+   "decided_as",
+   "dec:NCT05003986:NCT05003986-E11:r1"
+  ],
+  [
+   "crit:NCT05003986-E11",
+   "requires",
+   "concept:alt"
+  ],
+  [
+   "concept:alt",
+   "observed_as",
+   "ev:SYN-0001-EV233"
+  ],
+  [
+   "ev:SYN-0001-EV233",
+   "derived_from",
+   "src:SYN-0001-D08:1020-1042"
+  ],
+  [
+   "ev:SYN-0001-EV233",
+   "supports",
+   "dec:NCT05003986:NCT05003986-E11:r1"
+  ],
+  [
+   "crit:NCT05003986-E11",
+   "requires",
+   "concept:ast"
+  ],
+  [
+   "concept:ast",
+   "observed_as",
+   "ev:SYN-0001-EV232"
+  ],
+  [
+   "ev:SYN-0001-EV232",
+   "derived_from",
+   "src:SYN-0001-D08:997-1019"
+  ],
+  [
+   "ev:SYN-0001-EV232",
+   "supports",
+   "dec:NCT05003986:NCT05003986-E11:r1"
+  ],
+  [
+   "crit:NCT05003986-E11",
+   "requires",
+   "concept:bilirubin_total"
+  ],
+  [
+   "concept:bilirubin_total",
+   "observed_as",
+   "ev:SYN-0001-EV235"
+  ],
+  [
+   "ev:SYN-0001-EV235",
+   "derived_from",
+   "src:SYN-0001-D08:1086-1125"
+  ],
+  [
+   "ev:SYN-0001-EV235",
+   "supports",
+   "dec:NCT05003986:NCT05003986-E11:r1"
+  ],
+  [
+   "crit:NCT05003986-E11",
+   "requires",
+   "concept:diagnosis:other hepatic history"
+  ],
+  [
+   "concept:diagnosis:other hepatic history",
+   "observed_as",
+   "ev:SYN-0001-EV087"
+  ],
+  [
+   "ev:SYN-0001-EV087",
+   "derived_from",
+   "src:SYN-0001-D07:1261-1350"
+  ],
+  [
+   "ev:SYN-0001-EV087",
+   "supports",
+   "dec:NCT05003986:NCT05003986-E11:r1"
+  ],
+  [
+   "trial:NCT05003986",
+   "has_criterion",
+   "crit:NCT05003986-E12"
+  ],
+  [
+   "crit:NCT05003986-E12",
+   "decided_as",
+   "dec:NCT05003986:NCT05003986-E12:r1"
+  ],
+  [
+   "crit:NCT05003986-E12",
+   "requires",
+   "concept:diagnosis:malignancy"
+  ],
+  [
+   "concept:diagnosis:malignancy",
+   "observed_as",
+   "ev:SYN-0001-EV094"
+  ],
+  [
+   "ev:SYN-0001-EV094",
+   "derived_from",
+   "src:SYN-0001-D07:1351-1420"
+  ],
+  [
+   "ev:SYN-0001-EV094",
+   "supports",
+   "dec:NCT05003986:NCT05003986-E12:r1"
+  ],
+  [
+   "trial:NCT05003986",
+   "has_criterion",
+   "crit:NCT05003986-E13"
+  ],
+  [
+   "crit:NCT05003986-E13",
+   "decided_as",
+   "dec:NCT05003986:NCT05003986-E13:r1"
+  ],
+  [
+   "crit:NCT05003986-E13",
+   "requires",
+   "concept:hemoglobin"
+  ],
+  [
+   "concept:hemoglobin",
+   "observed_as",
+   "ev:SYN-0001-EV208"
+  ],
+  [
+   "ev:SYN-0001-EV208",
+   "derived_from",
+   "src:SYN-0001-D08:136-172"
+  ],
+  [
+   "ev:SYN-0001-EV208",
+   "supports",
+   "dec:NCT05003986:NCT05003986-E13:r1"
+  ],
+  [
+   "crit:NCT05003986-E13",
+   "requires",
+   "concept:lab_other:hematocrit"
+  ],
+  [
+   "concept:lab_other:hematocrit",
+   "observed_as",
+   "ev:SYN-0001-EV209"
+  ],
+  [
+   "ev:SYN-0001-EV209",
+   "derived_from",
+   "src:SYN-0001-D08:173-202"
+  ],
+  [
+   "ev:SYN-0001-EV209",
+   "supports",
+   "dec:NCT05003986:NCT05003986-E13:r1"
+  ],
+  [
+   "trial:NCT05003986",
+   "has_criterion",
+   "crit:NCT05003986-E14"
+  ],
+  [
+   "crit:NCT05003986-E14",
+   "decided_as",
+   "dec:NCT05003986:NCT05003986-E14:r1"
+  ],
+  [
+   "crit:NCT05003986-E14",
+   "requires",
+   "concept:potassium"
+  ],
+  [
+   "concept:potassium",
+   "observed_as",
+   "ev:SYN-0001-EV219"
+  ],
+  [
+   "ev:SYN-0001-EV219",
+   "derived_from",
+   "src:SYN-0001-D08:539-573"
+  ],
+  [
+   "ev:SYN-0001-EV219",
+   "supports",
+   "dec:NCT05003986:NCT05003986-E14:r1"
+  ],
+  [
+   "calc:NCT05003986:NCT05003986-E14",
+   "computes",
+   "dec:NCT05003986:NCT05003986-E14:r1"
+  ],
+  [
+   "trial:NCT05003986",
+   "has_criterion",
+   "crit:NCT05003986-E15"
+  ],
+  [
+   "crit:NCT05003986-E15",
+   "decided_as",
+   "dec:NCT05003986:NCT05003986-E15:r1"
+  ],
+  [
+   "crit:NCT05003986-E15",
+   "requires",
+   "concept:albumin"
+  ],
+  [
+   "concept:albumin",
+   "observed_as",
+   "ev:SYN-0001-EV231"
+  ],
+  [
+   "ev:SYN-0001-EV231",
+   "derived_from",
+   "src:SYN-0001-D08:964-996"
+  ],
+  [
+   "ev:SYN-0001-EV231",
+   "insufficient_for",
+   "dec:NCT05003986:NCT05003986-E15:r1"
+  ],
+  [
+   "crit:NCT05003986-E15",
+   "requires",
+   "concept:total_cholesterol"
+  ],
+  [
+   "concept:total_cholesterol",
+   "observed_as",
+   "ev:SYN-0001-EV236"
+  ],
+  [
+   "ev:SYN-0001-EV236",
+   "derived_from",
+   "src:SYN-0001-D08:1154-1194"
+  ],
+  [
+   "ev:SYN-0001-EV236",
+   "insufficient_for",
+   "dec:NCT05003986:NCT05003986-E15:r1"
+  ],
+  [
+   "crit:NCT05003986-E15",
+   "requires",
+   "concept:calcium:calcium"
+  ],
+  [
+   "concept:calcium:calcium",
+   "observed_as",
+   "ev:SYN-0001-EV226"
+  ],
+  [
+   "ev:SYN-0001-EV226",
+   "derived_from",
+   "src:SYN-0001-D08:794-828"
+  ],
+  [
+   "ev:SYN-0001-EV226",
+   "insufficient_for",
+   "dec:NCT05003986:NCT05003986-E15:r1"
+  ],
+  [
+   "crit:NCT05003986-E15",
+   "requires",
+   "concept:lab_other:25-oh vitamin d"
+  ],
+  [
+   "concept:lab_other:25-oh vitamin d",
+   "observed_as",
+   "ev:SYN-0001-EV240"
+  ],
+  [
+   "ev:SYN-0001-EV240",
+   "derived_from",
+   "src:SYN-0001-D08:1293-1332"
+  ],
+  [
+   "ev:SYN-0001-EV240",
+   "insufficient_for",
+   "dec:NCT05003986:NCT05003986-E15:r1"
+  ],
+  [
+   "trial:NCT05003986",
+   "has_criterion",
+   "crit:NCT05003986-E16"
+  ],
+  [
+   "crit:NCT05003986-E16",
+   "decided_as",
+   "dec:NCT05003986:NCT05003986-E16:r1"
+  ],
+  [
+   "crit:NCT05003986-E16",
+   "requires",
+   "concept:allergy:no known drug allergies"
+  ],
+  [
+   "ev:SYN-0001-EV096",
+   "supports",
+   "dec:NCT05003986:NCT05003986-E16:r1"
+  ],
+  [
+   "crit:NCT05003986-E16",
+   "requires",
+   "concept:allergy:food allergy"
+  ],
+  [
+   "concept:allergy:food allergy",
+   "observed_as",
+   "ev:SYN-0001-EV097"
+  ],
+  [
+   "ev:SYN-0001-EV097",
+   "derived_from",
+   "src:SYN-0001-D07:1469-1485"
+  ],
+  [
+   "ev:SYN-0001-EV097",
+   "supports",
+   "dec:NCT05003986:NCT05003986-E16:r1"
+  ],
+  [
+   "trial:NCT05003986",
+   "has_criterion",
+   "crit:NCT05003986-E17"
+  ],
+  [
+   "crit:NCT05003986-E17",
+   "decided_as",
+   "dec:NCT05003986:NCT05003986-E17:r1"
+  ],
+  [
+   "crit:NCT05003986-E17",
+   "requires",
+   "concept:sex"
+  ],
+  [
+   "concept:sex",
+   "observed_as",
+   "ev:SYN-0001-EV001"
+  ],
+  [
+   "ev:SYN-0001-EV001",
+   "derived_from",
+   "src:SYN-0001-D01:0-5"
+  ],
+  [
+   "ev:SYN-0001-EV001",
+   "supports",
+   "dec:NCT05003986:NCT05003986-E17:r1"
+  ],
+  [
+   "trial:NCT05003986",
+   "has_criterion",
+   "crit:NCT05003986-E18"
+  ],
+  [
+   "crit:NCT05003986-E18",
+   "decided_as",
+   "dec:NCT05003986:NCT05003986-E18:r1"
+  ],
+  [
+   "crit:NCT05003986-E18",
+   "requires",
+   "concept:sex"
+  ],
+  [
+   "ev:SYN-0001-EV001",
+   "supports",
+   "dec:NCT05003986:NCT05003986-E18:r1"
+  ],
+  [
+   "trial:NCT05003986",
+   "has_criterion",
+   "crit:NCT05003986-E19"
+  ],
+  [
+   "crit:NCT05003986-E19",
+   "decided_as",
+   "dec:NCT05003986:NCT05003986-E19:r1"
+  ],
+  [
+   "trial:NCT05003986",
+   "has_criterion",
+   "crit:NCT05003986-E20"
+  ],
+  [
+   "crit:NCT05003986-E20",
+   "decided_as",
+   "dec:NCT05003986:NCT05003986-E20:r1"
+  ],
+  [
+   "trial:NCT05003986",
+   "has_criterion",
+   "crit:NCT05003986-E21"
+  ],
+  [
+   "crit:NCT05003986-E21",
+   "decided_as",
+   "dec:NCT05003986:NCT05003986-E21:r1"
+  ],
+  [
+   "trial:NCT05003986",
+   "has_criterion",
+   "crit:NCT05003986-E22"
+  ],
+  [
+   "crit:NCT05003986-E22",
+   "decided_as",
+   "dec:NCT05003986:NCT05003986-E22:r1"
+  ],
+  [
+   "crit:NCT05003986-E22",
+   "requires",
+   "concept:diagnosis:idiopathic nephrotic syndrome"
+  ],
+  [
+   "ev:SYN-0001-EV192",
+   "supports",
+   "dec:NCT05003986:NCT05003986-E22:r1"
+  ],
+  [
+   "trial:NCT05003986",
+   "labelled",
+   "label:NCT05003986"
+  ],
+  [
+   "trial:NCT07674147",
+   "has_criterion",
+   "crit:NCT07674147-I01"
+  ],
+  [
+   "crit:NCT07674147-I01",
+   "decided_as",
+   "dec:NCT07674147:NCT07674147-I01:r1"
+  ],
+  [
+   "trial:NCT07674147",
+   "has_criterion",
+   "crit:NCT07674147-I02"
+  ],
+  [
+   "crit:NCT07674147-I02",
+   "decided_as",
+   "dec:NCT07674147:NCT07674147-I02:r1"
+  ],
+  [
+   "crit:NCT07674147-I02",
+   "requires",
+   "concept:birth_date"
+  ],
+  [
+   "ev:SYN-0001-EV002",
+   "supports",
+   "dec:NCT07674147:NCT07674147-I02:r1"
+  ],
+  [
+   "calc:NCT07674147:NCT07674147-I02",
+   "computes",
+   "dec:NCT07674147:NCT07674147-I02:r1"
+  ],
+  [
+   "trial:NCT07674147",
+   "has_criterion",
+   "crit:NCT07674147-I03"
+  ],
+  [
+   "crit:NCT07674147-I03",
+   "decided_as",
+   "dec:NCT07674147:NCT07674147-I03:r1"
+  ],
+  [
+   "trial:NCT07674147",
+   "has_criterion",
+   "crit:NCT07674147-I04"
+  ],
+  [
+   "crit:NCT07674147-I04",
+   "decided_as",
+   "dec:NCT07674147:NCT07674147-I04:r1"
+  ],
+  [
+   "crit:NCT07674147-I04",
+   "requires",
+   "concept:sex"
+  ],
+  [
+   "ev:SYN-0001-EV001",
+   "supports",
+   "dec:NCT07674147:NCT07674147-I04:r1"
+  ],
+  [
+   "trial:NCT07674147",
+   "has_criterion",
+   "crit:NCT07674147-I05"
+  ],
+  [
+   "crit:NCT07674147-I05",
+   "decided_as",
+   "dec:NCT07674147:NCT07674147-I05:r1"
+  ],
+  [
+   "trial:NCT07674147",
+   "has_criterion",
+   "crit:NCT07674147-I23"
+  ],
+  [
+   "crit:NCT07674147-I23",
+   "decided_as",
+   "dec:NCT07674147:NCT07674147-I23:r1"
+  ],
+  [
+   "crit:NCT07674147-I23",
+   "requires",
+   "concept:diagnosis:remission"
+  ],
+  [
+   "ev:SYN-0001-EV179",
+   "supports",
+   "dec:NCT07674147:NCT07674147-I23:r1"
+  ],
+  [
+   "crit:NCT07674147-I23",
+   "requires",
+   "concept:diagnosis:idiopathic nephrotic syndrome"
+  ],
+  [
+   "ev:SYN-0001-EV192",
+   "supports",
+   "dec:NCT07674147:NCT07674147-I23:r1"
+  ],
+  [
+   "trial:NCT07674147",
+   "has_criterion",
+   "crit:NCT07674147-I24"
+  ],
+  [
+   "crit:NCT07674147-I24",
+   "decided_as",
+   "dec:NCT07674147:NCT07674147-I24:r1"
+  ],
+  [
+   "crit:NCT07674147-I24",
+   "requires",
+   "concept:diagnosis:remission"
+  ],
+  [
+   "ev:SYN-0001-EV179",
+   "supports",
+   "dec:NCT07674147:NCT07674147-I24:r1"
+  ],
+  [
+   "crit:NCT07674147-I24",
+   "requires",
+   "concept:medication:medications"
+  ],
+  [
+   "ev:SYN-0001-EV098",
+   "supports",
+   "dec:NCT07674147:NCT07674147-I24:r1"
+  ],
+  [
+   "crit:NCT07674147-I24",
+   "requires",
+   "concept:medication:prednisolone 50 mg daily"
+  ],
+  [
+   "ev:SYN-0001-EV099",
+   "supports",
+   "dec:NCT07674147:NCT07674147-I24:r1"
+  ],
+  [
+   "trial:NCT07674147",
+   "has_criterion",
+   "crit:NCT07674147-I25"
+  ],
+  [
+   "crit:NCT07674147-I25",
+   "decided_as",
+   "dec:NCT07674147:NCT07674147-I25:r1"
+  ],
+  [
+   "crit:NCT07674147-I25",
+   "requires",
+   "concept:procedure:kidney biopsy"
+  ],
+  [
+   "ev:SYN-0001-EV057",
+   "supports",
+   "dec:NCT07674147:NCT07674147-I25:r1"
+  ],
+  [
+   "crit:NCT07674147-I25",
+   "requires",
+   "concept:treatment_plan:kidney biopsy"
+  ],
+  [
+   "ev:SYN-0001-EV196",
+   "supports",
+   "dec:NCT07674147:NCT07674147-I25:r1"
+  ],
+  [
+   "trial:NCT07674147",
+   "has_criterion",
+   "crit:NCT07674147-E01"
+  ],
+  [
+   "crit:NCT07674147-E01",
+   "decided_as",
+   "dec:NCT07674147:NCT07674147-E01:r1"
+  ],
+  [
+   "crit:NCT07674147-E01",
+   "requires",
+   "concept:diagnosis:other autoimmune history"
+  ],
+  [
+   "concept:diagnosis:other autoimmune history",
+   "observed_as",
+   "ev:SYN-0001-EV089"
+  ],
+  [
+   "ev:SYN-0001-EV089",
+   "derived_from",
+   "src:SYN-0001-D07:1261-1350"
+  ],
+  [
+   "ev:SYN-0001-EV089",
+   "supports",
+   "dec:NCT07674147:NCT07674147-E01:r1"
+  ],
+  [
+   "trial:NCT07674147",
+   "has_criterion",
+   "crit:NCT07674147-E02"
+  ],
+  [
+   "crit:NCT07674147-E02",
+   "decided_as",
+   "dec:NCT07674147:NCT07674147-E02:r1"
+  ],
+  [
+   "trial:NCT07674147",
+   "has_criterion",
+   "crit:NCT07674147-E03"
+  ],
+  [
+   "crit:NCT07674147-E03",
+   "decided_as",
+   "dec:NCT07674147:NCT07674147-E03:r1"
+  ],
+  [
+   "trial:NCT07674147",
+   "has_criterion",
+   "crit:NCT07674147-E04"
+  ],
+  [
+   "crit:NCT07674147-E04",
+   "decided_as",
+   "dec:NCT07674147:NCT07674147-E04:r1"
+  ],
+  [
+   "crit:NCT07674147-E04",
+   "requires",
+   "concept:diagnosis:other cardiac history"
+  ],
+  [
+   "ev:SYN-0001-EV085",
+   "supports",
+   "dec:NCT07674147:NCT07674147-E04:r1"
+  ],
+  [
+   "crit:NCT07674147-E04",
+   "requires",
+   "concept:procedure:prior surgery"
+  ],
+  [
+   "ev:SYN-0001-EV095",
+   "supports",
+   "dec:NCT07674147:NCT07674147-E04:r1"
+  ],
+  [
+   "trial:NCT07674147",
+   "has_criterion",
+   "crit:NCT07674147-E05"
+  ],
+  [
+   "crit:NCT07674147-E05",
+   "decided_as",
+   "dec:NCT07674147:NCT07674147-E05:r1"
+  ],
+  [
+   "crit:NCT07674147-E05",
+   "requires",
+   "concept:diagnosis:other neurologic history"
+  ],
+  [
+   "concept:diagnosis:other neurologic history",
+   "observed_as",
+   "ev:SYN-0001-EV091"
+  ],
+  [
+   "ev:SYN-0001-EV091",
+   "derived_from",
+   "src:SYN-0001-D07:1261-1350"
+  ],
+  [
+   "ev:SYN-0001-EV091",
+   "supports",
+   "dec:NCT07674147:NCT07674147-E05:r1"
+  ],
+  [
+   "crit:NCT07674147-E05",
+   "requires",
+   "concept:symptom_finding:seizures"
+  ],
+  [
+   "concept:symptom_finding:seizures",
+   "observed_as",
+   "ev:SYN-0001-EV148"
+  ],
+  [
+   "ev:SYN-0001-EV148",
+   "derived_from",
+   "src:SYN-0001-D07:2638-2685"
+  ],
+  [
+   "ev:SYN-0001-EV148",
+   "supports",
+   "dec:NCT07674147:NCT07674147-E05:r1"
+  ],
+  [
+   "trial:NCT07674147",
+   "has_criterion",
+   "crit:NCT07674147-E06"
+  ],
+  [
+   "crit:NCT07674147-E06",
+   "decided_as",
+   "dec:NCT07674147:NCT07674147-E06:r1"
+  ],
+  [
+   "crit:NCT07674147-E06",
+   "requires",
+   "concept:diagnosis:malignancy"
+  ],
+  [
+   "ev:SYN-0001-EV094",
+   "supports",
+   "dec:NCT07674147:NCT07674147-E06:r1"
+  ],
+  [
+   "trial:NCT07674147",
+   "has_criterion",
+   "crit:NCT07674147-E07"
+  ],
+  [
+   "crit:NCT07674147-E07",
+   "decided_as",
+   "dec:NCT07674147:NCT07674147-E07:r1"
+  ],
+  [
+   "trial:NCT07674147",
+   "has_criterion",
+   "crit:NCT07674147-E08"
+  ],
+  [
+   "crit:NCT07674147-E08",
+   "decided_as",
+   "dec:NCT07674147:NCT07674147-E08:r1"
+  ],
+  [
+   "crit:NCT07674147-E08",
+   "requires",
+   "concept:diagnosis:infection"
+  ],
+  [
+   "concept:diagnosis:infection",
+   "observed_as",
+   "ev:SYN-0001-EV187"
+  ],
+  [
+   "ev:SYN-0001-EV187",
+   "derived_from",
+   "src:SYN-0001-D07:3739-3797"
+  ],
+  [
+   "ev:SYN-0001-EV187",
+   "supports",
+   "dec:NCT07674147:NCT07674147-E08:r1"
+  ],
+  [
+   "trial:NCT07674147",
+   "has_criterion",
+   "crit:NCT07674147-E09"
+  ],
+  [
+   "crit:NCT07674147-E09",
+   "decided_as",
+   "dec:NCT07674147:NCT07674147-E09:r1"
+  ],
+  [
+   "trial:NCT07674147",
+   "has_criterion",
+   "crit:NCT07674147-E10"
+  ],
+  [
+   "crit:NCT07674147-E10",
+   "decided_as",
+   "dec:NCT07674147:NCT07674147-E10:r1"
+  ],
+  [
+   "crit:NCT07674147-E10",
+   "requires",
+   "concept:hepatitis_b:hepatitis b sag"
+  ],
+  [
+   "concept:hepatitis_b:hepatitis b sag",
+   "observed_as",
+   "ev:SYN-0001-EV243"
+  ],
+  [
+   "ev:SYN-0001-EV243",
+   "derived_from",
+   "src:SYN-0001-D08:1392-1432"
+  ],
+  [
+   "ev:SYN-0001-EV243",
+   "supports",
+   "dec:NCT07674147:NCT07674147-E10:r1"
+  ],
+  [
+   "crit:NCT07674147-E10",
+   "requires",
+   "concept:hepatitis_b:hbsag"
+  ],
+  [
+   "concept:hepatitis_b:hbsag",
+   "observed_as",
+   "ev:SYN-0001-EV054"
+  ],
+  [
+   "ev:SYN-0001-EV054",
+   "derived_from",
+   "src:SYN-0001-D07:344-358"
+  ],
+  [
+   "ev:SYN-0001-EV054",
+   "supports",
+   "dec:NCT07674147:NCT07674147-E10:r1"
+  ],
+  [
+   "trial:NCT07674147",
+   "has_criterion",
+   "crit:NCT07674147-E11"
+  ],
+  [
+   "crit:NCT07674147-E11",
+   "decided_as",
+   "dec:NCT07674147:NCT07674147-E11:r1"
+  ],
+  [
+   "trial:NCT07674147",
+   "has_criterion",
+   "crit:NCT07674147-E12"
+  ],
+  [
+   "crit:NCT07674147-E12",
+   "decided_as",
+   "dec:NCT07674147:NCT07674147-E12:r1"
+  ],
+  [
+   "crit:NCT07674147-E12",
+   "requires",
+   "concept:diagnosis:prior serious infections"
+  ],
+  [
+   "concept:diagnosis:prior serious infections",
+   "observed_as",
+   "ev:SYN-0001-EV093"
+  ],
+  [
+   "ev:SYN-0001-EV093",
+   "derived_from",
+   "src:SYN-0001-D07:1351-1420"
+  ],
+  [
+   "ev:SYN-0001-EV093",
+   "supports",
+   "dec:NCT07674147:NCT07674147-E12:r1"
+  ],
+  [
+   "trial:NCT07674147",
+   "has_criterion",
+   "crit:NCT07674147-E13"
+  ],
+  [
+   "crit:NCT07674147-E13",
+   "decided_as",
+   "dec:NCT07674147:NCT07674147-E13:r1"
+  ],
+  [
+   "trial:NCT07674147",
+   "has_criterion",
+   "crit:NCT07674147-E14"
+  ],
+  [
+   "crit:NCT07674147-E14",
+   "decided_as",
+   "dec:NCT07674147:NCT07674147-E14:r1"
+  ],
+  [
+   "crit:NCT07674147-E14",
+   "requires",
+   "concept:social_history:up to date per mother"
+  ],
+  [
+   "concept:social_history:up to date per mother",
+   "observed_as",
+   "ev:SYN-0001-EV266"
+  ],
+  [
+   "ev:SYN-0001-EV266",
+   "derived_from",
+   "src:SYN-0001-D07:1821-1843"
+  ],
+  [
+   "ev:SYN-0001-EV266",
+   "insufficient_for",
+   "dec:NCT07674147:NCT07674147-E14:r1"
+  ],
+  [
+   "trial:NCT07674147",
+   "has_criterion",
+   "crit:NCT07674147-E15"
+  ],
+  [
+   "crit:NCT07674147-E15",
+   "decided_as",
+   "dec:NCT07674147:NCT07674147-E15:r1"
+  ],
+  [
+   "crit:NCT07674147-E15",
+   "requires",
+   "concept:allergy:no known drug allergies"
+  ],
+  [
+   "ev:SYN-0001-EV096",
+   "supports",
+   "dec:NCT07674147:NCT07674147-E15:r1"
+  ],
+  [
+   "crit:NCT07674147-E15",
+   "requires",
+   "concept:allergy:food allergy"
+  ],
+  [
+   "ev:SYN-0001-EV097",
+   "supports",
+   "dec:NCT07674147:NCT07674147-E15:r1"
+  ],
+  [
+   "trial:NCT07674147",
+   "has_criterion",
+   "crit:NCT07674147-E16"
+  ],
+  [
+   "crit:NCT07674147-E16",
+   "decided_as",
+   "dec:NCT07674147:NCT07674147-E16:r1"
+  ],
+  [
+   "crit:NCT07674147-E16",
+   "requires",
+   "concept:allergy:no known drug allergies"
+  ],
+  [
+   "ev:SYN-0001-EV096",
+   "supports",
+   "dec:NCT07674147:NCT07674147-E16:r1"
+  ],
+  [
+   "trial:NCT07674147",
+   "has_criterion",
+   "crit:NCT07674147-E17"
+  ],
+  [
+   "crit:NCT07674147-E17",
+   "decided_as",
+   "dec:NCT07674147:NCT07674147-E17:r1"
+  ],
+  [
+   "trial:NCT07674147",
+   "has_criterion",
+   "crit:NCT07674147-E18"
+  ],
+  [
+   "crit:NCT07674147-E18",
+   "decided_as",
+   "dec:NCT07674147:NCT07674147-E18:r1"
+  ],
+  [
+   "crit:NCT07674147-E18",
+   "requires",
+   "concept:sex"
+  ],
+  [
+   "ev:SYN-0001-EV001",
+   "supports",
+   "dec:NCT07674147:NCT07674147-E18:r1"
+  ],
+  [
+   "trial:NCT07674147",
+   "has_criterion",
+   "crit:NCT07674147-E19"
+  ],
+  [
+   "crit:NCT07674147-E19",
+   "decided_as",
+   "dec:NCT07674147:NCT07674147-E19:r1"
+  ],
+  [
+   "trial:NCT07674147",
+   "has_criterion",
+   "crit:NCT07674147-E32"
+  ],
+  [
+   "crit:NCT07674147-E32",
+   "decided_as",
+   "dec:NCT07674147:NCT07674147-E32:r1"
+  ],
+  [
+   "trial:NCT07674147",
+   "has_criterion",
+   "crit:NCT07674147-E34"
+  ],
+  [
+   "crit:NCT07674147-E34",
+   "decided_as",
+   "dec:NCT07674147:NCT07674147-E34:r1"
+  ],
+  [
+   "crit:NCT07674147-E34",
+   "requires",
+   "concept:diagnosis:other renal history"
+  ],
+  [
+   "ev:SYN-0001-EV088",
+   "supports",
+   "dec:NCT07674147:NCT07674147-E34:r1"
+  ],
+  [
+   "crit:NCT07674147-E34",
+   "requires",
+   "concept:creatinine"
+  ],
+  [
+   "concept:creatinine",
+   "observed_as",
+   "ev:SYN-0001-EV183"
+  ],
+  [
+   "ev:SYN-0001-EV183",
+   "derived_from",
+   "src:SYN-0001-D07:3672-3713"
+  ],
+  [
+   "ev:SYN-0001-EV183",
+   "supports",
+   "dec:NCT07674147:NCT07674147-E34:r1"
+  ],
+  [
+   "trial:NCT07674147",
+   "has_criterion",
+   "crit:NCT07674147-E35"
+  ],
+  [
+   "crit:NCT07674147-E35",
+   "decided_as",
+   "dec:NCT07674147:NCT07674147-E35:r1"
+  ],
+  [
+   "crit:NCT07674147-E35",
+   "requires",
+   "concept:blood_pressure"
+  ],
+  [
+   "ev:SYN-0001-EV078",
+   "supports",
+   "dec:NCT07674147:NCT07674147-E35:r1"
+  ],
+  [
+   "crit:NCT07674147-E35",
+   "requires",
+   "concept:symptom_finding:bp normal."
+  ],
+  [
+   "ev:SYN-0001-EV268",
+   "supports",
+   "dec:NCT07674147:NCT07674147-E35:r1"
+  ],
+  [
+   "trial:NCT07674147",
+   "has_criterion",
+   "crit:NCT07674147-E37"
+  ],
+  [
+   "crit:NCT07674147-E37",
+   "decided_as",
+   "dec:NCT07674147:NCT07674147-E37:r1"
+  ],
+  [
+   "crit:NCT07674147-E37",
+   "requires",
+   "concept:diagnosis:idiopathic nephrotic syndrome"
+  ],
+  [
+   "ev:SYN-0001-EV192",
+   "supports",
+   "dec:NCT07674147:NCT07674147-E37:r1"
+  ],
+  [
+   "concept:diagnosis:idiopathic nephrotic syndrome",
+   "observed_as",
+   "ev:SYN-0001-EV043"
+  ],
+  [
+   "ev:SYN-0001-EV043",
+   "derived_from",
+   "src:SYN-0001-D07:0-157"
+  ],
+  [
+   "ev:SYN-0001-EV043",
+   "supports",
+   "dec:NCT07674147:NCT07674147-E37:r1"
+  ],
+  [
+   "trial:NCT07674147",
+   "has_criterion",
+   "crit:NCT07674147-E38"
+  ],
+  [
+   "crit:NCT07674147-E38",
+   "decided_as",
+   "dec:NCT07674147:NCT07674147-E38:r1"
+  ],
+  [
+   "trial:NCT07674147",
+   "has_criterion",
+   "crit:NCT07674147-E39"
+  ],
+  [
+   "crit:NCT07674147-E39",
+   "decided_as",
+   "dec:NCT07674147:NCT07674147-E39:r1"
+  ],
+  [
+   "crit:NCT07674147-E39",
+   "requires",
+   "concept:medication:prednisolone 50 mg daily"
+  ],
+  [
+   "ev:SYN-0001-EV099",
+   "supports",
+   "dec:NCT07674147:NCT07674147-E39:r1"
+  ],
+  [
+   "ev:SYN-0001-EV195",
+   "supports",
+   "dec:NCT07674147:NCT07674147-E39:r1"
+  ],
+  [
+   "trial:NCT07674147",
+   "has_criterion",
+   "crit:NCT07674147-E40"
+  ],
+  [
+   "crit:NCT07674147-E40",
+   "decided_as",
+   "dec:NCT07674147:NCT07674147-E40:r1"
+  ],
+  [
+   "crit:NCT07674147-E40",
+   "requires",
+   "concept:diagnosis:remission"
+  ],
+  [
+   "ev:SYN-0001-EV179",
+   "supports",
+   "dec:NCT07674147:NCT07674147-E40:r1"
+  ],
+  [
+   "crit:NCT07674147-E40",
+   "requires",
+   "concept:symptom_finding:relapses"
+  ],
+  [
+   "concept:symptom_finding:relapses",
+   "observed_as",
+   "ev:SYN-0001-EV180"
+  ],
+  [
+   "ev:SYN-0001-EV180",
+   "derived_from",
+   "src:SYN-0001-D07:3576-3588"
+  ],
+  [
+   "ev:SYN-0001-EV180",
+   "supports",
+   "dec:NCT07674147:NCT07674147-E40:r1"
+  ],
+  [
+   "trial:NCT07674147",
+   "has_criterion",
+   "crit:NCT07674147-I06"
+  ],
+  [
+   "crit:NCT07674147-I06",
+   "decided_as",
+   "dec:NCT07674147:NCT07674147-I06:r1"
+  ],
+  [
+   "trial:NCT07674147",
+   "has_criterion",
+   "crit:NCT07674147-I07"
+  ],
+  [
+   "crit:NCT07674147-I07",
+   "decided_as",
+   "dec:NCT07674147:NCT07674147-I07:r1"
+  ],
+  [
+   "trial:NCT07674147",
+   "has_criterion",
+   "crit:NCT07674147-I08"
+  ],
+  [
+   "crit:NCT07674147-I08",
+   "decided_as",
+   "dec:NCT07674147:NCT07674147-I08:r1"
+  ],
+  [
+   "trial:NCT07674147",
+   "has_criterion",
+   "crit:NCT07674147-I09"
+  ],
+  [
+   "crit:NCT07674147-I09",
+   "decided_as",
+   "dec:NCT07674147:NCT07674147-I09:r1"
+  ],
+  [
+   "trial:NCT07674147",
+   "has_criterion",
+   "crit:NCT07674147-I10"
+  ],
+  [
+   "crit:NCT07674147-I10",
+   "decided_as",
+   "dec:NCT07674147:NCT07674147-I10:r1"
+  ],
+  [
+   "trial:NCT07674147",
+   "has_criterion",
+   "crit:NCT07674147-I11"
+  ],
+  [
+   "crit:NCT07674147-I11",
+   "decided_as",
+   "dec:NCT07674147:NCT07674147-I11:r1"
+  ],
+  [
+   "trial:NCT07674147",
+   "has_criterion",
+   "crit:NCT07674147-I12"
+  ],
+  [
+   "crit:NCT07674147-I12",
+   "decided_as",
+   "dec:NCT07674147:NCT07674147-I12:r1"
+  ],
+  [
+   "trial:NCT07674147",
+   "has_criterion",
+   "crit:NCT07674147-I13"
+  ],
+  [
+   "crit:NCT07674147-I13",
+   "decided_as",
+   "dec:NCT07674147:NCT07674147-I13:r1"
+  ],
+  [
+   "trial:NCT07674147",
+   "has_criterion",
+   "crit:NCT07674147-I14"
+  ],
+  [
+   "crit:NCT07674147-I14",
+   "decided_as",
+   "dec:NCT07674147:NCT07674147-I14:r1"
+  ],
+  [
+   "trial:NCT07674147",
+   "has_criterion",
+   "crit:NCT07674147-I15"
+  ],
+  [
+   "crit:NCT07674147-I15",
+   "decided_as",
+   "dec:NCT07674147:NCT07674147-I15:r1"
+  ],
+  [
+   "trial:NCT07674147",
+   "has_criterion",
+   "crit:NCT07674147-I16"
+  ],
+  [
+   "crit:NCT07674147-I16",
+   "decided_as",
+   "dec:NCT07674147:NCT07674147-I16:r1"
+  ],
+  [
+   "trial:NCT07674147",
+   "has_criterion",
+   "crit:NCT07674147-I17"
+  ],
+  [
+   "crit:NCT07674147-I17",
+   "decided_as",
+   "dec:NCT07674147:NCT07674147-I17:r1"
+  ],
+  [
+   "trial:NCT07674147",
+   "has_criterion",
+   "crit:NCT07674147-I18"
+  ],
+  [
+   "crit:NCT07674147-I18",
+   "decided_as",
+   "dec:NCT07674147:NCT07674147-I18:r1"
+  ],
+  [
+   "trial:NCT07674147",
+   "has_criterion",
+   "crit:NCT07674147-I19"
+  ],
+  [
+   "crit:NCT07674147-I19",
+   "decided_as",
+   "dec:NCT07674147:NCT07674147-I19:r1"
+  ],
+  [
+   "trial:NCT07674147",
+   "has_criterion",
+   "crit:NCT07674147-I20"
+  ],
+  [
+   "crit:NCT07674147-I20",
+   "decided_as",
+   "dec:NCT07674147:NCT07674147-I20:r1"
+  ],
+  [
+   "trial:NCT07674147",
+   "has_criterion",
+   "crit:NCT07674147-I21"
+  ],
+  [
+   "crit:NCT07674147-I21",
+   "decided_as",
+   "dec:NCT07674147:NCT07674147-I21:r1"
+  ],
+  [
+   "trial:NCT07674147",
+   "has_criterion",
+   "crit:NCT07674147-I22"
+  ],
+  [
+   "crit:NCT07674147-I22",
+   "decided_as",
+   "dec:NCT07674147:NCT07674147-I22:r1"
+  ],
+  [
+   "trial:NCT07674147",
+   "has_criterion",
+   "crit:NCT07674147-E20"
+  ],
+  [
+   "crit:NCT07674147-E20",
+   "decided_as",
+   "dec:NCT07674147:NCT07674147-E20:r1"
+  ],
+  [
+   "crit:NCT07674147-E20",
+   "requires",
+   "concept:symptom_finding:seizures"
+  ],
+  [
+   "ev:SYN-0001-EV148",
+   "supports",
+   "dec:NCT07674147:NCT07674147-E20:r1"
+  ],
+  [
+   "crit:NCT07674147-E20",
+   "requires",
+   "concept:diagnosis:other neurologic history"
+  ],
+  [
+   "ev:SYN-0001-EV091",
+   "supports",
+   "dec:NCT07674147:NCT07674147-E20:r1"
+  ],
+  [
+   "trial:NCT07674147",
+   "has_criterion",
+   "crit:NCT07674147-E21"
+  ],
+  [
+   "crit:NCT07674147-E21",
+   "decided_as",
+   "dec:NCT07674147:NCT07674147-E21:r1"
+  ],
+  [
+   "crit:NCT07674147-E21",
+   "requires",
+   "concept:medication:nsaids"
+  ],
+  [
+   "concept:medication:nsaids",
+   "observed_as",
+   "ev:SYN-0001-EV107"
+  ],
+  [
+   "ev:SYN-0001-EV107",
+   "derived_from",
+   "src:SYN-0001-D07:1762-1804"
+  ],
+  [
+   "ev:SYN-0001-EV107",
+   "supports",
+   "dec:NCT07674147:NCT07674147-E21:r1"
+  ],
+  [
+   "trial:NCT07674147",
+   "has_criterion",
+   "crit:NCT07674147-E22"
+  ],
+  [
+   "crit:NCT07674147-E22",
+   "decided_as",
+   "dec:NCT07674147:NCT07674147-E22:r1"
+  ],
+  [
+   "trial:NCT07674147",
+   "has_criterion",
+   "crit:NCT07674147-E23"
+  ],
+  [
+   "crit:NCT07674147-E23",
+   "decided_as",
+   "dec:NCT07674147:NCT07674147-E23:r1"
+  ],
+  [
+   "trial:NCT07674147",
+   "has_criterion",
+   "crit:NCT07674147-E24"
+  ],
+  [
+   "crit:NCT07674147-E24",
+   "decided_as",
+   "dec:NCT07674147:NCT07674147-E24:r1"
+  ],
+  [
+   "trial:NCT07674147",
+   "has_criterion",
+   "crit:NCT07674147-E25"
+  ],
+  [
+   "crit:NCT07674147-E25",
+   "decided_as",
+   "dec:NCT07674147:NCT07674147-E25:r1"
+  ],
+  [
+   "trial:NCT07674147",
+   "has_criterion",
+   "crit:NCT07674147-E26"
+  ],
+  [
+   "crit:NCT07674147-E26",
+   "decided_as",
+   "dec:NCT07674147:NCT07674147-E26:r1"
+  ],
+  [
+   "trial:NCT07674147",
+   "has_criterion",
+   "crit:NCT07674147-E27"
+  ],
+  [
+   "crit:NCT07674147-E27",
+   "decided_as",
+   "dec:NCT07674147:NCT07674147-E27:r1"
+  ],
+  [
+   "trial:NCT07674147",
+   "has_criterion",
+   "crit:NCT07674147-E28"
+  ],
+  [
+   "crit:NCT07674147-E28",
+   "decided_as",
+   "dec:NCT07674147:NCT07674147-E28:r1"
+  ],
+  [
+   "trial:NCT07674147",
+   "has_criterion",
+   "crit:NCT07674147-E29"
+  ],
+  [
+   "crit:NCT07674147-E29",
+   "decided_as",
+   "dec:NCT07674147:NCT07674147-E29:r1"
+  ],
+  [
+   "trial:NCT07674147",
+   "has_criterion",
+   "crit:NCT07674147-E30"
+  ],
+  [
+   "crit:NCT07674147-E30",
+   "decided_as",
+   "dec:NCT07674147:NCT07674147-E30:r1"
+  ],
+  [
+   "trial:NCT07674147",
+   "has_criterion",
+   "crit:NCT07674147-E31"
+  ],
+  [
+   "crit:NCT07674147-E31",
+   "decided_as",
+   "dec:NCT07674147:NCT07674147-E31:r1"
+  ],
+  [
+   "trial:NCT07674147",
+   "has_criterion",
+   "crit:NCT07674147-E33"
+  ],
+  [
+   "crit:NCT07674147-E33",
+   "decided_as",
+   "dec:NCT07674147:NCT07674147-E33:r1"
+  ],
+  [
+   "crit:NCT07674147-E33",
+   "requires",
+   "concept:diagnosis:idiopathic nephrotic syndrome"
+  ],
+  [
+   "ev:SYN-0001-EV084",
+   "supports",
+   "dec:NCT07674147:NCT07674147-E33:r1"
+  ],
+  [
+   "trial:NCT07674147",
+   "has_criterion",
+   "crit:NCT07674147-E36"
+  ],
+  [
+   "crit:NCT07674147-E36",
+   "decided_as",
+   "dec:NCT07674147:NCT07674147-E36:r1"
+  ],
+  [
+   "trial:NCT07674147",
+   "labelled",
+   "label:NCT07674147"
+  ]
+ ]
+}

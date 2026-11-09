@@ -1,0 +1,30 @@
+{
+ "patient_id": "SYN-0005",
+ "as_of": "2026-10-01",
+ "audience": "clinician",
+ "graph_file": "SYN-0005.json",
+ "ranking": [],
+ "also_mentioned": [],
+ "sentences": [
+  {
+   "text": "환자 SYN-0005, 기준일 2026-10-01",
+   "refs": [],
+   "kind": "meta"
+  },
+  {
+   "text": "추천할 시험 없음 (eligible·potential 없음)",
+   "refs": [],
+   "kind": "meta"
+  }
+ ],
+ "evidence": {
+  "files": [
+   "evidence_dev_haiku_v14_12.jsonl",
+   "evidence_dev_variants_haiku_v14_12.jsonl"
+  ],
+  "sha256": "daba4f5f1e16ec2eefc47311f5c13f85e6b5f218c85424f08f9af3d9bab09124",
+  "id_series": "haiku",
+  "graph_ev_nodes_checked": 2240
+ },
+ "agent6": "a6-0.4.14"
+}

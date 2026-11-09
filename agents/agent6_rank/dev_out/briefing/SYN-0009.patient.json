@@ -1,0 +1,188 @@
+{
+ "patient_id": "SYN-0009",
+ "as_of": "2026-10-01",
+ "audience": "patient",
+ "graph_file": "SYN-0009.json",
+ "ranking": [
+  "NCT04929223"
+ ],
+ "sentences": [
+  {
+   "text": "이 안내는 치료 추천이 아니라, 연구(임상시험) 참여를 검토하실 때 참고하실 정보입니다.",
+   "refs": [
+    "rule:research_not_treatment"
+   ],
+   "kind": "rule"
+  },
+  {
+   "text": "1번 시험 — 아직 확인이 필요한 조건이 있습니다.",
+   "refs": [
+    "label:NCT04929223",
+    "trial:NCT04929223"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "이 시험은 전이성 대장암을 연구 대상으로 합니다.",
+   "refs": [
+    "gloss:metastatic_colorectal_cancer",
+    "trial:NCT04929223"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "1상 연구로, 주로 안전성과 알맞은 용량을 처음 확인하는 단계입니다.",
+   "refs": [
+    "rule:phase_PHASE1",
+    "trial:NCT04929223"
+   ],
+   "kind": "rule"
+  },
+  {
+   "text": "이 시험은 참여자가 어느 치료를 받을지 무작위로 정해집니다.",
+   "refs": [
+    "rule:randomized",
+    "trial:NCT04929223"
+   ],
+   "kind": "rule"
+  },
+  {
+   "text": "시험군 1: 이나볼리십 + 세툭시맙 + 혈액 유전자 검사(FoundationOne Liquid CDx), 시험군 2: 이나볼리십 + 베바시주맙 + 혈액 유전자 검사(FoundationOne Liquid CDx), 시험군 3: 베바시주맙 + 아테졸리주맙 + 티라골루맙 + 혈액 유전자 검사(FoundationOne Liquid CDx), 시험군 4: 아테졸리주맙 + 티라골루맙 + 혈액 유전자 검사(FoundationOne Liquid CDx) 외 6개 군.",
+   "refs": [
+    "gloss:atezolizumab",
+    "gloss:bevacizumab",
+    "gloss:cetuximab",
+    "gloss:divarasib",
+    "gloss:folfiri",
+    "gloss:folfox",
+    "gloss:foundationone_liquid_cdx",
+    "gloss:inavolisib",
+    "gloss:tiragolumab",
+    "trial:NCT04929223"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "약 542명이 참여할 예정인 연구입니다.",
+   "refs": [
+    "trial:NCT04929223"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "기록에 있는 진단 전이성 대장암이 이 시험의 대상 조건과 맞습니다.",
+   "refs": [
+    "dec:NCT04929223:NCT04929223-I07:r1",
+    "ev:SYN-0009-EV046",
+    "gloss:metastatic_colorectal_cancer"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "직접 답해 주실 수 있는 질문: 3가지.",
+   "refs": [
+    "crit:NCT04929223-I01",
+    "crit:NCT04929223-I11",
+    "crit:NCT04929223-I13",
+    "dec:NCT04929223:NCT04929223-I01:r1",
+    "dec:NCT04929223:NCT04929223-I11:r1",
+    "dec:NCT04929223:NCT04929223-I13:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "담당 의사가 판단할 것: 3가지.",
+   "refs": [
+    "crit:NCT04929223-I05",
+    "crit:NCT04929223-I09",
+    "crit:NCT04929223-I12",
+    "dec:NCT04929223:NCT04929223-I05:r1",
+    "dec:NCT04929223:NCT04929223-I09:r1",
+    "dec:NCT04929223:NCT04929223-I12:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "참여 전에 의료진이 확인할 항목이 11개 남아 있습니다.",
+   "refs": [
+    "dec:NCT04929223:NCT04929223-E01:r1",
+    "dec:NCT04929223:NCT04929223-E02:r1",
+    "dec:NCT04929223:NCT04929223-E03:r1",
+    "dec:NCT04929223:NCT04929223-E04:r1",
+    "dec:NCT04929223:NCT04929223-E05:r1",
+    "dec:NCT04929223:NCT04929223-E06:r1",
+    "dec:NCT04929223:NCT04929223-E11:r1",
+    "dec:NCT04929223:NCT04929223-E13:r1",
+    "dec:NCT04929223:NCT04929223-E14:r1",
+    "dec:NCT04929223:NCT04929223-E16:r1",
+    "dec:NCT04929223:NCT04929223-E17:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "국내 7곳에서 모집 중입니다.",
+   "refs": [
+    "trial:NCT04929223"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "시험약이 효과가 있을지는 아직 모르기 때문에 연구를 하는 것입니다.",
+   "refs": [
+    "rule:no_benefit_promise"
+   ],
+   "kind": "rule"
+  },
+  {
+   "text": "지금 받으실 수 있는 다른 치료 방법이 무엇인지도 의료진에게 물어보실 수 있습니다.",
+   "refs": [
+    "rule:ask_alternatives"
+   ],
+   "kind": "rule"
+  },
+  {
+   "text": "참여하면 방문 횟수, 검사, 기간처럼 해야 하는 일이 무엇인지도 미리 물어보실 수 있습니다.",
+   "refs": [
+    "rule:ask_burden"
+   ],
+   "kind": "rule"
+  },
+  {
+   "text": "최종 참여 가능 여부는 연구 담당 의료진이 직접 확인합니다.",
+   "refs": [
+    "rule:ask_clinician"
+   ],
+   "kind": "rule"
+  },
+  {
+   "text": "참여는 자유이며, 참여하지 않아도 지금 받고 계신 치료는 그대로 받으실 수 있습니다.",
+   "refs": [
+    "rule:voluntary"
+   ],
+   "kind": "rule"
+  },
+  {
+   "text": "참여하더라도 언제든 그만두실 수 있습니다.",
+   "refs": [
+    "rule:withdraw"
+   ],
+   "kind": "rule"
+  }
+ ],
+ "glossary": {
+  "mode": "glossary",
+  "sha256": "bb6135ef988f322486520df16e40f1b58d96404e99d31873c2dea5b8e38d3fed",
+  "rows_used": 10,
+  "draft": 0
+ },
+ "evidence": {
+  "files": [
+   "evidence_dev_haiku_v14_12.jsonl",
+   "evidence_dev_variants_haiku_v14_12.jsonl"
+  ],
+  "sha256": "daba4f5f1e16ec2eefc47311f5c13f85e6b5f218c85424f08f9af3d9bab09124",
+  "id_series": "haiku",
+  "graph_ev_nodes_checked": 2240
+ },
+ "agent6": "a6-0.4.14"
+}

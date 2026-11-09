@@ -1,0 +1,2560 @@
+{
+ "patient_id": "SYN-0018",
+ "as_of": "2026-10-01",
+ "version": 1,
+ "nodes": [
+  {
+   "id": "trial:NCT07230288",
+   "kind": "trial",
+   "title": "Study of ABBV-142 to Assess Adverse Events and Change in Disease Activity in Adult Participants With Idiopathic Pulmonary Fibrosis"
+  },
+  {
+   "id": "crit:NCT07230288-I01",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Diagnosis of Idiopathic Pulmonary Fibrosis (IPF) within 7 years prior to screening, confirmed by the investigator at screening that is supported by centrally read chest high-resolution computed tomography (HRCT) obtained within 12 months of the screening visit and verification of usual interstitial pneumonia(UIP) or probable UIP.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07230288:NCT07230288-I01:r1",
+   "kind": "decision",
+   "trial_id": "NCT07230288",
+   "criterion_id": "NCT07230288-I01",
+   "status": "UNKNOWN",
+   "reason": "UNSUPPORTED",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "IPF diagnosed 2026-06 (within 7 years); HRCT UIP 2026-05 within 12 months, but no central read documented, so not fully established.",
+   "missing_fact": "Central reading of the HRCT confirming UIP/probable UIP, and investigator confirmation at screening",
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0018-EV028",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "idiopathic pulmonary fibrosis",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-06-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:idiopathic pulmonary fibrosis",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "idiopathic pulmonary fibrosis"
+  },
+  {
+   "id": "src:SYN-0018-D05:0-71",
+   "kind": "source",
+   "doc_id": "SYN-0018-D05",
+   "doc_type": "clinic_note",
+   "span": [
+    0,
+    71
+   ],
+   "text": "MDT: idiopathic pulmonary fibrosis (UIP on HRCT, no alternative cause)."
+  },
+  {
+   "id": "ev:SYN-0018-EV021",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "usual interstitial pneumonia pattern",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-05-20",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:usual interstitial pneumonia pattern",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "usual interstitial pneumonia pattern"
+  },
+  {
+   "id": "src:SYN-0018-D03:102-114",
+   "kind": "source",
+   "doc_id": "SYN-0018-D03",
+   "doc_type": "imaging_report",
+   "span": [
+    102,
+    114
+   ],
+   "text": "UIP pattern."
+  },
+  {
+   "id": "ev:SYN-0018-EV018",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "subpleural basal-predominant reticulation",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-05-20",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:symptom_finding:subpleural basal-predominant reticulation",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "subpleural basal-predominant reticulation"
+  },
+  {
+   "id": "src:SYN-0018-D03:0-100",
+   "kind": "source",
+   "doc_id": "SYN-0018-D03",
+   "doc_type": "imaging_report",
+   "span": [
+    0,
+    100
+   ],
+   "text": "HRCT chest: subpleural, basal-predominant reticulation with honeycombing and traction bronchiectasis"
+  },
+  {
+   "id": "crit:NCT07230288-E01",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "History of stroke within 6 months prior to screening",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07230288:NCT07230288-E01:r1",
+   "kind": "decision",
+   "trial_id": "NCT07230288",
+   "criterion_id": "NCT07230288-E01",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Blanket negation covers chronic neurologic history only, not acute events within a window; no stroke statement and no stroke/TIA denial.",
+   "missing_fact": "Whether the patient had a stroke in the last 6 months",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07230288-E02",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "In the opinion of the investigator, other clinically significant pulmonary abnormalities",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07230288:NCT07230288-E02:r1",
+   "kind": "decision",
+   "trial_id": "NCT07230288",
+   "criterion_id": "NCT07230288-E02",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Investigator-judgment criterion; no other pulmonary abnormality documented beyond IPF (no other pulmonary history), but blanket negation does not cover judgment.",
+   "missing_fact": "Investigator opinion on other clinically significant pulmonary abnormalities",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07230288-E03",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "History of any malignancy up to 5 years prior screening visit, except for successfully treated nonmelanoma skin cancer or localized carcinoma in situ of the cervix.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07230288:NCT07230288-E03:r1",
+   "kind": "decision",
+   "trial_id": "NCT07230288",
+   "criterion_id": "NCT07230288-E03",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Explicit 'No prior malignancy' covers the 5-year window.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0018-EV081",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "prior malignancy",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:prior malignancy",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "prior malignancy"
+  },
+  {
+   "id": "src:SYN-0018-D09:902-922",
+   "kind": "source",
+   "doc_id": "SYN-0018-D09",
+   "doc_type": "clinic_note",
+   "span": [
+    902,
+    922
+   ],
+   "text": "No prior malignancy."
+  },
+  {
+   "id": "label:NCT07230288",
+   "kind": "trial_decision",
+   "label": "potential",
+   "why": [
+    "UNKNOWN/UNSUPPORTED NCT07230288-I01"
+   ],
+   "by": "agent3"
+  },
+  {
+   "id": "trial:NCT06747923",
+   "kind": "trial",
+   "title": "SB17170 Phase 2 Trial in IPF Patients"
+  },
+  {
+   "id": "crit:NCT06747923-I01",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Adult male/female 40 years or older at the time of obtaining informed consent",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06747923:NCT06747923-I01:r1",
+   "kind": "decision",
+   "trial_id": "NCT06747923",
+   "criterion_id": "NCT06747923-I01",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "structured_numeric"
+   ],
+   "note": "age = 60 years (2026-05-12, -142d) vs >= 40 -> met",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0018-EV005",
+   "kind": "evidence",
+   "concept": "age",
+   "term": null,
+   "value": 60,
+   "unit": "years",
+   "observed_date": "2026-05-12",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:age",
+   "kind": "concept",
+   "concept": "age",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0018-D02:13-16",
+   "kind": "source",
+   "doc_id": "SYN-0018-D02",
+   "doc_type": "clinic_note",
+   "span": [
+    13,
+    16
+   ],
+   "text": "60F"
+  },
+  {
+   "id": "calc:NCT06747923:NCT06747923-I01",
+   "kind": "calculation",
+   "concept": "age",
+   "operator": ">=",
+   "threshold": 40,
+   "unit": "years",
+   "value": 60,
+   "value_unit": "years",
+   "observed_date": "2026-05-12",
+   "days_before": 142,
+   "note": "age = 60 years (2026-05-12, -142d) vs >= 40 -> met"
+  },
+  {
+   "id": "crit:NCT06747923-I02",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Patients diagnosed with idiopathic pulmonary fibrosis who meet the following criteria: Patients with idiopathic pulmonary fibrosis who are confirmed by chest High-Resolution Computed Tomography (HRCT) scan; Patients with Usual Interstitial Pneumonia (UIP) or probable UIP HRCT pattern consistent with a diagnosis of idiopathic pulmonary fibrosis confirmed through central reading of chest HRCT before the baseline visit",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06747923:NCT06747923-I02:r1",
+   "kind": "decision",
+   "trial_id": "NCT06747923",
+   "criterion_id": "NCT06747923-I02",
+   "status": "UNKNOWN",
+   "reason": "UNSUPPORTED",
+   "action": "med_record_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "IPF with UIP pattern on HRCT documented, but no central reading of the HRCT is recorded.",
+   "missing_fact": "Central reading of HRCT confirming UIP/probable UIP before baseline visit",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06747923-I03",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Patients with a history of idiopathic pulmonary fibrosis treatment who meet the defined criteria",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06747923:NCT06747923-I03:r1",
+   "kind": "decision",
+   "trial_id": "NCT06747923",
+   "criterion_id": "NCT06747923-I03",
+   "status": "UNKNOWN",
+   "reason": "UNSUPPORTED",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Patient on pirfenidone since 2026-06 (IPF treatment), but the criterion's defined conditions are unspecified.",
+   "missing_fact": "The 'defined criteria' for prior IPF treatment (drug, duration, washout) are not specified",
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0018-EV033",
+   "kind": "evidence",
+   "concept": "medication",
+   "term": "pirfenidone 801 mg tid",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-15",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:medication:pirfenidone 801 mg tid",
+   "kind": "concept",
+   "concept": "medication",
+   "term": "pirfenidone 801 mg tid"
+  },
+  {
+   "id": "src:SYN-0018-D07:0-35",
+   "kind": "source",
+   "doc_id": "SYN-0018-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    0,
+    35
+   ],
+   "text": "Follow-up on pirfenidone 801 mg tid"
+  },
+  {
+   "id": "ev:SYN-0018-EV055",
+   "kind": "evidence",
+   "concept": "medication",
+   "term": "pirfenidone",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:medication:pirfenidone",
+   "kind": "concept",
+   "concept": "medication",
+   "term": "pirfenidone"
+  },
+  {
+   "id": "src:SYN-0018-D09:285-313",
+   "kind": "source",
+   "doc_id": "SYN-0018-D09",
+   "doc_type": "clinic_note",
+   "span": [
+    285,
+    313
+   ],
+   "text": "On pirfenidone since 2026-06"
+  },
+  {
+   "id": "crit:NCT06747923-I04",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Patients with Forced Vital Capacity (FVC) >= 45% of the normal predicted value at the screening visit",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06747923:NCT06747923-I04:r1",
+   "kind": "decision",
+   "trial_id": "NCT06747923",
+   "criterion_id": "NCT06747923-I04",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "structured_numeric"
+   ],
+   "note": "fvc = 64 % (2026-09-15, -16d) vs >= 45 -> met",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0018-EV271",
+   "kind": "evidence",
+   "concept": "fvc",
+   "term": null,
+   "value": 64,
+   "unit": "%",
+   "observed_date": "2026-09-15",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:fvc",
+   "kind": "concept",
+   "concept": "fvc",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0018-D07:83-117",
+   "kind": "source",
+   "doc_id": "SYN-0018-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    83,
+    117
+   ],
+   "text": "FVC 64% predicted (was 71% in May)"
+  },
+  {
+   "id": "calc:NCT06747923:NCT06747923-I04",
+   "kind": "calculation",
+   "concept": "fvc",
+   "operator": ">=",
+   "threshold": 45,
+   "unit": "%",
+   "value": 64,
+   "value_unit": "%",
+   "observed_date": "2026-09-15",
+   "days_before": 16,
+   "note": "fvc = 64 % (2026-09-15, -16d) vs >= 45 -> met"
+  },
+  {
+   "id": "crit:NCT06747923-I05",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Patients meeting pulmonary function test criteria at the screening visit",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06747923:NCT06747923-I05:r1",
+   "kind": "decision",
+   "trial_id": "NCT06747923",
+   "criterion_id": "NCT06747923-I05",
+   "status": "UNKNOWN",
+   "reason": "UNSUPPORTED",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "PFTs exist (FVC 64%, DLCO 41%) but the specific criteria are not stated and no screening-visit test exists.",
+   "missing_fact": "The protocol's specific pulmonary function criteria and a screening-visit PFT",
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0018-EV282",
+   "kind": "evidence",
+   "concept": "fvc",
+   "term": null,
+   "value": 64,
+   "unit": "%",
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "src:SYN-0018-D09:3026-3068",
+   "kind": "source",
+   "doc_id": "SYN-0018-D09",
+   "doc_type": "clinic_note",
+   "span": [
+    3026,
+    3068
+   ],
+   "text": "PFTs 2026-09-15: FVC 1.92 L (64% predicted"
+  },
+  {
+   "id": "ev:SYN-0018-EV286",
+   "kind": "evidence",
+   "concept": "dlco",
+   "term": null,
+   "value": 41,
+   "unit": "%",
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:dlco",
+   "kind": "concept",
+   "concept": "dlco",
+   "term": null
+  },
+  {
+   "id": "crit:NCT06747923-I06",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Patients who have received the explanation of this clinical trial and voluntarily agreed and signed the informed consent form",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06747923:NCT06747923-I06:r1",
+   "kind": "decision",
+   "trial_id": "NCT06747923",
+   "criterion_id": "NCT06747923-I06",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "admin"
+   ],
+   "note": "consent/compliance item: not decidable from the record",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06747923-E01",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "When there is a primary disease showing UIP patterns (rheumatoid arthritis-related interstitial lung disease, connective tissue disease-related interstitial lung disease, etc.) and/or other clinically significant lung abnormalities",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06747923:NCT06747923-E01:r1",
+   "kind": "decision",
+   "trial_id": "NCT06747923",
+   "criterion_id": "NCT06747923-E01",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation"
+   ],
+   "note": "MDT: IPF with no alternative cause; serologies negative; no other pulmonary or autoimmune history.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0018-EV270",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "alternative cause",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-06-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:symptom_finding:alternative cause",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "alternative cause"
+  },
+  {
+   "id": "ev:SYN-0018-EV074",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "other cardiac history",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:other cardiac history",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "other cardiac history"
+  },
+  {
+   "id": "src:SYN-0018-D09:810-888",
+   "kind": "source",
+   "doc_id": "SYN-0018-D09",
+   "doc_type": "clinic_note",
+   "span": [
+    810,
+    888
+   ],
+   "text": "No other cardiac, pulmonary, hepatic, renal, autoimmune or neurologic history."
+  },
+  {
+   "id": "ev:SYN-0018-EV075",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "other pulmonary history",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:other pulmonary history",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "other pulmonary history"
+  },
+  {
+   "id": "ev:SYN-0018-EV078",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "other autoimmune history",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:other autoimmune history",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "other autoimmune history"
+  },
+  {
+   "id": "crit:NCT06747923-E02",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Patients with confirmed acute exacerbation of IPF within 6 months prior to screening and/or during the screening period",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06747923:NCT06747923-E02:r1",
+   "kind": "decision",
+   "trial_id": "NCT06747923",
+   "criterion_id": "NCT06747923-E02",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Explicitly no acute exacerbation since diagnosis or to date.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0018-EV068",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "acute exacerbation of IPF",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:acute exacerbation of ipf",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "acute exacerbation of IPF"
+  },
+  {
+   "id": "src:SYN-0018-D09:569-632",
+   "kind": "source",
+   "doc_id": "SYN-0018-D09",
+   "doc_type": "clinic_note",
+   "span": [
+    569,
+    632
+   ],
+   "text": "No exacerbation or respiratory hospitalization since diagnosis."
+  },
+  {
+   "id": "ev:SYN-0018-EV198",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "acute exacerbations",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "past"
+  },
+  {
+   "id": "concept:diagnosis:acute exacerbations",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "acute exacerbations"
+  },
+  {
+   "id": "src:SYN-0018-D09:3644-3675",
+   "kind": "source",
+   "doc_id": "SYN-0018-D09",
+   "doc_type": "clinic_note",
+   "span": [
+    3644,
+    3675
+   ],
+   "text": "No acute exacerbations to date."
+  },
+  {
+   "id": "crit:NCT06747923-E03",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Patients with lower respiratory tract infections requiring antibiotic treatment",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06747923:NCT06747923-E03:r1",
+   "kind": "decision",
+   "trial_id": "NCT06747923",
+   "criterion_id": "NCT06747923-E03",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No explicit statement; afebrile, no sputum and normal WBC are only normal findings, not a negation.",
+   "missing_fact": "Whether a lower respiratory tract infection requiring antibiotics is present",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06747923-E04",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Patients who underwent major surgery within 3 months before screening or have major surgery planned during the clinical trial",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06747923:NCT06747923-E04:r1",
+   "kind": "decision",
+   "trial_id": "NCT06747923",
+   "criterion_id": "NCT06747923-E04",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Only old surgeries and no thoracic surgery/lung biopsy are documented; recent or planned major surgery is not addressed.",
+   "missing_fact": "Whether major surgery occurred in the last 3 months or is planned during the trial",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06747923-E05",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Patients with a history of malignancy or documented evidence of active or suspected malignancy within 5 years prior to screening",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06747923:NCT06747923-E05:r1",
+   "kind": "decision",
+   "trial_id": "NCT06747923",
+   "criterion_id": "NCT06747923-E05",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Explicit 'No prior malignancy' covers the 5-year window.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06747923-E06",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Patients with evidence of active infection",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06747923:NCT06747923-E06:r1",
+   "kind": "decision",
+   "trial_id": "NCT06747923",
+   "criterion_id": "NCT06747923-E06",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No explicit statement; afebrile with normal WBC and CRP are normal findings only. Hepatitis and HIV are negative.",
+   "missing_fact": "Whether any active infection is present",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06747923-E07",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Patients with the following cardiovascular and cerebrovascular diseases at the time of screening: Severe hypertension within 3 months; Myocardial infarction or unstable angina within 6 months; History of thrombotic events within 6 months; Diagnosis of heart failure within 6 months",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06747923:NCT06747923-E07:r1",
+   "kind": "decision",
+   "trial_id": "NCT06747923",
+   "criterion_id": "NCT06747923-E07",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "BP normal and no VTE, cardiac history blanket-negated, but acute events within windows and heart failure diagnosis are not fully covered.",
+   "missing_fact": "Documentation of no MI/unstable angina, thrombotic events (arterial/cerebral) and heart failure within 6 months",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06747923-E08",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Patients with pulmonary hypertension",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06747923:NCT06747923-E08:r1",
+   "kind": "decision",
+   "trial_id": "NCT06747923",
+   "criterion_id": "NCT06747923-E08",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Echo 2026-09 states no evidence of pulmonary hypertension; diagnosis[pulmonary hypertension]=NO.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0018-EV194",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "pulmonary hypertension",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:pulmonary hypertension",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "pulmonary hypertension"
+  },
+  {
+   "id": "src:SYN-0018-D09:3463-3610",
+   "kind": "source",
+   "doc_id": "SYN-0018-D09",
+   "doc_type": "clinic_note",
+   "span": [
+    3463,
+    3610
+   ],
+   "text": "Echocardiogram 2026-09: LVEF 60%, normal LV dimensions, RV size and function normal, estimated RVSP 32 mmHg, no evidence of pulmonary hypertension."
+  },
+  {
+   "id": "crit:NCT06747923-E09",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Patients who are unable to take drugs orally or have a history of major gastrointestinal surgery or pathological findings that may affect the absorption of the investigational product",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06747923:NCT06747923-E09:r1",
+   "kind": "decision",
+   "trial_id": "NCT06747923",
+   "criterion_id": "NCT06747923-E09",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Takes oral pirfenidone; only appendectomy documented (not major GI surgery); GI absorption pathology not addressed.",
+   "missing_fact": "Whether she can take oral drugs and has no major GI surgery or absorption-affecting pathology",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06747923-E10",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Patients with Human Immunodeficiency Virus (HIV) infection or active hepatitis B or C",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06747923:NCT06747923-E10:r1",
+   "kind": "decision",
+   "trial_id": "NCT06747923",
+   "criterion_id": "NCT06747923-E10",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "HIV Ag/Ab, HBsAg, anti-HBc and anti-HCV all negative 3 days ago.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0018-EV264",
+   "kind": "evidence",
+   "concept": "hiv",
+   "term": "HIV-1/2 Ag/Ab",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:hiv:hiv-1/2 ag/ab",
+   "kind": "concept",
+   "concept": "hiv",
+   "term": "HIV-1/2 Ag/Ab"
+  },
+  {
+   "id": "src:SYN-0018-D10:1359-1381",
+   "kind": "source",
+   "doc_id": "SYN-0018-D10",
+   "doc_type": "lab_result",
+   "span": [
+    1359,
+    1381
+   ],
+   "text": "HIV-1/2 Ag/Ab negative"
+  },
+  {
+   "id": "ev:SYN-0018-EV261",
+   "kind": "evidence",
+   "concept": "hepatitis_b",
+   "term": "HBsAg",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:hepatitis_b:hbsag",
+   "kind": "concept",
+   "concept": "hepatitis_b",
+   "term": "HBsAg"
+  },
+  {
+   "id": "src:SYN-0018-D10:1302-1316",
+   "kind": "source",
+   "doc_id": "SYN-0018-D10",
+   "doc_type": "lab_result",
+   "span": [
+    1302,
+    1316
+   ],
+   "text": "HBsAg negative"
+  },
+  {
+   "id": "ev:SYN-0018-EV263",
+   "kind": "evidence",
+   "concept": "hepatitis_c",
+   "term": "Anti-HCV",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:hepatitis_c:anti-hcv",
+   "kind": "concept",
+   "concept": "hepatitis_c",
+   "term": "Anti-HCV"
+  },
+  {
+   "id": "src:SYN-0018-D10:1341-1358",
+   "kind": "source",
+   "doc_id": "SYN-0018-D10",
+   "doc_type": "lab_result",
+   "span": [
+    1341,
+    1358
+   ],
+   "text": "Anti-HCV negative"
+  },
+  {
+   "id": "label:NCT06747923",
+   "kind": "trial_decision",
+   "label": "potential",
+   "why": [
+    "UNKNOWN/UNSUPPORTED NCT06747923-I02",
+    "UNKNOWN/UNSUPPORTED NCT06747923-I03",
+    "UNKNOWN/UNSUPPORTED NCT06747923-I05"
+   ],
+   "by": "agent3"
+  },
+  {
+   "id": "trial:NCT07652658",
+   "kind": "trial",
+   "title": "A Phase IIb Study to Evaluate AZD8965 in Participants With IPF."
+  },
+  {
+   "id": "crit:NCT07652658-I01",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Age >= 40 years",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07652658:NCT07652658-I01:r1",
+   "kind": "decision",
+   "trial_id": "NCT07652658",
+   "criterion_id": "NCT07652658-I01",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "age_rule"
+   ],
+   "note": "age 60.52 y vs [40.0, None]",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0018-EV002",
+   "kind": "evidence",
+   "concept": "birth_date",
+   "term": null,
+   "value": "1966-03-25",
+   "unit": null,
+   "observed_date": "2026-05-12",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:birth_date",
+   "kind": "concept",
+   "concept": "birth_date",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0018-D01:8-23",
+   "kind": "source",
+   "doc_id": "SYN-0018-D01",
+   "doc_type": "registration",
+   "span": [
+    8,
+    23
+   ],
+   "text": "DOB 1966-03-25."
+  },
+  {
+   "id": "calc:NCT07652658:NCT07652658-I01",
+   "kind": "calculation",
+   "name": "age_at_as_of",
+   "value": 60.52,
+   "lo": 40.0,
+   "hi": null
+  },
+  {
+   "id": "crit:NCT07652658-I02",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "IPF diagnosis",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07652658:NCT07652658-I02:r1",
+   "kind": "decision",
+   "trial_id": "NCT07652658",
+   "criterion_id": "NCT07652658-I02",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "MDT diagnosis of IPF on 2026-06-10, confirmed at current follow-up.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0018-EV046",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "idiopathic pulmonary fibrosis",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "src:SYN-0018-D09:47-104",
+   "kind": "source",
+   "doc_id": "SYN-0018-D09",
+   "doc_type": "clinic_note",
+   "span": [
+    47,
+    104
+   ],
+   "text": "Follow-up of idiopathic pulmonary fibrosis on pirfenidone"
+  },
+  {
+   "id": "crit:NCT07652658-I03",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Participants with IPF receiving locally approved antifibrotic therapies at a stable dose, or participants with IPF not receiving local standard of care",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07652658:NCT07652658-I03:r1",
+   "kind": "decision",
+   "trial_id": "NCT07652658",
+   "criterion_id": "NCT07652658-I03",
+   "status": "UNKNOWN",
+   "reason": "UNSUPPORTED",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "On pirfenidone 801 mg tid since titration in 2026-06; the stable-dose duration the protocol requires is not stated.",
+   "missing_fact": "Whether pirfenidone 801 mg tid has been stable for the protocol-required duration",
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0018-EV056",
+   "kind": "evidence",
+   "concept": "medication",
+   "term": "pirfenidone 801 mg tid",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "src:SYN-0018-D09:315-330",
+   "kind": "source",
+   "doc_id": "SYN-0018-D09",
+   "doc_type": "clinic_note",
+   "span": [
+    315,
+    330
+   ],
+   "text": "now 801 mg tid."
+  },
+  {
+   "id": "crit:NCT07652658-I04",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "FVC >= 45% predicted of normal",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07652658:NCT07652658-I04:r1",
+   "kind": "decision",
+   "trial_id": "NCT07652658",
+   "criterion_id": "NCT07652658-I04",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "structured_numeric"
+   ],
+   "note": "fvc = 64 % (2026-09-15, -16d) vs >= 45 -> met",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "calc:NCT07652658:NCT07652658-I04",
+   "kind": "calculation",
+   "concept": "fvc",
+   "operator": ">=",
+   "threshold": 45,
+   "unit": "% predicted",
+   "value": 64,
+   "value_unit": "%",
+   "observed_date": "2026-09-15",
+   "days_before": 16,
+   "note": "fvc = 64 % (2026-09-15, -16d) vs >= 45 -> met"
+  },
+  {
+   "id": "crit:NCT07652658-I05",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "DLCO corrected for hemoglobin >= 25% predicted of normal",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07652658:NCT07652658-I05:r1",
+   "kind": "decision",
+   "trial_id": "NCT07652658",
+   "criterion_id": "NCT07652658-I05",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "structured_numeric"
+   ],
+   "note": "dlco = 41 % (2026-09-15, -16d) vs >= 25 -> met",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0018-EV272",
+   "kind": "evidence",
+   "concept": "dlco",
+   "term": null,
+   "value": 41,
+   "unit": "%",
+   "observed_date": "2026-09-15",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "src:SYN-0018-D07:119-138",
+   "kind": "source",
+   "doc_id": "SYN-0018-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    119,
+    138
+   ],
+   "text": "DLCO 41% predicted."
+  },
+  {
+   "id": "calc:NCT07652658:NCT07652658-I05",
+   "kind": "calculation",
+   "concept": "dlco",
+   "operator": ">=",
+   "threshold": 25,
+   "unit": "% predicted",
+   "value": 41,
+   "value_unit": "%",
+   "observed_date": "2026-09-15",
+   "days_before": 16,
+   "note": "dlco = 41 % (2026-09-15, -16d) vs >= 25 -> met"
+  },
+  {
+   "id": "crit:NCT07652658-E01",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "ILD other than IPF",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07652658:NCT07652658-E01:r1",
+   "kind": "decision",
+   "trial_id": "NCT07652658",
+   "criterion_id": "NCT07652658-E01",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation"
+   ],
+   "note": "MDT found no alternative cause; no other pulmonary history, and serologies are negative.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07652658-E02",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "The extent of emphysema is greater than the extent of fibrotic changes on chest HRCT scan",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07652658:NCT07652658-E02:r1",
+   "kind": "decision",
+   "trial_id": "NCT07652658",
+   "criterion_id": "NCT07652658-E02",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_record_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "HRCT reports UIP pattern with no mention of emphysema; extent comparison is not documented.",
+   "missing_fact": "HRCT statement on the extent of emphysema versus fibrosis",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07652658-E03",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Acute exacerbation of IPF",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07652658:NCT07652658-E03:r1",
+   "kind": "decision",
+   "trial_id": "NCT07652658",
+   "criterion_id": "NCT07652658-E03",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Explicitly no acute exacerbation to date.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07652658-E04",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Lower respiratory tract infection requiring treatment",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07652658:NCT07652658-E04:r1",
+   "kind": "decision",
+   "trial_id": "NCT07652658",
+   "criterion_id": "NCT07652658-E04",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No infection is documented, but afebrile and normal WBC/CRP do not prove absence; no explicit statement.",
+   "missing_fact": "Explicit statement that no lower respiratory tract infection is present or being treated",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07652658-E05",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Acute coronary syndrome/acute myocardial infarction, unstable angina ± coronary intervention with Percutaneous Coronary Intervention, or Coronary Artery Bypass Grafting",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07652658:NCT07652658-E05:r1",
+   "kind": "decision",
+   "trial_id": "NCT07652658",
+   "criterion_id": "NCT07652658-E05",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation",
+    "pc:blanket_out_of_scope"
+   ],
+   "note": "[blanket negation out of A1 scope] No other cardiac history documented; no cardiac procedures listed in past surgical history.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07652658-E06",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Heart failure",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07652658:NCT07652658-E06:r1",
+   "kind": "decision",
+   "trial_id": "NCT07652658",
+   "criterion_id": "NCT07652658-E06",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation"
+   ],
+   "note": "No cardiac history; LVEF 60%, no orthopnea or edema, NT-proBNP normal.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0018-EV192",
+   "kind": "evidence",
+   "concept": "lvef",
+   "term": null,
+   "value": 60,
+   "unit": "%",
+   "observed_date": "2026-09-01",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:lvef",
+   "kind": "concept",
+   "concept": "lvef",
+   "term": null
+  },
+  {
+   "id": "crit:NCT07652658-E07",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "History of organ transplantation or is likely to receive lung transplantation",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07652658:NCT07652658-E07:r1",
+   "kind": "decision",
+   "trial_id": "NCT07652658",
+   "criterion_id": "NCT07652658-E07",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Past surgeries listed show no transplant, but no explicit denial; lung transplant likelihood is not addressed.",
+   "missing_fact": "Statement on prior organ transplant and on lung transplant listing or likelihood",
+   "derived_from": null
+  },
+  {
+   "id": "label:NCT07652658",
+   "kind": "trial_decision",
+   "label": "potential",
+   "why": [
+    "UNKNOWN/UNSUPPORTED NCT07652658-I03"
+   ],
+   "by": "agent3"
+  }
+ ],
+ "edges": [
+  [
+   "trial:NCT07230288",
+   "has_criterion",
+   "crit:NCT07230288-I01"
+  ],
+  [
+   "crit:NCT07230288-I01",
+   "decided_as",
+   "dec:NCT07230288:NCT07230288-I01:r1"
+  ],
+  [
+   "crit:NCT07230288-I01",
+   "requires",
+   "concept:diagnosis:idiopathic pulmonary fibrosis"
+  ],
+  [
+   "concept:diagnosis:idiopathic pulmonary fibrosis",
+   "observed_as",
+   "ev:SYN-0018-EV028"
+  ],
+  [
+   "ev:SYN-0018-EV028",
+   "derived_from",
+   "src:SYN-0018-D05:0-71"
+  ],
+  [
+   "ev:SYN-0018-EV028",
+   "insufficient_for",
+   "dec:NCT07230288:NCT07230288-I01:r1"
+  ],
+  [
+   "crit:NCT07230288-I01",
+   "requires",
+   "concept:diagnosis:usual interstitial pneumonia pattern"
+  ],
+  [
+   "concept:diagnosis:usual interstitial pneumonia pattern",
+   "observed_as",
+   "ev:SYN-0018-EV021"
+  ],
+  [
+   "ev:SYN-0018-EV021",
+   "derived_from",
+   "src:SYN-0018-D03:102-114"
+  ],
+  [
+   "ev:SYN-0018-EV021",
+   "insufficient_for",
+   "dec:NCT07230288:NCT07230288-I01:r1"
+  ],
+  [
+   "crit:NCT07230288-I01",
+   "requires",
+   "concept:symptom_finding:subpleural basal-predominant reticulation"
+  ],
+  [
+   "concept:symptom_finding:subpleural basal-predominant reticulation",
+   "observed_as",
+   "ev:SYN-0018-EV018"
+  ],
+  [
+   "ev:SYN-0018-EV018",
+   "derived_from",
+   "src:SYN-0018-D03:0-100"
+  ],
+  [
+   "ev:SYN-0018-EV018",
+   "insufficient_for",
+   "dec:NCT07230288:NCT07230288-I01:r1"
+  ],
+  [
+   "trial:NCT07230288",
+   "has_criterion",
+   "crit:NCT07230288-E01"
+  ],
+  [
+   "crit:NCT07230288-E01",
+   "decided_as",
+   "dec:NCT07230288:NCT07230288-E01:r1"
+  ],
+  [
+   "trial:NCT07230288",
+   "has_criterion",
+   "crit:NCT07230288-E02"
+  ],
+  [
+   "crit:NCT07230288-E02",
+   "decided_as",
+   "dec:NCT07230288:NCT07230288-E02:r1"
+  ],
+  [
+   "trial:NCT07230288",
+   "has_criterion",
+   "crit:NCT07230288-E03"
+  ],
+  [
+   "crit:NCT07230288-E03",
+   "decided_as",
+   "dec:NCT07230288:NCT07230288-E03:r1"
+  ],
+  [
+   "crit:NCT07230288-E03",
+   "requires",
+   "concept:diagnosis:prior malignancy"
+  ],
+  [
+   "concept:diagnosis:prior malignancy",
+   "observed_as",
+   "ev:SYN-0018-EV081"
+  ],
+  [
+   "ev:SYN-0018-EV081",
+   "derived_from",
+   "src:SYN-0018-D09:902-922"
+  ],
+  [
+   "ev:SYN-0018-EV081",
+   "supports",
+   "dec:NCT07230288:NCT07230288-E03:r1"
+  ],
+  [
+   "trial:NCT07230288",
+   "labelled",
+   "label:NCT07230288"
+  ],
+  [
+   "trial:NCT06747923",
+   "has_criterion",
+   "crit:NCT06747923-I01"
+  ],
+  [
+   "crit:NCT06747923-I01",
+   "decided_as",
+   "dec:NCT06747923:NCT06747923-I01:r1"
+  ],
+  [
+   "crit:NCT06747923-I01",
+   "requires",
+   "concept:age"
+  ],
+  [
+   "concept:age",
+   "observed_as",
+   "ev:SYN-0018-EV005"
+  ],
+  [
+   "ev:SYN-0018-EV005",
+   "derived_from",
+   "src:SYN-0018-D02:13-16"
+  ],
+  [
+   "ev:SYN-0018-EV005",
+   "supports",
+   "dec:NCT06747923:NCT06747923-I01:r1"
+  ],
+  [
+   "calc:NCT06747923:NCT06747923-I01",
+   "computes",
+   "dec:NCT06747923:NCT06747923-I01:r1"
+  ],
+  [
+   "trial:NCT06747923",
+   "has_criterion",
+   "crit:NCT06747923-I02"
+  ],
+  [
+   "crit:NCT06747923-I02",
+   "decided_as",
+   "dec:NCT06747923:NCT06747923-I02:r1"
+  ],
+  [
+   "crit:NCT06747923-I02",
+   "requires",
+   "concept:diagnosis:idiopathic pulmonary fibrosis"
+  ],
+  [
+   "ev:SYN-0018-EV028",
+   "insufficient_for",
+   "dec:NCT06747923:NCT06747923-I02:r1"
+  ],
+  [
+   "crit:NCT06747923-I02",
+   "requires",
+   "concept:diagnosis:usual interstitial pneumonia pattern"
+  ],
+  [
+   "ev:SYN-0018-EV021",
+   "insufficient_for",
+   "dec:NCT06747923:NCT06747923-I02:r1"
+  ],
+  [
+   "crit:NCT06747923-I02",
+   "requires",
+   "concept:symptom_finding:subpleural basal-predominant reticulation"
+  ],
+  [
+   "ev:SYN-0018-EV018",
+   "insufficient_for",
+   "dec:NCT06747923:NCT06747923-I02:r1"
+  ],
+  [
+   "trial:NCT06747923",
+   "has_criterion",
+   "crit:NCT06747923-I03"
+  ],
+  [
+   "crit:NCT06747923-I03",
+   "decided_as",
+   "dec:NCT06747923:NCT06747923-I03:r1"
+  ],
+  [
+   "crit:NCT06747923-I03",
+   "requires",
+   "concept:medication:pirfenidone 801 mg tid"
+  ],
+  [
+   "concept:medication:pirfenidone 801 mg tid",
+   "observed_as",
+   "ev:SYN-0018-EV033"
+  ],
+  [
+   "ev:SYN-0018-EV033",
+   "derived_from",
+   "src:SYN-0018-D07:0-35"
+  ],
+  [
+   "ev:SYN-0018-EV033",
+   "insufficient_for",
+   "dec:NCT06747923:NCT06747923-I03:r1"
+  ],
+  [
+   "crit:NCT06747923-I03",
+   "requires",
+   "concept:medication:pirfenidone"
+  ],
+  [
+   "concept:medication:pirfenidone",
+   "observed_as",
+   "ev:SYN-0018-EV055"
+  ],
+  [
+   "ev:SYN-0018-EV055",
+   "derived_from",
+   "src:SYN-0018-D09:285-313"
+  ],
+  [
+   "ev:SYN-0018-EV055",
+   "insufficient_for",
+   "dec:NCT06747923:NCT06747923-I03:r1"
+  ],
+  [
+   "trial:NCT06747923",
+   "has_criterion",
+   "crit:NCT06747923-I04"
+  ],
+  [
+   "crit:NCT06747923-I04",
+   "decided_as",
+   "dec:NCT06747923:NCT06747923-I04:r1"
+  ],
+  [
+   "crit:NCT06747923-I04",
+   "requires",
+   "concept:fvc"
+  ],
+  [
+   "concept:fvc",
+   "observed_as",
+   "ev:SYN-0018-EV271"
+  ],
+  [
+   "ev:SYN-0018-EV271",
+   "derived_from",
+   "src:SYN-0018-D07:83-117"
+  ],
+  [
+   "ev:SYN-0018-EV271",
+   "supports",
+   "dec:NCT06747923:NCT06747923-I04:r1"
+  ],
+  [
+   "calc:NCT06747923:NCT06747923-I04",
+   "computes",
+   "dec:NCT06747923:NCT06747923-I04:r1"
+  ],
+  [
+   "trial:NCT06747923",
+   "has_criterion",
+   "crit:NCT06747923-I05"
+  ],
+  [
+   "crit:NCT06747923-I05",
+   "decided_as",
+   "dec:NCT06747923:NCT06747923-I05:r1"
+  ],
+  [
+   "crit:NCT06747923-I05",
+   "requires",
+   "concept:fvc"
+  ],
+  [
+   "concept:fvc",
+   "observed_as",
+   "ev:SYN-0018-EV282"
+  ],
+  [
+   "ev:SYN-0018-EV282",
+   "derived_from",
+   "src:SYN-0018-D09:3026-3068"
+  ],
+  [
+   "ev:SYN-0018-EV282",
+   "insufficient_for",
+   "dec:NCT06747923:NCT06747923-I05:r1"
+  ],
+  [
+   "crit:NCT06747923-I05",
+   "requires",
+   "concept:dlco"
+  ],
+  [
+   "concept:dlco",
+   "observed_as",
+   "ev:SYN-0018-EV286"
+  ],
+  [
+   "ev:SYN-0018-EV286",
+   "derived_from",
+   "src:SYN-0018-D09:3026-3068"
+  ],
+  [
+   "ev:SYN-0018-EV286",
+   "insufficient_for",
+   "dec:NCT06747923:NCT06747923-I05:r1"
+  ],
+  [
+   "trial:NCT06747923",
+   "has_criterion",
+   "crit:NCT06747923-I06"
+  ],
+  [
+   "crit:NCT06747923-I06",
+   "decided_as",
+   "dec:NCT06747923:NCT06747923-I06:r1"
+  ],
+  [
+   "trial:NCT06747923",
+   "has_criterion",
+   "crit:NCT06747923-E01"
+  ],
+  [
+   "crit:NCT06747923-E01",
+   "decided_as",
+   "dec:NCT06747923:NCT06747923-E01:r1"
+  ],
+  [
+   "crit:NCT06747923-E01",
+   "requires",
+   "concept:symptom_finding:alternative cause"
+  ],
+  [
+   "concept:symptom_finding:alternative cause",
+   "observed_as",
+   "ev:SYN-0018-EV270"
+  ],
+  [
+   "ev:SYN-0018-EV270",
+   "derived_from",
+   "src:SYN-0018-D05:0-71"
+  ],
+  [
+   "ev:SYN-0018-EV270",
+   "supports",
+   "dec:NCT06747923:NCT06747923-E01:r1"
+  ],
+  [
+   "crit:NCT06747923-E01",
+   "requires",
+   "concept:diagnosis:other cardiac history"
+  ],
+  [
+   "concept:diagnosis:other cardiac history",
+   "observed_as",
+   "ev:SYN-0018-EV074"
+  ],
+  [
+   "ev:SYN-0018-EV074",
+   "derived_from",
+   "src:SYN-0018-D09:810-888"
+  ],
+  [
+   "ev:SYN-0018-EV074",
+   "supports",
+   "dec:NCT06747923:NCT06747923-E01:r1"
+  ],
+  [
+   "crit:NCT06747923-E01",
+   "requires",
+   "concept:diagnosis:other pulmonary history"
+  ],
+  [
+   "concept:diagnosis:other pulmonary history",
+   "observed_as",
+   "ev:SYN-0018-EV075"
+  ],
+  [
+   "ev:SYN-0018-EV075",
+   "derived_from",
+   "src:SYN-0018-D09:810-888"
+  ],
+  [
+   "ev:SYN-0018-EV075",
+   "supports",
+   "dec:NCT06747923:NCT06747923-E01:r1"
+  ],
+  [
+   "crit:NCT06747923-E01",
+   "requires",
+   "concept:diagnosis:other autoimmune history"
+  ],
+  [
+   "concept:diagnosis:other autoimmune history",
+   "observed_as",
+   "ev:SYN-0018-EV078"
+  ],
+  [
+   "ev:SYN-0018-EV078",
+   "derived_from",
+   "src:SYN-0018-D09:810-888"
+  ],
+  [
+   "ev:SYN-0018-EV078",
+   "supports",
+   "dec:NCT06747923:NCT06747923-E01:r1"
+  ],
+  [
+   "trial:NCT06747923",
+   "has_criterion",
+   "crit:NCT06747923-E02"
+  ],
+  [
+   "crit:NCT06747923-E02",
+   "decided_as",
+   "dec:NCT06747923:NCT06747923-E02:r1"
+  ],
+  [
+   "crit:NCT06747923-E02",
+   "requires",
+   "concept:diagnosis:acute exacerbation of ipf"
+  ],
+  [
+   "concept:diagnosis:acute exacerbation of ipf",
+   "observed_as",
+   "ev:SYN-0018-EV068"
+  ],
+  [
+   "ev:SYN-0018-EV068",
+   "derived_from",
+   "src:SYN-0018-D09:569-632"
+  ],
+  [
+   "ev:SYN-0018-EV068",
+   "supports",
+   "dec:NCT06747923:NCT06747923-E02:r1"
+  ],
+  [
+   "crit:NCT06747923-E02",
+   "requires",
+   "concept:diagnosis:acute exacerbations"
+  ],
+  [
+   "concept:diagnosis:acute exacerbations",
+   "observed_as",
+   "ev:SYN-0018-EV198"
+  ],
+  [
+   "ev:SYN-0018-EV198",
+   "derived_from",
+   "src:SYN-0018-D09:3644-3675"
+  ],
+  [
+   "ev:SYN-0018-EV198",
+   "supports",
+   "dec:NCT06747923:NCT06747923-E02:r1"
+  ],
+  [
+   "trial:NCT06747923",
+   "has_criterion",
+   "crit:NCT06747923-E03"
+  ],
+  [
+   "crit:NCT06747923-E03",
+   "decided_as",
+   "dec:NCT06747923:NCT06747923-E03:r1"
+  ],
+  [
+   "trial:NCT06747923",
+   "has_criterion",
+   "crit:NCT06747923-E04"
+  ],
+  [
+   "crit:NCT06747923-E04",
+   "decided_as",
+   "dec:NCT06747923:NCT06747923-E04:r1"
+  ],
+  [
+   "trial:NCT06747923",
+   "has_criterion",
+   "crit:NCT06747923-E05"
+  ],
+  [
+   "crit:NCT06747923-E05",
+   "decided_as",
+   "dec:NCT06747923:NCT06747923-E05:r1"
+  ],
+  [
+   "crit:NCT06747923-E05",
+   "requires",
+   "concept:diagnosis:prior malignancy"
+  ],
+  [
+   "ev:SYN-0018-EV081",
+   "supports",
+   "dec:NCT06747923:NCT06747923-E05:r1"
+  ],
+  [
+   "trial:NCT06747923",
+   "has_criterion",
+   "crit:NCT06747923-E06"
+  ],
+  [
+   "crit:NCT06747923-E06",
+   "decided_as",
+   "dec:NCT06747923:NCT06747923-E06:r1"
+  ],
+  [
+   "trial:NCT06747923",
+   "has_criterion",
+   "crit:NCT06747923-E07"
+  ],
+  [
+   "crit:NCT06747923-E07",
+   "decided_as",
+   "dec:NCT06747923:NCT06747923-E07:r1"
+  ],
+  [
+   "trial:NCT06747923",
+   "has_criterion",
+   "crit:NCT06747923-E08"
+  ],
+  [
+   "crit:NCT06747923-E08",
+   "decided_as",
+   "dec:NCT06747923:NCT06747923-E08:r1"
+  ],
+  [
+   "crit:NCT06747923-E08",
+   "requires",
+   "concept:diagnosis:pulmonary hypertension"
+  ],
+  [
+   "concept:diagnosis:pulmonary hypertension",
+   "observed_as",
+   "ev:SYN-0018-EV194"
+  ],
+  [
+   "ev:SYN-0018-EV194",
+   "derived_from",
+   "src:SYN-0018-D09:3463-3610"
+  ],
+  [
+   "ev:SYN-0018-EV194",
+   "supports",
+   "dec:NCT06747923:NCT06747923-E08:r1"
+  ],
+  [
+   "trial:NCT06747923",
+   "has_criterion",
+   "crit:NCT06747923-E09"
+  ],
+  [
+   "crit:NCT06747923-E09",
+   "decided_as",
+   "dec:NCT06747923:NCT06747923-E09:r1"
+  ],
+  [
+   "trial:NCT06747923",
+   "has_criterion",
+   "crit:NCT06747923-E10"
+  ],
+  [
+   "crit:NCT06747923-E10",
+   "decided_as",
+   "dec:NCT06747923:NCT06747923-E10:r1"
+  ],
+  [
+   "crit:NCT06747923-E10",
+   "requires",
+   "concept:hiv:hiv-1/2 ag/ab"
+  ],
+  [
+   "concept:hiv:hiv-1/2 ag/ab",
+   "observed_as",
+   "ev:SYN-0018-EV264"
+  ],
+  [
+   "ev:SYN-0018-EV264",
+   "derived_from",
+   "src:SYN-0018-D10:1359-1381"
+  ],
+  [
+   "ev:SYN-0018-EV264",
+   "supports",
+   "dec:NCT06747923:NCT06747923-E10:r1"
+  ],
+  [
+   "crit:NCT06747923-E10",
+   "requires",
+   "concept:hepatitis_b:hbsag"
+  ],
+  [
+   "concept:hepatitis_b:hbsag",
+   "observed_as",
+   "ev:SYN-0018-EV261"
+  ],
+  [
+   "ev:SYN-0018-EV261",
+   "derived_from",
+   "src:SYN-0018-D10:1302-1316"
+  ],
+  [
+   "ev:SYN-0018-EV261",
+   "supports",
+   "dec:NCT06747923:NCT06747923-E10:r1"
+  ],
+  [
+   "crit:NCT06747923-E10",
+   "requires",
+   "concept:hepatitis_c:anti-hcv"
+  ],
+  [
+   "concept:hepatitis_c:anti-hcv",
+   "observed_as",
+   "ev:SYN-0018-EV263"
+  ],
+  [
+   "ev:SYN-0018-EV263",
+   "derived_from",
+   "src:SYN-0018-D10:1341-1358"
+  ],
+  [
+   "ev:SYN-0018-EV263",
+   "supports",
+   "dec:NCT06747923:NCT06747923-E10:r1"
+  ],
+  [
+   "trial:NCT06747923",
+   "labelled",
+   "label:NCT06747923"
+  ],
+  [
+   "trial:NCT07652658",
+   "has_criterion",
+   "crit:NCT07652658-I01"
+  ],
+  [
+   "crit:NCT07652658-I01",
+   "decided_as",
+   "dec:NCT07652658:NCT07652658-I01:r1"
+  ],
+  [
+   "crit:NCT07652658-I01",
+   "requires",
+   "concept:birth_date"
+  ],
+  [
+   "concept:birth_date",
+   "observed_as",
+   "ev:SYN-0018-EV002"
+  ],
+  [
+   "ev:SYN-0018-EV002",
+   "derived_from",
+   "src:SYN-0018-D01:8-23"
+  ],
+  [
+   "ev:SYN-0018-EV002",
+   "supports",
+   "dec:NCT07652658:NCT07652658-I01:r1"
+  ],
+  [
+   "calc:NCT07652658:NCT07652658-I01",
+   "computes",
+   "dec:NCT07652658:NCT07652658-I01:r1"
+  ],
+  [
+   "trial:NCT07652658",
+   "has_criterion",
+   "crit:NCT07652658-I02"
+  ],
+  [
+   "crit:NCT07652658-I02",
+   "decided_as",
+   "dec:NCT07652658:NCT07652658-I02:r1"
+  ],
+  [
+   "crit:NCT07652658-I02",
+   "requires",
+   "concept:diagnosis:idiopathic pulmonary fibrosis"
+  ],
+  [
+   "ev:SYN-0018-EV028",
+   "supports",
+   "dec:NCT07652658:NCT07652658-I02:r1"
+  ],
+  [
+   "concept:diagnosis:idiopathic pulmonary fibrosis",
+   "observed_as",
+   "ev:SYN-0018-EV046"
+  ],
+  [
+   "ev:SYN-0018-EV046",
+   "derived_from",
+   "src:SYN-0018-D09:47-104"
+  ],
+  [
+   "ev:SYN-0018-EV046",
+   "supports",
+   "dec:NCT07652658:NCT07652658-I02:r1"
+  ],
+  [
+   "trial:NCT07652658",
+   "has_criterion",
+   "crit:NCT07652658-I03"
+  ],
+  [
+   "crit:NCT07652658-I03",
+   "decided_as",
+   "dec:NCT07652658:NCT07652658-I03:r1"
+  ],
+  [
+   "crit:NCT07652658-I03",
+   "requires",
+   "concept:medication:pirfenidone 801 mg tid"
+  ],
+  [
+   "ev:SYN-0018-EV033",
+   "insufficient_for",
+   "dec:NCT07652658:NCT07652658-I03:r1"
+  ],
+  [
+   "crit:NCT07652658-I03",
+   "requires",
+   "concept:medication:pirfenidone"
+  ],
+  [
+   "ev:SYN-0018-EV055",
+   "insufficient_for",
+   "dec:NCT07652658:NCT07652658-I03:r1"
+  ],
+  [
+   "concept:medication:pirfenidone 801 mg tid",
+   "observed_as",
+   "ev:SYN-0018-EV056"
+  ],
+  [
+   "ev:SYN-0018-EV056",
+   "derived_from",
+   "src:SYN-0018-D09:315-330"
+  ],
+  [
+   "ev:SYN-0018-EV056",
+   "insufficient_for",
+   "dec:NCT07652658:NCT07652658-I03:r1"
+  ],
+  [
+   "trial:NCT07652658",
+   "has_criterion",
+   "crit:NCT07652658-I04"
+  ],
+  [
+   "crit:NCT07652658-I04",
+   "decided_as",
+   "dec:NCT07652658:NCT07652658-I04:r1"
+  ],
+  [
+   "crit:NCT07652658-I04",
+   "requires",
+   "concept:fvc"
+  ],
+  [
+   "ev:SYN-0018-EV271",
+   "supports",
+   "dec:NCT07652658:NCT07652658-I04:r1"
+  ],
+  [
+   "calc:NCT07652658:NCT07652658-I04",
+   "computes",
+   "dec:NCT07652658:NCT07652658-I04:r1"
+  ],
+  [
+   "trial:NCT07652658",
+   "has_criterion",
+   "crit:NCT07652658-I05"
+  ],
+  [
+   "crit:NCT07652658-I05",
+   "decided_as",
+   "dec:NCT07652658:NCT07652658-I05:r1"
+  ],
+  [
+   "crit:NCT07652658-I05",
+   "requires",
+   "concept:dlco"
+  ],
+  [
+   "concept:dlco",
+   "observed_as",
+   "ev:SYN-0018-EV272"
+  ],
+  [
+   "ev:SYN-0018-EV272",
+   "derived_from",
+   "src:SYN-0018-D07:119-138"
+  ],
+  [
+   "ev:SYN-0018-EV272",
+   "supports",
+   "dec:NCT07652658:NCT07652658-I05:r1"
+  ],
+  [
+   "calc:NCT07652658:NCT07652658-I05",
+   "computes",
+   "dec:NCT07652658:NCT07652658-I05:r1"
+  ],
+  [
+   "trial:NCT07652658",
+   "has_criterion",
+   "crit:NCT07652658-E01"
+  ],
+  [
+   "crit:NCT07652658-E01",
+   "decided_as",
+   "dec:NCT07652658:NCT07652658-E01:r1"
+  ],
+  [
+   "crit:NCT07652658-E01",
+   "requires",
+   "concept:symptom_finding:alternative cause"
+  ],
+  [
+   "ev:SYN-0018-EV270",
+   "supports",
+   "dec:NCT07652658:NCT07652658-E01:r1"
+  ],
+  [
+   "crit:NCT07652658-E01",
+   "requires",
+   "concept:diagnosis:other pulmonary history"
+  ],
+  [
+   "ev:SYN-0018-EV075",
+   "supports",
+   "dec:NCT07652658:NCT07652658-E01:r1"
+  ],
+  [
+   "trial:NCT07652658",
+   "has_criterion",
+   "crit:NCT07652658-E02"
+  ],
+  [
+   "crit:NCT07652658-E02",
+   "decided_as",
+   "dec:NCT07652658:NCT07652658-E02:r1"
+  ],
+  [
+   "trial:NCT07652658",
+   "has_criterion",
+   "crit:NCT07652658-E03"
+  ],
+  [
+   "crit:NCT07652658-E03",
+   "decided_as",
+   "dec:NCT07652658:NCT07652658-E03:r1"
+  ],
+  [
+   "crit:NCT07652658-E03",
+   "requires",
+   "concept:diagnosis:acute exacerbation of ipf"
+  ],
+  [
+   "ev:SYN-0018-EV068",
+   "supports",
+   "dec:NCT07652658:NCT07652658-E03:r1"
+  ],
+  [
+   "crit:NCT07652658-E03",
+   "requires",
+   "concept:diagnosis:acute exacerbations"
+  ],
+  [
+   "ev:SYN-0018-EV198",
+   "supports",
+   "dec:NCT07652658:NCT07652658-E03:r1"
+  ],
+  [
+   "trial:NCT07652658",
+   "has_criterion",
+   "crit:NCT07652658-E04"
+  ],
+  [
+   "crit:NCT07652658-E04",
+   "decided_as",
+   "dec:NCT07652658:NCT07652658-E04:r1"
+  ],
+  [
+   "trial:NCT07652658",
+   "has_criterion",
+   "crit:NCT07652658-E05"
+  ],
+  [
+   "crit:NCT07652658-E05",
+   "decided_as",
+   "dec:NCT07652658:NCT07652658-E05:r1"
+  ],
+  [
+   "trial:NCT07652658",
+   "has_criterion",
+   "crit:NCT07652658-E06"
+  ],
+  [
+   "crit:NCT07652658-E06",
+   "decided_as",
+   "dec:NCT07652658:NCT07652658-E06:r1"
+  ],
+  [
+   "crit:NCT07652658-E06",
+   "requires",
+   "concept:diagnosis:other cardiac history"
+  ],
+  [
+   "ev:SYN-0018-EV074",
+   "supports",
+   "dec:NCT07652658:NCT07652658-E06:r1"
+  ],
+  [
+   "crit:NCT07652658-E06",
+   "requires",
+   "concept:lvef"
+  ],
+  [
+   "concept:lvef",
+   "observed_as",
+   "ev:SYN-0018-EV192"
+  ],
+  [
+   "ev:SYN-0018-EV192",
+   "derived_from",
+   "src:SYN-0018-D09:3463-3610"
+  ],
+  [
+   "ev:SYN-0018-EV192",
+   "supports",
+   "dec:NCT07652658:NCT07652658-E06:r1"
+  ],
+  [
+   "trial:NCT07652658",
+   "has_criterion",
+   "crit:NCT07652658-E07"
+  ],
+  [
+   "crit:NCT07652658-E07",
+   "decided_as",
+   "dec:NCT07652658:NCT07652658-E07:r1"
+  ],
+  [
+   "trial:NCT07652658",
+   "labelled",
+   "label:NCT07652658"
+  ]
+ ]
+}

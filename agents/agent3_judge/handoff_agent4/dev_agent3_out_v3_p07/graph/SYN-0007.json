@@ -1,0 +1,4504 @@
+{
+ "patient_id": "SYN-0007",
+ "as_of": "2026-10-01",
+ "version": 1,
+ "nodes": [
+  {
+   "id": "trial:NCT06880770",
+   "kind": "trial",
+   "title": "Study of Plozasiran in Adults With Severe Hypertriglyceridemia at Risk of Acute Pancreatitis"
+  },
+  {
+   "id": "crit:NCT06880770-I01",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Males, or nonpregnant (who do not plan to become pregnant) nonlactating females",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06880770:NCT06880770-I01:r1",
+   "kind": "decision",
+   "trial_id": "NCT06880770",
+   "criterion_id": "NCT06880770-I01",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Patient is male; pregnancy/lactation condition cannot apply.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0007-EV001",
+   "kind": "evidence",
+   "concept": "sex",
+   "term": null,
+   "value": "male",
+   "unit": null,
+   "observed_date": "2026-09-27",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:sex",
+   "kind": "concept",
+   "concept": "sex",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0007-D01:0-5",
+   "kind": "source",
+   "doc_id": "SYN-0007-D01",
+   "doc_type": "registration",
+   "span": [
+    0,
+    5
+   ],
+   "text": "Male."
+  },
+  {
+   "id": "crit:NCT06880770-I02",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Established diagnosis of SHTG and prior documented evidence of fasting TG levels of >= 880 mg/dL (>= 10 mmol/L)",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06880770:NCT06880770-I02:r1",
+   "kind": "decision",
+   "trial_id": "NCT06880770",
+   "criterion_id": "NCT06880770-I02",
+   "status": "UNKNOWN",
+   "reason": "UNSUPPORTED",
+   "action": "med_record_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Hypertriglyceridemia dx 2021, but severity not documented; highest TG 412 mg/dL, no value >= 880 recorded.",
+   "missing_fact": "Prior documented fasting TG >= 880 mg/dL",
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0007-EV093",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "hypertriglyceridemia",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-10-01",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:diagnosis:hypertriglyceridemia",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "hypertriglyceridemia"
+  },
+  {
+   "id": "src:SYN-0007-D07:900-963",
+   "kind": "source",
+   "doc_id": "SYN-0007-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    900,
+    963
+   ],
+   "text": "Hypertriglyceridemia - dx 2021, never on lipid-lowering therapy"
+  },
+  {
+   "id": "ev:SYN-0007-EV036",
+   "kind": "evidence",
+   "concept": "triglycerides",
+   "term": null,
+   "value": 412,
+   "unit": "mg/dL",
+   "observed_date": "2026-09-27",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:triglycerides",
+   "kind": "concept",
+   "concept": "triglycerides",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0007-D03:178-201",
+   "kind": "source",
+   "doc_id": "SYN-0007-D03",
+   "doc_type": "lab_result",
+   "span": [
+    178,
+    201
+   ],
+   "text": "triglycerides 412 mg/dL"
+  },
+  {
+   "id": "crit:NCT06880770-I03",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Documented evidence of at least 1 prior AP event not attributed to other etiologies occurring within the last 60 months prior to Screening.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06880770:NCT06880770-I03:r1",
+   "kind": "decision",
+   "trial_id": "NCT06880770",
+   "criterion_id": "NCT06880770-I03",
+   "status": "UNKNOWN",
+   "reason": "UNSUPPORTED",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Recent AP documented, but etiology attributed to alcohol with contributing hypertriglyceridemia; 'not attributed to other etiologies' unsettled.",
+   "missing_fact": "Whether the AP event can be considered not attributed to other etiologies (alcohol-related vs. TG)",
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0007-EV189",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "acute alcoholic pancreatitis",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-10-01",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:diagnosis:acute alcoholic pancreatitis",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "acute alcoholic pancreatitis"
+  },
+  {
+   "id": "src:SYN-0007-D07:3398-3457",
+   "kind": "source",
+   "doc_id": "SYN-0007-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    3398,
+    3457
+   ],
+   "text": "Acute alcoholic pancreatitis, moderately severe, improving."
+  },
+  {
+   "id": "ev:SYN-0007-EV176",
+   "kind": "evidence",
+   "concept": "alcohol",
+   "term": "alcohol-related acute pancreatitis",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-10-01",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "past"
+  },
+  {
+   "id": "concept:alcohol:alcohol-related acute pancreatitis",
+   "kind": "concept",
+   "concept": "alcohol",
+   "term": "alcohol-related acute pancreatitis"
+  },
+  {
+   "id": "src:SYN-0007-D07:2892-2994",
+   "kind": "source",
+   "doc_id": "SYN-0007-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    2892,
+    2994
+   ],
+   "text": "Etiology: alcohol-related, with contributing hypertriglyceridemia (TG 412 on admission, 268 on 09-30)."
+  },
+  {
+   "id": "ev:SYN-0007-EV079",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "prior pancreatitis",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-10-01",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "past"
+  },
+  {
+   "id": "concept:diagnosis:prior pancreatitis",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "prior pancreatitis"
+  },
+  {
+   "id": "src:SYN-0007-D07:626-660",
+   "kind": "source",
+   "doc_id": "SYN-0007-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    626,
+    660
+   ],
+   "text": "No prior episodes of pancreatitis."
+  },
+  {
+   "id": "crit:NCT06880770-I04",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Fasting low-density lipoprotein cholesterol (LDL-C) <= 130 mg/dL (<= 3.37 mmol/L) at Screening",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06880770:NCT06880770-I04:r1",
+   "kind": "decision",
+   "trial_id": "NCT06880770",
+   "criterion_id": "NCT06880770-I04",
+   "status": "UNKNOWN",
+   "reason": "UNSUPPORTED",
+   "action": "lab_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "LDL 124 <= 130 but fasting state not documented; patient was on low-fat diet, not clearly fasting.",
+   "missing_fact": "Whether the LDL-C 124 mg/dL sample was fasting",
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0007-EV236",
+   "kind": "evidence",
+   "concept": "ldl_cholesterol",
+   "term": null,
+   "value": 124,
+   "unit": "mg/dL",
+   "observed_date": "2026-10-01",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:ldl_cholesterol",
+   "kind": "concept",
+   "concept": "ldl_cholesterol",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0007-D08:1101-1132",
+   "kind": "source",
+   "doc_id": "SYN-0007-D08",
+   "doc_type": "lab_result",
+   "span": [
+    1101,
+    1132
+   ],
+   "text": "LDL (direct) 124 mg/dL (<100) H"
+  },
+  {
+   "id": "crit:NCT06880770-I05",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Screening hemoglobin A1c (HbA1c) <= 9.5%",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06880770:NCT06880770-I05:r1",
+   "kind": "decision",
+   "trial_id": "NCT06880770",
+   "criterion_id": "NCT06880770-I05",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "structured_numeric"
+   ],
+   "note": "hba1c = 5.7 % (2026-10-01, -0d) vs <= 9.5 -> met",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0007-EV237",
+   "kind": "evidence",
+   "concept": "hba1c",
+   "term": null,
+   "value": 5.7,
+   "unit": "%",
+   "observed_date": "2026-10-01",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:hba1c",
+   "kind": "concept",
+   "concept": "hba1c",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0007-D08:1141-1164",
+   "kind": "source",
+   "doc_id": "SYN-0007-D08",
+   "doc_type": "lab_result",
+   "span": [
+    1141,
+    1164
+   ],
+   "text": "HbA1c 5.7% (<5.7 normal"
+  },
+  {
+   "id": "calc:NCT06880770:NCT06880770-I05",
+   "kind": "calculation",
+   "concept": "hba1c",
+   "operator": "<=",
+   "threshold": 9.5,
+   "unit": "%",
+   "value": 5.7,
+   "value_unit": "%",
+   "observed_date": "2026-10-01",
+   "days_before": 0,
+   "note": "hba1c = 5.7 % (2026-10-01, -0d) vs <= 9.5 -> met"
+  },
+  {
+   "id": "crit:NCT06880770-I06",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Willing to follow diet counseling and maintain a stable low-fat diet",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06880770:NCT06880770-I06:r1",
+   "kind": "decision",
+   "trial_id": "NCT06880770",
+   "criterion_id": "NCT06880770-I06",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "admin"
+   ],
+   "note": "consent/compliance item: not decidable from the record",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06880770-I07",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Must be on standard of care lipid and TG-lowering medications per local guidelines (unless documented as intolerant, or a treatment failure as determined by the Investigator)",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06880770:NCT06880770-I07:r1",
+   "kind": "decision",
+   "trial_id": "NCT06880770",
+   "criterion_id": "NCT06880770-I07",
+   "status": "UNKNOWN",
+   "reason": "UNSUPPORTED",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Never on lipid-lowering therapy; fenofibrate only planned. Investigator may accept as intolerant or failure, undocumented.",
+   "missing_fact": "Whether patient is on lipid/TG-lowering therapy or documented intolerant/failure",
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0007-EV193",
+   "kind": "evidence",
+   "concept": "treatment_plan",
+   "term": "fenofibrate",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-10-01",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "planned"
+  },
+  {
+   "id": "concept:treatment_plan:fenofibrate",
+   "kind": "concept",
+   "concept": "treatment_plan",
+   "term": "fenofibrate"
+  },
+  {
+   "id": "src:SYN-0007-D07:3704-3792",
+   "kind": "source",
+   "doc_id": "SYN-0007-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    3704,
+    3792
+   ],
+   "text": "outpatient fasting lipids in 6-8 weeks and consider fenofibrate if TG remain >200 mg/dL."
+  },
+  {
+   "id": "crit:NCT06880770-E01",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Use of any hepatocyte-targeted small interfering ribonucleic acid (siRNA) that targets lipids and/or triglycerides within 365 days before Day 1, except inclisiran.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06880770:NCT06880770-E01:r1",
+   "kind": "decision",
+   "trial_id": "NCT06880770",
+   "criterion_id": "NCT06880770-E01",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_history_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "list_inference",
+    "pc:strict_list_inference"
+   ],
+   "note": "[inferable PASS from SYN-0007-EV111] Reconciled medication list has no siRNA; never on lipid-lowering therapy.",
+   "missing_fact": null,
+   "derived_from": "SYN-0007-EV111"
+  },
+  {
+   "id": "crit:NCT06880770-E02",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Use of any other hepatocyte targeted siRNA or antisense oligonucleotide molecule within 60 days or within 5 half-lives lives before day 1. Whichever is longer.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06880770:NCT06880770-E02:r1",
+   "kind": "decision",
+   "trial_id": "NCT06880770",
+   "criterion_id": "NCT06880770-E02",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_history_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "list_inference",
+    "pc:strict_list_inference"
+   ],
+   "note": "[inferable PASS from SYN-0007-EV111] Reconciled medication list shows no siRNA or antisense oligonucleotide; no other medications stopped.",
+   "missing_fact": null,
+   "derived_from": "SYN-0007-EV111"
+  },
+  {
+   "id": "crit:NCT06880770-E03",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "AP <= 4 weeks prior to Randomization/Day 1",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06880770:NCT06880770-E03:r1",
+   "kind": "decision",
+   "trial_id": "NCT06880770",
+   "criterion_id": "NCT06880770-E03",
+   "status": "FAIL",
+   "reason": "VIOLATED",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Acute pancreatitis onset 2026-09-27, 4 days before as_of, within 4 weeks.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0007-EV022",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "acute pancreatitis",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-27",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:diagnosis:acute pancreatitis",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "acute pancreatitis"
+  },
+  {
+   "id": "src:SYN-0007-D02:363-411",
+   "kind": "source",
+   "doc_id": "SYN-0007-D02",
+   "doc_type": "clinic_note",
+   "span": [
+    363,
+    411
+   ],
+   "text": "Imp: acute pancreatitis, likely alcohol-related."
+  },
+  {
+   "id": "crit:NCT06880770-E04",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Body mass index (BMI) > 45 kg/m^2",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06880770:NCT06880770-E04:r1",
+   "kind": "decision",
+   "trial_id": "NCT06880770",
+   "criterion_id": "NCT06880770-E04",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "structured_numeric"
+   ],
+   "note": "bmi = 27.1 kg/m2 (2026-10-01, -0d) vs > 45 -> not met",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0007-EV085",
+   "kind": "evidence",
+   "concept": "bmi",
+   "term": null,
+   "value": 27.1,
+   "unit": "kg/m2",
+   "observed_date": "2026-10-01",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:bmi",
+   "kind": "concept",
+   "concept": "bmi",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0007-D07:773-788",
+   "kind": "source",
+   "doc_id": "SYN-0007-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    773,
+    788
+   ],
+   "text": "BMI 27.1 kg/m2."
+  },
+  {
+   "id": "calc:NCT06880770:NCT06880770-E04",
+   "kind": "calculation",
+   "concept": "bmi",
+   "operator": ">",
+   "threshold": 45,
+   "unit": "kg/m2",
+   "value": 27.1,
+   "value_unit": "kg/m2",
+   "observed_date": "2026-10-01",
+   "days_before": 0,
+   "note": "bmi = 27.1 kg/m2 (2026-10-01, -0d) vs > 45 -> not met"
+  },
+  {
+   "id": "crit:NCT06880770-E05",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Any planned bariatric surgery or similar procedures to induce weight lost starting at consent through End of Study (EOS)",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06880770:NCT06880770-E05:r1",
+   "kind": "decision",
+   "trial_id": "NCT06880770",
+   "criterion_id": "NCT06880770-E05",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No mention of planned bariatric surgery; only dietary counselling planned.",
+   "missing_fact": "Any planned bariatric or weight-loss procedure",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06880770-E06",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Planned coronary intervention (e.g. stent placement or heart bypass) during the study",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06880770:NCT06880770-E06:r1",
+   "kind": "decision",
+   "trial_id": "NCT06880770",
+   "criterion_id": "NCT06880770-E06",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Cardiac history denied but plans not addressed; blanket negation covers chronic history only.",
+   "missing_fact": "Any planned coronary intervention",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06880770-E07",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "History of arterial revascularization within 16 weeks of Screening",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06880770:NCT06880770-E07:r1",
+   "kind": "decision",
+   "trial_id": "NCT06880770",
+   "criterion_id": "NCT06880770-E07",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Blanket cardiac negation does not cover procedures; none recorded in procedure history.",
+   "missing_fact": "Any arterial revascularization within 16 weeks",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06880770-E08",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "History of acute coronary syndrome event within 24 weeks of Screening",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06880770:NCT06880770-E08:r1",
+   "kind": "decision",
+   "trial_id": "NCT06880770",
+   "criterion_id": "NCT06880770-E08",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation",
+    "pc:blanket_out_of_scope"
+   ],
+   "note": "[blanket negation out of A1 scope] No other cardiac history documented; chest pain denied, so no ACS.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06880770-E09",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Recent atherosclerotic cardiovascular disease (ASCVD) event within 24 weeks of Screening",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06880770:NCT06880770-E09:r1",
+   "kind": "decision",
+   "trial_id": "NCT06880770",
+   "criterion_id": "NCT06880770-E09",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Cardiac and neurologic history negated, but acute events within window not covered by blanket negation.",
+   "missing_fact": "Any ASCVD event (MI, stroke, revascularization) within 24 weeks",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06880770-E10",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Recent unstable or symptomatic cardiac arrhythmia (including any associated medication changes) within 90 days of Screening. Individuals with stable well-controlled atrial arrhythmia will be allowed to participate in the study",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06880770:NCT06880770-E10:r1",
+   "kind": "decision",
+   "trial_id": "NCT06880770",
+   "criterion_id": "NCT06880770-E10",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_record_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Regular heart and no palpitations are normal findings; no ECG, and blanket negation does not cover acute events.",
+   "missing_fact": "ECG/rhythm history showing no arrhythmia within 90 days",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06880770-E11",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "History of pacemaker or automatic implantable cardioverter defibrillators implant within 30 days before Screening",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06880770:NCT06880770-E11:r1",
+   "kind": "decision",
+   "trial_id": "NCT06880770",
+   "criterion_id": "NCT06880770-E11",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Procedures not covered by blanket negation; none recorded.",
+   "missing_fact": "Any pacemaker/ICD implant in last 30 days",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06880770-E12",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "New York Heart Association Class III-IV heart failure or last known ejection fraction of < 30%",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06880770:NCT06880770-E12:r1",
+   "kind": "decision",
+   "trial_id": "NCT06880770",
+   "criterion_id": "NCT06880770-E12",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation"
+   ],
+   "note": "No cardiac history documented (covers heart failure); no LVEF value recorded.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0007-EV098",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "cardiac history",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-10-01",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:cardiac history",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "cardiac history"
+  },
+  {
+   "id": "src:SYN-0007-D07:1052-1149",
+   "kind": "source",
+   "doc_id": "SYN-0007-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    1052,
+    1149
+   ],
+   "text": "No other cardiac, pulmonary, renal, autoimmune, endocrine (incl. diabetes) or neurologic history."
+  },
+  {
+   "id": "crit:NCT06880770-E13",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Current diagnosis of nephrotic syndrome",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06880770:NCT06880770-E13:r1",
+   "kind": "decision",
+   "trial_id": "NCT06880770",
+   "criterion_id": "NCT06880770-E13",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation"
+   ],
+   "note": "No renal history; urine protein negative and no edema.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0007-EV100",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "renal history",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-10-01",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:renal history",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "renal history"
+  },
+  {
+   "id": "crit:NCT06880770-E14",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Chronic kidney disease, defined by an estimated glomerular filtration rate (eGFR) < 20 mL/min/1.73 m^2",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06880770:NCT06880770-E14:r1",
+   "kind": "decision",
+   "trial_id": "NCT06880770",
+   "criterion_id": "NCT06880770-E14",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "structured_numeric"
+   ],
+   "note": "egfr = 97 mL/min/1.73m2 (2026-10-01, -0d) vs < 20 -> not met",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0007-EV218",
+   "kind": "evidence",
+   "concept": "egfr",
+   "term": null,
+   "value": 97,
+   "unit": "mL/min/1.73m2",
+   "observed_date": "2026-10-01",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:egfr",
+   "kind": "concept",
+   "concept": "egfr",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0007-D08:557-594",
+   "kind": "source",
+   "doc_id": "SYN-0007-D08",
+   "doc_type": "lab_result",
+   "span": [
+    557,
+    594
+   ],
+   "text": "eGFR (CKD-EPI) 97 mL/min/1.73m2 (>90)"
+  },
+  {
+   "id": "calc:NCT06880770:NCT06880770-E14",
+   "kind": "calculation",
+   "concept": "egfr",
+   "operator": "<",
+   "threshold": 20,
+   "unit": "mL/min/1.73m2",
+   "value": 97,
+   "value_unit": "mL/min/1.73m2",
+   "observed_date": "2026-10-01",
+   "days_before": 0,
+   "note": "egfr = 97 mL/min/1.73m2 (2026-10-01, -0d) vs < 20 -> not met"
+  },
+  {
+   "id": "crit:NCT06880770-E15",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Liver disease defined as cirrhosis or Child-Pugh Class B and C, or alanine aminotransferase (ALT) or aspartate aminotransferase (AST) >2.5× Upper Limit of Normal (ULN) at Screening",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06880770:NCT06880770-E15:r1",
+   "kind": "decision",
+   "trial_id": "NCT06880770",
+   "criterion_id": "NCT06880770-E15",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No cirrhosis; ALT 44 (ref 7-56) normal, AST 58 vs ULN 40 = 1.45x, below 2.5x. Child-Pugh B/C not applicable without cirrhosis.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0007-EV105",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "cirrhosis",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-10-01",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:cirrhosis",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "cirrhosis"
+  },
+  {
+   "id": "src:SYN-0007-D07:1150-1213",
+   "kind": "source",
+   "doc_id": "SYN-0007-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    1150,
+    1213
+   ],
+   "text": "No prior pancreatitis, no known cirrhosis, no prior malignancy."
+  },
+  {
+   "id": "ev:SYN-0007-EV226",
+   "kind": "evidence",
+   "concept": "alt",
+   "term": null,
+   "value": 44,
+   "unit": "U/L",
+   "observed_date": "2026-10-01",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:alt",
+   "kind": "concept",
+   "concept": "alt",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0007-D08:804-821",
+   "kind": "source",
+   "doc_id": "SYN-0007-D08",
+   "doc_type": "lab_result",
+   "span": [
+    804,
+    821
+   ],
+   "text": "ALT 44 U/L (7-56)"
+  },
+  {
+   "id": "ev:SYN-0007-EV225",
+   "kind": "evidence",
+   "concept": "ast",
+   "term": null,
+   "value": 58,
+   "unit": "U/L",
+   "observed_date": "2026-10-01",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:ast",
+   "kind": "concept",
+   "concept": "ast",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0007-D08:783-803",
+   "kind": "source",
+   "doc_id": "SYN-0007-D08",
+   "doc_type": "lab_result",
+   "span": [
+    783,
+    803
+   ],
+   "text": "AST 58 U/L (10-40) H"
+  },
+  {
+   "id": "label:NCT06880770",
+   "kind": "trial_decision",
+   "label": "ineligible",
+   "why": [
+    "FAIL NCT06880770-E03"
+   ],
+   "by": "agent3"
+  },
+  {
+   "id": "trial:NCT07267169",
+   "kind": "trial",
+   "title": "Efferon LPS Hemoadsorption in Patients With Acute Pancreatitis"
+  },
+  {
+   "id": "crit:NCT07267169-I01",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "<= 5 days from the onset of acute pancreatitis",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07267169:NCT07267169-I01:r1",
+   "kind": "decision",
+   "trial_id": "NCT07267169",
+   "criterion_id": "NCT07267169-I01",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Pain began the night before the 09-27 note, so onset was about 4.5-5 days before as_of. Within 5 days, but borderline.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0007-EV007",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "severe epigastric pain radiating to the back",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-27",
+   "certainty": "reported",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:symptom_finding:severe epigastric pain radiating to the back",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "severe epigastric pain radiating to the back"
+  },
+  {
+   "id": "src:SYN-0007-D02:9-78",
+   "kind": "source",
+   "doc_id": "SYN-0007-D02",
+   "doc_type": "clinic_note",
+   "span": [
+    9,
+    78
+   ],
+   "text": "54M c/o severe epigastric pain radiating to the back since last night"
+  },
+  {
+   "id": "crit:NCT07267169-I02",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Acute pancreatitis of moderate or severe according to the Atlanta classification (2012)",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07267169:NCT07267169-I02:r1",
+   "kind": "decision",
+   "trial_id": "NCT07267169",
+   "criterion_id": "NCT07267169-I02",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Revised Atlanta severity documented as moderately severe, which is the moderate category.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0007-EV179",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "Severity (revised Atlanta): moderately severe, based on smal",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-10-01",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:symptom_finding:severity (revised atlanta): moderately severe, based on smal",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "Severity (revised Atlanta): moderately severe, based on smal"
+  },
+  {
+   "id": "src:SYN-0007-D07:3018-3117",
+   "kind": "source",
+   "doc_id": "SYN-0007-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    3018,
+    3117
+   ],
+   "text": "Severity (revised Atlanta): moderately severe, based on small acute peripancreatic fluid collection"
+  },
+  {
+   "id": "crit:NCT07267169-I03",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Acute pancreatitis confirmed by tomography. Modified CTSI Pancreatitis Severity Index Score >= 4 points",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07267169:NCT07267169-I03:r1",
+   "kind": "decision",
+   "trial_id": "NCT07267169",
+   "criterion_id": "NCT07267169-I03",
+   "status": "FAIL",
+   "reason": "VIOLATED",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "CT confirms pancreatitis, but the CT severity index is 3 (Balthazar D), below the required >=4. Code check says not met. The record gives no separate modified CTSI.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0007-EV276",
+   "kind": "evidence",
+   "concept": "ctsi",
+   "term": null,
+   "value": 3,
+   "unit": "points",
+   "observed_date": "2026-10-01",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:ctsi",
+   "kind": "concept",
+   "concept": "ctsi",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0007-D07:3209-3256",
+   "kind": "source",
+   "doc_id": "SYN-0007-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    3209,
+    3256
+   ],
+   "text": "CT severity index 3 (Balthazar D, no necrosis)."
+  },
+  {
+   "id": "crit:NCT07267169-I04",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "APACHE II > 8",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07267169:NCT07267169-I04:r1",
+   "kind": "decision",
+   "trial_id": "NCT07267169",
+   "criterion_id": "NCT07267169-I04",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_record_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No APACHE II score is documented anywhere in the record.",
+   "missing_fact": "APACHE II score",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07267169-I05",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": ">= 2 points on the Sequential Organ Failure Assessment (SOFA) scale and/or >= 2 criteria of Systemic Inflammatory Response Syndrome (SIRS):",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07267169:NCT07267169-I05:r1",
+   "kind": "decision",
+   "trial_id": "NCT07267169",
+   "criterion_id": "NCT07267169-I05",
+   "status": "UNKNOWN",
+   "reason": "UNSUPPORTED",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "SIRS met on admission (HR 108, RR 20, WBC 14.2) but 0 criteria on 10-01. No SOFA value documented.",
+   "missing_fact": "SOFA score, or SIRS status at the time of enrollment",
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0007-EV016",
+   "kind": "evidence",
+   "concept": "heart_rate",
+   "term": null,
+   "value": 108,
+   "unit": "/min",
+   "observed_date": "2026-09-27",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:heart_rate",
+   "kind": "concept",
+   "concept": "heart_rate",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0007-D02:275-281",
+   "kind": "source",
+   "doc_id": "SYN-0007-D02",
+   "doc_type": "clinic_note",
+   "span": [
+    275,
+    281
+   ],
+   "text": "HR 108"
+  },
+  {
+   "id": "ev:SYN-0007-EV018",
+   "kind": "evidence",
+   "concept": "respiratory_rate",
+   "term": null,
+   "value": 20,
+   "unit": "/min",
+   "observed_date": "2026-09-27",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:respiratory_rate",
+   "kind": "concept",
+   "concept": "respiratory_rate",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0007-D02:294-299",
+   "kind": "source",
+   "doc_id": "SYN-0007-D02",
+   "doc_type": "clinic_note",
+   "span": [
+    294,
+    299
+   ],
+   "text": "RR 20"
+  },
+  {
+   "id": "ev:SYN-0007-EV029",
+   "kind": "evidence",
+   "concept": "wbc",
+   "term": null,
+   "value": 14.2,
+   "unit": "10^9/L",
+   "observed_date": "2026-09-27",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:wbc",
+   "kind": "concept",
+   "concept": "wbc",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0007-D03:49-65",
+   "kind": "source",
+   "doc_id": "SYN-0007-D03",
+   "doc_type": "lab_result",
+   "span": [
+    49,
+    65
+   ],
+   "text": "WBC 14.2 x10^9/L"
+  },
+  {
+   "id": "ev:SYN-0007-EV087",
+   "kind": "evidence",
+   "concept": "heart_rate",
+   "term": null,
+   "value": 78,
+   "unit": "/min",
+   "observed_date": "2026-10-01",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "src:SYN-0007-D07:800-805",
+   "kind": "source",
+   "doc_id": "SYN-0007-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    800,
+    805
+   ],
+   "text": "HR 78"
+  },
+  {
+   "id": "ev:SYN-0007-EV089",
+   "kind": "evidence",
+   "concept": "respiratory_rate",
+   "term": null,
+   "value": 16,
+   "unit": "/min",
+   "observed_date": "2026-10-01",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "src:SYN-0007-D07:817-822",
+   "kind": "source",
+   "doc_id": "SYN-0007-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    817,
+    822
+   ],
+   "text": "RR 16"
+  },
+  {
+   "id": "ev:SYN-0007-EV201",
+   "kind": "evidence",
+   "concept": "wbc",
+   "term": null,
+   "value": 8.2,
+   "unit": "10^9/L",
+   "observed_date": "2026-10-01",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "src:SYN-0007-D08:93-119",
+   "kind": "source",
+   "doc_id": "SYN-0007-D08",
+   "doc_type": "lab_result",
+   "span": [
+    93,
+    119
+   ],
+   "text": "WBC 8.2 x10^9/L (4.0-11.0)"
+  },
+  {
+   "id": "crit:NCT07267169-I06",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Body temperature >= 38 °C or <= 36 °C",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07267169:NCT07267169-I06:r1",
+   "kind": "decision",
+   "trial_id": "NCT07267169",
+   "criterion_id": "NCT07267169-I06",
+   "status": "FAIL",
+   "reason": "VIOLATED",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "structured_numeric"
+   ],
+   "note": "body_temperature = 36.8 C (2026-10-01, -0d) vs >= 38 -> not met",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0007-EV088",
+   "kind": "evidence",
+   "concept": "body_temperature",
+   "term": null,
+   "value": 36.8,
+   "unit": "C",
+   "observed_date": "2026-10-01",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:body_temperature",
+   "kind": "concept",
+   "concept": "body_temperature",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0007-D07:807-815",
+   "kind": "source",
+   "doc_id": "SYN-0007-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    807,
+    815
+   ],
+   "text": "T 36.8 C"
+  },
+  {
+   "id": "calc:NCT07267169:NCT07267169-I06",
+   "kind": "calculation",
+   "concept": "body_temperature",
+   "operator": ">=",
+   "threshold": 38,
+   "unit": "C",
+   "value": 36.8,
+   "value_unit": "C",
+   "observed_date": "2026-10-01",
+   "days_before": 0,
+   "note": "body_temperature = 36.8 C (2026-10-01, -0d) vs >= 38 -> not met"
+  },
+  {
+   "id": "crit:NCT07267169-I07",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Heart rate >= 90/min",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07267169:NCT07267169-I07:r1",
+   "kind": "decision",
+   "trial_id": "NCT07267169",
+   "criterion_id": "NCT07267169-I07",
+   "status": "FAIL",
+   "reason": "VIOLATED",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "structured_numeric"
+   ],
+   "note": "heart_rate = 78 /min (2026-10-01, -0d) vs >= 90 -> not met",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "calc:NCT07267169:NCT07267169-I07",
+   "kind": "calculation",
+   "concept": "heart_rate",
+   "operator": ">=",
+   "threshold": 90,
+   "unit": "/min",
+   "value": 78,
+   "value_unit": "/min",
+   "observed_date": "2026-10-01",
+   "days_before": 0,
+   "note": "heart_rate = 78 /min (2026-10-01, -0d) vs >= 90 -> not met"
+  },
+  {
+   "id": "crit:NCT07267169-I08",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Respiratory rate >= 20/min or hyperventilation with PaCO₂ <= 32 mmHg",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07267169:NCT07267169-I08:r1",
+   "kind": "decision",
+   "trial_id": "NCT07267169",
+   "criterion_id": "NCT07267169-I08",
+   "status": "FAIL",
+   "reason": "VIOLATED",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Current RR is 16 and SpO2 98% on room air, so no tachypnea or hyperventilation. No PaCO2 measured. RR was 20 on admission (-4d).",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0007-EV090",
+   "kind": "evidence",
+   "concept": "spo2",
+   "term": null,
+   "value": 98,
+   "unit": "%",
+   "observed_date": "2026-10-01",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:spo2",
+   "kind": "concept",
+   "concept": "spo2",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0007-D07:824-836",
+   "kind": "source",
+   "doc_id": "SYN-0007-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    824,
+    836
+   ],
+   "text": "SpO2 98% RA."
+  },
+  {
+   "id": "crit:NCT07267169-I09",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Leukocytosis (>= 12,000/μl) or leukopenia (<= 4,000/μl) or left shift of leukocyte formula",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07267169:NCT07267169-I09:r1",
+   "kind": "decision",
+   "trial_id": "NCT07267169",
+   "criterion_id": "NCT07267169-I09",
+   "status": "FAIL",
+   "reason": "VIOLATED",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Current WBC is 8.2 (normal) with normal neutrophil differential and no bands reported. WBC 14.2 on admission (-4d) is no longer current.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0007-EV202",
+   "kind": "evidence",
+   "concept": "anc",
+   "term": null,
+   "value": 5.1,
+   "unit": "10^9/L",
+   "observed_date": "2026-10-01",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:anc",
+   "kind": "concept",
+   "concept": "anc",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0007-D08:120-170",
+   "kind": "source",
+   "doc_id": "SYN-0007-D08",
+   "doc_type": "lab_result",
+   "span": [
+    120,
+    170
+   ],
+   "text": "Neutrophils 62% (40-75), abs 5.1 x10^9/L (1.8-7.5)"
+  },
+  {
+   "id": "crit:NCT07267169-E01",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "SOFA score > 12 points",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07267169:NCT07267169-E01:r1",
+   "kind": "decision",
+   "trial_id": "NCT07267169",
+   "criterion_id": "NCT07267169-E01",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_record_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No SOFA score documented. Notes say no organ failure, but that does not give a SOFA number.",
+   "missing_fact": "SOFA score value",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07267169-E02",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Presence of an uncontrolled surgical infection focus",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07267169:NCT07267169-E02:r1",
+   "kind": "decision",
+   "trial_id": "NCT07267169",
+   "criterion_id": "NCT07267169-E02",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No infection focus is mentioned. The small peripancreatic collection is not described as infected. Absence is not explicitly stated.",
+   "missing_fact": "Presence or absence of an uncontrolled surgical infection focus",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07267169-E03",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Development of septic complications - signs of infection",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07267169:NCT07267169-E03:r1",
+   "kind": "decision",
+   "trial_id": "NCT07267169",
+   "criterion_id": "NCT07267169-E03",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Afebrile with normal WBC, but no explicit statement about infection or sepsis. Normal findings do not prove absence.",
+   "missing_fact": "Explicit statement on septic complications or infection",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07267169-E04",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Acute pancreatitis as an exacerbation of chronic pancreatitis",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07267169:NCT07267169-E04:r1",
+   "kind": "decision",
+   "trial_id": "NCT07267169",
+   "criterion_id": "NCT07267169-E04",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Explicitly no prior pancreatitis, so this is a first episode and not an exacerbation of chronic pancreatitis.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0007-EV104",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "prior pancreatitis",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-10-01",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "crit:NCT07267169-E05",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Blood triglyceride level > 1000 mg/dL (11.2 mmol/L)",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07267169:NCT07267169-E05:r1",
+   "kind": "decision",
+   "trial_id": "NCT07267169",
+   "criterion_id": "NCT07267169-E05",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "structured_numeric"
+   ],
+   "note": "triglycerides = 214 mg/dL (2026-10-01, -0d) vs > 1000 -> not met",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0007-EV233",
+   "kind": "evidence",
+   "concept": "triglycerides",
+   "term": null,
+   "value": 214,
+   "unit": "mg/dL",
+   "observed_date": "2026-10-01",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "src:SYN-0007-D08:1010-1042",
+   "kind": "source",
+   "doc_id": "SYN-0007-D08",
+   "doc_type": "lab_result",
+   "span": [
+    1010,
+    1042
+   ],
+   "text": "Triglycerides 214 mg/dL (<150) H"
+  },
+  {
+   "id": "calc:NCT07267169:NCT07267169-E05",
+   "kind": "calculation",
+   "concept": "triglycerides",
+   "operator": ">",
+   "threshold": 1000,
+   "unit": "mg/dL",
+   "value": 214,
+   "value_unit": "mg/dL",
+   "observed_date": "2026-10-01",
+   "days_before": 0,
+   "note": "triglycerides = 214 mg/dL (2026-10-01, -0d) vs > 1000 -> not met"
+  },
+  {
+   "id": "crit:NCT07267169-E06",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Liver cirrhosis (> 6 points by Child-Pugh classification)",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07267169:NCT07267169-E06:r1",
+   "kind": "decision",
+   "trial_id": "NCT07267169",
+   "criterion_id": "NCT07267169-E06",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Explicit 'no known cirrhosis'.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07267169-E07",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Unresolved biliary hypertension syndrome",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07267169:NCT07267169-E07:r1",
+   "kind": "decision",
+   "trial_id": "NCT07267169",
+   "criterion_id": "NCT07267169-E07",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_record_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "normal_finding_inference",
+    "pc:strict_normal_finding_inference"
+   ],
+   "note": "[inferable PASS from normal findings] No biliary dilatation on CT, no jaundice, normal bilirubin and ALP. Absence is inferred from these findings.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07267169-E08",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "BMI >= 40",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07267169:NCT07267169-E08:r1",
+   "kind": "decision",
+   "trial_id": "NCT07267169",
+   "criterion_id": "NCT07267169-E08",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "structured_numeric"
+   ],
+   "note": "bmi = 27.1 kg/m2 (2026-10-01, -0d) vs >= 40 -> not met",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "calc:NCT07267169:NCT07267169-E08",
+   "kind": "calculation",
+   "concept": "bmi",
+   "operator": ">=",
+   "threshold": 40,
+   "unit": null,
+   "value": 27.1,
+   "value_unit": "kg/m2",
+   "observed_date": "2026-10-01",
+   "days_before": 0,
+   "note": "bmi = 27.1 kg/m2 (2026-10-01, -0d) vs >= 40 -> not met"
+  },
+  {
+   "id": "crit:NCT07267169-E09",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Dementia",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07267169:NCT07267169-E09:r1",
+   "kind": "decision",
+   "trial_id": "NCT07267169",
+   "criterion_id": "NCT07267169-E09",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation"
+   ],
+   "note": "No neurologic history, which covers chronic disease such as dementia. Patient is alert and oriented.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0007-EV103",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "neurologic history",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-10-01",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:neurologic history",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "neurologic history"
+  },
+  {
+   "id": "crit:NCT07267169-E10",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Chronic kidney disease stage 4-5",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07267169:NCT07267169-E10:r1",
+   "kind": "decision",
+   "trial_id": "NCT07267169",
+   "criterion_id": "NCT07267169-E10",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation"
+   ],
+   "note": "No renal history, and eGFR is 97 today.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07267169-E11",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Acute pulmonary embolism confirmed by CT",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07267169:NCT07267169-E11:r1",
+   "kind": "decision",
+   "trial_id": "NCT07267169",
+   "criterion_id": "NCT07267169-E11",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "The pulmonary blanket negation does not cover acute events. No CT pulmonary angiogram or PE statement in the record.",
+   "missing_fact": "Whether acute pulmonary embolism has been excluded or confirmed by CT",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07267169-E12",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Acute myocardial infarction within the last 4 weeks",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07267169:NCT07267169-E12:r1",
+   "kind": "decision",
+   "trial_id": "NCT07267169",
+   "criterion_id": "NCT07267169-E12",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "The cardiac blanket negation does not cover acute events within a window. Only a family MI is documented.",
+   "missing_fact": "Whether any myocardial infarction occurred in the last 4 weeks",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07267169-E13",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Acute cerebrovascular accident",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07267169:NCT07267169-E13:r1",
+   "kind": "decision",
+   "trial_id": "NCT07267169",
+   "criterion_id": "NCT07267169-E13",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "The neurologic blanket negation does not cover acute events. The nonfocal exam is a normal finding, not an explicit denial.",
+   "missing_fact": "Explicit statement that there is no acute stroke",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07267169-E14",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Severe congestive heart failure",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07267169:NCT07267169-E14:r1",
+   "kind": "decision",
+   "trial_id": "NCT07267169",
+   "criterion_id": "NCT07267169-E14",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation"
+   ],
+   "note": "No cardiac history, which covers chronic heart failure. No edema or dyspnea.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07267169-E15",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Uncontrolled bleeding (acute blood loss within the last 24 hours)",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07267169:NCT07267169-E15:r1",
+   "kind": "decision",
+   "trial_id": "NCT07267169",
+   "criterion_id": "NCT07267169-E15",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Only GI bleeding signs (melena, hematochezia) are denied. Hb is stable, but that does not show absence of bleeding elsewhere.",
+   "missing_fact": "Explicit statement that there is no active bleeding at any site",
+   "derived_from": null
+  },
+  {
+   "id": "label:NCT07267169",
+   "kind": "trial_decision",
+   "label": "ineligible",
+   "why": [
+    "FAIL NCT07267169-I03",
+    "FAIL NCT07267169-I06",
+    "FAIL NCT07267169-I07",
+    "FAIL NCT07267169-I08",
+    "FAIL NCT07267169-I09"
+   ],
+   "by": "agent3"
+  },
+  {
+   "id": "trial:NCT07803965",
+   "kind": "trial",
+   "title": "Study of SGC001 Injection for Predicted Severe Acute Pancreatitis to Assess Safety, Tolerability and Preliminary Efficacy"
+  },
+  {
+   "id": "crit:NCT07803965-I01",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Aged 18 to 75 years inclusive, with no restriction on gender",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07803965:NCT07803965-I01:r1",
+   "kind": "decision",
+   "trial_id": "NCT07803965",
+   "criterion_id": "NCT07803965-I01",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "age_rule"
+   ],
+   "note": "age 54.63 y vs [18.0, 75.0]",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0007-EV002",
+   "kind": "evidence",
+   "concept": "birth_date",
+   "term": null,
+   "value": "1972-02-11",
+   "unit": null,
+   "observed_date": "2026-09-27",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:birth_date",
+   "kind": "concept",
+   "concept": "birth_date",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0007-D01:6-21",
+   "kind": "source",
+   "doc_id": "SYN-0007-D01",
+   "doc_type": "registration",
+   "span": [
+    6,
+    21
+   ],
+   "text": "DOB 1972-02-11."
+  },
+  {
+   "id": "calc:NCT07803965:NCT07803965-I01",
+   "kind": "calculation",
+   "name": "age_at_as_of",
+   "value": 54.635,
+   "lo": 18.0,
+   "hi": 75.0
+  },
+  {
+   "id": "crit:NCT07803965-I02",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Meet the diagnostic criteria for acute pancreatitis (AP) specified in the IAP Guidelines for the Management of Acute Pancreatitis (2025 Revision), i.e., satisfying at least two of the following three criteria: Clinical criterion: Acute epigastric abdominal pain; Biochemical criterion: Elevated pancreatic enzymes (serum lipase or amylase level more than 3 times the upper limit of normal (ULN)); Imaging criterion: Abdominal imaging examination (computed tomography (CT) or ultrasound) demonstrating findings consistent with acute pancreatic inflammation, with or without necrosis.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07803965:NCT07803965-I02:r1",
+   "kind": "decision",
+   "trial_id": "NCT07803965",
+   "criterion_id": "NCT07803965-I02",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Acute epigastric pain, lipase 2140 (ref 13-60, >3x ULN) and CT showing pancreatic inflammation: all three criteria met.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0007-EV027",
+   "kind": "evidence",
+   "concept": "lipase",
+   "term": null,
+   "value": 2140,
+   "unit": "U/L",
+   "observed_date": "2026-09-27",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:lipase",
+   "kind": "concept",
+   "concept": "lipase",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0007-D03:0-28",
+   "kind": "source",
+   "doc_id": "SYN-0007-D03",
+   "doc_type": "lab_result",
+   "span": [
+    0,
+    28
+   ],
+   "text": "Lipase 2,140 U/L (ref 13-60)"
+  },
+  {
+   "id": "ev:SYN-0007-EV041",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "diffuse pancreatic enlargement",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:symptom_finding:diffuse pancreatic enlargement",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "diffuse pancreatic enlargement"
+  },
+  {
+   "id": "src:SYN-0007-D04:0-127",
+   "kind": "source",
+   "doc_id": "SYN-0007-D04",
+   "doc_type": "imaging_report",
+   "span": [
+    0,
+    127
+   ],
+   "text": "Contrast CT abdomen: diffuse pancreatic enlargement with peripancreatic fat stranding and small fluid collection near the tail."
+  },
+  {
+   "id": "crit:NCT07803965-I03",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Meet the manifestations of predicted severe acute pancreatitis (AP)",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07803965:NCT07803965-I03:r1",
+   "kind": "decision",
+   "trial_id": "NCT07803965",
+   "criterion_id": "NCT07803965-I03",
+   "status": "UNKNOWN",
+   "reason": "UNSUPPORTED",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Moderately severe, BISAP 1, Ranson 0, no organ failure; no 'predicted severe' statement. Prediction not documented.",
+   "missing_fact": "Whether the clinician/protocol considers the patient as predicted severe AP",
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0007-EV182",
+   "kind": "evidence",
+   "concept": "lab_other",
+   "term": "BISAP score on admission",
+   "value": 1,
+   "unit": null,
+   "observed_date": "2026-10-01",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:lab_other:bisap score on admission",
+   "kind": "concept",
+   "concept": "lab_other",
+   "term": "BISAP score on admission"
+  },
+  {
+   "id": "src:SYN-0007-D07:3152-3185",
+   "kind": "source",
+   "doc_id": "SYN-0007-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    3152,
+    3185
+   ],
+   "text": "BISAP on admission 1 (SIRS only)."
+  },
+  {
+   "id": "ev:SYN-0007-EV183",
+   "kind": "evidence",
+   "concept": "lab_other",
+   "term": "Ranson score at admission",
+   "value": 0,
+   "unit": null,
+   "observed_date": "2026-10-01",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:lab_other:ranson score at admission",
+   "kind": "concept",
+   "concept": "lab_other",
+   "term": "Ranson score at admission"
+  },
+  {
+   "id": "src:SYN-0007-D07:3186-3208",
+   "kind": "source",
+   "doc_id": "SYN-0007-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    3186,
+    3208
+   ],
+   "text": "Ranson at admission 0."
+  },
+  {
+   "id": "crit:NCT07803965-E01",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "The exact onset time of abdominal pain cannot be accurately determined.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07803965:NCT07803965-E01:r1",
+   "kind": "decision",
+   "trial_id": "NCT07803965",
+   "criterion_id": "NCT07803965-E01",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Pain onset documented as 'since last night' before 2026-09-27 presentation; onset time is determinable.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07803965-E02",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "History of endoscopic retrograde cholangiopancreatography (ERCP) performed within 7 days prior to screening;",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07803965:NCT07803965-E02:r1",
+   "kind": "decision",
+   "trial_id": "NCT07803965",
+   "criterion_id": "NCT07803965-E02",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No abdominal or biliary surgery stated; ERCP not documented, but CT showed no gallstones or biliary dilatation, so no ERCP indication.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0007-EV109",
+   "kind": "evidence",
+   "concept": "procedure",
+   "term": "biliary surgery",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-10-01",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:procedure:biliary surgery",
+   "kind": "concept",
+   "concept": "procedure",
+   "term": "biliary surgery"
+  },
+  {
+   "id": "src:SYN-0007-D07:1273-1305",
+   "kind": "source",
+   "doc_id": "SYN-0007-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    1273,
+    1305
+   ],
+   "text": "No abdominal or biliary surgery."
+  },
+  {
+   "id": "ev:SYN-0007-EV108",
+   "kind": "evidence",
+   "concept": "procedure",
+   "term": "abdominal surgery",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-10-01",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:procedure:abdominal surgery",
+   "kind": "concept",
+   "concept": "procedure",
+   "term": "abdominal surgery"
+  },
+  {
+   "id": "crit:NCT07803965-E03",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Received extracorporeal membrane oxygenation (ECMO) or renal replacement therapy prior to admission;",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07803965:NCT07803965-E03:r1",
+   "kind": "decision",
+   "trial_id": "NCT07803965",
+   "criterion_id": "NCT07803965-E03",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_history_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No mention of ECMO or RRT; normal renal function and SpO2 do not prove absence.",
+   "missing_fact": "Whether ECMO or renal replacement therapy was received before admission",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07803965-E04",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Requirement for emergency surgery, ERCP, ECMO, renal replacement therapy or plasma exchange immediately upon admission;",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07803965:NCT07803965-E04:r1",
+   "kind": "decision",
+   "trial_id": "NCT07803965",
+   "criterion_id": "NCT07803965-E04",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Admission plan was IV fluids, analgesia and NPO; no explicit statement that none of these procedures was needed.",
+   "missing_fact": "Whether emergency surgery, ERCP, ECMO, RRT or plasma exchange was required on admission",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07803965-E05",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Having a known medical history of severe cardiovascular, respiratory, renal, hepatic, hematological or immune diseases;",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07803965:NCT07803965-E05:r1",
+   "kind": "decision",
+   "trial_id": "NCT07803965",
+   "criterion_id": "NCT07803965-E05",
+   "status": "UNKNOWN",
+   "reason": "UNSUPPORTED",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation"
+   ],
+   "note": "Cardiac, pulmonary, renal and autoimmune history denied, no cirrhosis. Hypertension (controlled) and steatosis severity are not graded; hematologic disease not covered.",
+   "missing_fact": "Whether hypertension and hepatic steatosis count as severe disease; hematological disease not addressed",
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0007-EV092",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "hypertension",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-10-01",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:diagnosis:hypertension",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "hypertension"
+  },
+  {
+   "id": "src:SYN-0007-D07:874-896",
+   "kind": "source",
+   "doc_id": "SYN-0007-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    874,
+    896
+   ],
+   "text": "Hypertension - dx 2019"
+  },
+  {
+   "id": "ev:SYN-0007-EV047",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "hepatic steatosis",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:hepatic steatosis",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "hepatic steatosis"
+  },
+  {
+   "id": "src:SYN-0007-D04:178-196",
+   "kind": "source",
+   "doc_id": "SYN-0007-D04",
+   "doc_type": "imaging_report",
+   "span": [
+    178,
+    196
+   ],
+   "text": "Hepatic steatosis."
+  },
+  {
+   "id": "crit:NCT07803965-E06",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Subjects with current malignancy or a prior history of malignant tumors, except for basal cell carcinoma, squamous cell carcinoma of the skin, superficial bladder tumors or carcinoma in situ of the cervix that have been cured for at least 5 years.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07803965:NCT07803965-E06:r1",
+   "kind": "decision",
+   "trial_id": "NCT07803965",
+   "criterion_id": "NCT07803965-E06",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Explicit 'no prior malignancy'; lifetime denial.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0007-EV106",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "prior malignancy",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-10-01",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:prior malignancy",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "prior malignancy"
+  },
+  {
+   "id": "crit:NCT07803965-E07",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Subjects suffering from severe psychiatric disorders, cognitive impairment caused by severe social environmental factors, or any other conditions that the investigator judges may lead to poor protocol compliance or expose the subject to additional safety risks during the trial.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07803965:NCT07803965-E07:r1",
+   "kind": "decision",
+   "trial_id": "NCT07803965",
+   "criterion_id": "NCT07803965-E07",
+   "status": "UNKNOWN",
+   "reason": "UNSUPPORTED",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Alcohol use disorder and situational low mood present, severity not graded; patient agrees to alcohol program. Investigator-judgment item.",
+   "missing_fact": "Investigator judgment on whether alcohol use disorder or low mood threatens compliance or safety",
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0007-EV095",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "alcohol use disorder",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-10-01",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:diagnosis:alcohol use disorder",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "alcohol use disorder"
+  },
+  {
+   "id": "src:SYN-0007-D07:967-1006",
+   "kind": "source",
+   "doc_id": "SYN-0007-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    967,
+    1006
+   ],
+   "text": "Alcohol use disorder - chronic, >15 yrs"
+  },
+  {
+   "id": "ev:SYN-0007-EV150",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "low mood",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-10-01",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:symptom_finding:low mood",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "low mood"
+  },
+  {
+   "id": "src:SYN-0007-D07:2387-2441",
+   "kind": "source",
+   "doc_id": "SYN-0007-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    2387,
+    2441
+   ],
+   "text": "Psych: low mood related to hospitalization, denies SI."
+  },
+  {
+   "id": "crit:NCT07803965-E08",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Administration of live vaccines within 1 month prior to screening;",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07803965:NCT07803965-E08:r1",
+   "kind": "decision",
+   "trial_id": "NCT07803965",
+   "criterion_id": "NCT07803965-E08",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Medication list is reconciled but vaccines are not addressed; absence not stated.",
+   "missing_fact": "Whether a live vaccine was given within the last month",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07803965-E09",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Female subjects who are pregnant or breastfeeding; female subjects of childbearing potential who have had unprotected sexual intercourse within 1 month prior to screening, or with a positive pregnancy test at screening; subjects (or their partners) who plan to conceive, donate sperm or oocytes throughout the study period and within 6 months after study completion; subjects who refuse to use one or more effective contraceptive methods during the study and for 6 months following the end of the study.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07803965:NCT07803965-E09:r1",
+   "kind": "decision",
+   "trial_id": "NCT07803965",
+   "criterion_id": "NCT07803965-E09",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Male, so the pregnancy/breastfeeding parts are void, but the plan-to-conceive, sperm donation and contraception parts are not documented.",
+   "missing_fact": "Whether the patient or partner plans to conceive or donate sperm, and willingness to use contraception",
+   "derived_from": null
+  },
+  {
+   "id": "label:NCT07803965",
+   "kind": "trial_decision",
+   "label": "potential",
+   "why": [
+    "UNKNOWN/UNSUPPORTED NCT07803965-I03",
+    "UNKNOWN/UNSUPPORTED NCT07803965-E05",
+    "UNKNOWN/UNSUPPORTED NCT07803965-E07"
+   ],
+   "by": "agent3"
+  }
+ ],
+ "edges": [
+  [
+   "trial:NCT06880770",
+   "has_criterion",
+   "crit:NCT06880770-I01"
+  ],
+  [
+   "crit:NCT06880770-I01",
+   "decided_as",
+   "dec:NCT06880770:NCT06880770-I01:r1"
+  ],
+  [
+   "crit:NCT06880770-I01",
+   "requires",
+   "concept:sex"
+  ],
+  [
+   "concept:sex",
+   "observed_as",
+   "ev:SYN-0007-EV001"
+  ],
+  [
+   "ev:SYN-0007-EV001",
+   "derived_from",
+   "src:SYN-0007-D01:0-5"
+  ],
+  [
+   "ev:SYN-0007-EV001",
+   "supports",
+   "dec:NCT06880770:NCT06880770-I01:r1"
+  ],
+  [
+   "trial:NCT06880770",
+   "has_criterion",
+   "crit:NCT06880770-I02"
+  ],
+  [
+   "crit:NCT06880770-I02",
+   "decided_as",
+   "dec:NCT06880770:NCT06880770-I02:r1"
+  ],
+  [
+   "crit:NCT06880770-I02",
+   "requires",
+   "concept:diagnosis:hypertriglyceridemia"
+  ],
+  [
+   "concept:diagnosis:hypertriglyceridemia",
+   "observed_as",
+   "ev:SYN-0007-EV093"
+  ],
+  [
+   "ev:SYN-0007-EV093",
+   "derived_from",
+   "src:SYN-0007-D07:900-963"
+  ],
+  [
+   "ev:SYN-0007-EV093",
+   "insufficient_for",
+   "dec:NCT06880770:NCT06880770-I02:r1"
+  ],
+  [
+   "crit:NCT06880770-I02",
+   "requires",
+   "concept:triglycerides"
+  ],
+  [
+   "concept:triglycerides",
+   "observed_as",
+   "ev:SYN-0007-EV036"
+  ],
+  [
+   "ev:SYN-0007-EV036",
+   "derived_from",
+   "src:SYN-0007-D03:178-201"
+  ],
+  [
+   "ev:SYN-0007-EV036",
+   "insufficient_for",
+   "dec:NCT06880770:NCT06880770-I02:r1"
+  ],
+  [
+   "trial:NCT06880770",
+   "has_criterion",
+   "crit:NCT06880770-I03"
+  ],
+  [
+   "crit:NCT06880770-I03",
+   "decided_as",
+   "dec:NCT06880770:NCT06880770-I03:r1"
+  ],
+  [
+   "crit:NCT06880770-I03",
+   "requires",
+   "concept:diagnosis:acute alcoholic pancreatitis"
+  ],
+  [
+   "concept:diagnosis:acute alcoholic pancreatitis",
+   "observed_as",
+   "ev:SYN-0007-EV189"
+  ],
+  [
+   "ev:SYN-0007-EV189",
+   "derived_from",
+   "src:SYN-0007-D07:3398-3457"
+  ],
+  [
+   "ev:SYN-0007-EV189",
+   "insufficient_for",
+   "dec:NCT06880770:NCT06880770-I03:r1"
+  ],
+  [
+   "crit:NCT06880770-I03",
+   "requires",
+   "concept:alcohol:alcohol-related acute pancreatitis"
+  ],
+  [
+   "concept:alcohol:alcohol-related acute pancreatitis",
+   "observed_as",
+   "ev:SYN-0007-EV176"
+  ],
+  [
+   "ev:SYN-0007-EV176",
+   "derived_from",
+   "src:SYN-0007-D07:2892-2994"
+  ],
+  [
+   "ev:SYN-0007-EV176",
+   "insufficient_for",
+   "dec:NCT06880770:NCT06880770-I03:r1"
+  ],
+  [
+   "crit:NCT06880770-I03",
+   "requires",
+   "concept:diagnosis:prior pancreatitis"
+  ],
+  [
+   "concept:diagnosis:prior pancreatitis",
+   "observed_as",
+   "ev:SYN-0007-EV079"
+  ],
+  [
+   "ev:SYN-0007-EV079",
+   "derived_from",
+   "src:SYN-0007-D07:626-660"
+  ],
+  [
+   "ev:SYN-0007-EV079",
+   "insufficient_for",
+   "dec:NCT06880770:NCT06880770-I03:r1"
+  ],
+  [
+   "trial:NCT06880770",
+   "has_criterion",
+   "crit:NCT06880770-I04"
+  ],
+  [
+   "crit:NCT06880770-I04",
+   "decided_as",
+   "dec:NCT06880770:NCT06880770-I04:r1"
+  ],
+  [
+   "crit:NCT06880770-I04",
+   "requires",
+   "concept:ldl_cholesterol"
+  ],
+  [
+   "concept:ldl_cholesterol",
+   "observed_as",
+   "ev:SYN-0007-EV236"
+  ],
+  [
+   "ev:SYN-0007-EV236",
+   "derived_from",
+   "src:SYN-0007-D08:1101-1132"
+  ],
+  [
+   "ev:SYN-0007-EV236",
+   "insufficient_for",
+   "dec:NCT06880770:NCT06880770-I04:r1"
+  ],
+  [
+   "trial:NCT06880770",
+   "has_criterion",
+   "crit:NCT06880770-I05"
+  ],
+  [
+   "crit:NCT06880770-I05",
+   "decided_as",
+   "dec:NCT06880770:NCT06880770-I05:r1"
+  ],
+  [
+   "crit:NCT06880770-I05",
+   "requires",
+   "concept:hba1c"
+  ],
+  [
+   "concept:hba1c",
+   "observed_as",
+   "ev:SYN-0007-EV237"
+  ],
+  [
+   "ev:SYN-0007-EV237",
+   "derived_from",
+   "src:SYN-0007-D08:1141-1164"
+  ],
+  [
+   "ev:SYN-0007-EV237",
+   "supports",
+   "dec:NCT06880770:NCT06880770-I05:r1"
+  ],
+  [
+   "calc:NCT06880770:NCT06880770-I05",
+   "computes",
+   "dec:NCT06880770:NCT06880770-I05:r1"
+  ],
+  [
+   "trial:NCT06880770",
+   "has_criterion",
+   "crit:NCT06880770-I06"
+  ],
+  [
+   "crit:NCT06880770-I06",
+   "decided_as",
+   "dec:NCT06880770:NCT06880770-I06:r1"
+  ],
+  [
+   "trial:NCT06880770",
+   "has_criterion",
+   "crit:NCT06880770-I07"
+  ],
+  [
+   "crit:NCT06880770-I07",
+   "decided_as",
+   "dec:NCT06880770:NCT06880770-I07:r1"
+  ],
+  [
+   "crit:NCT06880770-I07",
+   "requires",
+   "concept:diagnosis:hypertriglyceridemia"
+  ],
+  [
+   "ev:SYN-0007-EV093",
+   "insufficient_for",
+   "dec:NCT06880770:NCT06880770-I07:r1"
+  ],
+  [
+   "crit:NCT06880770-I07",
+   "requires",
+   "concept:treatment_plan:fenofibrate"
+  ],
+  [
+   "concept:treatment_plan:fenofibrate",
+   "observed_as",
+   "ev:SYN-0007-EV193"
+  ],
+  [
+   "ev:SYN-0007-EV193",
+   "derived_from",
+   "src:SYN-0007-D07:3704-3792"
+  ],
+  [
+   "ev:SYN-0007-EV193",
+   "insufficient_for",
+   "dec:NCT06880770:NCT06880770-I07:r1"
+  ],
+  [
+   "trial:NCT06880770",
+   "has_criterion",
+   "crit:NCT06880770-E01"
+  ],
+  [
+   "crit:NCT06880770-E01",
+   "decided_as",
+   "dec:NCT06880770:NCT06880770-E01:r1"
+  ],
+  [
+   "trial:NCT06880770",
+   "has_criterion",
+   "crit:NCT06880770-E02"
+  ],
+  [
+   "crit:NCT06880770-E02",
+   "decided_as",
+   "dec:NCT06880770:NCT06880770-E02:r1"
+  ],
+  [
+   "trial:NCT06880770",
+   "has_criterion",
+   "crit:NCT06880770-E03"
+  ],
+  [
+   "crit:NCT06880770-E03",
+   "decided_as",
+   "dec:NCT06880770:NCT06880770-E03:r1"
+  ],
+  [
+   "crit:NCT06880770-E03",
+   "requires",
+   "concept:diagnosis:acute alcoholic pancreatitis"
+  ],
+  [
+   "ev:SYN-0007-EV189",
+   "supports",
+   "dec:NCT06880770:NCT06880770-E03:r1"
+  ],
+  [
+   "crit:NCT06880770-E03",
+   "requires",
+   "concept:diagnosis:acute pancreatitis"
+  ],
+  [
+   "concept:diagnosis:acute pancreatitis",
+   "observed_as",
+   "ev:SYN-0007-EV022"
+  ],
+  [
+   "ev:SYN-0007-EV022",
+   "derived_from",
+   "src:SYN-0007-D02:363-411"
+  ],
+  [
+   "ev:SYN-0007-EV022",
+   "supports",
+   "dec:NCT06880770:NCT06880770-E03:r1"
+  ],
+  [
+   "trial:NCT06880770",
+   "has_criterion",
+   "crit:NCT06880770-E04"
+  ],
+  [
+   "crit:NCT06880770-E04",
+   "decided_as",
+   "dec:NCT06880770:NCT06880770-E04:r1"
+  ],
+  [
+   "crit:NCT06880770-E04",
+   "requires",
+   "concept:bmi"
+  ],
+  [
+   "concept:bmi",
+   "observed_as",
+   "ev:SYN-0007-EV085"
+  ],
+  [
+   "ev:SYN-0007-EV085",
+   "derived_from",
+   "src:SYN-0007-D07:773-788"
+  ],
+  [
+   "ev:SYN-0007-EV085",
+   "supports",
+   "dec:NCT06880770:NCT06880770-E04:r1"
+  ],
+  [
+   "calc:NCT06880770:NCT06880770-E04",
+   "computes",
+   "dec:NCT06880770:NCT06880770-E04:r1"
+  ],
+  [
+   "trial:NCT06880770",
+   "has_criterion",
+   "crit:NCT06880770-E05"
+  ],
+  [
+   "crit:NCT06880770-E05",
+   "decided_as",
+   "dec:NCT06880770:NCT06880770-E05:r1"
+  ],
+  [
+   "trial:NCT06880770",
+   "has_criterion",
+   "crit:NCT06880770-E06"
+  ],
+  [
+   "crit:NCT06880770-E06",
+   "decided_as",
+   "dec:NCT06880770:NCT06880770-E06:r1"
+  ],
+  [
+   "trial:NCT06880770",
+   "has_criterion",
+   "crit:NCT06880770-E07"
+  ],
+  [
+   "crit:NCT06880770-E07",
+   "decided_as",
+   "dec:NCT06880770:NCT06880770-E07:r1"
+  ],
+  [
+   "trial:NCT06880770",
+   "has_criterion",
+   "crit:NCT06880770-E08"
+  ],
+  [
+   "crit:NCT06880770-E08",
+   "decided_as",
+   "dec:NCT06880770:NCT06880770-E08:r1"
+  ],
+  [
+   "trial:NCT06880770",
+   "has_criterion",
+   "crit:NCT06880770-E09"
+  ],
+  [
+   "crit:NCT06880770-E09",
+   "decided_as",
+   "dec:NCT06880770:NCT06880770-E09:r1"
+  ],
+  [
+   "trial:NCT06880770",
+   "has_criterion",
+   "crit:NCT06880770-E10"
+  ],
+  [
+   "crit:NCT06880770-E10",
+   "decided_as",
+   "dec:NCT06880770:NCT06880770-E10:r1"
+  ],
+  [
+   "trial:NCT06880770",
+   "has_criterion",
+   "crit:NCT06880770-E11"
+  ],
+  [
+   "crit:NCT06880770-E11",
+   "decided_as",
+   "dec:NCT06880770:NCT06880770-E11:r1"
+  ],
+  [
+   "trial:NCT06880770",
+   "has_criterion",
+   "crit:NCT06880770-E12"
+  ],
+  [
+   "crit:NCT06880770-E12",
+   "decided_as",
+   "dec:NCT06880770:NCT06880770-E12:r1"
+  ],
+  [
+   "crit:NCT06880770-E12",
+   "requires",
+   "concept:diagnosis:cardiac history"
+  ],
+  [
+   "concept:diagnosis:cardiac history",
+   "observed_as",
+   "ev:SYN-0007-EV098"
+  ],
+  [
+   "ev:SYN-0007-EV098",
+   "derived_from",
+   "src:SYN-0007-D07:1052-1149"
+  ],
+  [
+   "ev:SYN-0007-EV098",
+   "supports",
+   "dec:NCT06880770:NCT06880770-E12:r1"
+  ],
+  [
+   "trial:NCT06880770",
+   "has_criterion",
+   "crit:NCT06880770-E13"
+  ],
+  [
+   "crit:NCT06880770-E13",
+   "decided_as",
+   "dec:NCT06880770:NCT06880770-E13:r1"
+  ],
+  [
+   "crit:NCT06880770-E13",
+   "requires",
+   "concept:diagnosis:renal history"
+  ],
+  [
+   "concept:diagnosis:renal history",
+   "observed_as",
+   "ev:SYN-0007-EV100"
+  ],
+  [
+   "ev:SYN-0007-EV100",
+   "derived_from",
+   "src:SYN-0007-D07:1052-1149"
+  ],
+  [
+   "ev:SYN-0007-EV100",
+   "supports",
+   "dec:NCT06880770:NCT06880770-E13:r1"
+  ],
+  [
+   "trial:NCT06880770",
+   "has_criterion",
+   "crit:NCT06880770-E14"
+  ],
+  [
+   "crit:NCT06880770-E14",
+   "decided_as",
+   "dec:NCT06880770:NCT06880770-E14:r1"
+  ],
+  [
+   "crit:NCT06880770-E14",
+   "requires",
+   "concept:egfr"
+  ],
+  [
+   "concept:egfr",
+   "observed_as",
+   "ev:SYN-0007-EV218"
+  ],
+  [
+   "ev:SYN-0007-EV218",
+   "derived_from",
+   "src:SYN-0007-D08:557-594"
+  ],
+  [
+   "ev:SYN-0007-EV218",
+   "supports",
+   "dec:NCT06880770:NCT06880770-E14:r1"
+  ],
+  [
+   "calc:NCT06880770:NCT06880770-E14",
+   "computes",
+   "dec:NCT06880770:NCT06880770-E14:r1"
+  ],
+  [
+   "trial:NCT06880770",
+   "has_criterion",
+   "crit:NCT06880770-E15"
+  ],
+  [
+   "crit:NCT06880770-E15",
+   "decided_as",
+   "dec:NCT06880770:NCT06880770-E15:r1"
+  ],
+  [
+   "crit:NCT06880770-E15",
+   "requires",
+   "concept:diagnosis:cirrhosis"
+  ],
+  [
+   "concept:diagnosis:cirrhosis",
+   "observed_as",
+   "ev:SYN-0007-EV105"
+  ],
+  [
+   "ev:SYN-0007-EV105",
+   "derived_from",
+   "src:SYN-0007-D07:1150-1213"
+  ],
+  [
+   "ev:SYN-0007-EV105",
+   "supports",
+   "dec:NCT06880770:NCT06880770-E15:r1"
+  ],
+  [
+   "crit:NCT06880770-E15",
+   "requires",
+   "concept:alt"
+  ],
+  [
+   "concept:alt",
+   "observed_as",
+   "ev:SYN-0007-EV226"
+  ],
+  [
+   "ev:SYN-0007-EV226",
+   "derived_from",
+   "src:SYN-0007-D08:804-821"
+  ],
+  [
+   "ev:SYN-0007-EV226",
+   "supports",
+   "dec:NCT06880770:NCT06880770-E15:r1"
+  ],
+  [
+   "crit:NCT06880770-E15",
+   "requires",
+   "concept:ast"
+  ],
+  [
+   "concept:ast",
+   "observed_as",
+   "ev:SYN-0007-EV225"
+  ],
+  [
+   "ev:SYN-0007-EV225",
+   "derived_from",
+   "src:SYN-0007-D08:783-803"
+  ],
+  [
+   "ev:SYN-0007-EV225",
+   "supports",
+   "dec:NCT06880770:NCT06880770-E15:r1"
+  ],
+  [
+   "trial:NCT06880770",
+   "labelled",
+   "label:NCT06880770"
+  ],
+  [
+   "trial:NCT07267169",
+   "has_criterion",
+   "crit:NCT07267169-I01"
+  ],
+  [
+   "crit:NCT07267169-I01",
+   "decided_as",
+   "dec:NCT07267169:NCT07267169-I01:r1"
+  ],
+  [
+   "crit:NCT07267169-I01",
+   "requires",
+   "concept:symptom_finding:severe epigastric pain radiating to the back"
+  ],
+  [
+   "concept:symptom_finding:severe epigastric pain radiating to the back",
+   "observed_as",
+   "ev:SYN-0007-EV007"
+  ],
+  [
+   "ev:SYN-0007-EV007",
+   "derived_from",
+   "src:SYN-0007-D02:9-78"
+  ],
+  [
+   "ev:SYN-0007-EV007",
+   "supports",
+   "dec:NCT07267169:NCT07267169-I01:r1"
+  ],
+  [
+   "crit:NCT07267169-I01",
+   "requires",
+   "concept:diagnosis:acute pancreatitis"
+  ],
+  [
+   "ev:SYN-0007-EV022",
+   "supports",
+   "dec:NCT07267169:NCT07267169-I01:r1"
+  ],
+  [
+   "trial:NCT07267169",
+   "has_criterion",
+   "crit:NCT07267169-I02"
+  ],
+  [
+   "crit:NCT07267169-I02",
+   "decided_as",
+   "dec:NCT07267169:NCT07267169-I02:r1"
+  ],
+  [
+   "crit:NCT07267169-I02",
+   "requires",
+   "concept:symptom_finding:severity (revised atlanta): moderately severe, based on smal"
+  ],
+  [
+   "concept:symptom_finding:severity (revised atlanta): moderately severe, based on smal",
+   "observed_as",
+   "ev:SYN-0007-EV179"
+  ],
+  [
+   "ev:SYN-0007-EV179",
+   "derived_from",
+   "src:SYN-0007-D07:3018-3117"
+  ],
+  [
+   "ev:SYN-0007-EV179",
+   "supports",
+   "dec:NCT07267169:NCT07267169-I02:r1"
+  ],
+  [
+   "crit:NCT07267169-I02",
+   "requires",
+   "concept:diagnosis:acute alcoholic pancreatitis"
+  ],
+  [
+   "ev:SYN-0007-EV189",
+   "supports",
+   "dec:NCT07267169:NCT07267169-I02:r1"
+  ],
+  [
+   "trial:NCT07267169",
+   "has_criterion",
+   "crit:NCT07267169-I03"
+  ],
+  [
+   "crit:NCT07267169-I03",
+   "decided_as",
+   "dec:NCT07267169:NCT07267169-I03:r1"
+  ],
+  [
+   "crit:NCT07267169-I03",
+   "requires",
+   "concept:ctsi"
+  ],
+  [
+   "concept:ctsi",
+   "observed_as",
+   "ev:SYN-0007-EV276"
+  ],
+  [
+   "ev:SYN-0007-EV276",
+   "derived_from",
+   "src:SYN-0007-D07:3209-3256"
+  ],
+  [
+   "ev:SYN-0007-EV276",
+   "supports",
+   "dec:NCT07267169:NCT07267169-I03:r1"
+  ],
+  [
+   "trial:NCT07267169",
+   "has_criterion",
+   "crit:NCT07267169-I04"
+  ],
+  [
+   "crit:NCT07267169-I04",
+   "decided_as",
+   "dec:NCT07267169:NCT07267169-I04:r1"
+  ],
+  [
+   "trial:NCT07267169",
+   "has_criterion",
+   "crit:NCT07267169-I05"
+  ],
+  [
+   "crit:NCT07267169-I05",
+   "decided_as",
+   "dec:NCT07267169:NCT07267169-I05:r1"
+  ],
+  [
+   "crit:NCT07267169-I05",
+   "requires",
+   "concept:heart_rate"
+  ],
+  [
+   "concept:heart_rate",
+   "observed_as",
+   "ev:SYN-0007-EV016"
+  ],
+  [
+   "ev:SYN-0007-EV016",
+   "derived_from",
+   "src:SYN-0007-D02:275-281"
+  ],
+  [
+   "ev:SYN-0007-EV016",
+   "insufficient_for",
+   "dec:NCT07267169:NCT07267169-I05:r1"
+  ],
+  [
+   "crit:NCT07267169-I05",
+   "requires",
+   "concept:respiratory_rate"
+  ],
+  [
+   "concept:respiratory_rate",
+   "observed_as",
+   "ev:SYN-0007-EV018"
+  ],
+  [
+   "ev:SYN-0007-EV018",
+   "derived_from",
+   "src:SYN-0007-D02:294-299"
+  ],
+  [
+   "ev:SYN-0007-EV018",
+   "insufficient_for",
+   "dec:NCT07267169:NCT07267169-I05:r1"
+  ],
+  [
+   "crit:NCT07267169-I05",
+   "requires",
+   "concept:wbc"
+  ],
+  [
+   "concept:wbc",
+   "observed_as",
+   "ev:SYN-0007-EV029"
+  ],
+  [
+   "ev:SYN-0007-EV029",
+   "derived_from",
+   "src:SYN-0007-D03:49-65"
+  ],
+  [
+   "ev:SYN-0007-EV029",
+   "insufficient_for",
+   "dec:NCT07267169:NCT07267169-I05:r1"
+  ],
+  [
+   "concept:heart_rate",
+   "observed_as",
+   "ev:SYN-0007-EV087"
+  ],
+  [
+   "ev:SYN-0007-EV087",
+   "derived_from",
+   "src:SYN-0007-D07:800-805"
+  ],
+  [
+   "ev:SYN-0007-EV087",
+   "insufficient_for",
+   "dec:NCT07267169:NCT07267169-I05:r1"
+  ],
+  [
+   "concept:respiratory_rate",
+   "observed_as",
+   "ev:SYN-0007-EV089"
+  ],
+  [
+   "ev:SYN-0007-EV089",
+   "derived_from",
+   "src:SYN-0007-D07:817-822"
+  ],
+  [
+   "ev:SYN-0007-EV089",
+   "insufficient_for",
+   "dec:NCT07267169:NCT07267169-I05:r1"
+  ],
+  [
+   "concept:wbc",
+   "observed_as",
+   "ev:SYN-0007-EV201"
+  ],
+  [
+   "ev:SYN-0007-EV201",
+   "derived_from",
+   "src:SYN-0007-D08:93-119"
+  ],
+  [
+   "ev:SYN-0007-EV201",
+   "insufficient_for",
+   "dec:NCT07267169:NCT07267169-I05:r1"
+  ],
+  [
+   "trial:NCT07267169",
+   "has_criterion",
+   "crit:NCT07267169-I06"
+  ],
+  [
+   "crit:NCT07267169-I06",
+   "decided_as",
+   "dec:NCT07267169:NCT07267169-I06:r1"
+  ],
+  [
+   "crit:NCT07267169-I06",
+   "requires",
+   "concept:body_temperature"
+  ],
+  [
+   "concept:body_temperature",
+   "observed_as",
+   "ev:SYN-0007-EV088"
+  ],
+  [
+   "ev:SYN-0007-EV088",
+   "derived_from",
+   "src:SYN-0007-D07:807-815"
+  ],
+  [
+   "ev:SYN-0007-EV088",
+   "supports",
+   "dec:NCT07267169:NCT07267169-I06:r1"
+  ],
+  [
+   "calc:NCT07267169:NCT07267169-I06",
+   "computes",
+   "dec:NCT07267169:NCT07267169-I06:r1"
+  ],
+  [
+   "trial:NCT07267169",
+   "has_criterion",
+   "crit:NCT07267169-I07"
+  ],
+  [
+   "crit:NCT07267169-I07",
+   "decided_as",
+   "dec:NCT07267169:NCT07267169-I07:r1"
+  ],
+  [
+   "crit:NCT07267169-I07",
+   "requires",
+   "concept:heart_rate"
+  ],
+  [
+   "ev:SYN-0007-EV087",
+   "supports",
+   "dec:NCT07267169:NCT07267169-I07:r1"
+  ],
+  [
+   "calc:NCT07267169:NCT07267169-I07",
+   "computes",
+   "dec:NCT07267169:NCT07267169-I07:r1"
+  ],
+  [
+   "trial:NCT07267169",
+   "has_criterion",
+   "crit:NCT07267169-I08"
+  ],
+  [
+   "crit:NCT07267169-I08",
+   "decided_as",
+   "dec:NCT07267169:NCT07267169-I08:r1"
+  ],
+  [
+   "crit:NCT07267169-I08",
+   "requires",
+   "concept:respiratory_rate"
+  ],
+  [
+   "ev:SYN-0007-EV089",
+   "supports",
+   "dec:NCT07267169:NCT07267169-I08:r1"
+  ],
+  [
+   "crit:NCT07267169-I08",
+   "requires",
+   "concept:spo2"
+  ],
+  [
+   "concept:spo2",
+   "observed_as",
+   "ev:SYN-0007-EV090"
+  ],
+  [
+   "ev:SYN-0007-EV090",
+   "derived_from",
+   "src:SYN-0007-D07:824-836"
+  ],
+  [
+   "ev:SYN-0007-EV090",
+   "supports",
+   "dec:NCT07267169:NCT07267169-I08:r1"
+  ],
+  [
+   "trial:NCT07267169",
+   "has_criterion",
+   "crit:NCT07267169-I09"
+  ],
+  [
+   "crit:NCT07267169-I09",
+   "decided_as",
+   "dec:NCT07267169:NCT07267169-I09:r1"
+  ],
+  [
+   "crit:NCT07267169-I09",
+   "requires",
+   "concept:wbc"
+  ],
+  [
+   "ev:SYN-0007-EV201",
+   "supports",
+   "dec:NCT07267169:NCT07267169-I09:r1"
+  ],
+  [
+   "crit:NCT07267169-I09",
+   "requires",
+   "concept:anc"
+  ],
+  [
+   "concept:anc",
+   "observed_as",
+   "ev:SYN-0007-EV202"
+  ],
+  [
+   "ev:SYN-0007-EV202",
+   "derived_from",
+   "src:SYN-0007-D08:120-170"
+  ],
+  [
+   "ev:SYN-0007-EV202",
+   "supports",
+   "dec:NCT07267169:NCT07267169-I09:r1"
+  ],
+  [
+   "trial:NCT07267169",
+   "has_criterion",
+   "crit:NCT07267169-E01"
+  ],
+  [
+   "crit:NCT07267169-E01",
+   "decided_as",
+   "dec:NCT07267169:NCT07267169-E01:r1"
+  ],
+  [
+   "trial:NCT07267169",
+   "has_criterion",
+   "crit:NCT07267169-E02"
+  ],
+  [
+   "crit:NCT07267169-E02",
+   "decided_as",
+   "dec:NCT07267169:NCT07267169-E02:r1"
+  ],
+  [
+   "trial:NCT07267169",
+   "has_criterion",
+   "crit:NCT07267169-E03"
+  ],
+  [
+   "crit:NCT07267169-E03",
+   "decided_as",
+   "dec:NCT07267169:NCT07267169-E03:r1"
+  ],
+  [
+   "trial:NCT07267169",
+   "has_criterion",
+   "crit:NCT07267169-E04"
+  ],
+  [
+   "crit:NCT07267169-E04",
+   "decided_as",
+   "dec:NCT07267169:NCT07267169-E04:r1"
+  ],
+  [
+   "crit:NCT07267169-E04",
+   "requires",
+   "concept:diagnosis:prior pancreatitis"
+  ],
+  [
+   "concept:diagnosis:prior pancreatitis",
+   "observed_as",
+   "ev:SYN-0007-EV104"
+  ],
+  [
+   "ev:SYN-0007-EV104",
+   "derived_from",
+   "src:SYN-0007-D07:1150-1213"
+  ],
+  [
+   "ev:SYN-0007-EV104",
+   "supports",
+   "dec:NCT07267169:NCT07267169-E04:r1"
+  ],
+  [
+   "ev:SYN-0007-EV079",
+   "supports",
+   "dec:NCT07267169:NCT07267169-E04:r1"
+  ],
+  [
+   "trial:NCT07267169",
+   "has_criterion",
+   "crit:NCT07267169-E05"
+  ],
+  [
+   "crit:NCT07267169-E05",
+   "decided_as",
+   "dec:NCT07267169:NCT07267169-E05:r1"
+  ],
+  [
+   "crit:NCT07267169-E05",
+   "requires",
+   "concept:triglycerides"
+  ],
+  [
+   "concept:triglycerides",
+   "observed_as",
+   "ev:SYN-0007-EV233"
+  ],
+  [
+   "ev:SYN-0007-EV233",
+   "derived_from",
+   "src:SYN-0007-D08:1010-1042"
+  ],
+  [
+   "ev:SYN-0007-EV233",
+   "supports",
+   "dec:NCT07267169:NCT07267169-E05:r1"
+  ],
+  [
+   "calc:NCT07267169:NCT07267169-E05",
+   "computes",
+   "dec:NCT07267169:NCT07267169-E05:r1"
+  ],
+  [
+   "trial:NCT07267169",
+   "has_criterion",
+   "crit:NCT07267169-E06"
+  ],
+  [
+   "crit:NCT07267169-E06",
+   "decided_as",
+   "dec:NCT07267169:NCT07267169-E06:r1"
+  ],
+  [
+   "crit:NCT07267169-E06",
+   "requires",
+   "concept:diagnosis:cirrhosis"
+  ],
+  [
+   "ev:SYN-0007-EV105",
+   "supports",
+   "dec:NCT07267169:NCT07267169-E06:r1"
+  ],
+  [
+   "trial:NCT07267169",
+   "has_criterion",
+   "crit:NCT07267169-E07"
+  ],
+  [
+   "crit:NCT07267169-E07",
+   "decided_as",
+   "dec:NCT07267169:NCT07267169-E07:r1"
+  ],
+  [
+   "trial:NCT07267169",
+   "has_criterion",
+   "crit:NCT07267169-E08"
+  ],
+  [
+   "crit:NCT07267169-E08",
+   "decided_as",
+   "dec:NCT07267169:NCT07267169-E08:r1"
+  ],
+  [
+   "crit:NCT07267169-E08",
+   "requires",
+   "concept:bmi"
+  ],
+  [
+   "ev:SYN-0007-EV085",
+   "supports",
+   "dec:NCT07267169:NCT07267169-E08:r1"
+  ],
+  [
+   "calc:NCT07267169:NCT07267169-E08",
+   "computes",
+   "dec:NCT07267169:NCT07267169-E08:r1"
+  ],
+  [
+   "trial:NCT07267169",
+   "has_criterion",
+   "crit:NCT07267169-E09"
+  ],
+  [
+   "crit:NCT07267169-E09",
+   "decided_as",
+   "dec:NCT07267169:NCT07267169-E09:r1"
+  ],
+  [
+   "crit:NCT07267169-E09",
+   "requires",
+   "concept:diagnosis:neurologic history"
+  ],
+  [
+   "concept:diagnosis:neurologic history",
+   "observed_as",
+   "ev:SYN-0007-EV103"
+  ],
+  [
+   "ev:SYN-0007-EV103",
+   "derived_from",
+   "src:SYN-0007-D07:1052-1149"
+  ],
+  [
+   "ev:SYN-0007-EV103",
+   "supports",
+   "dec:NCT07267169:NCT07267169-E09:r1"
+  ],
+  [
+   "trial:NCT07267169",
+   "has_criterion",
+   "crit:NCT07267169-E10"
+  ],
+  [
+   "crit:NCT07267169-E10",
+   "decided_as",
+   "dec:NCT07267169:NCT07267169-E10:r1"
+  ],
+  [
+   "crit:NCT07267169-E10",
+   "requires",
+   "concept:diagnosis:renal history"
+  ],
+  [
+   "ev:SYN-0007-EV100",
+   "supports",
+   "dec:NCT07267169:NCT07267169-E10:r1"
+  ],
+  [
+   "crit:NCT07267169-E10",
+   "requires",
+   "concept:egfr"
+  ],
+  [
+   "ev:SYN-0007-EV218",
+   "supports",
+   "dec:NCT07267169:NCT07267169-E10:r1"
+  ],
+  [
+   "trial:NCT07267169",
+   "has_criterion",
+   "crit:NCT07267169-E11"
+  ],
+  [
+   "crit:NCT07267169-E11",
+   "decided_as",
+   "dec:NCT07267169:NCT07267169-E11:r1"
+  ],
+  [
+   "trial:NCT07267169",
+   "has_criterion",
+   "crit:NCT07267169-E12"
+  ],
+  [
+   "crit:NCT07267169-E12",
+   "decided_as",
+   "dec:NCT07267169:NCT07267169-E12:r1"
+  ],
+  [
+   "trial:NCT07267169",
+   "has_criterion",
+   "crit:NCT07267169-E13"
+  ],
+  [
+   "crit:NCT07267169-E13",
+   "decided_as",
+   "dec:NCT07267169:NCT07267169-E13:r1"
+  ],
+  [
+   "trial:NCT07267169",
+   "has_criterion",
+   "crit:NCT07267169-E14"
+  ],
+  [
+   "crit:NCT07267169-E14",
+   "decided_as",
+   "dec:NCT07267169:NCT07267169-E14:r1"
+  ],
+  [
+   "crit:NCT07267169-E14",
+   "requires",
+   "concept:diagnosis:cardiac history"
+  ],
+  [
+   "ev:SYN-0007-EV098",
+   "supports",
+   "dec:NCT07267169:NCT07267169-E14:r1"
+  ],
+  [
+   "trial:NCT07267169",
+   "has_criterion",
+   "crit:NCT07267169-E15"
+  ],
+  [
+   "crit:NCT07267169-E15",
+   "decided_as",
+   "dec:NCT07267169:NCT07267169-E15:r1"
+  ],
+  [
+   "trial:NCT07267169",
+   "labelled",
+   "label:NCT07267169"
+  ],
+  [
+   "trial:NCT07803965",
+   "has_criterion",
+   "crit:NCT07803965-I01"
+  ],
+  [
+   "crit:NCT07803965-I01",
+   "decided_as",
+   "dec:NCT07803965:NCT07803965-I01:r1"
+  ],
+  [
+   "crit:NCT07803965-I01",
+   "requires",
+   "concept:birth_date"
+  ],
+  [
+   "concept:birth_date",
+   "observed_as",
+   "ev:SYN-0007-EV002"
+  ],
+  [
+   "ev:SYN-0007-EV002",
+   "derived_from",
+   "src:SYN-0007-D01:6-21"
+  ],
+  [
+   "ev:SYN-0007-EV002",
+   "supports",
+   "dec:NCT07803965:NCT07803965-I01:r1"
+  ],
+  [
+   "calc:NCT07803965:NCT07803965-I01",
+   "computes",
+   "dec:NCT07803965:NCT07803965-I01:r1"
+  ],
+  [
+   "trial:NCT07803965",
+   "has_criterion",
+   "crit:NCT07803965-I02"
+  ],
+  [
+   "crit:NCT07803965-I02",
+   "decided_as",
+   "dec:NCT07803965:NCT07803965-I02:r1"
+  ],
+  [
+   "crit:NCT07803965-I02",
+   "requires",
+   "concept:symptom_finding:severe epigastric pain radiating to the back"
+  ],
+  [
+   "ev:SYN-0007-EV007",
+   "supports",
+   "dec:NCT07803965:NCT07803965-I02:r1"
+  ],
+  [
+   "crit:NCT07803965-I02",
+   "requires",
+   "concept:lipase"
+  ],
+  [
+   "concept:lipase",
+   "observed_as",
+   "ev:SYN-0007-EV027"
+  ],
+  [
+   "ev:SYN-0007-EV027",
+   "derived_from",
+   "src:SYN-0007-D03:0-28"
+  ],
+  [
+   "ev:SYN-0007-EV027",
+   "supports",
+   "dec:NCT07803965:NCT07803965-I02:r1"
+  ],
+  [
+   "crit:NCT07803965-I02",
+   "requires",
+   "concept:symptom_finding:diffuse pancreatic enlargement"
+  ],
+  [
+   "concept:symptom_finding:diffuse pancreatic enlargement",
+   "observed_as",
+   "ev:SYN-0007-EV041"
+  ],
+  [
+   "ev:SYN-0007-EV041",
+   "derived_from",
+   "src:SYN-0007-D04:0-127"
+  ],
+  [
+   "ev:SYN-0007-EV041",
+   "supports",
+   "dec:NCT07803965:NCT07803965-I02:r1"
+  ],
+  [
+   "trial:NCT07803965",
+   "has_criterion",
+   "crit:NCT07803965-I03"
+  ],
+  [
+   "crit:NCT07803965-I03",
+   "decided_as",
+   "dec:NCT07803965:NCT07803965-I03:r1"
+  ],
+  [
+   "crit:NCT07803965-I03",
+   "requires",
+   "concept:symptom_finding:severity (revised atlanta): moderately severe, based on smal"
+  ],
+  [
+   "ev:SYN-0007-EV179",
+   "insufficient_for",
+   "dec:NCT07803965:NCT07803965-I03:r1"
+  ],
+  [
+   "crit:NCT07803965-I03",
+   "requires",
+   "concept:lab_other:bisap score on admission"
+  ],
+  [
+   "concept:lab_other:bisap score on admission",
+   "observed_as",
+   "ev:SYN-0007-EV182"
+  ],
+  [
+   "ev:SYN-0007-EV182",
+   "derived_from",
+   "src:SYN-0007-D07:3152-3185"
+  ],
+  [
+   "ev:SYN-0007-EV182",
+   "insufficient_for",
+   "dec:NCT07803965:NCT07803965-I03:r1"
+  ],
+  [
+   "crit:NCT07803965-I03",
+   "requires",
+   "concept:lab_other:ranson score at admission"
+  ],
+  [
+   "concept:lab_other:ranson score at admission",
+   "observed_as",
+   "ev:SYN-0007-EV183"
+  ],
+  [
+   "ev:SYN-0007-EV183",
+   "derived_from",
+   "src:SYN-0007-D07:3186-3208"
+  ],
+  [
+   "ev:SYN-0007-EV183",
+   "insufficient_for",
+   "dec:NCT07803965:NCT07803965-I03:r1"
+  ],
+  [
+   "trial:NCT07803965",
+   "has_criterion",
+   "crit:NCT07803965-E01"
+  ],
+  [
+   "crit:NCT07803965-E01",
+   "decided_as",
+   "dec:NCT07803965:NCT07803965-E01:r1"
+  ],
+  [
+   "crit:NCT07803965-E01",
+   "requires",
+   "concept:symptom_finding:severe epigastric pain radiating to the back"
+  ],
+  [
+   "ev:SYN-0007-EV007",
+   "supports",
+   "dec:NCT07803965:NCT07803965-E01:r1"
+  ],
+  [
+   "trial:NCT07803965",
+   "has_criterion",
+   "crit:NCT07803965-E02"
+  ],
+  [
+   "crit:NCT07803965-E02",
+   "decided_as",
+   "dec:NCT07803965:NCT07803965-E02:r1"
+  ],
+  [
+   "crit:NCT07803965-E02",
+   "requires",
+   "concept:procedure:biliary surgery"
+  ],
+  [
+   "concept:procedure:biliary surgery",
+   "observed_as",
+   "ev:SYN-0007-EV109"
+  ],
+  [
+   "ev:SYN-0007-EV109",
+   "derived_from",
+   "src:SYN-0007-D07:1273-1305"
+  ],
+  [
+   "ev:SYN-0007-EV109",
+   "supports",
+   "dec:NCT07803965:NCT07803965-E02:r1"
+  ],
+  [
+   "crit:NCT07803965-E02",
+   "requires",
+   "concept:procedure:abdominal surgery"
+  ],
+  [
+   "concept:procedure:abdominal surgery",
+   "observed_as",
+   "ev:SYN-0007-EV108"
+  ],
+  [
+   "ev:SYN-0007-EV108",
+   "derived_from",
+   "src:SYN-0007-D07:1273-1305"
+  ],
+  [
+   "ev:SYN-0007-EV108",
+   "supports",
+   "dec:NCT07803965:NCT07803965-E02:r1"
+  ],
+  [
+   "trial:NCT07803965",
+   "has_criterion",
+   "crit:NCT07803965-E03"
+  ],
+  [
+   "crit:NCT07803965-E03",
+   "decided_as",
+   "dec:NCT07803965:NCT07803965-E03:r1"
+  ],
+  [
+   "trial:NCT07803965",
+   "has_criterion",
+   "crit:NCT07803965-E04"
+  ],
+  [
+   "crit:NCT07803965-E04",
+   "decided_as",
+   "dec:NCT07803965:NCT07803965-E04:r1"
+  ],
+  [
+   "trial:NCT07803965",
+   "has_criterion",
+   "crit:NCT07803965-E05"
+  ],
+  [
+   "crit:NCT07803965-E05",
+   "decided_as",
+   "dec:NCT07803965:NCT07803965-E05:r1"
+  ],
+  [
+   "crit:NCT07803965-E05",
+   "requires",
+   "concept:diagnosis:hypertension"
+  ],
+  [
+   "concept:diagnosis:hypertension",
+   "observed_as",
+   "ev:SYN-0007-EV092"
+  ],
+  [
+   "ev:SYN-0007-EV092",
+   "derived_from",
+   "src:SYN-0007-D07:874-896"
+  ],
+  [
+   "ev:SYN-0007-EV092",
+   "insufficient_for",
+   "dec:NCT07803965:NCT07803965-E05:r1"
+  ],
+  [
+   "crit:NCT07803965-E05",
+   "requires",
+   "concept:diagnosis:hepatic steatosis"
+  ],
+  [
+   "concept:diagnosis:hepatic steatosis",
+   "observed_as",
+   "ev:SYN-0007-EV047"
+  ],
+  [
+   "ev:SYN-0007-EV047",
+   "derived_from",
+   "src:SYN-0007-D04:178-196"
+  ],
+  [
+   "ev:SYN-0007-EV047",
+   "insufficient_for",
+   "dec:NCT07803965:NCT07803965-E05:r1"
+  ],
+  [
+   "crit:NCT07803965-E05",
+   "requires",
+   "concept:diagnosis:cirrhosis"
+  ],
+  [
+   "ev:SYN-0007-EV105",
+   "insufficient_for",
+   "dec:NCT07803965:NCT07803965-E05:r1"
+  ],
+  [
+   "trial:NCT07803965",
+   "has_criterion",
+   "crit:NCT07803965-E06"
+  ],
+  [
+   "crit:NCT07803965-E06",
+   "decided_as",
+   "dec:NCT07803965:NCT07803965-E06:r1"
+  ],
+  [
+   "crit:NCT07803965-E06",
+   "requires",
+   "concept:diagnosis:prior malignancy"
+  ],
+  [
+   "concept:diagnosis:prior malignancy",
+   "observed_as",
+   "ev:SYN-0007-EV106"
+  ],
+  [
+   "ev:SYN-0007-EV106",
+   "derived_from",
+   "src:SYN-0007-D07:1150-1213"
+  ],
+  [
+   "ev:SYN-0007-EV106",
+   "supports",
+   "dec:NCT07803965:NCT07803965-E06:r1"
+  ],
+  [
+   "trial:NCT07803965",
+   "has_criterion",
+   "crit:NCT07803965-E07"
+  ],
+  [
+   "crit:NCT07803965-E07",
+   "decided_as",
+   "dec:NCT07803965:NCT07803965-E07:r1"
+  ],
+  [
+   "crit:NCT07803965-E07",
+   "requires",
+   "concept:diagnosis:alcohol use disorder"
+  ],
+  [
+   "concept:diagnosis:alcohol use disorder",
+   "observed_as",
+   "ev:SYN-0007-EV095"
+  ],
+  [
+   "ev:SYN-0007-EV095",
+   "derived_from",
+   "src:SYN-0007-D07:967-1006"
+  ],
+  [
+   "ev:SYN-0007-EV095",
+   "insufficient_for",
+   "dec:NCT07803965:NCT07803965-E07:r1"
+  ],
+  [
+   "crit:NCT07803965-E07",
+   "requires",
+   "concept:symptom_finding:low mood"
+  ],
+  [
+   "concept:symptom_finding:low mood",
+   "observed_as",
+   "ev:SYN-0007-EV150"
+  ],
+  [
+   "ev:SYN-0007-EV150",
+   "derived_from",
+   "src:SYN-0007-D07:2387-2441"
+  ],
+  [
+   "ev:SYN-0007-EV150",
+   "insufficient_for",
+   "dec:NCT07803965:NCT07803965-E07:r1"
+  ],
+  [
+   "trial:NCT07803965",
+   "has_criterion",
+   "crit:NCT07803965-E08"
+  ],
+  [
+   "crit:NCT07803965-E08",
+   "decided_as",
+   "dec:NCT07803965:NCT07803965-E08:r1"
+  ],
+  [
+   "trial:NCT07803965",
+   "has_criterion",
+   "crit:NCT07803965-E09"
+  ],
+  [
+   "crit:NCT07803965-E09",
+   "decided_as",
+   "dec:NCT07803965:NCT07803965-E09:r1"
+  ],
+  [
+   "trial:NCT07803965",
+   "labelled",
+   "label:NCT07803965"
+  ]
+ ]
+}

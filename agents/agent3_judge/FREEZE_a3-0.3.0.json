@@ -1,0 +1,35 @@
+{
+ "agent3_version": "a3-0.3.0",
+ "prompt_version": "p07",
+ "model": "claude-sonnet-5-5",
+ "policy": {
+  "list_inference": "strict",
+  "blanket_negation": "on",
+  "default_window": true
+ },
+ "postcheck": "normalise + policy only (no verification; moved to Agent 4)",
+ "frozen_at": "2026-10-25",
+ "dev_reference_run": "runs/dev_sonnet55_p07_r1 (replay: --llm replay --model claude-sonnet-5-5)",
+ "dev_repro_run": "runs/dev_sonnet55_p07_r2 (--salt r2)",
+ "external": {
+  "trec": "runs/trec_sonnet55_p07_v3",
+  "trialgpt": "runs/trialgpt_sonnet55_p07_v3"
+ },
+ "sha256": {
+  "agent3/__init__.py": "321ea5e33e50b0a4",
+  "agent3/run.py": "98aded299c58e007",
+  "agent3/prompt.py": "5e923f5b0ed6b7cb",
+  "agent3/postcheck.py": "92d7adba26503d65",
+  "agent3/rules.py": "676ebc85e4d32d5f",
+  "agent3/structured.py": "2136358ee5a6019b",
+  "agent3/aggregate.py": "e5829cc58d42bf9a",
+  "agent3/graph.py": "1a956ab80c17ffa2",
+  "agent3/llm.py": "fe6f1fc5386dd72f",
+  "agent3/data.py": "e3fa2746cce260ce",
+  "data/dev/reference/criteria.jsonl": "050b1657174a7f77",
+  "data/dev/reference/concepts.json": "db98f9eb50d456a1",
+  "data/dev/gold/gold.jsonl": "2be42fd7b09e17e7",
+  "agent3_kit/evidence_dev_haiku_v14_7.jsonl": "0b3df7c5042e25aa",
+  "agent2/evidence_index.py": "1e422a1cf9794a57"
+ }
+}

@@ -1,0 +1,4835 @@
+{
+ "patient_id": "SYN-0006",
+ "as_of": "2026-10-01",
+ "version": 1,
+ "nodes": [
+  {
+   "id": "trial:NCT06786676",
+   "kind": "trial",
+   "title": "A Phase 1 Clinical Trial to Investigate the Safety, Tolerability, and Pharmacokinetics of AS-S603 in Healthy Participants"
+  },
+  {
+   "id": "crit:NCT06786676-I03",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Healthy elderly Korean volunteers aged 65 to 85 years at the time of screening (multiple dose study dose group 5)",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06786676:NCT06786676-I03:r1",
+   "kind": "decision",
+   "trial_id": "NCT06786676",
+   "criterion_id": "NCT06786676-I03",
+   "status": "FAIL",
+   "reason": "VIOLATED",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Age 74 and Korean fit, but the patient has diagnosed MCI due to Alzheimer's disease, so is not a healthy volunteer.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0006-EV213",
+   "kind": "evidence",
+   "concept": "age",
+   "term": null,
+   "value": 74,
+   "unit": "years",
+   "observed_date": "2026-10-01",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:age",
+   "kind": "concept",
+   "concept": "age",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0006-D01:8-23",
+   "kind": "source",
+   "doc_id": "SYN-0006-D01",
+   "doc_type": "registration",
+   "span": [
+    8,
+    23
+   ],
+   "text": "DOB 1952-08-30."
+  },
+  {
+   "id": "ev:SYN-0006-EV155",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "mild cognitive impairment due to Alzheimer's disease",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-22",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:diagnosis:mild cognitive impairment due to alzheimer's disease",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "mild cognitive impairment due to Alzheimer's disease"
+  },
+  {
+   "id": "src:SYN-0006-D08:3154-3227",
+   "kind": "source",
+   "doc_id": "SYN-0006-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    3154,
+    3227
+   ],
+   "text": "Mild cognitive impairment due to Alzheimer's disease, biomarker confirmed"
+  },
+  {
+   "id": "ev:SYN-0006-EV005",
+   "kind": "evidence",
+   "concept": "nationality",
+   "term": null,
+   "value": "South Korea",
+   "unit": null,
+   "observed_date": "2026-04-22",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:nationality",
+   "kind": "concept",
+   "concept": "nationality",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0006-D01:70-95",
+   "kind": "source",
+   "doc_id": "SYN-0006-D01",
+   "doc_type": "registration",
+   "span": [
+    70,
+    95
+   ],
+   "text": "Nationality: South Korea."
+  },
+  {
+   "id": "crit:NCT06786676-I04",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Individuals with a body weight of >= 50.0 kg and <= 90.0 kg and a body mass index of >= 18.5 kg/m2 and <= 29.9 kg/m2 at the time of screening",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06786676:NCT06786676-I04:r1",
+   "kind": "decision",
+   "trial_id": "NCT06786676",
+   "criterion_id": "NCT06786676-I04",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Weight 66 kg and BMI 24.8 are within range.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0006-EV064",
+   "kind": "evidence",
+   "concept": "body_weight",
+   "term": null,
+   "value": 66,
+   "unit": "kg",
+   "observed_date": "2026-09-22",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:body_weight",
+   "kind": "concept",
+   "concept": "body_weight",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0006-D08:800-808",
+   "kind": "source",
+   "doc_id": "SYN-0006-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    800,
+    808
+   ],
+   "text": "Wt 66 kg"
+  },
+  {
+   "id": "ev:SYN-0006-EV065",
+   "kind": "evidence",
+   "concept": "bmi",
+   "term": null,
+   "value": 24.8,
+   "unit": "kg/m2",
+   "observed_date": "2026-09-22",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:bmi",
+   "kind": "concept",
+   "concept": "bmi",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0006-D08:810-819",
+   "kind": "source",
+   "doc_id": "SYN-0006-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    810,
+    819
+   ],
+   "text": "BMI 24.8."
+  },
+  {
+   "id": "crit:NCT06786676-I05",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Individuals who have given written consent on a voluntary decision to participate and agree to adhere to the precautions after being fully informed of and completely understanding this clinical trial",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06786676:NCT06786676-I05:r1",
+   "kind": "decision",
+   "trial_id": "NCT06786676",
+   "criterion_id": "NCT06786676-I05",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No statement of consent or willingness in the record.",
+   "missing_fact": "Patient's voluntary written consent and agreement to follow trial precautions",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06786676-E01",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Individuals with a clinically significant disease or history in hepatobiliary, renal, nervous, immune, respiratory, endocrine, hemato-oncology, cardiovascular, urinary system, or psychiatric disorder.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06786676:NCT06786676-E01:r1",
+   "kind": "decision",
+   "trial_id": "NCT06786676",
+   "criterion_id": "NCT06786676-E01",
+   "status": "UNKNOWN",
+   "reason": "UNSUPPORTED",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Neurologic, cardiovascular, endocrine and mild psychiatric conditions present; clinical significance not documented.",
+   "missing_fact": "Investigator judgment whether MCI-AD, hypertension, hypothyroidism and depressive symptoms are clinically significant",
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0006-EV163",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "hypertension",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-22",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:diagnosis:hypertension",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "hypertension"
+  },
+  {
+   "id": "src:SYN-0006-D08:3566-3620",
+   "kind": "source",
+   "doc_id": "SYN-0006-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    3566,
+    3620
+   ],
+   "text": "Hypertension: BP at goal on amlodipine 5 mg, continue."
+  },
+  {
+   "id": "ev:SYN-0006-EV165",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "hypothyroidism",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-22",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:diagnosis:hypothyroidism",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "hypothyroidism"
+  },
+  {
+   "id": "src:SYN-0006-D08:3624-3669",
+   "kind": "source",
+   "doc_id": "SYN-0006-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    3624,
+    3669
+   ],
+   "text": "Hypothyroidism: continue levothyroxine 75 mcg"
+  },
+  {
+   "id": "ev:SYN-0006-EV073",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "mild depressive symptoms",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-22",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:diagnosis:mild depressive symptoms",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "mild depressive symptoms"
+  },
+  {
+   "id": "src:SYN-0006-D08:1005-1044",
+   "kind": "source",
+   "doc_id": "SYN-0006-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    1005,
+    1044
+   ],
+   "text": "Mild depressive symptoms (GDS 6) - 2026"
+  },
+  {
+   "id": "crit:NCT06786676-E02",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Individuals with a history of a gastrointestinal disorder or surgery that may affect the safety, pharmacokinetic and pharmacodynamic evaluation of the investigational product",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06786676:NCT06786676-E02:r1",
+   "kind": "decision",
+   "trial_id": "NCT06786676",
+   "criterion_id": "NCT06786676-E02",
+   "status": "UNKNOWN",
+   "reason": "UNSUPPORTED",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Remote appendectomy exists; relevance to PK/safety is a judgment not documented.",
+   "missing_fact": "Whether the 1968 appendectomy or any GI condition could affect PK/PD or safety",
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0006-EV085",
+   "kind": "evidence",
+   "concept": "procedure",
+   "term": "appendectomy",
+   "value": true,
+   "unit": null,
+   "observed_date": "1968-01-01",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "past"
+  },
+  {
+   "id": "concept:procedure:appendectomy",
+   "kind": "concept",
+   "concept": "procedure",
+   "term": "appendectomy"
+  },
+  {
+   "id": "src:SYN-0006-D08:1200-1218",
+   "kind": "source",
+   "doc_id": "SYN-0006-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    1200,
+    1218
+   ],
+   "text": "Appendectomy 1968."
+  },
+  {
+   "id": "crit:NCT06786676-E03",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Individuals who answered 'yes' to any question on the Columbia Suicide Severity Rating Scale administered at the time of screening",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06786676:NCT06786676-E03:r1",
+   "kind": "decision",
+   "trial_id": "NCT06786676",
+   "criterion_id": "NCT06786676-E03",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "new_test",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No C-SSRS in the record.",
+   "missing_fact": "Columbia Suicide Severity Rating Scale result at screening",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06786676-E04",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Individuals with hypersensitivity or a history of clinically significant hypersensitivity to AS-S603 and the same class or other drugs (aspirin, antibiotics, etc.)",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06786676:NCT06786676-E04:r1",
+   "kind": "decision",
+   "trial_id": "NCT06786676",
+   "criterion_id": "NCT06786676-E04",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "NKDA documented; no drug hypersensitivity.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0006-EV088",
+   "kind": "evidence",
+   "concept": "allergy",
+   "term": "no known drug allergies",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-22",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:allergy:no known drug allergies",
+   "kind": "concept",
+   "concept": "allergy",
+   "term": "no known drug allergies"
+  },
+  {
+   "id": "src:SYN-0006-D08:1294-1299",
+   "kind": "source",
+   "doc_id": "SYN-0006-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    1294,
+    1299
+   ],
+   "text": "NKDA."
+  },
+  {
+   "id": "crit:NCT06786676-E05",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Individuals with a positive result in the serology test (hepatitis B, hepatitis C, human immunodeficiency virus test, syphilis test)",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06786676:NCT06786676-E05:r1",
+   "kind": "decision",
+   "trial_id": "NCT06786676",
+   "criterion_id": "NCT06786676-E05",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "lab_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Only RPR (nonreactive, April) is recorded; the other serologies are absent.",
+   "missing_fact": "Hepatitis B, hepatitis C and HIV serology results",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06786676-E06",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Individuals with a history of drug abuse or a positive urine screening for any drug of concern for abuse",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06786676:NCT06786676-E06:r1",
+   "kind": "decision",
+   "trial_id": "NCT06786676",
+   "criterion_id": "NCT06786676-E06",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "new_test",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "'No substance use' covers history, but no urine drug screen is recorded; criterion only partly settled.",
+   "missing_fact": "Urine drug screen result",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06786676-E07",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Individuals who exhibited the following results on vital signs measured at a sitting position after resting, during the screening tests: Systolic blood pressure < 80 mmHg or >= 140 mmHg, Diastolic blood pressure < 45 mmHg or >= 90 mmHg",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06786676:NCT06786676-E07:r1",
+   "kind": "decision",
+   "trial_id": "NCT06786676",
+   "criterion_id": "NCT06786676-E07",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "BP 128/76 is within limits; sitting rest position is not stated.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0006-EV225",
+   "kind": "evidence",
+   "concept": "systolic_bp",
+   "term": null,
+   "value": 128,
+   "unit": "mmHg",
+   "observed_date": "2026-09-22",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:systolic_bp",
+   "kind": "concept",
+   "concept": "systolic_bp",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0006-D08:820-829",
+   "kind": "source",
+   "doc_id": "SYN-0006-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    820,
+    829
+   ],
+   "text": "BP 128/76"
+  },
+  {
+   "id": "ev:SYN-0006-EV226",
+   "kind": "evidence",
+   "concept": "diastolic_bp",
+   "term": null,
+   "value": 76,
+   "unit": "mmHg",
+   "observed_date": "2026-09-22",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:diastolic_bp",
+   "kind": "concept",
+   "concept": "diastolic_bp",
+   "term": null
+  },
+  {
+   "id": "crit:NCT06786676-E08",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Individuals who exhibited QTcB interval > 450 msec (male), 470 msec (female), or clinically significant abnormal findings in rhythm on an electrocardiogram during the screening tests",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06786676:NCT06786676-E08:r1",
+   "kind": "decision",
+   "trial_id": "NCT06786676",
+   "criterion_id": "NCT06786676-E08",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "new_test",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No ECG or QTc in the record.",
+   "missing_fact": "ECG with QTcB and rhythm assessment",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06786676-E09",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Individuals who exhibited any of the following results on the clinical laboratory test during the screening tests, including additional tests: Aspartate transaminase or alanine transaminase > 60 IU/L, Estimated glomerular filtration rate < 90 mL/min/1.73m2",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06786676:NCT06786676-E09:r1",
+   "kind": "decision",
+   "trial_id": "NCT06786676",
+   "criterion_id": "NCT06786676-E09",
+   "status": "FAIL",
+   "reason": "VIOLATED",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "eGFR 77 is below 90 (AST/ALT normal); the 'any of' criterion is met.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0006-EV187",
+   "kind": "evidence",
+   "concept": "egfr",
+   "term": null,
+   "value": 77,
+   "unit": "mL/min/1.73m2",
+   "observed_date": "2026-09-23",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:egfr",
+   "kind": "concept",
+   "concept": "egfr",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0006-D09:520-562",
+   "kind": "source",
+   "doc_id": "SYN-0006-D09",
+   "doc_type": "lab_result",
+   "span": [
+    520,
+    562
+   ],
+   "text": "eGFR (CKD-EPI 2021) 77 mL/min/1.73m2 (>60)"
+  },
+  {
+   "id": "crit:NCT06786676-E10",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Individuals who had taken any prescription drug or herbal medicine within 2 weeks, or any Over-The-Counter (OTC) drugs, dietary supplements including liver supplements, or vitamin supplements within 1 week prior to the scheduled first administration of investigational product, or are expected to take them",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06786676:NCT06786676-E10:r1",
+   "kind": "decision",
+   "trial_id": "NCT06786676",
+   "criterion_id": "NCT06786676-E10",
+   "status": "FAIL",
+   "reason": "VIOLATED",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Currently takes donepezil, amlodipine, levothyroxine and PRN acetaminophen, so is in the excluded window.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0006-EV090",
+   "kind": "evidence",
+   "concept": "medication",
+   "term": "donepezil 10 mg daily",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-22",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:medication:donepezil 10 mg daily",
+   "kind": "concept",
+   "concept": "medication",
+   "term": "donepezil 10 mg daily"
+  },
+  {
+   "id": "src:SYN-0006-D08:1329-1423",
+   "kind": "source",
+   "doc_id": "SYN-0006-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    1329,
+    1423
+   ],
+   "text": "Donepezil 10 mg PO daily - started 2026 (5 mg on 2026-06-17, increased to 10 mg after 4 weeks)"
+  },
+  {
+   "id": "ev:SYN-0006-EV091",
+   "kind": "evidence",
+   "concept": "medication",
+   "term": "amlodipine 5 mg daily",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-22",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:medication:amlodipine 5 mg daily",
+   "kind": "concept",
+   "concept": "medication",
+   "term": "amlodipine 5 mg daily"
+  },
+  {
+   "id": "src:SYN-0006-D08:1426-1463",
+   "kind": "source",
+   "doc_id": "SYN-0006-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    1426,
+    1463
+   ],
+   "text": "Amlodipine 5 mg PO daily - since 2012"
+  },
+  {
+   "id": "ev:SYN-0006-EV092",
+   "kind": "evidence",
+   "concept": "medication",
+   "term": "levothyroxine 75 mcg daily",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-22",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:medication:levothyroxine 75 mcg daily",
+   "kind": "concept",
+   "concept": "medication",
+   "term": "levothyroxine 75 mcg daily"
+  },
+  {
+   "id": "src:SYN-0006-D08:1466-1508",
+   "kind": "source",
+   "doc_id": "SYN-0006-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    1466,
+    1508
+   ],
+   "text": "Levothyroxine 75 mcg PO daily - since 2008"
+  },
+  {
+   "id": "ev:SYN-0006-EV093",
+   "kind": "evidence",
+   "concept": "medication",
+   "term": "acetaminophen 500 mg PRN",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-22",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:medication:acetaminophen 500 mg prn",
+   "kind": "concept",
+   "concept": "medication",
+   "term": "acetaminophen 500 mg PRN"
+  },
+  {
+   "id": "src:SYN-0006-D08:1511-1550",
+   "kind": "source",
+   "doc_id": "SYN-0006-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    1511,
+    1550
+   ],
+   "text": "Acetaminophen 500 mg PRN occasional use"
+  },
+  {
+   "id": "crit:NCT06786676-E11",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Individuals who had taken an inducer or inhibitor of any drug metabolic enzyme, such as barbiturates or clarithromycin, within 1 month prior to the scheduled first administration of investigational product",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06786676:NCT06786676-E11:r1",
+   "kind": "decision",
+   "trial_id": "NCT06786676",
+   "criterion_id": "NCT06786676-E11",
+   "status": "UNKNOWN",
+   "reason": "UNSUPPORTED",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "drug_class_check"
+   ],
+   "note": "Amlodipine is a weak CYP3A4 inhibitor; cannot confirm it is outside the class.",
+   "missing_fact": "Whether amlodipine/donepezil count as metabolic enzyme inhibitors or inducers for this protocol",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06786676-E12",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Individuals who have participated and administered investigational product in another clinical trial within 6 months prior to the scheduled first administration of investigational product",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06786676:NCT06786676-E12:r1",
+   "kind": "decision",
+   "trial_id": "NCT06786676",
+   "criterion_id": "NCT06786676-E12",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No trial participation mentioned; anti-amyloid therapy only planned.",
+   "missing_fact": "Participation in another trial with investigational product in the last 6 months",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06786676-E13",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Individuals who donated whole blood within 2 months, donated blood components within 1 month, or received a blood transfusion within 1 month prior to the scheduled first administration of investigational product",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06786676:NCT06786676-E13:r1",
+   "kind": "decision",
+   "trial_id": "NCT06786676",
+   "criterion_id": "NCT06786676-E13",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Not addressed in the record.",
+   "missing_fact": "Blood donation or transfusion in the last 1-2 months",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06786676-E14",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Current smokers",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06786676:NCT06786676-E14:r1",
+   "kind": "decision",
+   "trial_id": "NCT06786676",
+   "criterion_id": "NCT06786676-E14",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Never smoker.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0006-EV099",
+   "kind": "evidence",
+   "concept": "smoking",
+   "term": null,
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-22",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:smoking",
+   "kind": "concept",
+   "concept": "smoking",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0006-D08:1680-1708",
+   "kind": "source",
+   "doc_id": "SYN-0006-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    1680,
+    1708
+   ],
+   "text": "Never smoker (0 pack-years)."
+  },
+  {
+   "id": "crit:NCT06786676-E15",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Individuals who engage in persistent alcohol consumption or are not able to avoid alcohol consumption from 3 days prior to the scheduled first administration of investigational product until the end of the clinical trial.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06786676:NCT06786676-E15:r1",
+   "kind": "decision",
+   "trial_id": "NCT06786676",
+   "criterion_id": "NCT06786676-E15",
+   "status": "UNKNOWN",
+   "reason": "UNSUPPORTED",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Drinks 1 glass of wine 1-2 times weekly; not persistent, but ability to abstain is not documented.",
+   "missing_fact": "Whether she can abstain from alcohol from 3 days before dosing through the trial",
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0006-EV100",
+   "kind": "evidence",
+   "concept": "alcohol",
+   "term": "1 glass of wine 1-2 times per week",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-22",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:alcohol:1 glass of wine 1-2 times per week",
+   "kind": "concept",
+   "concept": "alcohol",
+   "term": "1 glass of wine 1-2 times per week"
+  },
+  {
+   "id": "src:SYN-0006-D08:1709-1753",
+   "kind": "source",
+   "doc_id": "SYN-0006-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    1709,
+    1753
+   ],
+   "text": "Alcohol: 1 glass of wine 1-2 times per week."
+  },
+  {
+   "id": "crit:NCT06786676-E16",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Individuals who have consumed excessive caffeine or are not able to avoid consuming caffeine-containing foods from 3 days prior to the scheduled first administration of investigational product until the end of the clinical trial.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06786676:NCT06786676-E16:r1",
+   "kind": "decision",
+   "trial_id": "NCT06786676",
+   "criterion_id": "NCT06786676-E16",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Caffeine not mentioned.",
+   "missing_fact": "Caffeine intake and ability to avoid it",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06786676-E17",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Individuals who have consumed grapefruit, grapefruit juice, or grapefruit-containing foods or cannot avoid consuming grapefruit-containing foods from 3 days prior to the scheduled first administration of investigational product until the end of the clinical trial.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06786676:NCT06786676-E17:r1",
+   "kind": "decision",
+   "trial_id": "NCT06786676",
+   "criterion_id": "NCT06786676-E17",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Grapefruit not mentioned.",
+   "missing_fact": "Grapefruit consumption and ability to avoid it",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06786676-E18",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Individuals with unusual dietary habits or who cannot adhere to the standardized diet provided by the institution during the confinement period.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06786676:NCT06786676-E18:r1",
+   "kind": "decision",
+   "trial_id": "NCT06786676",
+   "criterion_id": "NCT06786676-E18",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Diet not addressed.",
+   "missing_fact": "Dietary habits and ability to follow the standardized diet",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06786676-E19",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Women of childbearing potential, individuals whose menstrual period was not confirmed at screening, with a positive urine pregnancy test, or who do not agree to a highly effective contraceptive method for at least 30 days after the last investigational product administration.",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06786676:NCT06786676-E19:r1",
+   "kind": "decision",
+   "trial_id": "NCT06786676",
+   "criterion_id": "NCT06786676-E19",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "impossible_condition"
+   ],
+   "note": "74-year-old woman is not of childbearing potential.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0006-EV001",
+   "kind": "evidence",
+   "concept": "sex",
+   "term": null,
+   "value": "female",
+   "unit": null,
+   "observed_date": "2026-04-22",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:sex",
+   "kind": "concept",
+   "concept": "sex",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0006-D01:0-7",
+   "kind": "source",
+   "doc_id": "SYN-0006-D01",
+   "doc_type": "registration",
+   "span": [
+    0,
+    7
+   ],
+   "text": "Female."
+  },
+  {
+   "id": "crit:NCT06786676-E20",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Men who do not agree to use condoms and ensure that their female partners use a highly effective contraceptive method throughout the entire clinical trial period and for at least 90 days after the last administration of investigational product.",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06786676:NCT06786676-E20:r1",
+   "kind": "decision",
+   "trial_id": "NCT06786676",
+   "criterion_id": "NCT06786676-E20",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "impossible_condition"
+   ],
+   "note": "Item applies to men; patient is female.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06786676-E21",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Individuals who do not agree to refrain from donating sperm or egg throughout the entire clinical trial period and for at least 90 days after the last administration of investigational product.",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06786676:NCT06786676-E21:r1",
+   "kind": "decision",
+   "trial_id": "NCT06786676",
+   "criterion_id": "NCT06786676-E21",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "impossible_condition"
+   ],
+   "note": "Female aged 74: sperm donation impossible, egg donation not realistic.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06786676-E22",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Individuals who cannot undergo cerebrospinal fluid (CSF) tapping (for groups requiring CSF tapping)",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06786676:NCT06786676-E22:r1",
+   "kind": "decision",
+   "trial_id": "NCT06786676",
+   "criterion_id": "NCT06786676-E22",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "CSF already obtained 2026-06-03; no anticoagulants or antiplatelets, INR 1.0.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0006-EV027",
+   "kind": "evidence",
+   "concept": "lab_other",
+   "term": "CSF amyloid-beta 42/40 ratio",
+   "value": 0.048,
+   "unit": null,
+   "observed_date": "2026-06-03",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:lab_other:csf amyloid-beta 42/40 ratio",
+   "kind": "concept",
+   "concept": "lab_other",
+   "term": "CSF amyloid-beta 42/40 ratio"
+  },
+  {
+   "id": "src:SYN-0006-D05:0-41",
+   "kind": "source",
+   "doc_id": "SYN-0006-D05",
+   "doc_type": "lab_result",
+   "span": [
+    0,
+    41
+   ],
+   "text": "CSF: amyloid-beta 42/40 ratio 0.048 (low)"
+  },
+  {
+   "id": "ev:SYN-0006-EV038",
+   "kind": "evidence",
+   "concept": "medication",
+   "term": "anticoagulants",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-22",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:medication:anticoagulants",
+   "kind": "concept",
+   "concept": "medication",
+   "term": "anticoagulants"
+  },
+  {
+   "id": "src:SYN-0006-D07:84-123",
+   "kind": "source",
+   "doc_id": "SYN-0006-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    84,
+    123
+   ],
+   "text": "Not on anticoagulants or antiplatelets."
+  },
+  {
+   "id": "ev:SYN-0006-EV204",
+   "kind": "evidence",
+   "concept": "inr",
+   "term": null,
+   "value": 1.0,
+   "unit": "ratio",
+   "observed_date": "2026-09-23",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:inr",
+   "kind": "concept",
+   "concept": "inr",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0006-D09:1020-1040",
+   "kind": "source",
+   "doc_id": "SYN-0006-D09",
+   "doc_type": "lab_result",
+   "span": [
+    1020,
+    1040
+   ],
+   "text": "PT/INR 1.0 (0.9-1.1)"
+  },
+  {
+   "id": "crit:NCT06786676-E23",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Individuals determined to be ineligible for participation in the clinical trial by the investigators due to other reasons",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06786676:NCT06786676-E23:r1",
+   "kind": "decision",
+   "trial_id": "NCT06786676",
+   "criterion_id": "NCT06786676-E23",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Investigator-judgment criterion with no documented problem.",
+   "missing_fact": "Investigator's eligibility judgment",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06786676-I01",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Healthy Korean adult volunteers aged 19 to 50 years at the time of screening (single dose study)",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06786676:NCT06786676-I01:r1",
+   "kind": "decision",
+   "trial_id": "NCT06786676",
+   "criterion_id": "NCT06786676-I01",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": false,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "cohort_not_applicable"
+   ],
+   "note": "Single-dose 19-50 y cohort; patient is 74 and belongs to elderly group 5.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06786676-I02",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Healthy Korean or Caucasian adult volunteers aged 19 to 50 years at the time of screening (multiple dose study dose groups 1-4)",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06786676:NCT06786676-I02:r1",
+   "kind": "decision",
+   "trial_id": "NCT06786676",
+   "criterion_id": "NCT06786676-I02",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": false,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "cohort_not_applicable"
+   ],
+   "note": "Dose groups 1-4 are for ages 19-50; patient is 74 and belongs to group 5.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "label:NCT06786676",
+   "kind": "trial_decision",
+   "label": "ineligible",
+   "why": [
+    "FAIL NCT06786676-I03",
+    "FAIL NCT06786676-E09",
+    "FAIL NCT06786676-E10"
+   ],
+   "by": "agent3"
+  },
+  {
+   "id": "trial:NCT07589595",
+   "kind": "trial",
+   "title": "A Study of Donanemab (LY3002813) in Participants With Early Cognitive Decline (TRAILBLAZER-ALZ 7)"
+  },
+  {
+   "id": "crit:NCT07589595-I01",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Have gradual and progressive cognitive decline for greater than or equal to ( >=) 6 months.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07589595:NCT07589595-I01:r1",
+   "kind": "decision",
+   "trial_id": "NCT07589595",
+   "criterion_id": "NCT07589595-I01",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "18 months of progressive short-term memory loss, with slow decline documented on serial MMSE/MoCA.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0006-EV046",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "progressive short-term memory loss",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-22",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:symptom_finding:progressive short-term memory loss",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "progressive short-term memory loss"
+  },
+  {
+   "id": "src:SYN-0006-D08:194-247",
+   "kind": "source",
+   "doc_id": "SYN-0006-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    194,
+    247
+   ],
+   "text": "with 18 months of progressive short-term memory loss."
+  },
+  {
+   "id": "crit:NCT07589595-I02",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Have least 1 core clinical feature of dementia with Lewy bodies (DLB).",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07589595:NCT07589595-I02:r1",
+   "kind": "decision",
+   "trial_id": "NCT07589595",
+   "criterion_id": "NCT07589595-I02",
+   "status": "UNKNOWN",
+   "reason": "UNSUPPORTED",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Parkinsonism and hallucinations are denied; fluctuation and RBD are not addressed. The Alzheimer's diagnosis does not establish a DLB feature.",
+   "missing_fact": "Whether any core DLB clinical feature (fluctuation, RBD, parkinsonism, visual hallucinations) is present",
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0006-EV006",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "forgetting recent conversations, repeating questions",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-04-22",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:symptom_finding:forgetting recent conversations, repeating questions",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "forgetting recent conversations, repeating questions"
+  },
+  {
+   "id": "src:SYN-0006-D02:15-80",
+   "kind": "source",
+   "doc_id": "SYN-0006-D02",
+   "doc_type": "clinic_note",
+   "span": [
+    15,
+    80
+   ],
+   "text": "18 months of forgetting recent conversations, repeating questions"
+  },
+  {
+   "id": "ev:SYN-0006-EV145",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "parkinsonism",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-22",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:symptom_finding:parkinsonism",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "parkinsonism"
+  },
+  {
+   "id": "src:SYN-0006-D08:2605-2649",
+   "kind": "source",
+   "doc_id": "SYN-0006-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    2605,
+    2649
+   ],
+   "text": "Gait steady, normal stride, no parkinsonism."
+  },
+  {
+   "id": "ev:SYN-0006-EV059",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "hallucinations",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-22",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:symptom_finding:hallucinations",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "hallucinations"
+  },
+  {
+   "id": "src:SYN-0006-D08:650-738",
+   "kind": "source",
+   "doc_id": "SYN-0006-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    650,
+    738
+   ],
+   "text": "No falls, no hallucinations, no sleep-related complaints beyond occasional early waking."
+  },
+  {
+   "id": "crit:NCT07589595-I03",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Have a score >=20 on Montreal Cognitive Assessment (MoCA).",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07589595:NCT07589595-I03:r1",
+   "kind": "decision",
+   "trial_id": "NCT07589595",
+   "criterion_id": "NCT07589595-I03",
+   "status": "FAIL",
+   "reason": "VIOLATED",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "structured_numeric"
+   ],
+   "note": "moca = 19 points (2026-09-22, -9d) vs >= 20 -> not met",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0006-EV231",
+   "kind": "evidence",
+   "concept": "moca",
+   "term": null,
+   "value": 19,
+   "unit": "points",
+   "observed_date": "2026-09-22",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:moca",
+   "kind": "concept",
+   "concept": "moca",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0006-D08:2763-2845",
+   "kind": "source",
+   "doc_id": "SYN-0006-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    2763,
+    2845
+   ],
+   "text": "MoCA 19/30 (20/30 in April 2026), losses mainly in delayed recall and orientation."
+  },
+  {
+   "id": "calc:NCT07589595:NCT07589595-I03",
+   "kind": "calculation",
+   "concept": "moca",
+   "operator": ">=",
+   "threshold": 20,
+   "unit": null,
+   "value": 19,
+   "value_unit": "points",
+   "observed_date": "2026-09-22",
+   "days_before": 9,
+   "note": "moca = 19 points (2026-09-22, -9d) vs >= 20 -> not met"
+  },
+  {
+   "id": "crit:NCT07589595-I04",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Meet plasma P-tau217 criteria.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07589595:NCT07589595-I04:r1",
+   "kind": "decision",
+   "trial_id": "NCT07589595",
+   "criterion_id": "NCT07589595-I04",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "new_test",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No plasma P-tau217 in the record. CSF p-tau181 is a different test.",
+   "missing_fact": "Plasma P-tau217 result",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07589595-I05",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Have a cerebrospinal fluid (CSF) result consistent with the presence of brain amyloid pathology.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07589595:NCT07589595-I05:r1",
+   "kind": "decision",
+   "trial_id": "NCT07589595",
+   "criterion_id": "NCT07589595-I05",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "CSF Abeta42/40 ratio 0.048 (low) and elevated p-tau181 are consistent with amyloid pathology.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0006-EV028",
+   "kind": "evidence",
+   "concept": "lab_other",
+   "term": "p-tau181",
+   "value": "78 pg/mL (elevated)",
+   "unit": null,
+   "observed_date": "2026-06-03",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:lab_other:p-tau181",
+   "kind": "concept",
+   "concept": "lab_other",
+   "term": "p-tau181"
+  },
+  {
+   "id": "src:SYN-0006-D05:43-71",
+   "kind": "source",
+   "doc_id": "SYN-0006-D05",
+   "doc_type": "lab_result",
+   "span": [
+    43,
+    71
+   ],
+   "text": "p-tau181 78 pg/mL (elevated)"
+  },
+  {
+   "id": "crit:NCT07589595-I06",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Have a CSF result consistent with the presence of alpha-synuclein pathology.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07589595:NCT07589595-I06:r1",
+   "kind": "decision",
+   "trial_id": "NCT07589595",
+   "criterion_id": "NCT07589595-I06",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "new_test",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No alpha-synuclein testing is documented.",
+   "missing_fact": "CSF alpha-synuclein seed amplification assay result",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07589595-I07",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Have at least 1 reliable study partner who will provide written informed consent to participate, is in frequent contact with the participant, and is familiar with overall function and behavior, such as day-to-day activities and cognitive abilities.",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07589595:NCT07589595-I07:r1",
+   "kind": "decision",
+   "trial_id": "NCT07589595",
+   "criterion_id": "NCT07589595-I07",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Husband lives with her and corroborates history, but his consent to act as study partner is not stated.",
+   "missing_fact": "Husband's willingness to give written consent as study partner",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07589595-E01",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Have a disease or condition that could interfere with this study or is a current serious or unstable illness.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07589595:NCT07589595-E01:r1",
+   "kind": "decision",
+   "trial_id": "NCT07589595",
+   "criterion_id": "NCT07589595-E01",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Hypertension is at goal and hypothyroidism is controlled. No serious or unstable illness is documented, but this is an investigator-judgment item.",
+   "missing_fact": "Investigator judgment on interfering or serious/unstable illness",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07589595-E02",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Have, or is suspected to have, a significant neurological disease (other than the studied condition) that affects the central nervous system and may affect the individual's cognition or ability to complete the study.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07589595:NCT07589595-E02:r1",
+   "kind": "decision",
+   "trial_id": "NCT07589595",
+   "criterion_id": "NCT07589595-E02",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation"
+   ],
+   "note": "No neurologic history, stroke or TIA, and no parkinsonism or seizures. This covers chronic neurologic disease.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0006-EV080",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "neurologic history",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-22",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:neurologic history",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "neurologic history"
+  },
+  {
+   "id": "src:SYN-0006-D08:1045-1123",
+   "kind": "source",
+   "doc_id": "SYN-0006-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    1045,
+    1123
+   ],
+   "text": "No other cardiac, pulmonary, hepatic, renal, autoimmune or neurologic history."
+  },
+  {
+   "id": "ev:SYN-0006-EV081",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "stroke",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-22",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:stroke",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "stroke"
+  },
+  {
+   "id": "src:SYN-0006-D08:1124-1141",
+   "kind": "source",
+   "doc_id": "SYN-0006-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    1124,
+    1141
+   ],
+   "text": "No stroke or TIA."
+  },
+  {
+   "id": "ev:SYN-0006-EV082",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "TIA",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-22",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:tia",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "TIA"
+  },
+  {
+   "id": "crit:NCT07589595-E03",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Have a history of cancer that, in the investigator's opinion, has a high risk of recurrence and preventing the completion of the study.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07589595:NCT07589595-E03:r1",
+   "kind": "decision",
+   "trial_id": "NCT07589595",
+   "criterion_id": "NCT07589595-E03",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Explicit 'No prior malignancy'.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0006-EV084",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "prior malignancy",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-22",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "past"
+  },
+  {
+   "id": "concept:diagnosis:prior malignancy",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "prior malignancy"
+  },
+  {
+   "id": "src:SYN-0006-D08:1155-1175",
+   "kind": "source",
+   "doc_id": "SYN-0006-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    1155,
+    1175
+   ],
+   "text": "No prior malignancy."
+  },
+  {
+   "id": "crit:NCT07589595-E04",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Have clinically significant multiple or severe drug allergies, significant atopy, or severe posttreatment hypersensitivity reactions.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07589595:NCT07589595-E04:r1",
+   "kind": "decision",
+   "trial_id": "NCT07589595",
+   "criterion_id": "NCT07589595-E04",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "NKDA excludes drug allergies, but atopy and posttreatment hypersensitivity reactions are not addressed.",
+   "missing_fact": "Significant atopy or severe hypersensitivity reactions history",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07589595-E05",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Have previously received amyloid-targeting therapy.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07589595:NCT07589595-E05:r1",
+   "kind": "decision",
+   "trial_id": "NCT07589595",
+   "criterion_id": "NCT07589595-E05",
+   "status": "UNKNOWN",
+   "reason": "UNSUPPORTED",
+   "action": "med_history_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Anti-amyloid therapy is only under discussion (planned). The reconciled list shows none, but it covers current drugs, not lifetime history.",
+   "missing_fact": "Confirmation that no anti-amyloid therapy was ever received",
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0006-EV160",
+   "kind": "evidence",
+   "concept": "treatment_plan",
+   "term": "anti-amyloid therapy",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-22",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "planned"
+  },
+  {
+   "id": "concept:treatment_plan:anti-amyloid therapy",
+   "kind": "concept",
+   "concept": "treatment_plan",
+   "term": "anti-amyloid therapy"
+  },
+  {
+   "id": "src:SYN-0006-D08:3341-3452",
+   "kind": "source",
+   "doc_id": "SYN-0006-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    3341,
+    3452
+   ],
+   "text": "Continue discussion of anti-amyloid therapy, including ARIA risk with APOE e4 heterozygosity and 2 microbleeds."
+  },
+  {
+   "id": "ev:SYN-0006-EV089",
+   "kind": "evidence",
+   "concept": "medication",
+   "term": "MEDICATIONS",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-22",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:medication:medications",
+   "kind": "concept",
+   "concept": "medication",
+   "term": "MEDICATIONS"
+  },
+  {
+   "id": "src:SYN-0006-D08:1301-1325",
+   "kind": "source",
+   "doc_id": "SYN-0006-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    1301,
+    1325
+   ],
+   "text": "MEDICATIONS (reconciled)"
+  },
+  {
+   "id": "crit:NCT07589595-E06",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Active immunization against amyloid-beta.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07589595:NCT07589595-E06:r1",
+   "kind": "decision",
+   "trial_id": "NCT07589595",
+   "criterion_id": "NCT07589595-E06",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_history_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Not mentioned in the record.",
+   "missing_fact": "History of active amyloid-beta immunization",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07589595-E07",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Have a centrally read MRI that does not meet study entry criteria.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07589595:NCT07589595-E07:r1",
+   "kind": "decision",
+   "trial_id": "NCT07589595",
+   "criterion_id": "NCT07589595-E07",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Local MRI shows two microbleeds, MTA 2 and Fazekas 1. Central read is not available, so entry criteria cannot be judged.",
+   "missing_fact": "Central read of MRI against study entry criteria",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07589595-E08",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Have contraindication to MRI or PET scans.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07589595:NCT07589595-E08:r1",
+   "kind": "decision",
+   "trial_id": "NCT07589595",
+   "criterion_id": "NCT07589595-E08",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "She had a brain MRI without documented problems, but PET contraindications and implants are not addressed.",
+   "missing_fact": "Presence of MRI/PET contraindications (implants, claustrophobia)",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07589595-E09",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Have any contraindication to lumbar puncture.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07589595:NCT07589595-E09:r1",
+   "kind": "decision",
+   "trial_id": "NCT07589595",
+   "criterion_id": "NCT07589595-E09",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "She has no anticoagulants, and INR and platelets are normal. She already had a CSF sample. No contraindication is stated, but none is explicitly excluded.",
+   "missing_fact": "Clinician assessment of lumbar puncture contraindications (e.g., spinal anatomy)",
+   "derived_from": null
+  },
+  {
+   "id": "label:NCT07589595",
+   "kind": "trial_decision",
+   "label": "ineligible",
+   "why": [
+    "FAIL NCT07589595-I03"
+   ],
+   "by": "agent3"
+  },
+  {
+   "id": "trial:NCT06159673",
+   "kind": "trial",
+   "title": "ACP-204 in Adults With Alzheimer's Disease Psychosis"
+  },
+  {
+   "id": "crit:NCT06159673-I01",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Is male or female and >=55 and <=95 years of age living in the community or in an institutionalized setting",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06159673:NCT06159673-I01:r1",
+   "kind": "decision",
+   "trial_id": "NCT06159673",
+   "criterion_id": "NCT06159673-I01",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "structured_numeric"
+   ],
+   "note": "age = 74 years (2026-09-22, -9d) vs between [55, 95] -> met",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0006-EV044",
+   "kind": "evidence",
+   "concept": "age",
+   "term": null,
+   "value": 74,
+   "unit": "years",
+   "observed_date": "2026-09-22",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "src:SYN-0006-D08:154-166",
+   "kind": "source",
+   "doc_id": "SYN-0006-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    154,
+    166
+   ],
+   "text": "74 y/o woman"
+  },
+  {
+   "id": "calc:NCT06159673:NCT06159673-I01",
+   "kind": "calculation",
+   "concept": "age",
+   "operator": "between",
+   "threshold": [
+    55,
+    95
+   ],
+   "unit": "years",
+   "value": 74,
+   "value_unit": "years",
+   "observed_date": "2026-09-22",
+   "days_before": 9,
+   "note": "age = 74 years (2026-09-22, -9d) vs between [55, 95] -> met"
+  },
+  {
+   "id": "crit:NCT06159673-I02",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Meets clinical criteria for possible or probable AD based on the 2011 National Institute on Aging-Alzheimer Association (NIA-AA) criteria",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06159673:NCT06159673-I02:r1",
+   "kind": "decision",
+   "trial_id": "NCT06159673",
+   "criterion_id": "NCT06159673-I02",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Diagnosed MCI due to Alzheimer's disease, biomarker confirmed; AD diagnosis documented.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0006-EV227",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "Alzheimer's disease",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-22",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:diagnosis:alzheimer's disease",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "Alzheimer's disease"
+  },
+  {
+   "id": "src:SYN-0006-D08:943-1002",
+   "kind": "source",
+   "doc_id": "SYN-0006-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    943,
+    1002
+   ],
+   "text": "Mild cognitive impairment due to Alzheimer's disease - 2026"
+  },
+  {
+   "id": "crit:NCT06159673-I03",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Meets the revised criteria for psychosis in major or mild neurocognitive disorder established by the International Psychogeriatrics Association (IPA)",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06159673:NCT06159673-I03:r1",
+   "kind": "decision",
+   "trial_id": "NCT06159673",
+   "criterion_id": "NCT06159673-I03",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Hallucinations denied; no delusions or psychosis documented. Neuropsychiatric symptoms limited to mild depression.",
+   "missing_fact": "Whether patient meets IPA criteria for psychosis in neurocognitive disorder",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06159673-I04",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Has either blood-based biomarker or documented evidence (e.g. positron emission tomography, cerebrospinal fluid biomarker) indicating amyloid plaque deposition and neuropathologic change consistent with AD",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06159673:NCT06159673-I04:r1",
+   "kind": "decision",
+   "trial_id": "NCT06159673",
+   "criterion_id": "NCT06159673-I04",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "CSF Abeta42/40 low and p-tau181 elevated, consistent with AD pathology.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06159673-I05",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Has a prior magnetic resonance imaging or computed tomography scan of the brain that is consistent with the diagnosis of AD",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06159673:NCT06159673-I05:r1",
+   "kind": "decision",
+   "trial_id": "NCT06159673",
+   "criterion_id": "NCT06159673-I05",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "MRI shows bilateral hippocampal atrophy MTA 2, consistent with AD.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0006-EV023",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "mild bilateral hippocampal atrophy MTA 2",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-05-13",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:symptom_finding:mild bilateral hippocampal atrophy mta 2",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "mild bilateral hippocampal atrophy MTA 2"
+  },
+  {
+   "id": "src:SYN-0006-D04:0-54",
+   "kind": "source",
+   "doc_id": "SYN-0006-D04",
+   "doc_type": "imaging_report",
+   "span": [
+    0,
+    54
+   ],
+   "text": "MRI brain: mild bilateral hippocampal atrophy (MTA 2)."
+  },
+  {
+   "id": "crit:NCT06159673-I06",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Meets revised criteria for psychosis in major or mild neurocognitive disorder as per International Psychogeriatrics Association",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06159673:NCT06159673-I06:r1",
+   "kind": "decision",
+   "trial_id": "NCT06159673",
+   "criterion_id": "NCT06159673-I06",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No psychosis documented; hallucinations denied, no delusions mentioned.",
+   "missing_fact": "Whether patient meets IPA criteria for psychosis in neurocognitive disorder",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06159673-I07",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "MMSE score >=6 and <=24",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06159673:NCT06159673-I07:r1",
+   "kind": "decision",
+   "trial_id": "NCT06159673",
+   "criterion_id": "NCT06159673-I07",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "structured_numeric"
+   ],
+   "note": "mmse = 23 points (2026-09-22, -9d) vs between [6, 24] -> met",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0006-EV218",
+   "kind": "evidence",
+   "concept": "mmse",
+   "term": null,
+   "value": 23,
+   "unit": "points",
+   "observed_date": "2026-09-22",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:mmse",
+   "kind": "concept",
+   "concept": "mmse",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0006-D07:30-41",
+   "kind": "source",
+   "doc_id": "SYN-0006-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    30,
+    41
+   ],
+   "text": "MMSE 23/30."
+  },
+  {
+   "id": "calc:NCT06159673:NCT06159673-I07",
+   "kind": "calculation",
+   "concept": "mmse",
+   "operator": "between",
+   "threshold": [
+    6,
+    24
+   ],
+   "unit": null,
+   "value": 23,
+   "value_unit": "points",
+   "observed_date": "2026-09-22",
+   "days_before": 9,
+   "note": "mmse = 23 points (2026-09-22, -9d) vs between [6, 24] -> met"
+  },
+  {
+   "id": "crit:NCT06159673-I08",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Psychotic symptoms for at least 2 months",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06159673:NCT06159673-I08:r1",
+   "kind": "decision",
+   "trial_id": "NCT06159673",
+   "criterion_id": "NCT06159673-I08",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No psychotic symptoms documented; hallucinations denied, delusions not addressed.",
+   "missing_fact": "Presence and duration of psychotic symptoms",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06159673-I09",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Lives in a stable place of residence and there are no plans to change living arrangements",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06159673:NCT06159673-I09:r1",
+   "kind": "decision",
+   "trial_id": "NCT06159673",
+   "criterion_id": "NCT06159673-I09",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Lives with husband, but plans to change residence not documented.",
+   "missing_fact": "Whether any plan to change living arrangements exists",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06159673-I10",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Has a designated study partner/caregiver",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06159673:NCT06159673-I10:r1",
+   "kind": "decision",
+   "trial_id": "NCT06159673",
+   "criterion_id": "NCT06159673-I10",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Husband attends visits, corroborates history, provides caregiver support and medication supervision.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0006-EV041",
+   "kind": "evidence",
+   "concept": "social_history",
+   "term": "husband present and corroborates history",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-22",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:social_history:husband present and corroborates history",
+   "kind": "concept",
+   "concept": "social_history",
+   "term": "husband present and corroborates history"
+  },
+  {
+   "id": "src:SYN-0006-D08:106-147",
+   "kind": "source",
+   "doc_id": "SYN-0006-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    106,
+    147
+   ],
+   "text": "Husband present and corroborates history."
+  },
+  {
+   "id": "ev:SYN-0006-EV168",
+   "kind": "evidence",
+   "concept": "social_history",
+   "term": "husband",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-22",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:social_history:husband",
+   "kind": "concept",
+   "concept": "social_history",
+   "term": "husband"
+  },
+  {
+   "id": "src:SYN-0006-D08:3774-3825",
+   "kind": "source",
+   "doc_id": "SYN-0006-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    3774,
+    3825
+   ],
+   "text": "Safety and caregiver support discussed with husband"
+  },
+  {
+   "id": "crit:NCT06159673-I11",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Able to complete all study visits with a study partner/caregiver",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06159673:NCT06159673-I11:r1",
+   "kind": "decision",
+   "trial_id": "NCT06159673",
+   "criterion_id": "NCT06159673-I11",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Husband attends clinic visits, but commitment to study visits not stated.",
+   "missing_fact": "Husband's willingness and ability to attend all study visits",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06159673-I12",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Must be on a stable dose of cholinesterase inhibitor or memantine, if applicable",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06159673:NCT06159673-I12:r1",
+   "kind": "decision",
+   "trial_id": "NCT06159673",
+   "criterion_id": "NCT06159673-I12",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Donepezil 10 mg daily since about July 2026; dose stable for over 2 months.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0006-EV034",
+   "kind": "evidence",
+   "concept": "medication",
+   "term": "donepezil 10 mg",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-22",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:medication:donepezil 10 mg",
+   "kind": "concept",
+   "concept": "medication",
+   "term": "donepezil 10 mg"
+  },
+  {
+   "id": "src:SYN-0006-D07:0-29",
+   "kind": "source",
+   "doc_id": "SYN-0006-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    0,
+    29
+   ],
+   "text": "Donepezil 10 mg, mild nausea."
+  },
+  {
+   "id": "crit:NCT06159673-E01",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Requires treatment with a medication prohibited by the protocol",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06159673:NCT06159673-E01:r1",
+   "kind": "decision",
+   "trial_id": "NCT06159673",
+   "criterion_id": "NCT06159673-E01",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_history_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Prohibited list not provided; current meds are donepezil, amlodipine, levothyroxine, acetaminophen.",
+   "missing_fact": "Protocol's prohibited medication list compared with current medications",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06159673-E02",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Is in hospice and receiving end-of-life palliative care, or has become bedridden",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06159673:NCT06159673-E02:r1",
+   "kind": "decision",
+   "trial_id": "NCT06159673",
+   "criterion_id": "NCT06159673-E02",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Ambulatory with steady gait, but hospice/bedridden not explicitly negated.",
+   "missing_fact": "Hospice or bedridden status explicitly denied",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06159673-E03",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Requires skilled nursing care",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06159673:NCT06159673-E03:r1",
+   "kind": "decision",
+   "trial_id": "NCT06159673",
+   "criterion_id": "NCT06159673-E03",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Lives at home with husband; no statement about skilled nursing needs.",
+   "missing_fact": "Whether patient requires skilled nursing care",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06159673-E04",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Psychotic symptoms that are primarily attributable to delirium, substance abuse, or a medical or psychiatric condition other than dementia",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06159673:NCT06159673-E04:r1",
+   "kind": "decision",
+   "trial_id": "NCT06159673",
+   "criterion_id": "NCT06159673-E04",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No psychotic symptoms documented; no substance use, but delirium and other conditions not addressed.",
+   "missing_fact": "Presence of psychotic symptoms and their attribution",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06159673-E05",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Known history of cerebral amyloid angiopathy, epilepsy, central nervous system neoplasm, or unexplained syncope",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06159673:NCT06159673-E05:r1",
+   "kind": "decision",
+   "trial_id": "NCT06159673",
+   "criterion_id": "NCT06159673-E05",
+   "status": "UNKNOWN",
+   "reason": "UNSUPPORTED",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Seizures and syncope denied, neurologic history negated, but two cortical microbleeds raise CAA question; CAA not excluded.",
+   "missing_fact": "Whether the cortical microbleeds represent cerebral amyloid angiopathy",
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0006-EV153",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "two left parietal cortical microbleeds",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-05-13",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:symptom_finding:two left parietal cortical microbleeds",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "two left parietal cortical microbleeds"
+  },
+  {
+   "id": "src:SYN-0006-D08:2977-3106",
+   "kind": "source",
+   "doc_id": "SYN-0006-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    2977,
+    3106
+   ],
+   "text": "MRI brain 2026-05-13: mild bilateral hippocampal atrophy (MTA 2), Fazekas 1, two left parietal cortical microbleeds, no infarcts."
+  },
+  {
+   "id": "ev:SYN-0006-EV116",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "seizures",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-22",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:symptom_finding:seizures",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "seizures"
+  },
+  {
+   "id": "src:SYN-0006-D08:1980-2177",
+   "kind": "source",
+   "doc_id": "SYN-0006-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    1980,
+    2177
+   ],
+   "text": "Negative for fever, weight loss, headache, vision change, focal weakness, numbness, seizures, chest pain, dyspnea, palpitations, vomiting, diarrhea, urinary incontinence, constipation, gait change."
+  },
+  {
+   "id": "ev:SYN-0006-EV061",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "syncope",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-22",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:symptom_finding:syncope",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "syncope"
+  },
+  {
+   "id": "src:SYN-0006-D08:739-779",
+   "kind": "source",
+   "doc_id": "SYN-0006-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    739,
+    779
+   ],
+   "text": "No syncope or palpitations on donepezil."
+  },
+  {
+   "id": "crit:NCT06159673-E06",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Atrial fibrillation",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06159673:NCT06159673-E06:r1",
+   "kind": "decision",
+   "trial_id": "NCT06159673",
+   "criterion_id": "NCT06159673-E06",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation"
+   ],
+   "note": "No cardiac history (blanket negation); regular rhythm on exam.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0006-EV075",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "cardiac history",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-22",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:cardiac history",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "cardiac history"
+  },
+  {
+   "id": "ev:SYN-0006-EV130",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "regular rate and rhythm",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-22",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:symptom_finding:regular rate and rhythm",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "regular rate and rhythm"
+  },
+  {
+   "id": "src:SYN-0006-D08:2279-2318",
+   "kind": "source",
+   "doc_id": "SYN-0006-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    2279,
+    2318
+   ],
+   "text": "CV: regular rate and rhythm, no murmur."
+  },
+  {
+   "id": "crit:NCT06159673-E07",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Symptomatic orthostatic hypotension",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06159673:NCT06159673-E07:r1",
+   "kind": "decision",
+   "trial_id": "NCT06159673",
+   "criterion_id": "NCT06159673-E07",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No syncope reported; no orthostatic hypotension mention or orthostatic vitals.",
+   "missing_fact": "Orthostatic BP measurement or documented orthostatic hypotension symptoms",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06159673-E08",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Protocol-defined exclusionary clinical laboratory findings",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06159673:NCT06159673-E08:r1",
+   "kind": "decision",
+   "trial_id": "NCT06159673",
+   "criterion_id": "NCT06159673-E08",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Protocol lab criteria unspecified; recent labs appear normal but cannot be compared.",
+   "missing_fact": "Protocol-defined exclusionary laboratory criteria",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06159673-E09",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Treatment with anti-tau therapy or donanemab within 2 months prior to Screening",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06159673:NCT06159673-E09:r1",
+   "kind": "decision",
+   "trial_id": "NCT06159673",
+   "criterion_id": "NCT06159673-E09",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_history_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "list_inference",
+    "pc:strict_list_inference"
+   ],
+   "note": "[inferable PASS from SYN-0006-EV089] Reconciled med list has no anti-tau or donanemab; anti-amyloid therapy only under discussion (planned).",
+   "missing_fact": null,
+   "derived_from": "SYN-0006-EV089"
+  },
+  {
+   "id": "label:NCT06159673",
+   "kind": "trial_decision",
+   "label": "potential",
+   "why": [
+    "UNKNOWN/MISSING NCT06159673-I03",
+    "UNKNOWN/MISSING NCT06159673-I06",
+    "UNKNOWN/MISSING NCT06159673-I08",
+    "UNKNOWN/UNSUPPORTED NCT06159673-E05"
+   ],
+   "by": "agent3"
+  }
+ ],
+ "edges": [
+  [
+   "trial:NCT06786676",
+   "has_criterion",
+   "crit:NCT06786676-I03"
+  ],
+  [
+   "crit:NCT06786676-I03",
+   "decided_as",
+   "dec:NCT06786676:NCT06786676-I03:r1"
+  ],
+  [
+   "crit:NCT06786676-I03",
+   "requires",
+   "concept:age"
+  ],
+  [
+   "concept:age",
+   "observed_as",
+   "ev:SYN-0006-EV213"
+  ],
+  [
+   "ev:SYN-0006-EV213",
+   "derived_from",
+   "src:SYN-0006-D01:8-23"
+  ],
+  [
+   "ev:SYN-0006-EV213",
+   "supports",
+   "dec:NCT06786676:NCT06786676-I03:r1"
+  ],
+  [
+   "crit:NCT06786676-I03",
+   "requires",
+   "concept:diagnosis:mild cognitive impairment due to alzheimer's disease"
+  ],
+  [
+   "concept:diagnosis:mild cognitive impairment due to alzheimer's disease",
+   "observed_as",
+   "ev:SYN-0006-EV155"
+  ],
+  [
+   "ev:SYN-0006-EV155",
+   "derived_from",
+   "src:SYN-0006-D08:3154-3227"
+  ],
+  [
+   "ev:SYN-0006-EV155",
+   "supports",
+   "dec:NCT06786676:NCT06786676-I03:r1"
+  ],
+  [
+   "crit:NCT06786676-I03",
+   "requires",
+   "concept:nationality"
+  ],
+  [
+   "concept:nationality",
+   "observed_as",
+   "ev:SYN-0006-EV005"
+  ],
+  [
+   "ev:SYN-0006-EV005",
+   "derived_from",
+   "src:SYN-0006-D01:70-95"
+  ],
+  [
+   "ev:SYN-0006-EV005",
+   "supports",
+   "dec:NCT06786676:NCT06786676-I03:r1"
+  ],
+  [
+   "trial:NCT06786676",
+   "has_criterion",
+   "crit:NCT06786676-I04"
+  ],
+  [
+   "crit:NCT06786676-I04",
+   "decided_as",
+   "dec:NCT06786676:NCT06786676-I04:r1"
+  ],
+  [
+   "crit:NCT06786676-I04",
+   "requires",
+   "concept:body_weight"
+  ],
+  [
+   "concept:body_weight",
+   "observed_as",
+   "ev:SYN-0006-EV064"
+  ],
+  [
+   "ev:SYN-0006-EV064",
+   "derived_from",
+   "src:SYN-0006-D08:800-808"
+  ],
+  [
+   "ev:SYN-0006-EV064",
+   "supports",
+   "dec:NCT06786676:NCT06786676-I04:r1"
+  ],
+  [
+   "crit:NCT06786676-I04",
+   "requires",
+   "concept:bmi"
+  ],
+  [
+   "concept:bmi",
+   "observed_as",
+   "ev:SYN-0006-EV065"
+  ],
+  [
+   "ev:SYN-0006-EV065",
+   "derived_from",
+   "src:SYN-0006-D08:810-819"
+  ],
+  [
+   "ev:SYN-0006-EV065",
+   "supports",
+   "dec:NCT06786676:NCT06786676-I04:r1"
+  ],
+  [
+   "trial:NCT06786676",
+   "has_criterion",
+   "crit:NCT06786676-I05"
+  ],
+  [
+   "crit:NCT06786676-I05",
+   "decided_as",
+   "dec:NCT06786676:NCT06786676-I05:r1"
+  ],
+  [
+   "trial:NCT06786676",
+   "has_criterion",
+   "crit:NCT06786676-E01"
+  ],
+  [
+   "crit:NCT06786676-E01",
+   "decided_as",
+   "dec:NCT06786676:NCT06786676-E01:r1"
+  ],
+  [
+   "crit:NCT06786676-E01",
+   "requires",
+   "concept:diagnosis:mild cognitive impairment due to alzheimer's disease"
+  ],
+  [
+   "ev:SYN-0006-EV155",
+   "insufficient_for",
+   "dec:NCT06786676:NCT06786676-E01:r1"
+  ],
+  [
+   "crit:NCT06786676-E01",
+   "requires",
+   "concept:diagnosis:hypertension"
+  ],
+  [
+   "concept:diagnosis:hypertension",
+   "observed_as",
+   "ev:SYN-0006-EV163"
+  ],
+  [
+   "ev:SYN-0006-EV163",
+   "derived_from",
+   "src:SYN-0006-D08:3566-3620"
+  ],
+  [
+   "ev:SYN-0006-EV163",
+   "insufficient_for",
+   "dec:NCT06786676:NCT06786676-E01:r1"
+  ],
+  [
+   "crit:NCT06786676-E01",
+   "requires",
+   "concept:diagnosis:hypothyroidism"
+  ],
+  [
+   "concept:diagnosis:hypothyroidism",
+   "observed_as",
+   "ev:SYN-0006-EV165"
+  ],
+  [
+   "ev:SYN-0006-EV165",
+   "derived_from",
+   "src:SYN-0006-D08:3624-3669"
+  ],
+  [
+   "ev:SYN-0006-EV165",
+   "insufficient_for",
+   "dec:NCT06786676:NCT06786676-E01:r1"
+  ],
+  [
+   "crit:NCT06786676-E01",
+   "requires",
+   "concept:diagnosis:mild depressive symptoms"
+  ],
+  [
+   "concept:diagnosis:mild depressive symptoms",
+   "observed_as",
+   "ev:SYN-0006-EV073"
+  ],
+  [
+   "ev:SYN-0006-EV073",
+   "derived_from",
+   "src:SYN-0006-D08:1005-1044"
+  ],
+  [
+   "ev:SYN-0006-EV073",
+   "insufficient_for",
+   "dec:NCT06786676:NCT06786676-E01:r1"
+  ],
+  [
+   "trial:NCT06786676",
+   "has_criterion",
+   "crit:NCT06786676-E02"
+  ],
+  [
+   "crit:NCT06786676-E02",
+   "decided_as",
+   "dec:NCT06786676:NCT06786676-E02:r1"
+  ],
+  [
+   "crit:NCT06786676-E02",
+   "requires",
+   "concept:procedure:appendectomy"
+  ],
+  [
+   "concept:procedure:appendectomy",
+   "observed_as",
+   "ev:SYN-0006-EV085"
+  ],
+  [
+   "ev:SYN-0006-EV085",
+   "derived_from",
+   "src:SYN-0006-D08:1200-1218"
+  ],
+  [
+   "ev:SYN-0006-EV085",
+   "insufficient_for",
+   "dec:NCT06786676:NCT06786676-E02:r1"
+  ],
+  [
+   "trial:NCT06786676",
+   "has_criterion",
+   "crit:NCT06786676-E03"
+  ],
+  [
+   "crit:NCT06786676-E03",
+   "decided_as",
+   "dec:NCT06786676:NCT06786676-E03:r1"
+  ],
+  [
+   "trial:NCT06786676",
+   "has_criterion",
+   "crit:NCT06786676-E04"
+  ],
+  [
+   "crit:NCT06786676-E04",
+   "decided_as",
+   "dec:NCT06786676:NCT06786676-E04:r1"
+  ],
+  [
+   "crit:NCT06786676-E04",
+   "requires",
+   "concept:allergy:no known drug allergies"
+  ],
+  [
+   "concept:allergy:no known drug allergies",
+   "observed_as",
+   "ev:SYN-0006-EV088"
+  ],
+  [
+   "ev:SYN-0006-EV088",
+   "derived_from",
+   "src:SYN-0006-D08:1294-1299"
+  ],
+  [
+   "ev:SYN-0006-EV088",
+   "supports",
+   "dec:NCT06786676:NCT06786676-E04:r1"
+  ],
+  [
+   "trial:NCT06786676",
+   "has_criterion",
+   "crit:NCT06786676-E05"
+  ],
+  [
+   "crit:NCT06786676-E05",
+   "decided_as",
+   "dec:NCT06786676:NCT06786676-E05:r1"
+  ],
+  [
+   "trial:NCT06786676",
+   "has_criterion",
+   "crit:NCT06786676-E06"
+  ],
+  [
+   "crit:NCT06786676-E06",
+   "decided_as",
+   "dec:NCT06786676:NCT06786676-E06:r1"
+  ],
+  [
+   "trial:NCT06786676",
+   "has_criterion",
+   "crit:NCT06786676-E07"
+  ],
+  [
+   "crit:NCT06786676-E07",
+   "decided_as",
+   "dec:NCT06786676:NCT06786676-E07:r1"
+  ],
+  [
+   "crit:NCT06786676-E07",
+   "requires",
+   "concept:systolic_bp"
+  ],
+  [
+   "concept:systolic_bp",
+   "observed_as",
+   "ev:SYN-0006-EV225"
+  ],
+  [
+   "ev:SYN-0006-EV225",
+   "derived_from",
+   "src:SYN-0006-D08:820-829"
+  ],
+  [
+   "ev:SYN-0006-EV225",
+   "supports",
+   "dec:NCT06786676:NCT06786676-E07:r1"
+  ],
+  [
+   "crit:NCT06786676-E07",
+   "requires",
+   "concept:diastolic_bp"
+  ],
+  [
+   "concept:diastolic_bp",
+   "observed_as",
+   "ev:SYN-0006-EV226"
+  ],
+  [
+   "ev:SYN-0006-EV226",
+   "derived_from",
+   "src:SYN-0006-D08:820-829"
+  ],
+  [
+   "ev:SYN-0006-EV226",
+   "supports",
+   "dec:NCT06786676:NCT06786676-E07:r1"
+  ],
+  [
+   "trial:NCT06786676",
+   "has_criterion",
+   "crit:NCT06786676-E08"
+  ],
+  [
+   "crit:NCT06786676-E08",
+   "decided_as",
+   "dec:NCT06786676:NCT06786676-E08:r1"
+  ],
+  [
+   "trial:NCT06786676",
+   "has_criterion",
+   "crit:NCT06786676-E09"
+  ],
+  [
+   "crit:NCT06786676-E09",
+   "decided_as",
+   "dec:NCT06786676:NCT06786676-E09:r1"
+  ],
+  [
+   "crit:NCT06786676-E09",
+   "requires",
+   "concept:egfr"
+  ],
+  [
+   "concept:egfr",
+   "observed_as",
+   "ev:SYN-0006-EV187"
+  ],
+  [
+   "ev:SYN-0006-EV187",
+   "derived_from",
+   "src:SYN-0006-D09:520-562"
+  ],
+  [
+   "ev:SYN-0006-EV187",
+   "supports",
+   "dec:NCT06786676:NCT06786676-E09:r1"
+  ],
+  [
+   "trial:NCT06786676",
+   "has_criterion",
+   "crit:NCT06786676-E10"
+  ],
+  [
+   "crit:NCT06786676-E10",
+   "decided_as",
+   "dec:NCT06786676:NCT06786676-E10:r1"
+  ],
+  [
+   "crit:NCT06786676-E10",
+   "requires",
+   "concept:medication:donepezil 10 mg daily"
+  ],
+  [
+   "concept:medication:donepezil 10 mg daily",
+   "observed_as",
+   "ev:SYN-0006-EV090"
+  ],
+  [
+   "ev:SYN-0006-EV090",
+   "derived_from",
+   "src:SYN-0006-D08:1329-1423"
+  ],
+  [
+   "ev:SYN-0006-EV090",
+   "supports",
+   "dec:NCT06786676:NCT06786676-E10:r1"
+  ],
+  [
+   "crit:NCT06786676-E10",
+   "requires",
+   "concept:medication:amlodipine 5 mg daily"
+  ],
+  [
+   "concept:medication:amlodipine 5 mg daily",
+   "observed_as",
+   "ev:SYN-0006-EV091"
+  ],
+  [
+   "ev:SYN-0006-EV091",
+   "derived_from",
+   "src:SYN-0006-D08:1426-1463"
+  ],
+  [
+   "ev:SYN-0006-EV091",
+   "supports",
+   "dec:NCT06786676:NCT06786676-E10:r1"
+  ],
+  [
+   "crit:NCT06786676-E10",
+   "requires",
+   "concept:medication:levothyroxine 75 mcg daily"
+  ],
+  [
+   "concept:medication:levothyroxine 75 mcg daily",
+   "observed_as",
+   "ev:SYN-0006-EV092"
+  ],
+  [
+   "ev:SYN-0006-EV092",
+   "derived_from",
+   "src:SYN-0006-D08:1466-1508"
+  ],
+  [
+   "ev:SYN-0006-EV092",
+   "supports",
+   "dec:NCT06786676:NCT06786676-E10:r1"
+  ],
+  [
+   "crit:NCT06786676-E10",
+   "requires",
+   "concept:medication:acetaminophen 500 mg prn"
+  ],
+  [
+   "concept:medication:acetaminophen 500 mg prn",
+   "observed_as",
+   "ev:SYN-0006-EV093"
+  ],
+  [
+   "ev:SYN-0006-EV093",
+   "derived_from",
+   "src:SYN-0006-D08:1511-1550"
+  ],
+  [
+   "ev:SYN-0006-EV093",
+   "supports",
+   "dec:NCT06786676:NCT06786676-E10:r1"
+  ],
+  [
+   "trial:NCT06786676",
+   "has_criterion",
+   "crit:NCT06786676-E11"
+  ],
+  [
+   "crit:NCT06786676-E11",
+   "decided_as",
+   "dec:NCT06786676:NCT06786676-E11:r1"
+  ],
+  [
+   "crit:NCT06786676-E11",
+   "requires",
+   "concept:medication:amlodipine 5 mg daily"
+  ],
+  [
+   "ev:SYN-0006-EV091",
+   "insufficient_for",
+   "dec:NCT06786676:NCT06786676-E11:r1"
+  ],
+  [
+   "trial:NCT06786676",
+   "has_criterion",
+   "crit:NCT06786676-E12"
+  ],
+  [
+   "crit:NCT06786676-E12",
+   "decided_as",
+   "dec:NCT06786676:NCT06786676-E12:r1"
+  ],
+  [
+   "trial:NCT06786676",
+   "has_criterion",
+   "crit:NCT06786676-E13"
+  ],
+  [
+   "crit:NCT06786676-E13",
+   "decided_as",
+   "dec:NCT06786676:NCT06786676-E13:r1"
+  ],
+  [
+   "trial:NCT06786676",
+   "has_criterion",
+   "crit:NCT06786676-E14"
+  ],
+  [
+   "crit:NCT06786676-E14",
+   "decided_as",
+   "dec:NCT06786676:NCT06786676-E14:r1"
+  ],
+  [
+   "crit:NCT06786676-E14",
+   "requires",
+   "concept:smoking"
+  ],
+  [
+   "concept:smoking",
+   "observed_as",
+   "ev:SYN-0006-EV099"
+  ],
+  [
+   "ev:SYN-0006-EV099",
+   "derived_from",
+   "src:SYN-0006-D08:1680-1708"
+  ],
+  [
+   "ev:SYN-0006-EV099",
+   "supports",
+   "dec:NCT06786676:NCT06786676-E14:r1"
+  ],
+  [
+   "trial:NCT06786676",
+   "has_criterion",
+   "crit:NCT06786676-E15"
+  ],
+  [
+   "crit:NCT06786676-E15",
+   "decided_as",
+   "dec:NCT06786676:NCT06786676-E15:r1"
+  ],
+  [
+   "crit:NCT06786676-E15",
+   "requires",
+   "concept:alcohol:1 glass of wine 1-2 times per week"
+  ],
+  [
+   "concept:alcohol:1 glass of wine 1-2 times per week",
+   "observed_as",
+   "ev:SYN-0006-EV100"
+  ],
+  [
+   "ev:SYN-0006-EV100",
+   "derived_from",
+   "src:SYN-0006-D08:1709-1753"
+  ],
+  [
+   "ev:SYN-0006-EV100",
+   "insufficient_for",
+   "dec:NCT06786676:NCT06786676-E15:r1"
+  ],
+  [
+   "trial:NCT06786676",
+   "has_criterion",
+   "crit:NCT06786676-E16"
+  ],
+  [
+   "crit:NCT06786676-E16",
+   "decided_as",
+   "dec:NCT06786676:NCT06786676-E16:r1"
+  ],
+  [
+   "trial:NCT06786676",
+   "has_criterion",
+   "crit:NCT06786676-E17"
+  ],
+  [
+   "crit:NCT06786676-E17",
+   "decided_as",
+   "dec:NCT06786676:NCT06786676-E17:r1"
+  ],
+  [
+   "trial:NCT06786676",
+   "has_criterion",
+   "crit:NCT06786676-E18"
+  ],
+  [
+   "crit:NCT06786676-E18",
+   "decided_as",
+   "dec:NCT06786676:NCT06786676-E18:r1"
+  ],
+  [
+   "trial:NCT06786676",
+   "has_criterion",
+   "crit:NCT06786676-E19"
+  ],
+  [
+   "crit:NCT06786676-E19",
+   "decided_as",
+   "dec:NCT06786676:NCT06786676-E19:r1"
+  ],
+  [
+   "crit:NCT06786676-E19",
+   "requires",
+   "concept:age"
+  ],
+  [
+   "ev:SYN-0006-EV213",
+   "supports",
+   "dec:NCT06786676:NCT06786676-E19:r1"
+  ],
+  [
+   "crit:NCT06786676-E19",
+   "requires",
+   "concept:sex"
+  ],
+  [
+   "concept:sex",
+   "observed_as",
+   "ev:SYN-0006-EV001"
+  ],
+  [
+   "ev:SYN-0006-EV001",
+   "derived_from",
+   "src:SYN-0006-D01:0-7"
+  ],
+  [
+   "ev:SYN-0006-EV001",
+   "supports",
+   "dec:NCT06786676:NCT06786676-E19:r1"
+  ],
+  [
+   "trial:NCT06786676",
+   "has_criterion",
+   "crit:NCT06786676-E20"
+  ],
+  [
+   "crit:NCT06786676-E20",
+   "decided_as",
+   "dec:NCT06786676:NCT06786676-E20:r1"
+  ],
+  [
+   "crit:NCT06786676-E20",
+   "requires",
+   "concept:sex"
+  ],
+  [
+   "ev:SYN-0006-EV001",
+   "supports",
+   "dec:NCT06786676:NCT06786676-E20:r1"
+  ],
+  [
+   "trial:NCT06786676",
+   "has_criterion",
+   "crit:NCT06786676-E21"
+  ],
+  [
+   "crit:NCT06786676-E21",
+   "decided_as",
+   "dec:NCT06786676:NCT06786676-E21:r1"
+  ],
+  [
+   "crit:NCT06786676-E21",
+   "requires",
+   "concept:sex"
+  ],
+  [
+   "ev:SYN-0006-EV001",
+   "supports",
+   "dec:NCT06786676:NCT06786676-E21:r1"
+  ],
+  [
+   "crit:NCT06786676-E21",
+   "requires",
+   "concept:age"
+  ],
+  [
+   "ev:SYN-0006-EV213",
+   "supports",
+   "dec:NCT06786676:NCT06786676-E21:r1"
+  ],
+  [
+   "trial:NCT06786676",
+   "has_criterion",
+   "crit:NCT06786676-E22"
+  ],
+  [
+   "crit:NCT06786676-E22",
+   "decided_as",
+   "dec:NCT06786676:NCT06786676-E22:r1"
+  ],
+  [
+   "crit:NCT06786676-E22",
+   "requires",
+   "concept:lab_other:csf amyloid-beta 42/40 ratio"
+  ],
+  [
+   "concept:lab_other:csf amyloid-beta 42/40 ratio",
+   "observed_as",
+   "ev:SYN-0006-EV027"
+  ],
+  [
+   "ev:SYN-0006-EV027",
+   "derived_from",
+   "src:SYN-0006-D05:0-41"
+  ],
+  [
+   "ev:SYN-0006-EV027",
+   "supports",
+   "dec:NCT06786676:NCT06786676-E22:r1"
+  ],
+  [
+   "crit:NCT06786676-E22",
+   "requires",
+   "concept:medication:anticoagulants"
+  ],
+  [
+   "concept:medication:anticoagulants",
+   "observed_as",
+   "ev:SYN-0006-EV038"
+  ],
+  [
+   "ev:SYN-0006-EV038",
+   "derived_from",
+   "src:SYN-0006-D07:84-123"
+  ],
+  [
+   "ev:SYN-0006-EV038",
+   "supports",
+   "dec:NCT06786676:NCT06786676-E22:r1"
+  ],
+  [
+   "crit:NCT06786676-E22",
+   "requires",
+   "concept:inr"
+  ],
+  [
+   "concept:inr",
+   "observed_as",
+   "ev:SYN-0006-EV204"
+  ],
+  [
+   "ev:SYN-0006-EV204",
+   "derived_from",
+   "src:SYN-0006-D09:1020-1040"
+  ],
+  [
+   "ev:SYN-0006-EV204",
+   "supports",
+   "dec:NCT06786676:NCT06786676-E22:r1"
+  ],
+  [
+   "trial:NCT06786676",
+   "has_criterion",
+   "crit:NCT06786676-E23"
+  ],
+  [
+   "crit:NCT06786676-E23",
+   "decided_as",
+   "dec:NCT06786676:NCT06786676-E23:r1"
+  ],
+  [
+   "trial:NCT06786676",
+   "has_criterion",
+   "crit:NCT06786676-I01"
+  ],
+  [
+   "crit:NCT06786676-I01",
+   "decided_as",
+   "dec:NCT06786676:NCT06786676-I01:r1"
+  ],
+  [
+   "crit:NCT06786676-I01",
+   "requires",
+   "concept:age"
+  ],
+  [
+   "ev:SYN-0006-EV213",
+   "supports",
+   "dec:NCT06786676:NCT06786676-I01:r1"
+  ],
+  [
+   "trial:NCT06786676",
+   "has_criterion",
+   "crit:NCT06786676-I02"
+  ],
+  [
+   "crit:NCT06786676-I02",
+   "decided_as",
+   "dec:NCT06786676:NCT06786676-I02:r1"
+  ],
+  [
+   "crit:NCT06786676-I02",
+   "requires",
+   "concept:age"
+  ],
+  [
+   "ev:SYN-0006-EV213",
+   "supports",
+   "dec:NCT06786676:NCT06786676-I02:r1"
+  ],
+  [
+   "trial:NCT06786676",
+   "labelled",
+   "label:NCT06786676"
+  ],
+  [
+   "trial:NCT07589595",
+   "has_criterion",
+   "crit:NCT07589595-I01"
+  ],
+  [
+   "crit:NCT07589595-I01",
+   "decided_as",
+   "dec:NCT07589595:NCT07589595-I01:r1"
+  ],
+  [
+   "crit:NCT07589595-I01",
+   "requires",
+   "concept:symptom_finding:progressive short-term memory loss"
+  ],
+  [
+   "concept:symptom_finding:progressive short-term memory loss",
+   "observed_as",
+   "ev:SYN-0006-EV046"
+  ],
+  [
+   "ev:SYN-0006-EV046",
+   "derived_from",
+   "src:SYN-0006-D08:194-247"
+  ],
+  [
+   "ev:SYN-0006-EV046",
+   "supports",
+   "dec:NCT07589595:NCT07589595-I01:r1"
+  ],
+  [
+   "trial:NCT07589595",
+   "has_criterion",
+   "crit:NCT07589595-I02"
+  ],
+  [
+   "crit:NCT07589595-I02",
+   "decided_as",
+   "dec:NCT07589595:NCT07589595-I02:r1"
+  ],
+  [
+   "crit:NCT07589595-I02",
+   "requires",
+   "concept:symptom_finding:forgetting recent conversations, repeating questions"
+  ],
+  [
+   "concept:symptom_finding:forgetting recent conversations, repeating questions",
+   "observed_as",
+   "ev:SYN-0006-EV006"
+  ],
+  [
+   "ev:SYN-0006-EV006",
+   "derived_from",
+   "src:SYN-0006-D02:15-80"
+  ],
+  [
+   "ev:SYN-0006-EV006",
+   "insufficient_for",
+   "dec:NCT07589595:NCT07589595-I02:r1"
+  ],
+  [
+   "crit:NCT07589595-I02",
+   "requires",
+   "concept:symptom_finding:parkinsonism"
+  ],
+  [
+   "concept:symptom_finding:parkinsonism",
+   "observed_as",
+   "ev:SYN-0006-EV145"
+  ],
+  [
+   "ev:SYN-0006-EV145",
+   "derived_from",
+   "src:SYN-0006-D08:2605-2649"
+  ],
+  [
+   "ev:SYN-0006-EV145",
+   "insufficient_for",
+   "dec:NCT07589595:NCT07589595-I02:r1"
+  ],
+  [
+   "crit:NCT07589595-I02",
+   "requires",
+   "concept:symptom_finding:hallucinations"
+  ],
+  [
+   "concept:symptom_finding:hallucinations",
+   "observed_as",
+   "ev:SYN-0006-EV059"
+  ],
+  [
+   "ev:SYN-0006-EV059",
+   "derived_from",
+   "src:SYN-0006-D08:650-738"
+  ],
+  [
+   "ev:SYN-0006-EV059",
+   "insufficient_for",
+   "dec:NCT07589595:NCT07589595-I02:r1"
+  ],
+  [
+   "trial:NCT07589595",
+   "has_criterion",
+   "crit:NCT07589595-I03"
+  ],
+  [
+   "crit:NCT07589595-I03",
+   "decided_as",
+   "dec:NCT07589595:NCT07589595-I03:r1"
+  ],
+  [
+   "crit:NCT07589595-I03",
+   "requires",
+   "concept:moca"
+  ],
+  [
+   "concept:moca",
+   "observed_as",
+   "ev:SYN-0006-EV231"
+  ],
+  [
+   "ev:SYN-0006-EV231",
+   "derived_from",
+   "src:SYN-0006-D08:2763-2845"
+  ],
+  [
+   "ev:SYN-0006-EV231",
+   "supports",
+   "dec:NCT07589595:NCT07589595-I03:r1"
+  ],
+  [
+   "calc:NCT07589595:NCT07589595-I03",
+   "computes",
+   "dec:NCT07589595:NCT07589595-I03:r1"
+  ],
+  [
+   "trial:NCT07589595",
+   "has_criterion",
+   "crit:NCT07589595-I04"
+  ],
+  [
+   "crit:NCT07589595-I04",
+   "decided_as",
+   "dec:NCT07589595:NCT07589595-I04:r1"
+  ],
+  [
+   "trial:NCT07589595",
+   "has_criterion",
+   "crit:NCT07589595-I05"
+  ],
+  [
+   "crit:NCT07589595-I05",
+   "decided_as",
+   "dec:NCT07589595:NCT07589595-I05:r1"
+  ],
+  [
+   "crit:NCT07589595-I05",
+   "requires",
+   "concept:lab_other:csf amyloid-beta 42/40 ratio"
+  ],
+  [
+   "ev:SYN-0006-EV027",
+   "supports",
+   "dec:NCT07589595:NCT07589595-I05:r1"
+  ],
+  [
+   "crit:NCT07589595-I05",
+   "requires",
+   "concept:lab_other:p-tau181"
+  ],
+  [
+   "concept:lab_other:p-tau181",
+   "observed_as",
+   "ev:SYN-0006-EV028"
+  ],
+  [
+   "ev:SYN-0006-EV028",
+   "derived_from",
+   "src:SYN-0006-D05:43-71"
+  ],
+  [
+   "ev:SYN-0006-EV028",
+   "supports",
+   "dec:NCT07589595:NCT07589595-I05:r1"
+  ],
+  [
+   "trial:NCT07589595",
+   "has_criterion",
+   "crit:NCT07589595-I06"
+  ],
+  [
+   "crit:NCT07589595-I06",
+   "decided_as",
+   "dec:NCT07589595:NCT07589595-I06:r1"
+  ],
+  [
+   "trial:NCT07589595",
+   "has_criterion",
+   "crit:NCT07589595-I07"
+  ],
+  [
+   "crit:NCT07589595-I07",
+   "decided_as",
+   "dec:NCT07589595:NCT07589595-I07:r1"
+  ],
+  [
+   "trial:NCT07589595",
+   "has_criterion",
+   "crit:NCT07589595-E01"
+  ],
+  [
+   "crit:NCT07589595-E01",
+   "decided_as",
+   "dec:NCT07589595:NCT07589595-E01:r1"
+  ],
+  [
+   "trial:NCT07589595",
+   "has_criterion",
+   "crit:NCT07589595-E02"
+  ],
+  [
+   "crit:NCT07589595-E02",
+   "decided_as",
+   "dec:NCT07589595:NCT07589595-E02:r1"
+  ],
+  [
+   "crit:NCT07589595-E02",
+   "requires",
+   "concept:diagnosis:neurologic history"
+  ],
+  [
+   "concept:diagnosis:neurologic history",
+   "observed_as",
+   "ev:SYN-0006-EV080"
+  ],
+  [
+   "ev:SYN-0006-EV080",
+   "derived_from",
+   "src:SYN-0006-D08:1045-1123"
+  ],
+  [
+   "ev:SYN-0006-EV080",
+   "supports",
+   "dec:NCT07589595:NCT07589595-E02:r1"
+  ],
+  [
+   "crit:NCT07589595-E02",
+   "requires",
+   "concept:diagnosis:stroke"
+  ],
+  [
+   "concept:diagnosis:stroke",
+   "observed_as",
+   "ev:SYN-0006-EV081"
+  ],
+  [
+   "ev:SYN-0006-EV081",
+   "derived_from",
+   "src:SYN-0006-D08:1124-1141"
+  ],
+  [
+   "ev:SYN-0006-EV081",
+   "supports",
+   "dec:NCT07589595:NCT07589595-E02:r1"
+  ],
+  [
+   "crit:NCT07589595-E02",
+   "requires",
+   "concept:diagnosis:tia"
+  ],
+  [
+   "concept:diagnosis:tia",
+   "observed_as",
+   "ev:SYN-0006-EV082"
+  ],
+  [
+   "ev:SYN-0006-EV082",
+   "derived_from",
+   "src:SYN-0006-D08:1124-1141"
+  ],
+  [
+   "ev:SYN-0006-EV082",
+   "supports",
+   "dec:NCT07589595:NCT07589595-E02:r1"
+  ],
+  [
+   "trial:NCT07589595",
+   "has_criterion",
+   "crit:NCT07589595-E03"
+  ],
+  [
+   "crit:NCT07589595-E03",
+   "decided_as",
+   "dec:NCT07589595:NCT07589595-E03:r1"
+  ],
+  [
+   "crit:NCT07589595-E03",
+   "requires",
+   "concept:diagnosis:prior malignancy"
+  ],
+  [
+   "concept:diagnosis:prior malignancy",
+   "observed_as",
+   "ev:SYN-0006-EV084"
+  ],
+  [
+   "ev:SYN-0006-EV084",
+   "derived_from",
+   "src:SYN-0006-D08:1155-1175"
+  ],
+  [
+   "ev:SYN-0006-EV084",
+   "supports",
+   "dec:NCT07589595:NCT07589595-E03:r1"
+  ],
+  [
+   "trial:NCT07589595",
+   "has_criterion",
+   "crit:NCT07589595-E04"
+  ],
+  [
+   "crit:NCT07589595-E04",
+   "decided_as",
+   "dec:NCT07589595:NCT07589595-E04:r1"
+  ],
+  [
+   "trial:NCT07589595",
+   "has_criterion",
+   "crit:NCT07589595-E05"
+  ],
+  [
+   "crit:NCT07589595-E05",
+   "decided_as",
+   "dec:NCT07589595:NCT07589595-E05:r1"
+  ],
+  [
+   "crit:NCT07589595-E05",
+   "requires",
+   "concept:treatment_plan:anti-amyloid therapy"
+  ],
+  [
+   "concept:treatment_plan:anti-amyloid therapy",
+   "observed_as",
+   "ev:SYN-0006-EV160"
+  ],
+  [
+   "ev:SYN-0006-EV160",
+   "derived_from",
+   "src:SYN-0006-D08:3341-3452"
+  ],
+  [
+   "ev:SYN-0006-EV160",
+   "insufficient_for",
+   "dec:NCT07589595:NCT07589595-E05:r1"
+  ],
+  [
+   "crit:NCT07589595-E05",
+   "requires",
+   "concept:medication:medications"
+  ],
+  [
+   "concept:medication:medications",
+   "observed_as",
+   "ev:SYN-0006-EV089"
+  ],
+  [
+   "ev:SYN-0006-EV089",
+   "derived_from",
+   "src:SYN-0006-D08:1301-1325"
+  ],
+  [
+   "ev:SYN-0006-EV089",
+   "insufficient_for",
+   "dec:NCT07589595:NCT07589595-E05:r1"
+  ],
+  [
+   "trial:NCT07589595",
+   "has_criterion",
+   "crit:NCT07589595-E06"
+  ],
+  [
+   "crit:NCT07589595-E06",
+   "decided_as",
+   "dec:NCT07589595:NCT07589595-E06:r1"
+  ],
+  [
+   "trial:NCT07589595",
+   "has_criterion",
+   "crit:NCT07589595-E07"
+  ],
+  [
+   "crit:NCT07589595-E07",
+   "decided_as",
+   "dec:NCT07589595:NCT07589595-E07:r1"
+  ],
+  [
+   "trial:NCT07589595",
+   "has_criterion",
+   "crit:NCT07589595-E08"
+  ],
+  [
+   "crit:NCT07589595-E08",
+   "decided_as",
+   "dec:NCT07589595:NCT07589595-E08:r1"
+  ],
+  [
+   "trial:NCT07589595",
+   "has_criterion",
+   "crit:NCT07589595-E09"
+  ],
+  [
+   "crit:NCT07589595-E09",
+   "decided_as",
+   "dec:NCT07589595:NCT07589595-E09:r1"
+  ],
+  [
+   "trial:NCT07589595",
+   "labelled",
+   "label:NCT07589595"
+  ],
+  [
+   "trial:NCT06159673",
+   "has_criterion",
+   "crit:NCT06159673-I01"
+  ],
+  [
+   "crit:NCT06159673-I01",
+   "decided_as",
+   "dec:NCT06159673:NCT06159673-I01:r1"
+  ],
+  [
+   "crit:NCT06159673-I01",
+   "requires",
+   "concept:age"
+  ],
+  [
+   "concept:age",
+   "observed_as",
+   "ev:SYN-0006-EV044"
+  ],
+  [
+   "ev:SYN-0006-EV044",
+   "derived_from",
+   "src:SYN-0006-D08:154-166"
+  ],
+  [
+   "ev:SYN-0006-EV044",
+   "supports",
+   "dec:NCT06159673:NCT06159673-I01:r1"
+  ],
+  [
+   "calc:NCT06159673:NCT06159673-I01",
+   "computes",
+   "dec:NCT06159673:NCT06159673-I01:r1"
+  ],
+  [
+   "trial:NCT06159673",
+   "has_criterion",
+   "crit:NCT06159673-I02"
+  ],
+  [
+   "crit:NCT06159673-I02",
+   "decided_as",
+   "dec:NCT06159673:NCT06159673-I02:r1"
+  ],
+  [
+   "crit:NCT06159673-I02",
+   "requires",
+   "concept:diagnosis:alzheimer's disease"
+  ],
+  [
+   "concept:diagnosis:alzheimer's disease",
+   "observed_as",
+   "ev:SYN-0006-EV227"
+  ],
+  [
+   "ev:SYN-0006-EV227",
+   "derived_from",
+   "src:SYN-0006-D08:943-1002"
+  ],
+  [
+   "ev:SYN-0006-EV227",
+   "supports",
+   "dec:NCT06159673:NCT06159673-I02:r1"
+  ],
+  [
+   "crit:NCT06159673-I02",
+   "requires",
+   "concept:diagnosis:mild cognitive impairment due to alzheimer's disease"
+  ],
+  [
+   "ev:SYN-0006-EV155",
+   "supports",
+   "dec:NCT06159673:NCT06159673-I02:r1"
+  ],
+  [
+   "trial:NCT06159673",
+   "has_criterion",
+   "crit:NCT06159673-I03"
+  ],
+  [
+   "crit:NCT06159673-I03",
+   "decided_as",
+   "dec:NCT06159673:NCT06159673-I03:r1"
+  ],
+  [
+   "trial:NCT06159673",
+   "has_criterion",
+   "crit:NCT06159673-I04"
+  ],
+  [
+   "crit:NCT06159673-I04",
+   "decided_as",
+   "dec:NCT06159673:NCT06159673-I04:r1"
+  ],
+  [
+   "crit:NCT06159673-I04",
+   "requires",
+   "concept:lab_other:csf amyloid-beta 42/40 ratio"
+  ],
+  [
+   "ev:SYN-0006-EV027",
+   "supports",
+   "dec:NCT06159673:NCT06159673-I04:r1"
+  ],
+  [
+   "crit:NCT06159673-I04",
+   "requires",
+   "concept:lab_other:p-tau181"
+  ],
+  [
+   "ev:SYN-0006-EV028",
+   "supports",
+   "dec:NCT06159673:NCT06159673-I04:r1"
+  ],
+  [
+   "trial:NCT06159673",
+   "has_criterion",
+   "crit:NCT06159673-I05"
+  ],
+  [
+   "crit:NCT06159673-I05",
+   "decided_as",
+   "dec:NCT06159673:NCT06159673-I05:r1"
+  ],
+  [
+   "crit:NCT06159673-I05",
+   "requires",
+   "concept:symptom_finding:mild bilateral hippocampal atrophy mta 2"
+  ],
+  [
+   "concept:symptom_finding:mild bilateral hippocampal atrophy mta 2",
+   "observed_as",
+   "ev:SYN-0006-EV023"
+  ],
+  [
+   "ev:SYN-0006-EV023",
+   "derived_from",
+   "src:SYN-0006-D04:0-54"
+  ],
+  [
+   "ev:SYN-0006-EV023",
+   "supports",
+   "dec:NCT06159673:NCT06159673-I05:r1"
+  ],
+  [
+   "trial:NCT06159673",
+   "has_criterion",
+   "crit:NCT06159673-I06"
+  ],
+  [
+   "crit:NCT06159673-I06",
+   "decided_as",
+   "dec:NCT06159673:NCT06159673-I06:r1"
+  ],
+  [
+   "trial:NCT06159673",
+   "has_criterion",
+   "crit:NCT06159673-I07"
+  ],
+  [
+   "crit:NCT06159673-I07",
+   "decided_as",
+   "dec:NCT06159673:NCT06159673-I07:r1"
+  ],
+  [
+   "crit:NCT06159673-I07",
+   "requires",
+   "concept:mmse"
+  ],
+  [
+   "concept:mmse",
+   "observed_as",
+   "ev:SYN-0006-EV218"
+  ],
+  [
+   "ev:SYN-0006-EV218",
+   "derived_from",
+   "src:SYN-0006-D07:30-41"
+  ],
+  [
+   "ev:SYN-0006-EV218",
+   "supports",
+   "dec:NCT06159673:NCT06159673-I07:r1"
+  ],
+  [
+   "calc:NCT06159673:NCT06159673-I07",
+   "computes",
+   "dec:NCT06159673:NCT06159673-I07:r1"
+  ],
+  [
+   "trial:NCT06159673",
+   "has_criterion",
+   "crit:NCT06159673-I08"
+  ],
+  [
+   "crit:NCT06159673-I08",
+   "decided_as",
+   "dec:NCT06159673:NCT06159673-I08:r1"
+  ],
+  [
+   "trial:NCT06159673",
+   "has_criterion",
+   "crit:NCT06159673-I09"
+  ],
+  [
+   "crit:NCT06159673-I09",
+   "decided_as",
+   "dec:NCT06159673:NCT06159673-I09:r1"
+  ],
+  [
+   "trial:NCT06159673",
+   "has_criterion",
+   "crit:NCT06159673-I10"
+  ],
+  [
+   "crit:NCT06159673-I10",
+   "decided_as",
+   "dec:NCT06159673:NCT06159673-I10:r1"
+  ],
+  [
+   "crit:NCT06159673-I10",
+   "requires",
+   "concept:social_history:husband present and corroborates history"
+  ],
+  [
+   "concept:social_history:husband present and corroborates history",
+   "observed_as",
+   "ev:SYN-0006-EV041"
+  ],
+  [
+   "ev:SYN-0006-EV041",
+   "derived_from",
+   "src:SYN-0006-D08:106-147"
+  ],
+  [
+   "ev:SYN-0006-EV041",
+   "supports",
+   "dec:NCT06159673:NCT06159673-I10:r1"
+  ],
+  [
+   "crit:NCT06159673-I10",
+   "requires",
+   "concept:social_history:husband"
+  ],
+  [
+   "concept:social_history:husband",
+   "observed_as",
+   "ev:SYN-0006-EV168"
+  ],
+  [
+   "ev:SYN-0006-EV168",
+   "derived_from",
+   "src:SYN-0006-D08:3774-3825"
+  ],
+  [
+   "ev:SYN-0006-EV168",
+   "supports",
+   "dec:NCT06159673:NCT06159673-I10:r1"
+  ],
+  [
+   "trial:NCT06159673",
+   "has_criterion",
+   "crit:NCT06159673-I11"
+  ],
+  [
+   "crit:NCT06159673-I11",
+   "decided_as",
+   "dec:NCT06159673:NCT06159673-I11:r1"
+  ],
+  [
+   "trial:NCT06159673",
+   "has_criterion",
+   "crit:NCT06159673-I12"
+  ],
+  [
+   "crit:NCT06159673-I12",
+   "decided_as",
+   "dec:NCT06159673:NCT06159673-I12:r1"
+  ],
+  [
+   "crit:NCT06159673-I12",
+   "requires",
+   "concept:medication:donepezil 10 mg daily"
+  ],
+  [
+   "ev:SYN-0006-EV090",
+   "supports",
+   "dec:NCT06159673:NCT06159673-I12:r1"
+  ],
+  [
+   "crit:NCT06159673-I12",
+   "requires",
+   "concept:medication:donepezil 10 mg"
+  ],
+  [
+   "concept:medication:donepezil 10 mg",
+   "observed_as",
+   "ev:SYN-0006-EV034"
+  ],
+  [
+   "ev:SYN-0006-EV034",
+   "derived_from",
+   "src:SYN-0006-D07:0-29"
+  ],
+  [
+   "ev:SYN-0006-EV034",
+   "supports",
+   "dec:NCT06159673:NCT06159673-I12:r1"
+  ],
+  [
+   "trial:NCT06159673",
+   "has_criterion",
+   "crit:NCT06159673-E01"
+  ],
+  [
+   "crit:NCT06159673-E01",
+   "decided_as",
+   "dec:NCT06159673:NCT06159673-E01:r1"
+  ],
+  [
+   "trial:NCT06159673",
+   "has_criterion",
+   "crit:NCT06159673-E02"
+  ],
+  [
+   "crit:NCT06159673-E02",
+   "decided_as",
+   "dec:NCT06159673:NCT06159673-E02:r1"
+  ],
+  [
+   "trial:NCT06159673",
+   "has_criterion",
+   "crit:NCT06159673-E03"
+  ],
+  [
+   "crit:NCT06159673-E03",
+   "decided_as",
+   "dec:NCT06159673:NCT06159673-E03:r1"
+  ],
+  [
+   "trial:NCT06159673",
+   "has_criterion",
+   "crit:NCT06159673-E04"
+  ],
+  [
+   "crit:NCT06159673-E04",
+   "decided_as",
+   "dec:NCT06159673:NCT06159673-E04:r1"
+  ],
+  [
+   "trial:NCT06159673",
+   "has_criterion",
+   "crit:NCT06159673-E05"
+  ],
+  [
+   "crit:NCT06159673-E05",
+   "decided_as",
+   "dec:NCT06159673:NCT06159673-E05:r1"
+  ],
+  [
+   "crit:NCT06159673-E05",
+   "requires",
+   "concept:symptom_finding:two left parietal cortical microbleeds"
+  ],
+  [
+   "concept:symptom_finding:two left parietal cortical microbleeds",
+   "observed_as",
+   "ev:SYN-0006-EV153"
+  ],
+  [
+   "ev:SYN-0006-EV153",
+   "derived_from",
+   "src:SYN-0006-D08:2977-3106"
+  ],
+  [
+   "ev:SYN-0006-EV153",
+   "insufficient_for",
+   "dec:NCT06159673:NCT06159673-E05:r1"
+  ],
+  [
+   "crit:NCT06159673-E05",
+   "requires",
+   "concept:symptom_finding:seizures"
+  ],
+  [
+   "concept:symptom_finding:seizures",
+   "observed_as",
+   "ev:SYN-0006-EV116"
+  ],
+  [
+   "ev:SYN-0006-EV116",
+   "derived_from",
+   "src:SYN-0006-D08:1980-2177"
+  ],
+  [
+   "ev:SYN-0006-EV116",
+   "insufficient_for",
+   "dec:NCT06159673:NCT06159673-E05:r1"
+  ],
+  [
+   "crit:NCT06159673-E05",
+   "requires",
+   "concept:symptom_finding:syncope"
+  ],
+  [
+   "concept:symptom_finding:syncope",
+   "observed_as",
+   "ev:SYN-0006-EV061"
+  ],
+  [
+   "ev:SYN-0006-EV061",
+   "derived_from",
+   "src:SYN-0006-D08:739-779"
+  ],
+  [
+   "ev:SYN-0006-EV061",
+   "insufficient_for",
+   "dec:NCT06159673:NCT06159673-E05:r1"
+  ],
+  [
+   "crit:NCT06159673-E05",
+   "requires",
+   "concept:diagnosis:neurologic history"
+  ],
+  [
+   "ev:SYN-0006-EV080",
+   "insufficient_for",
+   "dec:NCT06159673:NCT06159673-E05:r1"
+  ],
+  [
+   "trial:NCT06159673",
+   "has_criterion",
+   "crit:NCT06159673-E06"
+  ],
+  [
+   "crit:NCT06159673-E06",
+   "decided_as",
+   "dec:NCT06159673:NCT06159673-E06:r1"
+  ],
+  [
+   "crit:NCT06159673-E06",
+   "requires",
+   "concept:diagnosis:cardiac history"
+  ],
+  [
+   "concept:diagnosis:cardiac history",
+   "observed_as",
+   "ev:SYN-0006-EV075"
+  ],
+  [
+   "ev:SYN-0006-EV075",
+   "derived_from",
+   "src:SYN-0006-D08:1045-1123"
+  ],
+  [
+   "ev:SYN-0006-EV075",
+   "supports",
+   "dec:NCT06159673:NCT06159673-E06:r1"
+  ],
+  [
+   "crit:NCT06159673-E06",
+   "requires",
+   "concept:symptom_finding:regular rate and rhythm"
+  ],
+  [
+   "concept:symptom_finding:regular rate and rhythm",
+   "observed_as",
+   "ev:SYN-0006-EV130"
+  ],
+  [
+   "ev:SYN-0006-EV130",
+   "derived_from",
+   "src:SYN-0006-D08:2279-2318"
+  ],
+  [
+   "ev:SYN-0006-EV130",
+   "supports",
+   "dec:NCT06159673:NCT06159673-E06:r1"
+  ],
+  [
+   "trial:NCT06159673",
+   "has_criterion",
+   "crit:NCT06159673-E07"
+  ],
+  [
+   "crit:NCT06159673-E07",
+   "decided_as",
+   "dec:NCT06159673:NCT06159673-E07:r1"
+  ],
+  [
+   "trial:NCT06159673",
+   "has_criterion",
+   "crit:NCT06159673-E08"
+  ],
+  [
+   "crit:NCT06159673-E08",
+   "decided_as",
+   "dec:NCT06159673:NCT06159673-E08:r1"
+  ],
+  [
+   "trial:NCT06159673",
+   "has_criterion",
+   "crit:NCT06159673-E09"
+  ],
+  [
+   "crit:NCT06159673-E09",
+   "decided_as",
+   "dec:NCT06159673:NCT06159673-E09:r1"
+  ],
+  [
+   "trial:NCT06159673",
+   "labelled",
+   "label:NCT06159673"
+  ]
+ ]
+}

@@ -1,0 +1,205 @@
+{
+ "patient_id": "SYN-0004",
+ "as_of": "2026-10-01",
+ "audience": "patient",
+ "graph_file": "SYN-0004.json",
+ "ranking": [
+  "NCT06600412"
+ ],
+ "sentences": [
+  {
+   "text": "이 안내는 치료 추천이 아니라, 연구(임상시험) 참여를 검토하실 때 참고하실 정보입니다.",
+   "refs": [
+    "rule:research_not_treatment"
+   ],
+   "kind": "rule"
+  },
+  {
+   "text": "1번 시험 — 아직 확인이 필요한 조건이 있습니다.",
+   "refs": [
+    "label:NCT06600412",
+    "trial:NCT06600412"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "이 시험은 당뇨병성 콩팥병(DKD)을 연구 대상으로 합니다.",
+   "refs": [
+    "gloss:diabetic_kidney_disease",
+    "trial:NCT06600412"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "2상 연구로, 효과가 있을 가능성과 안전성을 비교적 적은 수의 환자에게서 살펴보는 단계입니다.",
+   "refs": [
+    "rule:phase_PHASE2",
+    "trial:NCT06600412"
+   ],
+   "kind": "rule"
+  },
+  {
+   "text": "이 시험은 참여자가 어느 치료를 받을지 무작위로 정해집니다.",
+   "refs": [
+    "rule:randomized",
+    "trial:NCT06600412"
+   ],
+   "kind": "rule"
+  },
+  {
+   "text": "참여자 일부는 시험약 대신 위약(효과가 없는 가짜 약)을 받을 수 있습니다.",
+   "refs": [
+    "rule:placebo",
+    "trial:NCT06600412"
+   ],
+   "kind": "rule"
+  },
+  {
+   "text": "참여자나 의료진이 누가 어떤 치료를 받는지 모르게 진행됩니다.",
+   "refs": [
+    "rule:blinded",
+    "trial:NCT06600412"
+   ],
+   "kind": "rule"
+  },
+  {
+   "text": "시험군: 시험약 R3R01, 위약군: 위약.",
+   "refs": [
+    "gloss:placebo",
+    "trial:NCT06600412"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "약 60명이 참여할 예정인 연구입니다.",
+   "refs": [
+    "trial:NCT06600412"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "직접 답해 주실 수 있는 질문: 1가지.",
+   "refs": [
+    "crit:NCT06600412-I10",
+    "dec:NCT06600412:NCT06600412-I10:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "진료 기록에서 찾아볼 것: 2가지.",
+   "refs": [
+    "crit:NCT06600412-I04",
+    "crit:NCT06600412-I05",
+    "dec:NCT06600412:NCT06600412-I04:r1",
+    "dec:NCT06600412:NCT06600412-I05:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "검사 결과가 필요한 것: 1가지.",
+   "refs": [
+    "crit:NCT06600412-I08",
+    "dec:NCT06600412:NCT06600412-I08:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "담당 의사가 판단할 것: 1가지.",
+   "refs": [
+    "crit:NCT06600412-I02",
+    "dec:NCT06600412:NCT06600412-I02:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "참여 전에 의료진이 확인할 항목이 11개 남아 있습니다.",
+   "refs": [
+    "dec:NCT06600412:NCT06600412-E01:r1",
+    "dec:NCT06600412:NCT06600412-E02:r1",
+    "dec:NCT06600412:NCT06600412-E03:r1",
+    "dec:NCT06600412:NCT06600412-E04:r1",
+    "dec:NCT06600412:NCT06600412-E06:r1",
+    "dec:NCT06600412:NCT06600412-E07:r1",
+    "dec:NCT06600412:NCT06600412-E08:r1",
+    "dec:NCT06600412:NCT06600412-E09:r1",
+    "dec:NCT06600412:NCT06600412-E10:r1",
+    "dec:NCT06600412:NCT06600412-E11:r1",
+    "dec:NCT06600412:NCT06600412-E12:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "현재 국내에는 이 시험의 참여자를 모집하는 기관이 없습니다.",
+   "refs": [
+    "rule:no_kr_site",
+    "trial:NCT06600412"
+   ],
+   "kind": "rule"
+  },
+  {
+   "text": "모집 국가: 덴마크.",
+   "refs": [
+    "trial:NCT06600412"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "시험약이 효과가 있을지는 아직 모르기 때문에 연구를 하는 것입니다.",
+   "refs": [
+    "rule:no_benefit_promise"
+   ],
+   "kind": "rule"
+  },
+  {
+   "text": "지금 받으실 수 있는 다른 치료 방법이 무엇인지도 의료진에게 물어보실 수 있습니다.",
+   "refs": [
+    "rule:ask_alternatives"
+   ],
+   "kind": "rule"
+  },
+  {
+   "text": "참여하면 방문 횟수, 검사, 기간처럼 해야 하는 일이 무엇인지도 미리 물어보실 수 있습니다.",
+   "refs": [
+    "rule:ask_burden"
+   ],
+   "kind": "rule"
+  },
+  {
+   "text": "최종 참여 가능 여부는 연구 담당 의료진이 직접 확인합니다.",
+   "refs": [
+    "rule:ask_clinician"
+   ],
+   "kind": "rule"
+  },
+  {
+   "text": "참여는 자유이며, 참여하지 않아도 지금 받고 계신 치료는 그대로 받으실 수 있습니다.",
+   "refs": [
+    "rule:voluntary"
+   ],
+   "kind": "rule"
+  },
+  {
+   "text": "참여하더라도 언제든 그만두실 수 있습니다.",
+   "refs": [
+    "rule:withdraw"
+   ],
+   "kind": "rule"
+  }
+ ],
+ "glossary": {
+  "mode": "glossary",
+  "sha256": "bb6135ef988f322486520df16e40f1b58d96404e99d31873c2dea5b8e38d3fed",
+  "rows_used": 2,
+  "draft": 0
+ },
+ "evidence": {
+  "files": [
+   "evidence_dev_haiku_v14_12.jsonl",
+   "evidence_dev_variants_haiku_v14_12.jsonl"
+  ],
+  "sha256": "daba4f5f1e16ec2eefc47311f5c13f85e6b5f218c85424f08f9af3d9bab09124",
+  "id_series": "haiku",
+  "graph_ev_nodes_checked": 2240
+ },
+ "agent6": "a6-0.4.14"
+}

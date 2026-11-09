@@ -1,0 +1,731 @@
+[
+ {
+  "key": "age",
+  "name": "Age",
+  "type": "demographic",
+  "unit": "years"
+ },
+ {
+  "key": "sex",
+  "name": "Sex",
+  "type": "demographic",
+  "unit": null,
+  "aliases": [
+   "male",
+   "female"
+  ]
+ },
+ {
+  "key": "nationality",
+  "name": "Nationality",
+  "type": "demographic",
+  "unit": null,
+  "aliases": [
+   "nationality"
+  ]
+ },
+ {
+  "key": "birth_date",
+  "name": "Date of birth",
+  "type": "demographic",
+  "unit": null,
+  "aliases": [
+   "DOB",
+   "date of birth"
+  ]
+ },
+ {
+  "key": "body_weight",
+  "name": "Body weight",
+  "type": "vital",
+  "unit": "kg",
+  "aliases": [
+   "Wt",
+   "weight"
+  ],
+  "alt_units": {
+   "lb": 0.453592
+  }
+ },
+ {
+  "key": "body_height",
+  "name": "Body height",
+  "type": "vital",
+  "unit": "cm",
+  "aliases": [
+   "Ht",
+   "height"
+  ],
+  "alt_units": {
+   "m": 100
+  }
+ },
+ {
+  "key": "bmi",
+  "name": "Body mass index",
+  "type": "vital",
+  "unit": "kg/m2",
+  "aliases": [
+   "BMI",
+   "body mass index"
+  ]
+ },
+ {
+  "key": "blood_pressure",
+  "name": "Blood pressure (systolic/diastolic)",
+  "type": "vital",
+  "unit": "mmHg",
+  "aliases": [
+   "BP",
+   "blood pressure"
+  ]
+ },
+ {
+  "key": "heart_rate",
+  "name": "Heart rate",
+  "type": "vital",
+  "unit": "/min",
+  "aliases": [
+   "HR",
+   "heart rate",
+   "pulse"
+  ],
+  "alt_units": {
+   "bpm": 1,
+   "beats/min": 1
+  }
+ },
+ {
+  "key": "body_temperature",
+  "name": "Body temperature",
+  "type": "vital",
+  "unit": "C",
+  "aliases": [
+   "T",
+   "Temp",
+   "temperature"
+  ]
+ },
+ {
+  "key": "respiratory_rate",
+  "name": "Respiratory rate",
+  "type": "vital",
+  "unit": "/min",
+  "aliases": [
+   "RR",
+   "respiratory rate"
+  ]
+ },
+ {
+  "key": "spo2",
+  "name": "Oxygen saturation",
+  "type": "vital",
+  "unit": "%",
+  "aliases": [
+   "SpO2",
+   "O2 sat",
+   "oxygen saturation"
+  ]
+ },
+ {
+  "key": "hemoglobin",
+  "name": "Hemoglobin",
+  "type": "lab",
+  "unit": "g/dL",
+  "aliases": [
+   "Hemoglobin",
+   "Haemoglobin",
+   "Hb",
+   "Hgb"
+  ],
+  "alt_units": {
+   "g/L": 0.1
+  }
+ },
+ {
+  "key": "platelet_count",
+  "name": "Platelet count",
+  "type": "lab",
+  "unit": "10^9/L",
+  "aliases": [
+   "Platelets",
+   "Platelet count",
+   "PLT",
+   "plt",
+   "Plt"
+  ],
+  "alt_units": {
+   "x10^9/L": 1,
+   "x10^3/uL": 1,
+   "10^3/uL": 1,
+   "/uL": 0.001,
+   "/mm3": 0.001,
+   "/µL": 0.001,
+   "/cu.mm": 0.001,
+   "/cumm": 0.001,
+   "/cmm": 0.001,
+   "cells/uL": 0.001,
+   "cells/mm3": 0.001,
+   "/ml": 0.001
+  }
+ },
+ {
+  "key": "wbc",
+  "name": "White blood cell count",
+  "type": "lab",
+  "unit": "10^9/L",
+  "aliases": [
+   "WBC",
+   "white blood cell",
+   "white cell count"
+  ],
+  "alt_units": {
+   "x10^9/L": 1,
+   "x10^3/uL": 1,
+   "10^3/uL": 1,
+   "/mm3": 0.001,
+   "/uL": 0.001,
+   "/µL": 0.001,
+   "/cu.mm": 0.001,
+   "/cumm": 0.001,
+   "/cmm": 0.001,
+   "cells/uL": 0.001,
+   "cells/mm3": 0.001,
+   "/ml": 0.001
+  }
+ },
+ {
+  "key": "anc",
+  "name": "Absolute neutrophil count",
+  "type": "lab",
+  "unit": "10^9/L",
+  "aliases": [
+   "ANC",
+   "Neutrophils",
+   "absolute neutrophil count"
+  ],
+  "alt_units": {
+   "x10^9/L": 1,
+   "x10^3/uL": 1,
+   "/uL": 0.001,
+   "/mm3": 0.001,
+   "/µL": 0.001,
+   "/cu.mm": 0.001,
+   "/cumm": 0.001,
+   "/cmm": 0.001,
+   "cells/uL": 0.001,
+   "cells/mm3": 0.001,
+   "/ml": 0.001
+  }
+ },
+ {
+  "key": "creatinine",
+  "name": "Serum creatinine",
+  "type": "lab",
+  "unit": "mg/dL",
+  "aliases": [
+   "Creatinine",
+   "Cr",
+   "SCr"
+  ],
+  "alt_units": {
+   "umol/L": 0.0113
+  }
+ },
+ {
+  "key": "egfr",
+  "name": "Estimated GFR",
+  "type": "lab",
+  "unit": "mL/min/1.73m2",
+  "aliases": [
+   "eGFR",
+   "GFR"
+  ],
+  "alt_units": {
+   "mL/min/1.73": 1,
+   "mL/min/1.73 m2": 1,
+   "mL/min": 1
+  }
+ },
+ {
+  "key": "creatinine_clearance",
+  "name": "Creatinine clearance",
+  "type": "lab",
+  "unit": "mL/min",
+  "aliases": [
+   "CrCl",
+   "creatinine clearance"
+  ]
+ },
+ {
+  "key": "bilirubin_total",
+  "name": "Total bilirubin",
+  "type": "lab",
+  "unit": "mg/dL",
+  "aliases": [
+   "Total bilirubin",
+   "bilirubin",
+   "T bili",
+   "TBil"
+  ],
+  "alt_units": {
+   "umol/L": 0.0585
+  }
+ },
+ {
+  "key": "ast",
+  "name": "Aspartate aminotransferase",
+  "type": "lab",
+  "unit": "U/L",
+  "aliases": [
+   "AST",
+   "SGOT"
+  ]
+ },
+ {
+  "key": "alt",
+  "name": "Alanine aminotransferase",
+  "type": "lab",
+  "unit": "U/L",
+  "aliases": [
+   "ALT",
+   "SGPT"
+  ]
+ },
+ {
+  "key": "albumin",
+  "name": "Serum albumin",
+  "type": "lab",
+  "unit": "g/dL",
+  "aliases": [
+   "Albumin",
+   "serum albumin",
+   "Alb"
+  ],
+  "alt_units": {
+   "g/L": 0.1
+  }
+ },
+ {
+  "key": "inr",
+  "name": "INR",
+  "type": "lab",
+  "unit": "ratio",
+  "aliases": [
+   "INR"
+  ]
+ },
+ {
+  "key": "hba1c",
+  "name": "Hemoglobin A1c",
+  "type": "lab",
+  "unit": "%",
+  "aliases": [
+   "HbA1c",
+   "A1c",
+   "hemoglobin A1c"
+  ]
+ },
+ {
+  "key": "glucose",
+  "name": "Glucose",
+  "type": "lab",
+  "unit": "mg/dL",
+  "aliases": [
+   "Glucose",
+   "fasting glucose",
+   "blood glucose",
+   "FPG"
+  ],
+  "alt_units": {
+   "mmol/L": 18.016
+  }
+ },
+ {
+  "key": "potassium",
+  "name": "Potassium",
+  "type": "lab",
+  "unit": "mmol/L",
+  "aliases": [
+   "Potassium",
+   "K"
+  ],
+  "alt_units": {
+   "mEq/L": 1
+  }
+ },
+ {
+  "key": "sodium",
+  "name": "Sodium",
+  "type": "lab",
+  "unit": "mmol/L",
+  "aliases": [
+   "Sodium",
+   "Na"
+  ],
+  "alt_units": {
+   "mEq/L": 1
+  }
+ },
+ {
+  "key": "tsh",
+  "name": "Thyroid stimulating hormone",
+  "type": "lab",
+  "unit": "mIU/L",
+  "aliases": [
+   "TSH"
+  ],
+  "alt_units": {
+   "uIU/mL": 1
+  }
+ },
+ {
+  "key": "free_t4",
+  "name": "Free thyroxine",
+  "type": "lab",
+  "unit": "ng/dL",
+  "aliases": [
+   "Free T4",
+   "FT4",
+   "fT4"
+  ],
+  "alt_units": {
+   "pmol/L": 0.0777
+  }
+ },
+ {
+  "key": "total_t3",
+  "name": "Total triiodothyronine",
+  "type": "lab",
+  "unit": "ng/dL",
+  "aliases": [
+   "Total T3",
+   "T3"
+  ]
+ },
+ {
+  "key": "triglycerides",
+  "name": "Triglycerides",
+  "type": "lab",
+  "unit": "mg/dL",
+  "aliases": [
+   "Triglycerides",
+   "TG"
+  ],
+  "alt_units": {
+   "mmol/L": 88.57
+  }
+ },
+ {
+  "key": "ldl_cholesterol",
+  "name": "LDL cholesterol",
+  "type": "lab",
+  "unit": "mg/dL",
+  "aliases": [
+   "LDL cholesterol",
+   "LDL",
+   "LDL-C"
+  ],
+  "alt_units": {
+   "mmol/L": 38.67
+  }
+ },
+ {
+  "key": "total_cholesterol",
+  "name": "Total cholesterol",
+  "type": "lab",
+  "unit": "mg/dL",
+  "aliases": [
+   "Total cholesterol",
+   "cholesterol"
+  ],
+  "alt_units": {
+   "mmol/L": 38.67
+  }
+ },
+ {
+  "key": "urine_protein_creatinine_ratio",
+  "name": "Urine protein/creatinine ratio",
+  "type": "lab",
+  "unit": "mg/mg",
+  "aliases": [
+   "UPCR",
+   "urine protein/creatinine ratio",
+   "protein/creatinine ratio"
+  ],
+  "alt_units": {
+   "g/g": 1,
+   "mg/g": 0.001
+  }
+ },
+ {
+  "key": "urine_albumin_creatinine_ratio",
+  "name": "Urine albumin/creatinine ratio",
+  "type": "lab",
+  "unit": "mg/g",
+  "aliases": [
+   "UACR",
+   "urine albumin/creatinine ratio",
+   "urine albumin/creatinine",
+   "albumin/creatinine"
+  ]
+ },
+ {
+  "key": "crp",
+  "name": "C-reactive protein",
+  "type": "lab",
+  "unit": "mg/L",
+  "aliases": [
+   "CRP",
+   "C-reactive protein"
+  ],
+  "alt_units": {
+   "mg/dL": 10
+  }
+ },
+ {
+  "key": "lipase",
+  "name": "Lipase",
+  "type": "lab",
+  "unit": "U/L",
+  "aliases": [
+   "Lipase"
+  ]
+ },
+ {
+  "key": "hcg",
+  "name": "Pregnancy test (hCG)",
+  "type": "lab",
+  "unit": null,
+  "aliases": [
+   "hCG",
+   "beta-hCG",
+   "pregnancy test"
+  ]
+ },
+ {
+  "key": "hepatitis_b",
+  "name": "Hepatitis B markers (HBsAg, anti-HBc, HBV DNA)",
+  "type": "lab",
+  "unit": null,
+  "aliases": [
+   "HBsAg",
+   "anti-HBc",
+   "HBV DNA",
+   "hepatitis B"
+  ]
+ },
+ {
+  "key": "hepatitis_c",
+  "name": "Hepatitis C markers (anti-HCV, HCV RNA)",
+  "type": "lab",
+  "unit": null,
+  "aliases": [
+   "anti-HCV",
+   "HCV antibody",
+   "HCV RNA",
+   "hepatitis C"
+  ]
+ },
+ {
+  "key": "hiv",
+  "name": "HIV status",
+  "type": "lab",
+  "unit": null,
+  "aliases": [
+   "HIV"
+  ]
+ },
+ {
+  "key": "lvef",
+  "name": "Left ventricular ejection fraction",
+  "type": "measurement",
+  "unit": "%",
+  "aliases": [
+   "LVEF",
+   "ejection fraction",
+   "EF"
+  ]
+ },
+ {
+  "key": "qtc",
+  "name": "Corrected QT interval",
+  "type": "measurement",
+  "unit": "ms",
+  "aliases": [
+   "QTc",
+   "QTcF"
+  ]
+ },
+ {
+  "key": "pulmonary_function",
+  "name": "Pulmonary function (FVC, FEV1, DLCO)",
+  "type": "measurement",
+  "unit": null,
+  "aliases": [
+   "FVC",
+   "FEV1",
+   "DLCO"
+  ]
+ },
+ {
+  "key": "ecog",
+  "name": "ECOG performance status",
+  "type": "measurement",
+  "unit": null,
+  "aliases": [
+   "ECOG",
+   "performance status",
+   "PS"
+  ]
+ },
+ {
+  "key": "karnofsky",
+  "name": "Karnofsky performance status",
+  "type": "measurement",
+  "unit": "%",
+  "aliases": [
+   "Karnofsky",
+   "KPS"
+  ]
+ },
+ {
+  "key": "pregnancy",
+  "name": "Pregnancy / lactation status",
+  "type": "condition",
+  "unit": null,
+  "aliases": [
+   "pregnant",
+   "pregnancy",
+   "lactating",
+   "breastfeeding",
+   "postpartum"
+  ]
+ },
+ {
+  "key": "contraception",
+  "name": "Contraception use",
+  "type": "behavior",
+  "unit": null,
+  "aliases": [
+   "contraception",
+   "contraceptive",
+   "condoms",
+   "IUD"
+  ]
+ },
+ {
+  "key": "smoking",
+  "name": "Tobacco use",
+  "type": "behavior",
+  "unit": null,
+  "aliases": [
+   "smoker",
+   "smoking",
+   "tobacco",
+   "pack-years"
+  ]
+ },
+ {
+  "key": "alcohol",
+  "name": "Alcohol use",
+  "type": "behavior",
+  "unit": null,
+  "aliases": [
+   "alcohol",
+   "drinks"
+  ]
+ },
+ {
+  "key": "substance_use",
+  "name": "Illicit substance use",
+  "type": "behavior",
+  "unit": null,
+  "aliases": [
+   "substance use",
+   "illicit",
+   "drug use"
+  ]
+ },
+ {
+  "key": "allergy",
+  "name": "Drug allergy",
+  "type": "condition",
+  "unit": null,
+  "aliases": [
+   "NKDA",
+   "allergy",
+   "allergies",
+   "allergic"
+  ]
+ },
+ {
+  "key": "diagnosis",
+  "name": "Diagnosis / medical history (value = condition as written)",
+  "type": "condition",
+  "unit": null
+ },
+ {
+  "key": "cancer_stage",
+  "name": "Cancer stage / TNM",
+  "type": "condition",
+  "unit": null,
+  "aliases": [
+   "stage",
+   "TNM"
+  ]
+ },
+ {
+  "key": "tumor_marker",
+  "name": "Tumor histology and biomarkers (ER, PR, HER2, PD-L1, EGFR, ALK, KRAS ...)",
+  "type": "condition",
+  "unit": null
+ },
+ {
+  "key": "metastasis",
+  "name": "Metastatic disease",
+  "type": "condition",
+  "unit": null,
+  "aliases": [
+   "metastasis",
+   "metastases",
+   "metastatic"
+  ]
+ },
+ {
+  "key": "medication",
+  "name": "Medication received (value = drug as written)",
+  "type": "drug",
+  "unit": null
+ },
+ {
+  "key": "procedure",
+  "name": "Procedure / surgery / radiotherapy (value = as written)",
+  "type": "procedure",
+  "unit": null
+ },
+ {
+  "key": "treatment_plan",
+  "name": "Planned or discussed treatment (not received)",
+  "type": "other",
+  "unit": null
+ },
+ {
+  "key": "social_history",
+  "name": "Social history: occupation, living situation, guardian or caregiver, activities (value = as written)",
+  "type": "other",
+  "unit": null
+ },
+ {
+  "key": "symptom_finding",
+  "name": "Symptom, sign or exam / imaging finding (value = as written)",
+  "type": "condition",
+  "unit": null
+ },
+ {
+  "key": "lab_other",
+  "name": "Other laboratory result (value = as written)",
+  "type": "lab",
+  "unit": null
+ }
+]

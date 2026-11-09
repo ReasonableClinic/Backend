@@ -1,0 +1,1733 @@
+{
+ "patient_id": "SYN-0005",
+ "as_of": "2026-10-01",
+ "version": 1,
+ "nodes": [
+  {
+   "id": "trial:NCT06756191",
+   "kind": "trial",
+   "title": "Antifungal Drugs in Pulmonary Mucormycosis"
+  },
+  {
+   "id": "crit:NCT06756191-I01",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Patients aged 18 years or older diagnosed with pulmonary mucormycosis (PM).",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06756191:NCT06756191-I01:r1",
+   "kind": "decision",
+   "trial_id": "NCT06756191",
+   "criterion_id": "NCT06756191-I01",
+   "status": "FAIL",
+   "reason": "VIOLATED",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Age 45 met, but diagnosis is rhino-orbital mucormycosis; no pulmonary involvement documented (lungs clear, no respiratory symptoms). Pulmonary mucormycosis not present.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0005-EV195",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "rhino-orbital mucormycosis (Rhizopus arrhizus), left",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-10-01",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:diagnosis:rhino-orbital mucormycosis (rhizopus arrhizus), left",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "rhino-orbital mucormycosis (Rhizopus arrhizus), left"
+  },
+  {
+   "id": "src:SYN-0005-D08:4465-4623",
+   "kind": "source",
+   "doc_id": "SYN-0005-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    4465,
+    4623
+   ],
+   "text": "Rhino-orbital mucormycosis (Rhizopus arrhizus), left, clinically improving after 2 debriefments and 13 days of liposomal amphotericin B. Continue 5 mg/kg q24h"
+  },
+  {
+   "id": "ev:SYN-0005-EV129",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "chest pain",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-10-01",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:symptom_finding:chest pain",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "chest pain"
+  },
+  {
+   "id": "src:SYN-0005-D08:2745-2798",
+   "kind": "source",
+   "doc_id": "SYN-0005-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    2745,
+    2798
+   ],
+   "text": "CV/Resp: no chest pain, dyspnea, cough or hemoptysis."
+  },
+  {
+   "id": "crit:NCT06756191-I02",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Individuals with Probable or proved PM, as indicated by clinical and radiological findings.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06756191:NCT06756191-I02:r1",
+   "kind": "decision",
+   "trial_id": "NCT06756191",
+   "criterion_id": "NCT06756191-I02",
+   "status": "FAIL",
+   "reason": "VIOLATED",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Proven mucormycosis is rhino-orbital, not pulmonary; no pulmonary imaging findings or diagnosis recorded.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0005-EV076",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "rhino-orbital mucormycosis",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-10-01",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:diagnosis:rhino-orbital mucormycosis",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "rhino-orbital mucormycosis"
+  },
+  {
+   "id": "src:SYN-0005-D08:1225-1263",
+   "kind": "source",
+   "doc_id": "SYN-0005-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    1225,
+    1263
+   ],
+   "text": "Rhino-orbital mucormycosis, dx 2026-09"
+  },
+  {
+   "id": "crit:NCT06756191-E01",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Patients with a history of pulmonary mucormycosis (PM) who have previously been treated with amphotericin B for a duration exceeding 5 days.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06756191:NCT06756191-E01:r1",
+   "kind": "decision",
+   "trial_id": "NCT06756191",
+   "criterion_id": "NCT06756191-E01",
+   "status": "UNKNOWN",
+   "reason": "UNSUPPORTED",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Amphotericin >5 days (13 days) but for rhino-orbital disease, no history of pulmonary mucormycosis; criterion's conjunction is not clearly met.",
+   "missing_fact": "Whether the criterion applies given the patient's rhino-orbital (not pulmonary) mucormycosis, which has had 13 days of liposomal amphotericin B",
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0005-EV060",
+   "kind": "evidence",
+   "concept": "medication",
+   "term": "liposomal amphotericin B 5 mg/kg q24h",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-10-01",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:medication:liposomal amphotericin b 5 mg/kg q24h",
+   "kind": "concept",
+   "concept": "medication",
+   "term": "liposomal amphotericin B 5 mg/kg q24h"
+  },
+  {
+   "id": "src:SYN-0005-D08:757-812",
+   "kind": "source",
+   "doc_id": "SYN-0005-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    757,
+    812
+   ],
+   "text": "Liposomal amphotericin B 5 mg/kg q24h since 2026-09-19."
+  },
+  {
+   "id": "crit:NCT06756191-E02",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Patients who have documented allergies to azoles or amphotericin B regimens",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06756191:NCT06756191-E02:r1",
+   "kind": "decision",
+   "trial_id": "NCT06756191",
+   "criterion_id": "NCT06756191-E02",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "NKDA states no known drug allergies; the patient is tolerating amphotericin, but azole exposure is not recorded. Allergy to azoles is not specifically addressed.",
+   "missing_fact": "Documented allergy to azoles or amphotericin B",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06756191-E03",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Patients with serum aspartate aminotransferase (AST), alanine aminotransferase (ALT), alkaline phosphatase, or bilirubin levels exceeding five times the upper limit of normal (ULN).",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06756191:NCT06756191-E03:r1",
+   "kind": "decision",
+   "trial_id": "NCT06756191",
+   "criterion_id": "NCT06756191-E03",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Today AST 29 (10-40), ALT 38 (7-56), ALP 96 (44-147), bilirubin 0.7 (0.2-1.2): all within range, far below 5x ULN.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0005-EV237",
+   "kind": "evidence",
+   "concept": "ast",
+   "term": null,
+   "value": 29,
+   "unit": "U/L",
+   "observed_date": "2026-10-01",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:ast",
+   "kind": "concept",
+   "concept": "ast",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0005-D09:986-1004",
+   "kind": "source",
+   "doc_id": "SYN-0005-D09",
+   "doc_type": "lab_result",
+   "span": [
+    986,
+    1004
+   ],
+   "text": "AST 29 U/L (10-40)"
+  },
+  {
+   "id": "ev:SYN-0005-EV236",
+   "kind": "evidence",
+   "concept": "alt",
+   "term": null,
+   "value": 38,
+   "unit": "U/L",
+   "observed_date": "2026-10-01",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:alt",
+   "kind": "concept",
+   "concept": "alt",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0005-D09:968-985",
+   "kind": "source",
+   "doc_id": "SYN-0005-D09",
+   "doc_type": "lab_result",
+   "span": [
+    968,
+    985
+   ],
+   "text": "ALT 38 U/L (7-56)"
+  },
+  {
+   "id": "ev:SYN-0005-EV307",
+   "kind": "evidence",
+   "concept": "alp",
+   "term": null,
+   "value": 96,
+   "unit": "U/L",
+   "observed_date": "2026-10-01",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:alp",
+   "kind": "concept",
+   "concept": "alp",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0005-D09:1005-1041",
+   "kind": "source",
+   "doc_id": "SYN-0005-D09",
+   "doc_type": "lab_result",
+   "span": [
+    1005,
+    1041
+   ],
+   "text": "Alkaline phosphatase 96 U/L (44-147)"
+  },
+  {
+   "id": "ev:SYN-0005-EV235",
+   "kind": "evidence",
+   "concept": "bilirubin_total",
+   "term": null,
+   "value": 0.7,
+   "unit": "mg/dL",
+   "observed_date": "2026-10-01",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:bilirubin_total",
+   "kind": "concept",
+   "concept": "bilirubin_total",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0005-D09:932-967",
+   "kind": "source",
+   "doc_id": "SYN-0005-D09",
+   "doc_type": "lab_result",
+   "span": [
+    932,
+    967
+   ],
+   "text": "Total bilirubin 0.7 mg/dL (0.2-1.2)"
+  },
+  {
+   "id": "crit:NCT06756191-E04",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Patients with irreversible heart or liver failure, or those experiencing massive, fatal hemoptysis.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06756191:NCT06756191-E04:r1",
+   "kind": "decision",
+   "trial_id": "NCT06756191",
+   "criterion_id": "NCT06756191-E04",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation"
+   ],
+   "note": "No cardiac or hepatic history; no hemoptysis documented. Chronic heart/liver failure excluded by blanket negation.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0005-EV078",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "cardiac history",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-10-01",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:cardiac history",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "cardiac history"
+  },
+  {
+   "id": "src:SYN-0005-D08:1264-1368",
+   "kind": "source",
+   "doc_id": "SYN-0005-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    1264,
+    1368
+   ],
+   "text": "No other cardiac, pulmonary, hepatic, renal (baseline creatinine 0.9), autoimmune or neurologic history."
+  },
+  {
+   "id": "ev:SYN-0005-EV080",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "hepatic history",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-10-01",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:hepatic history",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "hepatic history"
+  },
+  {
+   "id": "ev:SYN-0005-EV285",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "hemoptysis",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-10-01",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:symptom_finding:hemoptysis",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "hemoptysis"
+  },
+  {
+   "id": "crit:NCT06756191-E05",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Patients who have experienced a myocardial infarction or cerebral infarction.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06756191:NCT06756191-E05:r1",
+   "kind": "decision",
+   "trial_id": "NCT06756191",
+   "criterion_id": "NCT06756191-E05",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Blanket negation covers chronic cardiac and neurologic history, but does not cover acute events like MI or stroke; no explicit denial of either.",
+   "missing_fact": "History of myocardial infarction or cerebral infarction",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06756191-E06",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Patients currently receiving extracorporeal membrane oxygenation (ECMO) treatment.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06756191:NCT06756191-E06:r1",
+   "kind": "decision",
+   "trial_id": "NCT06756191",
+   "criterion_id": "NCT06756191-E06",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No ECMO mentioned; reconciled medication list does not cover procedures. Normal SpO2 on room air does not prove absence of ECMO.",
+   "missing_fact": "Whether the patient is currently on ECMO",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06756191-E07",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Pregnant or breastfeeding individuals. 8.Patients with individual reasons that may prevent them from completing the treatment protocol.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06756191:NCT06756191-E07:r1",
+   "kind": "decision",
+   "trial_id": "NCT06756191",
+   "criterion_id": "NCT06756191-E07",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "impossible",
+    "sex_rule"
+   ],
+   "note": "applies only to women; patient is male",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0005-EV001",
+   "kind": "evidence",
+   "concept": "sex",
+   "term": null,
+   "value": "male",
+   "unit": null,
+   "observed_date": "2026-09-18",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:sex",
+   "kind": "concept",
+   "concept": "sex",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0005-D01:0-5",
+   "kind": "source",
+   "doc_id": "SYN-0005-D01",
+   "doc_type": "registration",
+   "span": [
+    0,
+    5
+   ],
+   "text": "Male."
+  },
+  {
+   "id": "label:NCT06756191",
+   "kind": "trial_decision",
+   "label": "ineligible",
+   "why": [
+    "FAIL NCT06756191-I01",
+    "FAIL NCT06756191-I02"
+   ],
+   "by": "agent3"
+  },
+  {
+   "id": "trial:NCT07654647",
+   "kind": "trial",
+   "title": "Clinical Evaluation of Patient-Specific 3D-Printed Titanium Implants for Facial Reconstruction."
+  },
+  {
+   "id": "crit:NCT07654647-I01",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Age 18 years or older.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07654647:NCT07654647-I01:r1",
+   "kind": "decision",
+   "trial_id": "NCT07654647",
+   "criterion_id": "NCT07654647-I01",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "age_rule"
+   ],
+   "note": "age 45.50 y vs [18.0, None]",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0005-EV002",
+   "kind": "evidence",
+   "concept": "birth_date",
+   "term": null,
+   "value": "1981-04-02",
+   "unit": null,
+   "observed_date": "2026-09-18",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:birth_date",
+   "kind": "concept",
+   "concept": "birth_date",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0005-D01:6-21",
+   "kind": "source",
+   "doc_id": "SYN-0005-D01",
+   "doc_type": "registration",
+   "span": [
+    6,
+    21
+   ],
+   "text": "DOB 1981-04-02."
+  },
+  {
+   "id": "calc:NCT07654647:NCT07654647-I01",
+   "kind": "calculation",
+   "name": "age_at_as_of",
+   "value": 45.498,
+   "lo": 18.0,
+   "hi": null
+  },
+  {
+   "id": "crit:NCT07654647-I02",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Presence of facial bone defects resulting from cystic or tumoral osteolytic lesions.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07654647:NCT07654647-I02:r1",
+   "kind": "decision",
+   "trial_id": "NCT07654647",
+   "criterion_id": "NCT07654647-I02",
+   "status": "UNKNOWN",
+   "reason": "UNSUPPORTED",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Infectious bony erosion of medial orbital wall exists, but not cystic or tumoral osteolytic defect; no defect documented.",
+   "missing_fact": "Whether the medial orbital wall erosion is a facial bone defect from an osteolytic lesion needing reconstruction",
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0005-EV274",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "erosion of medial orbital wall",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-10-01",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:symptom_finding:erosion of medial orbital wall",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "erosion of medial orbital wall"
+  },
+  {
+   "id": "src:SYN-0005-D08:452-594",
+   "kind": "source",
+   "doc_id": "SYN-0005-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    452,
+    594
+   ],
+   "text": "Imaging showed left maxillary and ethmoid opacification with erosion of the medial orbital wall, orbital cellulitis and extraconal involvement"
+  },
+  {
+   "id": "crit:NCT07654647-I03",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Acquired or congenital facial deformities associated with bony defects or facial asymmetry.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07654647:NCT07654647-I03:r1",
+   "kind": "decision",
+   "trial_id": "NCT07654647",
+   "criterion_id": "NCT07654647-I03",
+   "status": "UNKNOWN",
+   "reason": "UNSUPPORTED",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Orbital wall erosion and mild proptosis present, but no facial deformity or asymmetry diagnosis documented.",
+   "missing_fact": "Documented facial deformity or asymmetry with bony defect",
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0005-EV154",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "mild left proptosis",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-10-01",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:symptom_finding:mild left proptosis",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "mild left proptosis"
+  },
+  {
+   "id": "src:SYN-0005-D08:3217-3236",
+   "kind": "source",
+   "doc_id": "SYN-0005-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    3217,
+    3236
+   ],
+   "text": "Mild left proptosis"
+  },
+  {
+   "id": "crit:NCT07654647-I04",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Patients requiring patient-specific 3D-printed titanium implants for maxillofacial reconstruction.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07654647:NCT07654647-I04:r1",
+   "kind": "decision",
+   "trial_id": "NCT07654647",
+   "criterion_id": "NCT07654647-I04",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No reconstruction or implant plan in the record; only debridement and antifungal therapy planned.",
+   "missing_fact": "Whether a patient-specific 3D-printed titanium implant is planned or required",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07654647-I05",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Aesthetic indications requiring custom facial implant design, including microgenia (chin retrusion).",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07654647:NCT07654647-I05:r1",
+   "kind": "decision",
+   "trial_id": "NCT07654647",
+   "criterion_id": "NCT07654647-I05",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No aesthetic indication or microgenia mentioned anywhere in the record.",
+   "missing_fact": "Aesthetic indication for custom facial implant (e.g., microgenia)",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07654647-I06",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Ability to provide written informed consent.",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07654647:NCT07654647-I06:r1",
+   "kind": "decision",
+   "trial_id": "NCT07654647",
+   "criterion_id": "NCT07654647-I06",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "admin"
+   ],
+   "note": "consent/compliance item: not decidable from the record",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07654647-E01",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Active pathological lesions at the time of enrollment.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07654647:NCT07654647-E01:r1",
+   "kind": "decision",
+   "trial_id": "NCT07654647",
+   "criterion_id": "NCT07654647-E01",
+   "status": "FAIL",
+   "reason": "VIOLATED",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Active rhino-orbital mucormycosis currently under treatment, with crusting/granulation in left nasal cavity and orbital cellulitis.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0005-EV160",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "left nasal cavity crusting and granulation",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-10-01",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:symptom_finding:left nasal cavity crusting and granulation",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "left nasal cavity crusting and granulation"
+  },
+  {
+   "id": "src:SYN-0005-D08:3341-3462",
+   "kind": "source",
+   "doc_id": "SYN-0005-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    3341,
+    3462
+   ],
+   "text": "Nasal endoscopy (ENT today): debrided left cavity with crusting and granulation, no new eschar, mucosa bleeds on contact."
+  },
+  {
+   "id": "crit:NCT07654647-E02",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Age below 18 years.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07654647:NCT07654647-E02:r1",
+   "kind": "decision",
+   "trial_id": "NCT07654647",
+   "criterion_id": "NCT07654647-E02",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "age_rule"
+   ],
+   "note": "age 45.50 y vs [None, 18.0]",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "calc:NCT07654647:NCT07654647-E02",
+   "kind": "calculation",
+   "name": "age_at_as_of",
+   "value": 45.498,
+   "lo": null,
+   "hi": 18.0
+  },
+  {
+   "id": "crit:NCT07654647-E03",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "History of radiotherapy within 12 months prior to enrollment.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07654647:NCT07654647-E03:r1",
+   "kind": "decision",
+   "trial_id": "NCT07654647",
+   "criterion_id": "NCT07654647-E03",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No mention of radiotherapy; no malignancy, but absence of radiotherapy not stated.",
+   "missing_fact": "Any radiotherapy in the past 12 months",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07654647-E04",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Chronic untreated vitamin D deficiency.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07654647:NCT07654647-E04:r1",
+   "kind": "decision",
+   "trial_id": "NCT07654647",
+   "criterion_id": "NCT07654647-E04",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "lab_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Vitamin D deficiency never mentioned and no vitamin D level in record.",
+   "missing_fact": "Vitamin D status (diagnosis or 25-OH vitamin D level)",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07654647-E05",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Uncontrolled diabetes mellitus.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07654647:NCT07654647-E05:r1",
+   "kind": "decision",
+   "trial_id": "NCT07654647",
+   "criterion_id": "NCT07654647-E05",
+   "status": "FAIL",
+   "reason": "VIOLATED",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "T2DM documented as poorly controlled today, with HbA1c 12.8% on 2026-10-01.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0005-EV203",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "type 2 diabetes mellitus, poorly controlled",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-10-01",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:diagnosis:type 2 diabetes mellitus, poorly controlled",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "type 2 diabetes mellitus, poorly controlled"
+  },
+  {
+   "id": "src:SYN-0005-D08:4992-5030",
+   "kind": "source",
+   "doc_id": "SYN-0005-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    4992,
+    5030
+   ],
+   "text": "T2DM, poorly controlled, DKA resolved."
+  },
+  {
+   "id": "ev:SYN-0005-EV239",
+   "kind": "evidence",
+   "concept": "hba1c",
+   "term": null,
+   "value": 12.8,
+   "unit": "%",
+   "observed_date": "2026-10-01",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:hba1c",
+   "kind": "concept",
+   "concept": "hba1c",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0005-D09:1070-1094",
+   "kind": "source",
+   "doc_id": "SYN-0005-D09",
+   "doc_type": "lab_result",
+   "span": [
+    1070,
+    1094
+   ],
+   "text": "HbA1c 12.8 % (4.0-5.6) H"
+  },
+  {
+   "id": "crit:NCT07654647-E06",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Inability or unwillingness to comply with follow-up requirements.",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07654647:NCT07654647-E06:r1",
+   "kind": "decision",
+   "trial_id": "NCT07654647",
+   "criterion_id": "NCT07654647-E06",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "admin"
+   ],
+   "note": "consent/compliance item: not decidable from the record",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "label:NCT07654647",
+   "kind": "trial_decision",
+   "label": "ineligible",
+   "why": [
+    "FAIL NCT07654647-E01",
+    "FAIL NCT07654647-E05"
+   ],
+   "by": "agent3"
+  }
+ ],
+ "edges": [
+  [
+   "trial:NCT06756191",
+   "has_criterion",
+   "crit:NCT06756191-I01"
+  ],
+  [
+   "crit:NCT06756191-I01",
+   "decided_as",
+   "dec:NCT06756191:NCT06756191-I01:r1"
+  ],
+  [
+   "crit:NCT06756191-I01",
+   "requires",
+   "concept:diagnosis:rhino-orbital mucormycosis (rhizopus arrhizus), left"
+  ],
+  [
+   "concept:diagnosis:rhino-orbital mucormycosis (rhizopus arrhizus), left",
+   "observed_as",
+   "ev:SYN-0005-EV195"
+  ],
+  [
+   "ev:SYN-0005-EV195",
+   "derived_from",
+   "src:SYN-0005-D08:4465-4623"
+  ],
+  [
+   "ev:SYN-0005-EV195",
+   "supports",
+   "dec:NCT06756191:NCT06756191-I01:r1"
+  ],
+  [
+   "crit:NCT06756191-I01",
+   "requires",
+   "concept:symptom_finding:chest pain"
+  ],
+  [
+   "concept:symptom_finding:chest pain",
+   "observed_as",
+   "ev:SYN-0005-EV129"
+  ],
+  [
+   "ev:SYN-0005-EV129",
+   "derived_from",
+   "src:SYN-0005-D08:2745-2798"
+  ],
+  [
+   "ev:SYN-0005-EV129",
+   "supports",
+   "dec:NCT06756191:NCT06756191-I01:r1"
+  ],
+  [
+   "trial:NCT06756191",
+   "has_criterion",
+   "crit:NCT06756191-I02"
+  ],
+  [
+   "crit:NCT06756191-I02",
+   "decided_as",
+   "dec:NCT06756191:NCT06756191-I02:r1"
+  ],
+  [
+   "crit:NCT06756191-I02",
+   "requires",
+   "concept:diagnosis:rhino-orbital mucormycosis (rhizopus arrhizus), left"
+  ],
+  [
+   "ev:SYN-0005-EV195",
+   "supports",
+   "dec:NCT06756191:NCT06756191-I02:r1"
+  ],
+  [
+   "crit:NCT06756191-I02",
+   "requires",
+   "concept:diagnosis:rhino-orbital mucormycosis"
+  ],
+  [
+   "concept:diagnosis:rhino-orbital mucormycosis",
+   "observed_as",
+   "ev:SYN-0005-EV076"
+  ],
+  [
+   "ev:SYN-0005-EV076",
+   "derived_from",
+   "src:SYN-0005-D08:1225-1263"
+  ],
+  [
+   "ev:SYN-0005-EV076",
+   "supports",
+   "dec:NCT06756191:NCT06756191-I02:r1"
+  ],
+  [
+   "trial:NCT06756191",
+   "has_criterion",
+   "crit:NCT06756191-E01"
+  ],
+  [
+   "crit:NCT06756191-E01",
+   "decided_as",
+   "dec:NCT06756191:NCT06756191-E01:r1"
+  ],
+  [
+   "crit:NCT06756191-E01",
+   "requires",
+   "concept:medication:liposomal amphotericin b 5 mg/kg q24h"
+  ],
+  [
+   "concept:medication:liposomal amphotericin b 5 mg/kg q24h",
+   "observed_as",
+   "ev:SYN-0005-EV060"
+  ],
+  [
+   "ev:SYN-0005-EV060",
+   "derived_from",
+   "src:SYN-0005-D08:757-812"
+  ],
+  [
+   "ev:SYN-0005-EV060",
+   "insufficient_for",
+   "dec:NCT06756191:NCT06756191-E01:r1"
+  ],
+  [
+   "crit:NCT06756191-E01",
+   "requires",
+   "concept:diagnosis:rhino-orbital mucormycosis (rhizopus arrhizus), left"
+  ],
+  [
+   "ev:SYN-0005-EV195",
+   "insufficient_for",
+   "dec:NCT06756191:NCT06756191-E01:r1"
+  ],
+  [
+   "trial:NCT06756191",
+   "has_criterion",
+   "crit:NCT06756191-E02"
+  ],
+  [
+   "crit:NCT06756191-E02",
+   "decided_as",
+   "dec:NCT06756191:NCT06756191-E02:r1"
+  ],
+  [
+   "trial:NCT06756191",
+   "has_criterion",
+   "crit:NCT06756191-E03"
+  ],
+  [
+   "crit:NCT06756191-E03",
+   "decided_as",
+   "dec:NCT06756191:NCT06756191-E03:r1"
+  ],
+  [
+   "crit:NCT06756191-E03",
+   "requires",
+   "concept:ast"
+  ],
+  [
+   "concept:ast",
+   "observed_as",
+   "ev:SYN-0005-EV237"
+  ],
+  [
+   "ev:SYN-0005-EV237",
+   "derived_from",
+   "src:SYN-0005-D09:986-1004"
+  ],
+  [
+   "ev:SYN-0005-EV237",
+   "supports",
+   "dec:NCT06756191:NCT06756191-E03:r1"
+  ],
+  [
+   "crit:NCT06756191-E03",
+   "requires",
+   "concept:alt"
+  ],
+  [
+   "concept:alt",
+   "observed_as",
+   "ev:SYN-0005-EV236"
+  ],
+  [
+   "ev:SYN-0005-EV236",
+   "derived_from",
+   "src:SYN-0005-D09:968-985"
+  ],
+  [
+   "ev:SYN-0005-EV236",
+   "supports",
+   "dec:NCT06756191:NCT06756191-E03:r1"
+  ],
+  [
+   "crit:NCT06756191-E03",
+   "requires",
+   "concept:alp"
+  ],
+  [
+   "concept:alp",
+   "observed_as",
+   "ev:SYN-0005-EV307"
+  ],
+  [
+   "ev:SYN-0005-EV307",
+   "derived_from",
+   "src:SYN-0005-D09:1005-1041"
+  ],
+  [
+   "ev:SYN-0005-EV307",
+   "supports",
+   "dec:NCT06756191:NCT06756191-E03:r1"
+  ],
+  [
+   "crit:NCT06756191-E03",
+   "requires",
+   "concept:bilirubin_total"
+  ],
+  [
+   "concept:bilirubin_total",
+   "observed_as",
+   "ev:SYN-0005-EV235"
+  ],
+  [
+   "ev:SYN-0005-EV235",
+   "derived_from",
+   "src:SYN-0005-D09:932-967"
+  ],
+  [
+   "ev:SYN-0005-EV235",
+   "supports",
+   "dec:NCT06756191:NCT06756191-E03:r1"
+  ],
+  [
+   "trial:NCT06756191",
+   "has_criterion",
+   "crit:NCT06756191-E04"
+  ],
+  [
+   "crit:NCT06756191-E04",
+   "decided_as",
+   "dec:NCT06756191:NCT06756191-E04:r1"
+  ],
+  [
+   "crit:NCT06756191-E04",
+   "requires",
+   "concept:diagnosis:cardiac history"
+  ],
+  [
+   "concept:diagnosis:cardiac history",
+   "observed_as",
+   "ev:SYN-0005-EV078"
+  ],
+  [
+   "ev:SYN-0005-EV078",
+   "derived_from",
+   "src:SYN-0005-D08:1264-1368"
+  ],
+  [
+   "ev:SYN-0005-EV078",
+   "supports",
+   "dec:NCT06756191:NCT06756191-E04:r1"
+  ],
+  [
+   "crit:NCT06756191-E04",
+   "requires",
+   "concept:diagnosis:hepatic history"
+  ],
+  [
+   "concept:diagnosis:hepatic history",
+   "observed_as",
+   "ev:SYN-0005-EV080"
+  ],
+  [
+   "ev:SYN-0005-EV080",
+   "derived_from",
+   "src:SYN-0005-D08:1264-1368"
+  ],
+  [
+   "ev:SYN-0005-EV080",
+   "supports",
+   "dec:NCT06756191:NCT06756191-E04:r1"
+  ],
+  [
+   "crit:NCT06756191-E04",
+   "requires",
+   "concept:symptom_finding:hemoptysis"
+  ],
+  [
+   "concept:symptom_finding:hemoptysis",
+   "observed_as",
+   "ev:SYN-0005-EV285"
+  ],
+  [
+   "ev:SYN-0005-EV285",
+   "derived_from",
+   "src:SYN-0005-D08:2745-2798"
+  ],
+  [
+   "ev:SYN-0005-EV285",
+   "supports",
+   "dec:NCT06756191:NCT06756191-E04:r1"
+  ],
+  [
+   "trial:NCT06756191",
+   "has_criterion",
+   "crit:NCT06756191-E05"
+  ],
+  [
+   "crit:NCT06756191-E05",
+   "decided_as",
+   "dec:NCT06756191:NCT06756191-E05:r1"
+  ],
+  [
+   "trial:NCT06756191",
+   "has_criterion",
+   "crit:NCT06756191-E06"
+  ],
+  [
+   "crit:NCT06756191-E06",
+   "decided_as",
+   "dec:NCT06756191:NCT06756191-E06:r1"
+  ],
+  [
+   "trial:NCT06756191",
+   "has_criterion",
+   "crit:NCT06756191-E07"
+  ],
+  [
+   "crit:NCT06756191-E07",
+   "decided_as",
+   "dec:NCT06756191:NCT06756191-E07:r1"
+  ],
+  [
+   "crit:NCT06756191-E07",
+   "requires",
+   "concept:sex"
+  ],
+  [
+   "concept:sex",
+   "observed_as",
+   "ev:SYN-0005-EV001"
+  ],
+  [
+   "ev:SYN-0005-EV001",
+   "derived_from",
+   "src:SYN-0005-D01:0-5"
+  ],
+  [
+   "ev:SYN-0005-EV001",
+   "supports",
+   "dec:NCT06756191:NCT06756191-E07:r1"
+  ],
+  [
+   "trial:NCT06756191",
+   "labelled",
+   "label:NCT06756191"
+  ],
+  [
+   "trial:NCT07654647",
+   "has_criterion",
+   "crit:NCT07654647-I01"
+  ],
+  [
+   "crit:NCT07654647-I01",
+   "decided_as",
+   "dec:NCT07654647:NCT07654647-I01:r1"
+  ],
+  [
+   "crit:NCT07654647-I01",
+   "requires",
+   "concept:birth_date"
+  ],
+  [
+   "concept:birth_date",
+   "observed_as",
+   "ev:SYN-0005-EV002"
+  ],
+  [
+   "ev:SYN-0005-EV002",
+   "derived_from",
+   "src:SYN-0005-D01:6-21"
+  ],
+  [
+   "ev:SYN-0005-EV002",
+   "supports",
+   "dec:NCT07654647:NCT07654647-I01:r1"
+  ],
+  [
+   "calc:NCT07654647:NCT07654647-I01",
+   "computes",
+   "dec:NCT07654647:NCT07654647-I01:r1"
+  ],
+  [
+   "trial:NCT07654647",
+   "has_criterion",
+   "crit:NCT07654647-I02"
+  ],
+  [
+   "crit:NCT07654647-I02",
+   "decided_as",
+   "dec:NCT07654647:NCT07654647-I02:r1"
+  ],
+  [
+   "crit:NCT07654647-I02",
+   "requires",
+   "concept:symptom_finding:erosion of medial orbital wall"
+  ],
+  [
+   "concept:symptom_finding:erosion of medial orbital wall",
+   "observed_as",
+   "ev:SYN-0005-EV274"
+  ],
+  [
+   "ev:SYN-0005-EV274",
+   "derived_from",
+   "src:SYN-0005-D08:452-594"
+  ],
+  [
+   "ev:SYN-0005-EV274",
+   "insufficient_for",
+   "dec:NCT07654647:NCT07654647-I02:r1"
+  ],
+  [
+   "trial:NCT07654647",
+   "has_criterion",
+   "crit:NCT07654647-I03"
+  ],
+  [
+   "crit:NCT07654647-I03",
+   "decided_as",
+   "dec:NCT07654647:NCT07654647-I03:r1"
+  ],
+  [
+   "crit:NCT07654647-I03",
+   "requires",
+   "concept:symptom_finding:erosion of medial orbital wall"
+  ],
+  [
+   "ev:SYN-0005-EV274",
+   "insufficient_for",
+   "dec:NCT07654647:NCT07654647-I03:r1"
+  ],
+  [
+   "crit:NCT07654647-I03",
+   "requires",
+   "concept:symptom_finding:mild left proptosis"
+  ],
+  [
+   "concept:symptom_finding:mild left proptosis",
+   "observed_as",
+   "ev:SYN-0005-EV154"
+  ],
+  [
+   "ev:SYN-0005-EV154",
+   "derived_from",
+   "src:SYN-0005-D08:3217-3236"
+  ],
+  [
+   "ev:SYN-0005-EV154",
+   "insufficient_for",
+   "dec:NCT07654647:NCT07654647-I03:r1"
+  ],
+  [
+   "trial:NCT07654647",
+   "has_criterion",
+   "crit:NCT07654647-I04"
+  ],
+  [
+   "crit:NCT07654647-I04",
+   "decided_as",
+   "dec:NCT07654647:NCT07654647-I04:r1"
+  ],
+  [
+   "trial:NCT07654647",
+   "has_criterion",
+   "crit:NCT07654647-I05"
+  ],
+  [
+   "crit:NCT07654647-I05",
+   "decided_as",
+   "dec:NCT07654647:NCT07654647-I05:r1"
+  ],
+  [
+   "trial:NCT07654647",
+   "has_criterion",
+   "crit:NCT07654647-I06"
+  ],
+  [
+   "crit:NCT07654647-I06",
+   "decided_as",
+   "dec:NCT07654647:NCT07654647-I06:r1"
+  ],
+  [
+   "trial:NCT07654647",
+   "has_criterion",
+   "crit:NCT07654647-E01"
+  ],
+  [
+   "crit:NCT07654647-E01",
+   "decided_as",
+   "dec:NCT07654647:NCT07654647-E01:r1"
+  ],
+  [
+   "crit:NCT07654647-E01",
+   "requires",
+   "concept:diagnosis:rhino-orbital mucormycosis (rhizopus arrhizus), left"
+  ],
+  [
+   "ev:SYN-0005-EV195",
+   "supports",
+   "dec:NCT07654647:NCT07654647-E01:r1"
+  ],
+  [
+   "crit:NCT07654647-E01",
+   "requires",
+   "concept:symptom_finding:left nasal cavity crusting and granulation"
+  ],
+  [
+   "concept:symptom_finding:left nasal cavity crusting and granulation",
+   "observed_as",
+   "ev:SYN-0005-EV160"
+  ],
+  [
+   "ev:SYN-0005-EV160",
+   "derived_from",
+   "src:SYN-0005-D08:3341-3462"
+  ],
+  [
+   "ev:SYN-0005-EV160",
+   "supports",
+   "dec:NCT07654647:NCT07654647-E01:r1"
+  ],
+  [
+   "trial:NCT07654647",
+   "has_criterion",
+   "crit:NCT07654647-E02"
+  ],
+  [
+   "crit:NCT07654647-E02",
+   "decided_as",
+   "dec:NCT07654647:NCT07654647-E02:r1"
+  ],
+  [
+   "crit:NCT07654647-E02",
+   "requires",
+   "concept:birth_date"
+  ],
+  [
+   "ev:SYN-0005-EV002",
+   "supports",
+   "dec:NCT07654647:NCT07654647-E02:r1"
+  ],
+  [
+   "calc:NCT07654647:NCT07654647-E02",
+   "computes",
+   "dec:NCT07654647:NCT07654647-E02:r1"
+  ],
+  [
+   "trial:NCT07654647",
+   "has_criterion",
+   "crit:NCT07654647-E03"
+  ],
+  [
+   "crit:NCT07654647-E03",
+   "decided_as",
+   "dec:NCT07654647:NCT07654647-E03:r1"
+  ],
+  [
+   "trial:NCT07654647",
+   "has_criterion",
+   "crit:NCT07654647-E04"
+  ],
+  [
+   "crit:NCT07654647-E04",
+   "decided_as",
+   "dec:NCT07654647:NCT07654647-E04:r1"
+  ],
+  [
+   "trial:NCT07654647",
+   "has_criterion",
+   "crit:NCT07654647-E05"
+  ],
+  [
+   "crit:NCT07654647-E05",
+   "decided_as",
+   "dec:NCT07654647:NCT07654647-E05:r1"
+  ],
+  [
+   "crit:NCT07654647-E05",
+   "requires",
+   "concept:diagnosis:type 2 diabetes mellitus, poorly controlled"
+  ],
+  [
+   "concept:diagnosis:type 2 diabetes mellitus, poorly controlled",
+   "observed_as",
+   "ev:SYN-0005-EV203"
+  ],
+  [
+   "ev:SYN-0005-EV203",
+   "derived_from",
+   "src:SYN-0005-D08:4992-5030"
+  ],
+  [
+   "ev:SYN-0005-EV203",
+   "supports",
+   "dec:NCT07654647:NCT07654647-E05:r1"
+  ],
+  [
+   "crit:NCT07654647-E05",
+   "requires",
+   "concept:hba1c"
+  ],
+  [
+   "concept:hba1c",
+   "observed_as",
+   "ev:SYN-0005-EV239"
+  ],
+  [
+   "ev:SYN-0005-EV239",
+   "derived_from",
+   "src:SYN-0005-D09:1070-1094"
+  ],
+  [
+   "ev:SYN-0005-EV239",
+   "supports",
+   "dec:NCT07654647:NCT07654647-E05:r1"
+  ],
+  [
+   "trial:NCT07654647",
+   "has_criterion",
+   "crit:NCT07654647-E06"
+  ],
+  [
+   "crit:NCT07654647-E06",
+   "decided_as",
+   "dec:NCT07654647:NCT07654647-E06:r1"
+  ],
+  [
+   "trial:NCT07654647",
+   "labelled",
+   "label:NCT07654647"
+  ]
+ ]
+}

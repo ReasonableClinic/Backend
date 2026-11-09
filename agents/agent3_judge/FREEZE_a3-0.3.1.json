@@ -1,0 +1,56 @@
+{
+ "agent3_version": "a3-0.3.1",
+ "previous": "a3-0.3.0 (FREEZE_a3-0.3.0.json; test 1회 실행 2026-10-27, 마지막 순수 test 점수)",
+ "prompt_version": "p07",
+ "model": "claude-sonnet-5-5",
+ "policy": {
+  "list_inference": "strict",
+  "blanket_negation": "on",
+  "default_window": true
+ },
+ "postcheck": "normalise + policy + history-item action (no verification; Agent 4)",
+ "frozen_at": "2026-11-01",
+ "changes": [
+  "측정일: 새 검사·영상·병리 보고서에 같은 값이 다시 나오면 새 측정 (5차 회의 6.3 보완)",
+  "검사 30일 기본 창 (공통 형식 6.3), 병리 보고서 제외",
+  "같은 개념의 최신 값이 단어면 오래된 숫자로 판정하지 않음 (Agent 2 v14.12 안내)",
+  "나이·성별: 등록 문서 우선, 검사 줄에서 나온 나이·성별 근거는 쓰지 않음",
+  "LLM 답이 없는 기준(pc:llm_missing)은 시험을 eligible로 두지 않음 (Agent 5 보고)",
+  "과거 진단·시술 UNKNOWN의 action patient_question -> med_history_check (Agent 5 요청)",
+  "API 키를 .env에서 읽음 (agent3/env_setup.py, 5차 회의 제안)",
+  "dev 기본 근거 v14.12, test 근거 v14.9 고정",
+  "API 읽기 시간 초과(TimeoutError)도 재시도, 요청 제한 시간 300 -> 600초 (2026-11-01, dev 변형 실행 중 중단)",
+  "모델이 접두어 없이 적은 근거 ID(EV047)를 환자 ID를 붙여 복원, 실제 있는 ID일 때만 (2026-11-01, dev 변형 SYN-1791 42개)"
+ ],
+ "dev_reference_run": "runs/dev_a031_v10_kit1412_p07, runs/dev_variants_a031_v10_kit1412_p07 (근거 v14.12; API 실행 2026-11-01 원본은 *_api, 공식 결과는 같은 답을 --llm replay로 ID 복원만 더해 다시 채점)",
+ "replay_check": "runs/a031_replay_v14_9/ (v14.9 근거 + a3-0.3.0 캐시 답, API 없음)",
+ "test": "a3-0.3.1로 test 재실행 안 함 (팀 결정 전, scripts/run_test.sh는 ALLOW_TEST=1 필요)",
+ "sha256": {
+  "agent3/__init__.py": "ada2666e385e26bb",
+  "agent3/run.py": "e68771b73c77301b",
+  "agent3/prompt.py": "5e923f5b0ed6b7cb",
+  "agent3/postcheck.py": "21a83d13ff2f1782",
+  "agent3/rules.py": "676ebc85e4d32d5f",
+  "agent3/structured.py": "183b73c21ac02bba",
+  "agent3/aggregate.py": "6aa7f7ee510b4fee",
+  "agent3/graph.py": "1a956ab80c17ffa2",
+  "agent3/llm.py": "640b5b630f7dde46",
+  "agent3/data.py": "8416b898960efb37",
+  "agent3/env_setup.py": "423fc583c209c9fb",
+  "agent3/ingest.py": "1985eabc30d11d10",
+  "data/dev/reference/criteria.jsonl": "dcd69c468d8eda72",
+  "data/dev/reference/concepts.json": "db98f9eb50d456a1",
+  "data/dev/gold/gold.jsonl": "eca7718de689f0fe",
+  "data/dev/gold/gold_variants.jsonl": "2ce844942c1c0a21",
+  "agent3_kit/evidence_dev_haiku_v14_12.jsonl": "8c16780d8e21f6c7",
+  "agent3_kit/evidence_dev_variants_haiku_v14_12.jsonl": "b3ada3c78daabd3d",
+  "agent3_kit/evidence_test_haiku_v14_9.jsonl": "e4c07970e5e97771",
+  "agent3_kit/evidence_test_variants_haiku_v14_9.jsonl": "154abd915841ac2a",
+  "agent2/evidence_index.py": "1e422a1cf9794a57"
+ },
+ "usage_dev_api": {
+  "base_calls": 61,
+  "variants_calls": 113,
+  "note": "변형 36회는 시간 초과로 멈춘 첫 실행에서 저장된 답"
+ }
+}

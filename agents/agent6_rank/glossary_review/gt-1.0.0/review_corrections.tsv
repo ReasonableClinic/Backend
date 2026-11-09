@@ -1,0 +1,9 @@
+en	field	before	after	reason
+EBV-Positive DLBCL, Nos	ko	EBV 양성 미만성 거대 B세포 림프종(달리 분류되지 않는)	달리 분류되지 않는 EBV 양성 미만성 거대 B세포 림프종	괄호 속 수식어가 뒤에 붙는 (DLBCL) 약어와 겹쳐 어색하고 의미가 끊기므로 NOS 수식어를 앞으로 옮김.
+HHV8-Positive DLBCL, Nos	ko	HHV8 양성 미만성 거대 B세포 림프종(달리 분류되지 않는)	HHV8 양성 미만성 거대 B세포 림프종(달리 명시되지 않은)	NOS는 "달리 명시되지 않은"이며 "달리 분류되지 않는"은 NEC에 해당합니다.
+Motor Activity	ko	신체 활동	운동 활동	Motor Activity의 표준 번역은 운동 활동이며 신체 활동은 Physical Activity에 해당함.
+Multi-Drug Resistant Nephrotic Syndrome	ko	여러 약에 저항성인 신증후군	다약제 내성 신증후군	표준 용어(다약제 내성)가 있고 현재 표현이 어색함.
+Neoplasms, Plasma Cell	alt	형질세포암	악성 형질세포 종양	형질세포암은 쓰이지 않는 용어이므로 악성 형질세포 종양이 정확함.
+Recurrent Diffuse Large B-Cell Lymphoma, Not Otherwise Specified	ko	재발성 미만성 거대 B세포 림프종(달리 분류되지 않는)	재발성 미만성 거대 B세포 림프종(달리 명시되지 않은)	NOS는 "달리 명시되지 않은"이며 "달리 분류되지 않은"은 NEC에 해당하는 다른 개념임.
+Refractory Diffuse Large B-Cell Lymphoma, Not Otherwise Specified	ko	불응성 미만성 거대 B세포 림프종(달리 분류되지 않는)	불응성 미만성 거대 B세포 림프종(달리 명시되지 않은)	NOS는 "달리 명시되지 않은"이며 "달리 분류되지 않은"은 NEC에 해당하는 다른 개념임.
+Upadacitinib	ko	유파다시티닙	우파다시티닙	국내 허가 성분명(린버크)은 우파다시티닙임.

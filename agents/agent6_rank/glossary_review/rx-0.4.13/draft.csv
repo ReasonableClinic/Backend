@@ -1,0 +1,60 @@
+en,ko,abbr,kind
+Abatacept,아바타셉트,,drug
+Abemaciclib,아베마시클립,,drug
+Atezolizumab,아테졸리주맙,,drug
+Bevacizumab,베바시주맙,,drug
+Capecitabine,카페시타빈,,drug
+Capivasertib,카피바서팁,,drug
+Carboplatin,카보플라틴,,drug
+Cetuximab,세툭시맙,,drug
+Chemotherapy,항암화학요법,,other
+Cisplatin,시스플라틴,,drug
+Conventional Radiotherapy,통상분할 방사선치료,,procedure
+Hypofractionated Radiotherapy,소분할 방사선치료,,procedure
+Digoxin,디곡신,,drug
+Divarasib,디바라십,,drug
+Docetaxel,도세탁셀,,drug
+Dupilumab,두필루맙,,drug
+Empagliflozin,엠파글리플로진,,drug
+Enfortumab vedotin,엔포투맙 베도틴,,drug
+Eribulin,에리불린,,drug
+FOLFIRI,폴피리 항암요법,FOLFIRI,drug
+FOLFOX,폴폭스 항암요법,FOLFOX,drug
+Fluorouracil,플루오로우라실,,drug
+FoundationOne®Liquid CDx,혈액 유전자 검사(FoundationOne Liquid CDx),,procedure
+Fulvestrant,풀베스트란트,,drug
+Gemcitabine,젬시타빈,,drug
+Giredestrant,기레데스트란트,,drug
+Glimepiride,글리메피리드,,drug
+Hydroxychloroquine,하이드록시클로로퀸,,drug
+Inavolisib,이나볼리십,,drug
+Intravitreal 100% C3F8 Injection,유리체강 내 100% C3F8 가스 주입,,procedure
+Ipatasertib,이파타서팁,,drug
+Letrozole,레트로졸,,drug
+Leflunomide,레플루노마이드,,drug
+Metformin,메트포르민,,drug
+Methotrexate,메토트렉세이트,,drug
+Midazolam,미다졸람,,drug
+Mitomycin C,마이토마이신 C,,drug
+Nab-Paclitaxel,알부민 결합 파클리탁셀,,drug
+Palbociclib,팔보시클립,,drug
+Pars plana vitrectomy,평면부 유리체절제술,,procedure
+pars plana vitrectomy with scleral buckle,공막돌륭술을 함께 하는 평면부 유리체절제술,,procedure
+Pembrolizumab,펨브롤리주맙,,drug
+Placebo,위약,,other
+Ribociclib,리보시클립,,drug
+Rosuvastatin,로수바스타틴,,drug
+Sacituzumab Govitecan,사시투주맙 고비테칸,,drug
+Sulfasalazine,설파살라진,,drug
+Targeted therapy,표적치료,,other
+Telisotuzumab Vedotin,텔리소투주맙 베도틴,,drug
+Tezepelumab,테제펠루맙,,drug
+Tiragolumab,티라골루맙,,drug
+TNF Inhibitor,TNF 억제제,,drug
+Tocilizumab,토실리주맙,,drug
+Trastuzumab Deruxtecan,트라스투주맙 데룩스테칸,,drug
+standard corticosteroid treatment,표준 부신피질스테로이드 치료,,other
+filiform needling,호침 침술,,procedure
+fire needling combined with filiform needling,화침과 호침을 함께 하는 침술,,procedure
+188Re-Microspheres,레늄-188 미세구,,other
+90Y-Theraspheres,이트륨-90 유리 미세구,,other

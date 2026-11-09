@@ -1,0 +1,81 @@
+{
+ "patient_id": "SYN-2144",
+ "as_of": "2026-10-01",
+ "audience": "patient",
+ "graph_file": "SYN-2144.json",
+ "ranking": [],
+ "sentences": [
+  {
+   "text": "이 안내는 치료 추천이 아니라, 연구(임상시험) 참여를 검토하실 때 참고하실 정보입니다.",
+   "refs": [
+    "rule:research_not_treatment"
+   ],
+   "kind": "rule"
+  },
+  {
+   "text": "지금 기록으로는 조건이 맞을 가능성이 있는 시험을 찾지 못했습니다.",
+   "refs": [
+    "label:NCT06908096"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "시험약이 효과가 있을지는 아직 모르기 때문에 연구를 하는 것입니다.",
+   "refs": [
+    "rule:no_benefit_promise"
+   ],
+   "kind": "rule"
+  },
+  {
+   "text": "지금 받으실 수 있는 다른 치료 방법이 무엇인지도 의료진에게 물어보실 수 있습니다.",
+   "refs": [
+    "rule:ask_alternatives"
+   ],
+   "kind": "rule"
+  },
+  {
+   "text": "참여하면 방문 횟수, 검사, 기간처럼 해야 하는 일이 무엇인지도 미리 물어보실 수 있습니다.",
+   "refs": [
+    "rule:ask_burden"
+   ],
+   "kind": "rule"
+  },
+  {
+   "text": "최종 참여 가능 여부는 연구 담당 의료진이 직접 확인합니다.",
+   "refs": [
+    "rule:ask_clinician"
+   ],
+   "kind": "rule"
+  },
+  {
+   "text": "참여는 자유이며, 참여하지 않아도 지금 받고 계신 치료는 그대로 받으실 수 있습니다.",
+   "refs": [
+    "rule:voluntary"
+   ],
+   "kind": "rule"
+  },
+  {
+   "text": "참여하더라도 언제든 그만두실 수 있습니다.",
+   "refs": [
+    "rule:withdraw"
+   ],
+   "kind": "rule"
+  }
+ ],
+ "glossary": {
+  "mode": "glossary",
+  "sha256": "bb6135ef988f322486520df16e40f1b58d96404e99d31873c2dea5b8e38d3fed",
+  "rows_used": 0,
+  "draft": 0
+ },
+ "evidence": {
+  "files": [
+   "evidence_dev_haiku_v14_12.jsonl",
+   "evidence_dev_variants_haiku_v14_12.jsonl"
+  ],
+  "sha256": "daba4f5f1e16ec2eefc47311f5c13f85e6b5f218c85424f08f9af3d9bab09124",
+  "id_series": "haiku",
+  "graph_ev_nodes_checked": 2240
+ },
+ "agent6": "a6-0.4.14"
+}

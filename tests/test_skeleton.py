@@ -7,9 +7,14 @@ sys.path.insert(0, ROOT)
 
 
 def agent_dirs():
-    for base, dirs, files in os.walk(os.path.join(ROOT, "agents")):
-        if "run.py" in files:
-            yield base
+    # the pipeline entry points: agents/<agent>/run.py and agents/agent5_acquire/<part>/run.py. The frozen packages
+    # inside these folders keep their own run.py files (agent3/run.py, agent5/run.py ...), which are not entry points.
+    A = os.path.join(ROOT, "agents")
+    for name in sorted(os.listdir(A)):
+        if os.path.isfile(os.path.join(A, name, "run.py")):
+            yield os.path.join(A, name)
+    for part in ("expired_unsupported", "missing"):
+        yield os.path.join(A, "agent5_acquire", part)
 
 
 class Skeleton(unittest.TestCase):
