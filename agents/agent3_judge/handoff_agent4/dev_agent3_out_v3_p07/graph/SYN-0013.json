@@ -1,0 +1,3341 @@
+{
+ "patient_id": "SYN-0013",
+ "as_of": "2026-10-01",
+ "version": 1,
+ "nodes": [
+  {
+   "id": "trial:NCT06883305",
+   "kind": "trial",
+   "title": "A Study to Investigate the Efficacy and Safety of Tezepelumab in Adult Participants With Moderate to Very Severe COPD (D5241C00006)"
+  },
+  {
+   "id": "crit:NCT06883305-I01",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": ">=40 to <=80 years old",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06883305:NCT06883305-I01:r1",
+   "kind": "decision",
+   "trial_id": "NCT06883305",
+   "criterion_id": "NCT06883305-I01",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "age_rule"
+   ],
+   "note": "age 69.20 y vs [40.0, 80.0]",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0013-EV002",
+   "kind": "evidence",
+   "concept": "birth_date",
+   "term": null,
+   "value": "1957-07-19",
+   "unit": null,
+   "observed_date": "2026-01-20",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:birth_date",
+   "kind": "concept",
+   "concept": "birth_date",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0013-D01:6-21",
+   "kind": "source",
+   "doc_id": "SYN-0013-D01",
+   "doc_type": "registration",
+   "span": [
+    6,
+    21
+   ],
+   "text": "DOB 1957-07-19."
+  },
+  {
+   "id": "calc:NCT06883305:NCT06883305-I01",
+   "kind": "calculation",
+   "name": "age_at_as_of",
+   "value": 69.203,
+   "lo": 40.0,
+   "hi": 80.0
+  },
+  {
+   "id": "crit:NCT06883305-I02",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "COPD diagnosis >=1 year,",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06883305:NCT06883305-I02:r1",
+   "kind": "decision",
+   "trial_id": "NCT06883305",
+   "criterion_id": "NCT06883305-I02",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "COPD diagnosed 2016, about 10 years before as_of, so well over 1 year.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0013-EV005",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "COPD",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-01-20",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:diagnosis:copd",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "COPD"
+  },
+  {
+   "id": "src:SYN-0013-D02:13-26",
+   "kind": "source",
+   "doc_id": "SYN-0013-D02",
+   "doc_type": "clinic_note",
+   "span": [
+    13,
+    26
+   ],
+   "text": "COPD dx 2016."
+  },
+  {
+   "id": "ev:SYN-0013-EV033",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "COPD",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "src:SYN-0013-D08:111-146",
+   "kind": "source",
+   "doc_id": "SYN-0013-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    111,
+    146
+   ],
+   "text": "69-year-old man with COPD (dx 2016)"
+  },
+  {
+   "id": "crit:NCT06883305-I03",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Post-BD FEV1 >= 20% and <= 70% PN, FEV1/FVC <0.70 at screening",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06883305:NCT06883305-I03:r1",
+   "kind": "decision",
+   "trial_id": "NCT06883305",
+   "criterion_id": "NCT06883305-I03",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Post-BD FEV1 37% (within 20-70) and FEV1/FVC 0.43 (<0.70) measured 7 days ago.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0013-EV245",
+   "kind": "evidence",
+   "concept": "fev1",
+   "term": null,
+   "value": 37,
+   "unit": "%",
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:fev1",
+   "kind": "concept",
+   "concept": "fev1",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0013-D08:3117-3170",
+   "kind": "source",
+   "doc_id": "SYN-0013-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    3117,
+    3170
+   ],
+   "text": "Spirometry post-BD today: FEV1 1.10 L (37% predicted)"
+  },
+  {
+   "id": "ev:SYN-0013-EV247",
+   "kind": "evidence",
+   "concept": "fev1_fvc_ratio",
+   "term": null,
+   "value": 0.43,
+   "unit": "%",
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:fev1_fvc_ratio",
+   "kind": "concept",
+   "concept": "fev1_fvc_ratio",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0013-D08:3184-3198",
+   "kind": "source",
+   "doc_id": "SYN-0013-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    3184,
+    3198
+   ],
+   "text": "FEV1/FVC 0.43."
+  },
+  {
+   "id": "crit:NCT06883305-I04",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Triple (ICS+LABA+LAMA) or dual inhaled COPD therapy, if triple therapy is considered not appropriate, >=3 consecutive months prior to V1",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06883305:NCT06883305-I04:r1",
+   "kind": "decision",
+   "trial_id": "NCT06883305",
+   "criterion_id": "NCT06883305-I04",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Budesonide/glycopyrronium/formoterol (ICS+LAMA+LABA) taken since 2022, well over 3 months.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0013-EV078",
+   "kind": "evidence",
+   "concept": "medication",
+   "term": "budesonide/glycopyrronium/formoterol inhaler 2 puffs bid",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:medication:budesonide/glycopyrronium/formoterol inhaler 2 puffs bid",
+   "kind": "concept",
+   "concept": "medication",
+   "term": "budesonide/glycopyrronium/formoterol inhaler 2 puffs bid"
+  },
+  {
+   "id": "src:SYN-0013-D08:1417-1486",
+   "kind": "source",
+   "doc_id": "SYN-0013-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    1417,
+    1486
+   ],
+   "text": "Budesonide/glycopyrronium/formoterol inhaler 2 puffs bid (since 2022)"
+  },
+  {
+   "id": "ev:SYN-0013-EV036",
+   "kind": "evidence",
+   "concept": "medication",
+   "term": "triple inhaler therapy",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:medication:triple inhaler therapy",
+   "kind": "concept",
+   "concept": "medication",
+   "term": "triple inhaler therapy"
+  },
+  {
+   "id": "src:SYN-0013-D08:198-224",
+   "kind": "source",
+   "doc_id": "SYN-0013-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    198,
+    224
+   ],
+   "text": "on triple inhaler therapy."
+  },
+  {
+   "id": "crit:NCT06883305-I05",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": ">=2 moderate or >=1 severe COPD exacerbations in the prior year; At least 1 of 2 moderate exacerbations must require the use of systemic corticosteroids. At least one of the previous exacerbations should be confirmed to have occurred while the participant was on triple or dual inhaled maintenance therapy",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06883305:NCT06883305-I05:r1",
+   "kind": "decision",
+   "trial_id": "NCT06883305",
+   "criterion_id": "NCT06883305-I05",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Two exacerbations in past 12 months, both treated with oral steroids (one hospitalized), while on triple therapy since 2022.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0013-EV155",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "COPD exacerbations in past 12 months: 2 requiring oral steroids (1 with hospitalization)",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "past"
+  },
+  {
+   "id": "concept:symptom_finding:copd exacerbations in past 12 months: 2 requiring oral steroids (1 with hospitalization)",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "COPD exacerbations in past 12 months: 2 requiring oral steroids (1 with hospitalization)"
+  },
+  {
+   "id": "src:SYN-0013-D08:3289-3389",
+   "kind": "source",
+   "doc_id": "SYN-0013-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    3289,
+    3389
+   ],
+   "text": "Exacerbations in past 12 months: 2 requiring oral steroids (1 with hospitalization, no ventilation)."
+  },
+  {
+   "id": "ev:SYN-0013-EV037",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "COPD exacerbation",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-03-11",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "past"
+  },
+  {
+   "id": "concept:diagnosis:copd exacerbation",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "COPD exacerbation"
+  },
+  {
+   "id": "src:SYN-0013-D08:225-488",
+   "kind": "source",
+   "doc_id": "SYN-0013-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    225,
+    488
+   ],
+   "text": "Two exacerbations requiring oral steroids in the past 12 months: hospital admission 2026-03-11 for 3 days (viral, prednisolone 40 mg x5 days + doxycycline, no ventilation) and an outpatient exacerbation on 2026-06-20 treated by GP with prednisolone 30 mg x5 days."
+  },
+  {
+   "id": "ev:SYN-0013-EV082",
+   "kind": "evidence",
+   "concept": "medication",
+   "term": "prednisolone 30 mg x5 days",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-06-25",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "stopped"
+  },
+  {
+   "id": "concept:medication:prednisolone 30 mg x5 days",
+   "kind": "concept",
+   "concept": "medication",
+   "term": "prednisolone 30 mg x5 days"
+  },
+  {
+   "id": "src:SYN-0013-D08:1595-1689",
+   "kind": "source",
+   "doc_id": "SYN-0013-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    1595,
+    1689
+   ],
+   "text": "Prednisolone 30 mg x5 days, stopped 2026-06-25, outpatient COPD exacerbation, course completed"
+  },
+  {
+   "id": "crit:NCT06883305-I06",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "EOS >= 150 cells/μL during screening",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06883305:NCT06883305-I06:r1",
+   "kind": "decision",
+   "trial_id": "NCT06883305",
+   "criterion_id": "NCT06883305-I06",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "structured_numeric"
+   ],
+   "note": "eosinophil_count = 0.34 10^9/L (2026-09-24, -7d) vs >= 0.15 [x0.001 (/uL -> 10^9/L)] -> met",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0013-EV265",
+   "kind": "evidence",
+   "concept": "eosinophil_count",
+   "term": null,
+   "value": 0.34,
+   "unit": "10^9/L",
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:eosinophil_count",
+   "kind": "concept",
+   "concept": "eosinophil_count",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0013-D09:364-404",
+   "kind": "source",
+   "doc_id": "SYN-0013-D09",
+   "doc_type": "lab_result",
+   "span": [
+    364,
+    404
+   ],
+   "text": "Eosinophils 0.34 x10^3/uL = 340 cells/uL"
+  },
+  {
+   "id": "calc:NCT06883305:NCT06883305-I06",
+   "kind": "calculation",
+   "concept": "eosinophil_count",
+   "operator": ">=",
+   "threshold": 150,
+   "unit": "/uL",
+   "value": 0.34,
+   "value_unit": "10^9/L",
+   "observed_date": "2026-09-24",
+   "days_before": 7,
+   "threshold_in_base_unit": 0.15,
+   "note": "eosinophil_count = 0.34 10^9/L (2026-09-24, -7d) vs >= 0.15 [x0.001 (/uL -> 10^9/L)] -> met"
+  },
+  {
+   "id": "crit:NCT06883305-I07",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "CAT >=15 at screening",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06883305:NCT06883305-I07:r1",
+   "kind": "decision",
+   "trial_id": "NCT06883305",
+   "criterion_id": "NCT06883305-I07",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "structured_numeric"
+   ],
+   "note": "cat_score = 20 points (2026-09-24, -7d) vs >= 15 -> met",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0013-EV156",
+   "kind": "evidence",
+   "concept": "cat_score",
+   "term": null,
+   "value": 20,
+   "unit": "points",
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:cat_score",
+   "kind": "concept",
+   "concept": "cat_score",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0013-D08:3398-3421",
+   "kind": "source",
+   "doc_id": "SYN-0013-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    3398,
+    3421
+   ],
+   "text": "CAT 20 (21 in January)."
+  },
+  {
+   "id": "calc:NCT06883305:NCT06883305-I07",
+   "kind": "calculation",
+   "concept": "cat_score",
+   "operator": ">=",
+   "threshold": 15,
+   "unit": null,
+   "value": 20,
+   "value_unit": "points",
+   "observed_date": "2026-09-24",
+   "days_before": 7,
+   "note": "cat_score = 20 points (2026-09-24, -7d) vs >= 15 -> met"
+  },
+  {
+   "id": "crit:NCT06883305-I08",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Former or current smokers >=10 pack-years",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06883305:NCT06883305-I08:r1",
+   "kind": "decision",
+   "trial_id": "NCT06883305",
+   "criterion_id": "NCT06883305-I08",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Ex-smoker with 50 pack-years, which is at least 10.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0013-EV093",
+   "kind": "evidence",
+   "concept": "smoking",
+   "term": "pack-years",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:smoking:pack-years",
+   "kind": "concept",
+   "concept": "smoking",
+   "term": "pack-years"
+  },
+  {
+   "id": "src:SYN-0013-D08:1918-1931",
+   "kind": "source",
+   "doc_id": "SYN-0013-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    1918,
+    1931
+   ],
+   "text": "50 pack-years"
+  },
+  {
+   "id": "ev:SYN-0013-EV092",
+   "kind": "evidence",
+   "concept": "smoking",
+   "term": null,
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "past"
+  },
+  {
+   "id": "concept:smoking",
+   "kind": "concept",
+   "concept": "smoking",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0013-D08:1907-1916",
+   "kind": "source",
+   "doc_id": "SYN-0013-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    1907,
+    1916
+   ],
+   "text": "Ex-smoker"
+  },
+  {
+   "id": "crit:NCT06883305-E01",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Clin. important pulmonary disease or radiological findings suggestive of a respiratory disease other than COPD",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06883305:NCT06883305-E01:r1",
+   "kind": "decision",
+   "trial_id": "NCT06883305",
+   "criterion_id": "NCT06883305-E01",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation"
+   ],
+   "note": "No other pulmonary history; no bronchiectasis or nodules on CT. Emphysema is part of COPD.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0013-EV063",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "other pulmonary history",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:other pulmonary history",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "other pulmonary history"
+  },
+  {
+   "id": "src:SYN-0013-D08:1072-1161",
+   "kind": "source",
+   "doc_id": "SYN-0013-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    1072,
+    1161
+   ],
+   "text": "No other cardiac, pulmonary, hepatic, renal, autoimmune, endocrine or neurologic history."
+  },
+  {
+   "id": "ev:SYN-0013-EV070",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "bronchiectasis",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:diagnosis:bronchiectasis",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "bronchiectasis"
+  },
+  {
+   "id": "src:SYN-0013-D08:1175-1193",
+   "kind": "source",
+   "doc_id": "SYN-0013-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    1175,
+    1193
+   ],
+   "text": "No bronchiectasis."
+  },
+  {
+   "id": "ev:SYN-0013-EV161",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "bronchiectasis",
+   "value": false,
+   "unit": null,
+   "observed_date": "2025-01-01",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "past"
+  },
+  {
+   "id": "src:SYN-0013-D08:3563-3633",
+   "kind": "source",
+   "doc_id": "SYN-0013-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    3563,
+    3633
+   ],
+   "text": "CT chest 2025: centrilobular emphysema, no bronchiectasis, no nodules."
+  },
+  {
+   "id": "crit:NCT06883305-E02",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Asthma, incl. pediatric, or ACOS",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06883305:NCT06883305-E02:r1",
+   "kind": "decision",
+   "trial_id": "NCT06883305",
+   "criterion_id": "NCT06883305-E02",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Explicit statement of no asthma history, including childhood.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0013-EV072",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "asthma",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:diagnosis:asthma",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "asthma"
+  },
+  {
+   "id": "src:SYN-0013-D08:1215-1259",
+   "kind": "source",
+   "doc_id": "SYN-0013-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    1215,
+    1259
+   ],
+   "text": "No history of asthma diagnosis in childhood."
+  },
+  {
+   "id": "crit:NCT06883305-E03",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Any unstable disorder that can impact participants safety or study outcomes",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06883305:NCT06883305-E03:r1",
+   "kind": "decision",
+   "trial_id": "NCT06883305",
+   "criterion_id": "NCT06883305-E03",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Investigator-judgment criterion; the record documents no unstable disorder, but the blanket negation does not cover judgment criteria.",
+   "missing_fact": "Investigator judgment on whether any unstable disorder affects safety or study outcomes",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06883305-E04",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Tuberculosis requiring treatment within 12 months prior V2",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06883305:NCT06883305-E04:r1",
+   "kind": "decision",
+   "trial_id": "NCT06883305",
+   "criterion_id": "NCT06883305-E04",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Tuberculosis is not mentioned anywhere in the record.",
+   "missing_fact": "Whether the patient had tuberculosis treated within the past 12 months",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06883305-E05",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Malignancies current or past",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06883305:NCT06883305-E05:r1",
+   "kind": "decision",
+   "trial_id": "NCT06883305",
+   "criterion_id": "NCT06883305-E05",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Explicit statement of no prior malignancy.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0013-EV071",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "malignancy",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:diagnosis:malignancy",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "malignancy"
+  },
+  {
+   "id": "src:SYN-0013-D08:1194-1214",
+   "kind": "source",
+   "doc_id": "SYN-0013-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    1194,
+    1214
+   ],
+   "text": "No prior malignancy."
+  },
+  {
+   "id": "crit:NCT06883305-E06",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Concomitant therapies: Macrolides (less than 6 months); Systemic immuno-suppressive, -modulating medications; LTOT >4.0 L/min or O2 saturation <89% despite LTOT",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06883305:NCT06883305-E06:r1",
+   "kind": "decision",
+   "trial_id": "NCT06883305",
+   "criterion_id": "NCT06883305-E06",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_history_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "list_inference",
+    "pc:strict_list_inference"
+   ],
+   "note": "[inferable PASS from SYN-0013-EV077] No macrolide or home oxygen; SpO2 90% (not <89%) on room air. Reconciled current list shows no immunosuppressants; steroid courses ended.",
+   "missing_fact": null,
+   "derived_from": "SYN-0013-EV077"
+  },
+  {
+   "id": "label:NCT06883305",
+   "kind": "trial_decision",
+   "label": "eligible",
+   "why": [],
+   "by": "agent3"
+  },
+  {
+   "id": "trial:NCT07190222",
+   "kind": "trial",
+   "title": "Efficacy, Safety, and Tolerability Study of Lunsekimig Compared With Placebo in Adult Participants With Inadequately Controlled Chronic Obstructive Pulmonary Disease (COPD), Characterized by an Eosinophilic Phenotype"
+  },
+  {
+   "id": "crit:NCT07190222-I01",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Between 40 to 80 years of age",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07190222:NCT07190222-I01:r1",
+   "kind": "decision",
+   "trial_id": "NCT07190222",
+   "criterion_id": "NCT07190222-I01",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "age_rule"
+   ],
+   "note": "age 69.20 y vs [40.0, 80.0]",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "calc:NCT07190222:NCT07190222-I01",
+   "kind": "calculation",
+   "name": "age_at_as_of",
+   "value": 69.203,
+   "lo": 40.0,
+   "hi": 80.0
+  },
+  {
+   "id": "crit:NCT07190222-I02",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Physician diagnosed chronic obstructive pulmonary disease (COPD) >=1 year",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07190222:NCT07190222-I02:r1",
+   "kind": "decision",
+   "trial_id": "NCT07190222",
+   "criterion_id": "NCT07190222-I02",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "COPD diagnosed 2016, about 10 years before as_of; well over 1 year.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07190222-I03",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Post-bronchodilator forced expiratory volume in 1 second (post-BD FEV1) >= 20% and <= 70% of predicted value and FEV1/FVC (forced expiratory volume in 1 second /forced vital capacity) <0.70",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07190222:NCT07190222-I03:r1",
+   "kind": "decision",
+   "trial_id": "NCT07190222",
+   "criterion_id": "NCT07190222-I03",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Post-BD FEV1 37% predicted and FEV1/FVC 0.43 on 2026-09-24, within range and below 0.70.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07190222-I04",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Former or current smokers >=10 pack-years",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07190222:NCT07190222-I04:r1",
+   "kind": "decision",
+   "trial_id": "NCT07190222",
+   "criterion_id": "NCT07190222-I04",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Ex-smoker with 50 pack-years, which is at least 10.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07190222-I05",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Chronic Airways Assessment Test (CAAT) >=10",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07190222:NCT07190222-I05:r1",
+   "kind": "decision",
+   "trial_id": "NCT07190222",
+   "criterion_id": "NCT07190222-I05",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "new_test",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "CAT score is documented but CAAT is not; the instruments are not stated to be equivalent.",
+   "missing_fact": "CAAT score (only CAT 20-21 recorded, a different questionnaire)",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07190222-I06",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": ">=2 moderate or >=1 severe COPD exacerbations in the prior year",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07190222:NCT07190222-I06:r1",
+   "kind": "decision",
+   "trial_id": "NCT07190222",
+   "criterion_id": "NCT07190222-I06",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Two exacerbations treated with oral steroids in the past 12 months (2026-03 admission, 2026-06 outpatient); 2026-03 was a hospitalization (severe).",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0013-EV083",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "COPD exacerbation",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "past"
+  },
+  {
+   "id": "crit:NCT07190222-I07",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Triple (ICS+LABA+LAMA) COPD therapy >=12 consecutive weeks",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07190222:NCT07190222-I07:r1",
+   "kind": "decision",
+   "trial_id": "NCT07190222",
+   "criterion_id": "NCT07190222-I07",
+   "status": "UNKNOWN",
+   "reason": "UNSUPPORTED",
+   "action": "med_record_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Budesonide/glycopyrronium/formoterol is ICS+LAMA+LABA, current since 2022 per the med list, so likely met, but screening date is not given.",
+   "missing_fact": "Confirmation that triple therapy was taken continuously for at least 12 weeks before screening",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07190222-I08",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "EOS (blood eosinophil count) >= 150 cells/μL",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07190222:NCT07190222-I08:r1",
+   "kind": "decision",
+   "trial_id": "NCT07190222",
+   "criterion_id": "NCT07190222-I08",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "structured_numeric"
+   ],
+   "note": "eosinophil_count = 0.34 10^9/L (2026-09-24, -7d) vs >= 0.15 [x0.001 (/uL -> 10^9/L)] -> met",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "calc:NCT07190222:NCT07190222-I08",
+   "kind": "calculation",
+   "concept": "eosinophil_count",
+   "operator": ">=",
+   "threshold": 150,
+   "unit": "/uL",
+   "value": 0.34,
+   "value_unit": "10^9/L",
+   "observed_date": "2026-09-24",
+   "days_before": 7,
+   "threshold_in_base_unit": 0.15,
+   "note": "eosinophil_count = 0.34 10^9/L (2026-09-24, -7d) vs >= 0.15 [x0.001 (/uL -> 10^9/L)] -> met"
+  },
+  {
+   "id": "crit:NCT07190222-I09",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "18.0 <= Body Mass Index <= 40.0 kg/m2",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07190222:NCT07190222-I09:r1",
+   "kind": "decision",
+   "trial_id": "NCT07190222",
+   "criterion_id": "NCT07190222-I09",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "structured_numeric"
+   ],
+   "note": "bmi = 23.5 kg/m2 (2026-09-24, -7d) vs between [18.0, 40.0] -> met",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0013-EV052",
+   "kind": "evidence",
+   "concept": "bmi",
+   "term": null,
+   "value": 23.5,
+   "unit": "kg/m2",
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:bmi",
+   "kind": "concept",
+   "concept": "bmi",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0013-D08:825-840",
+   "kind": "source",
+   "doc_id": "SYN-0013-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    825,
+    840
+   ],
+   "text": "BMI 23.5 kg/m2."
+  },
+  {
+   "id": "calc:NCT07190222:NCT07190222-I09",
+   "kind": "calculation",
+   "concept": "bmi",
+   "operator": "between",
+   "threshold": [
+    18.0,
+    40.0
+   ],
+   "unit": "kg/m2",
+   "value": 23.5,
+   "value_unit": "kg/m2",
+   "observed_date": "2026-09-24",
+   "days_before": 7,
+   "note": "bmi = 23.5 kg/m2 (2026-09-24, -7d) vs between [18.0, 40.0] -> met"
+  },
+  {
+   "id": "crit:NCT07190222-E01",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Asthma, including pediatric asthma, or asthma-COPD overlap syndrome (ACOS)",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07190222:NCT07190222-E01:r1",
+   "kind": "decision",
+   "trial_id": "NCT07190222",
+   "criterion_id": "NCT07190222-E01",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Explicit denial of asthma diagnosis; no ACOS documented.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07190222-E02",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Significant pulmonary disease other than COPD",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07190222:NCT07190222-E02:r1",
+   "kind": "decision",
+   "trial_id": "NCT07190222",
+   "criterion_id": "NCT07190222-E02",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation"
+   ],
+   "note": "No other pulmonary history and no bronchiectasis; emphysema is part of COPD.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07190222-E03",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Long-term oxygen therapy >4.0 L/min or requirement of >2.0 L/min to maintain oxygen saturation >88% at rest",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07190222:NCT07190222-E03:r1",
+   "kind": "decision",
+   "trial_id": "NCT07190222",
+   "criterion_id": "NCT07190222-E03",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No home oxygen; SpO2 93% on room air at rest, so no oxygen requirement.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0013-EV087",
+   "kind": "evidence",
+   "concept": "medication",
+   "term": "home oxygen",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:medication:home oxygen",
+   "kind": "concept",
+   "concept": "medication",
+   "term": "home oxygen"
+  },
+  {
+   "id": "src:SYN-0013-D08:1793-1808",
+   "kind": "source",
+   "doc_id": "SYN-0013-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    1793,
+    1808
+   ],
+   "text": "No home oxygen."
+  },
+  {
+   "id": "ev:SYN-0013-EV057",
+   "kind": "evidence",
+   "concept": "spo2",
+   "term": null,
+   "value": 93,
+   "unit": "%",
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:spo2",
+   "kind": "concept",
+   "concept": "spo2",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0013-D08:900-969",
+   "kind": "source",
+   "doc_id": "SYN-0013-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    900,
+    969
+   ],
+   "text": "SpO2 93% on room air at rest (nadir 90% at the end of the walk test)."
+  },
+  {
+   "id": "crit:NCT07190222-E04",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Unstable disorder that can impact participants safety or study outcomes",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07190222:NCT07190222-E04:r1",
+   "kind": "decision",
+   "trial_id": "NCT07190222",
+   "criterion_id": "NCT07190222-E04",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "COPD is currently stable and no unstable disorder is documented, but this is an investigator-judgment criterion.",
+   "missing_fact": "Investigator judgment on whether any unstable disorder exists",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07190222-E05",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Active or incompletely treated tuberculosis",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07190222:NCT07190222-E05:r1",
+   "kind": "decision",
+   "trial_id": "NCT07190222",
+   "criterion_id": "NCT07190222-E05",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Tuberculosis is not mentioned. Infection is excluded from blanket negation, and the CT lacks any TB statement.",
+   "missing_fact": "Any history or current diagnosis of tuberculosis",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07190222-E06",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Current or past malignancies",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07190222:NCT07190222-E06:r1",
+   "kind": "decision",
+   "trial_id": "NCT07190222",
+   "criterion_id": "NCT07190222-E06",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Explicit 'No prior malignancy'.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07190222-E07",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Concomitant therapies: long-term macrolides or phosphodiesterase Type 3 (PDE-3) or PDE-4 inhibitors unless on stable therapy for > 6 months; any biologic therapy or systemic immunosuppressant within 4 months or 5 half-lives prior to Screening The above information is not intended to contain all considerations relevant to a patient's potential participation in a clinical trial.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07190222:NCT07190222-E07:r1",
+   "kind": "decision",
+   "trial_id": "NCT07190222",
+   "criterion_id": "NCT07190222-E07",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_history_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "list_inference",
+    "pc:strict_list_inference"
+   ],
+   "note": "[inferable PASS from SYN-0013-EV077] No macrolide, roflumilast or theophylline; reconciled list shows no biologic or immunosuppressant. Only short prednisolone courses, completed.",
+   "missing_fact": null,
+   "derived_from": "SYN-0013-EV077"
+  },
+  {
+   "id": "label:NCT07190222",
+   "kind": "trial_decision",
+   "label": "potential",
+   "why": [
+    "UNKNOWN/MISSING NCT07190222-I05",
+    "UNKNOWN/UNSUPPORTED NCT07190222-I07"
+   ],
+   "by": "agent3"
+  },
+  {
+   "id": "trial:NCT07053423",
+   "kind": "trial",
+   "title": "A Study to Investigate Airway Inflammation With Dupilumab Subcutaneously in Participants Aged ≥40 to ≤85 Years With Chronic Obstructive Pulmonary Disease."
+  },
+  {
+   "id": "crit:NCT07053423-I01",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Participants with a physician diagnosis of Chronic Obstructive Pulmonary Disease (COPD) who meet the following criteria at screening:",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07053423:NCT07053423-I01:r1",
+   "kind": "decision",
+   "trial_id": "NCT07053423",
+   "criterion_id": "NCT07053423-I01",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "COPD diagnosed 2016, documented in current clinic note.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0013-EV164",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "COPD",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "src:SYN-0013-D08:3680-3829",
+   "kind": "source",
+   "doc_id": "SYN-0013-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    3680,
+    3829
+   ],
+   "text": "COPD GOLD 3, group E, frequent exacerbations despite triple inhaler therapy, currently stable with persistent dyspnea and elevated blood eosinophils."
+  },
+  {
+   "id": "crit:NCT07053423-I02",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Current or former smokers with a smoking history of >=10 pack-years",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07053423:NCT07053423-I02:r1",
+   "kind": "decision",
+   "trial_id": "NCT07053423",
+   "criterion_id": "NCT07053423-I02",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Former smoker with 50 pack-years, meets >=10.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0013-EV006",
+   "kind": "evidence",
+   "concept": "smoking",
+   "term": "ex-smoker 50 pack-years",
+   "value": true,
+   "unit": null,
+   "observed_date": "2020-01-01",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "past"
+  },
+  {
+   "id": "concept:smoking:ex-smoker 50 pack-years",
+   "kind": "concept",
+   "concept": "smoking",
+   "term": "ex-smoker 50 pack-years"
+  },
+  {
+   "id": "src:SYN-0013-D02:27-50",
+   "kind": "source",
+   "doc_id": "SYN-0013-D02",
+   "doc_type": "clinic_note",
+   "span": [
+    27,
+    50
+   ],
+   "text": "Ex-smoker 50 pack-years"
+  },
+  {
+   "id": "crit:NCT07053423-I03",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Moderate-to-severe COPD (post-BD FEV1/FVC ratio <0.70 and post-BD FEV1 % predicted >30% and <=70%)",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07053423:NCT07053423-I03:r1",
+   "kind": "decision",
+   "trial_id": "NCT07053423",
+   "criterion_id": "NCT07053423-I03",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Post-BD FEV1/FVC 0.43 <0.70; FEV1 37% predicted, within >30 and <=70, 7 days ago.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07053423-I04",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Medical Research Council Dyspnea Scale grade >=2 or COPD assessment test (CAT) score >=10",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07053423:NCT07053423-I04:r1",
+   "kind": "decision",
+   "trial_id": "NCT07053423",
+   "criterion_id": "NCT07053423-I04",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "CAT 20 (>=10) and mMRC 2 (>=2).",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0013-EV230",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "mMRC score",
+   "value": 2,
+   "unit": null,
+   "observed_date": "2026-01-20",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:symptom_finding:mmrc score",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "mMRC score"
+  },
+  {
+   "id": "src:SYN-0013-D02:140-166",
+   "kind": "source",
+   "doc_id": "SYN-0013-D02",
+   "doc_type": "clinic_note",
+   "span": [
+    140,
+    166
+   ],
+   "text": "HTN on amlodipine. mMRC 2."
+  },
+  {
+   "id": "crit:NCT07053423-I05",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Global Initiative for Chronic Obstructive Lung Disease (GOLD) category E , Frequent or severe exacerbations",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07053423:NCT07053423-I05:r1",
+   "kind": "decision",
+   "trial_id": "NCT07053423",
+   "criterion_id": "NCT07053423-I05",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "GOLD grade 3, group E documented with 2 steroid-requiring exacerbations.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0013-EV153",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "COPD GOLD grade 3 group E",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:diagnosis:copd gold grade 3 group e",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "COPD GOLD grade 3 group E"
+  },
+  {
+   "id": "src:SYN-0013-D08:3266-3288",
+   "kind": "source",
+   "doc_id": "SYN-0013-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    3266,
+    3288
+   ],
+   "text": "GOLD grade 3, group E."
+  },
+  {
+   "id": "crit:NCT07053423-I06",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Background triple therapy (ICS + LABA + LAMA) for 3 months before randomization with a stable dose of medication for >=1 month before Visit 1; dual therapy (LABA + LAMA) allowed if ICS is contraindicated",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07053423:NCT07053423-I06:r1",
+   "kind": "decision",
+   "trial_id": "NCT07053423",
+   "criterion_id": "NCT07053423-I06",
+   "status": "UNKNOWN",
+   "reason": "UNSUPPORTED",
+   "action": "med_record_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "On triple inhaler since 2022 (>3 months), continuing; stable dose not explicitly documented, though continuous use suggests it.",
+   "missing_fact": "Confirmation that triple therapy dose was stable for >=1 month before Visit 1 and ≥3 months before randomization",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07053423-I07",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Evidence of Type 2 inflammation: Participants with blood eosinophils >=300 cells/μL at screening or with blood eosinophils >=150 cells/μL at Visit 1 (screening) and with a history of blood eosinophils >=300 cells/μL within the past year during stable state (non-exacerbation).",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07053423:NCT07053423-I07:r1",
+   "kind": "decision",
+   "trial_id": "NCT07053423",
+   "criterion_id": "NCT07053423-I07",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Eosinophils 340 cells/uL at screening-time lab, 7 days ago, meets >=300.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07053423-I08",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Mucus score cutoff of >=3",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07053423:NCT07053423-I08:r1",
+   "kind": "decision",
+   "trial_id": "NCT07053423",
+   "criterion_id": "NCT07053423-I08",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "new_test",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No mucus score in the record.",
+   "missing_fact": "Mucus score (CT mucus plug score) value",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07053423-E01",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "A current diagnosis of asthma according to the Global Initiative for Asthma diagnostic (GINA) guidelines, or documented history of asthma",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07053423:NCT07053423-E01:r1",
+   "kind": "decision",
+   "trial_id": "NCT07053423",
+   "criterion_id": "NCT07053423-E01",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Explicit: no asthma diagnosis history.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07053423-E02",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Significant pulmonary disease other than COPD (eg, lung fibrosis, sarcoidosis, interstitial lung disease, pulmonary hypertension, bronchiectasis, Churg-Strauss Syndrome) or another diagnosed pulmonary or systemic disease associated with elevated peripheral eosinophil counts",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07053423:NCT07053423-E02:r1",
+   "kind": "decision",
+   "trial_id": "NCT07053423",
+   "criterion_id": "NCT07053423-E02",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation"
+   ],
+   "note": "No other pulmonary history, no bronchiectasis; eosinophilic systemic disease not mentioned but blanket denial of other history.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07053423-E03",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Treatment with oxygen >4.0 L/min for >=8 hours/day Respiratory tract infection within 4 weeks before screening, or during the screening period",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07053423:NCT07053423-E03:r1",
+   "kind": "decision",
+   "trial_id": "NCT07053423",
+   "criterion_id": "NCT07053423-E03",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No home oxygen (oxygen part passes), but respiratory infection not explicitly excluded; only no fever/purulence noted.",
+   "missing_fact": "Absence of respiratory tract infection within 4 weeks/screening period",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07053423-E04",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Diagnosis of α-1 anti-trypsin deficiency",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07053423:NCT07053423-E04:r1",
+   "kind": "decision",
+   "trial_id": "NCT07053423",
+   "criterion_id": "NCT07053423-E04",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Alpha-1 antitrypsin 135 mg/dL, normal; criterion is about this measurement.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0013-EV215",
+   "kind": "evidence",
+   "concept": "lab_other",
+   "term": "Alpha-1 antitrypsin",
+   "value": 135,
+   "unit": "mg/dL",
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:lab_other:alpha-1 antitrypsin",
+   "kind": "concept",
+   "concept": "lab_other",
+   "term": "Alpha-1 antitrypsin"
+  },
+  {
+   "id": "src:SYN-0013-D09:1247-1289",
+   "kind": "source",
+   "doc_id": "SYN-0013-D09",
+   "doc_type": "lab_result",
+   "span": [
+    1247,
+    1289
+   ],
+   "text": "Alpha-1 antitrypsin 135 mg/dL (ref 90-200)"
+  },
+  {
+   "id": "crit:NCT07053423-E05",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Any biologic therapy (including experimental treatments and dupilumab)",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07053423:NCT07053423-E05:r1",
+   "kind": "decision",
+   "trial_id": "NCT07053423",
+   "criterion_id": "NCT07053423-E05",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_history_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "list_inference",
+    "pc:strict_list_inference"
+   ],
+   "note": "[inferable PASS from SYN-0013-EV077] Reconciled current and recent medication list shows no biologic.",
+   "missing_fact": null,
+   "derived_from": "SYN-0013-EV077"
+  },
+  {
+   "id": "crit:NCT07053423-E06",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Participants on treatment with mucolytics unless on stable therapy for >6 months The above information is not intended to contain all considerations relevant to a patient's potential participation in a clinical trial.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07053423:NCT07053423-E06:r1",
+   "kind": "decision",
+   "trial_id": "NCT07053423",
+   "criterion_id": "NCT07053423-E06",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_history_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "list_inference",
+    "pc:strict_list_inference"
+   ],
+   "note": "[inferable PASS from SYN-0013-EV077] Reconciled medication list contains no mucolytic.",
+   "missing_fact": null,
+   "derived_from": "SYN-0013-EV077"
+  },
+  {
+   "id": "label:NCT07053423",
+   "kind": "trial_decision",
+   "label": "potential",
+   "why": [
+    "UNKNOWN/UNSUPPORTED NCT07053423-I06",
+    "UNKNOWN/MISSING NCT07053423-I08"
+   ],
+   "by": "agent3"
+  }
+ ],
+ "edges": [
+  [
+   "trial:NCT06883305",
+   "has_criterion",
+   "crit:NCT06883305-I01"
+  ],
+  [
+   "crit:NCT06883305-I01",
+   "decided_as",
+   "dec:NCT06883305:NCT06883305-I01:r1"
+  ],
+  [
+   "crit:NCT06883305-I01",
+   "requires",
+   "concept:birth_date"
+  ],
+  [
+   "concept:birth_date",
+   "observed_as",
+   "ev:SYN-0013-EV002"
+  ],
+  [
+   "ev:SYN-0013-EV002",
+   "derived_from",
+   "src:SYN-0013-D01:6-21"
+  ],
+  [
+   "ev:SYN-0013-EV002",
+   "supports",
+   "dec:NCT06883305:NCT06883305-I01:r1"
+  ],
+  [
+   "calc:NCT06883305:NCT06883305-I01",
+   "computes",
+   "dec:NCT06883305:NCT06883305-I01:r1"
+  ],
+  [
+   "trial:NCT06883305",
+   "has_criterion",
+   "crit:NCT06883305-I02"
+  ],
+  [
+   "crit:NCT06883305-I02",
+   "decided_as",
+   "dec:NCT06883305:NCT06883305-I02:r1"
+  ],
+  [
+   "crit:NCT06883305-I02",
+   "requires",
+   "concept:diagnosis:copd"
+  ],
+  [
+   "concept:diagnosis:copd",
+   "observed_as",
+   "ev:SYN-0013-EV005"
+  ],
+  [
+   "ev:SYN-0013-EV005",
+   "derived_from",
+   "src:SYN-0013-D02:13-26"
+  ],
+  [
+   "ev:SYN-0013-EV005",
+   "supports",
+   "dec:NCT06883305:NCT06883305-I02:r1"
+  ],
+  [
+   "concept:diagnosis:copd",
+   "observed_as",
+   "ev:SYN-0013-EV033"
+  ],
+  [
+   "ev:SYN-0013-EV033",
+   "derived_from",
+   "src:SYN-0013-D08:111-146"
+  ],
+  [
+   "ev:SYN-0013-EV033",
+   "supports",
+   "dec:NCT06883305:NCT06883305-I02:r1"
+  ],
+  [
+   "trial:NCT06883305",
+   "has_criterion",
+   "crit:NCT06883305-I03"
+  ],
+  [
+   "crit:NCT06883305-I03",
+   "decided_as",
+   "dec:NCT06883305:NCT06883305-I03:r1"
+  ],
+  [
+   "crit:NCT06883305-I03",
+   "requires",
+   "concept:fev1"
+  ],
+  [
+   "concept:fev1",
+   "observed_as",
+   "ev:SYN-0013-EV245"
+  ],
+  [
+   "ev:SYN-0013-EV245",
+   "derived_from",
+   "src:SYN-0013-D08:3117-3170"
+  ],
+  [
+   "ev:SYN-0013-EV245",
+   "supports",
+   "dec:NCT06883305:NCT06883305-I03:r1"
+  ],
+  [
+   "crit:NCT06883305-I03",
+   "requires",
+   "concept:fev1_fvc_ratio"
+  ],
+  [
+   "concept:fev1_fvc_ratio",
+   "observed_as",
+   "ev:SYN-0013-EV247"
+  ],
+  [
+   "ev:SYN-0013-EV247",
+   "derived_from",
+   "src:SYN-0013-D08:3184-3198"
+  ],
+  [
+   "ev:SYN-0013-EV247",
+   "supports",
+   "dec:NCT06883305:NCT06883305-I03:r1"
+  ],
+  [
+   "trial:NCT06883305",
+   "has_criterion",
+   "crit:NCT06883305-I04"
+  ],
+  [
+   "crit:NCT06883305-I04",
+   "decided_as",
+   "dec:NCT06883305:NCT06883305-I04:r1"
+  ],
+  [
+   "crit:NCT06883305-I04",
+   "requires",
+   "concept:medication:budesonide/glycopyrronium/formoterol inhaler 2 puffs bid"
+  ],
+  [
+   "concept:medication:budesonide/glycopyrronium/formoterol inhaler 2 puffs bid",
+   "observed_as",
+   "ev:SYN-0013-EV078"
+  ],
+  [
+   "ev:SYN-0013-EV078",
+   "derived_from",
+   "src:SYN-0013-D08:1417-1486"
+  ],
+  [
+   "ev:SYN-0013-EV078",
+   "supports",
+   "dec:NCT06883305:NCT06883305-I04:r1"
+  ],
+  [
+   "crit:NCT06883305-I04",
+   "requires",
+   "concept:medication:triple inhaler therapy"
+  ],
+  [
+   "concept:medication:triple inhaler therapy",
+   "observed_as",
+   "ev:SYN-0013-EV036"
+  ],
+  [
+   "ev:SYN-0013-EV036",
+   "derived_from",
+   "src:SYN-0013-D08:198-224"
+  ],
+  [
+   "ev:SYN-0013-EV036",
+   "supports",
+   "dec:NCT06883305:NCT06883305-I04:r1"
+  ],
+  [
+   "trial:NCT06883305",
+   "has_criterion",
+   "crit:NCT06883305-I05"
+  ],
+  [
+   "crit:NCT06883305-I05",
+   "decided_as",
+   "dec:NCT06883305:NCT06883305-I05:r1"
+  ],
+  [
+   "crit:NCT06883305-I05",
+   "requires",
+   "concept:symptom_finding:copd exacerbations in past 12 months: 2 requiring oral steroids (1 with hospitalization)"
+  ],
+  [
+   "concept:symptom_finding:copd exacerbations in past 12 months: 2 requiring oral steroids (1 with hospitalization)",
+   "observed_as",
+   "ev:SYN-0013-EV155"
+  ],
+  [
+   "ev:SYN-0013-EV155",
+   "derived_from",
+   "src:SYN-0013-D08:3289-3389"
+  ],
+  [
+   "ev:SYN-0013-EV155",
+   "supports",
+   "dec:NCT06883305:NCT06883305-I05:r1"
+  ],
+  [
+   "crit:NCT06883305-I05",
+   "requires",
+   "concept:diagnosis:copd exacerbation"
+  ],
+  [
+   "concept:diagnosis:copd exacerbation",
+   "observed_as",
+   "ev:SYN-0013-EV037"
+  ],
+  [
+   "ev:SYN-0013-EV037",
+   "derived_from",
+   "src:SYN-0013-D08:225-488"
+  ],
+  [
+   "ev:SYN-0013-EV037",
+   "supports",
+   "dec:NCT06883305:NCT06883305-I05:r1"
+  ],
+  [
+   "crit:NCT06883305-I05",
+   "requires",
+   "concept:medication:prednisolone 30 mg x5 days"
+  ],
+  [
+   "concept:medication:prednisolone 30 mg x5 days",
+   "observed_as",
+   "ev:SYN-0013-EV082"
+  ],
+  [
+   "ev:SYN-0013-EV082",
+   "derived_from",
+   "src:SYN-0013-D08:1595-1689"
+  ],
+  [
+   "ev:SYN-0013-EV082",
+   "supports",
+   "dec:NCT06883305:NCT06883305-I05:r1"
+  ],
+  [
+   "crit:NCT06883305-I05",
+   "requires",
+   "concept:medication:budesonide/glycopyrronium/formoterol inhaler 2 puffs bid"
+  ],
+  [
+   "ev:SYN-0013-EV078",
+   "supports",
+   "dec:NCT06883305:NCT06883305-I05:r1"
+  ],
+  [
+   "trial:NCT06883305",
+   "has_criterion",
+   "crit:NCT06883305-I06"
+  ],
+  [
+   "crit:NCT06883305-I06",
+   "decided_as",
+   "dec:NCT06883305:NCT06883305-I06:r1"
+  ],
+  [
+   "crit:NCT06883305-I06",
+   "requires",
+   "concept:eosinophil_count"
+  ],
+  [
+   "concept:eosinophil_count",
+   "observed_as",
+   "ev:SYN-0013-EV265"
+  ],
+  [
+   "ev:SYN-0013-EV265",
+   "derived_from",
+   "src:SYN-0013-D09:364-404"
+  ],
+  [
+   "ev:SYN-0013-EV265",
+   "supports",
+   "dec:NCT06883305:NCT06883305-I06:r1"
+  ],
+  [
+   "calc:NCT06883305:NCT06883305-I06",
+   "computes",
+   "dec:NCT06883305:NCT06883305-I06:r1"
+  ],
+  [
+   "trial:NCT06883305",
+   "has_criterion",
+   "crit:NCT06883305-I07"
+  ],
+  [
+   "crit:NCT06883305-I07",
+   "decided_as",
+   "dec:NCT06883305:NCT06883305-I07:r1"
+  ],
+  [
+   "crit:NCT06883305-I07",
+   "requires",
+   "concept:cat_score"
+  ],
+  [
+   "concept:cat_score",
+   "observed_as",
+   "ev:SYN-0013-EV156"
+  ],
+  [
+   "ev:SYN-0013-EV156",
+   "derived_from",
+   "src:SYN-0013-D08:3398-3421"
+  ],
+  [
+   "ev:SYN-0013-EV156",
+   "supports",
+   "dec:NCT06883305:NCT06883305-I07:r1"
+  ],
+  [
+   "calc:NCT06883305:NCT06883305-I07",
+   "computes",
+   "dec:NCT06883305:NCT06883305-I07:r1"
+  ],
+  [
+   "trial:NCT06883305",
+   "has_criterion",
+   "crit:NCT06883305-I08"
+  ],
+  [
+   "crit:NCT06883305-I08",
+   "decided_as",
+   "dec:NCT06883305:NCT06883305-I08:r1"
+  ],
+  [
+   "crit:NCT06883305-I08",
+   "requires",
+   "concept:smoking:pack-years"
+  ],
+  [
+   "concept:smoking:pack-years",
+   "observed_as",
+   "ev:SYN-0013-EV093"
+  ],
+  [
+   "ev:SYN-0013-EV093",
+   "derived_from",
+   "src:SYN-0013-D08:1918-1931"
+  ],
+  [
+   "ev:SYN-0013-EV093",
+   "supports",
+   "dec:NCT06883305:NCT06883305-I08:r1"
+  ],
+  [
+   "crit:NCT06883305-I08",
+   "requires",
+   "concept:smoking"
+  ],
+  [
+   "concept:smoking",
+   "observed_as",
+   "ev:SYN-0013-EV092"
+  ],
+  [
+   "ev:SYN-0013-EV092",
+   "derived_from",
+   "src:SYN-0013-D08:1907-1916"
+  ],
+  [
+   "ev:SYN-0013-EV092",
+   "supports",
+   "dec:NCT06883305:NCT06883305-I08:r1"
+  ],
+  [
+   "trial:NCT06883305",
+   "has_criterion",
+   "crit:NCT06883305-E01"
+  ],
+  [
+   "crit:NCT06883305-E01",
+   "decided_as",
+   "dec:NCT06883305:NCT06883305-E01:r1"
+  ],
+  [
+   "crit:NCT06883305-E01",
+   "requires",
+   "concept:diagnosis:other pulmonary history"
+  ],
+  [
+   "concept:diagnosis:other pulmonary history",
+   "observed_as",
+   "ev:SYN-0013-EV063"
+  ],
+  [
+   "ev:SYN-0013-EV063",
+   "derived_from",
+   "src:SYN-0013-D08:1072-1161"
+  ],
+  [
+   "ev:SYN-0013-EV063",
+   "supports",
+   "dec:NCT06883305:NCT06883305-E01:r1"
+  ],
+  [
+   "crit:NCT06883305-E01",
+   "requires",
+   "concept:diagnosis:bronchiectasis"
+  ],
+  [
+   "concept:diagnosis:bronchiectasis",
+   "observed_as",
+   "ev:SYN-0013-EV070"
+  ],
+  [
+   "ev:SYN-0013-EV070",
+   "derived_from",
+   "src:SYN-0013-D08:1175-1193"
+  ],
+  [
+   "ev:SYN-0013-EV070",
+   "supports",
+   "dec:NCT06883305:NCT06883305-E01:r1"
+  ],
+  [
+   "concept:diagnosis:bronchiectasis",
+   "observed_as",
+   "ev:SYN-0013-EV161"
+  ],
+  [
+   "ev:SYN-0013-EV161",
+   "derived_from",
+   "src:SYN-0013-D08:3563-3633"
+  ],
+  [
+   "ev:SYN-0013-EV161",
+   "supports",
+   "dec:NCT06883305:NCT06883305-E01:r1"
+  ],
+  [
+   "trial:NCT06883305",
+   "has_criterion",
+   "crit:NCT06883305-E02"
+  ],
+  [
+   "crit:NCT06883305-E02",
+   "decided_as",
+   "dec:NCT06883305:NCT06883305-E02:r1"
+  ],
+  [
+   "crit:NCT06883305-E02",
+   "requires",
+   "concept:diagnosis:asthma"
+  ],
+  [
+   "concept:diagnosis:asthma",
+   "observed_as",
+   "ev:SYN-0013-EV072"
+  ],
+  [
+   "ev:SYN-0013-EV072",
+   "derived_from",
+   "src:SYN-0013-D08:1215-1259"
+  ],
+  [
+   "ev:SYN-0013-EV072",
+   "supports",
+   "dec:NCT06883305:NCT06883305-E02:r1"
+  ],
+  [
+   "trial:NCT06883305",
+   "has_criterion",
+   "crit:NCT06883305-E03"
+  ],
+  [
+   "crit:NCT06883305-E03",
+   "decided_as",
+   "dec:NCT06883305:NCT06883305-E03:r1"
+  ],
+  [
+   "trial:NCT06883305",
+   "has_criterion",
+   "crit:NCT06883305-E04"
+  ],
+  [
+   "crit:NCT06883305-E04",
+   "decided_as",
+   "dec:NCT06883305:NCT06883305-E04:r1"
+  ],
+  [
+   "trial:NCT06883305",
+   "has_criterion",
+   "crit:NCT06883305-E05"
+  ],
+  [
+   "crit:NCT06883305-E05",
+   "decided_as",
+   "dec:NCT06883305:NCT06883305-E05:r1"
+  ],
+  [
+   "crit:NCT06883305-E05",
+   "requires",
+   "concept:diagnosis:malignancy"
+  ],
+  [
+   "concept:diagnosis:malignancy",
+   "observed_as",
+   "ev:SYN-0013-EV071"
+  ],
+  [
+   "ev:SYN-0013-EV071",
+   "derived_from",
+   "src:SYN-0013-D08:1194-1214"
+  ],
+  [
+   "ev:SYN-0013-EV071",
+   "supports",
+   "dec:NCT06883305:NCT06883305-E05:r1"
+  ],
+  [
+   "trial:NCT06883305",
+   "has_criterion",
+   "crit:NCT06883305-E06"
+  ],
+  [
+   "crit:NCT06883305-E06",
+   "decided_as",
+   "dec:NCT06883305:NCT06883305-E06:r1"
+  ],
+  [
+   "trial:NCT06883305",
+   "labelled",
+   "label:NCT06883305"
+  ],
+  [
+   "trial:NCT07190222",
+   "has_criterion",
+   "crit:NCT07190222-I01"
+  ],
+  [
+   "crit:NCT07190222-I01",
+   "decided_as",
+   "dec:NCT07190222:NCT07190222-I01:r1"
+  ],
+  [
+   "crit:NCT07190222-I01",
+   "requires",
+   "concept:birth_date"
+  ],
+  [
+   "ev:SYN-0013-EV002",
+   "supports",
+   "dec:NCT07190222:NCT07190222-I01:r1"
+  ],
+  [
+   "calc:NCT07190222:NCT07190222-I01",
+   "computes",
+   "dec:NCT07190222:NCT07190222-I01:r1"
+  ],
+  [
+   "trial:NCT07190222",
+   "has_criterion",
+   "crit:NCT07190222-I02"
+  ],
+  [
+   "crit:NCT07190222-I02",
+   "decided_as",
+   "dec:NCT07190222:NCT07190222-I02:r1"
+  ],
+  [
+   "crit:NCT07190222-I02",
+   "requires",
+   "concept:diagnosis:copd"
+  ],
+  [
+   "ev:SYN-0013-EV005",
+   "supports",
+   "dec:NCT07190222:NCT07190222-I02:r1"
+  ],
+  [
+   "ev:SYN-0013-EV033",
+   "supports",
+   "dec:NCT07190222:NCT07190222-I02:r1"
+  ],
+  [
+   "trial:NCT07190222",
+   "has_criterion",
+   "crit:NCT07190222-I03"
+  ],
+  [
+   "crit:NCT07190222-I03",
+   "decided_as",
+   "dec:NCT07190222:NCT07190222-I03:r1"
+  ],
+  [
+   "crit:NCT07190222-I03",
+   "requires",
+   "concept:fev1"
+  ],
+  [
+   "ev:SYN-0013-EV245",
+   "supports",
+   "dec:NCT07190222:NCT07190222-I03:r1"
+  ],
+  [
+   "crit:NCT07190222-I03",
+   "requires",
+   "concept:fev1_fvc_ratio"
+  ],
+  [
+   "ev:SYN-0013-EV247",
+   "supports",
+   "dec:NCT07190222:NCT07190222-I03:r1"
+  ],
+  [
+   "trial:NCT07190222",
+   "has_criterion",
+   "crit:NCT07190222-I04"
+  ],
+  [
+   "crit:NCT07190222-I04",
+   "decided_as",
+   "dec:NCT07190222:NCT07190222-I04:r1"
+  ],
+  [
+   "crit:NCT07190222-I04",
+   "requires",
+   "concept:smoking:pack-years"
+  ],
+  [
+   "ev:SYN-0013-EV093",
+   "supports",
+   "dec:NCT07190222:NCT07190222-I04:r1"
+  ],
+  [
+   "crit:NCT07190222-I04",
+   "requires",
+   "concept:smoking"
+  ],
+  [
+   "ev:SYN-0013-EV092",
+   "supports",
+   "dec:NCT07190222:NCT07190222-I04:r1"
+  ],
+  [
+   "trial:NCT07190222",
+   "has_criterion",
+   "crit:NCT07190222-I05"
+  ],
+  [
+   "crit:NCT07190222-I05",
+   "decided_as",
+   "dec:NCT07190222:NCT07190222-I05:r1"
+  ],
+  [
+   "trial:NCT07190222",
+   "has_criterion",
+   "crit:NCT07190222-I06"
+  ],
+  [
+   "crit:NCT07190222-I06",
+   "decided_as",
+   "dec:NCT07190222:NCT07190222-I06:r1"
+  ],
+  [
+   "crit:NCT07190222-I06",
+   "requires",
+   "concept:symptom_finding:copd exacerbations in past 12 months: 2 requiring oral steroids (1 with hospitalization)"
+  ],
+  [
+   "ev:SYN-0013-EV155",
+   "supports",
+   "dec:NCT07190222:NCT07190222-I06:r1"
+  ],
+  [
+   "crit:NCT07190222-I06",
+   "requires",
+   "concept:diagnosis:copd exacerbation"
+  ],
+  [
+   "ev:SYN-0013-EV037",
+   "supports",
+   "dec:NCT07190222:NCT07190222-I06:r1"
+  ],
+  [
+   "concept:diagnosis:copd exacerbation",
+   "observed_as",
+   "ev:SYN-0013-EV083"
+  ],
+  [
+   "ev:SYN-0013-EV083",
+   "derived_from",
+   "src:SYN-0013-D08:1595-1689"
+  ],
+  [
+   "ev:SYN-0013-EV083",
+   "supports",
+   "dec:NCT07190222:NCT07190222-I06:r1"
+  ],
+  [
+   "trial:NCT07190222",
+   "has_criterion",
+   "crit:NCT07190222-I07"
+  ],
+  [
+   "crit:NCT07190222-I07",
+   "decided_as",
+   "dec:NCT07190222:NCT07190222-I07:r1"
+  ],
+  [
+   "crit:NCT07190222-I07",
+   "requires",
+   "concept:medication:budesonide/glycopyrronium/formoterol inhaler 2 puffs bid"
+  ],
+  [
+   "ev:SYN-0013-EV078",
+   "insufficient_for",
+   "dec:NCT07190222:NCT07190222-I07:r1"
+  ],
+  [
+   "crit:NCT07190222-I07",
+   "requires",
+   "concept:medication:triple inhaler therapy"
+  ],
+  [
+   "ev:SYN-0013-EV036",
+   "insufficient_for",
+   "dec:NCT07190222:NCT07190222-I07:r1"
+  ],
+  [
+   "trial:NCT07190222",
+   "has_criterion",
+   "crit:NCT07190222-I08"
+  ],
+  [
+   "crit:NCT07190222-I08",
+   "decided_as",
+   "dec:NCT07190222:NCT07190222-I08:r1"
+  ],
+  [
+   "crit:NCT07190222-I08",
+   "requires",
+   "concept:eosinophil_count"
+  ],
+  [
+   "ev:SYN-0013-EV265",
+   "supports",
+   "dec:NCT07190222:NCT07190222-I08:r1"
+  ],
+  [
+   "calc:NCT07190222:NCT07190222-I08",
+   "computes",
+   "dec:NCT07190222:NCT07190222-I08:r1"
+  ],
+  [
+   "trial:NCT07190222",
+   "has_criterion",
+   "crit:NCT07190222-I09"
+  ],
+  [
+   "crit:NCT07190222-I09",
+   "decided_as",
+   "dec:NCT07190222:NCT07190222-I09:r1"
+  ],
+  [
+   "crit:NCT07190222-I09",
+   "requires",
+   "concept:bmi"
+  ],
+  [
+   "concept:bmi",
+   "observed_as",
+   "ev:SYN-0013-EV052"
+  ],
+  [
+   "ev:SYN-0013-EV052",
+   "derived_from",
+   "src:SYN-0013-D08:825-840"
+  ],
+  [
+   "ev:SYN-0013-EV052",
+   "supports",
+   "dec:NCT07190222:NCT07190222-I09:r1"
+  ],
+  [
+   "calc:NCT07190222:NCT07190222-I09",
+   "computes",
+   "dec:NCT07190222:NCT07190222-I09:r1"
+  ],
+  [
+   "trial:NCT07190222",
+   "has_criterion",
+   "crit:NCT07190222-E01"
+  ],
+  [
+   "crit:NCT07190222-E01",
+   "decided_as",
+   "dec:NCT07190222:NCT07190222-E01:r1"
+  ],
+  [
+   "crit:NCT07190222-E01",
+   "requires",
+   "concept:diagnosis:asthma"
+  ],
+  [
+   "ev:SYN-0013-EV072",
+   "supports",
+   "dec:NCT07190222:NCT07190222-E01:r1"
+  ],
+  [
+   "trial:NCT07190222",
+   "has_criterion",
+   "crit:NCT07190222-E02"
+  ],
+  [
+   "crit:NCT07190222-E02",
+   "decided_as",
+   "dec:NCT07190222:NCT07190222-E02:r1"
+  ],
+  [
+   "crit:NCT07190222-E02",
+   "requires",
+   "concept:diagnosis:other pulmonary history"
+  ],
+  [
+   "ev:SYN-0013-EV063",
+   "supports",
+   "dec:NCT07190222:NCT07190222-E02:r1"
+  ],
+  [
+   "crit:NCT07190222-E02",
+   "requires",
+   "concept:diagnosis:bronchiectasis"
+  ],
+  [
+   "ev:SYN-0013-EV070",
+   "supports",
+   "dec:NCT07190222:NCT07190222-E02:r1"
+  ],
+  [
+   "trial:NCT07190222",
+   "has_criterion",
+   "crit:NCT07190222-E03"
+  ],
+  [
+   "crit:NCT07190222-E03",
+   "decided_as",
+   "dec:NCT07190222:NCT07190222-E03:r1"
+  ],
+  [
+   "crit:NCT07190222-E03",
+   "requires",
+   "concept:medication:home oxygen"
+  ],
+  [
+   "concept:medication:home oxygen",
+   "observed_as",
+   "ev:SYN-0013-EV087"
+  ],
+  [
+   "ev:SYN-0013-EV087",
+   "derived_from",
+   "src:SYN-0013-D08:1793-1808"
+  ],
+  [
+   "ev:SYN-0013-EV087",
+   "supports",
+   "dec:NCT07190222:NCT07190222-E03:r1"
+  ],
+  [
+   "crit:NCT07190222-E03",
+   "requires",
+   "concept:spo2"
+  ],
+  [
+   "concept:spo2",
+   "observed_as",
+   "ev:SYN-0013-EV057"
+  ],
+  [
+   "ev:SYN-0013-EV057",
+   "derived_from",
+   "src:SYN-0013-D08:900-969"
+  ],
+  [
+   "ev:SYN-0013-EV057",
+   "supports",
+   "dec:NCT07190222:NCT07190222-E03:r1"
+  ],
+  [
+   "trial:NCT07190222",
+   "has_criterion",
+   "crit:NCT07190222-E04"
+  ],
+  [
+   "crit:NCT07190222-E04",
+   "decided_as",
+   "dec:NCT07190222:NCT07190222-E04:r1"
+  ],
+  [
+   "trial:NCT07190222",
+   "has_criterion",
+   "crit:NCT07190222-E05"
+  ],
+  [
+   "crit:NCT07190222-E05",
+   "decided_as",
+   "dec:NCT07190222:NCT07190222-E05:r1"
+  ],
+  [
+   "trial:NCT07190222",
+   "has_criterion",
+   "crit:NCT07190222-E06"
+  ],
+  [
+   "crit:NCT07190222-E06",
+   "decided_as",
+   "dec:NCT07190222:NCT07190222-E06:r1"
+  ],
+  [
+   "crit:NCT07190222-E06",
+   "requires",
+   "concept:diagnosis:malignancy"
+  ],
+  [
+   "ev:SYN-0013-EV071",
+   "supports",
+   "dec:NCT07190222:NCT07190222-E06:r1"
+  ],
+  [
+   "trial:NCT07190222",
+   "has_criterion",
+   "crit:NCT07190222-E07"
+  ],
+  [
+   "crit:NCT07190222-E07",
+   "decided_as",
+   "dec:NCT07190222:NCT07190222-E07:r1"
+  ],
+  [
+   "trial:NCT07190222",
+   "labelled",
+   "label:NCT07190222"
+  ],
+  [
+   "trial:NCT07053423",
+   "has_criterion",
+   "crit:NCT07053423-I01"
+  ],
+  [
+   "crit:NCT07053423-I01",
+   "decided_as",
+   "dec:NCT07053423:NCT07053423-I01:r1"
+  ],
+  [
+   "crit:NCT07053423-I01",
+   "requires",
+   "concept:diagnosis:copd"
+  ],
+  [
+   "ev:SYN-0013-EV033",
+   "supports",
+   "dec:NCT07053423:NCT07053423-I01:r1"
+  ],
+  [
+   "concept:diagnosis:copd",
+   "observed_as",
+   "ev:SYN-0013-EV164"
+  ],
+  [
+   "ev:SYN-0013-EV164",
+   "derived_from",
+   "src:SYN-0013-D08:3680-3829"
+  ],
+  [
+   "ev:SYN-0013-EV164",
+   "supports",
+   "dec:NCT07053423:NCT07053423-I01:r1"
+  ],
+  [
+   "trial:NCT07053423",
+   "has_criterion",
+   "crit:NCT07053423-I02"
+  ],
+  [
+   "crit:NCT07053423-I02",
+   "decided_as",
+   "dec:NCT07053423:NCT07053423-I02:r1"
+  ],
+  [
+   "crit:NCT07053423-I02",
+   "requires",
+   "concept:smoking:ex-smoker 50 pack-years"
+  ],
+  [
+   "concept:smoking:ex-smoker 50 pack-years",
+   "observed_as",
+   "ev:SYN-0013-EV006"
+  ],
+  [
+   "ev:SYN-0013-EV006",
+   "derived_from",
+   "src:SYN-0013-D02:27-50"
+  ],
+  [
+   "ev:SYN-0013-EV006",
+   "supports",
+   "dec:NCT07053423:NCT07053423-I02:r1"
+  ],
+  [
+   "crit:NCT07053423-I02",
+   "requires",
+   "concept:smoking:pack-years"
+  ],
+  [
+   "ev:SYN-0013-EV093",
+   "supports",
+   "dec:NCT07053423:NCT07053423-I02:r1"
+  ],
+  [
+   "trial:NCT07053423",
+   "has_criterion",
+   "crit:NCT07053423-I03"
+  ],
+  [
+   "crit:NCT07053423-I03",
+   "decided_as",
+   "dec:NCT07053423:NCT07053423-I03:r1"
+  ],
+  [
+   "crit:NCT07053423-I03",
+   "requires",
+   "concept:fev1"
+  ],
+  [
+   "ev:SYN-0013-EV245",
+   "supports",
+   "dec:NCT07053423:NCT07053423-I03:r1"
+  ],
+  [
+   "crit:NCT07053423-I03",
+   "requires",
+   "concept:fev1_fvc_ratio"
+  ],
+  [
+   "ev:SYN-0013-EV247",
+   "supports",
+   "dec:NCT07053423:NCT07053423-I03:r1"
+  ],
+  [
+   "trial:NCT07053423",
+   "has_criterion",
+   "crit:NCT07053423-I04"
+  ],
+  [
+   "crit:NCT07053423-I04",
+   "decided_as",
+   "dec:NCT07053423:NCT07053423-I04:r1"
+  ],
+  [
+   "crit:NCT07053423-I04",
+   "requires",
+   "concept:cat_score"
+  ],
+  [
+   "ev:SYN-0013-EV156",
+   "supports",
+   "dec:NCT07053423:NCT07053423-I04:r1"
+  ],
+  [
+   "crit:NCT07053423-I04",
+   "requires",
+   "concept:symptom_finding:mmrc score"
+  ],
+  [
+   "concept:symptom_finding:mmrc score",
+   "observed_as",
+   "ev:SYN-0013-EV230"
+  ],
+  [
+   "ev:SYN-0013-EV230",
+   "derived_from",
+   "src:SYN-0013-D02:140-166"
+  ],
+  [
+   "ev:SYN-0013-EV230",
+   "supports",
+   "dec:NCT07053423:NCT07053423-I04:r1"
+  ],
+  [
+   "trial:NCT07053423",
+   "has_criterion",
+   "crit:NCT07053423-I05"
+  ],
+  [
+   "crit:NCT07053423-I05",
+   "decided_as",
+   "dec:NCT07053423:NCT07053423-I05:r1"
+  ],
+  [
+   "crit:NCT07053423-I05",
+   "requires",
+   "concept:diagnosis:copd gold grade 3 group e"
+  ],
+  [
+   "concept:diagnosis:copd gold grade 3 group e",
+   "observed_as",
+   "ev:SYN-0013-EV153"
+  ],
+  [
+   "ev:SYN-0013-EV153",
+   "derived_from",
+   "src:SYN-0013-D08:3266-3288"
+  ],
+  [
+   "ev:SYN-0013-EV153",
+   "supports",
+   "dec:NCT07053423:NCT07053423-I05:r1"
+  ],
+  [
+   "crit:NCT07053423-I05",
+   "requires",
+   "concept:symptom_finding:copd exacerbations in past 12 months: 2 requiring oral steroids (1 with hospitalization)"
+  ],
+  [
+   "ev:SYN-0013-EV155",
+   "supports",
+   "dec:NCT07053423:NCT07053423-I05:r1"
+  ],
+  [
+   "trial:NCT07053423",
+   "has_criterion",
+   "crit:NCT07053423-I06"
+  ],
+  [
+   "crit:NCT07053423-I06",
+   "decided_as",
+   "dec:NCT07053423:NCT07053423-I06:r1"
+  ],
+  [
+   "crit:NCT07053423-I06",
+   "requires",
+   "concept:medication:budesonide/glycopyrronium/formoterol inhaler 2 puffs bid"
+  ],
+  [
+   "ev:SYN-0013-EV078",
+   "insufficient_for",
+   "dec:NCT07053423:NCT07053423-I06:r1"
+  ],
+  [
+   "crit:NCT07053423-I06",
+   "requires",
+   "concept:medication:triple inhaler therapy"
+  ],
+  [
+   "ev:SYN-0013-EV036",
+   "insufficient_for",
+   "dec:NCT07053423:NCT07053423-I06:r1"
+  ],
+  [
+   "trial:NCT07053423",
+   "has_criterion",
+   "crit:NCT07053423-I07"
+  ],
+  [
+   "crit:NCT07053423-I07",
+   "decided_as",
+   "dec:NCT07053423:NCT07053423-I07:r1"
+  ],
+  [
+   "crit:NCT07053423-I07",
+   "requires",
+   "concept:eosinophil_count"
+  ],
+  [
+   "ev:SYN-0013-EV265",
+   "supports",
+   "dec:NCT07053423:NCT07053423-I07:r1"
+  ],
+  [
+   "trial:NCT07053423",
+   "has_criterion",
+   "crit:NCT07053423-I08"
+  ],
+  [
+   "crit:NCT07053423-I08",
+   "decided_as",
+   "dec:NCT07053423:NCT07053423-I08:r1"
+  ],
+  [
+   "trial:NCT07053423",
+   "has_criterion",
+   "crit:NCT07053423-E01"
+  ],
+  [
+   "crit:NCT07053423-E01",
+   "decided_as",
+   "dec:NCT07053423:NCT07053423-E01:r1"
+  ],
+  [
+   "crit:NCT07053423-E01",
+   "requires",
+   "concept:diagnosis:asthma"
+  ],
+  [
+   "ev:SYN-0013-EV072",
+   "supports",
+   "dec:NCT07053423:NCT07053423-E01:r1"
+  ],
+  [
+   "trial:NCT07053423",
+   "has_criterion",
+   "crit:NCT07053423-E02"
+  ],
+  [
+   "crit:NCT07053423-E02",
+   "decided_as",
+   "dec:NCT07053423:NCT07053423-E02:r1"
+  ],
+  [
+   "crit:NCT07053423-E02",
+   "requires",
+   "concept:diagnosis:other pulmonary history"
+  ],
+  [
+   "ev:SYN-0013-EV063",
+   "supports",
+   "dec:NCT07053423:NCT07053423-E02:r1"
+  ],
+  [
+   "crit:NCT07053423-E02",
+   "requires",
+   "concept:diagnosis:bronchiectasis"
+  ],
+  [
+   "ev:SYN-0013-EV070",
+   "supports",
+   "dec:NCT07053423:NCT07053423-E02:r1"
+  ],
+  [
+   "trial:NCT07053423",
+   "has_criterion",
+   "crit:NCT07053423-E03"
+  ],
+  [
+   "crit:NCT07053423-E03",
+   "decided_as",
+   "dec:NCT07053423:NCT07053423-E03:r1"
+  ],
+  [
+   "trial:NCT07053423",
+   "has_criterion",
+   "crit:NCT07053423-E04"
+  ],
+  [
+   "crit:NCT07053423-E04",
+   "decided_as",
+   "dec:NCT07053423:NCT07053423-E04:r1"
+  ],
+  [
+   "crit:NCT07053423-E04",
+   "requires",
+   "concept:lab_other:alpha-1 antitrypsin"
+  ],
+  [
+   "concept:lab_other:alpha-1 antitrypsin",
+   "observed_as",
+   "ev:SYN-0013-EV215"
+  ],
+  [
+   "ev:SYN-0013-EV215",
+   "derived_from",
+   "src:SYN-0013-D09:1247-1289"
+  ],
+  [
+   "ev:SYN-0013-EV215",
+   "supports",
+   "dec:NCT07053423:NCT07053423-E04:r1"
+  ],
+  [
+   "trial:NCT07053423",
+   "has_criterion",
+   "crit:NCT07053423-E05"
+  ],
+  [
+   "crit:NCT07053423-E05",
+   "decided_as",
+   "dec:NCT07053423:NCT07053423-E05:r1"
+  ],
+  [
+   "trial:NCT07053423",
+   "has_criterion",
+   "crit:NCT07053423-E06"
+  ],
+  [
+   "crit:NCT07053423-E06",
+   "decided_as",
+   "dec:NCT07053423:NCT07053423-E06:r1"
+  ],
+  [
+   "trial:NCT07053423",
+   "labelled",
+   "label:NCT07053423"
+  ]
+ ]
+}

@@ -1,0 +1,203 @@
+{
+ "patient_id": "SYN-2929",
+ "as_of": "2026-10-01",
+ "audience": "clinician",
+ "graph_file": "SYN-2929.json",
+ "ranking": [
+  "NCT07018323"
+ ],
+ "also_mentioned": [],
+ "sentences": [
+  {
+   "text": "환자 SYN-2929, 기준일 2026-10-01",
+   "refs": [],
+   "kind": "meta"
+  },
+  {
+   "text": "1. NCT07018323 A Study to Assess the Efficacy, Safety, and Tolerability of IMVT-1402 as Treatment for Adult Participants With Graves' Disease",
+   "refs": [
+    "trial:NCT07018323"
+   ],
+   "kind": "heading"
+  },
+  {
+   "text": "시험 판정: potential (남은 항목 5개)",
+   "refs": [
+    "label:NCT07018323"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "국내 모집 기관 8곳",
+   "refs": [
+    "trial:NCT07018323"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "Arms — EXPERIMENTAL: Drug: IMVT-1402; EXPERIMENTAL: Drug: IMVT-1402; PLACEBO_COMPARATOR: Drug: Placebo",
+   "refs": [
+    "trial:NCT07018323"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07018323-I01 [inclusion] 미확인 (기록 없음) → 다음: patient_question",
+   "refs": [
+    "crit:NCT07018323-I01",
+    "dec:NCT07018323:NCT07018323-I01:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07018323-I02 [inclusion] 충족",
+   "refs": [
+    "crit:NCT07018323-I02",
+    "dec:NCT07018323:NCT07018323-I02:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"DOB 1997-03-14.\" (SYN-2929-D01, 2026-09-08)",
+   "refs": [
+    "ev:SYN-2929-EV002",
+    "src:SYN-2929-D01:8-23"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   계산: age_at_as_of = 29.55 (범위 18.0~None)",
+   "refs": [
+    "calc:NCT07018323:NCT07018323-I02"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07018323-I03 [inclusion] 미확인 (근거 불충분) → 다음: clinician_confirmation",
+   "refs": [
+    "crit:NCT07018323-I03",
+    "dec:NCT07018323:NCT07018323-I03:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Whether the patient is hyperthyroid despite adequate ATD treatment, since methimazole was started only about 9 days ago",
+   "refs": [
+    "dec:NCT07018323:NCT07018323-I03:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07018323-I04 [inclusion] 미확인 (기록 없음) → 다음: clinician_confirmation",
+   "refs": [
+    "crit:NCT07018323-I04",
+    "dec:NCT07018323:NCT07018323-I04:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: The protocol-specific inclusion criteria, which are not specified in the criterion",
+   "refs": [
+    "dec:NCT07018323:NCT07018323-I04:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07018323-E01 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT07018323-E01",
+    "dec:NCT07018323:NCT07018323-E01:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"RAI/surgery remain options if relapse or intolerance.\" (SYN-2929-D08, 2026-09-29)",
+   "refs": [
+    "ev:SYN-2929-EV190",
+    "src:SYN-2929-D08:3727-3780"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"No other surgery.\" (SYN-2929-D08, 2026-09-29)",
+   "refs": [
+    "ev:SYN-2929-EV089",
+    "src:SYN-2929-D08:1022-1039"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Tonsillectomy 2005.\" (SYN-2929-D08, 2005-01-01)",
+   "refs": [
+    "ev:SYN-2929-EV088",
+    "src:SYN-2929-D08:1002-1021"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07018323-E02 [exclusion] 미확인 (기록 없음) → 다음: patient_question",
+   "refs": [
+    "crit:NCT07018323-E02",
+    "dec:NCT07018323:NCT07018323-E02:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07018323-E03 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT07018323-E03",
+    "dec:NCT07018323:NCT07018323-E03:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Mild eye involvement without active orbitopathy.\" (SYN-2929-D08, 2026-09-29)",
+   "refs": [
+    "ev:SYN-2929-EV178",
+    "src:SYN-2929-D08:3142-3190"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Mild eye involvement without active orbitopathy.\" (SYN-2929-D08, 2026-09-29)",
+   "refs": [
+    "ev:SYN-2929-EV177",
+    "src:SYN-2929-D08:3142-3190"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Clinical activity score 1/7.\" (SYN-2929-D08, 2026-09-29)",
+   "refs": [
+    "ev:SYN-2929-EV197",
+    "src:SYN-2929-D08:2399-2427"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07018323-E04 [exclusion] 미확인 (기록 없음) → 다음: clinician_confirmation",
+   "refs": [
+    "crit:NCT07018323-E04",
+    "dec:NCT07018323:NCT07018323-E04:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: The protocol-specific additional exclusion criteria, which are not specified in the criterion",
+   "refs": [
+    "dec:NCT07018323:NCT07018323-E04:r1"
+   ],
+   "kind": "fact"
+  }
+ ],
+ "evidence": {
+  "files": [
+   "evidence_dev_haiku_v14_12.jsonl",
+   "evidence_dev_variants_haiku_v14_12.jsonl"
+  ],
+  "sha256": "daba4f5f1e16ec2eefc47311f5c13f85e6b5f218c85424f08f9af3d9bab09124",
+  "id_series": "haiku",
+  "graph_ev_nodes_checked": 2240
+ },
+ "agent6": "a6-0.4.14"
+}

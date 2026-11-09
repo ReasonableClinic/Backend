@@ -1,0 +1,27 @@
+# 합성 세트: 에이전트 개발용 (공통 형식 v0.5)
+
+에이전트 개발에 쓸 합성 환자와 시험입니다. 형식은 `common_format_v0.5.md`를 보세요.
+
+## 폴더
+
+| 경로 | 내용 | 용도 |
+| --- | --- | --- |
+| `dev/input/` | 환자 20명 (`patients.jsonl`), 대회 형식 `topics.json`, 판정할 쌍 목록 `pairs.jsonl` | 에이전트 입력 |
+| `dev/reference/` | 시험 197개, 기준 3856개 (정답 대상 + 추천 후보 풀) | 에이전트가 검색·판정할 시험 |
+| `dev/gold/` | 정답 54쌍 (eligible 5, ineligible 34, potential 15), 순위 정답, 후보 목록, 검수 내역 | 개발 중 채점·오류 분석 |
+| `test/input/` | 환자 30명, 판정할 쌍 목록 `pairs.jsonl` (정답 없음) | 최종 평가 입력 |
+| `test/reference/` | 시험 351개, 기준 7029개 | 최종 평가 시험 |
+
+**test 정답은 들어 있지 않습니다.** 최종 평가 때 합성 담당이 채점합니다. 프롬프트·규칙은 dev로만 고쳐 주세요. test 환자 기록도 개발 중에는 열어 보지 않는 것을 권합니다.
+
+## 알아둘 점
+
+- 기준일 `as_of`는 모두 2026-10-01. 모든 기간 계산은 실행하는 날이 아니라 `as_of` 기준입니다.
+- 정답은 모두 `label_source: "human_verified"`. 기준마다 `review`가 `human`(사람 검수) 또는 `agreed`(LLM 두 번 일치로 인정)입니다.
+- 시험 판정 규칙은 공통 형식 6.1, 순위 규칙은 6.4 (오래 확인되지 않은 시험 처리 포함).
+- `reference/`의 시험 중 정답이 없는 후보 풀 시험은 채점에서 unjudged로 처리합니다.
+- dev·test `reference/criteria.jsonl`에는 CT.gov 담당의 ①-b(`concept`·`operator`·`value`·`time_window`·`logic_group` 등)가 채워져 있고, 개념 사전은 `reference/concepts.json`입니다. 정답 근거(`gold_evidence`)에는 `concept`·`term`·`value`·`unit`·`status`가 채워져 있습니다.
+- dev 정답 근거(`gold_evidence`)에 `concept`·`term`·`value`·`unit`·`status`가 채워져 있습니다 (745개 중 706개. 사실이 아닌 문장 38개와 1개는 비어 있음).
+- 기준 ID는 `reference/criteria.jsonl` 것에 묶여 있습니다.
+- TREC 세트는 TREC 담당의 파일을 쓰세요. 2021년 시험이라 이 시험 파일과 합치면 안 됩니다.
+- 모든 기록은 가상이며, 임상 내용과 정답은 의료진 검토를 거치지 않았습니다.

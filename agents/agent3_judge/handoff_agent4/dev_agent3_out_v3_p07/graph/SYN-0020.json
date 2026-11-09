@@ -1,0 +1,2813 @@
+{
+ "patient_id": "SYN-0020",
+ "as_of": "2026-10-01",
+ "version": 1,
+ "nodes": [
+  {
+   "id": "trial:NCT07018323",
+   "kind": "trial",
+   "title": "A Study to Assess the Efficacy, Safety, and Tolerability of IMVT-1402 as Treatment for Adult Participants With Graves' Disease"
+  },
+  {
+   "id": "crit:NCT07018323-I01",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Participants with the ability to understand the requirements of the trial, provide written informed consent, and comply with the trial protocol procedures.",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07018323:NCT07018323-I01:r1",
+   "kind": "decision",
+   "trial_id": "NCT07018323",
+   "criterion_id": "NCT07018323-I01",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "admin"
+   ],
+   "note": "consent/compliance item: not decidable from the record",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07018323-I02",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Male or female participants aged >= 18 years.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07018323:NCT07018323-I02:r1",
+   "kind": "decision",
+   "trial_id": "NCT07018323",
+   "criterion_id": "NCT07018323-I02",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "age_rule"
+   ],
+   "note": "age 29.55 y vs [18.0, None]",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0020-EV002",
+   "kind": "evidence",
+   "concept": "birth_date",
+   "term": null,
+   "value": "1997-03-14",
+   "unit": null,
+   "observed_date": "2026-09-08",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:birth_date",
+   "kind": "concept",
+   "concept": "birth_date",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0020-D01:8-23",
+   "kind": "source",
+   "doc_id": "SYN-0020-D01",
+   "doc_type": "registration",
+   "span": [
+    8,
+    23
+   ],
+   "text": "DOB 1997-03-14."
+  },
+  {
+   "id": "calc:NCT07018323:NCT07018323-I02",
+   "kind": "calculation",
+   "name": "age_at_as_of",
+   "value": 29.55,
+   "lo": 18.0,
+   "hi": null
+  },
+  {
+   "id": "crit:NCT07018323-I03",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Participants with diagnosis of GD who are hyperthyroid despite ATD treatment.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07018323:NCT07018323-I03:r1",
+   "kind": "decision",
+   "trial_id": "NCT07018323",
+   "criterion_id": "NCT07018323-I03",
+   "status": "UNKNOWN",
+   "reason": "UNSUPPORTED",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Graves confirmed and still thyrotoxic, but ATD only 1 week; 'despite ATD treatment' (inadequate response) not established.",
+   "missing_fact": "Whether hyperthyroidism persists despite adequate ATD treatment (methimazole only started 9 days ago)",
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0020-EV048",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "Graves disease",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-29",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:diagnosis:graves disease",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "Graves disease"
+  },
+  {
+   "id": "src:SYN-0020-D08:59-109",
+   "kind": "source",
+   "doc_id": "SYN-0020-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    59,
+    109
+   ],
+   "text": "Graves disease, 1 week after starting methimazole."
+  },
+  {
+   "id": "ev:SYN-0020-EV232",
+   "kind": "evidence",
+   "concept": "free_t4",
+   "term": null,
+   "value": 3.5,
+   "unit": "ng/dL",
+   "observed_date": "2026-09-29",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:free_t4",
+   "kind": "concept",
+   "concept": "free_t4",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0020-D09:828-857",
+   "kind": "source",
+   "doc_id": "SYN-0020-D09",
+   "doc_type": "lab_result",
+   "span": [
+    828,
+    857
+   ],
+   "text": "Free T4 3.5 ng/dL (0.8-1.8) H"
+  },
+  {
+   "id": "ev:SYN-0020-EV231",
+   "kind": "evidence",
+   "concept": "tsh",
+   "term": null,
+   "value": 0.01,
+   "unit": "mIU/L",
+   "observed_date": "2026-09-29",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:tsh",
+   "kind": "concept",
+   "concept": "tsh",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0020-D09:800-827",
+   "kind": "source",
+   "doc_id": "SYN-0020-D09",
+   "doc_type": "lab_result",
+   "span": [
+    800,
+    827
+   ],
+   "text": "TSH <0.01 mIU/L (0.4-4.0) L"
+  },
+  {
+   "id": "crit:NCT07018323-I04",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Other, more specific inclusion criteria are defined in the protocol.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07018323:NCT07018323-I04:r1",
+   "kind": "decision",
+   "trial_id": "NCT07018323",
+   "criterion_id": "NCT07018323-I04",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Non-specific placeholder referencing the protocol; cannot be judged from the record.",
+   "missing_fact": "Protocol-specific inclusion criteria are not specified in the criterion",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07018323-E01",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Have previously been successfully treated with radioactive iodine (RAI) therapy or have undergone total thyroidectomy.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07018323:NCT07018323-E01:r1",
+   "kind": "decision",
+   "trial_id": "NCT07018323",
+   "criterion_id": "NCT07018323-E01",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "RAI/surgery only planned options; only tonsillectomy, 'no other surgery', so no prior RAI success or total thyroidectomy.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0020-EV204",
+   "kind": "evidence",
+   "concept": "treatment_plan",
+   "term": "radioactive iodine",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-29",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "planned"
+  },
+  {
+   "id": "concept:treatment_plan:radioactive iodine",
+   "kind": "concept",
+   "concept": "treatment_plan",
+   "term": "radioactive iodine"
+  },
+  {
+   "id": "src:SYN-0020-D08:3727-3780",
+   "kind": "source",
+   "doc_id": "SYN-0020-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    3727,
+    3780
+   ],
+   "text": "RAI/surgery remain options if relapse or intolerance."
+  },
+  {
+   "id": "ev:SYN-0020-EV094",
+   "kind": "evidence",
+   "concept": "procedure",
+   "term": "surgery",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-29",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:procedure:surgery",
+   "kind": "concept",
+   "concept": "procedure",
+   "term": "surgery"
+  },
+  {
+   "id": "src:SYN-0020-D08:1022-1039",
+   "kind": "source",
+   "doc_id": "SYN-0020-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    1022,
+    1039
+   ],
+   "text": "No other surgery."
+  },
+  {
+   "id": "ev:SYN-0020-EV093",
+   "kind": "evidence",
+   "concept": "procedure",
+   "term": "Tonsillectomy",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-29",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:procedure:tonsillectomy",
+   "kind": "concept",
+   "concept": "procedure",
+   "term": "Tonsillectomy"
+  },
+  {
+   "id": "src:SYN-0020-D08:1002-1021",
+   "kind": "source",
+   "doc_id": "SYN-0020-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    1002,
+    1021
+   ],
+   "text": "Tonsillectomy 2005."
+  },
+  {
+   "id": "crit:NCT07018323-E02",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Have an autoimmune disease other than GD requiring treatment that, in the Investigator's judgment, puts the participant at undue risk.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07018323:NCT07018323-E02:r1",
+   "kind": "decision",
+   "trial_id": "NCT07018323",
+   "criterion_id": "NCT07018323-E02",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation",
+    "pc:blanket_out_of_scope"
+   ],
+   "note": "[blanket negation out of A1 scope] No other autoimmune history documented; chronic autoimmune disease covered by blanket negation.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07018323-E03",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Have moderate-to-severe active thyroid eye disease (TED) and are expected to require immediate surgical intervention and/or are planning corrective surgery/irradiation or medical therapy for TED during study participation.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07018323:NCT07018323-E03:r1",
+   "kind": "decision",
+   "trial_id": "NCT07018323",
+   "criterion_id": "NCT07018323-E03",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Mild eye involvement without active orbitopathy, CAS 1/7; no surgery or TED therapy planned beyond lubricants.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0020-EV192",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "active orbitopathy",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-29",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:active orbitopathy",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "active orbitopathy"
+  },
+  {
+   "id": "src:SYN-0020-D08:3142-3190",
+   "kind": "source",
+   "doc_id": "SYN-0020-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    3142,
+    3190
+   ],
+   "text": "Mild eye involvement without active orbitopathy."
+  },
+  {
+   "id": "ev:SYN-0020-EV191",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "mild eye involvement",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-29",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:symptom_finding:mild eye involvement",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "mild eye involvement"
+  },
+  {
+   "id": "ev:SYN-0020-EV264",
+   "kind": "evidence",
+   "concept": "clinical_activity_score",
+   "term": null,
+   "value": 1,
+   "unit": "points",
+   "observed_date": "2026-09-29",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:clinical_activity_score",
+   "kind": "concept",
+   "concept": "clinical_activity_score",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0020-D08:2399-2427",
+   "kind": "source",
+   "doc_id": "SYN-0020-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    2399,
+    2427
+   ],
+   "text": "Clinical activity score 1/7."
+  },
+  {
+   "id": "crit:NCT07018323-E04",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Additional exclusion criteria are defined in the protocol.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07018323:NCT07018323-E04:r1",
+   "kind": "decision",
+   "trial_id": "NCT07018323",
+   "criterion_id": "NCT07018323-E04",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Non-specific placeholder referencing the protocol; cannot be judged from the record.",
+   "missing_fact": "Protocol-specific exclusion criteria are not specified in the criterion",
+   "derived_from": null
+  },
+  {
+   "id": "label:NCT07018323",
+   "kind": "trial_decision",
+   "label": "potential",
+   "why": [
+    "UNKNOWN/UNSUPPORTED NCT07018323-I03",
+    "UNKNOWN/MISSING NCT07018323-I04"
+   ],
+   "by": "agent3"
+  },
+  {
+   "id": "trial:NCT07113262",
+   "kind": "trial",
+   "title": "A Clinical Study to Evaluate the Efficacy and Safety of IBI311 in Subjects With Inactive Thyroid Eye Disease"
+  },
+  {
+   "id": "crit:NCT07113262-I01",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "At screening and baseline, the following diagnostic criteria for inactive TED were met: CAS of both eyes <= 2 points during the screening period and baseline;",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07113262:NCT07113262-I01:r1",
+   "kind": "decision",
+   "trial_id": "NCT07113262",
+   "criterion_id": "NCT07113262-I01",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "structured_numeric"
+   ],
+   "note": "clinical_activity_score = 1 points (2026-09-29, -2d) vs <= 2 -> met",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "calc:NCT07113262:NCT07113262-I01",
+   "kind": "calculation",
+   "concept": "clinical_activity_score",
+   "operator": "<=",
+   "threshold": 2,
+   "unit": null,
+   "value": 1,
+   "value_unit": "points",
+   "observed_date": "2026-09-29",
+   "days_before": 2,
+   "note": "clinical_activity_score = 1 points (2026-09-29, -2d) vs <= 2 -> met"
+  },
+  {
+   "id": "crit:NCT07113262-I02",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "According to the subject's medical history, CAS of both eyes <= 2 points at least 6 months before screening, or according to the subject's chief complaint or medical history, with all of the following characteristics: no progression of proptosis and no new diplopia caused by TED at least 6 months before screening or no progression of diplopia caused by TED and no new inflammatory TED symptoms;",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07113262:NCT07113262-I02:r1",
+   "kind": "decision",
+   "trial_id": "NCT07113262",
+   "criterion_id": "NCT07113262-I02",
+   "status": "UNKNOWN",
+   "reason": "UNSUPPORTED",
+   "action": "med_record_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Current CAS 1/7 and no active orbitopathy, but Graves diagnosed only 2026-09; no CAS or stability history 6 months back.",
+   "missing_fact": "CAS <=2 in both eyes and stable proptosis/diplopia at least 6 months before screening (history of TED activity)",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07113262-I03",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "According to the subject's chief complaint or medical history, the first TED diagnosis before screening was >= 2 years and < 10 years.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07113262:NCT07113262-I03:r1",
+   "kind": "decision",
+   "trial_id": "NCT07113262",
+   "criterion_id": "NCT07113262-I03",
+   "status": "FAIL",
+   "reason": "VIOLATED",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Graves disease diagnosed 2026-09, so about 1 month ago, not 2-10 years. TED itself is mild with no separate earlier diagnosis.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0020-EV055",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "Graves disease",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-01",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "src:SYN-0020-D08:258-358",
+   "kind": "source",
+   "doc_id": "SYN-0020-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    258,
+    358
+   ],
+   "text": "Diagnosed with Graves disease 2026-09 (TSH <0.01, fT4 3.9 ng/dL, total T3 312 ng/dL, TRAb 8.2 IU/L)."
+  },
+  {
+   "id": "ev:SYN-0020-EV082",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "Graves disease",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-29",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "src:SYN-0020-D08:809-829",
+   "kind": "source",
+   "doc_id": "SYN-0020-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    809,
+    829
+   ],
+   "text": "Graves disease, 2026"
+  },
+  {
+   "id": "crit:NCT07113262-I04",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "At baseline, the proptosis of the study eye was >=20 mm.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07113262:NCT07113262-I04:r1",
+   "kind": "decision",
+   "trial_id": "NCT07113262",
+   "criterion_id": "NCT07113262-I04",
+   "status": "FAIL",
+   "reason": "VIOLATED",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "structured_numeric"
+   ],
+   "note": "proptosis_exophthalmometry = 16 mm (2026-09-29, -2d) vs >= 20 -> not met",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0020-EV262",
+   "kind": "evidence",
+   "concept": "proptosis_exophthalmometry",
+   "term": null,
+   "value": 16,
+   "unit": "mm",
+   "observed_date": "2026-09-29",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:proptosis_exophthalmometry",
+   "kind": "concept",
+   "concept": "proptosis_exophthalmometry",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0020-D08:2240-2353",
+   "kind": "source",
+   "doc_id": "SYN-0020-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    2240,
+    2353
+   ],
+   "text": "Eyes: mild bilateral lid retraction, no proptosis (Hertel 16/16 mm), EOM full, no diplopia, no periorbital edema."
+  },
+  {
+   "id": "calc:NCT07113262:NCT07113262-I04",
+   "kind": "calculation",
+   "concept": "proptosis_exophthalmometry",
+   "operator": ">=",
+   "threshold": 20,
+   "unit": "mm",
+   "value": 16,
+   "value_unit": "mm",
+   "observed_date": "2026-09-29",
+   "days_before": 2,
+   "note": "proptosis_exophthalmometry = 16 mm (2026-09-29, -2d) vs >= 20 -> not met"
+  },
+  {
+   "id": "crit:NCT07113262-I05",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "If the subject is a female, she should be infertile or have a negative blood pregnancy test during the screening period and agree to take contraceptive measures from the screening period to 120 days after the last medication. If the subject is a male, he should agree to take contraceptive measures from the screening period to 120 days after the last medication.",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07113262:NCT07113262-I05:r1",
+   "kind": "decision",
+   "trial_id": "NCT07113262",
+   "criterion_id": "NCT07113262-I05",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Serum hCG negative, but contraception is only counselled for methimazole. No agreement for the trial contraception period is documented.",
+   "missing_fact": "Patient's agreement to use contraception until 120 days after last dose of study drug",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07113262-E01",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Subjects who meet any of the following conditions will not be eligible to participate in this study: At baseline, the eyeball protrusion of the study eye decreased by >=2 mm compared with the screening period;; Subjects who have been previously diagnosed with DON, or who are determined by the investigator to have DON during screening (defined as: orbital MRI/CT showing orbital apex crowding or optic nerve compression, and at least 2 of the following ophthalmological examination abnormalities that cannot be explained by other reasons: ① best corrected visual acuity [BCVA] < 0.8 or BCVA decreased by >= 2 lines compared with before the onset; ② abnormal pupillary light reflex or relative pupillary afferent disorder; ③ color vision abnormalities; ④ optic disc edema and optic disc pallor on fundus examination; ⑤ visual field loss; ⑥ visual evoked potential with prolonged latency and/or decreased amplitude);; Patients with corneal ulcers that are judged by the researchers to have no relief after treatment;; Planned to receive orbital radiotherapy or surgical treatment for TED (including orbital decompression, strabismus correction, eyelid correction, etc.) at any time before baseline or during the study period;; Poorly controlled thyroid function, defined as free triiodothyronine (FT3) or free thyroxine (FT4) deviating from the normal reference value range of the local research center laboratory by more than 50% during screening;; Any other diseases, metabolic disorders, abnormal physical examination or clinical laboratory test results, and there is reason to suspect that there may be diseases or conditions that may lead to contraindications to the use of the trial drug, affect the interpretation of the study results, or put the subjects at high risk of treatment complications, including but not limited to: confirmed or clinically suspected inflammatory bowel disease, coagulation disorders, history of acute cardiovascular and cerebrovascular diseases or treatment history within 180 days before screening(including but not limited to: cerebrovascular accident, transient ischemic attack, acute myocardial infarction, unstable angina, coronary artery bypass grafting, percutaneous coronary intervention [except diagnostic angiography], severe arrhythmia, etc.), history of malignant tumors treated or untreated in the past 5 years (except for skin squamous cell carcinoma, basal cell carcinoma, cervical carcinoma in situ, prostate carcinoma in situ or thyroid papillary carcinoma that have been successfully removed and have no evidence of metastasis), severe systemic infection, proptosis not caused by TED, etc.;; During the screening period, any ear has: tinnitus or other history of hearing loss; or abnormal pure tone audiometry results (defined as average bone conduction hearing threshold >=25 dB at 0.5, 1, 2, 4 kHz or bone conduction hearing threshold >=40 dB at any frequency);; At screening, aspartate aminotransferase (AST) or alanine aminotransferase (ALT)>3×ULN, or with active hepatitis B (defined as HBsAg positive with HBV-DNA load>1000 IU/mL), or receiving anti-hepatitis B virus treatment;; At screening, glomerular filtration rate (GFR) <30 ml/min/1.73m2 (MDRD formula: GFR = 186 × serum creatinine (mg/dl) - 1.154 × (age) - 0.203 × (0.742 [if female]), serum creatinine unit conversion: 1 μmol/L = 0.0113 mg/dL);; Poorly controlled diabetes at screening (defined as glycated hemoglobin >=8.0% at screening);; At screening, patients have poorly controlled hypertension, with systolic blood pressure >=160 mmHg or diastolic blood pressure >=100 mmHg; renal artery stenosis; or evidence of unstable blood pressure (including orthostatic hypotension, etc.);; During screening, the 12-lead ECG shows a heart rate of <50 beats/min or >100 beats/min, the ECG indicates active heart disease, or the investigator believes that the ECG abnormality during screening will interfere with the interpretation of the ECG results during subsequent follow-up, especially excluding QTcF>500 ms;; HIV antibody or HCV antibody positive or active syphilis (defined as non-specific syphilis antibody positive or requiring anti-syphilis treatment after consultation with the infectious disease department);; Oral or intravenous glucocorticoids within 30 days before screening;; Use of glucocorticoid eye drops/eye ointment, or non-steroidal immunosuppressant eye drops within 30 days before screening;; Periorbital/periorbital injection of glucocorticoids within 90 days before screening;; Any other non-steroidal immunosuppressants taken orally or intravenously within 90 days before screening;; Received interleukin-6 receptor (IL-6R) antibody treatment within 180 days before screening;; Received CD20 antibody treatment within 1 year before screening;; Received IBI311 or TEPEZZA treatment at any time before screening;; Have received any other TED treatment drugs under development at any time before screening (including but not limited to biological agents targeting IGF-1R, FcRn, and TSHR);; Use of any other monoclonal antibody treatment within 90 days before screening;; Participated in other interventional clinical trials within 90 days before screening (for drugs, within 5 half-lives, whichever is longer; excluding vitamins and minerals), or attempted to participate in other clinical trials during the study;; Female subjects who are pregnant or lactating;; Those who are known to be allergic to the study drug ingredients, or have a history of allergies to other monoclonal antibodies; Those who are considered by the researchers to be unsuitable for participating in this clinical trial due to other reasons.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07113262:NCT07113262-E01:r1",
+   "kind": "decision",
+   "trial_id": "NCT07113262",
+   "criterion_id": "NCT07113262-E01",
+   "status": "FAIL",
+   "reason": "VIOLATED",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Free T4 3.5 vs upper limit 1.8 is +94% above range, over the 50% deviation limit (poorly controlled thyroid function). T3 is total, not free, so T4 decides.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0020-EV233",
+   "kind": "evidence",
+   "concept": "total_t3",
+   "term": null,
+   "value": 285,
+   "unit": "ng/dL",
+   "observed_date": "2026-09-29",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:total_t3",
+   "kind": "concept",
+   "concept": "total_t3",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0020-D09:858-887",
+   "kind": "source",
+   "doc_id": "SYN-0020-D09",
+   "doc_type": "lab_result",
+   "span": [
+    858,
+    887
+   ],
+   "text": "Total T3 285 ng/dL (80-200) H"
+  },
+  {
+   "id": "label:NCT07113262",
+   "kind": "trial_decision",
+   "label": "ineligible",
+   "why": [
+    "FAIL NCT07113262-I03",
+    "FAIL NCT07113262-I04",
+    "FAIL NCT07113262-E01"
+   ],
+   "by": "agent3"
+  },
+  {
+   "id": "trial:NCT07762105",
+   "kind": "trial",
+   "title": "Study of Atorvastatin and Its Effects in Clinical and Radiological Aspects in Patients With Moderate-to-Severe Thyroid Eye Disease"
+  },
+  {
+   "id": "crit:NCT07762105-I01",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Age 18 to 75 years inclusive",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07762105:NCT07762105-I01:r1",
+   "kind": "decision",
+   "trial_id": "NCT07762105",
+   "criterion_id": "NCT07762105-I01",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "age_rule"
+   ],
+   "note": "age 29.55 y vs [18.0, 75.0]",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "calc:NCT07762105:NCT07762105-I01",
+   "kind": "calculation",
+   "name": "age_at_as_of",
+   "value": 29.55,
+   "lo": 18.0,
+   "hi": 75.0
+  },
+  {
+   "id": "crit:NCT07762105-I02",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Graves' orbitopathy graded moderate-to-severe by EUGOGO criteria",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07762105:NCT07762105-I02:r1",
+   "kind": "decision",
+   "trial_id": "NCT07762105",
+   "criterion_id": "NCT07762105-I02",
+   "status": "UNKNOWN",
+   "reason": "UNSUPPORTED",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Mild eye involvement without active orbitopathy documented; EUGOGO moderate-to-severe grade not stated, and record points toward mild.",
+   "missing_fact": "EUGOGO severity grading of the orbitopathy (moderate-to-severe vs mild)",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07762105-I03",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Active disease, clinical activity score >= 3 of 7",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07762105:NCT07762105-I03:r1",
+   "kind": "decision",
+   "trial_id": "NCT07762105",
+   "criterion_id": "NCT07762105-I03",
+   "status": "FAIL",
+   "reason": "VIOLATED",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "structured_numeric"
+   ],
+   "note": "clinical_activity_score = 1 points (2026-09-29, -2d) vs >= 3 -> not met",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "calc:NCT07762105:NCT07762105-I03",
+   "kind": "calculation",
+   "concept": "clinical_activity_score",
+   "operator": ">=",
+   "threshold": 3,
+   "unit": null,
+   "value": 1,
+   "value_unit": "points",
+   "observed_date": "2026-09-29",
+   "days_before": 2,
+   "note": "clinical_activity_score = 1 points (2026-09-29, -2d) vs >= 3 -> not met"
+  },
+  {
+   "id": "crit:NCT07762105-I04",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Rehabilitative orbital decompression anticipated after completion of glucocorticoid therapy, on the usual clinical grounds",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07762105:NCT07762105-I04:r1",
+   "kind": "decision",
+   "trial_id": "NCT07762105",
+   "criterion_id": "NCT07762105-I04",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No mention of orbital decompression planning in the record.",
+   "missing_fact": "Whether rehabilitative orbital decompression is anticipated",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07762105-I05",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Able to attend weekly infusion visits and complete follow-up to week 48",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07762105:NCT07762105-I05:r1",
+   "kind": "decision",
+   "trial_id": "NCT07762105",
+   "criterion_id": "NCT07762105-I05",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "admin"
+   ],
+   "note": "consent/compliance item: not decidable from the record",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07762105-I06",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Written informed consent given",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07762105:NCT07762105-I06:r1",
+   "kind": "decision",
+   "trial_id": "NCT07762105",
+   "criterion_id": "NCT07762105-I06",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "admin"
+   ],
+   "note": "consent/compliance item: not decidable from the record",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07762105-I07",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "For women of childbearing potential, agreement to use effective contraception until week 24",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07762105:NCT07762105-I07:r1",
+   "kind": "decision",
+   "trial_id": "NCT07762105",
+   "criterion_id": "NCT07762105-I07",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Uses condoms and was counselled on contraception, but no agreement to trial contraception is documented.",
+   "missing_fact": "Patient's agreement to use effective contraception until week 24",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07762105-E01",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Sight-threatening disease at screening: dysthyroid optic neuropathy or corneal breakdown",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07762105:NCT07762105-E01:r1",
+   "kind": "decision",
+   "trial_id": "NCT07762105",
+   "criterion_id": "NCT07762105-E01",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No visual change, acuity 20/20, normal color vision: no optic neuropathy signs; corneal breakdown not explicitly excluded but gritty eyes only, so partly inferred.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0020-EV073",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "visual change",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-29",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:symptom_finding:visual change",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "visual change"
+  },
+  {
+   "id": "src:SYN-0020-D08:602-671",
+   "kind": "source",
+   "doc_id": "SYN-0020-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    602,
+    671
+   ],
+   "text": "Mild gritty eyes persist, no diplopia, no eye pain, no visual change."
+  },
+  {
+   "id": "ev:SYN-0020-EV263",
+   "kind": "evidence",
+   "concept": "visual_acuity",
+   "term": "visual acuity OU",
+   "value": "20/20",
+   "unit": null,
+   "observed_date": "2026-09-29",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:visual_acuity:visual acuity ou",
+   "kind": "concept",
+   "concept": "visual_acuity",
+   "term": "visual acuity OU"
+  },
+  {
+   "id": "src:SYN-0020-D08:2354-2398",
+   "kind": "source",
+   "doc_id": "SYN-0020-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    2354,
+    2398
+   ],
+   "text": "Visual acuity 20/20 OU, color vision normal."
+  },
+  {
+   "id": "ev:SYN-0020-EV158",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "color vision normal",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-29",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:symptom_finding:color vision normal",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "color vision normal"
+  },
+  {
+   "id": "crit:NCT07762105-E02",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Any other autoimmune disease requiring systemic immunosuppresion",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07762105:NCT07762105-E02:r1",
+   "kind": "decision",
+   "trial_id": "NCT07762105",
+   "criterion_id": "NCT07762105-E02",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation"
+   ],
+   "note": "No other autoimmune history documented; chronic autoimmune disease covered by the blanket negation.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0020-EV089",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "other autoimmune history",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-29",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:other autoimmune history",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "other autoimmune history"
+  },
+  {
+   "id": "src:SYN-0020-D08:865-943",
+   "kind": "source",
+   "doc_id": "SYN-0020-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    865,
+    943
+   ],
+   "text": "No other cardiac, pulmonary, hepatic, renal, autoimmune or neurologic history."
+  },
+  {
+   "id": "crit:NCT07762105-E03",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Known hypersensitivity to atorvastatin or to any statin",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07762105:NCT07762105-E03:r1",
+   "kind": "decision",
+   "trial_id": "NCT07762105",
+   "criterion_id": "NCT07762105-E03",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "NKDA documented; only seasonal allergic rhinitis, so no statin hypersensitivity.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0020-EV095",
+   "kind": "evidence",
+   "concept": "allergy",
+   "term": "NKDA",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-29",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:allergy:nkda",
+   "kind": "concept",
+   "concept": "allergy",
+   "term": "NKDA"
+  },
+  {
+   "id": "src:SYN-0020-D08:1052-1057",
+   "kind": "source",
+   "doc_id": "SYN-0020-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    1052,
+    1057
+   ],
+   "text": "NKDA."
+  },
+  {
+   "id": "crit:NCT07762105-E04",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Current or recent (within 3 months) use of any lipid-lowering drug",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07762105:NCT07762105-E04:r1",
+   "kind": "decision",
+   "trial_id": "NCT07762105",
+   "criterion_id": "NCT07762105-E04",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_history_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "list_inference",
+    "pc:strict_list_inference"
+   ],
+   "note": "[inferable PASS from SYN-0020-EV096] Reconciled medication list shows methimazole, propranolol, and stopped cetirizine; no lipid-lowering drug, none stopped recently.",
+   "missing_fact": null,
+   "derived_from": "SYN-0020-EV096"
+  },
+  {
+   "id": "crit:NCT07762105-E05",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Any contraindication to orbital decompression",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07762105:NCT07762105-E05:r1",
+   "kind": "decision",
+   "trial_id": "NCT07762105",
+   "criterion_id": "NCT07762105-E05",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No information on decompression suitability; no relevant contraindication documented.",
+   "missing_fact": "Clinician assessment of any contraindication to orbital decompression",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07762105-E06",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Any independent indication for lipid-lowering therapy: established atherosclerotic cardiovascular disease, more than one cardiovascular risk factor (diabetes mellitus, hypertension, obesity), or LDL cholesterol >= 190 mg/dL",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07762105:NCT07762105-E06:r1",
+   "kind": "decision",
+   "trial_id": "NCT07762105",
+   "criterion_id": "NCT07762105-E06",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation"
+   ],
+   "note": "LDL 78; no cardiac history, no diabetes, BP normal, BMI 20.6; at most no risk factors.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0020-EV234",
+   "kind": "evidence",
+   "concept": "total_cholesterol",
+   "term": null,
+   "value": 142,
+   "unit": "mg/dL",
+   "observed_date": "2026-09-29",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:total_cholesterol",
+   "kind": "concept",
+   "concept": "total_cholesterol",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0020-D09:907-941",
+   "kind": "source",
+   "doc_id": "SYN-0020-D09",
+   "doc_type": "lab_result",
+   "span": [
+    907,
+    941
+   ],
+   "text": "Total cholesterol 142 mg/dL (<200)"
+  },
+  {
+   "id": "ev:SYN-0020-EV235",
+   "kind": "evidence",
+   "concept": "ldl_cholesterol",
+   "term": null,
+   "value": 78,
+   "unit": "mg/dL",
+   "observed_date": "2026-09-29",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:ldl_cholesterol",
+   "kind": "concept",
+   "concept": "ldl_cholesterol",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0020-D09:942-963",
+   "kind": "source",
+   "doc_id": "SYN-0020-D09",
+   "doc_type": "lab_result",
+   "span": [
+    942,
+    963
+   ],
+   "text": "LDL-C 78 mg/dL (<130)"
+  },
+  {
+   "id": "ev:SYN-0020-EV085",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "other cardiac history",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-29",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:other cardiac history",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "other cardiac history"
+  },
+  {
+   "id": "ev:SYN-0020-EV091",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "diabetes",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-29",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:diabetes",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "diabetes"
+  },
+  {
+   "id": "src:SYN-0020-D08:944-956",
+   "kind": "source",
+   "doc_id": "SYN-0020-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    944,
+    956
+   ],
+   "text": "No diabetes."
+  },
+  {
+   "id": "ev:SYN-0020-EV077",
+   "kind": "evidence",
+   "concept": "blood_pressure",
+   "term": null,
+   "value": "126/68",
+   "unit": "mmHg",
+   "observed_date": "2026-09-29",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:blood_pressure",
+   "kind": "concept",
+   "concept": "blood_pressure",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0020-D08:720-734",
+   "kind": "source",
+   "doc_id": "SYN-0020-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    720,
+    734
+   ],
+   "text": "BP 126/68 mmHg"
+  },
+  {
+   "id": "ev:SYN-0020-EV076",
+   "kind": "evidence",
+   "concept": "bmi",
+   "term": null,
+   "value": 20.6,
+   "unit": "kg/m2",
+   "observed_date": "2026-09-29",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:bmi",
+   "kind": "concept",
+   "concept": "bmi",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0020-D08:704-719",
+   "kind": "source",
+   "doc_id": "SYN-0020-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    704,
+    719
+   ],
+   "text": "BMI 20.6 kg/m2."
+  },
+  {
+   "id": "crit:NCT07762105-E07",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Systemic glucocorticoid or immunosuppressive treatment for orbitopathy within the preceding 3 months",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07762105:NCT07762105-E07:r1",
+   "kind": "decision",
+   "trial_id": "NCT07762105",
+   "criterion_id": "NCT07762105-E07",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_history_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "list_inference",
+    "pc:strict_list_inference"
+   ],
+   "note": "[inferable PASS from SYN-0020-EV096] Reconciled medication list has no glucocorticoid or immunosuppressant; none stopped recently.",
+   "missing_fact": null,
+   "derived_from": "SYN-0020-EV096"
+  },
+  {
+   "id": "crit:NCT07762105-E08",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Previous orbital irradiation or orbital surgery",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07762105:NCT07762105-E08:r1",
+   "kind": "decision",
+   "trial_id": "NCT07762105",
+   "criterion_id": "NCT07762105-E08",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Only tonsillectomy 2005; 'No other surgery' covers orbital surgery. Orbital irradiation not explicitly denied but no record.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07762105-E09",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Alanine or aspartate aminotransferase > 3 × upper limit of normal, or creatine kinase > 5 × upper limit of normal, at screening",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07762105:NCT07762105-E09:r1",
+   "kind": "decision",
+   "trial_id": "NCT07762105",
+   "criterion_id": "NCT07762105-E09",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "lab_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "ALT/AST normal (ALT 7-35, AST 8-33) but creatine kinase part of criterion not recorded.",
+   "missing_fact": "Creatine kinase result (ALT 31 and AST 26 are within reference ranges)",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07762105-E10",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Estimated glomerular filtration rate < 30 mL/min/1.73 m^2",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07762105:NCT07762105-E10:r1",
+   "kind": "decision",
+   "trial_id": "NCT07762105",
+   "criterion_id": "NCT07762105-E10",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "structured_numeric"
+   ],
+   "note": "egfr = 125 mL/min/1.73m2 (2026-09-29, -2d) vs < 30 -> not met",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0020-EV222",
+   "kind": "evidence",
+   "concept": "egfr",
+   "term": null,
+   "value": 125,
+   "unit": "mL/min/1.73m2",
+   "observed_date": "2026-09-29",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:egfr",
+   "kind": "concept",
+   "concept": "egfr",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0020-D09:543-571",
+   "kind": "source",
+   "doc_id": "SYN-0020-D09",
+   "doc_type": "lab_result",
+   "span": [
+    543,
+    571
+   ],
+   "text": "eGFR 125 mL/min/1.73m2 (>90)"
+  },
+  {
+   "id": "calc:NCT07762105:NCT07762105-E10",
+   "kind": "calculation",
+   "concept": "egfr",
+   "operator": "<",
+   "threshold": 30,
+   "unit": "mL/min/1.73m2",
+   "value": 125,
+   "value_unit": "mL/min/1.73m2",
+   "observed_date": "2026-09-29",
+   "days_before": 2,
+   "note": "egfr = 125 mL/min/1.73m2 (2026-09-29, -2d) vs < 30 -> not met"
+  },
+  {
+   "id": "crit:NCT07762105-E11",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Pregnancy at screening (confirmed by a negative test before randomisation) or breastfeeding",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07762105:NCT07762105-E11:r1",
+   "kind": "decision",
+   "trial_id": "NCT07762105",
+   "criterion_id": "NCT07762105-E11",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Serum hCG negative 2 days ago; not pregnant. Breastfeeding not mentioned but no sign of it.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0020-EV238",
+   "kind": "evidence",
+   "concept": "hcg",
+   "term": "hCG",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-29",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:hcg:hcg",
+   "kind": "concept",
+   "concept": "hcg",
+   "term": "hCG"
+  },
+  {
+   "id": "src:SYN-0020-D09:1023-1041",
+   "kind": "source",
+   "doc_id": "SYN-0020-D09",
+   "doc_type": "lab_result",
+   "span": [
+    1023,
+    1041
+   ],
+   "text": "Serum hCG negative"
+  },
+  {
+   "id": "ev:SYN-0020-EV119",
+   "kind": "evidence",
+   "concept": "hcg",
+   "term": "urine/serum hCG",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-29",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:hcg:urine/serum hcg",
+   "kind": "concept",
+   "concept": "hcg",
+   "term": "urine/serum hCG"
+  },
+  {
+   "id": "src:SYN-0020-D08:1693-1728",
+   "kind": "source",
+   "doc_id": "SYN-0020-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    1693,
+    1728
+   ],
+   "text": "urine/serum hCG negative this week."
+  },
+  {
+   "id": "crit:NCT07762105-E12",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Concomitant treatment with a strong CYP3A4 inhibitor",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07762105:NCT07762105-E12:r1",
+   "kind": "decision",
+   "trial_id": "NCT07762105",
+   "criterion_id": "NCT07762105-E12",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_history_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "list_inference",
+    "pc:strict_list_inference"
+   ],
+   "note": "[inferable PASS from SYN-0020-EV096] Reconciled list: methimazole and propranolol only, neither a strong CYP3A4 inhibitor.",
+   "missing_fact": null,
+   "derived_from": "SYN-0020-EV096"
+  },
+  {
+   "id": "crit:NCT07762105-E13",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Any condition that, in the opinion of the investigator, would prevent completion of the trial",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07762105:NCT07762105-E13:r1",
+   "kind": "decision",
+   "trial_id": "NCT07762105",
+   "criterion_id": "NCT07762105-E13",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Investigator-opinion criterion with no documented problem.",
+   "missing_fact": "Investigator judgment on ability to complete the trial",
+   "derived_from": null
+  },
+  {
+   "id": "label:NCT07762105",
+   "kind": "trial_decision",
+   "label": "ineligible",
+   "why": [
+    "FAIL NCT07762105-I03"
+   ],
+   "by": "agent3"
+  }
+ ],
+ "edges": [
+  [
+   "trial:NCT07018323",
+   "has_criterion",
+   "crit:NCT07018323-I01"
+  ],
+  [
+   "crit:NCT07018323-I01",
+   "decided_as",
+   "dec:NCT07018323:NCT07018323-I01:r1"
+  ],
+  [
+   "trial:NCT07018323",
+   "has_criterion",
+   "crit:NCT07018323-I02"
+  ],
+  [
+   "crit:NCT07018323-I02",
+   "decided_as",
+   "dec:NCT07018323:NCT07018323-I02:r1"
+  ],
+  [
+   "crit:NCT07018323-I02",
+   "requires",
+   "concept:birth_date"
+  ],
+  [
+   "concept:birth_date",
+   "observed_as",
+   "ev:SYN-0020-EV002"
+  ],
+  [
+   "ev:SYN-0020-EV002",
+   "derived_from",
+   "src:SYN-0020-D01:8-23"
+  ],
+  [
+   "ev:SYN-0020-EV002",
+   "supports",
+   "dec:NCT07018323:NCT07018323-I02:r1"
+  ],
+  [
+   "calc:NCT07018323:NCT07018323-I02",
+   "computes",
+   "dec:NCT07018323:NCT07018323-I02:r1"
+  ],
+  [
+   "trial:NCT07018323",
+   "has_criterion",
+   "crit:NCT07018323-I03"
+  ],
+  [
+   "crit:NCT07018323-I03",
+   "decided_as",
+   "dec:NCT07018323:NCT07018323-I03:r1"
+  ],
+  [
+   "crit:NCT07018323-I03",
+   "requires",
+   "concept:diagnosis:graves disease"
+  ],
+  [
+   "concept:diagnosis:graves disease",
+   "observed_as",
+   "ev:SYN-0020-EV048"
+  ],
+  [
+   "ev:SYN-0020-EV048",
+   "derived_from",
+   "src:SYN-0020-D08:59-109"
+  ],
+  [
+   "ev:SYN-0020-EV048",
+   "insufficient_for",
+   "dec:NCT07018323:NCT07018323-I03:r1"
+  ],
+  [
+   "crit:NCT07018323-I03",
+   "requires",
+   "concept:free_t4"
+  ],
+  [
+   "concept:free_t4",
+   "observed_as",
+   "ev:SYN-0020-EV232"
+  ],
+  [
+   "ev:SYN-0020-EV232",
+   "derived_from",
+   "src:SYN-0020-D09:828-857"
+  ],
+  [
+   "ev:SYN-0020-EV232",
+   "insufficient_for",
+   "dec:NCT07018323:NCT07018323-I03:r1"
+  ],
+  [
+   "crit:NCT07018323-I03",
+   "requires",
+   "concept:tsh"
+  ],
+  [
+   "concept:tsh",
+   "observed_as",
+   "ev:SYN-0020-EV231"
+  ],
+  [
+   "ev:SYN-0020-EV231",
+   "derived_from",
+   "src:SYN-0020-D09:800-827"
+  ],
+  [
+   "ev:SYN-0020-EV231",
+   "insufficient_for",
+   "dec:NCT07018323:NCT07018323-I03:r1"
+  ],
+  [
+   "trial:NCT07018323",
+   "has_criterion",
+   "crit:NCT07018323-I04"
+  ],
+  [
+   "crit:NCT07018323-I04",
+   "decided_as",
+   "dec:NCT07018323:NCT07018323-I04:r1"
+  ],
+  [
+   "trial:NCT07018323",
+   "has_criterion",
+   "crit:NCT07018323-E01"
+  ],
+  [
+   "crit:NCT07018323-E01",
+   "decided_as",
+   "dec:NCT07018323:NCT07018323-E01:r1"
+  ],
+  [
+   "crit:NCT07018323-E01",
+   "requires",
+   "concept:treatment_plan:radioactive iodine"
+  ],
+  [
+   "concept:treatment_plan:radioactive iodine",
+   "observed_as",
+   "ev:SYN-0020-EV204"
+  ],
+  [
+   "ev:SYN-0020-EV204",
+   "derived_from",
+   "src:SYN-0020-D08:3727-3780"
+  ],
+  [
+   "ev:SYN-0020-EV204",
+   "supports",
+   "dec:NCT07018323:NCT07018323-E01:r1"
+  ],
+  [
+   "crit:NCT07018323-E01",
+   "requires",
+   "concept:procedure:surgery"
+  ],
+  [
+   "concept:procedure:surgery",
+   "observed_as",
+   "ev:SYN-0020-EV094"
+  ],
+  [
+   "ev:SYN-0020-EV094",
+   "derived_from",
+   "src:SYN-0020-D08:1022-1039"
+  ],
+  [
+   "ev:SYN-0020-EV094",
+   "supports",
+   "dec:NCT07018323:NCT07018323-E01:r1"
+  ],
+  [
+   "crit:NCT07018323-E01",
+   "requires",
+   "concept:procedure:tonsillectomy"
+  ],
+  [
+   "concept:procedure:tonsillectomy",
+   "observed_as",
+   "ev:SYN-0020-EV093"
+  ],
+  [
+   "ev:SYN-0020-EV093",
+   "derived_from",
+   "src:SYN-0020-D08:1002-1021"
+  ],
+  [
+   "ev:SYN-0020-EV093",
+   "supports",
+   "dec:NCT07018323:NCT07018323-E01:r1"
+  ],
+  [
+   "trial:NCT07018323",
+   "has_criterion",
+   "crit:NCT07018323-E02"
+  ],
+  [
+   "crit:NCT07018323-E02",
+   "decided_as",
+   "dec:NCT07018323:NCT07018323-E02:r1"
+  ],
+  [
+   "trial:NCT07018323",
+   "has_criterion",
+   "crit:NCT07018323-E03"
+  ],
+  [
+   "crit:NCT07018323-E03",
+   "decided_as",
+   "dec:NCT07018323:NCT07018323-E03:r1"
+  ],
+  [
+   "crit:NCT07018323-E03",
+   "requires",
+   "concept:diagnosis:active orbitopathy"
+  ],
+  [
+   "concept:diagnosis:active orbitopathy",
+   "observed_as",
+   "ev:SYN-0020-EV192"
+  ],
+  [
+   "ev:SYN-0020-EV192",
+   "derived_from",
+   "src:SYN-0020-D08:3142-3190"
+  ],
+  [
+   "ev:SYN-0020-EV192",
+   "supports",
+   "dec:NCT07018323:NCT07018323-E03:r1"
+  ],
+  [
+   "crit:NCT07018323-E03",
+   "requires",
+   "concept:symptom_finding:mild eye involvement"
+  ],
+  [
+   "concept:symptom_finding:mild eye involvement",
+   "observed_as",
+   "ev:SYN-0020-EV191"
+  ],
+  [
+   "ev:SYN-0020-EV191",
+   "derived_from",
+   "src:SYN-0020-D08:3142-3190"
+  ],
+  [
+   "ev:SYN-0020-EV191",
+   "supports",
+   "dec:NCT07018323:NCT07018323-E03:r1"
+  ],
+  [
+   "crit:NCT07018323-E03",
+   "requires",
+   "concept:clinical_activity_score"
+  ],
+  [
+   "concept:clinical_activity_score",
+   "observed_as",
+   "ev:SYN-0020-EV264"
+  ],
+  [
+   "ev:SYN-0020-EV264",
+   "derived_from",
+   "src:SYN-0020-D08:2399-2427"
+  ],
+  [
+   "ev:SYN-0020-EV264",
+   "supports",
+   "dec:NCT07018323:NCT07018323-E03:r1"
+  ],
+  [
+   "trial:NCT07018323",
+   "has_criterion",
+   "crit:NCT07018323-E04"
+  ],
+  [
+   "crit:NCT07018323-E04",
+   "decided_as",
+   "dec:NCT07018323:NCT07018323-E04:r1"
+  ],
+  [
+   "trial:NCT07018323",
+   "labelled",
+   "label:NCT07018323"
+  ],
+  [
+   "trial:NCT07113262",
+   "has_criterion",
+   "crit:NCT07113262-I01"
+  ],
+  [
+   "crit:NCT07113262-I01",
+   "decided_as",
+   "dec:NCT07113262:NCT07113262-I01:r1"
+  ],
+  [
+   "crit:NCT07113262-I01",
+   "requires",
+   "concept:clinical_activity_score"
+  ],
+  [
+   "ev:SYN-0020-EV264",
+   "supports",
+   "dec:NCT07113262:NCT07113262-I01:r1"
+  ],
+  [
+   "calc:NCT07113262:NCT07113262-I01",
+   "computes",
+   "dec:NCT07113262:NCT07113262-I01:r1"
+  ],
+  [
+   "trial:NCT07113262",
+   "has_criterion",
+   "crit:NCT07113262-I02"
+  ],
+  [
+   "crit:NCT07113262-I02",
+   "decided_as",
+   "dec:NCT07113262:NCT07113262-I02:r1"
+  ],
+  [
+   "crit:NCT07113262-I02",
+   "requires",
+   "concept:clinical_activity_score"
+  ],
+  [
+   "ev:SYN-0020-EV264",
+   "insufficient_for",
+   "dec:NCT07113262:NCT07113262-I02:r1"
+  ],
+  [
+   "crit:NCT07113262-I02",
+   "requires",
+   "concept:diagnosis:active orbitopathy"
+  ],
+  [
+   "ev:SYN-0020-EV192",
+   "insufficient_for",
+   "dec:NCT07113262:NCT07113262-I02:r1"
+  ],
+  [
+   "trial:NCT07113262",
+   "has_criterion",
+   "crit:NCT07113262-I03"
+  ],
+  [
+   "crit:NCT07113262-I03",
+   "decided_as",
+   "dec:NCT07113262:NCT07113262-I03:r1"
+  ],
+  [
+   "crit:NCT07113262-I03",
+   "requires",
+   "concept:diagnosis:graves disease"
+  ],
+  [
+   "concept:diagnosis:graves disease",
+   "observed_as",
+   "ev:SYN-0020-EV055"
+  ],
+  [
+   "ev:SYN-0020-EV055",
+   "derived_from",
+   "src:SYN-0020-D08:258-358"
+  ],
+  [
+   "ev:SYN-0020-EV055",
+   "supports",
+   "dec:NCT07113262:NCT07113262-I03:r1"
+  ],
+  [
+   "concept:diagnosis:graves disease",
+   "observed_as",
+   "ev:SYN-0020-EV082"
+  ],
+  [
+   "ev:SYN-0020-EV082",
+   "derived_from",
+   "src:SYN-0020-D08:809-829"
+  ],
+  [
+   "ev:SYN-0020-EV082",
+   "supports",
+   "dec:NCT07113262:NCT07113262-I03:r1"
+  ],
+  [
+   "trial:NCT07113262",
+   "has_criterion",
+   "crit:NCT07113262-I04"
+  ],
+  [
+   "crit:NCT07113262-I04",
+   "decided_as",
+   "dec:NCT07113262:NCT07113262-I04:r1"
+  ],
+  [
+   "crit:NCT07113262-I04",
+   "requires",
+   "concept:proptosis_exophthalmometry"
+  ],
+  [
+   "concept:proptosis_exophthalmometry",
+   "observed_as",
+   "ev:SYN-0020-EV262"
+  ],
+  [
+   "ev:SYN-0020-EV262",
+   "derived_from",
+   "src:SYN-0020-D08:2240-2353"
+  ],
+  [
+   "ev:SYN-0020-EV262",
+   "supports",
+   "dec:NCT07113262:NCT07113262-I04:r1"
+  ],
+  [
+   "calc:NCT07113262:NCT07113262-I04",
+   "computes",
+   "dec:NCT07113262:NCT07113262-I04:r1"
+  ],
+  [
+   "trial:NCT07113262",
+   "has_criterion",
+   "crit:NCT07113262-I05"
+  ],
+  [
+   "crit:NCT07113262-I05",
+   "decided_as",
+   "dec:NCT07113262:NCT07113262-I05:r1"
+  ],
+  [
+   "trial:NCT07113262",
+   "has_criterion",
+   "crit:NCT07113262-E01"
+  ],
+  [
+   "crit:NCT07113262-E01",
+   "decided_as",
+   "dec:NCT07113262:NCT07113262-E01:r1"
+  ],
+  [
+   "crit:NCT07113262-E01",
+   "requires",
+   "concept:free_t4"
+  ],
+  [
+   "ev:SYN-0020-EV232",
+   "supports",
+   "dec:NCT07113262:NCT07113262-E01:r1"
+  ],
+  [
+   "crit:NCT07113262-E01",
+   "requires",
+   "concept:total_t3"
+  ],
+  [
+   "concept:total_t3",
+   "observed_as",
+   "ev:SYN-0020-EV233"
+  ],
+  [
+   "ev:SYN-0020-EV233",
+   "derived_from",
+   "src:SYN-0020-D09:858-887"
+  ],
+  [
+   "ev:SYN-0020-EV233",
+   "supports",
+   "dec:NCT07113262:NCT07113262-E01:r1"
+  ],
+  [
+   "trial:NCT07113262",
+   "labelled",
+   "label:NCT07113262"
+  ],
+  [
+   "trial:NCT07762105",
+   "has_criterion",
+   "crit:NCT07762105-I01"
+  ],
+  [
+   "crit:NCT07762105-I01",
+   "decided_as",
+   "dec:NCT07762105:NCT07762105-I01:r1"
+  ],
+  [
+   "crit:NCT07762105-I01",
+   "requires",
+   "concept:birth_date"
+  ],
+  [
+   "ev:SYN-0020-EV002",
+   "supports",
+   "dec:NCT07762105:NCT07762105-I01:r1"
+  ],
+  [
+   "calc:NCT07762105:NCT07762105-I01",
+   "computes",
+   "dec:NCT07762105:NCT07762105-I01:r1"
+  ],
+  [
+   "trial:NCT07762105",
+   "has_criterion",
+   "crit:NCT07762105-I02"
+  ],
+  [
+   "crit:NCT07762105-I02",
+   "decided_as",
+   "dec:NCT07762105:NCT07762105-I02:r1"
+  ],
+  [
+   "crit:NCT07762105-I02",
+   "requires",
+   "concept:symptom_finding:mild eye involvement"
+  ],
+  [
+   "ev:SYN-0020-EV191",
+   "insufficient_for",
+   "dec:NCT07762105:NCT07762105-I02:r1"
+  ],
+  [
+   "crit:NCT07762105-I02",
+   "requires",
+   "concept:diagnosis:active orbitopathy"
+  ],
+  [
+   "ev:SYN-0020-EV192",
+   "insufficient_for",
+   "dec:NCT07762105:NCT07762105-I02:r1"
+  ],
+  [
+   "trial:NCT07762105",
+   "has_criterion",
+   "crit:NCT07762105-I03"
+  ],
+  [
+   "crit:NCT07762105-I03",
+   "decided_as",
+   "dec:NCT07762105:NCT07762105-I03:r1"
+  ],
+  [
+   "crit:NCT07762105-I03",
+   "requires",
+   "concept:clinical_activity_score"
+  ],
+  [
+   "ev:SYN-0020-EV264",
+   "supports",
+   "dec:NCT07762105:NCT07762105-I03:r1"
+  ],
+  [
+   "calc:NCT07762105:NCT07762105-I03",
+   "computes",
+   "dec:NCT07762105:NCT07762105-I03:r1"
+  ],
+  [
+   "trial:NCT07762105",
+   "has_criterion",
+   "crit:NCT07762105-I04"
+  ],
+  [
+   "crit:NCT07762105-I04",
+   "decided_as",
+   "dec:NCT07762105:NCT07762105-I04:r1"
+  ],
+  [
+   "trial:NCT07762105",
+   "has_criterion",
+   "crit:NCT07762105-I05"
+  ],
+  [
+   "crit:NCT07762105-I05",
+   "decided_as",
+   "dec:NCT07762105:NCT07762105-I05:r1"
+  ],
+  [
+   "trial:NCT07762105",
+   "has_criterion",
+   "crit:NCT07762105-I06"
+  ],
+  [
+   "crit:NCT07762105-I06",
+   "decided_as",
+   "dec:NCT07762105:NCT07762105-I06:r1"
+  ],
+  [
+   "trial:NCT07762105",
+   "has_criterion",
+   "crit:NCT07762105-I07"
+  ],
+  [
+   "crit:NCT07762105-I07",
+   "decided_as",
+   "dec:NCT07762105:NCT07762105-I07:r1"
+  ],
+  [
+   "trial:NCT07762105",
+   "has_criterion",
+   "crit:NCT07762105-E01"
+  ],
+  [
+   "crit:NCT07762105-E01",
+   "decided_as",
+   "dec:NCT07762105:NCT07762105-E01:r1"
+  ],
+  [
+   "crit:NCT07762105-E01",
+   "requires",
+   "concept:symptom_finding:visual change"
+  ],
+  [
+   "concept:symptom_finding:visual change",
+   "observed_as",
+   "ev:SYN-0020-EV073"
+  ],
+  [
+   "ev:SYN-0020-EV073",
+   "derived_from",
+   "src:SYN-0020-D08:602-671"
+  ],
+  [
+   "ev:SYN-0020-EV073",
+   "supports",
+   "dec:NCT07762105:NCT07762105-E01:r1"
+  ],
+  [
+   "crit:NCT07762105-E01",
+   "requires",
+   "concept:visual_acuity:visual acuity ou"
+  ],
+  [
+   "concept:visual_acuity:visual acuity ou",
+   "observed_as",
+   "ev:SYN-0020-EV263"
+  ],
+  [
+   "ev:SYN-0020-EV263",
+   "derived_from",
+   "src:SYN-0020-D08:2354-2398"
+  ],
+  [
+   "ev:SYN-0020-EV263",
+   "supports",
+   "dec:NCT07762105:NCT07762105-E01:r1"
+  ],
+  [
+   "crit:NCT07762105-E01",
+   "requires",
+   "concept:symptom_finding:color vision normal"
+  ],
+  [
+   "concept:symptom_finding:color vision normal",
+   "observed_as",
+   "ev:SYN-0020-EV158"
+  ],
+  [
+   "ev:SYN-0020-EV158",
+   "derived_from",
+   "src:SYN-0020-D08:2354-2398"
+  ],
+  [
+   "ev:SYN-0020-EV158",
+   "supports",
+   "dec:NCT07762105:NCT07762105-E01:r1"
+  ],
+  [
+   "trial:NCT07762105",
+   "has_criterion",
+   "crit:NCT07762105-E02"
+  ],
+  [
+   "crit:NCT07762105-E02",
+   "decided_as",
+   "dec:NCT07762105:NCT07762105-E02:r1"
+  ],
+  [
+   "crit:NCT07762105-E02",
+   "requires",
+   "concept:diagnosis:other autoimmune history"
+  ],
+  [
+   "concept:diagnosis:other autoimmune history",
+   "observed_as",
+   "ev:SYN-0020-EV089"
+  ],
+  [
+   "ev:SYN-0020-EV089",
+   "derived_from",
+   "src:SYN-0020-D08:865-943"
+  ],
+  [
+   "ev:SYN-0020-EV089",
+   "supports",
+   "dec:NCT07762105:NCT07762105-E02:r1"
+  ],
+  [
+   "trial:NCT07762105",
+   "has_criterion",
+   "crit:NCT07762105-E03"
+  ],
+  [
+   "crit:NCT07762105-E03",
+   "decided_as",
+   "dec:NCT07762105:NCT07762105-E03:r1"
+  ],
+  [
+   "crit:NCT07762105-E03",
+   "requires",
+   "concept:allergy:nkda"
+  ],
+  [
+   "concept:allergy:nkda",
+   "observed_as",
+   "ev:SYN-0020-EV095"
+  ],
+  [
+   "ev:SYN-0020-EV095",
+   "derived_from",
+   "src:SYN-0020-D08:1052-1057"
+  ],
+  [
+   "ev:SYN-0020-EV095",
+   "supports",
+   "dec:NCT07762105:NCT07762105-E03:r1"
+  ],
+  [
+   "trial:NCT07762105",
+   "has_criterion",
+   "crit:NCT07762105-E04"
+  ],
+  [
+   "crit:NCT07762105-E04",
+   "decided_as",
+   "dec:NCT07762105:NCT07762105-E04:r1"
+  ],
+  [
+   "trial:NCT07762105",
+   "has_criterion",
+   "crit:NCT07762105-E05"
+  ],
+  [
+   "crit:NCT07762105-E05",
+   "decided_as",
+   "dec:NCT07762105:NCT07762105-E05:r1"
+  ],
+  [
+   "trial:NCT07762105",
+   "has_criterion",
+   "crit:NCT07762105-E06"
+  ],
+  [
+   "crit:NCT07762105-E06",
+   "decided_as",
+   "dec:NCT07762105:NCT07762105-E06:r1"
+  ],
+  [
+   "crit:NCT07762105-E06",
+   "requires",
+   "concept:total_cholesterol"
+  ],
+  [
+   "concept:total_cholesterol",
+   "observed_as",
+   "ev:SYN-0020-EV234"
+  ],
+  [
+   "ev:SYN-0020-EV234",
+   "derived_from",
+   "src:SYN-0020-D09:907-941"
+  ],
+  [
+   "ev:SYN-0020-EV234",
+   "supports",
+   "dec:NCT07762105:NCT07762105-E06:r1"
+  ],
+  [
+   "crit:NCT07762105-E06",
+   "requires",
+   "concept:ldl_cholesterol"
+  ],
+  [
+   "concept:ldl_cholesterol",
+   "observed_as",
+   "ev:SYN-0020-EV235"
+  ],
+  [
+   "ev:SYN-0020-EV235",
+   "derived_from",
+   "src:SYN-0020-D09:942-963"
+  ],
+  [
+   "ev:SYN-0020-EV235",
+   "supports",
+   "dec:NCT07762105:NCT07762105-E06:r1"
+  ],
+  [
+   "crit:NCT07762105-E06",
+   "requires",
+   "concept:diagnosis:other cardiac history"
+  ],
+  [
+   "concept:diagnosis:other cardiac history",
+   "observed_as",
+   "ev:SYN-0020-EV085"
+  ],
+  [
+   "ev:SYN-0020-EV085",
+   "derived_from",
+   "src:SYN-0020-D08:865-943"
+  ],
+  [
+   "ev:SYN-0020-EV085",
+   "supports",
+   "dec:NCT07762105:NCT07762105-E06:r1"
+  ],
+  [
+   "crit:NCT07762105-E06",
+   "requires",
+   "concept:diagnosis:diabetes"
+  ],
+  [
+   "concept:diagnosis:diabetes",
+   "observed_as",
+   "ev:SYN-0020-EV091"
+  ],
+  [
+   "ev:SYN-0020-EV091",
+   "derived_from",
+   "src:SYN-0020-D08:944-956"
+  ],
+  [
+   "ev:SYN-0020-EV091",
+   "supports",
+   "dec:NCT07762105:NCT07762105-E06:r1"
+  ],
+  [
+   "crit:NCT07762105-E06",
+   "requires",
+   "concept:blood_pressure"
+  ],
+  [
+   "concept:blood_pressure",
+   "observed_as",
+   "ev:SYN-0020-EV077"
+  ],
+  [
+   "ev:SYN-0020-EV077",
+   "derived_from",
+   "src:SYN-0020-D08:720-734"
+  ],
+  [
+   "ev:SYN-0020-EV077",
+   "supports",
+   "dec:NCT07762105:NCT07762105-E06:r1"
+  ],
+  [
+   "crit:NCT07762105-E06",
+   "requires",
+   "concept:bmi"
+  ],
+  [
+   "concept:bmi",
+   "observed_as",
+   "ev:SYN-0020-EV076"
+  ],
+  [
+   "ev:SYN-0020-EV076",
+   "derived_from",
+   "src:SYN-0020-D08:704-719"
+  ],
+  [
+   "ev:SYN-0020-EV076",
+   "supports",
+   "dec:NCT07762105:NCT07762105-E06:r1"
+  ],
+  [
+   "trial:NCT07762105",
+   "has_criterion",
+   "crit:NCT07762105-E07"
+  ],
+  [
+   "crit:NCT07762105-E07",
+   "decided_as",
+   "dec:NCT07762105:NCT07762105-E07:r1"
+  ],
+  [
+   "trial:NCT07762105",
+   "has_criterion",
+   "crit:NCT07762105-E08"
+  ],
+  [
+   "crit:NCT07762105-E08",
+   "decided_as",
+   "dec:NCT07762105:NCT07762105-E08:r1"
+  ],
+  [
+   "crit:NCT07762105-E08",
+   "requires",
+   "concept:procedure:tonsillectomy"
+  ],
+  [
+   "ev:SYN-0020-EV093",
+   "supports",
+   "dec:NCT07762105:NCT07762105-E08:r1"
+  ],
+  [
+   "crit:NCT07762105-E08",
+   "requires",
+   "concept:procedure:surgery"
+  ],
+  [
+   "ev:SYN-0020-EV094",
+   "supports",
+   "dec:NCT07762105:NCT07762105-E08:r1"
+  ],
+  [
+   "trial:NCT07762105",
+   "has_criterion",
+   "crit:NCT07762105-E09"
+  ],
+  [
+   "crit:NCT07762105-E09",
+   "decided_as",
+   "dec:NCT07762105:NCT07762105-E09:r1"
+  ],
+  [
+   "trial:NCT07762105",
+   "has_criterion",
+   "crit:NCT07762105-E10"
+  ],
+  [
+   "crit:NCT07762105-E10",
+   "decided_as",
+   "dec:NCT07762105:NCT07762105-E10:r1"
+  ],
+  [
+   "crit:NCT07762105-E10",
+   "requires",
+   "concept:egfr"
+  ],
+  [
+   "concept:egfr",
+   "observed_as",
+   "ev:SYN-0020-EV222"
+  ],
+  [
+   "ev:SYN-0020-EV222",
+   "derived_from",
+   "src:SYN-0020-D09:543-571"
+  ],
+  [
+   "ev:SYN-0020-EV222",
+   "supports",
+   "dec:NCT07762105:NCT07762105-E10:r1"
+  ],
+  [
+   "calc:NCT07762105:NCT07762105-E10",
+   "computes",
+   "dec:NCT07762105:NCT07762105-E10:r1"
+  ],
+  [
+   "trial:NCT07762105",
+   "has_criterion",
+   "crit:NCT07762105-E11"
+  ],
+  [
+   "crit:NCT07762105-E11",
+   "decided_as",
+   "dec:NCT07762105:NCT07762105-E11:r1"
+  ],
+  [
+   "crit:NCT07762105-E11",
+   "requires",
+   "concept:hcg:hcg"
+  ],
+  [
+   "concept:hcg:hcg",
+   "observed_as",
+   "ev:SYN-0020-EV238"
+  ],
+  [
+   "ev:SYN-0020-EV238",
+   "derived_from",
+   "src:SYN-0020-D09:1023-1041"
+  ],
+  [
+   "ev:SYN-0020-EV238",
+   "supports",
+   "dec:NCT07762105:NCT07762105-E11:r1"
+  ],
+  [
+   "crit:NCT07762105-E11",
+   "requires",
+   "concept:hcg:urine/serum hcg"
+  ],
+  [
+   "concept:hcg:urine/serum hcg",
+   "observed_as",
+   "ev:SYN-0020-EV119"
+  ],
+  [
+   "ev:SYN-0020-EV119",
+   "derived_from",
+   "src:SYN-0020-D08:1693-1728"
+  ],
+  [
+   "ev:SYN-0020-EV119",
+   "supports",
+   "dec:NCT07762105:NCT07762105-E11:r1"
+  ],
+  [
+   "trial:NCT07762105",
+   "has_criterion",
+   "crit:NCT07762105-E12"
+  ],
+  [
+   "crit:NCT07762105-E12",
+   "decided_as",
+   "dec:NCT07762105:NCT07762105-E12:r1"
+  ],
+  [
+   "trial:NCT07762105",
+   "has_criterion",
+   "crit:NCT07762105-E13"
+  ],
+  [
+   "crit:NCT07762105-E13",
+   "decided_as",
+   "dec:NCT07762105:NCT07762105-E13:r1"
+  ],
+  [
+   "trial:NCT07762105",
+   "labelled",
+   "label:NCT07762105"
+  ]
+ ]
+}

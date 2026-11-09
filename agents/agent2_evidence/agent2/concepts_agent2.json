@@ -1,0 +1,127 @@
+{
+ "_note": "Agent 2 overlay on the team's concepts.json (①-b, CT.gov owner). Keys are never renamed here. drop_aliases: aliases Agent 2 does not use to find values (they belong to a more specific key, or are too short to be safe in free text). add_aliases: record spellings Agent 2 adds (proposed back to the team file). skip: keys Agent 2 never emits. ratio_below: a unitless value under this is a ratio and is multiplied by 100 into the key's percent unit. emit_as: a key Agent 2 writes under another key the ①-b criteria use (tumor_marker 4 criteria, biomarker 79).",
+ "drop_aliases": {
+  "pulmonary_function": [
+   "FVC",
+   "FEV1",
+   "DLCO"
+  ],
+  "axial_length": [
+   "AL"
+  ],
+  "acq": [
+   "ACT"
+  ]
+ },
+ "add_aliases": {
+  "fev1_fvc_ratio": [
+   "FEV1/FVC",
+   "FEV1/FVC ratio"
+  ],
+  "fev1": [
+   "FEV1 % predicted"
+  ],
+  "nt_probnp": [
+   "NT-pro BNP"
+  ],
+  "das28": [
+   "DAS 28"
+  ],
+  "six_minute_walk_distance": [
+   "6-minute walk",
+   "6 minute walk",
+   "six-minute walk"
+  ],
+  "clinical_activity_score": [
+   "CAS score",
+   "clinical activity score"
+  ],
+  "monthly_migraine_days": [
+   "migraine days"
+  ],
+  "intraocular_pressure": [
+   "intraocular pressure"
+  ],
+  "proptosis_exophthalmometry": [
+   "Hertel"
+  ],
+  "ctsi": [
+   "CT severity index"
+  ],
+  "nyha_class": [
+   "NYHA class"
+  ],
+  "calcium": [
+   "calcium",
+   "serum calcium"
+  ],
+  "magnesium": [
+   "magnesium"
+  ],
+  "phosphate": [
+   "phosphate",
+   "serum phosphate"
+  ],
+  "uric_acid": [
+   "uric acid"
+  ],
+  "hdl_cholesterol": [
+   "HDL cholesterol"
+  ]
+ },
+ "skip": [
+  "administrative"
+ ],
+ "ratio_below": {
+  "fev1_fvc_ratio": 1.5
+ },
+ "add_alt_units": {
+  "lymphocyte_count": {
+   "x10^3/uL": 1,
+   "10^3/uL": 1,
+   "x10^3/µL": 1,
+   "K/uL": 1,
+   "x10E3/uL": 1,
+   "cells/uL": 0.001,
+   "/uL": 0.001,
+   "/mm3": 0.001,
+   "cells/mm3": 0.001
+  },
+  "eosinophil_count": {
+   "x10^3/uL": 1,
+   "10^3/uL": 1,
+   "x10^3/µL": 1,
+   "K/uL": 1,
+   "x10E3/uL": 1,
+   "cells/uL": 0.001,
+   "/uL": 0.001,
+   "/mm3": 0.001,
+   "cells/mm3": 0.001
+  },
+  "pt": {
+   "sec": 1,
+   "seconds": 1
+  },
+  "aptt": {
+   "sec": 1,
+   "seconds": 1
+  },
+  "cd4_count": {
+   "cells/mm3": 1,
+   "cells/mm^3": 1,
+   "/mm3": 1,
+   "/uL": 1,
+   "cells/µL": 1
+  },
+  "hiv_viral_load": {
+   "cps/mL": 1,
+   "copies/ml": 1
+  },
+  "c_peptide": {
+   "pmol/mL": 3.02
+  }
+ },
+ "emit_as": {
+  "tumor_marker": "biomarker"
+ }
+}

@@ -1,0 +1,680 @@
+{
+ "patient_id": "SYN-0019",
+ "as_of": "2026-10-01",
+ "audience": "clinician",
+ "graph_file": "SYN-0019.json",
+ "ranking": [
+  "NCT05614739",
+  "NCT07566156"
+ ],
+ "also_mentioned": [],
+ "sentences": [
+  {
+   "text": "환자 SYN-0019, 기준일 2026-10-01",
+   "refs": [],
+   "kind": "meta"
+  },
+  {
+   "text": "1. NCT05614739 FORAGER-1: A Study of Vepugratinib (LY3866288; LOXO-435) in Participants With Cancer With a Change in a Gene Called FGFR3",
+   "refs": [
+    "trial:NCT05614739"
+   ],
+   "kind": "heading"
+  },
+  {
+   "text": "시험 판정: potential (남은 항목 7개)",
+   "refs": [
+    "label:NCT05614739"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "국내 모집 기관 4곳",
+   "refs": [
+    "trial:NCT05614739"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "Arms — EXPERIMENTAL: Drug: Vepugratinib; EXPERIMENTAL: Drug: Vepugratinib; EXPERIMENTAL: Drug: Vepugratinib; EXPERIMENTAL: Drug: Vepugratinib + Drug: Pembrolizumab + Drug: enfortumab vedotin; EXPERIMENTAL: Drug: Vepugratinib + Drug: Pembrolizumab + Drug: enfortumab vedotin; EXPERIMENTAL: Drug: Vepugratinib + Drug: Trastuzumab Deruxtecan; 외 2개",
+   "refs": [
+    "trial:NCT05614739"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT05614739-I04 [inclusion] 미확인 (기록 없음) → 다음: med_record_check",
+   "refs": [
+    "crit:NCT05614739-I04",
+    "dec:NCT05614739:NCT05614739-I04:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: FGFR3 alteration status of the tumor (molecular testing result)",
+   "refs": [
+    "dec:NCT05614739:NCT05614739-I04:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT05614739-I08 [inclusion] 충족",
+   "refs": [
+    "crit:NCT05614739-I08",
+    "dec:NCT05614739:NCT05614739-I08:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"ECOG 1\" (SYN-0019-D08, 2026-09-24)",
+   "refs": [
+    "ev:SYN-0019-EV164",
+    "src:SYN-0019-D08:3036-3042"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT05614739-I09 [inclusion] 미확인 (근거 불충분) → 다음: patient_question",
+   "refs": [
+    "crit:NCT05614739-I09",
+    "dec:NCT05614739:NCT05614739-I09:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Surgical eligibility and the patient's agreement to radical cystectomy plus pelvic lymph node dissection",
+   "refs": [
+    "dec:NCT05614739:NCT05614739-I09:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT05614739-E01 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT05614739-E01",
+    "dec:NCT05614739:NCT05614739-E01:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"No prior malignancy.\" (SYN-0019-D08, 2026-09-24)",
+   "refs": [
+    "ev:SYN-0019-EV075",
+    "src:SYN-0019-D08:901-921"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT05614739-E02 [exclusion] 미확인 (기록 없음) → 다음: med_record_check",
+   "refs": [
+    "crit:NCT05614739-E02",
+    "dec:NCT05614739:NCT05614739-E02:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Brain imaging or an explicit statement on CNS metastases",
+   "refs": [
+    "dec:NCT05614739:NCT05614739-E02:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT05614739-E03 [exclusion] 미확인 (기록 없음) → 다음: patient_question",
+   "refs": [
+    "crit:NCT05614739-E03",
+    "dec:NCT05614739:NCT05614739-E03:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Ophthalmologic exam or history of corneal or retinal disorder",
+   "refs": [
+    "dec:NCT05614739:NCT05614739-E03:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT05614739-E04 [exclusion] 미확인 (기록 없음) → 다음: med_history_check",
+   "refs": [
+    "crit:NCT05614739-E04",
+    "dec:NCT05614739:NCT05614739-E04:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Confirmation of no prior systemic or other therapy and any resulting unresolved toxicity",
+   "refs": [
+    "dec:NCT05614739:NCT05614739-E04:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT05614739-E05 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT05614739-E05",
+    "dec:NCT05614739:NCT05614739-E05:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"No other cardiac, hepatic, renal, autoimmune or neurologic history.\" (SYN-0019-D08, 2026-09-24)",
+   "refs": [
+    "ev:SYN-0019-EV070",
+    "src:SYN-0019-D08:833-900"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT05614739-E06 [exclusion] 미확인 (기록 없음) → 다음: new_test",
+   "refs": [
+    "crit:NCT05614739-E06",
+    "dec:NCT05614739:NCT05614739-E06:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: ECG with QTcF measurement",
+   "refs": [
+    "dec:NCT05614739:NCT05614739-E06:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT05614739-E07 [exclusion] 미확인 (근거 불충분) → 다음: clinician_confirmation",
+   "refs": [
+    "crit:NCT05614739-E07",
+    "dec:NCT05614739:NCT05614739-E07:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Investigator judgment on whether COPD or T2DM is clinically significant; infection status",
+   "refs": [
+    "dec:NCT05614739:NCT05614739-E07:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT05614739-E08 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT05614739-E08",
+    "dec:NCT05614739:NCT05614739-E08:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Male.\" (SYN-0019-D01, 2026-08-03)",
+   "refs": [
+    "ev:SYN-0019-EV001",
+    "src:SYN-0019-D01:0-5"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT05614739-E18 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT05614739-E18",
+    "dec:NCT05614739:NCT05614739-E18:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"HR 78 regular.\" (SYN-0019-D08, 2026-09-24)",
+   "refs": [
+    "ev:SYN-0019-EV062",
+    "src:SYN-0019-D08:636-650"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   계산: heart_rate 78 /min < 50 bpm, 측정 2026-09-24 (7일 전)",
+   "refs": [
+    "calc:NCT05614739:NCT05614739-E18"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "2. NCT07566156 Enfortumab Vedotin in Combination With Pembrolizumab vs. Concurrent Chemoradiotherapy (cCRT) in People With Muscle Invasive Bladder Cancer (EV-309)",
+   "refs": [
+    "trial:NCT07566156"
+   ],
+   "kind": "heading"
+  },
+  {
+   "text": "시험 판정: potential (남은 항목 16개)",
+   "refs": [
+    "label:NCT07566156"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "국내 모집 기관 2곳",
+   "refs": [
+    "trial:NCT07566156"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "Arms — EXPERIMENTAL: Drug: Enfortumab vedotin + Drug: Pembrolizumab; ACTIVE_COMPARATOR: Radiation: Conventional Radiotherapy + Radiation: Hypofractionated Radiotherapy + Drug: Cisplatin + Drug: Fluorouracil + Drug: Mitomycin C + Drug: Gemcitabine",
+   "refs": [
+    "trial:NCT07566156"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07566156-I01 [inclusion] 충족",
+   "refs": [
+    "crit:NCT07566156-I01",
+    "dec:NCT07566156:NCT07566156-I01:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"TURBT: high-grade invasive urothelial carcinoma, invading muscularis propria (detrusor muscle present).\" (SYN-0019-D04, 2026-08-21)",
+   "refs": [
+    "ev:SYN-0019-EV025",
+    "src:SYN-0019-D04:0-103"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"MDT: muscle-invasive bladder cancer, cT2N0M0.\" (SYN-0019-D06, 2026-09-10)",
+   "refs": [
+    "ev:SYN-0019-EV029",
+    "src:SYN-0019-D06:0-45"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Pure urothelial histology.\" (SYN-0019-D08, 2026-09-24)",
+   "refs": [
+    "ev:SYN-0019-EV245",
+    "src:SYN-0019-D08:2622-2648"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07566156-I02 [inclusion] 미확인 (기록 없음) → 다음: patient_question",
+   "refs": [
+    "crit:NCT07566156-I02",
+    "dec:NCT07566156:NCT07566156-I02:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Whether tumor tissue will be/has been submitted for central clinical staging",
+   "refs": [
+    "dec:NCT07566156:NCT07566156-I02:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07566156-I03 [inclusion] 미확인 (근거 불충분) → 다음: patient_question",
+   "refs": [
+    "crit:NCT07566156-I03",
+    "dec:NCT07566156:NCT07566156-I03:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Patient's eligibility for and agreement to chemoradiotherapy with a protocol radiosensitizer",
+   "refs": [
+    "dec:NCT07566156:NCT07566156-I03:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07566156-I04 [inclusion] 미확인 (근거 불충분) → 다음: patient_question",
+   "refs": [
+    "crit:NCT07566156-I04",
+    "dec:NCT07566156:NCT07566156-I04:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Whether patient elects bladder preservation instead of cystectomy",
+   "refs": [
+    "dec:NCT07566156:NCT07566156-I04:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07566156-I05 [inclusion] 충족",
+   "refs": [
+    "crit:NCT07566156-I05",
+    "dec:NCT07566156:NCT07566156-I05:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"ECOG 1.\" (SYN-0019-D06, 2026-09-10)",
+   "refs": [
+    "ev:SYN-0019-EV030",
+    "src:SYN-0019-D06:46-53"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   계산: ecog 1 points <= 2 , 측정 2026-09-10 (21일 전)",
+   "refs": [
+    "calc:NCT07566156:NCT07566156-I05"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07566156-E01 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT07566156-E01",
+    "dec:NCT07566156:NCT07566156-E01:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Staging: cT2N0M0, stage II, muscle-invasive urothelial carcinoma of the bladder (no nodal or distant disease on CT abdomen/pelvis and chest).\" (SYN-0019-D08, 2026-09-24)",
+   "refs": [
+    "ev:SYN-0019-EV142",
+    "src:SYN-0019-D08:2480-2621"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Staging: cT2N0M0, stage II, muscle-invasive urothelial carcinoma of the bladder (no nodal or distant disease on CT abdomen/pelvis and chest).\" (SYN-0019-D08, 2026-09-24)",
+   "refs": [
+    "ev:SYN-0019-EV144",
+    "src:SYN-0019-D08:2480-2621"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Staging: cT2N0M0, stage II, muscle-invasive urothelial carcinoma of the bladder (no nodal or distant disease on CT abdomen/pelvis and chest).\" (SYN-0019-D08, 2026-09-24)",
+   "refs": [
+    "ev:SYN-0019-EV145",
+    "src:SYN-0019-D08:2480-2621"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Pure urothelial histology.\" (SYN-0019-D08, 2026-09-24)",
+   "refs": [
+    "ev:SYN-0019-EV245",
+    "src:SYN-0019-D08:2622-2648"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"No prior malignancy.\" (SYN-0019-D08, 2026-09-24)",
+   "refs": [
+    "ev:SYN-0019-EV075",
+    "src:SYN-0019-D08:901-921"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07566156-E02 [exclusion] 미확인 (기록 없음) → 다음: med_history_check",
+   "refs": [
+    "crit:NCT07566156-E02",
+    "dec:NCT07566156:NCT07566156-E02:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07566156-E03 [exclusion] 미확인 (기록 없음) → 다음: med_history_check",
+   "refs": [
+    "crit:NCT07566156-E03",
+    "dec:NCT07566156:NCT07566156-E03:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Any prior pelvic radiation",
+   "refs": [
+    "dec:NCT07566156:NCT07566156-E03:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07566156-E04 [exclusion] 미확인 (기록 없음) → 다음: clinician_confirmation",
+   "refs": [
+    "crit:NCT07566156-E04",
+    "dec:NCT07566156:NCT07566156-E04:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Clinician assessment of bladder function adequacy",
+   "refs": [
+    "dec:NCT07566156:NCT07566156-E04:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07566156-E05 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT07566156-E05",
+    "dec:NCT07566156:NCT07566156-E05:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"No prior malignancy.\" (SYN-0019-D08, 2026-09-24)",
+   "refs": [
+    "ev:SYN-0019-EV075",
+    "src:SYN-0019-D08:901-921"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07566156-E06 [exclusion] 미확인 (기록 없음) → 다음: med_history_check",
+   "refs": [
+    "crit:NCT07566156-E06",
+    "dec:NCT07566156:NCT07566156-E06:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07566156-E07 [exclusion] 미확인 (기록 없음) → 다음: med_history_check",
+   "refs": [
+    "crit:NCT07566156-E07",
+    "dec:NCT07566156:NCT07566156-E07:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07566156-E08 [exclusion] 미확인 (근거 불충분) → 다음: clinician_confirmation",
+   "refs": [
+    "crit:NCT07566156-E08",
+    "dec:NCT07566156:NCT07566156-E08:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Clinician judgment whether diabetes (HbA1c 7.4%, above 7.0 target) is uncontrolled",
+   "refs": [
+    "dec:NCT07566156:NCT07566156-E08:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07566156-E09 [exclusion] 미확인 (기록 없음) → 다음: med_history_check",
+   "refs": [
+    "crit:NCT07566156-E09",
+    "dec:NCT07566156:NCT07566156-E09:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07566156-E10 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT07566156-E10",
+    "dec:NCT07566156:NCT07566156-E10:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Serology: HBsAg non-reactive\" (SYN-0019-D09, 2026-09-24)",
+   "refs": [
+    "ev:SYN-0019-EV223",
+    "src:SYN-0019-D09:1316-1344"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"anti-HBc total non-reactive\" (SYN-0019-D09, 2026-09-24)",
+   "refs": [
+    "ev:SYN-0019-EV224",
+    "src:SYN-0019-D09:1346-1373"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"anti-HCV non-reactive\" (SYN-0019-D09, 2026-09-24)",
+   "refs": [
+    "ev:SYN-0019-EV225",
+    "src:SYN-0019-D09:1375-1396"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"HIV 1/2 Ag/Ab non-reactive.\" (SYN-0019-D09, 2026-09-24)",
+   "refs": [
+    "ev:SYN-0019-EV227",
+    "src:SYN-0019-D09:1398-1425"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07566156-E11 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT07566156-E11",
+    "dec:NCT07566156:NCT07566156-E11:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"TURBT: high-grade invasive urothelial carcinoma, invading muscularis propria (detrusor muscle present).\" (SYN-0019-D04, 2026-08-21)",
+   "refs": [
+    "ev:SYN-0019-EV024",
+    "src:SYN-0019-D04:0-103"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"No other surgery.\" (SYN-0019-D08, 2026-09-24)",
+   "refs": [
+    "ev:SYN-0019-EV079",
+    "src:SYN-0019-D08:1018-1035"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07566156-E12 [exclusion] 미확인 (기록 없음) → 다음: patient_question",
+   "refs": [
+    "crit:NCT07566156-E12",
+    "dec:NCT07566156:NCT07566156-E12:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Hypersensitivity to enfortumab vedotin excipients (e.g., polysorbate, trehalose)",
+   "refs": [
+    "dec:NCT07566156:NCT07566156-E12:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07566156-E13 [exclusion] 미확인 (기록 없음) → 다음: med_record_check",
+   "refs": [
+    "crit:NCT07566156-E13",
+    "dec:NCT07566156:NCT07566156-E13:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Presence of genetic radiosensitivity disorder",
+   "refs": [
+    "dec:NCT07566156:NCT07566156-E13:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07566156-E14 [exclusion] 미확인 (기록 없음) → 다음: clinician_confirmation",
+   "refs": [
+    "crit:NCT07566156-E14",
+    "dec:NCT07566156:NCT07566156-E14:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Ophthalmologic status (keratitis or corneal ulcer)",
+   "refs": [
+    "dec:NCT07566156:NCT07566156-E14:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07566156-E15 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT07566156-E15",
+    "dec:NCT07566156:NCT07566156-E15:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"No other cardiac, hepatic, renal, autoimmune or neurologic history.\" (SYN-0019-D08, 2026-09-24)",
+   "refs": [
+    "ev:SYN-0019-EV073",
+    "src:SYN-0019-D08:833-900"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07566156-E16 [exclusion] 미확인 (기록 없음) → 다음: med_record_check",
+   "refs": [
+    "crit:NCT07566156-E16",
+    "dec:NCT07566156:NCT07566156-E16:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: History of pulmonary fibrosis/pneumonitis; screening chest CT pneumonitis finding",
+   "refs": [
+    "dec:NCT07566156:NCT07566156-E16:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07566156-E17 [exclusion] 미확인 (기록 없음) → 다음: med_history_check",
+   "refs": [
+    "crit:NCT07566156-E17",
+    "dec:NCT07566156:NCT07566156-E17:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07566156-E18 [exclusion] 미확인 (기록 없음) → 다음: patient_question",
+   "refs": [
+    "crit:NCT07566156-E18",
+    "dec:NCT07566156:NCT07566156-E18:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Live attenuated vaccine in past 30 days",
+   "refs": [
+    "dec:NCT07566156:NCT07566156-E18:r1"
+   ],
+   "kind": "fact"
+  }
+ ],
+ "evidence": {
+  "files": [
+   "evidence_dev_haiku_v14_12.jsonl",
+   "evidence_dev_variants_haiku_v14_12.jsonl"
+  ],
+  "sha256": "daba4f5f1e16ec2eefc47311f5c13f85e6b5f218c85424f08f9af3d9bab09124",
+  "id_series": "haiku",
+  "graph_ev_nodes_checked": 2240
+ },
+ "agent6": "a6-0.4.14"
+}

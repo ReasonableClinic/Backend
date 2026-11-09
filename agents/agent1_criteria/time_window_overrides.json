@@ -1,0 +1,175 @@
+{
+ "NCT06848166-I05": {
+  "time_window": null,
+  "note": "기간 표현이지만 적격성 유효기간 아님(나이·피임·추적기간·투약지속 등)"
+ },
+ "NCT06942039-I05": {
+  "time_window": null,
+  "note": "기간 표현이지만 적격성 유효기간 아님(나이·피임·추적기간·투약지속 등)"
+ },
+ "NCT06908096-I05": {
+  "time_window": null,
+  "note": "기간 표현이지만 적격성 유효기간 아님(나이·피임·추적기간·투약지속 등)"
+ },
+ "NCT06908096-I08": {
+  "time_window": null,
+  "note": "기간 표현이지만 적격성 유효기간 아님(나이·피임·추적기간·투약지속 등)"
+ },
+ "NCT07639684-E01": {
+  "time_window": null,
+  "note": "기간 표현이지만 적격성 유효기간 아님(나이·피임·추적기간·투약지속 등)"
+ },
+ "NCT06600412-E08": {
+  "time_window": null,
+  "note": "기간 표현이지만 적격성 유효기간 아님(나이·피임·추적기간·투약지속 등)"
+ },
+ "NCT07409103-I12": {
+  "time_window": null,
+  "note": "기간 표현이지만 적격성 유효기간 아님(나이·피임·추적기간·투약지속 등)"
+ },
+ "NCT07409103-I13": {
+  "time_window": null,
+  "note": "기간 표현이지만 적격성 유효기간 아님(나이·피임·추적기간·투약지속 등)"
+ },
+ "NCT05428488-E10": {
+  "time_window": null,
+  "note": "기간 표현이지만 적격성 유효기간 아님(나이·피임·추적기간·투약지속 등)"
+ },
+ "NCT02714634-E07": {
+  "time_window": null,
+  "note": "기간 표현이지만 적격성 유효기간 아님(나이·피임·추적기간·투약지속 등)"
+ },
+ "NCT07287150-I02": {
+  "time_window": null,
+  "note": "기간 표현이지만 적격성 유효기간 아님(나이·피임·추적기간·투약지속 등)"
+ },
+ "NCT05522660-I01": {
+  "time_window": null,
+  "note": "기간 표현이지만 적격성 유효기간 아님(나이·피임·추적기간·투약지속 등)"
+ },
+ "NCT05522660-E02": {
+  "time_window": null,
+  "note": "기간 표현이지만 적격성 유효기간 아님(나이·피임·추적기간·투약지속 등)"
+ },
+ "NCT07748988-I11": {
+  "time_window": null,
+  "note": "기간 표현이지만 적격성 유효기간 아님(나이·피임·추적기간·투약지속 등)"
+ },
+ "NCT07748988-I12": {
+  "time_window": null,
+  "note": "기간 표현이지만 적격성 유효기간 아님(나이·피임·추적기간·투약지속 등)"
+ },
+ "NCT05714839-I12": {
+  "time_window": null,
+  "note": "기간 표현이지만 적격성 유효기간 아님(나이·피임·추적기간·투약지속 등)"
+ },
+ "NCT05714839-I13": {
+  "time_window": null,
+  "note": "기간 표현이지만 적격성 유효기간 아님(나이·피임·추적기간·투약지속 등)"
+ },
+ "NCT07269639-I02": {
+  "time_window": null,
+  "note": "기간 표현이지만 적격성 유효기간 아님(나이·피임·추적기간·투약지속 등)"
+ },
+ "NCT07269639-I03": {
+  "time_window": null,
+  "note": "기간 표현이지만 적격성 유효기간 아님(나이·피임·추적기간·투약지속 등)"
+ },
+ "NCT07222956-I07": {
+  "time_window": null,
+  "note": "기간 표현이지만 적격성 유효기간 아님(나이·피임·추적기간·투약지속 등)"
+ },
+ "NCT07267065-E10": {
+  "time_window": null,
+  "note": "기간 표현이지만 적격성 유효기간 아님(나이·피임·추적기간·투약지속 등)"
+ },
+ "NCT06943573-I03": {
+  "time_window": null,
+  "note": "기간 표현이지만 적격성 유효기간 아님(나이·피임·추적기간·투약지속 등)"
+ },
+ "NCT06791291-I10": {
+  "time_window": null,
+  "note": "기간 표현이지만 적격성 유효기간 아님(나이·피임·추적기간·투약지속 등)"
+ },
+ "NCT06908096-E02": {
+  "time_window": {
+   "anchor": "as_of",
+   "kind": "lookback",
+   "max_days_before": 30
+  },
+  "note": "'more than 10 days of steroids within 30 days' → 창은 30일"
+ },
+ "NCT07365358-E05": {
+  "time_window": {
+   "anchor": "as_of",
+   "kind": "lookback",
+   "max_days_before": 84
+  },
+  "note": "'insulin for over 7 days within 12 weeks' → 창은 84일"
+ },
+ "NCT07748988-I10": {
+  "time_window": {
+   "anchor": "as_of",
+   "kind": "lookback",
+   "max_days_before": 28
+  },
+  "note": "임신검사 within 28 days prior"
+ },
+ "NCT06198725-E05": {
+  "time_window": {
+   "anchor": "as_of",
+   "kind": "lookback",
+   "max_days_before": 30
+  },
+  "note": "'within the past month for 3 days or more' → 창은 30일"
+ },
+ "NCT06198725-E11": {
+  "time_window": {
+   "anchor": "as_of",
+   "kind": "lookback",
+   "max_days_before": 30
+  },
+  "note": "'within the first month' → 30일"
+ },
+ "NCT06600412-I02": {
+  "time_window": {
+   "anchor": "as_of",
+   "kind": "min_elapsed",
+   "min_days_before": 28
+  },
+  "note": "stable antihypertensive 4 weeks before = 최소 28일 유지"
+ },
+ "NCT06632444-I03": {
+  "time_window": {
+   "anchor": "as_of",
+   "kind": "min_elapsed",
+   "min_days_before": 90
+  },
+  "note": "stable weight 3 months prior = 최소 90일 유지"
+ },
+ "NCT07639684-I06": {
+  "time_window": {
+   "anchor": "as_of",
+   "kind": "min_elapsed",
+   "min_days_before": 90
+  },
+  "note": "stable weight within the 3 months = 최소 90일 유지"
+ },
+ "NCT07849348-I04": {
+  "time_window": {
+   "anchor": "as_of",
+   "kind": "min_elapsed",
+   "min_days_before": 84
+  },
+  "note": "stable renal function within 12 weeks = 최소 84일 유지"
+ },
+ "NCT07720284-I03": {
+  "time_window": {
+   "anchor": "as_of",
+   "kind": "range",
+   "min_days_before": 28,
+   "max_days_before": 120
+  },
+  "note": "resection 28 to 120 days before randomisation"
+ }
+}

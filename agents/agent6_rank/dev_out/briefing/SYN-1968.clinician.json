@@ -1,0 +1,615 @@
+{
+ "patient_id": "SYN-1968",
+ "as_of": "2026-10-01",
+ "audience": "clinician",
+ "graph_file": "SYN-1968.json",
+ "ranking": [
+  "NCT04929223"
+ ],
+ "also_mentioned": [
+  "NCT06244771"
+ ],
+ "sentences": [
+  {
+   "text": "환자 SYN-1968, 기준일 2026-10-01",
+   "refs": [],
+   "kind": "meta"
+  },
+  {
+   "text": "1. NCT04929223 A Study Evaluating the Safety and Efficacy of Targeted Therapies in Subpopulations of Patients With Metastatic Colorectal Cancer (INTRINSIC)",
+   "refs": [
+    "trial:NCT04929223"
+   ],
+   "kind": "heading"
+  },
+  {
+   "text": "시험 판정: potential (남은 항목 19개)",
+   "refs": [
+    "label:NCT04929223"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "국내 모집 기관 7곳",
+   "refs": [
+    "trial:NCT04929223"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "Arms — EXPERIMENTAL: Drug: Inavolisib + Drug: Cetuximab + Diagnostic Test: FoundationOne®Liquid CDx; EXPERIMENTAL: Drug: Inavolisib + Drug: Bevacizumab + Diagnostic Test: FoundationOne®Liquid CDx; EXPERIMENTAL: Drug: Bevacizumab + Drug: Atezolizumab + Drug: Tiragolumab + Diagnostic Test: FoundationOne®Liquid CDx; EXPERIMENTAL: Drug: Atezolizumab + Drug: Tiragolumab + Diagnostic Test: FoundationOne®Liquid CDx; EXPERIMENTAL: Drug: Atezolizumab + Drug: SY-5609 + Diagnostic Test: FoundationOne®Liquid CDx; EXPERIMENTAL: Drug: Cetuximab + Drug: Divarasib + Drug: FOLFOX + Diagnostic Test: FoundationOne®Liquid CDx; 외 4개",
+   "refs": [
+    "trial:NCT04929223"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT04929223-I01 [inclusion] 미확인 (기록 없음) → 다음: patient_question",
+   "refs": [
+    "crit:NCT04929223-I01",
+    "dec:NCT04929223:NCT04929223-I01:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT04929223-I02 [inclusion] 충족",
+   "refs": [
+    "crit:NCT04929223-I02",
+    "dec:NCT04929223:NCT04929223-I02:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"DOB 1967-02-28.\" (SYN-1968-D01, 2025-03-10)",
+   "refs": [
+    "ev:SYN-1968-EV002",
+    "src:SYN-1968-D01:8-23"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   계산: age_at_as_of = 59.589 (범위 18.0~None)",
+   "refs": [
+    "calc:NCT04929223:NCT04929223-I02"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT04929223-I03 [inclusion] 미확인 (근거 불충분) → 다음: med_record_check",
+   "refs": [
+    "crit:NCT04929223-I03",
+    "dec:NCT04929223:NCT04929223-I03:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Full report of a validated, accredited biomarker test (CAP/CLIA or health-authority approved) for the cohort-specific biomarker",
+   "refs": [
+    "dec:NCT04929223:NCT04929223-I03:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT04929223-I04 [inclusion] 충족",
+   "refs": [
+    "crit:NCT04929223-I04",
+    "dec:NCT04929223:NCT04929223-I04:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"ECOG 1.\" (SYN-1968-D07, 2026-09-17)",
+   "refs": [
+    "ev:SYN-1968-EV037",
+    "src:SYN-1968-D07:24-31"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   계산: ecog 1 points <= 1 , 측정 2026-09-17 (14일 전)",
+   "refs": [
+    "calc:NCT04929223:NCT04929223-I04"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT04929223-I05 [inclusion] 미확인 (기록 없음) → 다음: clinician_confirmation",
+   "refs": [
+    "crit:NCT04929223-I05",
+    "dec:NCT04929223:NCT04929223-I05:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Investigator's estimate of life expectancy >= 3 months",
+   "refs": [
+    "dec:NCT04929223:NCT04929223-I05:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT04929223-I06 [inclusion] 충족",
+   "refs": [
+    "crit:NCT04929223-I06",
+    "dec:NCT04929223:NCT04929223-I06:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Sigmoid colectomy: adenocarcinoma, moderately differentiated, pT3N2a (5/21 nodes).\" (SYN-1968-D02, 2025-03-28)",
+   "refs": [
+    "ev:SYN-1968-EV007",
+    "src:SYN-1968-D02:0-82"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Sigmoid colectomy: adenocarcinoma, moderately differentiated, pT3N2a (5/21 nodes).\" (SYN-1968-D02, 2025-03-28)",
+   "refs": [
+    "ev:SYN-1968-EV006",
+    "src:SYN-1968-D02:0-82"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT04929223-I07 [inclusion] 충족",
+   "refs": [
+    "crit:NCT04929223-I07",
+    "dec:NCT04929223:NCT04929223-I07:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"with metastatic colorectal cancer (sigmoid primary, pT3N2a, KRAS G12D mutant, NRAS/BRAF wild type, MSS) and unresectable bilobar liver metastases diagnosed 2025.\" (SYN-1968-D08, 2026-09-24)",
+   "refs": [
+    "ev:SYN-1968-EV100",
+    "src:SYN-1968-D08:190-351"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"CT: enlargement of liver metastases (sum of diameters +31%) and new 8 mm right lower lobe lung nodule.\" (SYN-1968-D05, 2026-08-25)",
+   "refs": [
+    "ev:SYN-1968-EV022",
+    "src:SYN-1968-D05:0-102"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT04929223-I08 [inclusion] 충족",
+   "refs": [
+    "crit:NCT04929223-I08",
+    "dec:NCT04929223:NCT04929223-I08:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Follow-up after progression on first-line FOLFOX + bevacizumab\" (SYN-1968-D08, 2026-09-24)",
+   "refs": [
+    "ev:SYN-1968-EV092",
+    "src:SYN-1968-D08:59-121"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"then FOLFOX + bevacizumab x16 cycles (2025-05-06 to 2026-07-28).\" (SYN-1968-D08, 2026-07-28)",
+   "refs": [
+    "ev:SYN-1968-EV109",
+    "src:SYN-1968-D08:390-454"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"followed by 5-FU/LV + bevacizumab maintenance.\" (SYN-1968-D08, 2026-09-24)",
+   "refs": [
+    "ev:SYN-1968-EV112",
+    "src:SYN-1968-D08:510-556"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT04929223-I09 [inclusion] 미확인 (기록 없음) → 다음: clinician_confirmation",
+   "refs": [
+    "crit:NCT04929223-I09",
+    "dec:NCT04929223:NCT04929223-I09:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT04929223-I10 [inclusion] 충족",
+   "refs": [
+    "crit:NCT04929223-I10",
+    "dec:NCT04929223:NCT04929223-I10:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"CT: multiple bilobar liver metastases (largest 3.8 cm), unresectable per HPB review.\" (SYN-1968-D03, 2025-04-15)",
+   "refs": [
+    "ev:SYN-1968-EV016",
+    "src:SYN-1968-D03:0-84"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"CT 2026-08-25 showed liver metastases enlarged (sum of diameters +31%) and a new 8 mm RLL lung nodule.\" (SYN-1968-D08, 2026-09-24)",
+   "refs": [
+    "ev:SYN-1968-EV113",
+    "src:SYN-1968-D08:557-659"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Liver metastases bilobar, largest 3.8 cm at baseline, unresectable per HPB review.\" (SYN-1968-D08, 2026-09-24)",
+   "refs": [
+    "ev:SYN-1968-EV230",
+    "src:SYN-1968-D08:3485-3567"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT04929223-I11 [inclusion] 미확인 (기록 없음) → 다음: patient_question",
+   "refs": [
+    "crit:NCT04929223-I11",
+    "dec:NCT04929223:NCT04929223-I11:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Availability of archival tissue or willingness to undergo baseline biopsy",
+   "refs": [
+    "dec:NCT04929223:NCT04929223-I11:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT04929223-I12 [inclusion] 미확인 (근거 불충분) → 다음: clinician_confirmation",
+   "refs": [
+    "crit:NCT04929223-I12",
+    "dec:NCT04929223:NCT04929223-I12:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Protocol thresholds for adequacy, and labs within 14 days before study treatment start",
+   "refs": [
+    "dec:NCT04929223:NCT04929223-I12:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT04929223-I13 [inclusion] 미확인 (기록 없음) → 다음: patient_question",
+   "refs": [
+    "crit:NCT04929223-I13",
+    "dec:NCT04929223:NCT04929223-I13:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Menopausal/childbearing potential status and agreement to contraception or abstinence",
+   "refs": [
+    "dec:NCT04929223:NCT04929223-I13:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT04929223-I14 [inclusion] 충족",
+   "refs": [
+    "crit:NCT04929223-I14",
+    "dec:NCT04929223:NCT04929223-I14:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Female.\" (SYN-1968-D01, 2025-03-10)",
+   "refs": [
+    "ev:SYN-1968-EV001",
+    "src:SYN-1968-D01:0-7"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT04929223-E01 [exclusion] 미확인 (기록 없음) → 다음: patient_question",
+   "refs": [
+    "crit:NCT04929223-E01",
+    "dec:NCT04929223:NCT04929223-E01:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Whether patient is currently enrolled in another interventional trial",
+   "refs": [
+    "dec:NCT04929223:NCT04929223-E01:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT04929223-E02 [exclusion] 미확인 (기록 없음) → 다음: med_history_check",
+   "refs": [
+    "crit:NCT04929223-E02",
+    "dec:NCT04929223:NCT04929223-E02:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT04929223-E03 [exclusion] 미확인 (기록 없음) → 다음: patient_question",
+   "refs": [
+    "crit:NCT04929223-E03",
+    "dec:NCT04929223:NCT04929223-E03:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Whether any investigational therapy was received within 28 days",
+   "refs": [
+    "dec:NCT04929223:NCT04929223-E03:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT04929223-E04 [exclusion] 미확인 (기록 없음) → 다음: patient_question",
+   "refs": [
+    "crit:NCT04929223-E04",
+    "dec:NCT04929223:NCT04929223-E04:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Pregnancy/breastfeeding status and menopausal status",
+   "refs": [
+    "dec:NCT04929223:NCT04929223-E04:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT04929223-E05 [exclusion] 미확인 (기록 없음) → 다음: clinician_confirmation",
+   "refs": [
+    "crit:NCT04929223-E05",
+    "dec:NCT04929223:NCT04929223-E05:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Investigator judgment on whether any condition precludes safe participation",
+   "refs": [
+    "dec:NCT04929223:NCT04929223-E05:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT04929223-E06 [exclusion] 미확인 (기록 없음) → 다음: clinician_confirmation",
+   "refs": [
+    "crit:NCT04929223-E06",
+    "dec:NCT04929223:NCT04929223-E06:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Explicit statement of no severe or active infection",
+   "refs": [
+    "dec:NCT04929223:NCT04929223-E06:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT04929223-E07 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT04929223-E07",
+    "dec:NCT04929223:NCT04929223-E07:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Sigmoid colectomy 03/2025.\" (SYN-1968-D08, 2025-03-01)",
+   "refs": [
+    "ev:SYN-1968-EV147",
+    "src:SYN-1968-D08:1478-1504"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"No other surgery.\" (SYN-1968-D08, 2026-09-24)",
+   "refs": [
+    "ev:SYN-1968-EV149",
+    "src:SYN-1968-D08:1536-1553"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Abdomen: soft, non-tender, healed laparoscopic and extraction-site scars, liver edge palpable 2 cm below the right costal margin, no ascites, no masses.\" (SYN-1968-D08, 2026-09-24)",
+   "refs": [
+    "ev:SYN-1968-EV204",
+    "src:SYN-1968-D08:2810-2962"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT04929223-E08 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT04929223-E08",
+    "dec:NCT04929223:NCT04929223-E08:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Abdomen: soft, non-tender, healed laparoscopic and extraction-site scars, liver edge palpable 2 cm below the right costal margin, no ascites, no masses.\" (SYN-1968-D08, 2026-09-24)",
+   "refs": [
+    "ev:SYN-1968-EV207",
+    "src:SYN-1968-D08:2810-2962"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT04929223-E09 [exclusion] 미확인 (기록 없음) → 다음: clinician_confirmation",
+   "refs": [
+    "crit:NCT04929223-E09",
+    "dec:NCT04929223:NCT04929223-E09:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Explicit statement on tumor-related pain and its control",
+   "refs": [
+    "dec:NCT04929223:NCT04929223-E09:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT04929223-E10 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT04929223-E10",
+    "dec:NCT04929223:NCT04929223-E10:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Calcium 9.0 mg/dL (ref 8.6-10.2)\" (SYN-1968-D09, 2026-09-24)",
+   "refs": [
+    "ev:SYN-1968-EV058",
+    "src:SYN-1968-D09:686-718"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT04929223-E11 [exclusion] 미확인 (근거 불충분) → 다음: clinician_confirmation",
+   "refs": [
+    "crit:NCT04929223-E11",
+    "dec:NCT04929223:NCT04929223-E11:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Whether liver disease beyond metastases is clinically significant and active",
+   "refs": [
+    "dec:NCT04929223:NCT04929223-E11:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT04929223-E12 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT04929223-E12",
+    "dec:NCT04929223:NCT04929223-E12:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"HIV-1/2 antigen/antibody non-reactive\" (SYN-1968-D09, 2026-09-24)",
+   "refs": [
+    "ev:SYN-1968-EV087",
+    "src:SYN-1968-D09:1687-1724"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT04929223-E13 [exclusion] 미확인 (기록 없음) → 다음: med_record_check",
+   "refs": [
+    "crit:NCT04929223-E13",
+    "dec:NCT04929223:NCT04929223-E13:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Brain imaging or explicit statement about CNS metastases",
+   "refs": [
+    "dec:NCT04929223:NCT04929223-E13:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT04929223-E14 [exclusion] 미확인 (기록 없음) → 다음: med_record_check",
+   "refs": [
+    "crit:NCT04929223-E14",
+    "dec:NCT04929223:NCT04929223-E14:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Explicit statement on leptomeningeal disease history",
+   "refs": [
+    "dec:NCT04929223:NCT04929223-E14:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT04929223-E15 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT04929223-E15",
+    "dec:NCT04929223:NCT04929223-E15:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"No prior malignancy.\" (SYN-1968-D08, 2026-09-24)",
+   "refs": [
+    "ev:SYN-1968-EV146",
+    "src:SYN-1968-D08:1433-1453"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT04929223-E16 [exclusion] 미확인 (근거 불충분) → 다음: clinician_confirmation",
+   "refs": [
+    "crit:NCT04929223-E16",
+    "dec:NCT04929223:NCT04929223-E16:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Investigator judgment on whether grade 2 neuropathy, proteinuria, anemia contraindicate study drugs",
+   "refs": [
+    "dec:NCT04929223:NCT04929223-E16:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT04929223-E17 [exclusion] 미확인 (기록 없음) → 다음: clinician_confirmation",
+   "refs": [
+    "crit:NCT04929223-E17",
+    "dec:NCT04929223:NCT04929223-E17:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Whether current meds (duloxetine, omeprazole, acetaminophen) interact with study drugs",
+   "refs": [
+    "dec:NCT04929223:NCT04929223-E17:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "참고: FAIL 하나로 제외된 시험 (순위에는 넣지 않음, 그 기준만 확인하면 판정이 바뀔 수 있음)",
+   "refs": [
+    "trial:NCT06244771"
+   ],
+   "kind": "heading"
+  },
+  {
+   "text": "NCT06244771 A Study Evaluating FMC-376 in Participants With KRAS G12C Mutated Solid Tumors: NCT06244771-I01 [inclusion] 불충족",
+   "refs": [
+    "crit:NCT06244771-I01",
+    "dec:NCT06244771:NCT06244771-I01:r1",
+    "label:NCT06244771",
+    "trial:NCT06244771"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   노트: Tumor is KRAS G12D mutant, not G12C; the record documents the specific mutation, so the required G12C mutation is absent.",
+   "refs": [
+    "dec:NCT06244771:NCT06244771-I01:r1"
+   ],
+   "kind": "fact"
+  }
+ ],
+ "evidence": {
+  "files": [
+   "evidence_dev_haiku_v14_12.jsonl",
+   "evidence_dev_variants_haiku_v14_12.jsonl"
+  ],
+  "sha256": "daba4f5f1e16ec2eefc47311f5c13f85e6b5f218c85424f08f9af3d9bab09124",
+  "id_series": "haiku",
+  "graph_ev_nodes_checked": 2240
+ },
+ "agent6": "a6-0.4.14"
+}

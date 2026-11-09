@@ -1,0 +1,319 @@
+{
+ "patient_id": "SYN-4657",
+ "as_of": "2026-10-01",
+ "audience": "patient",
+ "graph_file": "SYN-4657.json",
+ "ranking": [
+  "NCT02714634",
+  "NCT05428488"
+ ],
+ "sentences": [
+  {
+   "text": "이 안내는 치료 추천이 아니라, 연구(임상시험) 참여를 검토하실 때 참고하실 정보입니다.",
+   "refs": [
+    "rule:research_not_treatment"
+   ],
+   "kind": "rule"
+  },
+  {
+   "text": "1번 시험 — 아직 확인이 필요한 조건이 있습니다.",
+   "refs": [
+    "label:NCT02714634",
+    "trial:NCT02714634"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "이 시험은 류마티스 관절염, 메토트렉세이트 또는 레플루노미드에 충분히 반응하지 않는 상태를 연구 대상으로 합니다.",
+   "refs": [
+    "gloss:insufficient_response_to_methotrexate_or_leflunomide",
+    "gloss:rheumatoid_arthritis",
+    "trial:NCT02714634"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "4상 연구로, 이미 허가된 치료를 실제 진료에 가까운 상황에서 더 살펴보는 단계입니다.",
+   "refs": [
+    "rule:phase_PHASE4",
+    "trial:NCT02714634"
+   ],
+   "kind": "rule"
+  },
+  {
+   "text": "시험 치료를 이미 쓰이고 있는 다른 치료와 비교합니다.",
+   "refs": [
+    "rule:active_comparator",
+    "trial:NCT02714634"
+   ],
+   "kind": "rule"
+  },
+  {
+   "text": "이 시험은 참여자가 어느 치료를 받을지 무작위로 정해집니다.",
+   "refs": [
+    "rule:randomized",
+    "trial:NCT02714634"
+   ],
+   "kind": "rule"
+  },
+  {
+   "text": "시험군: 메토트렉세이트 + 표적치료, 비교군: 메토트렉세이트 또는 레플루노미드 + 설파살라진 + 하이드록시클로로퀸.",
+   "refs": [
+    "gloss:hydroxychloroquine",
+    "gloss:leflunomide",
+    "gloss:methotrexate",
+    "gloss:sulfasalazine",
+    "gloss:targeted_therapy",
+    "trial:NCT02714634"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "약 286명이 참여할 예정인 연구입니다.",
+   "refs": [
+    "trial:NCT02714634"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "기록에 있는 진단 혈청 양성 류마티스 관절염이 이 시험의 대상 조건과 맞습니다.",
+   "refs": [
+    "dec:NCT02714634:NCT02714634-I01:r1",
+    "dec:NCT02714634:NCT02714634-I03:r1",
+    "ev:SYN-4657-EV041",
+    "ev:SYN-4657-EV152",
+    "gloss:seropositive_rheumatoid_arthritis"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "직접 답해 주실 수 있는 질문: 2가지.",
+   "refs": [
+    "crit:NCT02714634-I06",
+    "crit:NCT02714634-I07",
+    "dec:NCT02714634:NCT02714634-I06:r1",
+    "dec:NCT02714634:NCT02714634-I07:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "참여 전에 의료진이 확인할 항목이 7개 남아 있습니다.",
+   "refs": [
+    "dec:NCT02714634:NCT02714634-E01:r1",
+    "dec:NCT02714634:NCT02714634-E07:r1",
+    "dec:NCT02714634:NCT02714634-E08:r1",
+    "dec:NCT02714634:NCT02714634-E09:r1",
+    "dec:NCT02714634:NCT02714634-E10:r1",
+    "dec:NCT02714634:NCT02714634-E12:r1",
+    "dec:NCT02714634:NCT02714634-E13:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "모집 상태가 최근에 확인되지 않아, 지금도 모집 중인지 확인이 필요합니다.",
+   "refs": [
+    "trial:NCT02714634"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "현재 국내에는 이 시험의 참여자를 모집하는 기관이 없습니다.",
+   "refs": [
+    "rule:no_kr_site",
+    "trial:NCT02714634"
+   ],
+   "kind": "rule"
+  },
+  {
+   "text": "모집 국가: 프랑스.",
+   "refs": [
+    "trial:NCT02714634"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "2번 시험 — 아직 확인이 필요한 조건이 있습니다.",
+   "refs": [
+    "label:NCT05428488",
+    "trial:NCT05428488"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "이 시험은 류마티스 관절염을 연구 대상으로 합니다.",
+   "refs": [
+    "gloss:rheumatoid_arthritis",
+    "trial:NCT05428488"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "3상 연구로, 많은 환자에게서 효과와 안전성을 기존 치료 등과 비교해 확인하는 단계입니다.",
+   "refs": [
+    "rule:phase_PHASE3",
+    "trial:NCT05428488"
+   ],
+   "kind": "rule"
+  },
+  {
+   "text": "시험 치료를 이미 쓰이고 있는 다른 치료와 비교합니다.",
+   "refs": [
+    "rule:active_comparator",
+    "trial:NCT05428488"
+   ],
+   "kind": "rule"
+  },
+  {
+   "text": "이 시험은 참여자가 어느 치료를 받을지 무작위로 정해집니다.",
+   "refs": [
+    "rule:randomized",
+    "trial:NCT05428488"
+   ],
+   "kind": "rule"
+  },
+  {
+   "text": "시험군: TNF 억제제(0~12주) → 아바타셉트(12~48주), 비교군: TNF 억제제(0~48주).",
+   "refs": [
+    "gloss:abatacept",
+    "gloss:tnf_inhibitor",
+    "trial:NCT05428488"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "약 220명이 참여할 예정인 연구입니다.",
+   "refs": [
+    "trial:NCT05428488"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "기록에 있는 진단 혈청 양성 류마티스 관절염이 이 시험의 대상 조건과 맞습니다.",
+   "refs": [
+    "dec:NCT05428488:NCT05428488-I02:r1",
+    "ev:SYN-4657-EV041",
+    "gloss:seropositive_rheumatoid_arthritis"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "검사 결과가 필요한 것: 1가지.",
+   "refs": [
+    "crit:NCT05428488-I05",
+    "dec:NCT05428488:NCT05428488-I05:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "담당 의사가 판단할 것: 1가지.",
+   "refs": [
+    "crit:NCT05428488-I08",
+    "dec:NCT05428488:NCT05428488-I08:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "참여 전에 의료진이 확인할 항목이 17개 남아 있습니다.",
+   "refs": [
+    "dec:NCT05428488:NCT05428488-E01:r1",
+    "dec:NCT05428488:NCT05428488-E02:r1",
+    "dec:NCT05428488:NCT05428488-E03:r1",
+    "dec:NCT05428488:NCT05428488-E04:r1",
+    "dec:NCT05428488:NCT05428488-E06:r1",
+    "dec:NCT05428488:NCT05428488-E07:r1",
+    "dec:NCT05428488:NCT05428488-E09:r1",
+    "dec:NCT05428488:NCT05428488-E10:r1",
+    "dec:NCT05428488:NCT05428488-E12:r1",
+    "dec:NCT05428488:NCT05428488-E14:r1",
+    "dec:NCT05428488:NCT05428488-E15:r1",
+    "dec:NCT05428488:NCT05428488-E16:r1",
+    "dec:NCT05428488:NCT05428488-E17:r1",
+    "dec:NCT05428488:NCT05428488-E20:r1",
+    "dec:NCT05428488:NCT05428488-E23:r1",
+    "dec:NCT05428488:NCT05428488-E24:r1",
+    "dec:NCT05428488:NCT05428488-E25:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "모집 상태가 최근에 확인되지 않아, 지금도 모집 중인지 확인이 필요합니다.",
+   "refs": [
+    "trial:NCT05428488"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "현재 국내에는 이 시험의 참여자를 모집하는 기관이 없습니다.",
+   "refs": [
+    "rule:no_kr_site",
+    "trial:NCT05428488"
+   ],
+   "kind": "rule"
+  },
+  {
+   "text": "모집 국가: 프랑스, 모나코.",
+   "refs": [
+    "trial:NCT05428488"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "시험약이 효과가 있을지는 아직 모르기 때문에 연구를 하는 것입니다.",
+   "refs": [
+    "rule:no_benefit_promise"
+   ],
+   "kind": "rule"
+  },
+  {
+   "text": "지금 받으실 수 있는 다른 치료 방법이 무엇인지도 의료진에게 물어보실 수 있습니다.",
+   "refs": [
+    "rule:ask_alternatives"
+   ],
+   "kind": "rule"
+  },
+  {
+   "text": "참여하면 방문 횟수, 검사, 기간처럼 해야 하는 일이 무엇인지도 미리 물어보실 수 있습니다.",
+   "refs": [
+    "rule:ask_burden"
+   ],
+   "kind": "rule"
+  },
+  {
+   "text": "최종 참여 가능 여부는 연구 담당 의료진이 직접 확인합니다.",
+   "refs": [
+    "rule:ask_clinician"
+   ],
+   "kind": "rule"
+  },
+  {
+   "text": "참여는 자유이며, 참여하지 않아도 지금 받고 계신 치료는 그대로 받으실 수 있습니다.",
+   "refs": [
+    "rule:voluntary"
+   ],
+   "kind": "rule"
+  },
+  {
+   "text": "참여하더라도 언제든 그만두실 수 있습니다.",
+   "refs": [
+    "rule:withdraw"
+   ],
+   "kind": "rule"
+  }
+ ],
+ "glossary": {
+  "mode": "glossary",
+  "sha256": "bb6135ef988f322486520df16e40f1b58d96404e99d31873c2dea5b8e38d3fed",
+  "rows_used": 10,
+  "draft": 0
+ },
+ "evidence": {
+  "files": [
+   "evidence_dev_haiku_v14_12.jsonl",
+   "evidence_dev_variants_haiku_v14_12.jsonl"
+  ],
+  "sha256": "daba4f5f1e16ec2eefc47311f5c13f85e6b5f218c85424f08f9af3d9bab09124",
+  "id_series": "haiku",
+  "graph_ev_nodes_checked": 2240
+ },
+ "agent6": "a6-0.4.14"
+}

@@ -1,0 +1,962 @@
+{
+ "patient_id": "SYN-0017",
+ "as_of": "2026-10-01",
+ "audience": "clinician",
+ "graph_file": "SYN-0017.json",
+ "ranking": [
+  "NCT06982521",
+  "NCT03424005"
+ ],
+ "also_mentioned": [
+  "NCT06757634"
+ ],
+ "sentences": [
+  {
+   "text": "환자 SYN-0017, 기준일 2026-10-01",
+   "refs": [],
+   "kind": "meta"
+  },
+  {
+   "text": "1. NCT06982521 Phase 3 Study of RLY-2608 + Fulvestrant vs Capivasertib + Fulvestrant as Treatment for Locally Advanced or Metastatic PIK3CA-mutant HR+/HER2- Breast Cancer",
+   "refs": [
+    "trial:NCT06982521"
+   ],
+   "kind": "heading"
+  },
+  {
+   "text": "시험 판정: eligible (남은 항목 4개)",
+   "refs": [
+    "label:NCT06982521"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "국내 모집 기관 9곳",
+   "refs": [
+    "trial:NCT06982521"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "Arms — EXPERIMENTAL: Drug: Zovegalisib + Drug: Fulvestrant; ACTIVE_COMPARATOR: Drug: Capivasertib + Drug: Fulvestrant",
+   "refs": [
+    "trial:NCT06982521"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06982521-I01 [inclusion] 충족",
+   "refs": [
+    "crit:NCT06982521-I01",
+    "dec:NCT06982521:NCT06982521-I01:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"ECOG 0.\" (SYN-0017-D08, 2026-09-10)",
+   "refs": [
+    "ev:SYN-0017-EV038",
+    "src:SYN-0017-D08:66-73"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   계산: ecog 0 points between [0, 1] , 측정 2026-09-10 (21일 전)",
+   "refs": [
+    "calc:NCT06982521:NCT06982521-I01"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06982521-I02 [inclusion] 충족",
+   "refs": [
+    "crit:NCT06982521-I02",
+    "dec:NCT06982521:NCT06982521-I02:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"ctDNA (liquid biopsy): PIK3CA H1047R detected\" (SYN-0017-D07, 2026-09-03)",
+   "refs": [
+    "ev:SYN-0017-EV269",
+    "src:SYN-0017-D07:0-45"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"bone lesions stable. ctDNA: PIK3CA H1047R and ESR1 Y537S.\" (SYN-0017-D09, 2026-09-14)",
+   "refs": [
+    "ev:SYN-0017-EV284",
+    "src:SYN-0017-D09:551-608"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06982521-I03 [inclusion] 충족",
+   "refs": [
+    "crit:NCT06982521-I03",
+    "dec:NCT06982521:NCT06982521-I03:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Menopause since age 49 (chemo-induced, confirmed by labs).\" (SYN-0017-D04, 2026-01-15)",
+   "refs": [
+    "ev:SYN-0017-EV265",
+    "src:SYN-0017-D04:254-312"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Female.\" (SYN-0017-D03, 2026-01-15)",
+   "refs": [
+    "ev:SYN-0017-EV012",
+    "src:SYN-0017-D03:0-7"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06982521-I04 [inclusion] 충족",
+   "refs": [
+    "crit:NCT06982521-I04",
+    "dec:NCT06982521:NCT06982521-I04:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Metastatic HR+/HER2- breast cancer with progression on first-line CDK4/6 inhibitor + AI\" (SYN-0017-D09, 2026-09-14)",
+   "refs": [
+    "ev:SYN-0017-EV194",
+    "src:SYN-0017-D09:3948-4035"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Recurrence in bone 01/2026 after ~4 years on anastrozole (iliac biopsy ER+, HER2 0).\" (SYN-0017-D09, 2026-09-14)",
+   "refs": [
+    "ev:SYN-0017-EV279",
+    "src:SYN-0017-D09:334-418"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Recurrence in bone 01/2026 after ~4 years on anastrozole (iliac biopsy ER+, HER2 0).\" (SYN-0017-D09, 2026-09-14)",
+   "refs": [
+    "ev:SYN-0017-EV280",
+    "src:SYN-0017-D09:334-418"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Biopsy of iliac lesion: ER+, HER2 0.\" (SYN-0017-D04, 2026-01-15)",
+   "refs": [
+    "ev:SYN-0017-EV020",
+    "src:SYN-0017-D04:175-211"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Progression on CDK4/6 inhibitor + AI after 8 months (liver mets).\" (SYN-0017-D08, 2026-09-10)",
+   "refs": [
+    "ev:SYN-0017-EV037",
+    "src:SYN-0017-D08:0-65"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06982521-I05 [inclusion] 충족",
+   "refs": [
+    "crit:NCT06982521-I05",
+    "dec:NCT06982521:NCT06982521-I05:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"CT chest/abdomen/pelvis: new 1.6 cm and 0.9 cm liver lesions suspicious for metastases.\" (SYN-0017-D06, 2026-09-03)",
+   "refs": [
+    "ev:SYN-0017-EV323",
+    "src:SYN-0017-D06:0-87"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"new liver lesions 1.6 cm and 0.9 cm (CT 2026-09-03)\" (SYN-0017-D09, 2026-09-03)",
+   "refs": [
+    "ev:SYN-0017-EV178",
+    "src:SYN-0017-D09:3460-3511"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06982521-I06 [inclusion] 충족",
+   "refs": [
+    "crit:NCT06982521-I06",
+    "dec:NCT06982521:NCT06982521-I06:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Progression on CDK4/6 inhibitor + AI after 8 months (liver mets).\" (SYN-0017-D08, 2026-09-10)",
+   "refs": [
+    "ev:SYN-0017-EV037",
+    "src:SYN-0017-D08:0-65"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Left mastectomy 2021 for pT2N1 IDC (ER 95%, PR 60%, HER2 1+), followed by adjuvant AC-T, chest wall radiotherapy and anastrozole.\" (SYN-0017-D09, 2026-09-14)",
+   "refs": [
+    "ev:SYN-0017-EV053",
+    "src:SYN-0017-D09:204-333"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Recurrence on anastrozole (after ~4 years).\" (SYN-0017-D04, 2026-01-15)",
+   "refs": [
+    "ev:SYN-0017-EV018",
+    "src:SYN-0017-D04:131-174"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Palbociclib 125 mg d1-21 q28d (2026-01 to 2026-09-10), stopped for progression (liver lesions)\" (SYN-0017-D09, 2026-09-10)",
+   "refs": [
+    "ev:SYN-0017-EV098",
+    "src:SYN-0017-D09:1511-1605"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Letrozole 2.5 mg daily (2026-01 to 2026-09-10), stopped for progression\" (SYN-0017-D09, 2026-09-10)",
+   "refs": [
+    "ev:SYN-0017-EV100",
+    "src:SYN-0017-D09:1608-1679"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06982521-E01 [exclusion] 미확인 (기록 없음) → 다음: med_history_check",
+   "refs": [
+    "crit:NCT06982521-E01",
+    "dec:NCT06982521:NCT06982521-E01:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Confirmation that no prior CDK2, PI3K/AKT/mTOR inhibitor, immunotherapy or ADC was received",
+   "refs": [
+    "dec:NCT06982521:NCT06982521-E01:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06982521-E02 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT06982521-E02",
+    "dec:NCT06982521:NCT06982521-E02:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"No diabetes.\" (SYN-0017-D09, 2026-09-14)",
+   "refs": [
+    "ev:SYN-0017-EV087",
+    "src:SYN-0017-D09:1147-1159"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Glucose, fasting 94 mg/dL (70-99)\" (SYN-0017-D10, 2026-09-14)",
+   "refs": [
+    "ev:SYN-0017-EV223",
+    "src:SYN-0017-D10:589-622"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"HbA1c 5.6 % (4.0-5.6)\" (SYN-0017-D10, 2026-09-14)",
+   "refs": [
+    "ev:SYN-0017-EV234",
+    "src:SYN-0017-D10:917-938"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06982521-E03 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT06982521-E03",
+    "dec:NCT06982521:NCT06982521-E03:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"No other cardiac, pulmonary, hepatic, renal, autoimmune, endocrine or neurologic history.\" (SYN-0017-D09, 2026-09-14)",
+   "refs": [
+    "ev:SYN-0017-EV080",
+    "src:SYN-0017-D09:1057-1146"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"BP 122/76.\" (SYN-0017-D09, 2026-09-14)",
+   "refs": [
+    "ev:SYN-0017-EV123",
+    "src:SYN-0017-D09:2251-2261"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06982521-E04 [exclusion] 미확인 (기록 없음) → 다음: clinician_confirmation",
+   "refs": [
+    "crit:NCT06982521-E04",
+    "dec:NCT06982521:NCT06982521-E04:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: ECG QTc value and review of QT-prolonging risk factors or medications",
+   "refs": [
+    "dec:NCT06982521:NCT06982521-E04:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06982521-E05 [exclusion] 미확인 (기록 없음) → 다음: med_record_check",
+   "refs": [
+    "crit:NCT06982521-E05",
+    "dec:NCT06982521:NCT06982521-E05:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Brain imaging or an explicit statement of no CNS metastases",
+   "refs": [
+    "dec:NCT06982521:NCT06982521-E05:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06982521-E06 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT06982521-E06",
+    "dec:NCT06982521:NCT06982521-E06:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"No other cardiac, pulmonary, hepatic, renal, autoimmune, endocrine or neurologic history.\" (SYN-0017-D09, 2026-09-14)",
+   "refs": [
+    "ev:SYN-0017-EV081",
+    "src:SYN-0017-D09:1057-1146"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"no lung disease.\" (SYN-0017-D09, 2026-09-14)",
+   "refs": [
+    "ev:SYN-0017-EV179",
+    "src:SYN-0017-D09:3513-3529"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06982521-E07 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT06982521-E07",
+    "dec:NCT06982521:NCT06982521-E07:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"NKDA.\" (SYN-0017-D09, 2026-09-14)",
+   "refs": [
+    "ev:SYN-0017-EV092",
+    "src:SYN-0017-D09:1322-1327"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06982521-E08 [exclusion] 미확인 (기록 없음) → 다음: lab_check",
+   "refs": [
+    "crit:NCT06982521-E08",
+    "dec:NCT06982521:NCT06982521-E08:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: AKT mutation and PTEN mutation/expression status",
+   "refs": [
+    "dec:NCT06982521:NCT06982521-E08:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "2. NCT03424005 A Study Evaluating the Efficacy and Safety of Multiple Treatment Combinations in Patients With Metastatic or Locally Advanced Breast Cancer",
+   "refs": [
+    "trial:NCT03424005"
+   ],
+   "kind": "heading"
+  },
+  {
+   "text": "시험 판정: potential (남은 항목 19개)",
+   "refs": [
+    "label:NCT03424005"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "국내 모집 기관 5곳",
+   "refs": [
+    "trial:NCT03424005"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "Arms — ACTIVE_COMPARATOR: Drug: Atezolizumab + Drug: Nab-Paclitaxel; EXPERIMENTAL: Drug: Atezolizumab + Drug: Tocilizumab + Drug: Nab-Paclitaxel; EXPERIMENTAL: Drug: Atezolizumab + Drug: Sacituzumab Govitecan; ACTIVE_COMPARATOR: Drug: Capecitabine; EXPERIMENTAL: Drug: Atezolizumab + Drug: Ipatasertib; EXPERIMENTAL: Drug: Atezolizumab + Drug: SGN-LIV1A; 외 17개",
+   "refs": [
+    "trial:NCT03424005"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT03424005-I02 [inclusion] 충족",
+   "refs": [
+    "crit:NCT03424005-I02",
+    "dec:NCT03424005:NCT03424005-I02:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"52-year-old postmenopausal woman with HR+/HER2- breast cancer.\" (SYN-0017-D09, 2026-09-14)",
+   "refs": [
+    "ev:SYN-0017-EV046",
+    "src:SYN-0017-D09:141-203"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   계산: age 52 years >= 18 years, 측정 2026-09-14 (17일 전)",
+   "refs": [
+    "calc:NCT03424005:NCT03424005-I02"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT03424005-I03 [inclusion] 충족",
+   "refs": [
+    "crit:NCT03424005-I03",
+    "dec:NCT03424005:NCT03424005-I03:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"ECOG 0.\" (SYN-0017-D08, 2026-09-10)",
+   "refs": [
+    "ev:SYN-0017-EV038",
+    "src:SYN-0017-D08:66-73"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   계산: ecog 0 in [0, 1] , 측정 2026-09-10",
+   "refs": [
+    "calc:NCT03424005:NCT03424005-I03"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT03424005-I04 [inclusion] 미확인 (기록 없음) → 다음: clinician_confirmation",
+   "refs": [
+    "crit:NCT03424005-I04",
+    "dec:NCT03424005:NCT03424005-I04:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT03424005-I05 [inclusion] 충족",
+   "refs": [
+    "crit:NCT03424005-I05",
+    "dec:NCT03424005:NCT03424005-I05:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"mastectomy: invasive ductal carcinoma\" (SYN-0017-D01, 2021-04-02)",
+   "refs": [
+    "ev:SYN-0017-EV002",
+    "src:SYN-0017-D01:13-50"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Stage IV (recurrent metastatic) HR+/HER2- breast cancer: multiple osteoblastic bone lesions (thoracic/lumbar spine, pelvis)\" (SYN-0017-D09, 2026-09-14)",
+   "refs": [
+    "ev:SYN-0017-EV175",
+    "src:SYN-0017-D09:3335-3458"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Metastatic HR+/HER2- breast cancer with progression on first-line CDK4/6 inhibitor + AI\" (SYN-0017-D09, 2026-09-14)",
+   "refs": [
+    "ev:SYN-0017-EV193",
+    "src:SYN-0017-D09:3948-4035"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT03424005-I06 [inclusion] 충족",
+   "refs": [
+    "crit:NCT03424005-I06",
+    "dec:NCT03424005:NCT03424005-I06:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"CT chest/abdomen/pelvis: new 1.6 cm and 0.9 cm liver lesions suspicious for metastases.\" (SYN-0017-D06, 2026-09-03)",
+   "refs": [
+    "ev:SYN-0017-EV323",
+    "src:SYN-0017-D06:0-87"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"new liver lesions 1.6 cm and 0.9 cm (CT 2026-09-03)\" (SYN-0017-D09, 2026-09-14)",
+   "refs": [
+    "ev:SYN-0017-EV325",
+    "src:SYN-0017-D09:3460-3511"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"new liver lesions 1.6 cm and 0.9 cm (CT 2026-09-03)\" (SYN-0017-D09, 2026-09-03)",
+   "refs": [
+    "ev:SYN-0017-EV178",
+    "src:SYN-0017-D09:3460-3511"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT03424005-I07 [inclusion] 미확인 (기록 없음) → 다음: clinician_confirmation",
+   "refs": [
+    "crit:NCT03424005-I07",
+    "dec:NCT03424005:NCT03424005-I07:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Investigator estimate of life expectancy (>=3 months)",
+   "refs": [
+    "dec:NCT03424005:NCT03424005-I07:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT03424005-I08 [inclusion] 미확인 (근거 불충분) → 다음: med_record_check",
+   "refs": [
+    "crit:NCT03424005-I08",
+    "dec:NCT03424005:NCT03424005-I08:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Biopsy accessibility of the liver lesions or availability of archival tissue",
+   "refs": [
+    "dec:NCT03424005:NCT03424005-I08:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT03424005-I09 [inclusion] 미확인 (근거 불충분) → 다음: med_record_check",
+   "refs": [
+    "crit:NCT03424005-I09",
+    "dec:NCT03424005:NCT03424005-I09:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Whether a representative tumor specimen is available for central biomarker testing",
+   "refs": [
+    "dec:NCT03424005:NCT03424005-I09:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT03424005-I10 [inclusion] 미확인 (기간 지남) → 다음: new_test",
+   "refs": [
+    "crit:NCT03424005-I10",
+    "dec:NCT03424005:NCT03424005-I10:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Hematology and chemistry results within 14 days before study treatment",
+   "refs": [
+    "dec:NCT03424005:NCT03424005-I10:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT03424005-I11 [inclusion] 충족",
+   "refs": [
+    "crit:NCT03424005-I11",
+    "dec:NCT03424005:NCT03424005-I11:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Menopause since age 49 (chemo-induced, confirmed by labs).\" (SYN-0017-D04, 2026-01-15)",
+   "refs": [
+    "ev:SYN-0017-EV266",
+    "src:SYN-0017-D04:254-312"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Postmenopausal\" (SYN-0017-D09, 2026-09-14)",
+   "refs": [
+    "ev:SYN-0017-EV296",
+    "src:SYN-0017-D09:2067-2081"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT03424005-I12 [inclusion] 충족",
+   "refs": [
+    "crit:NCT03424005-I12",
+    "dec:NCT03424005:NCT03424005-I12:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Female.\" (SYN-0017-D03, 2026-01-15)",
+   "refs": [
+    "ev:SYN-0017-EV012",
+    "src:SYN-0017-D03:0-7"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT03424005-E01 [exclusion] 미확인 (기록 없음) → 다음: med_history_check",
+   "refs": [
+    "crit:NCT03424005-E01",
+    "dec:NCT03424005:NCT03424005-E01:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Explicit statement of no prior checkpoint inhibitor, CD40 agonist or IL-2 therapy",
+   "refs": [
+    "dec:NCT03424005:NCT03424005-E01:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT03424005-E02 [exclusion] 미확인 (근거 불충분) → 다음: clinician_confirmation",
+   "refs": [
+    "crit:NCT03424005-E02",
+    "dec:NCT03424005:NCT03424005-E02:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Whether current denosumab counts as an excluded biologic treatment",
+   "refs": [
+    "dec:NCT03424005:NCT03424005-E02:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT03424005-E03 [exclusion] 미확인 (기록 없음) → 다음: med_history_check",
+   "refs": [
+    "crit:NCT03424005-E03",
+    "dec:NCT03424005:NCT03424005-E03:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT03424005-E04 [exclusion] 미확인 (기록 없음) → 다음: clinician_confirmation",
+   "refs": [
+    "crit:NCT03424005-E04",
+    "dec:NCT03424005:NCT03424005-E04:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Whether the patient would be eligible only for the control arm",
+   "refs": [
+    "dec:NCT03424005:NCT03424005-E04:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT03424005-E05 [exclusion] 미확인 (기록 없음) → 다음: clinician_confirmation",
+   "refs": [
+    "crit:NCT03424005-E05",
+    "dec:NCT03424005:NCT03424005-E05:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: CTCAE grade of any unresolved prior-therapy adverse events",
+   "refs": [
+    "dec:NCT03424005:NCT03424005-E05:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT03424005-E06 [exclusion] 미확인 (기록 없음) → 다음: med_history_check",
+   "refs": [
+    "crit:NCT03424005-E06",
+    "dec:NCT03424005:NCT03424005-E06:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT03424005-E07 [exclusion] 미확인 (기록 없음) → 다음: patient_question",
+   "refs": [
+    "crit:NCT03424005-E07",
+    "dec:NCT03424005:NCT03424005-E07:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT03424005-E08 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT03424005-E08",
+    "dec:NCT03424005:NCT03424005-E08:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Back pain is mild and stable, controlled with occasional acetaminophen.\" (SYN-0017-D09, 2026-09-14)",
+   "refs": [
+    "ev:SYN-0017-EV063",
+    "src:SYN-0017-D09:679-750"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT03424005-E09 [exclusion] 미확인 (기록 없음) → 다음: med_record_check",
+   "refs": [
+    "crit:NCT03424005-E09",
+    "dec:NCT03424005:NCT03424005-E09:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Brain imaging or an explicit statement on CNS metastases",
+   "refs": [
+    "dec:NCT03424005:NCT03424005-E09:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT03424005-E10 [exclusion] 미확인 (기록 없음) → 다음: med_record_check",
+   "refs": [
+    "crit:NCT03424005-E10",
+    "dec:NCT03424005:NCT03424005-E10:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Explicit statement on leptomeningeal disease history",
+   "refs": [
+    "dec:NCT03424005:NCT03424005-E10:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT03424005-E11 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT03424005-E11",
+    "dec:NCT03424005:NCT03424005-E11:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"No other cardiac, pulmonary, hepatic, renal, autoimmune, endocrine or neurologic history.\" (SYN-0017-D09, 2026-09-14)",
+   "refs": [
+    "ev:SYN-0017-EV084",
+    "src:SYN-0017-D09:1057-1146"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"HIV-1/2 Ag/Ab nonreactive\" (SYN-0017-D10, 2026-09-14)",
+   "refs": [
+    "ev:SYN-0017-EV246",
+    "src:SYN-0017-D10:1246-1271"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT03424005-E12 [exclusion] 미확인 (기록 없음) → 다음: patient_question",
+   "refs": [
+    "crit:NCT03424005-E12",
+    "dec:NCT03424005:NCT03424005-E12:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT03424005-E13 [exclusion] 미확인 (기록 없음) → 다음: patient_question",
+   "refs": [
+    "crit:NCT03424005-E13",
+    "dec:NCT03424005:NCT03424005-E13:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Whether the patient has or had active tuberculosis",
+   "refs": [
+    "dec:NCT03424005:NCT03424005-E13:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT03424005-E14 [exclusion] 미확인 (기록 없음) → 다음: med_history_check",
+   "refs": [
+    "crit:NCT03424005-E14",
+    "dec:NCT03424005:NCT03424005-E14:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Whether any severe infection occurred in the last 4 weeks",
+   "refs": [
+    "dec:NCT03424005:NCT03424005-E14:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT03424005-E15 [exclusion] 미확인 (기록 없음) → 다음: med_history_check",
+   "refs": [
+    "crit:NCT03424005-E15",
+    "dec:NCT03424005:NCT03424005-E15:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT03424005-E16 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT03424005-E16",
+    "dec:NCT03424005:NCT03424005-E16:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"No other cardiac, pulmonary, hepatic, renal, autoimmune, endocrine or neurologic history.\" (SYN-0017-D09, 2026-09-14)",
+   "refs": [
+    "ev:SYN-0017-EV080",
+    "src:SYN-0017-D09:1057-1146"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"No prior thromboembolism.\" (SYN-0017-D09, 2026-09-14)",
+   "refs": [
+    "ev:SYN-0017-EV088",
+    "src:SYN-0017-D09:1160-1185"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"BP 122/76.\" (SYN-0017-D09, 2026-09-14)",
+   "refs": [
+    "ev:SYN-0017-EV123",
+    "src:SYN-0017-D09:2251-2261"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT03424005-E17 [exclusion] 미확인 (기록 없음) → 다음: med_history_check",
+   "refs": [
+    "crit:NCT03424005-E17",
+    "dec:NCT03424005:NCT03424005-E17:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Any prior allogeneic stem cell or solid organ transplant",
+   "refs": [
+    "dec:NCT03424005:NCT03424005-E17:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT03424005-E18 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT03424005-E18",
+    "dec:NCT03424005:NCT03424005-E18:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"No other malignancy.\" (SYN-0017-D09, 2026-09-14)",
+   "refs": [
+    "ev:SYN-0017-EV089",
+    "src:SYN-0017-D09:1186-1206"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT03424005-E19 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT03424005-E19",
+    "dec:NCT03424005:NCT03424005-E19:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Not pregnant, no contraception needed.\" (SYN-0017-D09, 2026-09-14)",
+   "refs": [
+    "ev:SYN-0017-EV117",
+    "src:SYN-0017-D09:2143-2181"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Postmenopausal\" (SYN-0017-D09, 2026-09-14)",
+   "refs": [
+    "ev:SYN-0017-EV296",
+    "src:SYN-0017-D09:2067-2081"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "참고: FAIL 하나로 제외된 시험 (순위에는 넣지 않음, 그 기준만 확인하면 판정이 바뀔 수 있음)",
+   "refs": [
+    "trial:NCT06757634"
+   ],
+   "kind": "heading"
+  },
+  {
+   "text": "NCT06757634 Phase 3 Study of Gedatolisib as First-Line Treatment for Patients With HR-Positive, HER2-Negative Advanced Breast Cancer (VIKTORIA-2): NCT06757634-E03 [exclusion] 제외 사유 있음",
+   "refs": [
+    "crit:NCT06757634-E03",
+    "dec:NCT06757634:NCT06757634-E03:r1",
+    "label:NCT06757634",
+    "trial:NCT06757634"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   노트: Received letrozole plus palbociclib for metastatic disease (2026-01 to 2026-09-10), which is prior systemic therapy for ABC.",
+   "refs": [
+    "dec:NCT06757634:NCT06757634-E03:r1"
+   ],
+   "kind": "fact"
+  }
+ ],
+ "evidence": {
+  "files": [
+   "evidence_dev_haiku_v14_12.jsonl",
+   "evidence_dev_variants_haiku_v14_12.jsonl"
+  ],
+  "sha256": "daba4f5f1e16ec2eefc47311f5c13f85e6b5f218c85424f08f9af3d9bab09124",
+  "id_series": "haiku",
+  "graph_ev_nodes_checked": 2240
+ },
+ "agent6": "a6-0.4.14"
+}

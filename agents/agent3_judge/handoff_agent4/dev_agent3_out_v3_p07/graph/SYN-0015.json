@@ -1,0 +1,5299 @@
+{
+ "patient_id": "SYN-0015",
+ "as_of": "2026-10-01",
+ "version": 1,
+ "nodes": [
+  {
+   "id": "trial:NCT03404336",
+   "kind": "trial",
+   "title": "Study on 30 Outpatients With Chronic Migraine Treated With Well-Being Therapy or With a Control Therapy"
+  },
+  {
+   "id": "crit:NCT03404336-I01",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "able and interested in participating to the present research project, as proved by signed Informed consent;",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT03404336:NCT03404336-I01:r1",
+   "kind": "decision",
+   "trial_id": "NCT03404336",
+   "criterion_id": "NCT03404336-I01",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "admin"
+   ],
+   "note": "consent/compliance item: not decidable from the record",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT03404336-I02",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "18-65 years of age;",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT03404336:NCT03404336-I02:r1",
+   "kind": "decision",
+   "trial_id": "NCT03404336",
+   "criterion_id": "NCT03404336-I02",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "age_rule"
+   ],
+   "note": "age 34.23 y vs [18.0, 65.0]",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0015-EV002",
+   "kind": "evidence",
+   "concept": "birth_date",
+   "term": null,
+   "value": "1992-07-08",
+   "unit": null,
+   "observed_date": "2026-07-15",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:birth_date",
+   "kind": "concept",
+   "concept": "birth_date",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0015-D01:8-23",
+   "kind": "source",
+   "doc_id": "SYN-0015-D01",
+   "doc_type": "registration",
+   "span": [
+    8,
+    23
+   ],
+   "text": "DOB 1992-07-08."
+  },
+  {
+   "id": "calc:NCT03404336:NCT03404336-I02",
+   "kind": "calculation",
+   "name": "age_at_as_of",
+   "value": 34.233,
+   "lo": 18.0,
+   "hi": 65.0
+  },
+  {
+   "id": "crit:NCT03404336-I03",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Italian mother tongue;",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT03404336:NCT03404336-I03:r1",
+   "kind": "decision",
+   "trial_id": "NCT03404336",
+   "criterion_id": "NCT03404336-I03",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Nationality is South Korea; mother tongue is not documented. Nationality does not establish language.",
+   "missing_fact": "Whether the patient's mother tongue is Italian",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT03404336-I04",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "diagnosis of chronic migraine according to the International Classification of Headache Disorders. Thus, presenting specific features (i.e., unilateral and pulsating pain of moderate or severe intensity, which is aggravated or precipitated by routine physical activities and is combined with nausea and/or vomiting, photophobia, and phonophobia) and migraine headache on >= 15 days per month;",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT03404336:NCT03404336-I04:r1",
+   "kind": "decision",
+   "trial_id": "NCT03404336",
+   "criterion_id": "NCT03404336-I04",
+   "status": "FAIL",
+   "reason": "VIOLATED",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Documented episodic migraine with 5-7 migraine days/month (diary 7 in August), below the >=15 days/month required for chronic migraine.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0015-EV250",
+   "kind": "evidence",
+   "concept": "monthly_migraine_days",
+   "term": null,
+   "value": 7,
+   "unit": "days/month",
+   "observed_date": "2026-09-24",
+   "certainty": "reported",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:monthly_migraine_days",
+   "kind": "concept",
+   "concept": "monthly_migraine_days",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0015-D06:0-41",
+   "kind": "source",
+   "doc_id": "SYN-0015-D06",
+   "doc_type": "patient_interview",
+   "span": [
+    0,
+    41
+   ],
+   "text": "Headache diary (August): 7 migraine days."
+  },
+  {
+   "id": "ev:SYN-0015-EV080",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "episodic migraine",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:diagnosis:episodic migraine",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "episodic migraine"
+  },
+  {
+   "id": "src:SYN-0015-D07:1083-1109",
+   "kind": "source",
+   "doc_id": "SYN-0015-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    1083,
+    1109
+   ],
+   "text": "episodic - onset early 20s"
+  },
+  {
+   "id": "crit:NCT03404336-I05",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "headache chronicity for a minimum of 1 year and pattern of headache symptoms stable for a period of at least 6 months;",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT03404336:NCT03404336-I05:r1",
+   "kind": "decision",
+   "trial_id": "NCT03404336",
+   "criterion_id": "NCT03404336-I05",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Headaches since early 20s/diagnosed 2015; attacks 5-7/month with a stable pattern across June-August diaries.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0015-EV007",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "migraine with aura",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-07-15",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:diagnosis:migraine with aura",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "migraine with aura"
+  },
+  {
+   "id": "src:SYN-0015-D02:16-45",
+   "kind": "source",
+   "doc_id": "SYN-0015-D02",
+   "doc_type": "clinic_note",
+   "span": [
+    16,
+    45
+   ],
+   "text": "headaches since her early 20s"
+  },
+  {
+   "id": "ev:SYN-0015-EV047",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "migraine with aura",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "src:SYN-0015-D07:165-209",
+   "kind": "source",
+   "doc_id": "SYN-0015-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    165,
+    209
+   ],
+   "text": "with migraine with aura since her early 20s."
+  },
+  {
+   "id": "ev:SYN-0015-EV172",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "average 5-7 per month",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:symptom_finding:average 5-7 per month",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "average 5-7 per month"
+  },
+  {
+   "id": "src:SYN-0015-D07:3467-3488",
+   "kind": "source",
+   "doc_id": "SYN-0015-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    3467,
+    3488
+   ],
+   "text": "average 5-7 per month"
+  },
+  {
+   "id": "crit:NCT03404336-I06",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "no pharmacological therapy or dietary supplements use for chronic migraine OR pharmacological therapy/dietary supplement use for chronic migraine stable since at least 3 months;",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT03404336:NCT03404336-I06:r1",
+   "kind": "decision",
+   "trial_id": "NCT03404336",
+   "criterion_id": "NCT03404336-I06",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No preventive therapy currently; propranolol stopped early Aug. Acute meds (sumatriptan since 2018, ibuprofen since ~2014) are long stable.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0015-EV110",
+   "kind": "evidence",
+   "concept": "medication",
+   "term": "preventive migraine therapy",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:medication:preventive migraine therapy",
+   "kind": "concept",
+   "concept": "medication",
+   "term": "preventive migraine therapy"
+  },
+  {
+   "id": "src:SYN-0015-D07:1870-1902",
+   "kind": "source",
+   "doc_id": "SYN-0015-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    1870,
+    1902
+   ],
+   "text": "No preventive therapy currently."
+  },
+  {
+   "id": "ev:SYN-0015-EV099",
+   "kind": "evidence",
+   "concept": "medication",
+   "term": "sumatriptan 50 mg PO PRN",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:medication:sumatriptan 50 mg po prn",
+   "kind": "concept",
+   "concept": "medication",
+   "term": "sumatriptan 50 mg PO PRN"
+  },
+  {
+   "id": "src:SYN-0015-D07:1537-1565",
+   "kind": "source",
+   "doc_id": "SYN-0015-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    1537,
+    1565
+   ],
+   "text": "max 2 doses/day (since 2018)"
+  },
+  {
+   "id": "ev:SYN-0015-EV256",
+   "kind": "evidence",
+   "concept": "lab_other",
+   "term": "ibuprofen use frequency",
+   "value": "~8 days/month",
+   "unit": null,
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:lab_other:ibuprofen use frequency",
+   "kind": "concept",
+   "concept": "lab_other",
+   "term": "ibuprofen use frequency"
+  },
+  {
+   "id": "src:SYN-0015-D07:1618-1650",
+   "kind": "source",
+   "doc_id": "SYN-0015-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    1618,
+    1650
+   ],
+   "text": "~8 days/month (OTC, since ~2014)"
+  },
+  {
+   "id": "crit:NCT03404336-I07",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "psychotropic medication allowed only if stable since at least three months.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT03404336:NCT03404336-I07:r1",
+   "kind": "decision",
+   "trial_id": "NCT03404336",
+   "criterion_id": "NCT03404336-I07",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_history_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Medication list is reconciled and lists no psychotropics, but the record does not explicitly state none. Not stated either way.",
+   "missing_fact": "Whether any psychotropic medication is used, and if so since when",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT03404336-E01",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "diagnosis of medication overuse headache;",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT03404336:NCT03404336-E01:r1",
+   "kind": "decision",
+   "trial_id": "NCT03404336",
+   "criterion_id": "NCT03404336-E01",
+   "status": "UNKNOWN",
+   "reason": "UNSUPPORTED",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Simple analgesic 7-8 d/month and triptan 5-6 d/month are noted as below the overuse range, but no explicit statement excludes MOH.",
+   "missing_fact": "Clinician statement on whether medication overuse headache is present",
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0015-EV174",
+   "kind": "evidence",
+   "concept": "medication",
+   "term": "simple analgesic 7-8 days/month",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:medication:simple analgesic 7-8 days/month",
+   "kind": "concept",
+   "concept": "medication",
+   "term": "simple analgesic 7-8 days/month"
+  },
+  {
+   "id": "src:SYN-0015-D07:3538-3602",
+   "kind": "source",
+   "doc_id": "SYN-0015-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    3538,
+    3602
+   ],
+   "text": "simple analgesic 7-8 days/month (below medication-overuse range)"
+  },
+  {
+   "id": "ev:SYN-0015-EV173",
+   "kind": "evidence",
+   "concept": "medication",
+   "term": "triptan 5-6 days/month",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:medication:triptan 5-6 days/month",
+   "kind": "concept",
+   "concept": "medication",
+   "term": "triptan 5-6 days/month"
+  },
+  {
+   "id": "src:SYN-0015-D07:3491-3536",
+   "kind": "source",
+   "doc_id": "SYN-0015-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    3491,
+    3536
+   ],
+   "text": "Acute medication days: triptan 5-6 days/month"
+  },
+  {
+   "id": "crit:NCT03404336-E02",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "co-occurrence of psychiatric disorder(s) according to the Diagnostic and Statistical Manual of mental disorders (DSM) 5th edition as diagnosed via the MINI International Neuropsychiatric Interview;",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT03404336:NCT03404336-E02:r1",
+   "kind": "decision",
+   "trial_id": "NCT03404336",
+   "criterion_id": "NCT03404336-E02",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Only no low mood or anxiety symptoms reported; no psychiatric diagnosis denial or MINI interview. Not a full denial.",
+   "missing_fact": "MINI-based DSM-5 psychiatric diagnosis assessment",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT03404336-E03",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "co-occurrence of chronic unstable medical conditions;",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT03404336:NCT03404336-E03:r1",
+   "kind": "decision",
+   "trial_id": "NCT03404336",
+   "criterion_id": "NCT03404336-E03",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation"
+   ],
+   "note": "Blanket negation of other cardiac, pulmonary, hepatic, renal, endocrine, autoimmune and neurologic history covers chronic conditions.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0015-EV082",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "cardiac history",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:cardiac history",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "cardiac history"
+  },
+  {
+   "id": "src:SYN-0015-D07:1222-1311",
+   "kind": "source",
+   "doc_id": "SYN-0015-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    1222,
+    1311
+   ],
+   "text": "No other cardiac, pulmonary, hepatic, renal, endocrine, autoimmune or neurologic history."
+  },
+  {
+   "id": "ev:SYN-0015-EV083",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "pulmonary history",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:pulmonary history",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "pulmonary history"
+  },
+  {
+   "id": "ev:SYN-0015-EV084",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "hepatic history",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:hepatic history",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "hepatic history"
+  },
+  {
+   "id": "ev:SYN-0015-EV085",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "renal history",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:renal history",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "renal history"
+  },
+  {
+   "id": "ev:SYN-0015-EV086",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "endocrine history",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:endocrine history",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "endocrine history"
+  },
+  {
+   "id": "ev:SYN-0015-EV087",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "autoimmune history",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:autoimmune history",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "autoimmune history"
+  },
+  {
+   "id": "crit:NCT03404336-E04",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "being pregnant or lactating;",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT03404336:NCT03404336-E04:r1",
+   "kind": "decision",
+   "trial_id": "NCT03404336",
+   "criterion_id": "NCT03404336-E04",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Not pregnant and urine hCG negative on 2026-09-28. Lactation is not mentioned, but the pregnancy part is settled by documented negation and testing.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0015-EV124",
+   "kind": "evidence",
+   "concept": "pregnancy",
+   "term": null,
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:pregnancy",
+   "kind": "concept",
+   "concept": "pregnancy",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0015-D07:2348-2385",
+   "kind": "source",
+   "doc_id": "SYN-0015-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    2348,
+    2385
+   ],
+   "text": "Not pregnant, not trying to conceive."
+  },
+  {
+   "id": "ev:SYN-0015-EV238",
+   "kind": "evidence",
+   "concept": "hcg",
+   "term": null,
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:hcg",
+   "kind": "concept",
+   "concept": "hcg",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0015-D08:1333-1353",
+   "kind": "source",
+   "doc_id": "SYN-0015-D08",
+   "doc_type": "lab_result",
+   "span": [
+    1333,
+    1353
+   ],
+   "text": "Urine hCG: negative."
+  },
+  {
+   "id": "crit:NCT03404336-E05",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "under exogeneous hormones treatment (i.e., hormonal contraceptives, postmenopausal hormone therapy);",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT03404336:NCT03404336-E05:r1",
+   "kind": "decision",
+   "trial_id": "NCT03404336",
+   "criterion_id": "NCT03404336-E05",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_history_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "list_inference",
+    "pc:strict_list_inference"
+   ],
+   "note": "[inferable PASS from SYN-0015-EV097] Combined OCP stopped May 2026; copper IUD is non-hormonal. Reconciled medication list shows no current exogenous hormones.",
+   "missing_fact": null,
+   "derived_from": "SYN-0015-EV097"
+  },
+  {
+   "id": "crit:NCT03404336-E06",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "any other condition that, according to the Investigators' opinion, may alter the ability of the patient to follow study procedures.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT03404336:NCT03404336-E06:r1",
+   "kind": "decision",
+   "trial_id": "NCT03404336",
+   "criterion_id": "NCT03404336-E06",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Investigator-judgment criterion with no documented problem; needs investigator assessment.",
+   "missing_fact": "Investigator opinion on ability to follow study procedures",
+   "derived_from": null
+  },
+  {
+   "id": "label:NCT03404336",
+   "kind": "trial_decision",
+   "label": "ineligible",
+   "why": [
+    "FAIL NCT03404336-I04"
+   ],
+   "by": "agent3"
+  },
+  {
+   "id": "trial:NCT07633522",
+   "kind": "trial",
+   "title": "Fire Needling Plus Filiform Needling for Chronic Migraine With Comorbid Tension-Type Headache"
+  },
+  {
+   "id": "crit:NCT07633522-I01",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Meets the diagnostic criteria for tension-type headaches with pericranial tenderness;",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07633522:NCT07633522-I01:r1",
+   "kind": "decision",
+   "trial_id": "NCT07633522",
+   "criterion_id": "NCT07633522-I01",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Only 'other mild headache days' recorded; no tension-type headache diagnosis or pericranial tenderness documented.",
+   "missing_fact": "Whether the patient has tension-type headache with pericranial tenderness",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07633522-I02",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Meets the diagnostic criteria for chronic migraine;",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07633522:NCT07633522-I02:r1",
+   "kind": "decision",
+   "trial_id": "NCT07633522",
+   "criterion_id": "NCT07633522-I02",
+   "status": "FAIL",
+   "reason": "VIOLATED",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Diagnosis is episodic migraine with aura, 5-7 days/month; chronic migraine requires ≥15 headache days/month.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0015-EV182",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "migraine with aura, episodic",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:diagnosis:migraine with aura, episodic",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "migraine with aura, episodic"
+  },
+  {
+   "id": "src:SYN-0015-D07:3903-4040",
+   "kind": "source",
+   "doc_id": "SYN-0015-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    3903,
+    4040
+   ],
+   "text": "Migraine with aura, episodic, 5-7 attacks/month with significant work impact, partial response to sumatriptan, propranolol not tolerated."
+  },
+  {
+   "id": "crit:NCT07633522-I03",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "18 years <= age <= 65 years;",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07633522:NCT07633522-I03:r1",
+   "kind": "decision",
+   "trial_id": "NCT07633522",
+   "criterion_id": "NCT07633522-I03",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "age_rule"
+   ],
+   "note": "age 34.23 y vs [18.0, 65.0]",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "calc:NCT07633522:NCT07633522-I03",
+   "kind": "calculation",
+   "name": "age_at_as_of",
+   "value": 34.233,
+   "lo": 18.0,
+   "hi": 65.0
+  },
+  {
+   "id": "crit:NCT07633522-I04",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Has sufficient understanding to complete the necessary examinations and tests for the study;",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07633522:NCT07633522-I04:r1",
+   "kind": "decision",
+   "trial_id": "NCT07633522",
+   "criterion_id": "NCT07633522-I04",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No explicit statement on understanding or compliance; alert, oriented, fluent speech does not decide it.",
+   "missing_fact": "Patient's ability to understand and complete required examinations and tests",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07633522-I05",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Voluntarily joins this study and signs the informed consent form.",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07633522:NCT07633522-I05:r1",
+   "kind": "decision",
+   "trial_id": "NCT07633522",
+   "criterion_id": "NCT07633522-I05",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "admin"
+   ],
+   "note": "consent/compliance item: not decidable from the record",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07633522-E01",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Patients complicated with cluster headache or other primary headaches;",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07633522:NCT07633522-E01:r1",
+   "kind": "decision",
+   "trial_id": "NCT07633522",
+   "criterion_id": "NCT07633522-E01",
+   "status": "UNKNOWN",
+   "reason": "UNSUPPORTED",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Per rule 9 migraine is the target condition so not counted. No cluster headache; other mild headache days are unclassified.",
+   "missing_fact": "Whether any other primary headache disorder (e.g., cluster) is diagnosed besides migraine",
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0015-EV079",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "migraine with aura",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "src:SYN-0015-D07:1063-1081",
+   "kind": "source",
+   "doc_id": "SYN-0015-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    1063,
+    1081
+   ],
+   "text": "Migraine with aura"
+  },
+  {
+   "id": "ev:SYN-0015-EV023",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "other mild headache days",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-07-15",
+   "certainty": "reported",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:symptom_finding:other mild headache days",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "other mild headache days"
+  },
+  {
+   "id": "src:SYN-0015-D03:40-67",
+   "kind": "source",
+   "doc_id": "SYN-0015-D03",
+   "doc_type": "patient_interview",
+   "span": [
+    40,
+    67
+   ],
+   "text": "2 other mild headache days."
+  },
+  {
+   "id": "crit:NCT07633522-E02",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Patients with secondary headaches caused by intracranial space-occupying lesions, cranial infections, etc.;",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07633522:NCT07633522-E02:r1",
+   "kind": "decision",
+   "trial_id": "NCT07633522",
+   "criterion_id": "NCT07633522-E02",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_record_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "normal_finding_inference",
+    "pc:strict_normal_finding_inference"
+   ],
+   "note": "[inferable PASS from normal findings] MRI shows no structural abnormality, normal neuro exam, no fever or meningismus; the headache is attributed to migraine, not a secondary cause.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07633522-E03",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Patients complicated with severe heart, liver or kidney impairment, coagulation disorders, infections, severe immunocompromise, or allergic predisposition;",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07633522:NCT07633522-E03:r1",
+   "kind": "decision",
+   "trial_id": "NCT07633522",
+   "criterion_id": "NCT07633522-E03",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Blanket negation covers heart/liver/kidney history, but coagulation, infection, immunocompromise and allergic predisposition are not addressed (NKDA is a drug allergy only).",
+   "missing_fact": "Absence of coagulation disorder, infection, severe immunocompromise and allergic predisposition",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07633522-E04",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Patients with alcohol or drug dependence;",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07633522:NCT07633522-E04:r1",
+   "kind": "decision",
+   "trial_id": "NCT07633522",
+   "criterion_id": "NCT07633522-E04",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Occasional alcohol 1-2 drinks/week and no recreational drugs; no dependence documented.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0015-EV115",
+   "kind": "evidence",
+   "concept": "alcohol",
+   "term": "occasional, 1-2 drinks/week",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:alcohol:occasional, 1-2 drinks/week",
+   "kind": "concept",
+   "concept": "alcohol",
+   "term": "occasional, 1-2 drinks/week"
+  },
+  {
+   "id": "src:SYN-0015-D07:2032-2069",
+   "kind": "source",
+   "doc_id": "SYN-0015-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    2032,
+    2069
+   ],
+   "text": "Alcohol: occasional, 1-2 drinks/week."
+  },
+  {
+   "id": "ev:SYN-0015-EV117",
+   "kind": "evidence",
+   "concept": "substance_use",
+   "term": "recreational drugs",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:substance_use:recreational drugs",
+   "kind": "concept",
+   "concept": "substance_use",
+   "term": "recreational drugs"
+  },
+  {
+   "id": "src:SYN-0015-D07:2098-2120",
+   "kind": "source",
+   "doc_id": "SYN-0015-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    2098,
+    2120
+   ],
+   "text": "No recreational drugs."
+  },
+  {
+   "id": "crit:NCT07633522-E05",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Patients who are unable to cooperate with acupuncture treatment;",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07633522:NCT07633522-E05:r1",
+   "kind": "decision",
+   "trial_id": "NCT07633522",
+   "criterion_id": "NCT07633522-E05",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Nothing in record addresses ability to cooperate with acupuncture.",
+   "missing_fact": "Whether the patient can cooperate with acupuncture treatment",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07633522-E06",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Women who are planning pregnancy, pregnant or breastfeeding;",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07633522:NCT07633522-E06:r1",
+   "kind": "decision",
+   "trial_id": "NCT07633522",
+   "criterion_id": "NCT07633522-E06",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Not pregnant, not trying to conceive, urine hCG negative; copper IUD in place. Breastfeeding not mentioned, but no sign of it.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0015-EV289",
+   "kind": "evidence",
+   "concept": "pregnancy",
+   "term": null,
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "crit:NCT07633522-E07",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Patients who have received acupuncture treatment within 3 months prior to enrollment.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07633522:NCT07633522-E07:r1",
+   "kind": "decision",
+   "trial_id": "NCT07633522",
+   "criterion_id": "NCT07633522-E07",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Procedure list says 'None' but is not specific to acupuncture; absence is not clearly documented.",
+   "missing_fact": "Any acupuncture treatment in the past 3 months",
+   "derived_from": null
+  },
+  {
+   "id": "label:NCT07633522",
+   "kind": "trial_decision",
+   "label": "ineligible",
+   "why": [
+    "FAIL NCT07633522-I02"
+   ],
+   "by": "agent3"
+  },
+  {
+   "id": "trial:NCT06848166",
+   "kind": "trial",
+   "title": "CHROnic Migraine Embolization"
+  },
+  {
+   "id": "crit:NCT06848166-I01",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "The patient has read, understood, signed, and dated the Patient Information Sheet with the informed consent form.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06848166:NCT06848166-I01:r1",
+   "kind": "decision",
+   "trial_id": "NCT06848166",
+   "criterion_id": "NCT06848166-I01",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Nothing in the record addresses signed consent.",
+   "missing_fact": "Whether the patient has read, signed and dated the informed consent form",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06848166-I02",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "The patient is aged between 21 and 70 years inclusive at the time of signing the Patient Information Sheet with the informed consent form.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06848166:NCT06848166-I02:r1",
+   "kind": "decision",
+   "trial_id": "NCT06848166",
+   "criterion_id": "NCT06848166-I02",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "structured_numeric"
+   ],
+   "note": "age = 34 years (2026-07-15, -78d) vs between [21, 70] -> met",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0015-EV005",
+   "kind": "evidence",
+   "concept": "age",
+   "term": null,
+   "value": 34,
+   "unit": "years",
+   "observed_date": "2026-07-15",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:age",
+   "kind": "concept",
+   "concept": "age",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0015-D02:11-14",
+   "kind": "source",
+   "doc_id": "SYN-0015-D02",
+   "doc_type": "clinic_note",
+   "span": [
+    11,
+    14
+   ],
+   "text": "34F"
+  },
+  {
+   "id": "calc:NCT06848166:NCT06848166-I02",
+   "kind": "calculation",
+   "concept": "age",
+   "operator": "between",
+   "threshold": [
+    21,
+    70
+   ],
+   "unit": "years",
+   "value": 34,
+   "value_unit": "years",
+   "observed_date": "2026-07-15",
+   "days_before": 78,
+   "note": "age = 34 years (2026-07-15, -78d) vs between [21, 70] -> met"
+  },
+  {
+   "id": "crit:NCT06848166-I03",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "The diagnosis of \"chronic migraine\" according to the clinical guidelines on migraine by the Ministry of Health of the Russian Federation (2021) / ICD-10 (2018), established at least 12 months before screening.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06848166:NCT06848166-I03:r1",
+   "kind": "decision",
+   "trial_id": "NCT06848166",
+   "criterion_id": "NCT06848166-I03",
+   "status": "FAIL",
+   "reason": "VIOLATED",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Documented diagnosis is episodic migraine with aura (5-7 attacks/month), not chronic migraine.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06848166-I04",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Resistant nature of the migraine, determined by the doctor using the criteria of the European Headache Federation (EHF, 2020), established at least 6 months before screening.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06848166:NCT06848166-I04:r1",
+   "kind": "decision",
+   "trial_id": "NCT06848166",
+   "criterion_id": "NCT06848166-I04",
+   "status": "UNKNOWN",
+   "reason": "UNSUPPORTED",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Only propranolol failed, started 78 days ago; no resistance determination documented.",
+   "missing_fact": "Doctor's determination of EHF-defined resistant migraine established at least 6 months ago",
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0015-EV178",
+   "kind": "evidence",
+   "concept": "medication",
+   "term": "propranolol",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "past"
+  },
+  {
+   "id": "concept:medication:propranolol",
+   "kind": "concept",
+   "concept": "medication",
+   "term": "propranolol"
+  },
+  {
+   "id": "src:SYN-0015-D07:3701-3759",
+   "kind": "source",
+   "doc_id": "SYN-0015-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    3701,
+    3759
+   ],
+   "text": "Preventives tried: propranolol (not tolerated, no benefit)"
+  },
+  {
+   "id": "crit:NCT06848166-I05",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "At least 14 days of headache during the screening period (28 days), of which 8 days of headache meet the definition of migraine (assessed based on the results of filling out the Headache Diary for 28 days during the screening period).",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06848166:NCT06848166-I05:r1",
+   "kind": "decision",
+   "trial_id": "NCT06848166",
+   "criterion_id": "NCT06848166-I05",
+   "status": "FAIL",
+   "reason": "VIOLATED",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "7 migraine days in August, 6 in June plus 2 mild headache days; below 8 migraine and 14 headache days.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0015-EV171",
+   "kind": "evidence",
+   "concept": "monthly_migraine_days",
+   "term": null,
+   "value": 7,
+   "unit": "days/month",
+   "observed_date": "2026-08-01",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "src:SYN-0015-D07:3455-3465",
+   "kind": "source",
+   "doc_id": "SYN-0015-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    3455,
+    3465
+   ],
+   "text": "7 (August)"
+  },
+  {
+   "id": "ev:SYN-0015-EV054",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "other mild headache days in June",
+   "value": "2",
+   "unit": null,
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:symptom_finding:other mild headache days in june",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "other mild headache days in June"
+  },
+  {
+   "id": "src:SYN-0015-D07:389-445",
+   "kind": "source",
+   "doc_id": "SYN-0015-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    389,
+    445
+   ],
+   "text": "Diary: June 6 migraine days + 2 other mild headache days"
+  },
+  {
+   "id": "crit:NCT06848166-I06",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Migraine, resistant to both pharmacological and non-pharmacological prevention and treatment methods, in the patient's history.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06848166:NCT06848166-I06:r1",
+   "kind": "decision",
+   "trial_id": "NCT06848166",
+   "criterion_id": "NCT06848166-I06",
+   "status": "UNKNOWN",
+   "reason": "UNSUPPORTED",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Only one preventive (propranolol) tried; non-pharmacological methods not documented.",
+   "missing_fact": "Evidence of failure of multiple pharmacological and non-pharmacological preventive methods",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06848166-I07",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Maximum level of headache during migraine days above 5 points (inclusive) on a 10-point numerical rating scale during the screening period.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06848166:NCT06848166-I07:r1",
+   "kind": "decision",
+   "trial_id": "NCT06848166",
+   "criterion_id": "NCT06848166-I07",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Pain severity at peak 8/10, recorded 3 days ago.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0015-EV177",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "Pain severity at peak 8/10",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:symptom_finding:pain severity at peak 8/10",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "Pain severity at peak 8/10"
+  },
+  {
+   "id": "src:SYN-0015-D07:3672-3698",
+   "kind": "source",
+   "doc_id": "SYN-0015-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    3672,
+    3698
+   ],
+   "text": "Pain severity at peak 8/10"
+  },
+  {
+   "id": "crit:NCT06848166-I08",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "No positive effect on migraine symptoms (frequency and intensity of headache attacks) from previous botulinum toxin therapy (administration of OnabotulinumtoxinA, Relatox® (botulinum toxin type A - hemagglutinin complex 155 - 195 IU, administered every 12 weeks according to the PREEMPT protocol).",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06848166:NCT06848166-I08:r1",
+   "kind": "decision",
+   "trial_id": "NCT06848166",
+   "criterion_id": "NCT06848166-I08",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_history_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Botulinum toxin therapy is not mentioned anywhere in the record.",
+   "missing_fact": "Whether the patient ever received botulinum toxin and with what effect",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06848166-I09",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Consent to use adequate contraceptive methods* and not serve as an egg/sperm donor from the time of signing the Patient Information Sheet with the informed consent form for participation in the study until the end of the study (for women with reproductive potential and men).",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06848166:NCT06848166-I09:r1",
+   "kind": "decision",
+   "trial_id": "NCT06848166",
+   "criterion_id": "NCT06848166-I09",
+   "status": "UNKNOWN",
+   "reason": "UNSUPPORTED",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Copper IUD in place, but consent and egg-donation statement not documented.",
+   "missing_fact": "Explicit consent to use adequate contraception and not donate eggs",
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0015-EV188",
+   "kind": "evidence",
+   "concept": "contraception",
+   "term": "IUD",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:contraception:iud",
+   "kind": "concept",
+   "concept": "contraception",
+   "term": "IUD"
+  },
+  {
+   "id": "src:SYN-0015-D07:4157-4177",
+   "kind": "source",
+   "doc_id": "SYN-0015-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    4157,
+    4177
+   ],
+   "text": "continue copper IUD."
+  },
+  {
+   "id": "ev:SYN-0015-EV125",
+   "kind": "evidence",
+   "concept": "contraception",
+   "term": "IUD",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "src:SYN-0015-D07:2386-2422",
+   "kind": "source",
+   "doc_id": "SYN-0015-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    2386,
+    2422
+   ],
+   "text": "Copper IUD in place since June 2026."
+  },
+  {
+   "id": "crit:NCT06848166-E01",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "The patient has contraindications to undergoing embolization of the middle meningeal artery based on the medical history, results of examinations, and laboratory tests conducted during screening.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06848166:NCT06848166-E01:r1",
+   "kind": "decision",
+   "trial_id": "NCT06848166",
+   "criterion_id": "NCT06848166-E01",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No contraindication documented; needs a screening judgment.",
+   "missing_fact": "Clinician assessment of contraindications to middle meningeal artery embolization",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06848166-E02",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Allergic reactions to contrast agents used during procedures before/during the embolization procedure and associated procedures.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06848166:NCT06848166-E02:r1",
+   "kind": "decision",
+   "trial_id": "NCT06848166",
+   "criterion_id": "NCT06848166-E02",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "NKDA documented, so no contrast allergy.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0015-EV096",
+   "kind": "evidence",
+   "concept": "allergy",
+   "term": "no known drug allergies",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:allergy:no known drug allergies",
+   "kind": "concept",
+   "concept": "allergy",
+   "term": "no known drug allergies"
+  },
+  {
+   "id": "src:SYN-0015-D07:1451-1456",
+   "kind": "source",
+   "doc_id": "SYN-0015-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    1451,
+    1456
+   ],
+   "text": "NKDA."
+  },
+  {
+   "id": "crit:NCT06848166-E03",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "The patient has a history of cerebral vascular malformations, arteriovenous malformations, brain aneurysms, brain tumors, hydrocephalus, arachnoiditis, cerebrospinal fluid circulation disorders, craniovertebral junction anomalies, platybasia, skull base deformities, severe traumatic brain injuries, stenosis, and occlusion of pre-cerebral arteries.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06848166:NCT06848166-E03:r1",
+   "kind": "decision",
+   "trial_id": "NCT06848166",
+   "criterion_id": "NCT06848166-E03",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation"
+   ],
+   "note": "No other neurologic history, no head trauma, MRI without structural abnormality.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0015-EV088",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "other neurologic history",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:other neurologic history",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "other neurologic history"
+  },
+  {
+   "id": "ev:SYN-0015-EV180",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "structural brain abnormality",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-07-29",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:symptom_finding:structural brain abnormality",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "structural brain abnormality"
+  },
+  {
+   "id": "src:SYN-0015-D07:3762-3818",
+   "kind": "source",
+   "doc_id": "SYN-0015-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    3762,
+    3818
+   ],
+   "text": "MRI brain 2026-07-29: no acute or structural abnormality"
+  },
+  {
+   "id": "ev:SYN-0015-EV070",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "head trauma",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:symptom_finding:head trauma",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "head trauma"
+  },
+  {
+   "id": "src:SYN-0015-D07:791-908",
+   "kind": "source",
+   "doc_id": "SYN-0015-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    791,
+    908
+   ],
+   "text": "No new neurologic symptoms, no aura without headache change, no motor weakness, no thunderclap onset, no head trauma."
+  },
+  {
+   "id": "crit:NCT06848166-E04",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "The patient has a history of skull base fractures and consequences of skull base fractures, history of neurosurgical operations.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06848166:NCT06848166-E04:r1",
+   "kind": "decision",
+   "trial_id": "NCT06848166",
+   "criterion_id": "NCT06848166-E04",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No procedures recorded and no head trauma, so no neurosurgery or skull base fracture.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0015-EV095",
+   "kind": "evidence",
+   "concept": "procedure",
+   "term": "None.",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:procedure:none.",
+   "kind": "concept",
+   "concept": "procedure",
+   "term": "None."
+  },
+  {
+   "id": "src:SYN-0015-D07:1433-1438",
+   "kind": "source",
+   "doc_id": "SYN-0015-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    1433,
+    1438
+   ],
+   "text": "None."
+  },
+  {
+   "id": "crit:NCT06848166-E05",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "A history of mental illness (including depression, confirmed by a psychiatrist during screening through the HADS questionnaire and Hamilton scale assessment), which, in the opinion of the psychiatrist, may affect the patient's ability to assess their condition, interfere with participation in the study, or impact the patient's safety during the study.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06848166:NCT06848166-E05:r1",
+   "kind": "decision",
+   "trial_id": "NCT06848166",
+   "criterion_id": "NCT06848166-E05",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_record_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Only no current low mood or anxiety symptoms; psychiatric history not addressed.",
+   "missing_fact": "Psychiatric history and psychiatrist assessment",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06848166-E06",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "A history of hyperthyroidism or diabetes. The presence of other endocrine disorders in the patient's history that, in the doctor's opinion, could interfere with participation in the study or affect the evaluation of efficacy and/or safety.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06848166:NCT06848166-E06:r1",
+   "kind": "decision",
+   "trial_id": "NCT06848166",
+   "criterion_id": "NCT06848166-E06",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation",
+    "pc:blanket_out_of_scope"
+   ],
+   "note": "[blanket negation out of A1 scope] No endocrine history; HbA1c and TSH normal.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06848166-E07",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "History or data of drug addiction, alcoholism, or abuse of medications.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06848166:NCT06848166-E07:r1",
+   "kind": "decision",
+   "trial_id": "NCT06848166",
+   "criterion_id": "NCT06848166-E07",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_record_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "normal_finding_inference",
+    "pc:strict_normal_finding_inference"
+   ],
+   "note": "[inferable PASS from normal findings] No recreational drugs, occasional alcohol, analgesic use below overuse range.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06848166-E08",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Medication-induced headache at the time of screening and within 3 months (12 weeks) prior to screening.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06848166:NCT06848166-E08:r1",
+   "kind": "decision",
+   "trial_id": "NCT06848166",
+   "criterion_id": "NCT06848166-E08",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_record_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "normal_finding_inference",
+    "pc:strict_normal_finding_inference"
+   ],
+   "note": "[inferable PASS from normal findings] Acute medication days stated below medication-overuse range.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06848166-E09",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Other types of chronic headache in the patient's history within less than 12 months before screening, such as trigeminal autonomic cephalalgias (including cluster headaches, prolonged hemicrania), new daily persistent headaches, painful cranial neuropathies, retinal migraine, aura without headache, hemiplegic migraine, brainstem aura migraine, idiopathic intracranial hypertension without optic nerve edema, spontaneous intracranial hypertension, secondary headaches.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06848166:NCT06848166-E09:r1",
+   "kind": "decision",
+   "trial_id": "NCT06848166",
+   "criterion_id": "NCT06848166-E09",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation"
+   ],
+   "note": "No aura without headache or motor weakness, no other neurologic history, MRI without structural cause.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0015-EV067",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "aura without headache",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:symptom_finding:aura without headache",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "aura without headache"
+  },
+  {
+   "id": "ev:SYN-0015-EV068",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "motor weakness",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:symptom_finding:motor weakness",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "motor weakness"
+  },
+  {
+   "id": "ev:SYN-0015-EV185",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "normal neurological exam",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:symptom_finding:normal neurological exam",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "normal neurological exam"
+  },
+  {
+   "id": "src:SYN-0015-D07:4041-4089",
+   "kind": "source",
+   "doc_id": "SYN-0015-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    4041,
+    4089
+   ],
+   "text": "Neuro exam normal, MRI without structural cause."
+  },
+  {
+   "id": "crit:NCT06848166-E10",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "The patient is unable to distinguish a migraine headache from other types of headache.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06848166:NCT06848166-E10:r1",
+   "kind": "decision",
+   "trial_id": "NCT06848166",
+   "criterion_id": "NCT06848166-E10",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Diary separates migraine days from other mild headache days.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0015-EV053",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "migraine days in June",
+   "value": "6",
+   "unit": null,
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:symptom_finding:migraine days in june",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "migraine days in June"
+  },
+  {
+   "id": "crit:NCT06848166-E11",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "The patient has migraine complications, such as status migrainosus, persistent aura without infarction, migraine infarction, migraine aura (as a trigger for epileptic seizures).",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06848166:NCT06848166-E11:r1",
+   "kind": "decision",
+   "trial_id": "NCT06848166",
+   "criterion_id": "NCT06848166-E11",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_record_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "normal_finding_inference",
+    "pc:strict_normal_finding_inference"
+   ],
+   "note": "[inferable PASS from normal findings] Typical 20-min aura, attacks 12-24 h; no seizure or stroke history.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06848166-E12",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Body mass index (BMI) below 18.5 or above 39.9 kg/m^2.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06848166:NCT06848166-E12:r1",
+   "kind": "decision",
+   "trial_id": "NCT06848166",
+   "criterion_id": "NCT06848166-E12",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "structured_numeric"
+   ],
+   "note": "bmi = 22.1 kg/m2 (2026-08-26, -36d) vs < 18.5 -> not met",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0015-EV039",
+   "kind": "evidence",
+   "concept": "bmi",
+   "term": null,
+   "value": 22.1,
+   "unit": "kg/m2",
+   "observed_date": "2026-08-26",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:bmi",
+   "kind": "concept",
+   "concept": "bmi",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0015-D05:178-187",
+   "kind": "source",
+   "doc_id": "SYN-0015-D05",
+   "doc_type": "clinic_note",
+   "span": [
+    178,
+    187
+   ],
+   "text": "BMI 22.1."
+  },
+  {
+   "id": "calc:NCT06848166:NCT06848166-E12",
+   "kind": "calculation",
+   "concept": "bmi",
+   "operator": "<",
+   "threshold": 18.5,
+   "unit": "kg/m2",
+   "value": 22.1,
+   "value_unit": "kg/m2",
+   "observed_date": "2026-08-26",
+   "days_before": 36,
+   "note": "bmi = 22.1 kg/m2 (2026-08-26, -36d) vs < 18.5 -> not met"
+  },
+  {
+   "id": "crit:NCT06848166-E13",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "The onset of migraine was diagnosed at an age older than 50 years.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06848166:NCT06848166-E13:r1",
+   "kind": "decision",
+   "trial_id": "NCT06848166",
+   "criterion_id": "NCT06848166-E13",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Migraine onset in early 20s.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06848166-E14",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "The presence of metabolic syndrome or cachexia.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06848166:NCT06848166-E14:r1",
+   "kind": "decision",
+   "trial_id": "NCT06848166",
+   "criterion_id": "NCT06848166-E14",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_record_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "normal_finding_inference",
+    "pc:strict_normal_finding_inference"
+   ],
+   "note": "[inferable PASS from normal findings] BMI 22.1, normal BP, glucose, TG, HDL, albumin; no weight loss.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06848166-E15",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Severe cardiovascular diseases currently or in the past, including: chronic heart failure class III or IV (according to the New York Heart Association classification), clinically significant ventricular arrhythmias (ventricular tachycardia, ventricular fibrillation), significant heart valve diseases, uncontrolled hypertension with systolic blood pressure > 180 mm Hg and diastolic blood pressure > 110 mm Hg, pulmonary embolism, or deep vein thrombosis.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06848166:NCT06848166-E15:r1",
+   "kind": "decision",
+   "trial_id": "NCT06848166",
+   "criterion_id": "NCT06848166-E15",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation"
+   ],
+   "note": "No cardiac history, hypertension or VTE; BP 110/70.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0015-EV093",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "hypertension",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:hypertension",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "hypertension"
+  },
+  {
+   "id": "src:SYN-0015-D07:1312-1387",
+   "kind": "source",
+   "doc_id": "SYN-0015-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    1312,
+    1387
+   ],
+   "text": "No history of stroke, TIA, seizure, venous thromboembolism or hypertension."
+  },
+  {
+   "id": "ev:SYN-0015-EV092",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "venous thromboembolism",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:venous thromboembolism",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "venous thromboembolism"
+  },
+  {
+   "id": "ev:SYN-0015-EV253",
+   "kind": "evidence",
+   "concept": "systolic_bp",
+   "term": null,
+   "value": 110,
+   "unit": "mmHg",
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:systolic_bp",
+   "kind": "concept",
+   "concept": "systolic_bp",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0015-D07:957-971",
+   "kind": "source",
+   "doc_id": "SYN-0015-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    957,
+    971
+   ],
+   "text": "BP 110/70 mmHg"
+  },
+  {
+   "id": "crit:NCT06848166-E16",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Varicose veins of the lower limbs, history of lower limb vein thrombosis.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06848166:NCT06848166-E16:r1",
+   "kind": "decision",
+   "trial_id": "NCT06848166",
+   "criterion_id": "NCT06848166-E16",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "VTE denied, but varicose veins not addressed.",
+   "missing_fact": "Presence of varicose veins of the lower limbs",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06848166-E17",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Ischemic heart disease, atherosclerosis of coronary vessels.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06848166:NCT06848166-E17:r1",
+   "kind": "decision",
+   "trial_id": "NCT06848166",
+   "criterion_id": "NCT06848166-E17",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation"
+   ],
+   "note": "No cardiac history, which covers ischemic heart disease.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06848166-E18",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Stenotic atherosclerosis of brachiocephalic arteries in the patient's history.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06848166:NCT06848166-E18:r1",
+   "kind": "decision",
+   "trial_id": "NCT06848166",
+   "criterion_id": "NCT06848166-E18",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_record_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Not addressed; stroke/TIA denial does not cover arterial stenosis.",
+   "missing_fact": "Whether brachiocephalic artery atherosclerosis/stenosis has ever been diagnosed",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06848166-E19",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Acute cerebrovascular accident or its consequences in the patient's history.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06848166:NCT06848166-E19:r1",
+   "kind": "decision",
+   "trial_id": "NCT06848166",
+   "criterion_id": "NCT06848166-E19",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No history of stroke or TIA.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0015-EV089",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "stroke",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:stroke",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "stroke"
+  },
+  {
+   "id": "ev:SYN-0015-EV090",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "TIA",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:tia",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "TIA"
+  },
+  {
+   "id": "crit:NCT06848166-E20",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "The patient is pregnant or plans to become pregnant within the next 3 months.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06848166:NCT06848166-E20:r1",
+   "kind": "decision",
+   "trial_id": "NCT06848166",
+   "criterion_id": "NCT06848166-E20",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Urine hCG negative; not pregnant and not trying to conceive.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06848166-E21",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Atrial fibrillation, patent foramen ovale, anomalies of the interatrial septum, history of heart and coronary vessel surgeries.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06848166:NCT06848166-E21:r1",
+   "kind": "decision",
+   "trial_id": "NCT06848166",
+   "criterion_id": "NCT06848166-E21",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation"
+   ],
+   "note": "No cardiac history and no prior procedures.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06848166-E22",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Signs of blood clotting disorders in the patient's history and screening, history of antiphospholipid syndrome.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06848166:NCT06848166-E22:r1",
+   "kind": "decision",
+   "trial_id": "NCT06848166",
+   "criterion_id": "NCT06848166-E22",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_record_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "VTE denied and platelets normal, but no coagulation disorder statement or tests.",
+   "missing_fact": "Clotting disorder or antiphospholipid syndrome history, or coagulation tests",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06848166-E23",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Use of anticoagulant drugs less than 5 days before the procedure.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06848166:NCT06848166-E23:r1",
+   "kind": "decision",
+   "trial_id": "NCT06848166",
+   "criterion_id": "NCT06848166-E23",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_history_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "list_inference",
+    "pc:strict_list_inference"
+   ],
+   "note": "[inferable PASS from SYN-0015-EV097] Reconciled medication list shows only sumatriptan and ibuprofen; no anticoagulant.",
+   "missing_fact": null,
+   "derived_from": "SYN-0015-EV097"
+  },
+  {
+   "id": "crit:NCT06848166-E24",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Uncontrolled bronchial asthma, severe chronic obstructive pulmonary disease in the patient's history.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06848166:NCT06848166-E24:r1",
+   "kind": "decision",
+   "trial_id": "NCT06848166",
+   "criterion_id": "NCT06848166-E24",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation"
+   ],
+   "note": "No pulmonary history stated; blanket negation covers chronic asthma/COPD history.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06848166-E25",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Renal insufficiency at screening based on the calculation of glomerular filtration rate (GFR) <= 60 mL/min, based on serum creatinine levels at screening, or a history of renal insufficiency.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06848166:NCT06848166-E25:r1",
+   "kind": "decision",
+   "trial_id": "NCT06848166",
+   "criterion_id": "NCT06848166-E25",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation"
+   ],
+   "note": "eGFR 105 (-3d), above 60; no renal history documented.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0015-EV213",
+   "kind": "evidence",
+   "concept": "egfr",
+   "term": null,
+   "value": 105,
+   "unit": "mL/min/1.73m2",
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:egfr",
+   "kind": "concept",
+   "concept": "egfr",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0015-D08:635-663",
+   "kind": "source",
+   "doc_id": "SYN-0015-D08",
+   "doc_type": "lab_result",
+   "span": [
+    635,
+    663
+   ],
+   "text": "eGFR 105 mL/min/1.73m2 (>90)"
+  },
+  {
+   "id": "ev:SYN-0015-EV212",
+   "kind": "evidence",
+   "concept": "creatinine",
+   "term": null,
+   "value": 0.78,
+   "unit": "mg/dL",
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:creatinine",
+   "kind": "concept",
+   "concept": "creatinine",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0015-D08:601-634",
+   "kind": "source",
+   "doc_id": "SYN-0015-D08",
+   "doc_type": "lab_result",
+   "span": [
+    601,
+    634
+   ],
+   "text": "Creatinine 0.78 mg/dL (0.50-1.00)"
+  },
+  {
+   "id": "crit:NCT06848166-E26",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "History of liver insufficiency, elevated ALT and AST levels at screening.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06848166:NCT06848166-E26:r1",
+   "kind": "decision",
+   "trial_id": "NCT06848166",
+   "criterion_id": "NCT06848166-E26",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation"
+   ],
+   "note": "No hepatic history; ALT 18 and AST 20 are within reference range.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0015-EV218",
+   "kind": "evidence",
+   "concept": "alt",
+   "term": null,
+   "value": 18,
+   "unit": "U/L",
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:alt",
+   "kind": "concept",
+   "concept": "alt",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0015-D08:788-805",
+   "kind": "source",
+   "doc_id": "SYN-0015-D08",
+   "doc_type": "lab_result",
+   "span": [
+    788,
+    805
+   ],
+   "text": "ALT 18 U/L (7-35)"
+  },
+  {
+   "id": "ev:SYN-0015-EV219",
+   "kind": "evidence",
+   "concept": "ast",
+   "term": null,
+   "value": 20,
+   "unit": "U/L",
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:ast",
+   "kind": "concept",
+   "concept": "ast",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0015-D08:806-823",
+   "kind": "source",
+   "doc_id": "SYN-0015-D08",
+   "doc_type": "lab_result",
+   "span": [
+    806,
+    823
+   ],
+   "text": "AST 20 U/L (8-33)"
+  },
+  {
+   "id": "crit:NCT06848166-E27",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "History of generalized pain syndrome, fibromyalgia.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06848166:NCT06848166-E27:r1",
+   "kind": "decision",
+   "trial_id": "NCT06848166",
+   "criterion_id": "NCT06848166-E27",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_record_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Fibromyalgia is not mentioned; the blanket negation does not clearly cover it; joint pain negation is only a symptom.",
+   "missing_fact": "Whether the patient has a history of fibromyalgia or generalized pain syndrome",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06848166-E28",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "For women: use of combined oral contraceptives with a history of thrombosis of any localization.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06848166:NCT06848166-E28:r1",
+   "kind": "decision",
+   "trial_id": "NCT06848166",
+   "criterion_id": "NCT06848166-E28",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "COC stopped in May 2026, and there is no history of venous thromboembolism; the thrombosis condition is not met.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0015-EV107",
+   "kind": "evidence",
+   "concept": "medication",
+   "term": "combined oral contraceptive",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-05-01",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "stopped"
+  },
+  {
+   "id": "concept:medication:combined oral contraceptive",
+   "kind": "concept",
+   "concept": "medication",
+   "term": "combined oral contraceptive"
+  },
+  {
+   "id": "src:SYN-0015-D07:1783-1869",
+   "kind": "source",
+   "doc_id": "SYN-0015-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    1783,
+    1869
+   ],
+   "text": "Combined oral contraceptive - stopped May 2026 by GP because of aura (used since 2012)"
+  },
+  {
+   "id": "crit:NCT06848166-E29",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "History of epilepsy, epileptic syndrome, seizure disorders, neurological conditions other than the primary condition (migraine).",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06848166:NCT06848166-E29:r1",
+   "kind": "decision",
+   "trial_id": "NCT06848166",
+   "criterion_id": "NCT06848166-E29",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation"
+   ],
+   "note": "No seizure or other neurologic history besides migraine; family epilepsy is irrelevant.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0015-EV091",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "seizure",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:seizure",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "seizure"
+  },
+  {
+   "id": "crit:NCT06848166-E30",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Presence of antibodies to HIV, hepatitis C virus, hepatitis B surface antigen (HbsAg), antibodies to T. Pallidum, or a history of HIV infection, hepatitis B, hepatitis C, or syphilis, either in the medical history or based on the results of serological blood tests at screening.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06848166:NCT06848166-E30:r1",
+   "kind": "decision",
+   "trial_id": "NCT06848166",
+   "criterion_id": "NCT06848166-E30",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "lab_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No infection history or serology in the record.",
+   "missing_fact": "HIV, hepatitis B/C and syphilis history or serology results",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06848166-E31",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Malignant neoplasms within 5 years before screening, or current or suspected oncological disease.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06848166:NCT06848166-E31:r1",
+   "kind": "decision",
+   "trial_id": "NCT06848166",
+   "criterion_id": "NCT06848166-E31",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "'No prior malignancy' documented; no current or suspected cancer noted.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0015-EV094",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "prior malignancy",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "past"
+  },
+  {
+   "id": "concept:diagnosis:prior malignancy",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "prior malignancy"
+  },
+  {
+   "id": "src:SYN-0015-D07:1388-1408",
+   "kind": "source",
+   "doc_id": "SYN-0015-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    1388,
+    1408
+   ],
+   "text": "No prior malignancy."
+  },
+  {
+   "id": "crit:NCT06848166-E32",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Other serious, unstable, decompensated, or clinically significant medical or psychological conditions that, in the opinion of the doctor, may interfere with the patient's participation in the study or affect the evaluation of efficacy and/or safety.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06848166:NCT06848166-E32:r1",
+   "kind": "decision",
+   "trial_id": "NCT06848166",
+   "criterion_id": "NCT06848166-E32",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Investigator-judgment criterion; no problem documented.",
+   "missing_fact": "Doctor's opinion on whether any condition could interfere with participation",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06848166-E33",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Participation in other interventional clinical trials, including the study completion visit, within 30 days prior to the screening, or planning to participate in such studies during the current study. Participation in non-interventional registry or epidemiological studies is allowed.",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06848166:NCT06848166-E33:r1",
+   "kind": "decision",
+   "trial_id": "NCT06848166",
+   "criterion_id": "NCT06848166-E33",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "admin"
+   ],
+   "note": "consent/compliance item: not decidable from the record",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06848166-E34",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "The patient is unable to read or write, unwilling or unable to comply with the study protocol procedures; any other conditions that, in the opinion of the doctor, may prevent participation in the study, adherence to procedures, or contradict the patient's interests, as well as affect the study results.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06848166:NCT06848166-E34:r1",
+   "kind": "decision",
+   "trial_id": "NCT06848166",
+   "criterion_id": "NCT06848166-E34",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Patient is a teacher, but there is no explicit compliance statement or investigator judgment.",
+   "missing_fact": "Literacy and willingness or ability to comply with the protocol",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06848166-E35",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Employees of the medical institution conducting the study or the sponsor company, their family members, or subjects in dependent relationships.",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06848166:NCT06848166-E35:r1",
+   "kind": "decision",
+   "trial_id": "NCT06848166",
+   "criterion_id": "NCT06848166-E35",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "admin"
+   ],
+   "note": "consent/compliance item: not decidable from the record",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "label:NCT06848166",
+   "kind": "trial_decision",
+   "label": "ineligible",
+   "why": [
+    "FAIL NCT06848166-I03",
+    "FAIL NCT06848166-I05"
+   ],
+   "by": "agent3"
+  }
+ ],
+ "edges": [
+  [
+   "trial:NCT03404336",
+   "has_criterion",
+   "crit:NCT03404336-I01"
+  ],
+  [
+   "crit:NCT03404336-I01",
+   "decided_as",
+   "dec:NCT03404336:NCT03404336-I01:r1"
+  ],
+  [
+   "trial:NCT03404336",
+   "has_criterion",
+   "crit:NCT03404336-I02"
+  ],
+  [
+   "crit:NCT03404336-I02",
+   "decided_as",
+   "dec:NCT03404336:NCT03404336-I02:r1"
+  ],
+  [
+   "crit:NCT03404336-I02",
+   "requires",
+   "concept:birth_date"
+  ],
+  [
+   "concept:birth_date",
+   "observed_as",
+   "ev:SYN-0015-EV002"
+  ],
+  [
+   "ev:SYN-0015-EV002",
+   "derived_from",
+   "src:SYN-0015-D01:8-23"
+  ],
+  [
+   "ev:SYN-0015-EV002",
+   "supports",
+   "dec:NCT03404336:NCT03404336-I02:r1"
+  ],
+  [
+   "calc:NCT03404336:NCT03404336-I02",
+   "computes",
+   "dec:NCT03404336:NCT03404336-I02:r1"
+  ],
+  [
+   "trial:NCT03404336",
+   "has_criterion",
+   "crit:NCT03404336-I03"
+  ],
+  [
+   "crit:NCT03404336-I03",
+   "decided_as",
+   "dec:NCT03404336:NCT03404336-I03:r1"
+  ],
+  [
+   "trial:NCT03404336",
+   "has_criterion",
+   "crit:NCT03404336-I04"
+  ],
+  [
+   "crit:NCT03404336-I04",
+   "decided_as",
+   "dec:NCT03404336:NCT03404336-I04:r1"
+  ],
+  [
+   "crit:NCT03404336-I04",
+   "requires",
+   "concept:monthly_migraine_days"
+  ],
+  [
+   "concept:monthly_migraine_days",
+   "observed_as",
+   "ev:SYN-0015-EV250"
+  ],
+  [
+   "ev:SYN-0015-EV250",
+   "derived_from",
+   "src:SYN-0015-D06:0-41"
+  ],
+  [
+   "ev:SYN-0015-EV250",
+   "supports",
+   "dec:NCT03404336:NCT03404336-I04:r1"
+  ],
+  [
+   "crit:NCT03404336-I04",
+   "requires",
+   "concept:diagnosis:episodic migraine"
+  ],
+  [
+   "concept:diagnosis:episodic migraine",
+   "observed_as",
+   "ev:SYN-0015-EV080"
+  ],
+  [
+   "ev:SYN-0015-EV080",
+   "derived_from",
+   "src:SYN-0015-D07:1083-1109"
+  ],
+  [
+   "ev:SYN-0015-EV080",
+   "supports",
+   "dec:NCT03404336:NCT03404336-I04:r1"
+  ],
+  [
+   "trial:NCT03404336",
+   "has_criterion",
+   "crit:NCT03404336-I05"
+  ],
+  [
+   "crit:NCT03404336-I05",
+   "decided_as",
+   "dec:NCT03404336:NCT03404336-I05:r1"
+  ],
+  [
+   "crit:NCT03404336-I05",
+   "requires",
+   "concept:diagnosis:migraine with aura"
+  ],
+  [
+   "concept:diagnosis:migraine with aura",
+   "observed_as",
+   "ev:SYN-0015-EV007"
+  ],
+  [
+   "ev:SYN-0015-EV007",
+   "derived_from",
+   "src:SYN-0015-D02:16-45"
+  ],
+  [
+   "ev:SYN-0015-EV007",
+   "supports",
+   "dec:NCT03404336:NCT03404336-I05:r1"
+  ],
+  [
+   "concept:diagnosis:migraine with aura",
+   "observed_as",
+   "ev:SYN-0015-EV047"
+  ],
+  [
+   "ev:SYN-0015-EV047",
+   "derived_from",
+   "src:SYN-0015-D07:165-209"
+  ],
+  [
+   "ev:SYN-0015-EV047",
+   "supports",
+   "dec:NCT03404336:NCT03404336-I05:r1"
+  ],
+  [
+   "crit:NCT03404336-I05",
+   "requires",
+   "concept:symptom_finding:average 5-7 per month"
+  ],
+  [
+   "concept:symptom_finding:average 5-7 per month",
+   "observed_as",
+   "ev:SYN-0015-EV172"
+  ],
+  [
+   "ev:SYN-0015-EV172",
+   "derived_from",
+   "src:SYN-0015-D07:3467-3488"
+  ],
+  [
+   "ev:SYN-0015-EV172",
+   "supports",
+   "dec:NCT03404336:NCT03404336-I05:r1"
+  ],
+  [
+   "trial:NCT03404336",
+   "has_criterion",
+   "crit:NCT03404336-I06"
+  ],
+  [
+   "crit:NCT03404336-I06",
+   "decided_as",
+   "dec:NCT03404336:NCT03404336-I06:r1"
+  ],
+  [
+   "crit:NCT03404336-I06",
+   "requires",
+   "concept:medication:preventive migraine therapy"
+  ],
+  [
+   "concept:medication:preventive migraine therapy",
+   "observed_as",
+   "ev:SYN-0015-EV110"
+  ],
+  [
+   "ev:SYN-0015-EV110",
+   "derived_from",
+   "src:SYN-0015-D07:1870-1902"
+  ],
+  [
+   "ev:SYN-0015-EV110",
+   "supports",
+   "dec:NCT03404336:NCT03404336-I06:r1"
+  ],
+  [
+   "crit:NCT03404336-I06",
+   "requires",
+   "concept:medication:sumatriptan 50 mg po prn"
+  ],
+  [
+   "concept:medication:sumatriptan 50 mg po prn",
+   "observed_as",
+   "ev:SYN-0015-EV099"
+  ],
+  [
+   "ev:SYN-0015-EV099",
+   "derived_from",
+   "src:SYN-0015-D07:1537-1565"
+  ],
+  [
+   "ev:SYN-0015-EV099",
+   "supports",
+   "dec:NCT03404336:NCT03404336-I06:r1"
+  ],
+  [
+   "crit:NCT03404336-I06",
+   "requires",
+   "concept:lab_other:ibuprofen use frequency"
+  ],
+  [
+   "concept:lab_other:ibuprofen use frequency",
+   "observed_as",
+   "ev:SYN-0015-EV256"
+  ],
+  [
+   "ev:SYN-0015-EV256",
+   "derived_from",
+   "src:SYN-0015-D07:1618-1650"
+  ],
+  [
+   "ev:SYN-0015-EV256",
+   "supports",
+   "dec:NCT03404336:NCT03404336-I06:r1"
+  ],
+  [
+   "trial:NCT03404336",
+   "has_criterion",
+   "crit:NCT03404336-I07"
+  ],
+  [
+   "crit:NCT03404336-I07",
+   "decided_as",
+   "dec:NCT03404336:NCT03404336-I07:r1"
+  ],
+  [
+   "trial:NCT03404336",
+   "has_criterion",
+   "crit:NCT03404336-E01"
+  ],
+  [
+   "crit:NCT03404336-E01",
+   "decided_as",
+   "dec:NCT03404336:NCT03404336-E01:r1"
+  ],
+  [
+   "crit:NCT03404336-E01",
+   "requires",
+   "concept:medication:simple analgesic 7-8 days/month"
+  ],
+  [
+   "concept:medication:simple analgesic 7-8 days/month",
+   "observed_as",
+   "ev:SYN-0015-EV174"
+  ],
+  [
+   "ev:SYN-0015-EV174",
+   "derived_from",
+   "src:SYN-0015-D07:3538-3602"
+  ],
+  [
+   "ev:SYN-0015-EV174",
+   "insufficient_for",
+   "dec:NCT03404336:NCT03404336-E01:r1"
+  ],
+  [
+   "crit:NCT03404336-E01",
+   "requires",
+   "concept:lab_other:ibuprofen use frequency"
+  ],
+  [
+   "ev:SYN-0015-EV256",
+   "insufficient_for",
+   "dec:NCT03404336:NCT03404336-E01:r1"
+  ],
+  [
+   "crit:NCT03404336-E01",
+   "requires",
+   "concept:medication:triptan 5-6 days/month"
+  ],
+  [
+   "concept:medication:triptan 5-6 days/month",
+   "observed_as",
+   "ev:SYN-0015-EV173"
+  ],
+  [
+   "ev:SYN-0015-EV173",
+   "derived_from",
+   "src:SYN-0015-D07:3491-3536"
+  ],
+  [
+   "ev:SYN-0015-EV173",
+   "insufficient_for",
+   "dec:NCT03404336:NCT03404336-E01:r1"
+  ],
+  [
+   "trial:NCT03404336",
+   "has_criterion",
+   "crit:NCT03404336-E02"
+  ],
+  [
+   "crit:NCT03404336-E02",
+   "decided_as",
+   "dec:NCT03404336:NCT03404336-E02:r1"
+  ],
+  [
+   "trial:NCT03404336",
+   "has_criterion",
+   "crit:NCT03404336-E03"
+  ],
+  [
+   "crit:NCT03404336-E03",
+   "decided_as",
+   "dec:NCT03404336:NCT03404336-E03:r1"
+  ],
+  [
+   "crit:NCT03404336-E03",
+   "requires",
+   "concept:diagnosis:cardiac history"
+  ],
+  [
+   "concept:diagnosis:cardiac history",
+   "observed_as",
+   "ev:SYN-0015-EV082"
+  ],
+  [
+   "ev:SYN-0015-EV082",
+   "derived_from",
+   "src:SYN-0015-D07:1222-1311"
+  ],
+  [
+   "ev:SYN-0015-EV082",
+   "supports",
+   "dec:NCT03404336:NCT03404336-E03:r1"
+  ],
+  [
+   "crit:NCT03404336-E03",
+   "requires",
+   "concept:diagnosis:pulmonary history"
+  ],
+  [
+   "concept:diagnosis:pulmonary history",
+   "observed_as",
+   "ev:SYN-0015-EV083"
+  ],
+  [
+   "ev:SYN-0015-EV083",
+   "derived_from",
+   "src:SYN-0015-D07:1222-1311"
+  ],
+  [
+   "ev:SYN-0015-EV083",
+   "supports",
+   "dec:NCT03404336:NCT03404336-E03:r1"
+  ],
+  [
+   "crit:NCT03404336-E03",
+   "requires",
+   "concept:diagnosis:hepatic history"
+  ],
+  [
+   "concept:diagnosis:hepatic history",
+   "observed_as",
+   "ev:SYN-0015-EV084"
+  ],
+  [
+   "ev:SYN-0015-EV084",
+   "derived_from",
+   "src:SYN-0015-D07:1222-1311"
+  ],
+  [
+   "ev:SYN-0015-EV084",
+   "supports",
+   "dec:NCT03404336:NCT03404336-E03:r1"
+  ],
+  [
+   "crit:NCT03404336-E03",
+   "requires",
+   "concept:diagnosis:renal history"
+  ],
+  [
+   "concept:diagnosis:renal history",
+   "observed_as",
+   "ev:SYN-0015-EV085"
+  ],
+  [
+   "ev:SYN-0015-EV085",
+   "derived_from",
+   "src:SYN-0015-D07:1222-1311"
+  ],
+  [
+   "ev:SYN-0015-EV085",
+   "supports",
+   "dec:NCT03404336:NCT03404336-E03:r1"
+  ],
+  [
+   "crit:NCT03404336-E03",
+   "requires",
+   "concept:diagnosis:endocrine history"
+  ],
+  [
+   "concept:diagnosis:endocrine history",
+   "observed_as",
+   "ev:SYN-0015-EV086"
+  ],
+  [
+   "ev:SYN-0015-EV086",
+   "derived_from",
+   "src:SYN-0015-D07:1222-1311"
+  ],
+  [
+   "ev:SYN-0015-EV086",
+   "supports",
+   "dec:NCT03404336:NCT03404336-E03:r1"
+  ],
+  [
+   "crit:NCT03404336-E03",
+   "requires",
+   "concept:diagnosis:autoimmune history"
+  ],
+  [
+   "concept:diagnosis:autoimmune history",
+   "observed_as",
+   "ev:SYN-0015-EV087"
+  ],
+  [
+   "ev:SYN-0015-EV087",
+   "derived_from",
+   "src:SYN-0015-D07:1222-1311"
+  ],
+  [
+   "ev:SYN-0015-EV087",
+   "supports",
+   "dec:NCT03404336:NCT03404336-E03:r1"
+  ],
+  [
+   "trial:NCT03404336",
+   "has_criterion",
+   "crit:NCT03404336-E04"
+  ],
+  [
+   "crit:NCT03404336-E04",
+   "decided_as",
+   "dec:NCT03404336:NCT03404336-E04:r1"
+  ],
+  [
+   "crit:NCT03404336-E04",
+   "requires",
+   "concept:pregnancy"
+  ],
+  [
+   "concept:pregnancy",
+   "observed_as",
+   "ev:SYN-0015-EV124"
+  ],
+  [
+   "ev:SYN-0015-EV124",
+   "derived_from",
+   "src:SYN-0015-D07:2348-2385"
+  ],
+  [
+   "ev:SYN-0015-EV124",
+   "supports",
+   "dec:NCT03404336:NCT03404336-E04:r1"
+  ],
+  [
+   "crit:NCT03404336-E04",
+   "requires",
+   "concept:hcg"
+  ],
+  [
+   "concept:hcg",
+   "observed_as",
+   "ev:SYN-0015-EV238"
+  ],
+  [
+   "ev:SYN-0015-EV238",
+   "derived_from",
+   "src:SYN-0015-D08:1333-1353"
+  ],
+  [
+   "ev:SYN-0015-EV238",
+   "supports",
+   "dec:NCT03404336:NCT03404336-E04:r1"
+  ],
+  [
+   "trial:NCT03404336",
+   "has_criterion",
+   "crit:NCT03404336-E05"
+  ],
+  [
+   "crit:NCT03404336-E05",
+   "decided_as",
+   "dec:NCT03404336:NCT03404336-E05:r1"
+  ],
+  [
+   "trial:NCT03404336",
+   "has_criterion",
+   "crit:NCT03404336-E06"
+  ],
+  [
+   "crit:NCT03404336-E06",
+   "decided_as",
+   "dec:NCT03404336:NCT03404336-E06:r1"
+  ],
+  [
+   "trial:NCT03404336",
+   "labelled",
+   "label:NCT03404336"
+  ],
+  [
+   "trial:NCT07633522",
+   "has_criterion",
+   "crit:NCT07633522-I01"
+  ],
+  [
+   "crit:NCT07633522-I01",
+   "decided_as",
+   "dec:NCT07633522:NCT07633522-I01:r1"
+  ],
+  [
+   "trial:NCT07633522",
+   "has_criterion",
+   "crit:NCT07633522-I02"
+  ],
+  [
+   "crit:NCT07633522-I02",
+   "decided_as",
+   "dec:NCT07633522:NCT07633522-I02:r1"
+  ],
+  [
+   "crit:NCT07633522-I02",
+   "requires",
+   "concept:diagnosis:episodic migraine"
+  ],
+  [
+   "ev:SYN-0015-EV080",
+   "supports",
+   "dec:NCT07633522:NCT07633522-I02:r1"
+  ],
+  [
+   "crit:NCT07633522-I02",
+   "requires",
+   "concept:diagnosis:migraine with aura, episodic"
+  ],
+  [
+   "concept:diagnosis:migraine with aura, episodic",
+   "observed_as",
+   "ev:SYN-0015-EV182"
+  ],
+  [
+   "ev:SYN-0015-EV182",
+   "derived_from",
+   "src:SYN-0015-D07:3903-4040"
+  ],
+  [
+   "ev:SYN-0015-EV182",
+   "supports",
+   "dec:NCT07633522:NCT07633522-I02:r1"
+  ],
+  [
+   "trial:NCT07633522",
+   "has_criterion",
+   "crit:NCT07633522-I03"
+  ],
+  [
+   "crit:NCT07633522-I03",
+   "decided_as",
+   "dec:NCT07633522:NCT07633522-I03:r1"
+  ],
+  [
+   "crit:NCT07633522-I03",
+   "requires",
+   "concept:birth_date"
+  ],
+  [
+   "ev:SYN-0015-EV002",
+   "supports",
+   "dec:NCT07633522:NCT07633522-I03:r1"
+  ],
+  [
+   "calc:NCT07633522:NCT07633522-I03",
+   "computes",
+   "dec:NCT07633522:NCT07633522-I03:r1"
+  ],
+  [
+   "trial:NCT07633522",
+   "has_criterion",
+   "crit:NCT07633522-I04"
+  ],
+  [
+   "crit:NCT07633522-I04",
+   "decided_as",
+   "dec:NCT07633522:NCT07633522-I04:r1"
+  ],
+  [
+   "trial:NCT07633522",
+   "has_criterion",
+   "crit:NCT07633522-I05"
+  ],
+  [
+   "crit:NCT07633522-I05",
+   "decided_as",
+   "dec:NCT07633522:NCT07633522-I05:r1"
+  ],
+  [
+   "trial:NCT07633522",
+   "has_criterion",
+   "crit:NCT07633522-E01"
+  ],
+  [
+   "crit:NCT07633522-E01",
+   "decided_as",
+   "dec:NCT07633522:NCT07633522-E01:r1"
+  ],
+  [
+   "crit:NCT07633522-E01",
+   "requires",
+   "concept:diagnosis:migraine with aura"
+  ],
+  [
+   "concept:diagnosis:migraine with aura",
+   "observed_as",
+   "ev:SYN-0015-EV079"
+  ],
+  [
+   "ev:SYN-0015-EV079",
+   "derived_from",
+   "src:SYN-0015-D07:1063-1081"
+  ],
+  [
+   "ev:SYN-0015-EV079",
+   "insufficient_for",
+   "dec:NCT07633522:NCT07633522-E01:r1"
+  ],
+  [
+   "crit:NCT07633522-E01",
+   "requires",
+   "concept:symptom_finding:other mild headache days"
+  ],
+  [
+   "concept:symptom_finding:other mild headache days",
+   "observed_as",
+   "ev:SYN-0015-EV023"
+  ],
+  [
+   "ev:SYN-0015-EV023",
+   "derived_from",
+   "src:SYN-0015-D03:40-67"
+  ],
+  [
+   "ev:SYN-0015-EV023",
+   "insufficient_for",
+   "dec:NCT07633522:NCT07633522-E01:r1"
+  ],
+  [
+   "trial:NCT07633522",
+   "has_criterion",
+   "crit:NCT07633522-E02"
+  ],
+  [
+   "crit:NCT07633522-E02",
+   "decided_as",
+   "dec:NCT07633522:NCT07633522-E02:r1"
+  ],
+  [
+   "trial:NCT07633522",
+   "has_criterion",
+   "crit:NCT07633522-E03"
+  ],
+  [
+   "crit:NCT07633522-E03",
+   "decided_as",
+   "dec:NCT07633522:NCT07633522-E03:r1"
+  ],
+  [
+   "trial:NCT07633522",
+   "has_criterion",
+   "crit:NCT07633522-E04"
+  ],
+  [
+   "crit:NCT07633522-E04",
+   "decided_as",
+   "dec:NCT07633522:NCT07633522-E04:r1"
+  ],
+  [
+   "crit:NCT07633522-E04",
+   "requires",
+   "concept:alcohol:occasional, 1-2 drinks/week"
+  ],
+  [
+   "concept:alcohol:occasional, 1-2 drinks/week",
+   "observed_as",
+   "ev:SYN-0015-EV115"
+  ],
+  [
+   "ev:SYN-0015-EV115",
+   "derived_from",
+   "src:SYN-0015-D07:2032-2069"
+  ],
+  [
+   "ev:SYN-0015-EV115",
+   "supports",
+   "dec:NCT07633522:NCT07633522-E04:r1"
+  ],
+  [
+   "crit:NCT07633522-E04",
+   "requires",
+   "concept:substance_use:recreational drugs"
+  ],
+  [
+   "concept:substance_use:recreational drugs",
+   "observed_as",
+   "ev:SYN-0015-EV117"
+  ],
+  [
+   "ev:SYN-0015-EV117",
+   "derived_from",
+   "src:SYN-0015-D07:2098-2120"
+  ],
+  [
+   "ev:SYN-0015-EV117",
+   "supports",
+   "dec:NCT07633522:NCT07633522-E04:r1"
+  ],
+  [
+   "trial:NCT07633522",
+   "has_criterion",
+   "crit:NCT07633522-E05"
+  ],
+  [
+   "crit:NCT07633522-E05",
+   "decided_as",
+   "dec:NCT07633522:NCT07633522-E05:r1"
+  ],
+  [
+   "trial:NCT07633522",
+   "has_criterion",
+   "crit:NCT07633522-E06"
+  ],
+  [
+   "crit:NCT07633522-E06",
+   "decided_as",
+   "dec:NCT07633522:NCT07633522-E06:r1"
+  ],
+  [
+   "crit:NCT07633522-E06",
+   "requires",
+   "concept:pregnancy"
+  ],
+  [
+   "ev:SYN-0015-EV124",
+   "supports",
+   "dec:NCT07633522:NCT07633522-E06:r1"
+  ],
+  [
+   "concept:pregnancy",
+   "observed_as",
+   "ev:SYN-0015-EV289"
+  ],
+  [
+   "ev:SYN-0015-EV289",
+   "derived_from",
+   "src:SYN-0015-D08:1333-1353"
+  ],
+  [
+   "ev:SYN-0015-EV289",
+   "supports",
+   "dec:NCT07633522:NCT07633522-E06:r1"
+  ],
+  [
+   "trial:NCT07633522",
+   "has_criterion",
+   "crit:NCT07633522-E07"
+  ],
+  [
+   "crit:NCT07633522-E07",
+   "decided_as",
+   "dec:NCT07633522:NCT07633522-E07:r1"
+  ],
+  [
+   "trial:NCT07633522",
+   "labelled",
+   "label:NCT07633522"
+  ],
+  [
+   "trial:NCT06848166",
+   "has_criterion",
+   "crit:NCT06848166-I01"
+  ],
+  [
+   "crit:NCT06848166-I01",
+   "decided_as",
+   "dec:NCT06848166:NCT06848166-I01:r1"
+  ],
+  [
+   "trial:NCT06848166",
+   "has_criterion",
+   "crit:NCT06848166-I02"
+  ],
+  [
+   "crit:NCT06848166-I02",
+   "decided_as",
+   "dec:NCT06848166:NCT06848166-I02:r1"
+  ],
+  [
+   "crit:NCT06848166-I02",
+   "requires",
+   "concept:age"
+  ],
+  [
+   "concept:age",
+   "observed_as",
+   "ev:SYN-0015-EV005"
+  ],
+  [
+   "ev:SYN-0015-EV005",
+   "derived_from",
+   "src:SYN-0015-D02:11-14"
+  ],
+  [
+   "ev:SYN-0015-EV005",
+   "supports",
+   "dec:NCT06848166:NCT06848166-I02:r1"
+  ],
+  [
+   "calc:NCT06848166:NCT06848166-I02",
+   "computes",
+   "dec:NCT06848166:NCT06848166-I02:r1"
+  ],
+  [
+   "trial:NCT06848166",
+   "has_criterion",
+   "crit:NCT06848166-I03"
+  ],
+  [
+   "crit:NCT06848166-I03",
+   "decided_as",
+   "dec:NCT06848166:NCT06848166-I03:r1"
+  ],
+  [
+   "crit:NCT06848166-I03",
+   "requires",
+   "concept:diagnosis:episodic migraine"
+  ],
+  [
+   "ev:SYN-0015-EV080",
+   "supports",
+   "dec:NCT06848166:NCT06848166-I03:r1"
+  ],
+  [
+   "crit:NCT06848166-I03",
+   "requires",
+   "concept:diagnosis:migraine with aura, episodic"
+  ],
+  [
+   "ev:SYN-0015-EV182",
+   "supports",
+   "dec:NCT06848166:NCT06848166-I03:r1"
+  ],
+  [
+   "trial:NCT06848166",
+   "has_criterion",
+   "crit:NCT06848166-I04"
+  ],
+  [
+   "crit:NCT06848166-I04",
+   "decided_as",
+   "dec:NCT06848166:NCT06848166-I04:r1"
+  ],
+  [
+   "crit:NCT06848166-I04",
+   "requires",
+   "concept:medication:propranolol"
+  ],
+  [
+   "concept:medication:propranolol",
+   "observed_as",
+   "ev:SYN-0015-EV178"
+  ],
+  [
+   "ev:SYN-0015-EV178",
+   "derived_from",
+   "src:SYN-0015-D07:3701-3759"
+  ],
+  [
+   "ev:SYN-0015-EV178",
+   "insufficient_for",
+   "dec:NCT06848166:NCT06848166-I04:r1"
+  ],
+  [
+   "crit:NCT06848166-I04",
+   "requires",
+   "concept:diagnosis:migraine with aura, episodic"
+  ],
+  [
+   "ev:SYN-0015-EV182",
+   "insufficient_for",
+   "dec:NCT06848166:NCT06848166-I04:r1"
+  ],
+  [
+   "trial:NCT06848166",
+   "has_criterion",
+   "crit:NCT06848166-I05"
+  ],
+  [
+   "crit:NCT06848166-I05",
+   "decided_as",
+   "dec:NCT06848166:NCT06848166-I05:r1"
+  ],
+  [
+   "crit:NCT06848166-I05",
+   "requires",
+   "concept:monthly_migraine_days"
+  ],
+  [
+   "ev:SYN-0015-EV250",
+   "supports",
+   "dec:NCT06848166:NCT06848166-I05:r1"
+  ],
+  [
+   "concept:monthly_migraine_days",
+   "observed_as",
+   "ev:SYN-0015-EV171"
+  ],
+  [
+   "ev:SYN-0015-EV171",
+   "derived_from",
+   "src:SYN-0015-D07:3455-3465"
+  ],
+  [
+   "ev:SYN-0015-EV171",
+   "supports",
+   "dec:NCT06848166:NCT06848166-I05:r1"
+  ],
+  [
+   "crit:NCT06848166-I05",
+   "requires",
+   "concept:symptom_finding:other mild headache days in june"
+  ],
+  [
+   "concept:symptom_finding:other mild headache days in june",
+   "observed_as",
+   "ev:SYN-0015-EV054"
+  ],
+  [
+   "ev:SYN-0015-EV054",
+   "derived_from",
+   "src:SYN-0015-D07:389-445"
+  ],
+  [
+   "ev:SYN-0015-EV054",
+   "supports",
+   "dec:NCT06848166:NCT06848166-I05:r1"
+  ],
+  [
+   "trial:NCT06848166",
+   "has_criterion",
+   "crit:NCT06848166-I06"
+  ],
+  [
+   "crit:NCT06848166-I06",
+   "decided_as",
+   "dec:NCT06848166:NCT06848166-I06:r1"
+  ],
+  [
+   "crit:NCT06848166-I06",
+   "requires",
+   "concept:medication:propranolol"
+  ],
+  [
+   "ev:SYN-0015-EV178",
+   "insufficient_for",
+   "dec:NCT06848166:NCT06848166-I06:r1"
+  ],
+  [
+   "crit:NCT06848166-I06",
+   "requires",
+   "concept:medication:preventive migraine therapy"
+  ],
+  [
+   "ev:SYN-0015-EV110",
+   "insufficient_for",
+   "dec:NCT06848166:NCT06848166-I06:r1"
+  ],
+  [
+   "trial:NCT06848166",
+   "has_criterion",
+   "crit:NCT06848166-I07"
+  ],
+  [
+   "crit:NCT06848166-I07",
+   "decided_as",
+   "dec:NCT06848166:NCT06848166-I07:r1"
+  ],
+  [
+   "crit:NCT06848166-I07",
+   "requires",
+   "concept:symptom_finding:pain severity at peak 8/10"
+  ],
+  [
+   "concept:symptom_finding:pain severity at peak 8/10",
+   "observed_as",
+   "ev:SYN-0015-EV177"
+  ],
+  [
+   "ev:SYN-0015-EV177",
+   "derived_from",
+   "src:SYN-0015-D07:3672-3698"
+  ],
+  [
+   "ev:SYN-0015-EV177",
+   "supports",
+   "dec:NCT06848166:NCT06848166-I07:r1"
+  ],
+  [
+   "trial:NCT06848166",
+   "has_criterion",
+   "crit:NCT06848166-I08"
+  ],
+  [
+   "crit:NCT06848166-I08",
+   "decided_as",
+   "dec:NCT06848166:NCT06848166-I08:r1"
+  ],
+  [
+   "trial:NCT06848166",
+   "has_criterion",
+   "crit:NCT06848166-I09"
+  ],
+  [
+   "crit:NCT06848166-I09",
+   "decided_as",
+   "dec:NCT06848166:NCT06848166-I09:r1"
+  ],
+  [
+   "crit:NCT06848166-I09",
+   "requires",
+   "concept:contraception:iud"
+  ],
+  [
+   "concept:contraception:iud",
+   "observed_as",
+   "ev:SYN-0015-EV188"
+  ],
+  [
+   "ev:SYN-0015-EV188",
+   "derived_from",
+   "src:SYN-0015-D07:4157-4177"
+  ],
+  [
+   "ev:SYN-0015-EV188",
+   "insufficient_for",
+   "dec:NCT06848166:NCT06848166-I09:r1"
+  ],
+  [
+   "concept:contraception:iud",
+   "observed_as",
+   "ev:SYN-0015-EV125"
+  ],
+  [
+   "ev:SYN-0015-EV125",
+   "derived_from",
+   "src:SYN-0015-D07:2386-2422"
+  ],
+  [
+   "ev:SYN-0015-EV125",
+   "insufficient_for",
+   "dec:NCT06848166:NCT06848166-I09:r1"
+  ],
+  [
+   "trial:NCT06848166",
+   "has_criterion",
+   "crit:NCT06848166-E01"
+  ],
+  [
+   "crit:NCT06848166-E01",
+   "decided_as",
+   "dec:NCT06848166:NCT06848166-E01:r1"
+  ],
+  [
+   "trial:NCT06848166",
+   "has_criterion",
+   "crit:NCT06848166-E02"
+  ],
+  [
+   "crit:NCT06848166-E02",
+   "decided_as",
+   "dec:NCT06848166:NCT06848166-E02:r1"
+  ],
+  [
+   "crit:NCT06848166-E02",
+   "requires",
+   "concept:allergy:no known drug allergies"
+  ],
+  [
+   "concept:allergy:no known drug allergies",
+   "observed_as",
+   "ev:SYN-0015-EV096"
+  ],
+  [
+   "ev:SYN-0015-EV096",
+   "derived_from",
+   "src:SYN-0015-D07:1451-1456"
+  ],
+  [
+   "ev:SYN-0015-EV096",
+   "supports",
+   "dec:NCT06848166:NCT06848166-E02:r1"
+  ],
+  [
+   "trial:NCT06848166",
+   "has_criterion",
+   "crit:NCT06848166-E03"
+  ],
+  [
+   "crit:NCT06848166-E03",
+   "decided_as",
+   "dec:NCT06848166:NCT06848166-E03:r1"
+  ],
+  [
+   "crit:NCT06848166-E03",
+   "requires",
+   "concept:diagnosis:other neurologic history"
+  ],
+  [
+   "concept:diagnosis:other neurologic history",
+   "observed_as",
+   "ev:SYN-0015-EV088"
+  ],
+  [
+   "ev:SYN-0015-EV088",
+   "derived_from",
+   "src:SYN-0015-D07:1222-1311"
+  ],
+  [
+   "ev:SYN-0015-EV088",
+   "supports",
+   "dec:NCT06848166:NCT06848166-E03:r1"
+  ],
+  [
+   "crit:NCT06848166-E03",
+   "requires",
+   "concept:symptom_finding:structural brain abnormality"
+  ],
+  [
+   "concept:symptom_finding:structural brain abnormality",
+   "observed_as",
+   "ev:SYN-0015-EV180"
+  ],
+  [
+   "ev:SYN-0015-EV180",
+   "derived_from",
+   "src:SYN-0015-D07:3762-3818"
+  ],
+  [
+   "ev:SYN-0015-EV180",
+   "supports",
+   "dec:NCT06848166:NCT06848166-E03:r1"
+  ],
+  [
+   "crit:NCT06848166-E03",
+   "requires",
+   "concept:symptom_finding:head trauma"
+  ],
+  [
+   "concept:symptom_finding:head trauma",
+   "observed_as",
+   "ev:SYN-0015-EV070"
+  ],
+  [
+   "ev:SYN-0015-EV070",
+   "derived_from",
+   "src:SYN-0015-D07:791-908"
+  ],
+  [
+   "ev:SYN-0015-EV070",
+   "supports",
+   "dec:NCT06848166:NCT06848166-E03:r1"
+  ],
+  [
+   "trial:NCT06848166",
+   "has_criterion",
+   "crit:NCT06848166-E04"
+  ],
+  [
+   "crit:NCT06848166-E04",
+   "decided_as",
+   "dec:NCT06848166:NCT06848166-E04:r1"
+  ],
+  [
+   "crit:NCT06848166-E04",
+   "requires",
+   "concept:procedure:none."
+  ],
+  [
+   "concept:procedure:none.",
+   "observed_as",
+   "ev:SYN-0015-EV095"
+  ],
+  [
+   "ev:SYN-0015-EV095",
+   "derived_from",
+   "src:SYN-0015-D07:1433-1438"
+  ],
+  [
+   "ev:SYN-0015-EV095",
+   "supports",
+   "dec:NCT06848166:NCT06848166-E04:r1"
+  ],
+  [
+   "crit:NCT06848166-E04",
+   "requires",
+   "concept:symptom_finding:head trauma"
+  ],
+  [
+   "ev:SYN-0015-EV070",
+   "supports",
+   "dec:NCT06848166:NCT06848166-E04:r1"
+  ],
+  [
+   "trial:NCT06848166",
+   "has_criterion",
+   "crit:NCT06848166-E05"
+  ],
+  [
+   "crit:NCT06848166-E05",
+   "decided_as",
+   "dec:NCT06848166:NCT06848166-E05:r1"
+  ],
+  [
+   "trial:NCT06848166",
+   "has_criterion",
+   "crit:NCT06848166-E06"
+  ],
+  [
+   "crit:NCT06848166-E06",
+   "decided_as",
+   "dec:NCT06848166:NCT06848166-E06:r1"
+  ],
+  [
+   "trial:NCT06848166",
+   "has_criterion",
+   "crit:NCT06848166-E07"
+  ],
+  [
+   "crit:NCT06848166-E07",
+   "decided_as",
+   "dec:NCT06848166:NCT06848166-E07:r1"
+  ],
+  [
+   "trial:NCT06848166",
+   "has_criterion",
+   "crit:NCT06848166-E08"
+  ],
+  [
+   "crit:NCT06848166-E08",
+   "decided_as",
+   "dec:NCT06848166:NCT06848166-E08:r1"
+  ],
+  [
+   "trial:NCT06848166",
+   "has_criterion",
+   "crit:NCT06848166-E09"
+  ],
+  [
+   "crit:NCT06848166-E09",
+   "decided_as",
+   "dec:NCT06848166:NCT06848166-E09:r1"
+  ],
+  [
+   "crit:NCT06848166-E09",
+   "requires",
+   "concept:symptom_finding:aura without headache"
+  ],
+  [
+   "concept:symptom_finding:aura without headache",
+   "observed_as",
+   "ev:SYN-0015-EV067"
+  ],
+  [
+   "ev:SYN-0015-EV067",
+   "derived_from",
+   "src:SYN-0015-D07:791-908"
+  ],
+  [
+   "ev:SYN-0015-EV067",
+   "supports",
+   "dec:NCT06848166:NCT06848166-E09:r1"
+  ],
+  [
+   "crit:NCT06848166-E09",
+   "requires",
+   "concept:symptom_finding:motor weakness"
+  ],
+  [
+   "concept:symptom_finding:motor weakness",
+   "observed_as",
+   "ev:SYN-0015-EV068"
+  ],
+  [
+   "ev:SYN-0015-EV068",
+   "derived_from",
+   "src:SYN-0015-D07:791-908"
+  ],
+  [
+   "ev:SYN-0015-EV068",
+   "supports",
+   "dec:NCT06848166:NCT06848166-E09:r1"
+  ],
+  [
+   "crit:NCT06848166-E09",
+   "requires",
+   "concept:diagnosis:other neurologic history"
+  ],
+  [
+   "ev:SYN-0015-EV088",
+   "supports",
+   "dec:NCT06848166:NCT06848166-E09:r1"
+  ],
+  [
+   "crit:NCT06848166-E09",
+   "requires",
+   "concept:symptom_finding:normal neurological exam"
+  ],
+  [
+   "concept:symptom_finding:normal neurological exam",
+   "observed_as",
+   "ev:SYN-0015-EV185"
+  ],
+  [
+   "ev:SYN-0015-EV185",
+   "derived_from",
+   "src:SYN-0015-D07:4041-4089"
+  ],
+  [
+   "ev:SYN-0015-EV185",
+   "supports",
+   "dec:NCT06848166:NCT06848166-E09:r1"
+  ],
+  [
+   "trial:NCT06848166",
+   "has_criterion",
+   "crit:NCT06848166-E10"
+  ],
+  [
+   "crit:NCT06848166-E10",
+   "decided_as",
+   "dec:NCT06848166:NCT06848166-E10:r1"
+  ],
+  [
+   "crit:NCT06848166-E10",
+   "requires",
+   "concept:symptom_finding:other mild headache days in june"
+  ],
+  [
+   "ev:SYN-0015-EV054",
+   "supports",
+   "dec:NCT06848166:NCT06848166-E10:r1"
+  ],
+  [
+   "crit:NCT06848166-E10",
+   "requires",
+   "concept:symptom_finding:migraine days in june"
+  ],
+  [
+   "concept:symptom_finding:migraine days in june",
+   "observed_as",
+   "ev:SYN-0015-EV053"
+  ],
+  [
+   "ev:SYN-0015-EV053",
+   "derived_from",
+   "src:SYN-0015-D07:389-445"
+  ],
+  [
+   "ev:SYN-0015-EV053",
+   "supports",
+   "dec:NCT06848166:NCT06848166-E10:r1"
+  ],
+  [
+   "trial:NCT06848166",
+   "has_criterion",
+   "crit:NCT06848166-E11"
+  ],
+  [
+   "crit:NCT06848166-E11",
+   "decided_as",
+   "dec:NCT06848166:NCT06848166-E11:r1"
+  ],
+  [
+   "trial:NCT06848166",
+   "has_criterion",
+   "crit:NCT06848166-E12"
+  ],
+  [
+   "crit:NCT06848166-E12",
+   "decided_as",
+   "dec:NCT06848166:NCT06848166-E12:r1"
+  ],
+  [
+   "crit:NCT06848166-E12",
+   "requires",
+   "concept:bmi"
+  ],
+  [
+   "concept:bmi",
+   "observed_as",
+   "ev:SYN-0015-EV039"
+  ],
+  [
+   "ev:SYN-0015-EV039",
+   "derived_from",
+   "src:SYN-0015-D05:178-187"
+  ],
+  [
+   "ev:SYN-0015-EV039",
+   "supports",
+   "dec:NCT06848166:NCT06848166-E12:r1"
+  ],
+  [
+   "calc:NCT06848166:NCT06848166-E12",
+   "computes",
+   "dec:NCT06848166:NCT06848166-E12:r1"
+  ],
+  [
+   "trial:NCT06848166",
+   "has_criterion",
+   "crit:NCT06848166-E13"
+  ],
+  [
+   "crit:NCT06848166-E13",
+   "decided_as",
+   "dec:NCT06848166:NCT06848166-E13:r1"
+  ],
+  [
+   "crit:NCT06848166-E13",
+   "requires",
+   "concept:diagnosis:migraine with aura"
+  ],
+  [
+   "ev:SYN-0015-EV047",
+   "supports",
+   "dec:NCT06848166:NCT06848166-E13:r1"
+  ],
+  [
+   "trial:NCT06848166",
+   "has_criterion",
+   "crit:NCT06848166-E14"
+  ],
+  [
+   "crit:NCT06848166-E14",
+   "decided_as",
+   "dec:NCT06848166:NCT06848166-E14:r1"
+  ],
+  [
+   "trial:NCT06848166",
+   "has_criterion",
+   "crit:NCT06848166-E15"
+  ],
+  [
+   "crit:NCT06848166-E15",
+   "decided_as",
+   "dec:NCT06848166:NCT06848166-E15:r1"
+  ],
+  [
+   "crit:NCT06848166-E15",
+   "requires",
+   "concept:diagnosis:cardiac history"
+  ],
+  [
+   "ev:SYN-0015-EV082",
+   "supports",
+   "dec:NCT06848166:NCT06848166-E15:r1"
+  ],
+  [
+   "crit:NCT06848166-E15",
+   "requires",
+   "concept:diagnosis:hypertension"
+  ],
+  [
+   "concept:diagnosis:hypertension",
+   "observed_as",
+   "ev:SYN-0015-EV093"
+  ],
+  [
+   "ev:SYN-0015-EV093",
+   "derived_from",
+   "src:SYN-0015-D07:1312-1387"
+  ],
+  [
+   "ev:SYN-0015-EV093",
+   "supports",
+   "dec:NCT06848166:NCT06848166-E15:r1"
+  ],
+  [
+   "crit:NCT06848166-E15",
+   "requires",
+   "concept:diagnosis:venous thromboembolism"
+  ],
+  [
+   "concept:diagnosis:venous thromboembolism",
+   "observed_as",
+   "ev:SYN-0015-EV092"
+  ],
+  [
+   "ev:SYN-0015-EV092",
+   "derived_from",
+   "src:SYN-0015-D07:1312-1387"
+  ],
+  [
+   "ev:SYN-0015-EV092",
+   "supports",
+   "dec:NCT06848166:NCT06848166-E15:r1"
+  ],
+  [
+   "crit:NCT06848166-E15",
+   "requires",
+   "concept:systolic_bp"
+  ],
+  [
+   "concept:systolic_bp",
+   "observed_as",
+   "ev:SYN-0015-EV253"
+  ],
+  [
+   "ev:SYN-0015-EV253",
+   "derived_from",
+   "src:SYN-0015-D07:957-971"
+  ],
+  [
+   "ev:SYN-0015-EV253",
+   "supports",
+   "dec:NCT06848166:NCT06848166-E15:r1"
+  ],
+  [
+   "trial:NCT06848166",
+   "has_criterion",
+   "crit:NCT06848166-E16"
+  ],
+  [
+   "crit:NCT06848166-E16",
+   "decided_as",
+   "dec:NCT06848166:NCT06848166-E16:r1"
+  ],
+  [
+   "trial:NCT06848166",
+   "has_criterion",
+   "crit:NCT06848166-E17"
+  ],
+  [
+   "crit:NCT06848166-E17",
+   "decided_as",
+   "dec:NCT06848166:NCT06848166-E17:r1"
+  ],
+  [
+   "crit:NCT06848166-E17",
+   "requires",
+   "concept:diagnosis:cardiac history"
+  ],
+  [
+   "ev:SYN-0015-EV082",
+   "supports",
+   "dec:NCT06848166:NCT06848166-E17:r1"
+  ],
+  [
+   "trial:NCT06848166",
+   "has_criterion",
+   "crit:NCT06848166-E18"
+  ],
+  [
+   "crit:NCT06848166-E18",
+   "decided_as",
+   "dec:NCT06848166:NCT06848166-E18:r1"
+  ],
+  [
+   "trial:NCT06848166",
+   "has_criterion",
+   "crit:NCT06848166-E19"
+  ],
+  [
+   "crit:NCT06848166-E19",
+   "decided_as",
+   "dec:NCT06848166:NCT06848166-E19:r1"
+  ],
+  [
+   "crit:NCT06848166-E19",
+   "requires",
+   "concept:diagnosis:stroke"
+  ],
+  [
+   "concept:diagnosis:stroke",
+   "observed_as",
+   "ev:SYN-0015-EV089"
+  ],
+  [
+   "ev:SYN-0015-EV089",
+   "derived_from",
+   "src:SYN-0015-D07:1312-1387"
+  ],
+  [
+   "ev:SYN-0015-EV089",
+   "supports",
+   "dec:NCT06848166:NCT06848166-E19:r1"
+  ],
+  [
+   "crit:NCT06848166-E19",
+   "requires",
+   "concept:diagnosis:tia"
+  ],
+  [
+   "concept:diagnosis:tia",
+   "observed_as",
+   "ev:SYN-0015-EV090"
+  ],
+  [
+   "ev:SYN-0015-EV090",
+   "derived_from",
+   "src:SYN-0015-D07:1312-1387"
+  ],
+  [
+   "ev:SYN-0015-EV090",
+   "supports",
+   "dec:NCT06848166:NCT06848166-E19:r1"
+  ],
+  [
+   "trial:NCT06848166",
+   "has_criterion",
+   "crit:NCT06848166-E20"
+  ],
+  [
+   "crit:NCT06848166-E20",
+   "decided_as",
+   "dec:NCT06848166:NCT06848166-E20:r1"
+  ],
+  [
+   "crit:NCT06848166-E20",
+   "requires",
+   "concept:hcg"
+  ],
+  [
+   "ev:SYN-0015-EV238",
+   "supports",
+   "dec:NCT06848166:NCT06848166-E20:r1"
+  ],
+  [
+   "crit:NCT06848166-E20",
+   "requires",
+   "concept:pregnancy"
+  ],
+  [
+   "ev:SYN-0015-EV124",
+   "supports",
+   "dec:NCT06848166:NCT06848166-E20:r1"
+  ],
+  [
+   "trial:NCT06848166",
+   "has_criterion",
+   "crit:NCT06848166-E21"
+  ],
+  [
+   "crit:NCT06848166-E21",
+   "decided_as",
+   "dec:NCT06848166:NCT06848166-E21:r1"
+  ],
+  [
+   "crit:NCT06848166-E21",
+   "requires",
+   "concept:diagnosis:cardiac history"
+  ],
+  [
+   "ev:SYN-0015-EV082",
+   "supports",
+   "dec:NCT06848166:NCT06848166-E21:r1"
+  ],
+  [
+   "crit:NCT06848166-E21",
+   "requires",
+   "concept:procedure:none."
+  ],
+  [
+   "ev:SYN-0015-EV095",
+   "supports",
+   "dec:NCT06848166:NCT06848166-E21:r1"
+  ],
+  [
+   "trial:NCT06848166",
+   "has_criterion",
+   "crit:NCT06848166-E22"
+  ],
+  [
+   "crit:NCT06848166-E22",
+   "decided_as",
+   "dec:NCT06848166:NCT06848166-E22:r1"
+  ],
+  [
+   "trial:NCT06848166",
+   "has_criterion",
+   "crit:NCT06848166-E23"
+  ],
+  [
+   "crit:NCT06848166-E23",
+   "decided_as",
+   "dec:NCT06848166:NCT06848166-E23:r1"
+  ],
+  [
+   "trial:NCT06848166",
+   "has_criterion",
+   "crit:NCT06848166-E24"
+  ],
+  [
+   "crit:NCT06848166-E24",
+   "decided_as",
+   "dec:NCT06848166:NCT06848166-E24:r1"
+  ],
+  [
+   "crit:NCT06848166-E24",
+   "requires",
+   "concept:diagnosis:pulmonary history"
+  ],
+  [
+   "ev:SYN-0015-EV083",
+   "supports",
+   "dec:NCT06848166:NCT06848166-E24:r1"
+  ],
+  [
+   "trial:NCT06848166",
+   "has_criterion",
+   "crit:NCT06848166-E25"
+  ],
+  [
+   "crit:NCT06848166-E25",
+   "decided_as",
+   "dec:NCT06848166:NCT06848166-E25:r1"
+  ],
+  [
+   "crit:NCT06848166-E25",
+   "requires",
+   "concept:egfr"
+  ],
+  [
+   "concept:egfr",
+   "observed_as",
+   "ev:SYN-0015-EV213"
+  ],
+  [
+   "ev:SYN-0015-EV213",
+   "derived_from",
+   "src:SYN-0015-D08:635-663"
+  ],
+  [
+   "ev:SYN-0015-EV213",
+   "supports",
+   "dec:NCT06848166:NCT06848166-E25:r1"
+  ],
+  [
+   "crit:NCT06848166-E25",
+   "requires",
+   "concept:creatinine"
+  ],
+  [
+   "concept:creatinine",
+   "observed_as",
+   "ev:SYN-0015-EV212"
+  ],
+  [
+   "ev:SYN-0015-EV212",
+   "derived_from",
+   "src:SYN-0015-D08:601-634"
+  ],
+  [
+   "ev:SYN-0015-EV212",
+   "supports",
+   "dec:NCT06848166:NCT06848166-E25:r1"
+  ],
+  [
+   "crit:NCT06848166-E25",
+   "requires",
+   "concept:diagnosis:renal history"
+  ],
+  [
+   "ev:SYN-0015-EV085",
+   "supports",
+   "dec:NCT06848166:NCT06848166-E25:r1"
+  ],
+  [
+   "trial:NCT06848166",
+   "has_criterion",
+   "crit:NCT06848166-E26"
+  ],
+  [
+   "crit:NCT06848166-E26",
+   "decided_as",
+   "dec:NCT06848166:NCT06848166-E26:r1"
+  ],
+  [
+   "crit:NCT06848166-E26",
+   "requires",
+   "concept:diagnosis:hepatic history"
+  ],
+  [
+   "ev:SYN-0015-EV084",
+   "supports",
+   "dec:NCT06848166:NCT06848166-E26:r1"
+  ],
+  [
+   "crit:NCT06848166-E26",
+   "requires",
+   "concept:alt"
+  ],
+  [
+   "concept:alt",
+   "observed_as",
+   "ev:SYN-0015-EV218"
+  ],
+  [
+   "ev:SYN-0015-EV218",
+   "derived_from",
+   "src:SYN-0015-D08:788-805"
+  ],
+  [
+   "ev:SYN-0015-EV218",
+   "supports",
+   "dec:NCT06848166:NCT06848166-E26:r1"
+  ],
+  [
+   "crit:NCT06848166-E26",
+   "requires",
+   "concept:ast"
+  ],
+  [
+   "concept:ast",
+   "observed_as",
+   "ev:SYN-0015-EV219"
+  ],
+  [
+   "ev:SYN-0015-EV219",
+   "derived_from",
+   "src:SYN-0015-D08:806-823"
+  ],
+  [
+   "ev:SYN-0015-EV219",
+   "supports",
+   "dec:NCT06848166:NCT06848166-E26:r1"
+  ],
+  [
+   "trial:NCT06848166",
+   "has_criterion",
+   "crit:NCT06848166-E27"
+  ],
+  [
+   "crit:NCT06848166-E27",
+   "decided_as",
+   "dec:NCT06848166:NCT06848166-E27:r1"
+  ],
+  [
+   "trial:NCT06848166",
+   "has_criterion",
+   "crit:NCT06848166-E28"
+  ],
+  [
+   "crit:NCT06848166-E28",
+   "decided_as",
+   "dec:NCT06848166:NCT06848166-E28:r1"
+  ],
+  [
+   "crit:NCT06848166-E28",
+   "requires",
+   "concept:diagnosis:venous thromboembolism"
+  ],
+  [
+   "ev:SYN-0015-EV092",
+   "supports",
+   "dec:NCT06848166:NCT06848166-E28:r1"
+  ],
+  [
+   "crit:NCT06848166-E28",
+   "requires",
+   "concept:medication:combined oral contraceptive"
+  ],
+  [
+   "concept:medication:combined oral contraceptive",
+   "observed_as",
+   "ev:SYN-0015-EV107"
+  ],
+  [
+   "ev:SYN-0015-EV107",
+   "derived_from",
+   "src:SYN-0015-D07:1783-1869"
+  ],
+  [
+   "ev:SYN-0015-EV107",
+   "supports",
+   "dec:NCT06848166:NCT06848166-E28:r1"
+  ],
+  [
+   "trial:NCT06848166",
+   "has_criterion",
+   "crit:NCT06848166-E29"
+  ],
+  [
+   "crit:NCT06848166-E29",
+   "decided_as",
+   "dec:NCT06848166:NCT06848166-E29:r1"
+  ],
+  [
+   "crit:NCT06848166-E29",
+   "requires",
+   "concept:diagnosis:other neurologic history"
+  ],
+  [
+   "ev:SYN-0015-EV088",
+   "supports",
+   "dec:NCT06848166:NCT06848166-E29:r1"
+  ],
+  [
+   "crit:NCT06848166-E29",
+   "requires",
+   "concept:diagnosis:seizure"
+  ],
+  [
+   "concept:diagnosis:seizure",
+   "observed_as",
+   "ev:SYN-0015-EV091"
+  ],
+  [
+   "ev:SYN-0015-EV091",
+   "derived_from",
+   "src:SYN-0015-D07:1312-1387"
+  ],
+  [
+   "ev:SYN-0015-EV091",
+   "supports",
+   "dec:NCT06848166:NCT06848166-E29:r1"
+  ],
+  [
+   "trial:NCT06848166",
+   "has_criterion",
+   "crit:NCT06848166-E30"
+  ],
+  [
+   "crit:NCT06848166-E30",
+   "decided_as",
+   "dec:NCT06848166:NCT06848166-E30:r1"
+  ],
+  [
+   "trial:NCT06848166",
+   "has_criterion",
+   "crit:NCT06848166-E31"
+  ],
+  [
+   "crit:NCT06848166-E31",
+   "decided_as",
+   "dec:NCT06848166:NCT06848166-E31:r1"
+  ],
+  [
+   "crit:NCT06848166-E31",
+   "requires",
+   "concept:diagnosis:prior malignancy"
+  ],
+  [
+   "concept:diagnosis:prior malignancy",
+   "observed_as",
+   "ev:SYN-0015-EV094"
+  ],
+  [
+   "ev:SYN-0015-EV094",
+   "derived_from",
+   "src:SYN-0015-D07:1388-1408"
+  ],
+  [
+   "ev:SYN-0015-EV094",
+   "supports",
+   "dec:NCT06848166:NCT06848166-E31:r1"
+  ],
+  [
+   "trial:NCT06848166",
+   "has_criterion",
+   "crit:NCT06848166-E32"
+  ],
+  [
+   "crit:NCT06848166-E32",
+   "decided_as",
+   "dec:NCT06848166:NCT06848166-E32:r1"
+  ],
+  [
+   "trial:NCT06848166",
+   "has_criterion",
+   "crit:NCT06848166-E33"
+  ],
+  [
+   "crit:NCT06848166-E33",
+   "decided_as",
+   "dec:NCT06848166:NCT06848166-E33:r1"
+  ],
+  [
+   "trial:NCT06848166",
+   "has_criterion",
+   "crit:NCT06848166-E34"
+  ],
+  [
+   "crit:NCT06848166-E34",
+   "decided_as",
+   "dec:NCT06848166:NCT06848166-E34:r1"
+  ],
+  [
+   "trial:NCT06848166",
+   "has_criterion",
+   "crit:NCT06848166-E35"
+  ],
+  [
+   "crit:NCT06848166-E35",
+   "decided_as",
+   "dec:NCT06848166:NCT06848166-E35:r1"
+  ],
+  [
+   "trial:NCT06848166",
+   "labelled",
+   "label:NCT06848166"
+  ]
+ ]
+}

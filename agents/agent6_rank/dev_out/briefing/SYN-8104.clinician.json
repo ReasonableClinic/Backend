@@ -1,0 +1,270 @@
+{
+ "patient_id": "SYN-8104",
+ "as_of": "2026-10-01",
+ "audience": "clinician",
+ "graph_file": "SYN-8104.json",
+ "ranking": [
+  "NCT07803965"
+ ],
+ "also_mentioned": [],
+ "sentences": [
+  {
+   "text": "환자 SYN-8104, 기준일 2026-10-01",
+   "refs": [],
+   "kind": "meta"
+  },
+  {
+   "text": "1. NCT07803965 Study of SGC001 Injection for Predicted Severe Acute Pancreatitis to Assess Safety, Tolerability and Preliminary Efficacy",
+   "refs": [
+    "trial:NCT07803965"
+   ],
+   "kind": "heading"
+  },
+  {
+   "text": "시험 판정: potential (남은 항목 8개)",
+   "refs": [
+    "label:NCT07803965"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "국내 모집 기관 없음 (모집 국가: China)",
+   "refs": [
+    "trial:NCT07803965"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "Arms — EXPERIMENTAL: Drug: SGC001 injection; PLACEBO_COMPARATOR: Drug: Placebo",
+   "refs": [
+    "trial:NCT07803965"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07803965-I01 [inclusion] 충족",
+   "refs": [
+    "crit:NCT07803965-I01",
+    "dec:NCT07803965:NCT07803965-I01:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"DOB 1972-02-11.\" (SYN-8104-D01, 2026-09-27)",
+   "refs": [
+    "ev:SYN-8104-EV002",
+    "src:SYN-8104-D01:6-21"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   계산: age_at_as_of = 54.635 (범위 18.0~75.0)",
+   "refs": [
+    "calc:NCT07803965:NCT07803965-I01"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07803965-I02 [inclusion] 충족",
+   "refs": [
+    "crit:NCT07803965-I02",
+    "dec:NCT07803965:NCT07803965-I02:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"54M c/o severe epigastric pain radiating to the back since last night\" (SYN-8104-D02, 2026-09-27)",
+   "refs": [
+    "ev:SYN-8104-EV006",
+    "src:SYN-8104-D02:9-78"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Lipase 2,140 U/L (ref 13-60)\" (SYN-8104-D03, 2026-09-27)",
+   "refs": [
+    "ev:SYN-8104-EV031",
+    "src:SYN-8104-D03:0-28"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Contrast CT abdomen: diffuse pancreatic enlargement with peripancreatic fat stranding and small fluid collection near the tail.\" (SYN-8104-D04, 2026-09-28)",
+   "refs": [
+    "ev:SYN-8104-EV045",
+    "src:SYN-8104-D04:0-127"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07803965-I03 [inclusion] 미확인 (근거 불충분) → 다음: clinician_confirmation",
+   "refs": [
+    "crit:NCT07803965-I03",
+    "dec:NCT07803965:NCT07803965-I03:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Whether the patient meets the trial's definition of predicted severe AP",
+   "refs": [
+    "dec:NCT07803965:NCT07803965-I03:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07803965-E01 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT07803965-E01",
+    "dec:NCT07803965:NCT07803965-E01:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"54M c/o severe epigastric pain radiating to the back since last night\" (SYN-8104-D02, 2026-09-27)",
+   "refs": [
+    "ev:SYN-8104-EV006",
+    "src:SYN-8104-D02:9-78"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"54M with chronic heavy alcohol use admitted 2026-09-27 with severe epigastric pain radiating to the back, nausea and vomiting.\" (SYN-8104-D07, 2026-09-27)",
+   "refs": [
+    "ev:SYN-8104-EV199",
+    "src:SYN-8104-D07:109-235"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07803965-E02 [exclusion] 미확인 (기록 없음) → 다음: med_record_check",
+   "refs": [
+    "crit:NCT07803965-E02",
+    "dec:NCT07803965:NCT07803965-E02:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Whether ERCP was performed within 7 days before screening",
+   "refs": [
+    "dec:NCT07803965:NCT07803965-E02:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07803965-E03 [exclusion] 미확인 (기록 없음) → 다음: med_record_check",
+   "refs": [
+    "crit:NCT07803965-E03",
+    "dec:NCT07803965:NCT07803965-E03:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Whether ECMO or renal replacement therapy was received before admission",
+   "refs": [
+    "dec:NCT07803965:NCT07803965-E03:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07803965-E04 [exclusion] 미확인 (기록 없음) → 다음: clinician_confirmation",
+   "refs": [
+    "crit:NCT07803965-E04",
+    "dec:NCT07803965:NCT07803965-E04:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Whether emergency surgery, ERCP, ECMO, RRT or plasma exchange was required on admission",
+   "refs": [
+    "dec:NCT07803965:NCT07803965-E04:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07803965-E05 [exclusion] 미확인 (근거 불충분) → 다음: clinician_confirmation",
+   "refs": [
+    "crit:NCT07803965-E05",
+    "dec:NCT07803965:NCT07803965-E05:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Whether hypertension or hepatic steatosis is severe; hematologic/immune history not covered",
+   "refs": [
+    "dec:NCT07803965:NCT07803965-E05:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07803965-E06 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT07803965-E06",
+    "dec:NCT07803965:NCT07803965-E06:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"No prior pancreatitis, no known cirrhosis, no prior malignancy.\" (SYN-8104-D07, 2026-10-01)",
+   "refs": [
+    "ev:SYN-8104-EV111",
+    "src:SYN-8104-D07:1150-1213"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07803965-E07 [exclusion] 미확인 (근거 불충분) → 다음: clinician_confirmation",
+   "refs": [
+    "crit:NCT07803965-E07",
+    "dec:NCT07803965:NCT07803965-E07:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Investigator judgment on compliance/safety risk given alcohol use disorder and low mood",
+   "refs": [
+    "dec:NCT07803965:NCT07803965-E07:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07803965-E08 [exclusion] 미확인 (기록 없음) → 다음: patient_question",
+   "refs": [
+    "crit:NCT07803965-E08",
+    "dec:NCT07803965:NCT07803965-E08:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Whether a live vaccine was given within the past month",
+   "refs": [
+    "dec:NCT07803965:NCT07803965-E08:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07803965-E09 [exclusion] 미확인 (기록 없음) → 다음: patient_question",
+   "refs": [
+    "crit:NCT07803965-E09",
+    "dec:NCT07803965:NCT07803965-E09:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Whether the patient or partner plans to conceive, donate sperm, or refuses contraception",
+   "refs": [
+    "dec:NCT07803965:NCT07803965-E09:r1"
+   ],
+   "kind": "fact"
+  }
+ ],
+ "evidence": {
+  "files": [
+   "evidence_dev_haiku_v14_12.jsonl",
+   "evidence_dev_variants_haiku_v14_12.jsonl"
+  ],
+  "sha256": "daba4f5f1e16ec2eefc47311f5c13f85e6b5f218c85424f08f9af3d9bab09124",
+  "id_series": "haiku",
+  "graph_ev_nodes_checked": 2240
+ },
+ "agent6": "a6-0.4.14"
+}

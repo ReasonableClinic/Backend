@@ -1,0 +1,2 @@
+en	field	before	after	reason
+afib	abbr		AFib	영문 원어가 약어(afib)인데 abbr가 비어 있어 다른 약어 항목(cad, chf 등)과 달리 괄호 약어가 빠짐.

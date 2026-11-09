@@ -1,0 +1,252 @@
+{
+ "patient_id": "SYN-1812",
+ "as_of": "2026-10-01",
+ "audience": "clinician",
+ "graph_file": "SYN-1812.json",
+ "ranking": [
+  "NCT07365358"
+ ],
+ "also_mentioned": [
+  "NCT07639684"
+ ],
+ "sentences": [
+  {
+   "text": "환자 SYN-1812, 기준일 2026-10-01",
+   "refs": [],
+   "kind": "meta"
+  },
+  {
+   "text": "1. NCT07365358 Evaluate the Efficacy and Safety of Empagliflozin or Glimepiride Combination Therapy in Type 2 Diabetes Mellitus Patients",
+   "refs": [
+    "trial:NCT07365358"
+   ],
+   "kind": "heading"
+  },
+  {
+   "text": "시험 판정: potential (남은 항목 5개)",
+   "refs": [
+    "label:NCT07365358"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "국내 모집 기관 1곳",
+   "refs": [
+    "trial:NCT07365358"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "Arms — EXPERIMENTAL: Drug: empagliflozin 10mg; ACTIVE_COMPARATOR: Drug: Glimepiride 1mg",
+   "refs": [
+    "trial:NCT07365358"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07365358-I01 [inclusion] 충족",
+   "refs": [
+    "crit:NCT07365358-I01",
+    "dec:NCT07365358:NCT07365358-I01:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"DOB 1968-08-21.\" (SYN-1812-D01, 2026-03-04)",
+   "refs": [
+    "ev:SYN-1812-EV002",
+    "src:SYN-1812-D01:6-21"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   계산: age_at_as_of = 58.112 (범위 19.0~None)",
+   "refs": [
+    "calc:NCT07365358:NCT07365358-I01"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07365358-I02 [inclusion] 충족",
+   "refs": [
+    "crit:NCT07365358-I02",
+    "dec:NCT07365358:NCT07365358-I02:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"58-year-old man with T2DM since 2017 and obesity.\" (SYN-1812-D07, 2026-09-28)",
+   "refs": [
+    "ev:SYN-1812-EV105",
+    "src:SYN-1812-D07:155-204"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07365358-I03 [inclusion] 충족",
+   "refs": [
+    "crit:NCT07365358-I03",
+    "dec:NCT07365358:NCT07365358-I03:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Metformin 1000 mg bid (since 2017)\" (SYN-1812-D07, 2026-09-28)",
+   "refs": [
+    "ev:SYN-1812-EV148",
+    "src:SYN-1812-D07:1271-1305"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Glimepiride 4 mg daily (since 2020)\" (SYN-1812-D07, 2026-09-28)",
+   "refs": [
+    "ev:SYN-1812-EV149",
+    "src:SYN-1812-D07:1308-1343"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07365358-I04 [inclusion] 미확인 (기록 없음) → 다음: patient_question",
+   "refs": [
+    "crit:NCT07365358-I04",
+    "dec:NCT07365358:NCT07365358-I04:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07365358-E01 [exclusion] 미확인 (기록 없음) → 다음: med_record_check",
+   "refs": [
+    "crit:NCT07365358-E01",
+    "dec:NCT07365358:NCT07365358-E01:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Explicit statement that the patient has no type 1 or secondary diabetes",
+   "refs": [
+    "dec:NCT07365358:NCT07365358-E01:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07365358-E02 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT07365358-E02",
+    "dec:NCT07365358:NCT07365358-E02:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Mildly increased albuminuria and mild NPDR: repeat UACR, ophthalmology referral for dilated exam.\" (SYN-1812-D07, 2026-09-28)",
+   "refs": [
+    "ev:SYN-1812-EV248",
+    "src:SYN-1812-D07:3731-3828"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Retinopathy: mild NPDR (2025), repeat dilated exam due.\" (SYN-1812-D07, 2025-01-01)",
+   "refs": [
+    "ev:SYN-1812-EV230",
+    "src:SYN-1812-D07:3070-3125"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07365358-E03 [exclusion] 미확인 (기록 없음) → 다음: patient_question",
+   "refs": [
+    "crit:NCT07365358-E03",
+    "dec:NCT07365358:NCT07365358-E03:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Whether the patient has galactose intolerance, Lapp lactase deficiency or glucose-galactose malabsorption",
+   "refs": [
+    "dec:NCT07365358:NCT07365358-E03:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07365358-E04 [exclusion] 미확인 (근거 불충분) → 다음: clinician_confirmation",
+   "refs": [
+    "crit:NCT07365358-E04",
+    "dec:NCT07365358:NCT07365358-E04:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: The protocol's definition of abnormal laboratory values",
+   "refs": [
+    "dec:NCT07365358:NCT07365358-E04:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07365358-E05 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT07365358-E05",
+    "dec:NCT07365358:NCT07365358-E05:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"No insulin, no GLP-1 RA or SGLT2 inhibitor used to date.\" (SYN-1812-D07, 2026-09-28)",
+   "refs": [
+    "ev:SYN-1812-EV152",
+    "src:SYN-1812-D07:1417-1473"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07365358-E06 [exclusion] 미확인 (근거 불충분) → 다음: med_history_check",
+   "refs": [
+    "crit:NCT07365358-E06",
+    "dec:NCT07365358:NCT07365358-E06:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Identity of the product injected for the knee flare on 2026-09-10 (corticosteroid or not)",
+   "refs": [
+    "dec:NCT07365358:NCT07365358-E06:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "참고: FAIL 하나로 제외된 시험 (순위에는 넣지 않음, 그 기준만 확인하면 판정이 바뀔 수 있음)",
+   "refs": [
+    "trial:NCT07639684"
+   ],
+   "kind": "heading"
+  },
+  {
+   "text": "NCT07639684 Impact of Endoscopic Sleeve Gastroplasty (ESG) in Obese Adults With Type 2 Diabetes (T2D): NCT07639684-I05 [inclusion] 불충족",
+   "refs": [
+    "crit:NCT07639684-I05",
+    "dec:NCT07639684:NCT07639684-I05:r1",
+    "label:NCT07639684",
+    "trial:NCT07639684"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   노트: Explicitly no GLP-1 RA used to date; the requirement of 6 months incretin therapy is not met. GLP-1 RA only planned.",
+   "refs": [
+    "dec:NCT07639684:NCT07639684-I05:r1"
+   ],
+   "kind": "fact"
+  }
+ ],
+ "evidence": {
+  "files": [
+   "evidence_dev_haiku_v14_12.jsonl",
+   "evidence_dev_variants_haiku_v14_12.jsonl"
+  ],
+  "sha256": "daba4f5f1e16ec2eefc47311f5c13f85e6b5f218c85424f08f9af3d9bab09124",
+  "id_series": "haiku",
+  "graph_ev_nodes_checked": 2240
+ },
+ "agent6": "a6-0.4.14"
+}

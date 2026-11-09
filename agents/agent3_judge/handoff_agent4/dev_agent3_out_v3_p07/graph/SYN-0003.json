@@ -1,0 +1,1293 @@
+{
+ "patient_id": "SYN-0003",
+ "as_of": "2026-10-01",
+ "version": 1,
+ "nodes": [
+  {
+   "id": "trial:NCT07855770",
+   "kind": "trial",
+   "title": "Use of Preoperative Gas in Eyes With Macula-off Rhegmatogenous Retinal Detachment (RRD)"
+  },
+  {
+   "id": "crit:NCT07855770-I01",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "A patient must meet the following criteria to be eligible for inclusion in the study: Diagnosed with macula-involving primary rhegmatogenous retinal detachment; Consents to surgical repair with pars plana vitrectomy with or without scleral buckling; Willing and able to comply with clinic visits and study-related procedures",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07855770:NCT07855770-I01:r1",
+   "kind": "decision",
+   "trial_id": "NCT07855770",
+   "criterion_id": "NCT07855770-I01",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Macula-involving RRD OD is documented, but 'primary' is not stated. Consent to PPV and study compliance are not documented. Adherence to drops and positioning is not enough.",
+   "missing_fact": "Documented consent to PPV and willingness to comply with study visits and procedures",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07855770-E01",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "A patient who meets any of the following criteria will be excluded from the study: Age < 18 years old; Presence of PVR grade C or worse (as defined by the revised Retina Society PVR classification) at time of surgical repair; History of or concurrent ruptured globe, intraocular foreign body, proliferative diabetic retinopathy, retinal vein occlusion, exudative age-related macular degeneration, macular epiretinal membrane, sickle cell disease, uveitis or intraocular infectious diseases; Not willing or able to comply with clinic visits and study-related procedures; Unable to provide a signed informed consent; Unable to maintain positioning to support break; Patients that undergo silicone oil placement for primary macula-off RRD; For bilateral macula-off RRDs, the better seeing eye will be excluded.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07855770:NCT07855770-E01:r1",
+   "kind": "decision",
+   "trial_id": "NCT07855770",
+   "criterion_id": "NCT07855770-E01",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Age is over 18, but PVR grade and the other listed eye conditions are not documented. Gas rather than silicone oil is documented. Consent and compliance are not documented.",
+   "missing_fact": "PVR grade at surgery, history of listed eye conditions (RVO, ERM, uveitis, etc.), silicone oil use, and informed consent and compliance",
+   "derived_from": null
+  },
+  {
+   "id": "label:NCT07855770",
+   "kind": "trial_decision",
+   "label": "potential",
+   "why": [
+    "UNKNOWN/MISSING NCT07855770-I01"
+   ],
+   "by": "agent3"
+  },
+  {
+   "id": "trial:NCT06997874",
+   "kind": "trial",
+   "title": "Treatment of Retinal Detachment in People Who Have Not Had Cataract Surgery With Vitrectomy vs Vitrectomy and Cataract Removal"
+  },
+  {
+   "id": "crit:NCT06997874-I01",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Adults >=50 years of age",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06997874:NCT06997874-I01:r1",
+   "kind": "decision",
+   "trial_id": "NCT06997874",
+   "criterion_id": "NCT06997874-I01",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "age_rule"
+   ],
+   "note": "age 73.89 y vs [50.0, None]",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0003-EV002",
+   "kind": "evidence",
+   "concept": "birth_date",
+   "term": null,
+   "value": "1952-11-09",
+   "unit": null,
+   "observed_date": "2026-09-25",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:birth_date",
+   "kind": "concept",
+   "concept": "birth_date",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0003-D01:6-21",
+   "kind": "source",
+   "doc_id": "SYN-0003-D01",
+   "doc_type": "registration",
+   "span": [
+    6,
+    21
+   ],
+   "text": "DOB 1952-11-09."
+  },
+  {
+   "id": "calc:NCT06997874:NCT06997874-I01",
+   "kind": "calculation",
+   "name": "age_at_as_of",
+   "value": 73.893,
+   "lo": 50.0,
+   "hi": null
+  },
+  {
+   "id": "crit:NCT06997874-I02",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Non-highly myopic (< -6 diopters; <=26.5 mm axial length) phakic RRD",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06997874:NCT06997874-I02:r1",
+   "kind": "decision",
+   "trial_id": "NCT06997874",
+   "criterion_id": "NCT06997874-I02",
+   "status": "FAIL",
+   "reason": "VIOLATED",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "High myopia -8.0 D (< -6 D) and pseudophakic OD (cataract surgery with IOL 2022); not non-highly myopic phakic.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0003-EV052",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "high myopia -8.0 D both eyes",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-10-01",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:diagnosis:high myopia -8.0 d both eyes",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "high myopia -8.0 D both eyes"
+  },
+  {
+   "id": "src:SYN-0003-D06:781-820",
+   "kind": "source",
+   "doc_id": "SYN-0003-D06",
+   "doc_type": "clinic_note",
+   "span": [
+    781,
+    820
+   ],
+   "text": "High myopia, -8.0 D both eyes (dx 1968)"
+  },
+  {
+   "id": "ev:SYN-0003-EV068",
+   "kind": "evidence",
+   "concept": "procedure",
+   "term": "cataract surgery with IOL OD",
+   "value": true,
+   "unit": null,
+   "observed_date": "2022-01-01",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "past"
+  },
+  {
+   "id": "concept:procedure:cataract surgery with iol od",
+   "kind": "concept",
+   "concept": "procedure",
+   "term": "cataract surgery with IOL OD"
+  },
+  {
+   "id": "src:SYN-0003-D06:1143-1178",
+   "kind": "source",
+   "doc_id": "SYN-0003-D06",
+   "doc_type": "clinic_note",
+   "span": [
+    1143,
+    1178
+   ],
+   "text": "Cataract surgery with IOL OD (2022)"
+  },
+  {
+   "id": "crit:NCT06997874-I03",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Naive to previous vitreoretinal surgery",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06997874:NCT06997874-I03:r1",
+   "kind": "decision",
+   "trial_id": "NCT06997874",
+   "criterion_id": "NCT06997874-I03",
+   "status": "FAIL",
+   "reason": "VIOLATED",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Patient already had pars plana vitrectomy with gas OD on 2026-09-26, so not naive to vitreoretinal surgery.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0003-EV037",
+   "kind": "evidence",
+   "concept": "procedure",
+   "term": "pars plana vitrectomy with gas tamponade OD",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-26",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "past"
+  },
+  {
+   "id": "concept:procedure:pars plana vitrectomy with gas tamponade od",
+   "kind": "concept",
+   "concept": "procedure",
+   "term": "pars plana vitrectomy with gas tamponade OD"
+  },
+  {
+   "id": "src:SYN-0003-D06:378-425",
+   "kind": "source",
+   "doc_id": "SYN-0003-D06",
+   "doc_type": "clinic_note",
+   "span": [
+    378,
+    425
+   ],
+   "text": "He had PPV with gas tamponade OD on 2026-09-26."
+  },
+  {
+   "id": "crit:NCT06997874-I04",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Pars plana vitrectomy is planned to repair their RRD",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06997874:NCT06997874-I04:r1",
+   "kind": "decision",
+   "trial_id": "NCT06997874",
+   "criterion_id": "NCT06997874-I04",
+   "status": "FAIL",
+   "reason": "VIOLATED",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "PPV already performed and retina attached; no PPV is planned to repair the RRD.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0003-EV022",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "retina attached",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-30",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:symptom_finding:retina attached",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "retina attached"
+  },
+  {
+   "id": "src:SYN-0003-D05:15-31",
+   "kind": "source",
+   "doc_id": "SYN-0003-D05",
+   "doc_type": "clinic_note",
+   "span": [
+    15,
+    31
+   ],
+   "text": "Retina attached."
+  },
+  {
+   "id": "crit:NCT06997874-E01",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Presence of a \"formed/established cataract.\" A \"formed/established cataract\" is defined as a cataract that, based on the Age-Related Eye Disease Study (AREDS) Research Group, is graded as nuclear sclerosis of >3 and/or if there is an anterior cortical cataract and/or a subcapsular posterior cataract involving the visual axis.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06997874:NCT06997874-E01:r1",
+   "kind": "decision",
+   "trial_id": "NCT06997874",
+   "criterion_id": "NCT06997874-E01",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_record_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No lens opacity grading documented; the cataract was removed OD, but the left eye lens is not described.",
+   "missing_fact": "AREDS lens grading of the right eye (patient is pseudophakic OD; left eye lens status not documented)",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06997874-E02",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Pseudophakia or aphakia",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06997874:NCT06997874-E02:r1",
+   "kind": "decision",
+   "trial_id": "NCT06997874",
+   "criterion_id": "NCT06997874-E02",
+   "status": "FAIL",
+   "reason": "VIOLATED",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Cataract surgery with IOL OD in 2022; IOL well centered, so the patient is pseudophakic.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0003-EV121",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "IOL well centered OD",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-10-01",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:symptom_finding:iol well centered od",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "IOL well centered OD"
+  },
+  {
+   "id": "src:SYN-0003-D06:2527-2623",
+   "kind": "source",
+   "doc_id": "SYN-0003-D06",
+   "doc_type": "clinic_note",
+   "span": [
+    2527,
+    2623
+   ],
+   "text": "OD: mild lid edema, mild conjunctival injection, cornea clear, AC trace cell, IOL well centered."
+  },
+  {
+   "id": "crit:NCT06997874-E03",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "High myopia (>= -6 diopters; >26.5 mm axial length)",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06997874:NCT06997874-E03:r1",
+   "kind": "decision",
+   "trial_id": "NCT06997874",
+   "criterion_id": "NCT06997874-E03",
+   "status": "FAIL",
+   "reason": "VIOLATED",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "High myopia -8.0 D both eyes is beyond -6 D; axial length not recorded but the diopter criterion is met.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06997874-E04",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Giant retinal tear (i.e. presence of one or more retinal tears of >3 clock hours in size)",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06997874:NCT06997874-E04:r1",
+   "kind": "decision",
+   "trial_id": "NCT06997874",
+   "criterion_id": "NCT06997874-E04",
+   "status": "UNKNOWN",
+   "reason": "UNSUPPORTED",
+   "action": "med_record_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Horseshoe tear at 11 o'clock documented, but its extent in clock hours is not given.",
+   "missing_fact": "Size of the horseshoe tear in clock hours",
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0003-EV015",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "horseshoe tear at 11 o'clock OD",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-25",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:symptom_finding:horseshoe tear at 11 o'clock od",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "horseshoe tear at 11 o'clock OD"
+  },
+  {
+   "id": "src:SYN-0003-D03:0-135",
+   "kind": "source",
+   "doc_id": "SYN-0003-D03",
+   "doc_type": "imaging_report",
+   "span": [
+    0,
+    135
+   ],
+   "text": "Dilated fundus exam + B-scan OD: superior bullous rhegmatogenous retinal detachment involving the macula, horseshoe tear at 11 o'clock."
+  },
+  {
+   "id": "crit:NCT06997874-E05",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Retinal dialysis",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06997874:NCT06997874-E05:r1",
+   "kind": "decision",
+   "trial_id": "NCT06997874",
+   "criterion_id": "NCT06997874-E05",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_record_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Retinal dialysis is not mentioned; the horseshoe tear does not establish or exclude it.",
+   "missing_fact": "Whether retinal dialysis was present",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06997874-I05",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Declined consent for participation",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06997874:NCT06997874-I05:r1",
+   "kind": "decision",
+   "trial_id": "NCT06997874",
+   "criterion_id": "NCT06997874-I05",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No consent statement in the record; adherence to drops is not a consent statement.",
+   "missing_fact": "Whether the patient declined or agreed to consent for participation",
+   "derived_from": null
+  },
+  {
+   "id": "label:NCT06997874",
+   "kind": "trial_decision",
+   "label": "ineligible",
+   "why": [
+    "FAIL NCT06997874-I02",
+    "FAIL NCT06997874-I03",
+    "FAIL NCT06997874-I04",
+    "FAIL NCT06997874-E02",
+    "FAIL NCT06997874-E03"
+   ],
+   "by": "agent3"
+  },
+  {
+   "id": "trial:NCT07346560",
+   "kind": "trial",
+   "title": "1ry Versus 2ry ILM Peeling in RD"
+  },
+  {
+   "id": "crit:NCT07346560-I01",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Patients with uncomplicated rhegmatogenous retinal detcahment.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07346560:NCT07346560-I01:r1",
+   "kind": "decision",
+   "trial_id": "NCT07346560",
+   "criterion_id": "NCT07346560-I01",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Rhegmatogenous RD OD with horseshoe tear is documented. No complication such as PVR is recorded.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0003-EV014",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "rhegmatogenous retinal detachment superior bullous involving macula OD",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-25",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:diagnosis:rhegmatogenous retinal detachment superior bullous involving macula od",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "rhegmatogenous retinal detachment superior bullous involving macula OD"
+  },
+  {
+   "id": "ev:SYN-0003-EV130",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "rhegmatogenous retinal detachment OD macula-involving superior horseshoe tear",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-10-01",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "past"
+  },
+  {
+   "id": "concept:diagnosis:rhegmatogenous retinal detachment od macula-involving superior horseshoe tear",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "rhegmatogenous retinal detachment OD macula-involving superior horseshoe tear"
+  },
+  {
+   "id": "src:SYN-0003-D06:2859-2958",
+   "kind": "source",
+   "doc_id": "SYN-0003-D06",
+   "doc_type": "clinic_note",
+   "span": [
+    2859,
+    2958
+   ],
+   "text": "Rhegmatogenous RD OD (macula-involving, superior, horseshoe tear), s/p PPV with gas, post-op day 5."
+  },
+  {
+   "id": "crit:NCT07346560-E01",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "PVR",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07346560:NCT07346560-E01:r1",
+   "kind": "decision",
+   "trial_id": "NCT07346560",
+   "criterion_id": "NCT07346560-E01",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_record_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "PVR is not mentioned anywhere. An attached retina does not show that PVR is absent.",
+   "missing_fact": "Whether proliferative vitreoretinopathy was present or absent",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07346560-E02",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Recurrent RD",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07346560:NCT07346560-E02:r1",
+   "kind": "decision",
+   "trial_id": "NCT07346560",
+   "criterion_id": "NCT07346560-E02",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_record_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No statement about recurrent RD or prior detachment episodes in the record.",
+   "missing_fact": "Whether the patient had any previous retinal detachment or recurrence",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07346560-E03",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Tractional RD",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07346560:NCT07346560-E03:r1",
+   "kind": "decision",
+   "trial_id": "NCT07346560",
+   "criterion_id": "NCT07346560-E03",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_record_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "The RD is described as rhegmatogenous, but a tractional component is neither confirmed nor denied.",
+   "missing_fact": "Whether a tractional component was present or absent",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07346560-E04",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Macular hole RD",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07346560:NCT07346560-E04:r1",
+   "kind": "decision",
+   "trial_id": "NCT07346560",
+   "criterion_id": "NCT07346560-E04",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_record_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "The cause is documented as a horseshoe tear, but a macular hole is not addressed.",
+   "missing_fact": "Whether a macular hole was present or absent",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07346560-E05",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Scleral buckling is indicated",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07346560:NCT07346560-E05:r1",
+   "kind": "decision",
+   "trial_id": "NCT07346560",
+   "criterion_id": "NCT07346560-E05",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Only PPV with gas is documented. No statement about buckling being indicated or not.",
+   "missing_fact": "Whether scleral buckling was indicated for this detachment",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07346560-E06",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Macular scarring",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07346560:NCT07346560-E06:r1",
+   "kind": "decision",
+   "trial_id": "NCT07346560",
+   "criterion_id": "NCT07346560-E06",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_record_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Macular scarring is not mentioned anywhere in the record.",
+   "missing_fact": "Macular scarring status on retinal exam or OCT",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07346560-E07",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Previous PPV",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07346560:NCT07346560-E07:r1",
+   "kind": "decision",
+   "trial_id": "NCT07346560",
+   "criterion_id": "NCT07346560-E07",
+   "status": "FAIL",
+   "reason": "VIOLATED",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Pars plana vitrectomy with gas tamponade OD was done on 2026-09-26, so previous PPV is present.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0003-EV069",
+   "kind": "evidence",
+   "concept": "procedure",
+   "term": "pars plana vitrectomy with gas tamponade OD",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-26",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "past"
+  },
+  {
+   "id": "src:SYN-0003-D06:1181-1237",
+   "kind": "source",
+   "doc_id": "SYN-0003-D06",
+   "doc_type": "clinic_note",
+   "span": [
+    1181,
+    1237
+   ],
+   "text": "Pars plana vitrectomy with gas tamponade OD (2026-09-26)"
+  },
+  {
+   "id": "label:NCT07346560",
+   "kind": "trial_decision",
+   "label": "ineligible",
+   "why": [
+    "FAIL NCT07346560-E07"
+   ],
+   "by": "agent3"
+  }
+ ],
+ "edges": [
+  [
+   "trial:NCT07855770",
+   "has_criterion",
+   "crit:NCT07855770-I01"
+  ],
+  [
+   "crit:NCT07855770-I01",
+   "decided_as",
+   "dec:NCT07855770:NCT07855770-I01:r1"
+  ],
+  [
+   "trial:NCT07855770",
+   "has_criterion",
+   "crit:NCT07855770-E01"
+  ],
+  [
+   "crit:NCT07855770-E01",
+   "decided_as",
+   "dec:NCT07855770:NCT07855770-E01:r1"
+  ],
+  [
+   "trial:NCT07855770",
+   "labelled",
+   "label:NCT07855770"
+  ],
+  [
+   "trial:NCT06997874",
+   "has_criterion",
+   "crit:NCT06997874-I01"
+  ],
+  [
+   "crit:NCT06997874-I01",
+   "decided_as",
+   "dec:NCT06997874:NCT06997874-I01:r1"
+  ],
+  [
+   "crit:NCT06997874-I01",
+   "requires",
+   "concept:birth_date"
+  ],
+  [
+   "concept:birth_date",
+   "observed_as",
+   "ev:SYN-0003-EV002"
+  ],
+  [
+   "ev:SYN-0003-EV002",
+   "derived_from",
+   "src:SYN-0003-D01:6-21"
+  ],
+  [
+   "ev:SYN-0003-EV002",
+   "supports",
+   "dec:NCT06997874:NCT06997874-I01:r1"
+  ],
+  [
+   "calc:NCT06997874:NCT06997874-I01",
+   "computes",
+   "dec:NCT06997874:NCT06997874-I01:r1"
+  ],
+  [
+   "trial:NCT06997874",
+   "has_criterion",
+   "crit:NCT06997874-I02"
+  ],
+  [
+   "crit:NCT06997874-I02",
+   "decided_as",
+   "dec:NCT06997874:NCT06997874-I02:r1"
+  ],
+  [
+   "crit:NCT06997874-I02",
+   "requires",
+   "concept:diagnosis:high myopia -8.0 d both eyes"
+  ],
+  [
+   "concept:diagnosis:high myopia -8.0 d both eyes",
+   "observed_as",
+   "ev:SYN-0003-EV052"
+  ],
+  [
+   "ev:SYN-0003-EV052",
+   "derived_from",
+   "src:SYN-0003-D06:781-820"
+  ],
+  [
+   "ev:SYN-0003-EV052",
+   "supports",
+   "dec:NCT06997874:NCT06997874-I02:r1"
+  ],
+  [
+   "crit:NCT06997874-I02",
+   "requires",
+   "concept:procedure:cataract surgery with iol od"
+  ],
+  [
+   "concept:procedure:cataract surgery with iol od",
+   "observed_as",
+   "ev:SYN-0003-EV068"
+  ],
+  [
+   "ev:SYN-0003-EV068",
+   "derived_from",
+   "src:SYN-0003-D06:1143-1178"
+  ],
+  [
+   "ev:SYN-0003-EV068",
+   "supports",
+   "dec:NCT06997874:NCT06997874-I02:r1"
+  ],
+  [
+   "trial:NCT06997874",
+   "has_criterion",
+   "crit:NCT06997874-I03"
+  ],
+  [
+   "crit:NCT06997874-I03",
+   "decided_as",
+   "dec:NCT06997874:NCT06997874-I03:r1"
+  ],
+  [
+   "crit:NCT06997874-I03",
+   "requires",
+   "concept:procedure:pars plana vitrectomy with gas tamponade od"
+  ],
+  [
+   "concept:procedure:pars plana vitrectomy with gas tamponade od",
+   "observed_as",
+   "ev:SYN-0003-EV037"
+  ],
+  [
+   "ev:SYN-0003-EV037",
+   "derived_from",
+   "src:SYN-0003-D06:378-425"
+  ],
+  [
+   "ev:SYN-0003-EV037",
+   "supports",
+   "dec:NCT06997874:NCT06997874-I03:r1"
+  ],
+  [
+   "trial:NCT06997874",
+   "has_criterion",
+   "crit:NCT06997874-I04"
+  ],
+  [
+   "crit:NCT06997874-I04",
+   "decided_as",
+   "dec:NCT06997874:NCT06997874-I04:r1"
+  ],
+  [
+   "crit:NCT06997874-I04",
+   "requires",
+   "concept:procedure:pars plana vitrectomy with gas tamponade od"
+  ],
+  [
+   "ev:SYN-0003-EV037",
+   "supports",
+   "dec:NCT06997874:NCT06997874-I04:r1"
+  ],
+  [
+   "crit:NCT06997874-I04",
+   "requires",
+   "concept:symptom_finding:retina attached"
+  ],
+  [
+   "concept:symptom_finding:retina attached",
+   "observed_as",
+   "ev:SYN-0003-EV022"
+  ],
+  [
+   "ev:SYN-0003-EV022",
+   "derived_from",
+   "src:SYN-0003-D05:15-31"
+  ],
+  [
+   "ev:SYN-0003-EV022",
+   "supports",
+   "dec:NCT06997874:NCT06997874-I04:r1"
+  ],
+  [
+   "trial:NCT06997874",
+   "has_criterion",
+   "crit:NCT06997874-E01"
+  ],
+  [
+   "crit:NCT06997874-E01",
+   "decided_as",
+   "dec:NCT06997874:NCT06997874-E01:r1"
+  ],
+  [
+   "trial:NCT06997874",
+   "has_criterion",
+   "crit:NCT06997874-E02"
+  ],
+  [
+   "crit:NCT06997874-E02",
+   "decided_as",
+   "dec:NCT06997874:NCT06997874-E02:r1"
+  ],
+  [
+   "crit:NCT06997874-E02",
+   "requires",
+   "concept:procedure:cataract surgery with iol od"
+  ],
+  [
+   "ev:SYN-0003-EV068",
+   "supports",
+   "dec:NCT06997874:NCT06997874-E02:r1"
+  ],
+  [
+   "crit:NCT06997874-E02",
+   "requires",
+   "concept:symptom_finding:iol well centered od"
+  ],
+  [
+   "concept:symptom_finding:iol well centered od",
+   "observed_as",
+   "ev:SYN-0003-EV121"
+  ],
+  [
+   "ev:SYN-0003-EV121",
+   "derived_from",
+   "src:SYN-0003-D06:2527-2623"
+  ],
+  [
+   "ev:SYN-0003-EV121",
+   "supports",
+   "dec:NCT06997874:NCT06997874-E02:r1"
+  ],
+  [
+   "trial:NCT06997874",
+   "has_criterion",
+   "crit:NCT06997874-E03"
+  ],
+  [
+   "crit:NCT06997874-E03",
+   "decided_as",
+   "dec:NCT06997874:NCT06997874-E03:r1"
+  ],
+  [
+   "crit:NCT06997874-E03",
+   "requires",
+   "concept:diagnosis:high myopia -8.0 d both eyes"
+  ],
+  [
+   "ev:SYN-0003-EV052",
+   "supports",
+   "dec:NCT06997874:NCT06997874-E03:r1"
+  ],
+  [
+   "trial:NCT06997874",
+   "has_criterion",
+   "crit:NCT06997874-E04"
+  ],
+  [
+   "crit:NCT06997874-E04",
+   "decided_as",
+   "dec:NCT06997874:NCT06997874-E04:r1"
+  ],
+  [
+   "crit:NCT06997874-E04",
+   "requires",
+   "concept:symptom_finding:horseshoe tear at 11 o'clock od"
+  ],
+  [
+   "concept:symptom_finding:horseshoe tear at 11 o'clock od",
+   "observed_as",
+   "ev:SYN-0003-EV015"
+  ],
+  [
+   "ev:SYN-0003-EV015",
+   "derived_from",
+   "src:SYN-0003-D03:0-135"
+  ],
+  [
+   "ev:SYN-0003-EV015",
+   "insufficient_for",
+   "dec:NCT06997874:NCT06997874-E04:r1"
+  ],
+  [
+   "trial:NCT06997874",
+   "has_criterion",
+   "crit:NCT06997874-E05"
+  ],
+  [
+   "crit:NCT06997874-E05",
+   "decided_as",
+   "dec:NCT06997874:NCT06997874-E05:r1"
+  ],
+  [
+   "trial:NCT06997874",
+   "has_criterion",
+   "crit:NCT06997874-I05"
+  ],
+  [
+   "crit:NCT06997874-I05",
+   "decided_as",
+   "dec:NCT06997874:NCT06997874-I05:r1"
+  ],
+  [
+   "trial:NCT06997874",
+   "labelled",
+   "label:NCT06997874"
+  ],
+  [
+   "trial:NCT07346560",
+   "has_criterion",
+   "crit:NCT07346560-I01"
+  ],
+  [
+   "crit:NCT07346560-I01",
+   "decided_as",
+   "dec:NCT07346560:NCT07346560-I01:r1"
+  ],
+  [
+   "crit:NCT07346560-I01",
+   "requires",
+   "concept:diagnosis:rhegmatogenous retinal detachment superior bullous involving macula od"
+  ],
+  [
+   "concept:diagnosis:rhegmatogenous retinal detachment superior bullous involving macula od",
+   "observed_as",
+   "ev:SYN-0003-EV014"
+  ],
+  [
+   "ev:SYN-0003-EV014",
+   "derived_from",
+   "src:SYN-0003-D03:0-135"
+  ],
+  [
+   "ev:SYN-0003-EV014",
+   "supports",
+   "dec:NCT07346560:NCT07346560-I01:r1"
+  ],
+  [
+   "crit:NCT07346560-I01",
+   "requires",
+   "concept:diagnosis:rhegmatogenous retinal detachment od macula-involving superior horseshoe tear"
+  ],
+  [
+   "concept:diagnosis:rhegmatogenous retinal detachment od macula-involving superior horseshoe tear",
+   "observed_as",
+   "ev:SYN-0003-EV130"
+  ],
+  [
+   "ev:SYN-0003-EV130",
+   "derived_from",
+   "src:SYN-0003-D06:2859-2958"
+  ],
+  [
+   "ev:SYN-0003-EV130",
+   "supports",
+   "dec:NCT07346560:NCT07346560-I01:r1"
+  ],
+  [
+   "trial:NCT07346560",
+   "has_criterion",
+   "crit:NCT07346560-E01"
+  ],
+  [
+   "crit:NCT07346560-E01",
+   "decided_as",
+   "dec:NCT07346560:NCT07346560-E01:r1"
+  ],
+  [
+   "trial:NCT07346560",
+   "has_criterion",
+   "crit:NCT07346560-E02"
+  ],
+  [
+   "crit:NCT07346560-E02",
+   "decided_as",
+   "dec:NCT07346560:NCT07346560-E02:r1"
+  ],
+  [
+   "trial:NCT07346560",
+   "has_criterion",
+   "crit:NCT07346560-E03"
+  ],
+  [
+   "crit:NCT07346560-E03",
+   "decided_as",
+   "dec:NCT07346560:NCT07346560-E03:r1"
+  ],
+  [
+   "trial:NCT07346560",
+   "has_criterion",
+   "crit:NCT07346560-E04"
+  ],
+  [
+   "crit:NCT07346560-E04",
+   "decided_as",
+   "dec:NCT07346560:NCT07346560-E04:r1"
+  ],
+  [
+   "trial:NCT07346560",
+   "has_criterion",
+   "crit:NCT07346560-E05"
+  ],
+  [
+   "crit:NCT07346560-E05",
+   "decided_as",
+   "dec:NCT07346560:NCT07346560-E05:r1"
+  ],
+  [
+   "trial:NCT07346560",
+   "has_criterion",
+   "crit:NCT07346560-E06"
+  ],
+  [
+   "crit:NCT07346560-E06",
+   "decided_as",
+   "dec:NCT07346560:NCT07346560-E06:r1"
+  ],
+  [
+   "trial:NCT07346560",
+   "has_criterion",
+   "crit:NCT07346560-E07"
+  ],
+  [
+   "crit:NCT07346560-E07",
+   "decided_as",
+   "dec:NCT07346560:NCT07346560-E07:r1"
+  ],
+  [
+   "crit:NCT07346560-E07",
+   "requires",
+   "concept:procedure:pars plana vitrectomy with gas tamponade od"
+  ],
+  [
+   "ev:SYN-0003-EV037",
+   "supports",
+   "dec:NCT07346560:NCT07346560-E07:r1"
+  ],
+  [
+   "concept:procedure:pars plana vitrectomy with gas tamponade od",
+   "observed_as",
+   "ev:SYN-0003-EV069"
+  ],
+  [
+   "ev:SYN-0003-EV069",
+   "derived_from",
+   "src:SYN-0003-D06:1181-1237"
+  ],
+  [
+   "ev:SYN-0003-EV069",
+   "supports",
+   "dec:NCT07346560:NCT07346560-E07:r1"
+  ],
+  [
+   "trial:NCT07346560",
+   "labelled",
+   "label:NCT07346560"
+  ]
+ ]
+}

@@ -1,0 +1,5005 @@
+{
+ "patient_id": "SYN-0004",
+ "as_of": "2026-10-01",
+ "version": 1,
+ "nodes": [
+  {
+   "id": "trial:NCT07849348",
+   "kind": "trial",
+   "title": "Study on the Efficacy and Safety of Initial Combination of Finerenone and Semaglutide in Non-Diabetic Adult Patients With Obesity Complicated by Chronic Kidney Disease With Albuminuria"
+  },
+  {
+   "id": "crit:NCT07849348-I01",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "1. Age >=18 years at the time of signing the informed consent form, without gender restriction;",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07849348:NCT07849348-I01:r1",
+   "kind": "decision",
+   "trial_id": "NCT07849348",
+   "criterion_id": "NCT07849348-I01",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "age_rule"
+   ],
+   "note": "age 71.46 y vs [18.0, None]",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0004-EV002",
+   "kind": "evidence",
+   "concept": "birth_date",
+   "term": null,
+   "value": "1955-04-17",
+   "unit": null,
+   "observed_date": "2026-04-08",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:birth_date",
+   "kind": "concept",
+   "concept": "birth_date",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0004-D01:8-23",
+   "kind": "source",
+   "doc_id": "SYN-0004-D01",
+   "doc_type": "registration",
+   "span": [
+    8,
+    23
+   ],
+   "text": "DOB 1955-04-17."
+  },
+  {
+   "id": "calc:NCT07849348:NCT07849348-I01",
+   "kind": "calculation",
+   "name": "age_at_as_of",
+   "value": 71.457,
+   "lo": 18.0,
+   "hi": null
+  },
+  {
+   "id": "crit:NCT07849348-I02",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "2. Meet one of the following definitions of excess adiposity at screening: BMI >=28 kg/m^2 and waist-to-height ratio >=0.5;; Direct body fat measurement shows significantly elevated body fat percentage (>=25% for adult males and >=30% for adult females), which can be measured by bioelectrical impedance analysis (BIA), dual-energy X-ray absorptiometry (DEXA), or other methods;",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07849348:NCT07849348-I02:r1",
+   "kind": "decision",
+   "trial_id": "NCT07849348",
+   "criterion_id": "NCT07849348-I02",
+   "status": "UNKNOWN",
+   "reason": "UNSUPPORTED",
+   "action": "new_test",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "BMI 29.6 meets the BMI part, but no waist circumference or body fat measurement is recorded.",
+   "missing_fact": "Waist-to-height ratio (waist circumference) or measured body fat percentage",
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0004-EV066",
+   "kind": "evidence",
+   "concept": "bmi",
+   "term": null,
+   "value": 29.6,
+   "unit": "kg/m2",
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:bmi",
+   "kind": "concept",
+   "concept": "bmi",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0004-D07:677-692",
+   "kind": "source",
+   "doc_id": "SYN-0004-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    677,
+    692
+   ],
+   "text": "BMI 29.6 kg/m2."
+  },
+  {
+   "id": "crit:NCT07849348-I03",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "3. Clinically diagnosed with chronic kidney disease (CKD), and meet all of the following: At least 2 consecutive documented UACR values >30 mg/g within 12 weeks prior to screening; UACR ranges from 100 to 3500 mg/g (11.4-395.9 mg/mmol) at screening;; eGFR >=25 mL/min/1.73 m^2 at screening (calculated using the CKD-EPI equation);",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07849348:NCT07849348-I03:r1",
+   "kind": "decision",
+   "trial_id": "NCT07849348",
+   "criterion_id": "NCT07849348-I03",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "CKD G3b/A3 diagnosed. UACR 1120 (-35d) and 1150 (-7d) are both >30 and within 100-3500. eGFR 37 is >=25.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0004-EV146",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "CKD",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:diagnosis:ckd",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "CKD"
+  },
+  {
+   "id": "src:SYN-0004-D07:2549-2560",
+   "kind": "source",
+   "doc_id": "SYN-0004-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    2549,
+    2560
+   ],
+   "text": "CKD G3b/A3."
+  },
+  {
+   "id": "ev:SYN-0004-EV025",
+   "kind": "evidence",
+   "concept": "urine_albumin_creatinine_ratio",
+   "term": null,
+   "value": 1120,
+   "unit": "mg/g",
+   "observed_date": "2026-08-27",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:urine_albumin_creatinine_ratio",
+   "kind": "concept",
+   "concept": "urine_albumin_creatinine_ratio",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0004-D04:68-103",
+   "kind": "source",
+   "doc_id": "SYN-0004-D04",
+   "doc_type": "lab_result",
+   "span": [
+    68,
+    103
+   ],
+   "text": "urine albumin/creatinine 1,120 mg/g"
+  },
+  {
+   "id": "ev:SYN-0004-EV213",
+   "kind": "evidence",
+   "concept": "urine_albumin_creatinine_ratio",
+   "term": null,
+   "value": 1150,
+   "unit": "mg/g",
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "src:SYN-0004-D08:946-995",
+   "kind": "source",
+   "doc_id": "SYN-0004-D08",
+   "doc_type": "lab_result",
+   "span": [
+    946,
+    995
+   ],
+   "text": "Urine albumin/creatinine ratio 1,150 mg/g (<30) H"
+  },
+  {
+   "id": "ev:SYN-0004-EV199",
+   "kind": "evidence",
+   "concept": "egfr",
+   "term": null,
+   "value": 37,
+   "unit": "mL/min/1.73m2",
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:egfr",
+   "kind": "concept",
+   "concept": "egfr",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0004-D08:578-607",
+   "kind": "source",
+   "doc_id": "SYN-0004-D08",
+   "doc_type": "lab_result",
+   "span": [
+    578,
+    607
+   ],
+   "text": "eGFR 37 mL/min/1.73m2 (>60) L"
+  },
+  {
+   "id": "crit:NCT07849348-I04",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "4. Stable renal function at screening, defined as a change in eGFR of less than 30% within 12 weeks prior to screening;",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07849348:NCT07849348-I04:r1",
+   "kind": "decision",
+   "trial_id": "NCT07849348",
+   "criterion_id": "NCT07849348-I04",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "eGFR 38 (-35d) to 37 (-7d), a change of about 3%, far below 30%. Trend documented as stable.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0004-EV023",
+   "kind": "evidence",
+   "concept": "egfr",
+   "term": null,
+   "value": 38,
+   "unit": "mL/min/1.73m2",
+   "observed_date": "2026-08-27",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "src:SYN-0004-D04:23-44",
+   "kind": "source",
+   "doc_id": "SYN-0004-D04",
+   "doc_type": "lab_result",
+   "span": [
+    23,
+    44
+   ],
+   "text": "eGFR 38 mL/min/1.73m2"
+  },
+  {
+   "id": "crit:NCT07849348-I05",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "5. Voluntarily sign the informed consent form and be willing to strictly comply with all requirements and restrictions specified in the informed consent form and this protocol throughout the study period.",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07849348:NCT07849348-I05:r1",
+   "kind": "decision",
+   "trial_id": "NCT07849348",
+   "criterion_id": "NCT07849348-I05",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "admin"
+   ],
+   "note": "consent/compliance item: not decidable from the record",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07849348-E01",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "1. Known allergy to the study drug (active ingredients or excipients) or similar drugs.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07849348:NCT07849348-E01:r1",
+   "kind": "decision",
+   "trial_id": "NCT07849348",
+   "criterion_id": "NCT07849348-E01",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "NKDA documented, so no known drug allergy.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0004-EV092",
+   "kind": "evidence",
+   "concept": "allergy",
+   "term": "no known drug allergies",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:allergy:no known drug allergies",
+   "kind": "concept",
+   "concept": "allergy",
+   "term": "no known drug allergies"
+  },
+  {
+   "id": "src:SYN-0004-D07:1235-1240",
+   "kind": "source",
+   "doc_id": "SYN-0004-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    1235,
+    1240
+   ],
+   "text": "NKDA."
+  },
+  {
+   "id": "crit:NCT07849348-E02",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "2. A previous diagnosis of type 1 diabetes mellitus [including latent autoimmune diabetes in adults (LADA)], type 2 diabetes mellitus, or other types of diabetes mellitus; or HbA1c >= 6.5% or fasting blood glucose >= 7.0 mmol/L at screening.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07849348:NCT07849348-E02:r1",
+   "kind": "decision",
+   "trial_id": "NCT07849348",
+   "criterion_id": "NCT07849348-E02",
+   "status": "FAIL",
+   "reason": "VIOLATED",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Established type 2 diabetes for 22 years; HbA1c 7.3% is also >=6.5%. This is the excluding condition.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0004-EV175",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "type 2 diabetes mellitus",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:diagnosis:type 2 diabetes mellitus",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "type 2 diabetes mellitus"
+  },
+  {
+   "id": "src:SYN-0004-D07:3648-3652",
+   "kind": "source",
+   "doc_id": "SYN-0004-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    3648,
+    3652
+   ],
+   "text": "T2DM"
+  },
+  {
+   "id": "ev:SYN-0004-EV212",
+   "kind": "evidence",
+   "concept": "hba1c",
+   "term": null,
+   "value": 7.3,
+   "unit": "%",
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:hba1c",
+   "kind": "concept",
+   "concept": "hba1c",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0004-D08:923-945",
+   "kind": "source",
+   "doc_id": "SYN-0004-D08",
+   "doc_type": "lab_result",
+   "span": [
+    923,
+    945
+   ],
+   "text": "HbA1c 7.3% (4.0-5.6) H"
+  },
+  {
+   "id": "crit:NCT07849348-E03",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "3. Serum potassium > 5 mmol/L at screening.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07849348:NCT07849348-E03:r1",
+   "kind": "decision",
+   "trial_id": "NCT07849348",
+   "criterion_id": "NCT07849348-E03",
+   "status": "FAIL",
+   "reason": "VIOLATED",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "structured_numeric"
+   ],
+   "note": "potassium = 5.2 mmol/L (2026-09-24, -7d) vs > 5 -> met",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0004-EV163",
+   "kind": "evidence",
+   "concept": "potassium",
+   "term": null,
+   "value": 5.2,
+   "unit": "mmol/L",
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:potassium",
+   "kind": "concept",
+   "concept": "potassium",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0004-D07:3130-3177",
+   "kind": "source",
+   "doc_id": "SYN-0004-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    3130,
+    3177
+   ],
+   "text": "K 5.2, still borderline, so finerenone deferred"
+  },
+  {
+   "id": "calc:NCT07849348:NCT07849348-E03",
+   "kind": "calculation",
+   "concept": "potassium",
+   "operator": ">",
+   "threshold": 5,
+   "unit": "mmol/L",
+   "value": 5.2,
+   "value_unit": "mmol/L",
+   "observed_date": "2026-09-24",
+   "days_before": 7,
+   "note": "potassium = 5.2 mmol/L (2026-09-24, -7d) vs > 5 -> met"
+  },
+  {
+   "id": "crit:NCT07849348-E04",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "4. Patients with chronic kidney disease (CKD) requiring hormonal or immunosuppressant therapy within 6 months prior to screening.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07849348:NCT07849348-E04:r1",
+   "kind": "decision",
+   "trial_id": "NCT07849348",
+   "criterion_id": "NCT07849348-E04",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_history_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "list_inference",
+    "pc:strict_list_inference"
+   ],
+   "note": "[inferable PASS from SYN-0004-EV093] Reconciled medication list has no corticosteroid or immunosuppressant. Insulin is for diabetes, not CKD. No autoimmune history.",
+   "missing_fact": null,
+   "derived_from": "SYN-0004-EV093"
+  },
+  {
+   "id": "crit:NCT07849348-E05",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "5. Mean blood pressure > 160/100 mmHg or mean systolic blood pressure < 90 mmHg at screening.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07849348:NCT07849348-E05:r1",
+   "kind": "decision",
+   "trial_id": "NCT07849348",
+   "criterion_id": "NCT07849348-E05",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "BP 144/80 (-7d) and 148/82 earlier: not >160/100 and systolic not <90.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0004-EV248",
+   "kind": "evidence",
+   "concept": "systolic_bp",
+   "term": null,
+   "value": 144,
+   "unit": "mmHg",
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:systolic_bp",
+   "kind": "concept",
+   "concept": "systolic_bp",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0004-D07:693-728",
+   "kind": "source",
+   "doc_id": "SYN-0004-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    693,
+    728
+   ],
+   "text": "BP 144/80 mmHg (right arm, seated)."
+  },
+  {
+   "id": "ev:SYN-0004-EV249",
+   "kind": "evidence",
+   "concept": "diastolic_bp",
+   "term": null,
+   "value": 80,
+   "unit": "mmHg",
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:diastolic_bp",
+   "kind": "concept",
+   "concept": "diastolic_bp",
+   "term": null
+  },
+  {
+   "id": "crit:NCT07849348-E06",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "6. History of renal transplantation, or acute kidney injury requiring dialysis within 24 weeks prior to the screening visit.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07849348:NCT07849348-E06:r1",
+   "kind": "decision",
+   "trial_id": "NCT07849348",
+   "criterion_id": "NCT07849348-E06",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_record_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "normal_finding_inference",
+    "pc:strict_normal_finding_inference"
+   ],
+   "note": "[inferable PASS from normal findings] No renal surgery, no hospital stays, and eGFR stable 37-38 since April make a transplant or dialysis-requiring AKI unlikely. Dialysis is not explicitly denied.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07849348-E07",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "7. Occurrence of any acute cardiovascular or cerebrovascular events within 12 weeks prior to screening, including decompensated heart failure, myocardial infarction, stroke, transient ischemic attack, pulmonary embolism, elective percutaneous coronary intervention, or coronary artery bypass grafting.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07849348:NCT07849348-E07:r1",
+   "kind": "decision",
+   "trial_id": "NCT07849348",
+   "criterion_id": "NCT07849348-E07",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_record_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "normal_finding_inference",
+    "pc:strict_normal_finding_inference"
+   ],
+   "note": "[inferable PASS from normal findings] Stroke, MI and heart failure explicitly denied. No hospital stays or recent admissions, so no acute event in 12 weeks. TIA, PE, PCI and CABG are not individually denied.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07849348-E08",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "8. Prior treatment with mineralocorticoid receptor antagonists (MRAs) (e.g., finerenone, eplerenone, esaxerenone, spironolactone, canrenone) or renin inhibitors within 8 weeks prior to screening.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07849348:NCT07849348-E08:r1",
+   "kind": "decision",
+   "trial_id": "NCT07849348",
+   "criterion_id": "NCT07849348-E08",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_history_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "list_inference",
+    "pc:strict_list_inference"
+   ],
+   "note": "[inferable PASS from SYN-0004-EV093] Reconciled list has no MRA or renin inhibitor. Finerenone was only discussed and deferred, which is a plan and not a treatment received.",
+   "missing_fact": null,
+   "derived_from": "SYN-0004-EV093"
+  },
+  {
+   "id": "crit:NCT07849348-E09",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "9. Prior treatment with glucagon-like peptide-1 receptor agonists (GLP-1RAs) within 8 weeks prior to screening.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07849348:NCT07849348-E09:r1",
+   "kind": "decision",
+   "trial_id": "NCT07849348",
+   "criterion_id": "NCT07849348-E09",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_history_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "list_inference",
+    "pc:strict_list_inference"
+   ],
+   "note": "[inferable PASS from SYN-0004-EV093] Reconciled medication list contains no GLP-1 receptor agonist.",
+   "missing_fact": null,
+   "derived_from": "SYN-0004-EV093"
+  },
+  {
+   "id": "crit:NCT07849348-E10",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "10. Ongoing or planned treatment with potassium supplements, potassium-sparing diuretics (e.g., amiloride, triamterene), or potassium-binding agents within 8 weeks prior to screening.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07849348:NCT07849348-E10:r1",
+   "kind": "decision",
+   "trial_id": "NCT07849348",
+   "criterion_id": "NCT07849348-E10",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_history_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "list_inference",
+    "pc:strict_list_inference"
+   ],
+   "note": "[inferable PASS from SYN-0004-EV093] No potassium supplement, potassium-sparing diuretic or binder on the reconciled list. Furosemide is a loop diuretic. Only low-potassium diet counseling is planned.",
+   "missing_fact": null,
+   "derived_from": "SYN-0004-EV093"
+  },
+  {
+   "id": "crit:NCT07849348-E11",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "11. Use of traditional Chinese medicines that may affect urinary protein excretion.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07849348:NCT07849348-E11:r1",
+   "kind": "decision",
+   "trial_id": "NCT07849348",
+   "criterion_id": "NCT07849348-E11",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_history_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "list_inference",
+    "pc:strict_list_inference"
+   ],
+   "note": "[inferable PASS from SYN-0004-EV093] Reconciled medication list shows no traditional Chinese medicine.",
+   "missing_fact": null,
+   "derived_from": "SYN-0004-EV093"
+  },
+  {
+   "id": "crit:NCT07849348-E12",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "12. Receiving continuous treatment with strong CYP3A4 inhibitors (e.g., itraconazole, clarithromycin, ketoconazole, ritonavir, nelfinavir, cobicistat, telithromycin, nefazodone), strong CYP3A4 inducers (e.g., carbamazepine, phenytoin, phenobarbital, St. John's wort), or moderate CYP3A4 inducers (e.g., efavirenz) that cannot be discontinued, with no drug washout for at least 7 days prior to randomization.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07849348:NCT07849348-E12:r1",
+   "kind": "decision",
+   "trial_id": "NCT07849348",
+   "criterion_id": "NCT07849348-E12",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_history_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "list_inference",
+    "pc:strict_list_inference"
+   ],
+   "note": "[inferable PASS from SYN-0004-EV093] Reconciled list (insulin, ramipril, furosemide, amlodipine, ferrous sulfate) has no strong CYP3A4 inhibitor or inducer.",
+   "missing_fact": null,
+   "derived_from": "SYN-0004-EV093"
+  },
+  {
+   "id": "crit:NCT07849348-E13",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "13. Hepatic insufficiency (Child-Pugh Class C).",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07849348:NCT07849348-E13:r1",
+   "kind": "decision",
+   "trial_id": "NCT07849348",
+   "criterion_id": "NCT07849348-E13",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation"
+   ],
+   "note": "No hepatic history; AST, ALT, bilirubin, albumin and INR are normal, so no Child-Pugh C.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0004-EV080",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "other hepatic history",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:other hepatic history",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "other hepatic history"
+  },
+  {
+   "id": "src:SYN-0004-D07:1012-1083",
+   "kind": "source",
+   "doc_id": "SYN-0004-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    1012,
+    1083
+   ],
+   "text": "No other cardiac, pulmonary, hepatic, autoimmune or neurologic history."
+  },
+  {
+   "id": "ev:SYN-0004-EV206",
+   "kind": "evidence",
+   "concept": "ast",
+   "term": null,
+   "value": 22,
+   "unit": "U/L",
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:ast",
+   "kind": "concept",
+   "concept": "ast",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0004-D08:794-812",
+   "kind": "source",
+   "doc_id": "SYN-0004-D08",
+   "doc_type": "lab_result",
+   "span": [
+    794,
+    812
+   ],
+   "text": "AST 22 U/L (10-35)"
+  },
+  {
+   "id": "ev:SYN-0004-EV209",
+   "kind": "evidence",
+   "concept": "bilirubin_total",
+   "term": null,
+   "value": 0.5,
+   "unit": "mg/dL",
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:bilirubin_total",
+   "kind": "concept",
+   "concept": "bilirubin_total",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0004-D08:868-903",
+   "kind": "source",
+   "doc_id": "SYN-0004-D08",
+   "doc_type": "lab_result",
+   "span": [
+    868,
+    903
+   ],
+   "text": "Total bilirubin 0.5 mg/dL (0.2-1.2)"
+  },
+  {
+   "id": "crit:NCT07849348-E14",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "14. Addison's disease.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07849348:NCT07849348-E14:r1",
+   "kind": "decision",
+   "trial_id": "NCT07849348",
+   "criterion_id": "NCT07849348-E14",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_record_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Addison's disease is not mentioned. The blanket negation does not clearly cover an endocrine disease.",
+   "missing_fact": "Whether the patient has an adrenal insufficiency (Addison's) diagnosis",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07849348-E15",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "15. Symptomatic heart failure with reduced ejection fraction that requires MRA administration as standard therapy.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07849348:NCT07849348-E15:r1",
+   "kind": "decision",
+   "trial_id": "NCT07849348",
+   "criterion_id": "NCT07849348-E15",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Heart failure explicitly denied, so no HFrEF.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0004-EV086",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "heart failure",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:heart failure",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "heart failure"
+  },
+  {
+   "id": "src:SYN-0004-D07:1105-1147",
+   "kind": "source",
+   "doc_id": "SYN-0004-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    1105,
+    1147
+   ],
+   "text": "No history of stroke, MI or heart failure."
+  },
+  {
+   "id": "crit:NCT07849348-E16",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "16. Uncontrolled thyroid disease at screening (defined as TSH > 6.0 mIU/L or < 0.4 mIU/L), personal or family history of medullary thyroid carcinoma, or diagnosis of multiple endocrine neoplasia type 2 syndrome.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07849348:NCT07849348-E16:r1",
+   "kind": "decision",
+   "trial_id": "NCT07849348",
+   "criterion_id": "NCT07849348-E16",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "TSH 2.4 is normal and personal malignancy is denied, but family MTC history and MEN2 are not addressed.",
+   "missing_fact": "Family history of medullary thyroid carcinoma and any MEN2 diagnosis",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07849348-E17",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "17. History of acute pancreatitis within 24 weeks prior to screening, or current chronic pancreatitis.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07849348:NCT07849348-E17:r1",
+   "kind": "decision",
+   "trial_id": "NCT07849348",
+   "criterion_id": "NCT07849348-E17",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Pancreatitis is not mentioned. GI history is not covered by any blanket negation.",
+   "missing_fact": "History of acute or chronic pancreatitis",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07849348-E18",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "18. Participation in any other interventional clinical trial or use of any investigational product within 12 weeks prior to randomization.",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07849348:NCT07849348-E18:r1",
+   "kind": "decision",
+   "trial_id": "NCT07849348",
+   "criterion_id": "NCT07849348-E18",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "admin"
+   ],
+   "note": "consent/compliance item: not decidable from the record",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07849348-E19",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "19. History of alcohol or substance abuse.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07849348:NCT07849348-E19:r1",
+   "kind": "decision",
+   "trial_id": "NCT07849348",
+   "criterion_id": "NCT07849348-E19",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Record states no alcohol and no recreational substances.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0004-EV102",
+   "kind": "evidence",
+   "concept": "alcohol",
+   "term": "alcohol",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:alcohol:alcohol",
+   "kind": "concept",
+   "concept": "alcohol",
+   "term": "alcohol"
+  },
+  {
+   "id": "src:SYN-0004-D07:1648-1659",
+   "kind": "source",
+   "doc_id": "SYN-0004-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    1648,
+    1659
+   ],
+   "text": "No alcohol."
+  },
+  {
+   "id": "ev:SYN-0004-EV103",
+   "kind": "evidence",
+   "concept": "substance_use",
+   "term": "recreational substances",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:substance_use:recreational substances",
+   "kind": "concept",
+   "concept": "substance_use",
+   "term": "recreational substances"
+  },
+  {
+   "id": "src:SYN-0004-D07:1660-1687",
+   "kind": "source",
+   "doc_id": "SYN-0004-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    1660,
+    1687
+   ],
+   "text": "No recreational substances."
+  },
+  {
+   "id": "crit:NCT07849348-E20",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "20. Females of childbearing potential who are pregnant, breastfeeding, intend to become pregnant during the study period, or fail to adopt effective contraceptive measures.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07849348:NCT07849348-E20:r1",
+   "kind": "decision",
+   "trial_id": "NCT07849348",
+   "criterion_id": "NCT07849348-E20",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "71-year-old woman, not of childbearing potential, so the condition cannot apply.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0004-EV242",
+   "kind": "evidence",
+   "concept": "age",
+   "term": null,
+   "value": 71,
+   "unit": "years",
+   "observed_date": "2026-10-01",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:age",
+   "kind": "concept",
+   "concept": "age",
+   "term": null
+  },
+  {
+   "id": "ev:SYN-0004-EV001",
+   "kind": "evidence",
+   "concept": "sex",
+   "term": null,
+   "value": "female",
+   "unit": null,
+   "observed_date": "2026-04-08",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:sex",
+   "kind": "concept",
+   "concept": "sex",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0004-D01:0-7",
+   "kind": "source",
+   "doc_id": "SYN-0004-D01",
+   "doc_type": "registration",
+   "span": [
+    0,
+    7
+   ],
+   "text": "Female."
+  },
+  {
+   "id": "crit:NCT07849348-E21",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "21. Any other medical conditions that, in the investigator's judgment, may interfere with the efficacy or safety assessment of the study and make the subject inappropriate for study participation.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07849348:NCT07849348-E21:r1",
+   "kind": "decision",
+   "trial_id": "NCT07849348",
+   "criterion_id": "NCT07849348-E21",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Investigator-judgment criterion with no documented problem; needs clinician confirmation.",
+   "missing_fact": "Investigator's judgment on any interfering condition",
+   "derived_from": null
+  },
+  {
+   "id": "label:NCT07849348",
+   "kind": "trial_decision",
+   "label": "ineligible",
+   "why": [
+    "FAIL NCT07849348-E02",
+    "FAIL NCT07849348-E03"
+   ],
+   "by": "agent3"
+  },
+  {
+   "id": "trial:NCT06110130",
+   "kind": "trial",
+   "title": "Effect of Empagliflozin on Podocyte Specific Proteins in African American Veterans With NDKD"
+  },
+  {
+   "id": "crit:NCT06110130-I01",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "African American veterans",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06110130:NCT06110130-I01:r1",
+   "kind": "decision",
+   "trial_id": "NCT06110130",
+   "criterion_id": "NCT06110130-I01",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Race and veteran status not recorded; the patient is Korean-national and retired, which does not settle either.",
+   "missing_fact": "Whether the patient is African American and a veteran",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06110130-I02",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Age > 18 years",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06110130:NCT06110130-I02:r1",
+   "kind": "decision",
+   "trial_id": "NCT06110130",
+   "criterion_id": "NCT06110130-I02",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "age_rule"
+   ],
+   "note": "age 71.46 y vs [18.0, None]",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "calc:NCT06110130:NCT06110130-I02",
+   "kind": "calculation",
+   "name": "age_at_as_of",
+   "value": 71.457,
+   "lo": 18.0,
+   "hi": null
+  },
+  {
+   "id": "crit:NCT06110130-I03",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "eGFR >=20-59 mL/min/1.73 m2 by the CKD-EPI equation, with or without any degree of albuminuria OR",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06110130:NCT06110130-I03:r1",
+   "kind": "decision",
+   "trial_id": "NCT06110130",
+   "criterion_id": "NCT06110130-I03",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "structured_numeric"
+   ],
+   "note": "egfr = 38 mL/min/1.73m2 (2026-08-27, -35d) vs between [20, 59] -> met",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "calc:NCT06110130:NCT06110130-I03",
+   "kind": "calculation",
+   "concept": "egfr",
+   "operator": "between",
+   "threshold": [
+    20,
+    59
+   ],
+   "unit": "mL/min/1.73m2",
+   "value": 38,
+   "value_unit": "mL/min/1.73m2",
+   "observed_date": "2026-08-27",
+   "days_before": 35,
+   "note": "egfr = 38 mL/min/1.73m2 (2026-08-27, -35d) vs between [20, 59] -> met"
+  },
+  {
+   "id": "crit:NCT06110130-I04",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "eGFR 60-89, with UACR of >=30mg/g",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06110130:NCT06110130-I04:r1",
+   "kind": "decision",
+   "trial_id": "NCT06110130",
+   "criterion_id": "NCT06110130-I04",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Option in OR-group with I03 (eGFR 20-59); eGFR 37 matches the alternative, so this option need not be met.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06110130-I05",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "BMI = 18-39.9",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06110130:NCT06110130-I05:r1",
+   "kind": "decision",
+   "trial_id": "NCT06110130",
+   "criterion_id": "NCT06110130-I05",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "structured_numeric"
+   ],
+   "note": "bmi = 29.6 kg/m2 (2026-09-24, -7d) vs between [18, 39.9] -> met",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "calc:NCT06110130:NCT06110130-I05",
+   "kind": "calculation",
+   "concept": "bmi",
+   "operator": "between",
+   "threshold": [
+    18,
+    39.9
+   ],
+   "unit": null,
+   "value": 29.6,
+   "value_unit": "kg/m2",
+   "observed_date": "2026-09-24",
+   "days_before": 7,
+   "note": "bmi = 29.6 kg/m2 (2026-09-24, -7d) vs between [18, 39.9] -> met"
+  },
+  {
+   "id": "crit:NCT06110130-I06",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Blood pressure controlled to <=140/90",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06110130:NCT06110130-I06:r1",
+   "kind": "decision",
+   "trial_id": "NCT06110130",
+   "criterion_id": "NCT06110130-I06",
+   "status": "UNKNOWN",
+   "reason": "UNSUPPORTED",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Latest BP 144/80 is above 140 systolic, but the record says 'HTN above goal'; CODE CHECK alone is not FAIL, so confirm.",
+   "missing_fact": "Whether BP is controlled to <=140/90 as defined by the study",
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0004-EV167",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "hypertension",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:diagnosis:hypertension",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "hypertension"
+  },
+  {
+   "id": "src:SYN-0004-D07:3379-3402",
+   "kind": "source",
+   "doc_id": "SYN-0004-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    3379,
+    3402
+   ],
+   "text": "HTN above goal (144/80)"
+  },
+  {
+   "id": "crit:NCT06110130-I08",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Ability to provide informed consent before any trial related activities are conducted.",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06110130:NCT06110130-I08:r1",
+   "kind": "decision",
+   "trial_id": "NCT06110130",
+   "criterion_id": "NCT06110130-I08",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "admin"
+   ],
+   "note": "consent/compliance item: not decidable from the record",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06110130-E01",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Diagnosed with Type 1 or Type 2 Diabetes Mellitus",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06110130:NCT06110130-E01:r1",
+   "kind": "decision",
+   "trial_id": "NCT06110130",
+   "criterion_id": "NCT06110130-E01",
+   "status": "FAIL",
+   "reason": "VIOLATED",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Current type 2 diabetes mellitus diagnosed for 22 years.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0004-EV046",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "T2DM",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:diagnosis:t2dm",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "T2DM"
+  },
+  {
+   "id": "src:SYN-0004-D07:139-170",
+   "kind": "source",
+   "doc_id": "SYN-0004-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    139,
+    170
+   ],
+   "text": "71 y/o woman with T2DM x 22 yrs"
+  },
+  {
+   "id": "crit:NCT06110130-E02",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Any prescribed diabetes medication for patients, such as GLP1RA, SGLT2is, and sulphonylureas",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06110130:NCT06110130-E02:r1",
+   "kind": "decision",
+   "trial_id": "NCT06110130",
+   "criterion_id": "NCT06110130-E02",
+   "status": "FAIL",
+   "reason": "VIOLATED",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Current insulin glargine is a prescribed diabetes medication; a reasonable reading of 'any prescribed diabetes medication' covers it.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0004-EV094",
+   "kind": "evidence",
+   "concept": "medication",
+   "term": "insulin glargine 24 U daily",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:medication:insulin glargine 24 u daily",
+   "kind": "concept",
+   "concept": "medication",
+   "term": "insulin glargine 24 U daily"
+  },
+  {
+   "id": "src:SYN-0004-D07:1270-1313",
+   "kind": "source",
+   "doc_id": "SYN-0004-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    1270,
+    1313
+   ],
+   "text": "Insulin glargine 24 U SC daily (since 2013)"
+  },
+  {
+   "id": "ev:SYN-0004-EV178",
+   "kind": "evidence",
+   "concept": "medication",
+   "term": "glargine 24 U",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:medication:glargine 24 u",
+   "kind": "concept",
+   "concept": "medication",
+   "term": "glargine 24 U"
+  },
+  {
+   "id": "src:SYN-0004-D07:3675-3714",
+   "kind": "source",
+   "doc_id": "SYN-0004-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    3675,
+    3714
+   ],
+   "text": "continue glargine 24 U. Lipids reviewed"
+  },
+  {
+   "id": "crit:NCT06110130-E03",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "If a patient is on statin, need to be on a stable dose for a month.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06110130:NCT06110130-E03:r1",
+   "kind": "decision",
+   "trial_id": "NCT06110130",
+   "criterion_id": "NCT06110130-E03",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_history_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "list_inference",
+    "pc:strict_list_inference"
+   ],
+   "note": "[inferable PASS from SYN-0004-EV093] Reconciled medication list has no statin; statin only planned for discussion. The criterion applies only to patients on statin.",
+   "missing_fact": null,
+   "derived_from": "SYN-0004-EV093"
+  },
+  {
+   "id": "crit:NCT06110130-E04",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Biopsy proven diagnosis of glomerular disease/glomerulonephritis",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06110130:NCT06110130-E04:r1",
+   "kind": "decision",
+   "trial_id": "NCT06110130",
+   "criterion_id": "NCT06110130-E04",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_record_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No renal biopsy done (EV091), but no explicit negation of a glomerular diagnosis; the kidney disease is labelled diabetic.",
+   "missing_fact": "Whether a glomerular disease was biopsy-proven",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06110130-E05",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Active smokers,",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06110130:NCT06110130-E05:r1",
+   "kind": "decision",
+   "trial_id": "NCT06110130",
+   "criterion_id": "NCT06110130-E05",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Never smoker, 0 pack-years.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0004-EV101",
+   "kind": "evidence",
+   "concept": "smoking",
+   "term": "smoker",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:smoking:smoker",
+   "kind": "concept",
+   "concept": "smoking",
+   "term": "smoker"
+  },
+  {
+   "id": "src:SYN-0004-D07:1619-1647",
+   "kind": "source",
+   "doc_id": "SYN-0004-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    1619,
+    1647
+   ],
+   "text": "Never smoker (0 pack-years)."
+  },
+  {
+   "id": "crit:NCT06110130-E06",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Active skin wounds undergoing treatment or recent surgery within 1 month (due to possible aberrations in glycemic control)",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06110130:NCT06110130-E06:r1",
+   "kind": "decision",
+   "trial_id": "NCT06110130",
+   "criterion_id": "NCT06110130-E06",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "The skin exam shows no rash and the feet are intact, but there is no explicit wound statement. Recent surgery is excluded: the only surgeries are from 1975 and 2009.",
+   "missing_fact": "Presence of active skin wounds under treatment",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06110130-E07",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Women who are pregnant, planning to become pregnant, nursing mothers, women of childbearing potential not using birth control measure",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06110130:NCT06110130-E07:r1",
+   "kind": "decision",
+   "trial_id": "NCT06110130",
+   "criterion_id": "NCT06110130-E07",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "impossible_condition"
+   ],
+   "note": "71-year-old woman is postmenopausal age; pregnancy and childbearing potential are not realistic.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06110130-E08",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Hypersensitivity to empagliflozin or any of the excipients in Jardiance, reactions such as angioedema",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06110130:NCT06110130-E08:r1",
+   "kind": "decision",
+   "trial_id": "NCT06110130",
+   "criterion_id": "NCT06110130-E08",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "NKDA stated; empagliflozin stopped for mycotic infections, not allergy. Excipient allergy is not explicitly excluded, so a patient check is needed.",
+   "missing_fact": "Hypersensitivity to empagliflozin or Jardiance excipients",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06110130-E09",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Patients on dialysis",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06110130:NCT06110130-E09:r1",
+   "kind": "decision",
+   "trial_id": "NCT06110130",
+   "criterion_id": "NCT06110130-E09",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No dialysis mentioned; stable eGFR 37 and no renal replacement documented, but absence is not stated.",
+   "missing_fact": "Whether the patient is on dialysis",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06110130-E10",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "eGFR less than 20 mL/min/1.73 m2 by the CKD-EPI equation",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06110130:NCT06110130-E10:r1",
+   "kind": "decision",
+   "trial_id": "NCT06110130",
+   "criterion_id": "NCT06110130-E10",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "structured_numeric"
+   ],
+   "note": "egfr = 38 mL/min/1.73m2 (2026-08-27, -35d) vs < 20 -> not met",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "calc:NCT06110130:NCT06110130-E10",
+   "kind": "calculation",
+   "concept": "egfr",
+   "operator": "<",
+   "threshold": 20,
+   "unit": "mL/min/1.73m2",
+   "value": 38,
+   "value_unit": "mL/min/1.73m2",
+   "observed_date": "2026-08-27",
+   "days_before": 35,
+   "note": "egfr = 38 mL/min/1.73m2 (2026-08-27, -35d) vs < 20 -> not met"
+  },
+  {
+   "id": "crit:NCT06110130-E11",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Planned surgery or planned hospital admission within 5 months of participation in the study",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06110130:NCT06110130-E11:r1",
+   "kind": "decision",
+   "trial_id": "NCT06110130",
+   "criterion_id": "NCT06110130-E11",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No plans documented; only IV iron is 'considered' and past admissions are denied. Future plans are not addressed.",
+   "missing_fact": "Any planned surgery or hospital admission within 5 months",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06110130-E12",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "At the discretion of PI to ensure health, safety, and well-being of the veteran, participation in this study may be stopped (please see withdrawal criteria)",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06110130:NCT06110130-E12:r1",
+   "kind": "decision",
+   "trial_id": "NCT06110130",
+   "criterion_id": "NCT06110130-E12",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Investigator-discretion criterion with no documented problem.",
+   "missing_fact": "PI judgment on safety",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06110130-E13",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Patients with prior history of diagnosis of heart failure with documented EF of less than 50.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06110130:NCT06110130-E13:r1",
+   "kind": "decision",
+   "trial_id": "NCT06110130",
+   "criterion_id": "NCT06110130-E13",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Explicit 'no history of heart failure', so there is no HF with EF<50.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06110130-E14",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Proven diagnosis of Polycystic Kidney Disease.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06110130:NCT06110130-E14:r1",
+   "kind": "decision",
+   "trial_id": "NCT06110130",
+   "criterion_id": "NCT06110130-E14",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_record_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "US shows small echogenic kidneys, no obstruction, which argues against PKD, but there is no explicit negation or cyst mention.",
+   "missing_fact": "Explicit absence of polycystic kidney disease",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06110130-I07",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Subjects without diabetes: will be screened using routine glucose level test: of less than 126 fasting glucose or less than 200mg/dl of random or post glucose blood glucose level in standard of care laboratory workup.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06110130:NCT06110130-I07:r1",
+   "kind": "decision",
+   "trial_id": "NCT06110130",
+   "criterion_id": "NCT06110130-I07",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": false,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Applies only to subjects without diabetes; patient has T2DM, so this item does not apply.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "label:NCT06110130",
+   "kind": "trial_decision",
+   "label": "ineligible",
+   "why": [
+    "FAIL NCT06110130-E01",
+    "FAIL NCT06110130-E02"
+   ],
+   "by": "agent3"
+  },
+  {
+   "id": "trial:NCT06600412",
+   "kind": "trial",
+   "title": "The Evaluation of the Drug R3R01 for the Excretion of Protein in the Urine in Patients With Diabetic Kidney Disease."
+  },
+  {
+   "id": "crit:NCT06600412-I01",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Adults (above 18 years of age) with controlled type 2 diabetes (hemoglobin A1c less than 10.5%).",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06600412:NCT06600412-I01:r1",
+   "kind": "decision",
+   "trial_id": "NCT06600412",
+   "criterion_id": "NCT06600412-I01",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Age 71, T2DM, HbA1c 7.3% (<10.5%) 7 days ago.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0004-EV044",
+   "kind": "evidence",
+   "concept": "age",
+   "term": null,
+   "value": 71,
+   "unit": "years",
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "crit:NCT06600412-I02",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Stable antihypertensive treatment 4 weeks before start of study drug and throughout study duration.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06600412:NCT06600412-I02:r1",
+   "kind": "decision",
+   "trial_id": "NCT06600412",
+   "criterion_id": "NCT06600412-I02",
+   "status": "UNKNOWN",
+   "reason": "UNSUPPORTED",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Ramipril since 2010, amlodipine since 2015, but she skips furosemide; BP above goal; stability not confirmed.",
+   "missing_fact": "Confirmation that antihypertensive regimen has been stable for at least 4 weeks, given furosemide non-adherence",
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0004-EV095",
+   "kind": "evidence",
+   "concept": "medication",
+   "term": "ramipril 10 mg daily",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:medication:ramipril 10 mg daily",
+   "kind": "concept",
+   "concept": "medication",
+   "term": "ramipril 10 mg daily"
+  },
+  {
+   "id": "src:SYN-0004-D07:1316-1352",
+   "kind": "source",
+   "doc_id": "SYN-0004-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    1316,
+    1352
+   ],
+   "text": "Ramipril 10 mg PO daily (since 2010)"
+  },
+  {
+   "id": "ev:SYN-0004-EV098",
+   "kind": "evidence",
+   "concept": "medication",
+   "term": "Amlodipine",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:medication:amlodipine",
+   "kind": "concept",
+   "concept": "medication",
+   "term": "Amlodipine"
+  },
+  {
+   "id": "src:SYN-0004-D07:1427-1465",
+   "kind": "source",
+   "doc_id": "SYN-0004-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    1427,
+    1465
+   ],
+   "text": "Amlodipine 10 mg PO daily (since 2015)"
+  },
+  {
+   "id": "ev:SYN-0004-EV096",
+   "kind": "evidence",
+   "concept": "medication",
+   "term": "Furosemide",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:medication:furosemide",
+   "kind": "concept",
+   "concept": "medication",
+   "term": "furosemide"
+  },
+  {
+   "id": "src:SYN-0004-D07:1355-1393",
+   "kind": "source",
+   "doc_id": "SYN-0004-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    1355,
+    1393
+   ],
+   "text": "Furosemide 40 mg PO daily (since 2022)"
+  },
+  {
+   "id": "ev:SYN-0004-EV058",
+   "kind": "evidence",
+   "concept": "medication",
+   "term": "furosemide",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-24",
+   "certainty": "reported",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "src:SYN-0004-D07:451-504",
+   "kind": "source",
+   "doc_id": "SYN-0004-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    451,
+    504
+   ],
+   "text": "Admits she sometimes skips furosemide when going out."
+  },
+  {
+   "id": "crit:NCT06600412-I03",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Titrated to the maximal dose or maximal tolerated dose of renin-angiotensin blocking treatment.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06600412:NCT06600412-I03:r1",
+   "kind": "decision",
+   "trial_id": "NCT06600412",
+   "criterion_id": "NCT06600412-I03",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Current max-dose ramipril (RAS blocker) documented.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0004-EV051",
+   "kind": "evidence",
+   "concept": "medication",
+   "term": "ramipril max-dose",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:medication:ramipril max-dose",
+   "kind": "concept",
+   "concept": "medication",
+   "term": "ramipril max-dose"
+  },
+  {
+   "id": "src:SYN-0004-D07:205-300",
+   "kind": "source",
+   "doc_id": "SYN-0004-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    205,
+    300
+   ],
+   "text": "Albuminuria has risen despite max-dose ramipril (UACR 980 -> 1,120 mg/g). eGFR stable at 37-38."
+  },
+  {
+   "id": "crit:NCT06600412-I04",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Stable treatment with lipid lowering agents for at least 4 weeks.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06600412:NCT06600412-I04:r1",
+   "kind": "decision",
+   "trial_id": "NCT06600412",
+   "criterion_id": "NCT06600412-I04",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_history_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Statin only planned for discussion; not a current treatment. Reconciled list shows none, but criterion may be optional.",
+   "missing_fact": "Whether patient is on any lipid-lowering agent stable for 4 weeks",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06600412-I05",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "People on SGLT2-Inhibitors should be on a stable dose of the drug for at least 3 months.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06600412:NCT06600412-I05:r1",
+   "kind": "decision",
+   "trial_id": "NCT06600412",
+   "criterion_id": "NCT06600412-I05",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_history_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "list_inference",
+    "pc:strict_list_inference"
+   ],
+   "note": "[inferable PASS from SYN-0004-EV093] Empagliflozin stopped 2025; reconciled list has no SGLT2 inhibitor, so condition applies only to those on one; not on one.",
+   "missing_fact": null,
+   "derived_from": "SYN-0004-EV093"
+  },
+  {
+   "id": "crit:NCT06600412-I06",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "UACR >30 mg/g and < 5000 mg/g on two consecutive measurements.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06600412:NCT06600412-I06:r1",
+   "kind": "decision",
+   "trial_id": "NCT06600412",
+   "criterion_id": "NCT06600412-I06",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "UACR 1120 (Aug) then 1150 (Sep), both within 30-5000 mg/g.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0004-EV256",
+   "kind": "evidence",
+   "concept": "urine_albumin_creatinine_ratio",
+   "term": null,
+   "value": 1150,
+   "unit": "mg/g",
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "src:SYN-0004-D07:2687-2747",
+   "kind": "source",
+   "doc_id": "SYN-0004-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    2687,
+    2747
+   ],
+   "text": "UACR 980 -> 1,120 -> 1,150 mg/g (04/2026, 08/2026, 09/2026)."
+  },
+  {
+   "id": "crit:NCT06600412-I07",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "eGFR >30 ml/min/1.73 m2 (CKD-EPIcrea formula).",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06600412:NCT06600412-I07:r1",
+   "kind": "decision",
+   "trial_id": "NCT06600412",
+   "criterion_id": "NCT06600412-I07",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "structured_numeric"
+   ],
+   "note": "egfr = 38 mL/min/1.73m2 (2026-08-27, -35d) vs > 30 -> met",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "calc:NCT06600412:NCT06600412-I07",
+   "kind": "calculation",
+   "concept": "egfr",
+   "operator": ">",
+   "threshold": 30,
+   "unit": "mL/min/1.73m2",
+   "value": 38,
+   "value_unit": "mL/min/1.73m2",
+   "observed_date": "2026-08-27",
+   "days_before": 35,
+   "note": "egfr = 38 mL/min/1.73m2 (2026-08-27, -35d) vs > 30 -> met"
+  },
+  {
+   "id": "crit:NCT06600412-I08",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Abdominal obesity Women: > 80 cm, Men: > 95 cm or fasting triglyceride >2.0 mmol/l.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06600412:NCT06600412-I08:r1",
+   "kind": "decision",
+   "trial_id": "NCT06600412",
+   "criterion_id": "NCT06600412-I08",
+   "status": "UNKNOWN",
+   "reason": "UNSUPPORTED",
+   "action": "new_test",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Triglycerides 150 mg/dL (~1.7 mmol/L) not >2.0; BMI 29.6 but no waist measurement documented.",
+   "missing_fact": "Waist circumference (>80 cm for women)",
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0004-EV224",
+   "kind": "evidence",
+   "concept": "triglycerides",
+   "term": null,
+   "value": 150,
+   "unit": "mg/dL",
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:triglycerides",
+   "kind": "concept",
+   "concept": "triglycerides",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0004-D08:1261-1291",
+   "kind": "source",
+   "doc_id": "SYN-0004-D08",
+   "doc_type": "lab_result",
+   "span": [
+    1261,
+    1291
+   ],
+   "text": "Triglycerides 150 mg/dL (<150)"
+  },
+  {
+   "id": "ev:SYN-0004-EV064",
+   "kind": "evidence",
+   "concept": "body_height",
+   "term": null,
+   "value": 158,
+   "unit": "cm",
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:body_height",
+   "kind": "concept",
+   "concept": "body_height",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0004-D07:654-664",
+   "kind": "source",
+   "doc_id": "SYN-0004-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    654,
+    664
+   ],
+   "text": "Ht 158 cm."
+  },
+  {
+   "id": "ev:SYN-0004-EV065",
+   "kind": "evidence",
+   "concept": "body_weight",
+   "term": null,
+   "value": 74.0,
+   "unit": "kg",
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:body_weight",
+   "kind": "concept",
+   "concept": "body_weight",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0004-D07:665-676",
+   "kind": "source",
+   "doc_id": "SYN-0004-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    665,
+    676
+   ],
+   "text": "Wt 74.0 kg."
+  },
+  {
+   "id": "crit:NCT06600412-I09",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Systolic blood pressure >=110 mmHg and <=160 mmHg.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06600412:NCT06600412-I09:r1",
+   "kind": "decision",
+   "trial_id": "NCT06600412",
+   "criterion_id": "NCT06600412-I09",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "structured_numeric"
+   ],
+   "note": "systolic_bp = 144 mmHg (2026-09-24, -7d) vs between [110, 160] -> met",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "calc:NCT06600412:NCT06600412-I09",
+   "kind": "calculation",
+   "concept": "systolic_bp",
+   "operator": "between",
+   "threshold": [
+    110,
+    160
+   ],
+   "unit": "mmHg",
+   "value": 144,
+   "value_unit": "mmHg",
+   "observed_date": "2026-09-24",
+   "days_before": 7,
+   "note": "systolic_bp = 144 mmHg (2026-09-24, -7d) vs between [110, 160] -> met"
+  },
+  {
+   "id": "crit:NCT06600412-I10",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Both female patients, as well as female partners of male patients who are of child-bearing potential must be willing to not become pregnant for the complete duration of the study and 90 days after the last dose of study medication.",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06600412:NCT06600412-I10:r1",
+   "kind": "decision",
+   "trial_id": "NCT06600412",
+   "criterion_id": "NCT06600412-I10",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "impossible_condition"
+   ],
+   "note": "71-year-old woman is not of child-bearing potential; pregnancy avoidance item is moot.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06600412-I11",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Males (including sterilized subjects) whose female partners have child-bearing potential, must agree to use male contraception (condoms) during the period from the time of signing the informed consent form through 90 days after the last dose of study drug. They must agree to immediately inform the investigator if their partner becomes pregnant during the study.",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06600412:NCT06600412-I11:r1",
+   "kind": "decision",
+   "trial_id": "NCT06600412",
+   "criterion_id": "NCT06600412-I11",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "impossible_condition"
+   ],
+   "note": "Item applies to males; patient is female.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06600412-E01",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Polycystic kidney disease, ANCA-associated vasculitis, or lupus nephritis.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06600412:NCT06600412-E01:r1",
+   "kind": "decision",
+   "trial_id": "NCT06600412",
+   "criterion_id": "NCT06600412-E01",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_record_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Cause is diabetic kidney disease; no renal biopsy; autoimmune blanket negation does not name these specifically as renal diagnoses; ultrasound shows small kidneys.",
+   "missing_fact": "Explicit absence of polycystic kidney disease, ANCA vasculitis, lupus nephritis",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06600412-E02",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Ongoing cancer treatment.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06600412:NCT06600412-E02:r1",
+   "kind": "decision",
+   "trial_id": "NCT06600412",
+   "criterion_id": "NCT06600412-E02",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No prior malignancy documented, so no cancer treatment.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0004-EV083",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "prior malignancy",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:prior malignancy",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "prior malignancy"
+  },
+  {
+   "id": "src:SYN-0004-D07:1084-1104",
+   "kind": "source",
+   "doc_id": "SYN-0004-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    1084,
+    1104
+   ],
+   "text": "No prior malignancy."
+  },
+  {
+   "id": "ev:SYN-0004-EV093",
+   "kind": "evidence",
+   "concept": "medication",
+   "term": "MEDICATIONS",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:medication:medications",
+   "kind": "concept",
+   "concept": "medication",
+   "term": "MEDICATIONS"
+  },
+  {
+   "id": "src:SYN-0004-D07:1242-1266",
+   "kind": "source",
+   "doc_id": "SYN-0004-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    1242,
+    1266
+   ],
+   "text": "MEDICATIONS (reconciled)"
+  },
+  {
+   "id": "crit:NCT06600412-E03",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Immunosuppressive therapy or immunosuppression the prior 6 months.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06600412:NCT06600412-E03:r1",
+   "kind": "decision",
+   "trial_id": "NCT06600412",
+   "criterion_id": "NCT06600412-E03",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_history_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "list_inference",
+    "pc:strict_list_inference"
+   ],
+   "note": "[inferable PASS from SYN-0004-EV093] Reconciled medication list has no immunosuppressant; no autoimmune history.",
+   "missing_fact": null,
+   "derived_from": "SYN-0004-EV093"
+  },
+  {
+   "id": "crit:NCT06600412-E04",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Nephrotic syndrome.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06600412:NCT06600412-E04:r1",
+   "kind": "decision",
+   "trial_id": "NCT06600412",
+   "criterion_id": "NCT06600412-E04",
+   "status": "UNKNOWN",
+   "reason": "UNSUPPORTED",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Heavy albuminuria but serum albumin normal; no diagnosis of nephrotic syndrome documented.",
+   "missing_fact": "Whether nephrotic syndrome is diagnosed (UACR 1150 mg/g, albumin 3.9 normal, no 24h protein)",
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0004-EV205",
+   "kind": "evidence",
+   "concept": "albumin",
+   "term": null,
+   "value": 3.9,
+   "unit": "g/dL",
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:albumin",
+   "kind": "concept",
+   "concept": "albumin",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0004-D08:767-793",
+   "kind": "source",
+   "doc_id": "SYN-0004-D08",
+   "doc_type": "lab_result",
+   "span": [
+    767,
+    793
+   ],
+   "text": "Albumin 3.9 g/dL (3.5-5.0)"
+  },
+  {
+   "id": "ev:SYN-0004-EV229",
+   "kind": "evidence",
+   "concept": "lab_other",
+   "term": "urine protein",
+   "value": "3+",
+   "unit": null,
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:lab_other:urine protein",
+   "kind": "concept",
+   "concept": "lab_other",
+   "term": "urine protein"
+  },
+  {
+   "id": "src:SYN-0004-D08:1387-1424",
+   "kind": "source",
+   "doc_id": "SYN-0004-D08",
+   "doc_type": "lab_result",
+   "span": [
+    1387,
+    1424
+   ],
+   "text": "Protein 3+ (neg) A. Glucose negative."
+  },
+  {
+   "id": "crit:NCT06600412-E05",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Impaired liver function (clinically significant).",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06600412:NCT06600412-E05:r1",
+   "kind": "decision",
+   "trial_id": "NCT06600412",
+   "criterion_id": "NCT06600412-E05",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation"
+   ],
+   "note": "No hepatic history; AST, ALT, bilirubin normal.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0004-EV207",
+   "kind": "evidence",
+   "concept": "alt",
+   "term": null,
+   "value": 19,
+   "unit": "U/L",
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:alt",
+   "kind": "concept",
+   "concept": "alt",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0004-D08:813-830",
+   "kind": "source",
+   "doc_id": "SYN-0004-D08",
+   "doc_type": "lab_result",
+   "span": [
+    813,
+    830
+   ],
+   "text": "ALT 19 U/L (7-35)"
+  },
+  {
+   "id": "crit:NCT06600412-E06",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Pregnancy or lactation.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06600412:NCT06600412-E06:r1",
+   "kind": "decision",
+   "trial_id": "NCT06600412",
+   "criterion_id": "NCT06600412-E06",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "impossible_condition"
+   ],
+   "note": "71-year-old woman; pregnancy implausible. Lactation not applicable at this age.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06600412-E07",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Failure to understand patient information or to collaborate with the investigator.",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06600412:NCT06600412-E07:r1",
+   "kind": "decision",
+   "trial_id": "NCT06600412",
+   "criterion_id": "NCT06600412-E07",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Alert, oriented, but incomplete furosemide adherence; no explicit statement on understanding or consent.",
+   "missing_fact": "Clinician assessment of ability to understand information and collaborate",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06600412-E08",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Females of childbearing potential (those who are not surgically sterilized or post-menopausal for at least 1 year) are excluded from participation in the study unless they agree to use highly effective contraception.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06600412:NCT06600412-E08:r1",
+   "kind": "decision",
+   "trial_id": "NCT06600412",
+   "criterion_id": "NCT06600412-E08",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "impossible_condition"
+   ],
+   "note": "Age 71 (born 1955) is far beyond menopause; not of childbearing potential.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06600412-E09",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "History of hypersensitivity to study drug and/or any of its excipients.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06600412:NCT06600412-E09:r1",
+   "kind": "decision",
+   "trial_id": "NCT06600412",
+   "criterion_id": "NCT06600412-E09",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "NKDA, but study drug and excipients unknown; no hypersensitivity history documented.",
+   "missing_fact": "Excipient composition of study drug versus patient allergies",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06600412-E10",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Hereditary galactose intolerance, total lactase deficiency or glucose-galactose malabsorption.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06600412:NCT06600412-E10:r1",
+   "kind": "decision",
+   "trial_id": "NCT06600412",
+   "criterion_id": "NCT06600412-E10",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Not mentioned in the record.",
+   "missing_fact": "Whether patient has galactose intolerance, lactase deficiency or glucose-galactose malabsorption",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06600412-E11",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Active or planned treatment with a medication that interacts with R3R01.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06600412:NCT06600412-E11:r1",
+   "kind": "decision",
+   "trial_id": "NCT06600412",
+   "criterion_id": "NCT06600412-E11",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Study drug interactions unspecified; cannot judge.",
+   "missing_fact": "Interaction profile of R3R01 against current medications (ramipril, furosemide, amlodipine, insulin, iron)",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06600412-E12",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Any other medical condition(s) that might put the patient at risk or influence study results in the investigators opinion, or that the investigator deems unsuitable for the study including drug or alcohol abuse or psychiatric, behavioral, or cognitive disorders sufficient to interfere with the patient's ability to understand and comply with the protocol instructions or follow-up procedures.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06600412:NCT06600412-E12:r1",
+   "kind": "decision",
+   "trial_id": "NCT06600412",
+   "criterion_id": "NCT06600412-E12",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No alcohol or substance use; investigator-opinion criterion with no documented problem.",
+   "missing_fact": "Investigator judgment on other risks; no documented problem",
+   "derived_from": null
+  },
+  {
+   "id": "label:NCT06600412",
+   "kind": "trial_decision",
+   "label": "potential",
+   "why": [
+    "UNKNOWN/UNSUPPORTED NCT06600412-I02",
+    "UNKNOWN/MISSING NCT06600412-I04",
+    "UNKNOWN/MISSING NCT06600412-I05",
+    "UNKNOWN/UNSUPPORTED NCT06600412-I08",
+    "UNKNOWN/UNSUPPORTED NCT06600412-E04"
+   ],
+   "by": "agent3"
+  }
+ ],
+ "edges": [
+  [
+   "trial:NCT07849348",
+   "has_criterion",
+   "crit:NCT07849348-I01"
+  ],
+  [
+   "crit:NCT07849348-I01",
+   "decided_as",
+   "dec:NCT07849348:NCT07849348-I01:r1"
+  ],
+  [
+   "crit:NCT07849348-I01",
+   "requires",
+   "concept:birth_date"
+  ],
+  [
+   "concept:birth_date",
+   "observed_as",
+   "ev:SYN-0004-EV002"
+  ],
+  [
+   "ev:SYN-0004-EV002",
+   "derived_from",
+   "src:SYN-0004-D01:8-23"
+  ],
+  [
+   "ev:SYN-0004-EV002",
+   "supports",
+   "dec:NCT07849348:NCT07849348-I01:r1"
+  ],
+  [
+   "calc:NCT07849348:NCT07849348-I01",
+   "computes",
+   "dec:NCT07849348:NCT07849348-I01:r1"
+  ],
+  [
+   "trial:NCT07849348",
+   "has_criterion",
+   "crit:NCT07849348-I02"
+  ],
+  [
+   "crit:NCT07849348-I02",
+   "decided_as",
+   "dec:NCT07849348:NCT07849348-I02:r1"
+  ],
+  [
+   "crit:NCT07849348-I02",
+   "requires",
+   "concept:bmi"
+  ],
+  [
+   "concept:bmi",
+   "observed_as",
+   "ev:SYN-0004-EV066"
+  ],
+  [
+   "ev:SYN-0004-EV066",
+   "derived_from",
+   "src:SYN-0004-D07:677-692"
+  ],
+  [
+   "ev:SYN-0004-EV066",
+   "insufficient_for",
+   "dec:NCT07849348:NCT07849348-I02:r1"
+  ],
+  [
+   "trial:NCT07849348",
+   "has_criterion",
+   "crit:NCT07849348-I03"
+  ],
+  [
+   "crit:NCT07849348-I03",
+   "decided_as",
+   "dec:NCT07849348:NCT07849348-I03:r1"
+  ],
+  [
+   "crit:NCT07849348-I03",
+   "requires",
+   "concept:diagnosis:ckd"
+  ],
+  [
+   "concept:diagnosis:ckd",
+   "observed_as",
+   "ev:SYN-0004-EV146"
+  ],
+  [
+   "ev:SYN-0004-EV146",
+   "derived_from",
+   "src:SYN-0004-D07:2549-2560"
+  ],
+  [
+   "ev:SYN-0004-EV146",
+   "supports",
+   "dec:NCT07849348:NCT07849348-I03:r1"
+  ],
+  [
+   "crit:NCT07849348-I03",
+   "requires",
+   "concept:urine_albumin_creatinine_ratio"
+  ],
+  [
+   "concept:urine_albumin_creatinine_ratio",
+   "observed_as",
+   "ev:SYN-0004-EV025"
+  ],
+  [
+   "ev:SYN-0004-EV025",
+   "derived_from",
+   "src:SYN-0004-D04:68-103"
+  ],
+  [
+   "ev:SYN-0004-EV025",
+   "supports",
+   "dec:NCT07849348:NCT07849348-I03:r1"
+  ],
+  [
+   "concept:urine_albumin_creatinine_ratio",
+   "observed_as",
+   "ev:SYN-0004-EV213"
+  ],
+  [
+   "ev:SYN-0004-EV213",
+   "derived_from",
+   "src:SYN-0004-D08:946-995"
+  ],
+  [
+   "ev:SYN-0004-EV213",
+   "supports",
+   "dec:NCT07849348:NCT07849348-I03:r1"
+  ],
+  [
+   "crit:NCT07849348-I03",
+   "requires",
+   "concept:egfr"
+  ],
+  [
+   "concept:egfr",
+   "observed_as",
+   "ev:SYN-0004-EV199"
+  ],
+  [
+   "ev:SYN-0004-EV199",
+   "derived_from",
+   "src:SYN-0004-D08:578-607"
+  ],
+  [
+   "ev:SYN-0004-EV199",
+   "supports",
+   "dec:NCT07849348:NCT07849348-I03:r1"
+  ],
+  [
+   "trial:NCT07849348",
+   "has_criterion",
+   "crit:NCT07849348-I04"
+  ],
+  [
+   "crit:NCT07849348-I04",
+   "decided_as",
+   "dec:NCT07849348:NCT07849348-I04:r1"
+  ],
+  [
+   "crit:NCT07849348-I04",
+   "requires",
+   "concept:egfr"
+  ],
+  [
+   "concept:egfr",
+   "observed_as",
+   "ev:SYN-0004-EV023"
+  ],
+  [
+   "ev:SYN-0004-EV023",
+   "derived_from",
+   "src:SYN-0004-D04:23-44"
+  ],
+  [
+   "ev:SYN-0004-EV023",
+   "supports",
+   "dec:NCT07849348:NCT07849348-I04:r1"
+  ],
+  [
+   "ev:SYN-0004-EV199",
+   "supports",
+   "dec:NCT07849348:NCT07849348-I04:r1"
+  ],
+  [
+   "trial:NCT07849348",
+   "has_criterion",
+   "crit:NCT07849348-I05"
+  ],
+  [
+   "crit:NCT07849348-I05",
+   "decided_as",
+   "dec:NCT07849348:NCT07849348-I05:r1"
+  ],
+  [
+   "trial:NCT07849348",
+   "has_criterion",
+   "crit:NCT07849348-E01"
+  ],
+  [
+   "crit:NCT07849348-E01",
+   "decided_as",
+   "dec:NCT07849348:NCT07849348-E01:r1"
+  ],
+  [
+   "crit:NCT07849348-E01",
+   "requires",
+   "concept:allergy:no known drug allergies"
+  ],
+  [
+   "concept:allergy:no known drug allergies",
+   "observed_as",
+   "ev:SYN-0004-EV092"
+  ],
+  [
+   "ev:SYN-0004-EV092",
+   "derived_from",
+   "src:SYN-0004-D07:1235-1240"
+  ],
+  [
+   "ev:SYN-0004-EV092",
+   "supports",
+   "dec:NCT07849348:NCT07849348-E01:r1"
+  ],
+  [
+   "trial:NCT07849348",
+   "has_criterion",
+   "crit:NCT07849348-E02"
+  ],
+  [
+   "crit:NCT07849348-E02",
+   "decided_as",
+   "dec:NCT07849348:NCT07849348-E02:r1"
+  ],
+  [
+   "crit:NCT07849348-E02",
+   "requires",
+   "concept:diagnosis:type 2 diabetes mellitus"
+  ],
+  [
+   "concept:diagnosis:type 2 diabetes mellitus",
+   "observed_as",
+   "ev:SYN-0004-EV175"
+  ],
+  [
+   "ev:SYN-0004-EV175",
+   "derived_from",
+   "src:SYN-0004-D07:3648-3652"
+  ],
+  [
+   "ev:SYN-0004-EV175",
+   "supports",
+   "dec:NCT07849348:NCT07849348-E02:r1"
+  ],
+  [
+   "crit:NCT07849348-E02",
+   "requires",
+   "concept:hba1c"
+  ],
+  [
+   "concept:hba1c",
+   "observed_as",
+   "ev:SYN-0004-EV212"
+  ],
+  [
+   "ev:SYN-0004-EV212",
+   "derived_from",
+   "src:SYN-0004-D08:923-945"
+  ],
+  [
+   "ev:SYN-0004-EV212",
+   "supports",
+   "dec:NCT07849348:NCT07849348-E02:r1"
+  ],
+  [
+   "trial:NCT07849348",
+   "has_criterion",
+   "crit:NCT07849348-E03"
+  ],
+  [
+   "crit:NCT07849348-E03",
+   "decided_as",
+   "dec:NCT07849348:NCT07849348-E03:r1"
+  ],
+  [
+   "crit:NCT07849348-E03",
+   "requires",
+   "concept:potassium"
+  ],
+  [
+   "concept:potassium",
+   "observed_as",
+   "ev:SYN-0004-EV163"
+  ],
+  [
+   "ev:SYN-0004-EV163",
+   "derived_from",
+   "src:SYN-0004-D07:3130-3177"
+  ],
+  [
+   "ev:SYN-0004-EV163",
+   "supports",
+   "dec:NCT07849348:NCT07849348-E03:r1"
+  ],
+  [
+   "calc:NCT07849348:NCT07849348-E03",
+   "computes",
+   "dec:NCT07849348:NCT07849348-E03:r1"
+  ],
+  [
+   "trial:NCT07849348",
+   "has_criterion",
+   "crit:NCT07849348-E04"
+  ],
+  [
+   "crit:NCT07849348-E04",
+   "decided_as",
+   "dec:NCT07849348:NCT07849348-E04:r1"
+  ],
+  [
+   "trial:NCT07849348",
+   "has_criterion",
+   "crit:NCT07849348-E05"
+  ],
+  [
+   "crit:NCT07849348-E05",
+   "decided_as",
+   "dec:NCT07849348:NCT07849348-E05:r1"
+  ],
+  [
+   "crit:NCT07849348-E05",
+   "requires",
+   "concept:systolic_bp"
+  ],
+  [
+   "concept:systolic_bp",
+   "observed_as",
+   "ev:SYN-0004-EV248"
+  ],
+  [
+   "ev:SYN-0004-EV248",
+   "derived_from",
+   "src:SYN-0004-D07:693-728"
+  ],
+  [
+   "ev:SYN-0004-EV248",
+   "supports",
+   "dec:NCT07849348:NCT07849348-E05:r1"
+  ],
+  [
+   "crit:NCT07849348-E05",
+   "requires",
+   "concept:diastolic_bp"
+  ],
+  [
+   "concept:diastolic_bp",
+   "observed_as",
+   "ev:SYN-0004-EV249"
+  ],
+  [
+   "ev:SYN-0004-EV249",
+   "derived_from",
+   "src:SYN-0004-D07:693-728"
+  ],
+  [
+   "ev:SYN-0004-EV249",
+   "supports",
+   "dec:NCT07849348:NCT07849348-E05:r1"
+  ],
+  [
+   "trial:NCT07849348",
+   "has_criterion",
+   "crit:NCT07849348-E06"
+  ],
+  [
+   "crit:NCT07849348-E06",
+   "decided_as",
+   "dec:NCT07849348:NCT07849348-E06:r1"
+  ],
+  [
+   "trial:NCT07849348",
+   "has_criterion",
+   "crit:NCT07849348-E07"
+  ],
+  [
+   "crit:NCT07849348-E07",
+   "decided_as",
+   "dec:NCT07849348:NCT07849348-E07:r1"
+  ],
+  [
+   "trial:NCT07849348",
+   "has_criterion",
+   "crit:NCT07849348-E08"
+  ],
+  [
+   "crit:NCT07849348-E08",
+   "decided_as",
+   "dec:NCT07849348:NCT07849348-E08:r1"
+  ],
+  [
+   "trial:NCT07849348",
+   "has_criterion",
+   "crit:NCT07849348-E09"
+  ],
+  [
+   "crit:NCT07849348-E09",
+   "decided_as",
+   "dec:NCT07849348:NCT07849348-E09:r1"
+  ],
+  [
+   "trial:NCT07849348",
+   "has_criterion",
+   "crit:NCT07849348-E10"
+  ],
+  [
+   "crit:NCT07849348-E10",
+   "decided_as",
+   "dec:NCT07849348:NCT07849348-E10:r1"
+  ],
+  [
+   "trial:NCT07849348",
+   "has_criterion",
+   "crit:NCT07849348-E11"
+  ],
+  [
+   "crit:NCT07849348-E11",
+   "decided_as",
+   "dec:NCT07849348:NCT07849348-E11:r1"
+  ],
+  [
+   "trial:NCT07849348",
+   "has_criterion",
+   "crit:NCT07849348-E12"
+  ],
+  [
+   "crit:NCT07849348-E12",
+   "decided_as",
+   "dec:NCT07849348:NCT07849348-E12:r1"
+  ],
+  [
+   "trial:NCT07849348",
+   "has_criterion",
+   "crit:NCT07849348-E13"
+  ],
+  [
+   "crit:NCT07849348-E13",
+   "decided_as",
+   "dec:NCT07849348:NCT07849348-E13:r1"
+  ],
+  [
+   "crit:NCT07849348-E13",
+   "requires",
+   "concept:diagnosis:other hepatic history"
+  ],
+  [
+   "concept:diagnosis:other hepatic history",
+   "observed_as",
+   "ev:SYN-0004-EV080"
+  ],
+  [
+   "ev:SYN-0004-EV080",
+   "derived_from",
+   "src:SYN-0004-D07:1012-1083"
+  ],
+  [
+   "ev:SYN-0004-EV080",
+   "supports",
+   "dec:NCT07849348:NCT07849348-E13:r1"
+  ],
+  [
+   "crit:NCT07849348-E13",
+   "requires",
+   "concept:ast"
+  ],
+  [
+   "concept:ast",
+   "observed_as",
+   "ev:SYN-0004-EV206"
+  ],
+  [
+   "ev:SYN-0004-EV206",
+   "derived_from",
+   "src:SYN-0004-D08:794-812"
+  ],
+  [
+   "ev:SYN-0004-EV206",
+   "supports",
+   "dec:NCT07849348:NCT07849348-E13:r1"
+  ],
+  [
+   "crit:NCT07849348-E13",
+   "requires",
+   "concept:bilirubin_total"
+  ],
+  [
+   "concept:bilirubin_total",
+   "observed_as",
+   "ev:SYN-0004-EV209"
+  ],
+  [
+   "ev:SYN-0004-EV209",
+   "derived_from",
+   "src:SYN-0004-D08:868-903"
+  ],
+  [
+   "ev:SYN-0004-EV209",
+   "supports",
+   "dec:NCT07849348:NCT07849348-E13:r1"
+  ],
+  [
+   "trial:NCT07849348",
+   "has_criterion",
+   "crit:NCT07849348-E14"
+  ],
+  [
+   "crit:NCT07849348-E14",
+   "decided_as",
+   "dec:NCT07849348:NCT07849348-E14:r1"
+  ],
+  [
+   "trial:NCT07849348",
+   "has_criterion",
+   "crit:NCT07849348-E15"
+  ],
+  [
+   "crit:NCT07849348-E15",
+   "decided_as",
+   "dec:NCT07849348:NCT07849348-E15:r1"
+  ],
+  [
+   "crit:NCT07849348-E15",
+   "requires",
+   "concept:diagnosis:heart failure"
+  ],
+  [
+   "concept:diagnosis:heart failure",
+   "observed_as",
+   "ev:SYN-0004-EV086"
+  ],
+  [
+   "ev:SYN-0004-EV086",
+   "derived_from",
+   "src:SYN-0004-D07:1105-1147"
+  ],
+  [
+   "ev:SYN-0004-EV086",
+   "supports",
+   "dec:NCT07849348:NCT07849348-E15:r1"
+  ],
+  [
+   "trial:NCT07849348",
+   "has_criterion",
+   "crit:NCT07849348-E16"
+  ],
+  [
+   "crit:NCT07849348-E16",
+   "decided_as",
+   "dec:NCT07849348:NCT07849348-E16:r1"
+  ],
+  [
+   "trial:NCT07849348",
+   "has_criterion",
+   "crit:NCT07849348-E17"
+  ],
+  [
+   "crit:NCT07849348-E17",
+   "decided_as",
+   "dec:NCT07849348:NCT07849348-E17:r1"
+  ],
+  [
+   "trial:NCT07849348",
+   "has_criterion",
+   "crit:NCT07849348-E18"
+  ],
+  [
+   "crit:NCT07849348-E18",
+   "decided_as",
+   "dec:NCT07849348:NCT07849348-E18:r1"
+  ],
+  [
+   "trial:NCT07849348",
+   "has_criterion",
+   "crit:NCT07849348-E19"
+  ],
+  [
+   "crit:NCT07849348-E19",
+   "decided_as",
+   "dec:NCT07849348:NCT07849348-E19:r1"
+  ],
+  [
+   "crit:NCT07849348-E19",
+   "requires",
+   "concept:alcohol:alcohol"
+  ],
+  [
+   "concept:alcohol:alcohol",
+   "observed_as",
+   "ev:SYN-0004-EV102"
+  ],
+  [
+   "ev:SYN-0004-EV102",
+   "derived_from",
+   "src:SYN-0004-D07:1648-1659"
+  ],
+  [
+   "ev:SYN-0004-EV102",
+   "supports",
+   "dec:NCT07849348:NCT07849348-E19:r1"
+  ],
+  [
+   "crit:NCT07849348-E19",
+   "requires",
+   "concept:substance_use:recreational substances"
+  ],
+  [
+   "concept:substance_use:recreational substances",
+   "observed_as",
+   "ev:SYN-0004-EV103"
+  ],
+  [
+   "ev:SYN-0004-EV103",
+   "derived_from",
+   "src:SYN-0004-D07:1660-1687"
+  ],
+  [
+   "ev:SYN-0004-EV103",
+   "supports",
+   "dec:NCT07849348:NCT07849348-E19:r1"
+  ],
+  [
+   "trial:NCT07849348",
+   "has_criterion",
+   "crit:NCT07849348-E20"
+  ],
+  [
+   "crit:NCT07849348-E20",
+   "decided_as",
+   "dec:NCT07849348:NCT07849348-E20:r1"
+  ],
+  [
+   "crit:NCT07849348-E20",
+   "requires",
+   "concept:age"
+  ],
+  [
+   "concept:age",
+   "observed_as",
+   "ev:SYN-0004-EV242"
+  ],
+  [
+   "ev:SYN-0004-EV242",
+   "derived_from",
+   "src:SYN-0004-D01:8-23"
+  ],
+  [
+   "ev:SYN-0004-EV242",
+   "supports",
+   "dec:NCT07849348:NCT07849348-E20:r1"
+  ],
+  [
+   "crit:NCT07849348-E20",
+   "requires",
+   "concept:sex"
+  ],
+  [
+   "concept:sex",
+   "observed_as",
+   "ev:SYN-0004-EV001"
+  ],
+  [
+   "ev:SYN-0004-EV001",
+   "derived_from",
+   "src:SYN-0004-D01:0-7"
+  ],
+  [
+   "ev:SYN-0004-EV001",
+   "supports",
+   "dec:NCT07849348:NCT07849348-E20:r1"
+  ],
+  [
+   "trial:NCT07849348",
+   "has_criterion",
+   "crit:NCT07849348-E21"
+  ],
+  [
+   "crit:NCT07849348-E21",
+   "decided_as",
+   "dec:NCT07849348:NCT07849348-E21:r1"
+  ],
+  [
+   "trial:NCT07849348",
+   "labelled",
+   "label:NCT07849348"
+  ],
+  [
+   "trial:NCT06110130",
+   "has_criterion",
+   "crit:NCT06110130-I01"
+  ],
+  [
+   "crit:NCT06110130-I01",
+   "decided_as",
+   "dec:NCT06110130:NCT06110130-I01:r1"
+  ],
+  [
+   "trial:NCT06110130",
+   "has_criterion",
+   "crit:NCT06110130-I02"
+  ],
+  [
+   "crit:NCT06110130-I02",
+   "decided_as",
+   "dec:NCT06110130:NCT06110130-I02:r1"
+  ],
+  [
+   "crit:NCT06110130-I02",
+   "requires",
+   "concept:birth_date"
+  ],
+  [
+   "ev:SYN-0004-EV002",
+   "supports",
+   "dec:NCT06110130:NCT06110130-I02:r1"
+  ],
+  [
+   "calc:NCT06110130:NCT06110130-I02",
+   "computes",
+   "dec:NCT06110130:NCT06110130-I02:r1"
+  ],
+  [
+   "trial:NCT06110130",
+   "has_criterion",
+   "crit:NCT06110130-I03"
+  ],
+  [
+   "crit:NCT06110130-I03",
+   "decided_as",
+   "dec:NCT06110130:NCT06110130-I03:r1"
+  ],
+  [
+   "crit:NCT06110130-I03",
+   "requires",
+   "concept:egfr"
+  ],
+  [
+   "ev:SYN-0004-EV023",
+   "supports",
+   "dec:NCT06110130:NCT06110130-I03:r1"
+  ],
+  [
+   "calc:NCT06110130:NCT06110130-I03",
+   "computes",
+   "dec:NCT06110130:NCT06110130-I03:r1"
+  ],
+  [
+   "trial:NCT06110130",
+   "has_criterion",
+   "crit:NCT06110130-I04"
+  ],
+  [
+   "crit:NCT06110130-I04",
+   "decided_as",
+   "dec:NCT06110130:NCT06110130-I04:r1"
+  ],
+  [
+   "crit:NCT06110130-I04",
+   "requires",
+   "concept:egfr"
+  ],
+  [
+   "ev:SYN-0004-EV023",
+   "supports",
+   "dec:NCT06110130:NCT06110130-I04:r1"
+  ],
+  [
+   "ev:SYN-0004-EV199",
+   "supports",
+   "dec:NCT06110130:NCT06110130-I04:r1"
+  ],
+  [
+   "trial:NCT06110130",
+   "has_criterion",
+   "crit:NCT06110130-I05"
+  ],
+  [
+   "crit:NCT06110130-I05",
+   "decided_as",
+   "dec:NCT06110130:NCT06110130-I05:r1"
+  ],
+  [
+   "crit:NCT06110130-I05",
+   "requires",
+   "concept:bmi"
+  ],
+  [
+   "ev:SYN-0004-EV066",
+   "supports",
+   "dec:NCT06110130:NCT06110130-I05:r1"
+  ],
+  [
+   "calc:NCT06110130:NCT06110130-I05",
+   "computes",
+   "dec:NCT06110130:NCT06110130-I05:r1"
+  ],
+  [
+   "trial:NCT06110130",
+   "has_criterion",
+   "crit:NCT06110130-I06"
+  ],
+  [
+   "crit:NCT06110130-I06",
+   "decided_as",
+   "dec:NCT06110130:NCT06110130-I06:r1"
+  ],
+  [
+   "crit:NCT06110130-I06",
+   "requires",
+   "concept:systolic_bp"
+  ],
+  [
+   "ev:SYN-0004-EV248",
+   "insufficient_for",
+   "dec:NCT06110130:NCT06110130-I06:r1"
+  ],
+  [
+   "crit:NCT06110130-I06",
+   "requires",
+   "concept:diastolic_bp"
+  ],
+  [
+   "ev:SYN-0004-EV249",
+   "insufficient_for",
+   "dec:NCT06110130:NCT06110130-I06:r1"
+  ],
+  [
+   "crit:NCT06110130-I06",
+   "requires",
+   "concept:diagnosis:hypertension"
+  ],
+  [
+   "concept:diagnosis:hypertension",
+   "observed_as",
+   "ev:SYN-0004-EV167"
+  ],
+  [
+   "ev:SYN-0004-EV167",
+   "derived_from",
+   "src:SYN-0004-D07:3379-3402"
+  ],
+  [
+   "ev:SYN-0004-EV167",
+   "insufficient_for",
+   "dec:NCT06110130:NCT06110130-I06:r1"
+  ],
+  [
+   "trial:NCT06110130",
+   "has_criterion",
+   "crit:NCT06110130-I08"
+  ],
+  [
+   "crit:NCT06110130-I08",
+   "decided_as",
+   "dec:NCT06110130:NCT06110130-I08:r1"
+  ],
+  [
+   "trial:NCT06110130",
+   "has_criterion",
+   "crit:NCT06110130-E01"
+  ],
+  [
+   "crit:NCT06110130-E01",
+   "decided_as",
+   "dec:NCT06110130:NCT06110130-E01:r1"
+  ],
+  [
+   "crit:NCT06110130-E01",
+   "requires",
+   "concept:diagnosis:type 2 diabetes mellitus"
+  ],
+  [
+   "ev:SYN-0004-EV175",
+   "supports",
+   "dec:NCT06110130:NCT06110130-E01:r1"
+  ],
+  [
+   "crit:NCT06110130-E01",
+   "requires",
+   "concept:diagnosis:t2dm"
+  ],
+  [
+   "concept:diagnosis:t2dm",
+   "observed_as",
+   "ev:SYN-0004-EV046"
+  ],
+  [
+   "ev:SYN-0004-EV046",
+   "derived_from",
+   "src:SYN-0004-D07:139-170"
+  ],
+  [
+   "ev:SYN-0004-EV046",
+   "supports",
+   "dec:NCT06110130:NCT06110130-E01:r1"
+  ],
+  [
+   "trial:NCT06110130",
+   "has_criterion",
+   "crit:NCT06110130-E02"
+  ],
+  [
+   "crit:NCT06110130-E02",
+   "decided_as",
+   "dec:NCT06110130:NCT06110130-E02:r1"
+  ],
+  [
+   "crit:NCT06110130-E02",
+   "requires",
+   "concept:medication:insulin glargine 24 u daily"
+  ],
+  [
+   "concept:medication:insulin glargine 24 u daily",
+   "observed_as",
+   "ev:SYN-0004-EV094"
+  ],
+  [
+   "ev:SYN-0004-EV094",
+   "derived_from",
+   "src:SYN-0004-D07:1270-1313"
+  ],
+  [
+   "ev:SYN-0004-EV094",
+   "supports",
+   "dec:NCT06110130:NCT06110130-E02:r1"
+  ],
+  [
+   "crit:NCT06110130-E02",
+   "requires",
+   "concept:medication:glargine 24 u"
+  ],
+  [
+   "concept:medication:glargine 24 u",
+   "observed_as",
+   "ev:SYN-0004-EV178"
+  ],
+  [
+   "ev:SYN-0004-EV178",
+   "derived_from",
+   "src:SYN-0004-D07:3675-3714"
+  ],
+  [
+   "ev:SYN-0004-EV178",
+   "supports",
+   "dec:NCT06110130:NCT06110130-E02:r1"
+  ],
+  [
+   "trial:NCT06110130",
+   "has_criterion",
+   "crit:NCT06110130-E03"
+  ],
+  [
+   "crit:NCT06110130-E03",
+   "decided_as",
+   "dec:NCT06110130:NCT06110130-E03:r1"
+  ],
+  [
+   "trial:NCT06110130",
+   "has_criterion",
+   "crit:NCT06110130-E04"
+  ],
+  [
+   "crit:NCT06110130-E04",
+   "decided_as",
+   "dec:NCT06110130:NCT06110130-E04:r1"
+  ],
+  [
+   "trial:NCT06110130",
+   "has_criterion",
+   "crit:NCT06110130-E05"
+  ],
+  [
+   "crit:NCT06110130-E05",
+   "decided_as",
+   "dec:NCT06110130:NCT06110130-E05:r1"
+  ],
+  [
+   "crit:NCT06110130-E05",
+   "requires",
+   "concept:smoking:smoker"
+  ],
+  [
+   "concept:smoking:smoker",
+   "observed_as",
+   "ev:SYN-0004-EV101"
+  ],
+  [
+   "ev:SYN-0004-EV101",
+   "derived_from",
+   "src:SYN-0004-D07:1619-1647"
+  ],
+  [
+   "ev:SYN-0004-EV101",
+   "supports",
+   "dec:NCT06110130:NCT06110130-E05:r1"
+  ],
+  [
+   "trial:NCT06110130",
+   "has_criterion",
+   "crit:NCT06110130-E06"
+  ],
+  [
+   "crit:NCT06110130-E06",
+   "decided_as",
+   "dec:NCT06110130:NCT06110130-E06:r1"
+  ],
+  [
+   "trial:NCT06110130",
+   "has_criterion",
+   "crit:NCT06110130-E07"
+  ],
+  [
+   "crit:NCT06110130-E07",
+   "decided_as",
+   "dec:NCT06110130:NCT06110130-E07:r1"
+  ],
+  [
+   "crit:NCT06110130-E07",
+   "requires",
+   "concept:sex"
+  ],
+  [
+   "ev:SYN-0004-EV001",
+   "supports",
+   "dec:NCT06110130:NCT06110130-E07:r1"
+  ],
+  [
+   "crit:NCT06110130-E07",
+   "requires",
+   "concept:age"
+  ],
+  [
+   "ev:SYN-0004-EV242",
+   "supports",
+   "dec:NCT06110130:NCT06110130-E07:r1"
+  ],
+  [
+   "trial:NCT06110130",
+   "has_criterion",
+   "crit:NCT06110130-E08"
+  ],
+  [
+   "crit:NCT06110130-E08",
+   "decided_as",
+   "dec:NCT06110130:NCT06110130-E08:r1"
+  ],
+  [
+   "trial:NCT06110130",
+   "has_criterion",
+   "crit:NCT06110130-E09"
+  ],
+  [
+   "crit:NCT06110130-E09",
+   "decided_as",
+   "dec:NCT06110130:NCT06110130-E09:r1"
+  ],
+  [
+   "trial:NCT06110130",
+   "has_criterion",
+   "crit:NCT06110130-E10"
+  ],
+  [
+   "crit:NCT06110130-E10",
+   "decided_as",
+   "dec:NCT06110130:NCT06110130-E10:r1"
+  ],
+  [
+   "crit:NCT06110130-E10",
+   "requires",
+   "concept:egfr"
+  ],
+  [
+   "ev:SYN-0004-EV023",
+   "supports",
+   "dec:NCT06110130:NCT06110130-E10:r1"
+  ],
+  [
+   "calc:NCT06110130:NCT06110130-E10",
+   "computes",
+   "dec:NCT06110130:NCT06110130-E10:r1"
+  ],
+  [
+   "trial:NCT06110130",
+   "has_criterion",
+   "crit:NCT06110130-E11"
+  ],
+  [
+   "crit:NCT06110130-E11",
+   "decided_as",
+   "dec:NCT06110130:NCT06110130-E11:r1"
+  ],
+  [
+   "trial:NCT06110130",
+   "has_criterion",
+   "crit:NCT06110130-E12"
+  ],
+  [
+   "crit:NCT06110130-E12",
+   "decided_as",
+   "dec:NCT06110130:NCT06110130-E12:r1"
+  ],
+  [
+   "trial:NCT06110130",
+   "has_criterion",
+   "crit:NCT06110130-E13"
+  ],
+  [
+   "crit:NCT06110130-E13",
+   "decided_as",
+   "dec:NCT06110130:NCT06110130-E13:r1"
+  ],
+  [
+   "crit:NCT06110130-E13",
+   "requires",
+   "concept:diagnosis:heart failure"
+  ],
+  [
+   "ev:SYN-0004-EV086",
+   "supports",
+   "dec:NCT06110130:NCT06110130-E13:r1"
+  ],
+  [
+   "trial:NCT06110130",
+   "has_criterion",
+   "crit:NCT06110130-E14"
+  ],
+  [
+   "crit:NCT06110130-E14",
+   "decided_as",
+   "dec:NCT06110130:NCT06110130-E14:r1"
+  ],
+  [
+   "trial:NCT06110130",
+   "has_criterion",
+   "crit:NCT06110130-I07"
+  ],
+  [
+   "crit:NCT06110130-I07",
+   "decided_as",
+   "dec:NCT06110130:NCT06110130-I07:r1"
+  ],
+  [
+   "crit:NCT06110130-I07",
+   "requires",
+   "concept:diagnosis:t2dm"
+  ],
+  [
+   "ev:SYN-0004-EV046",
+   "supports",
+   "dec:NCT06110130:NCT06110130-I07:r1"
+  ],
+  [
+   "trial:NCT06110130",
+   "labelled",
+   "label:NCT06110130"
+  ],
+  [
+   "trial:NCT06600412",
+   "has_criterion",
+   "crit:NCT06600412-I01"
+  ],
+  [
+   "crit:NCT06600412-I01",
+   "decided_as",
+   "dec:NCT06600412:NCT06600412-I01:r1"
+  ],
+  [
+   "crit:NCT06600412-I01",
+   "requires",
+   "concept:age"
+  ],
+  [
+   "concept:age",
+   "observed_as",
+   "ev:SYN-0004-EV044"
+  ],
+  [
+   "ev:SYN-0004-EV044",
+   "derived_from",
+   "src:SYN-0004-D07:139-170"
+  ],
+  [
+   "ev:SYN-0004-EV044",
+   "supports",
+   "dec:NCT06600412:NCT06600412-I01:r1"
+  ],
+  [
+   "crit:NCT06600412-I01",
+   "requires",
+   "concept:diagnosis:t2dm"
+  ],
+  [
+   "ev:SYN-0004-EV046",
+   "supports",
+   "dec:NCT06600412:NCT06600412-I01:r1"
+  ],
+  [
+   "crit:NCT06600412-I01",
+   "requires",
+   "concept:hba1c"
+  ],
+  [
+   "ev:SYN-0004-EV212",
+   "supports",
+   "dec:NCT06600412:NCT06600412-I01:r1"
+  ],
+  [
+   "trial:NCT06600412",
+   "has_criterion",
+   "crit:NCT06600412-I02"
+  ],
+  [
+   "crit:NCT06600412-I02",
+   "decided_as",
+   "dec:NCT06600412:NCT06600412-I02:r1"
+  ],
+  [
+   "crit:NCT06600412-I02",
+   "requires",
+   "concept:medication:ramipril 10 mg daily"
+  ],
+  [
+   "concept:medication:ramipril 10 mg daily",
+   "observed_as",
+   "ev:SYN-0004-EV095"
+  ],
+  [
+   "ev:SYN-0004-EV095",
+   "derived_from",
+   "src:SYN-0004-D07:1316-1352"
+  ],
+  [
+   "ev:SYN-0004-EV095",
+   "insufficient_for",
+   "dec:NCT06600412:NCT06600412-I02:r1"
+  ],
+  [
+   "crit:NCT06600412-I02",
+   "requires",
+   "concept:medication:amlodipine"
+  ],
+  [
+   "concept:medication:amlodipine",
+   "observed_as",
+   "ev:SYN-0004-EV098"
+  ],
+  [
+   "ev:SYN-0004-EV098",
+   "derived_from",
+   "src:SYN-0004-D07:1427-1465"
+  ],
+  [
+   "ev:SYN-0004-EV098",
+   "insufficient_for",
+   "dec:NCT06600412:NCT06600412-I02:r1"
+  ],
+  [
+   "crit:NCT06600412-I02",
+   "requires",
+   "concept:medication:furosemide"
+  ],
+  [
+   "concept:medication:furosemide",
+   "observed_as",
+   "ev:SYN-0004-EV096"
+  ],
+  [
+   "ev:SYN-0004-EV096",
+   "derived_from",
+   "src:SYN-0004-D07:1355-1393"
+  ],
+  [
+   "ev:SYN-0004-EV096",
+   "insufficient_for",
+   "dec:NCT06600412:NCT06600412-I02:r1"
+  ],
+  [
+   "concept:medication:furosemide",
+   "observed_as",
+   "ev:SYN-0004-EV058"
+  ],
+  [
+   "ev:SYN-0004-EV058",
+   "derived_from",
+   "src:SYN-0004-D07:451-504"
+  ],
+  [
+   "ev:SYN-0004-EV058",
+   "insufficient_for",
+   "dec:NCT06600412:NCT06600412-I02:r1"
+  ],
+  [
+   "trial:NCT06600412",
+   "has_criterion",
+   "crit:NCT06600412-I03"
+  ],
+  [
+   "crit:NCT06600412-I03",
+   "decided_as",
+   "dec:NCT06600412:NCT06600412-I03:r1"
+  ],
+  [
+   "crit:NCT06600412-I03",
+   "requires",
+   "concept:medication:ramipril max-dose"
+  ],
+  [
+   "concept:medication:ramipril max-dose",
+   "observed_as",
+   "ev:SYN-0004-EV051"
+  ],
+  [
+   "ev:SYN-0004-EV051",
+   "derived_from",
+   "src:SYN-0004-D07:205-300"
+  ],
+  [
+   "ev:SYN-0004-EV051",
+   "supports",
+   "dec:NCT06600412:NCT06600412-I03:r1"
+  ],
+  [
+   "crit:NCT06600412-I03",
+   "requires",
+   "concept:medication:ramipril 10 mg daily"
+  ],
+  [
+   "ev:SYN-0004-EV095",
+   "supports",
+   "dec:NCT06600412:NCT06600412-I03:r1"
+  ],
+  [
+   "trial:NCT06600412",
+   "has_criterion",
+   "crit:NCT06600412-I04"
+  ],
+  [
+   "crit:NCT06600412-I04",
+   "decided_as",
+   "dec:NCT06600412:NCT06600412-I04:r1"
+  ],
+  [
+   "trial:NCT06600412",
+   "has_criterion",
+   "crit:NCT06600412-I05"
+  ],
+  [
+   "crit:NCT06600412-I05",
+   "decided_as",
+   "dec:NCT06600412:NCT06600412-I05:r1"
+  ],
+  [
+   "trial:NCT06600412",
+   "has_criterion",
+   "crit:NCT06600412-I06"
+  ],
+  [
+   "crit:NCT06600412-I06",
+   "decided_as",
+   "dec:NCT06600412:NCT06600412-I06:r1"
+  ],
+  [
+   "crit:NCT06600412-I06",
+   "requires",
+   "concept:urine_albumin_creatinine_ratio"
+  ],
+  [
+   "ev:SYN-0004-EV213",
+   "supports",
+   "dec:NCT06600412:NCT06600412-I06:r1"
+  ],
+  [
+   "ev:SYN-0004-EV025",
+   "supports",
+   "dec:NCT06600412:NCT06600412-I06:r1"
+  ],
+  [
+   "concept:urine_albumin_creatinine_ratio",
+   "observed_as",
+   "ev:SYN-0004-EV256"
+  ],
+  [
+   "ev:SYN-0004-EV256",
+   "derived_from",
+   "src:SYN-0004-D07:2687-2747"
+  ],
+  [
+   "ev:SYN-0004-EV256",
+   "supports",
+   "dec:NCT06600412:NCT06600412-I06:r1"
+  ],
+  [
+   "trial:NCT06600412",
+   "has_criterion",
+   "crit:NCT06600412-I07"
+  ],
+  [
+   "crit:NCT06600412-I07",
+   "decided_as",
+   "dec:NCT06600412:NCT06600412-I07:r1"
+  ],
+  [
+   "crit:NCT06600412-I07",
+   "requires",
+   "concept:egfr"
+  ],
+  [
+   "ev:SYN-0004-EV023",
+   "supports",
+   "dec:NCT06600412:NCT06600412-I07:r1"
+  ],
+  [
+   "calc:NCT06600412:NCT06600412-I07",
+   "computes",
+   "dec:NCT06600412:NCT06600412-I07:r1"
+  ],
+  [
+   "trial:NCT06600412",
+   "has_criterion",
+   "crit:NCT06600412-I08"
+  ],
+  [
+   "crit:NCT06600412-I08",
+   "decided_as",
+   "dec:NCT06600412:NCT06600412-I08:r1"
+  ],
+  [
+   "crit:NCT06600412-I08",
+   "requires",
+   "concept:triglycerides"
+  ],
+  [
+   "concept:triglycerides",
+   "observed_as",
+   "ev:SYN-0004-EV224"
+  ],
+  [
+   "ev:SYN-0004-EV224",
+   "derived_from",
+   "src:SYN-0004-D08:1261-1291"
+  ],
+  [
+   "ev:SYN-0004-EV224",
+   "insufficient_for",
+   "dec:NCT06600412:NCT06600412-I08:r1"
+  ],
+  [
+   "crit:NCT06600412-I08",
+   "requires",
+   "concept:body_height"
+  ],
+  [
+   "concept:body_height",
+   "observed_as",
+   "ev:SYN-0004-EV064"
+  ],
+  [
+   "ev:SYN-0004-EV064",
+   "derived_from",
+   "src:SYN-0004-D07:654-664"
+  ],
+  [
+   "ev:SYN-0004-EV064",
+   "insufficient_for",
+   "dec:NCT06600412:NCT06600412-I08:r1"
+  ],
+  [
+   "crit:NCT06600412-I08",
+   "requires",
+   "concept:body_weight"
+  ],
+  [
+   "concept:body_weight",
+   "observed_as",
+   "ev:SYN-0004-EV065"
+  ],
+  [
+   "ev:SYN-0004-EV065",
+   "derived_from",
+   "src:SYN-0004-D07:665-676"
+  ],
+  [
+   "ev:SYN-0004-EV065",
+   "insufficient_for",
+   "dec:NCT06600412:NCT06600412-I08:r1"
+  ],
+  [
+   "trial:NCT06600412",
+   "has_criterion",
+   "crit:NCT06600412-I09"
+  ],
+  [
+   "crit:NCT06600412-I09",
+   "decided_as",
+   "dec:NCT06600412:NCT06600412-I09:r1"
+  ],
+  [
+   "crit:NCT06600412-I09",
+   "requires",
+   "concept:systolic_bp"
+  ],
+  [
+   "ev:SYN-0004-EV248",
+   "supports",
+   "dec:NCT06600412:NCT06600412-I09:r1"
+  ],
+  [
+   "calc:NCT06600412:NCT06600412-I09",
+   "computes",
+   "dec:NCT06600412:NCT06600412-I09:r1"
+  ],
+  [
+   "trial:NCT06600412",
+   "has_criterion",
+   "crit:NCT06600412-I10"
+  ],
+  [
+   "crit:NCT06600412-I10",
+   "decided_as",
+   "dec:NCT06600412:NCT06600412-I10:r1"
+  ],
+  [
+   "crit:NCT06600412-I10",
+   "requires",
+   "concept:age"
+  ],
+  [
+   "ev:SYN-0004-EV242",
+   "supports",
+   "dec:NCT06600412:NCT06600412-I10:r1"
+  ],
+  [
+   "crit:NCT06600412-I10",
+   "requires",
+   "concept:sex"
+  ],
+  [
+   "ev:SYN-0004-EV001",
+   "supports",
+   "dec:NCT06600412:NCT06600412-I10:r1"
+  ],
+  [
+   "trial:NCT06600412",
+   "has_criterion",
+   "crit:NCT06600412-I11"
+  ],
+  [
+   "crit:NCT06600412-I11",
+   "decided_as",
+   "dec:NCT06600412:NCT06600412-I11:r1"
+  ],
+  [
+   "crit:NCT06600412-I11",
+   "requires",
+   "concept:sex"
+  ],
+  [
+   "ev:SYN-0004-EV001",
+   "supports",
+   "dec:NCT06600412:NCT06600412-I11:r1"
+  ],
+  [
+   "trial:NCT06600412",
+   "has_criterion",
+   "crit:NCT06600412-E01"
+  ],
+  [
+   "crit:NCT06600412-E01",
+   "decided_as",
+   "dec:NCT06600412:NCT06600412-E01:r1"
+  ],
+  [
+   "trial:NCT06600412",
+   "has_criterion",
+   "crit:NCT06600412-E02"
+  ],
+  [
+   "crit:NCT06600412-E02",
+   "decided_as",
+   "dec:NCT06600412:NCT06600412-E02:r1"
+  ],
+  [
+   "crit:NCT06600412-E02",
+   "requires",
+   "concept:diagnosis:prior malignancy"
+  ],
+  [
+   "concept:diagnosis:prior malignancy",
+   "observed_as",
+   "ev:SYN-0004-EV083"
+  ],
+  [
+   "ev:SYN-0004-EV083",
+   "derived_from",
+   "src:SYN-0004-D07:1084-1104"
+  ],
+  [
+   "ev:SYN-0004-EV083",
+   "supports",
+   "dec:NCT06600412:NCT06600412-E02:r1"
+  ],
+  [
+   "crit:NCT06600412-E02",
+   "requires",
+   "concept:medication:medications"
+  ],
+  [
+   "concept:medication:medications",
+   "observed_as",
+   "ev:SYN-0004-EV093"
+  ],
+  [
+   "ev:SYN-0004-EV093",
+   "derived_from",
+   "src:SYN-0004-D07:1242-1266"
+  ],
+  [
+   "ev:SYN-0004-EV093",
+   "supports",
+   "dec:NCT06600412:NCT06600412-E02:r1"
+  ],
+  [
+   "trial:NCT06600412",
+   "has_criterion",
+   "crit:NCT06600412-E03"
+  ],
+  [
+   "crit:NCT06600412-E03",
+   "decided_as",
+   "dec:NCT06600412:NCT06600412-E03:r1"
+  ],
+  [
+   "trial:NCT06600412",
+   "has_criterion",
+   "crit:NCT06600412-E04"
+  ],
+  [
+   "crit:NCT06600412-E04",
+   "decided_as",
+   "dec:NCT06600412:NCT06600412-E04:r1"
+  ],
+  [
+   "crit:NCT06600412-E04",
+   "requires",
+   "concept:urine_albumin_creatinine_ratio"
+  ],
+  [
+   "ev:SYN-0004-EV213",
+   "insufficient_for",
+   "dec:NCT06600412:NCT06600412-E04:r1"
+  ],
+  [
+   "crit:NCT06600412-E04",
+   "requires",
+   "concept:albumin"
+  ],
+  [
+   "concept:albumin",
+   "observed_as",
+   "ev:SYN-0004-EV205"
+  ],
+  [
+   "ev:SYN-0004-EV205",
+   "derived_from",
+   "src:SYN-0004-D08:767-793"
+  ],
+  [
+   "ev:SYN-0004-EV205",
+   "insufficient_for",
+   "dec:NCT06600412:NCT06600412-E04:r1"
+  ],
+  [
+   "crit:NCT06600412-E04",
+   "requires",
+   "concept:lab_other:urine protein"
+  ],
+  [
+   "concept:lab_other:urine protein",
+   "observed_as",
+   "ev:SYN-0004-EV229"
+  ],
+  [
+   "ev:SYN-0004-EV229",
+   "derived_from",
+   "src:SYN-0004-D08:1387-1424"
+  ],
+  [
+   "ev:SYN-0004-EV229",
+   "insufficient_for",
+   "dec:NCT06600412:NCT06600412-E04:r1"
+  ],
+  [
+   "trial:NCT06600412",
+   "has_criterion",
+   "crit:NCT06600412-E05"
+  ],
+  [
+   "crit:NCT06600412-E05",
+   "decided_as",
+   "dec:NCT06600412:NCT06600412-E05:r1"
+  ],
+  [
+   "crit:NCT06600412-E05",
+   "requires",
+   "concept:diagnosis:other hepatic history"
+  ],
+  [
+   "ev:SYN-0004-EV080",
+   "supports",
+   "dec:NCT06600412:NCT06600412-E05:r1"
+  ],
+  [
+   "crit:NCT06600412-E05",
+   "requires",
+   "concept:ast"
+  ],
+  [
+   "ev:SYN-0004-EV206",
+   "supports",
+   "dec:NCT06600412:NCT06600412-E05:r1"
+  ],
+  [
+   "crit:NCT06600412-E05",
+   "requires",
+   "concept:alt"
+  ],
+  [
+   "concept:alt",
+   "observed_as",
+   "ev:SYN-0004-EV207"
+  ],
+  [
+   "ev:SYN-0004-EV207",
+   "derived_from",
+   "src:SYN-0004-D08:813-830"
+  ],
+  [
+   "ev:SYN-0004-EV207",
+   "supports",
+   "dec:NCT06600412:NCT06600412-E05:r1"
+  ],
+  [
+   "crit:NCT06600412-E05",
+   "requires",
+   "concept:bilirubin_total"
+  ],
+  [
+   "ev:SYN-0004-EV209",
+   "supports",
+   "dec:NCT06600412:NCT06600412-E05:r1"
+  ],
+  [
+   "trial:NCT06600412",
+   "has_criterion",
+   "crit:NCT06600412-E06"
+  ],
+  [
+   "crit:NCT06600412-E06",
+   "decided_as",
+   "dec:NCT06600412:NCT06600412-E06:r1"
+  ],
+  [
+   "crit:NCT06600412-E06",
+   "requires",
+   "concept:age"
+  ],
+  [
+   "ev:SYN-0004-EV242",
+   "supports",
+   "dec:NCT06600412:NCT06600412-E06:r1"
+  ],
+  [
+   "crit:NCT06600412-E06",
+   "requires",
+   "concept:sex"
+  ],
+  [
+   "ev:SYN-0004-EV001",
+   "supports",
+   "dec:NCT06600412:NCT06600412-E06:r1"
+  ],
+  [
+   "trial:NCT06600412",
+   "has_criterion",
+   "crit:NCT06600412-E07"
+  ],
+  [
+   "crit:NCT06600412-E07",
+   "decided_as",
+   "dec:NCT06600412:NCT06600412-E07:r1"
+  ],
+  [
+   "trial:NCT06600412",
+   "has_criterion",
+   "crit:NCT06600412-E08"
+  ],
+  [
+   "crit:NCT06600412-E08",
+   "decided_as",
+   "dec:NCT06600412:NCT06600412-E08:r1"
+  ],
+  [
+   "crit:NCT06600412-E08",
+   "requires",
+   "concept:age"
+  ],
+  [
+   "ev:SYN-0004-EV242",
+   "supports",
+   "dec:NCT06600412:NCT06600412-E08:r1"
+  ],
+  [
+   "crit:NCT06600412-E08",
+   "requires",
+   "concept:birth_date"
+  ],
+  [
+   "ev:SYN-0004-EV002",
+   "supports",
+   "dec:NCT06600412:NCT06600412-E08:r1"
+  ],
+  [
+   "trial:NCT06600412",
+   "has_criterion",
+   "crit:NCT06600412-E09"
+  ],
+  [
+   "crit:NCT06600412-E09",
+   "decided_as",
+   "dec:NCT06600412:NCT06600412-E09:r1"
+  ],
+  [
+   "trial:NCT06600412",
+   "has_criterion",
+   "crit:NCT06600412-E10"
+  ],
+  [
+   "crit:NCT06600412-E10",
+   "decided_as",
+   "dec:NCT06600412:NCT06600412-E10:r1"
+  ],
+  [
+   "trial:NCT06600412",
+   "has_criterion",
+   "crit:NCT06600412-E11"
+  ],
+  [
+   "crit:NCT06600412-E11",
+   "decided_as",
+   "dec:NCT06600412:NCT06600412-E11:r1"
+  ],
+  [
+   "trial:NCT06600412",
+   "has_criterion",
+   "crit:NCT06600412-E12"
+  ],
+  [
+   "crit:NCT06600412-E12",
+   "decided_as",
+   "dec:NCT06600412:NCT06600412-E12:r1"
+  ],
+  [
+   "trial:NCT06600412",
+   "labelled",
+   "label:NCT06600412"
+  ]
+ ]
+}

@@ -1,0 +1,3978 @@
+{
+ "patient_id": "SYN-0011",
+ "as_of": "2026-10-01",
+ "version": 1,
+ "nodes": [
+  {
+   "id": "trial:NCT04928846",
+   "kind": "trial",
+   "title": "A Study to Assess Disease Activity and Adverse Events of Intravenous (IV) Telisotuzumab Vedotin Compared to IV Docetaxel in Adult Participants With Previously Treated Non-Squamous Non-Small Cell Lung Cancer (NSCLC)"
+  },
+  {
+   "id": "crit:NCT04928846-I01",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Projected life expectancy of at least 12 weeks.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT04928846:NCT04928846-I01:r1",
+   "kind": "decision",
+   "trial_id": "NCT04928846",
+   "criterion_id": "NCT04928846-I01",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No life expectancy documented; ECOG 1 and well appearing do not state a projection.",
+   "missing_fact": "Clinician estimate of life expectancy (>=12 weeks)",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT04928846-I02",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Participants must have c-Met overexpressing non-small cell lung cancer (NSCLC) as assessed by an AbbVie designated immunohistochemistry (IHC) laboratory using the VENTANA MET (SP44) RxDx assay.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT04928846:NCT04928846-I02:r1",
+   "kind": "decision",
+   "trial_id": "NCT04928846",
+   "criterion_id": "NCT04928846-I02",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "new_test",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No c-Met IHC testing in the record.",
+   "missing_fact": "c-Met IHC result with VENTANA MET (SP44) assay",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT04928846-I03",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Archival or fresh tumor material must be submitted for assessment of c-Met protein expression levels during the Pre-Screening period. Tumor material from the primary tumor site and/or metastatic sites are allowed.; If a participant was prescreened for Study M14-239 but did not enroll, tumor material previously submitted for Study M14-239 may be used for Study M18-868 Pre-Screening upon confirmation from AbbVie that sufficient evaluable tumor material is available (Except China).",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT04928846:NCT04928846-I03:r1",
+   "kind": "decision",
+   "trial_id": "NCT04928846",
+   "criterion_id": "NCT04928846-I03",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Pathology report exists (EBUS-TBNA), but tissue availability and submission are not documented.",
+   "missing_fact": "Availability of archival/fresh tumor tissue for submission",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT04928846-I04",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "A histologically or cytologically documented non-squamous cell NSCLC that is locally advanced or metastatic.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT04928846:NCT04928846-I04:r1",
+   "kind": "decision",
+   "trial_id": "NCT04928846",
+   "criterion_id": "NCT04928846-I04",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Cytologically/histologically documented adenocarcinoma (non-squamous), stage IV metastatic.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0011-EV005",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "adenocarcinoma",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-02-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:adenocarcinoma",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "adenocarcinoma"
+  },
+  {
+   "id": "src:SYN-0011-D02:11-50",
+   "kind": "source",
+   "doc_id": "SYN-0011-D02",
+   "doc_type": "pathology_report",
+   "span": [
+    11,
+    50
+   ],
+   "text": "station 4R and RUL mass: adenocarcinoma"
+  },
+  {
+   "id": "ev:SYN-0011-EV247",
+   "kind": "evidence",
+   "concept": "procedure",
+   "term": "EBUS-TBNA",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-02-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:procedure:ebus-tbna",
+   "kind": "concept",
+   "concept": "procedure",
+   "term": "EBUS-TBNA"
+  },
+  {
+   "id": "src:SYN-0011-D02:0-9",
+   "kind": "source",
+   "doc_id": "SYN-0011-D02",
+   "doc_type": "pathology_report",
+   "span": [
+    0,
+    9
+   ],
+   "text": "EBUS-TBNA"
+  },
+  {
+   "id": "ev:SYN-0011-EV045",
+   "kind": "evidence",
+   "concept": "cancer_stage",
+   "term": null,
+   "value": "stage IV",
+   "unit": null,
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:cancer_stage",
+   "kind": "concept",
+   "concept": "cancer_stage",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0011-D08:58-143",
+   "kind": "source",
+   "doc_id": "SYN-0011-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    58,
+    143
+   ],
+   "text": "Follow-up of stage IV lung adenocarcinoma after progression on pemetrexed maintenance"
+  },
+  {
+   "id": "crit:NCT04928846-I05",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "A known epidermal growth factor receptor (EGFR) activating mutation status. -- Participants with EGFR activating mutations are not eligible",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT04928846:NCT04928846-I05:r1",
+   "kind": "decision",
+   "trial_id": "NCT04928846",
+   "criterion_id": "NCT04928846-I05",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "EGFR status known: wild type, no activating mutation.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0011-EV249",
+   "kind": "evidence",
+   "concept": "biomarker",
+   "term": "EGFR",
+   "value": "wild type",
+   "unit": null,
+   "observed_date": "2026-02-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:biomarker:egfr",
+   "kind": "concept",
+   "concept": "biomarker",
+   "term": "EGFR"
+  },
+  {
+   "id": "src:SYN-0011-D02:73-87",
+   "kind": "source",
+   "doc_id": "SYN-0011-D02",
+   "doc_type": "pathology_report",
+   "span": [
+    73,
+    87
+   ],
+   "text": "EGFR wild type"
+  },
+  {
+   "id": "ev:SYN-0011-EV266",
+   "kind": "evidence",
+   "concept": "biomarker",
+   "term": "EGFR mutation",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:biomarker:egfr mutation",
+   "kind": "concept",
+   "concept": "biomarker",
+   "term": "EGFR mutation"
+  },
+  {
+   "id": "src:SYN-0011-D08:292-306",
+   "kind": "source",
+   "doc_id": "SYN-0011-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    292,
+    306
+   ],
+   "text": "EGFR wild type"
+  },
+  {
+   "id": "crit:NCT04928846-I06",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Actionable alterations in genes other than EGFR are eligible.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT04928846:NCT04928846-I06:r1",
+   "kind": "decision",
+   "trial_id": "NCT04928846",
+   "criterion_id": "NCT04928846-I06",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Permissive statement; non-EGFR alterations allowed. Patient has KRAS G12V, ALK/ROS1 negative, so not excluded.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0011-EV252",
+   "kind": "evidence",
+   "concept": "biomarker",
+   "term": "KRAS",
+   "value": "G12V",
+   "unit": null,
+   "observed_date": "2026-02-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:biomarker:kras",
+   "kind": "concept",
+   "concept": "biomarker",
+   "term": "KRAS"
+  },
+  {
+   "id": "src:SYN-0011-D02:124-134",
+   "kind": "source",
+   "doc_id": "SYN-0011-D02",
+   "doc_type": "pathology_report",
+   "span": [
+    124,
+    134
+   ],
+   "text": "KRAS G12V."
+  },
+  {
+   "id": "crit:NCT04928846-I07",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Measurable disease per Response Evaluation Criteria in Solid Tumors (RECIST) version 1.1.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT04928846:NCT04928846-I07:r1",
+   "kind": "decision",
+   "trial_id": "NCT04928846",
+   "criterion_id": "NCT04928846-I07",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "July CT target lesions RUL 5.0 cm and adrenal 2.9 cm are measurable (>=10 mm).",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0011-EV302",
+   "kind": "evidence",
+   "concept": "measurable_disease",
+   "term": "mass 50 mm",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-07-07",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:measurable_disease:mass 50 mm",
+   "kind": "concept",
+   "concept": "measurable_disease",
+   "term": "mass 50 mm"
+  },
+  {
+   "id": "src:SYN-0011-D05:10-89",
+   "kind": "source",
+   "doc_id": "SYN-0011-D05",
+   "doc_type": "clinic_note",
+   "span": [
+    10,
+    89
+   ],
+   "text": "CT shows growth of RUL mass (4.2 -> 5.0 cm) and adrenal lesion (2.1 -> 2.9 cm)."
+  },
+  {
+   "id": "ev:SYN-0011-EV170",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "RUL 5.0 cm",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:symptom_finding:rul 5.0 cm",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "RUL 5.0 cm"
+  },
+  {
+   "id": "src:SYN-0011-D08:2932-3026",
+   "kind": "source",
+   "doc_id": "SYN-0011-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    2932,
+    3026
+   ],
+   "text": "Target lesions on July CT: RUL 5.0 cm + adrenal 2.9 cm = 7.9 cm (baseline 6.3 cm, about +25%)."
+  },
+  {
+   "id": "ev:SYN-0011-EV171",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "adrenal 2.9 cm",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:symptom_finding:adrenal 2.9 cm",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "adrenal 2.9 cm"
+  },
+  {
+   "id": "crit:NCT04928846-I08",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "An Eastern Cooperative Oncology Group (ECOG) Performance Status of 0 to 1.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT04928846:NCT04928846-I08:r1",
+   "kind": "decision",
+   "trial_id": "NCT04928846",
+   "criterion_id": "NCT04928846-I08",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "structured_numeric"
+   ],
+   "note": "ecog = 1 points (2026-07-07, -86d) vs between [0, 1] -> met",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0011-EV026",
+   "kind": "evidence",
+   "concept": "ecog",
+   "term": null,
+   "value": 1,
+   "unit": "points",
+   "observed_date": "2026-07-07",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:ecog",
+   "kind": "concept",
+   "concept": "ecog",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0011-D05:237-244",
+   "kind": "source",
+   "doc_id": "SYN-0011-D05",
+   "doc_type": "clinic_note",
+   "span": [
+    237,
+    244
+   ],
+   "text": "ECOG 1."
+  },
+  {
+   "id": "calc:NCT04928846:NCT04928846-I08",
+   "kind": "calculation",
+   "concept": "ecog",
+   "operator": "between",
+   "threshold": [
+    0,
+    1
+   ],
+   "unit": null,
+   "value": 1,
+   "value_unit": "points",
+   "observed_date": "2026-07-07",
+   "days_before": 86,
+   "note": "ecog = 1 points (2026-07-07, -86d) vs between [0, 1] -> met"
+  },
+  {
+   "id": "crit:NCT04928846-I09",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Have received no more than 1 line of prior systemic cytotoxic chemotherapy in the locally advanced or metastatic setting.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT04928846:NCT04928846-I09:r1",
+   "kind": "decision",
+   "trial_id": "NCT04928846",
+   "criterion_id": "NCT04928846-I09",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "One line of platinum doublet then maintenance; only platinum doublet treated, so at most 1 line.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0011-EV178",
+   "kind": "evidence",
+   "concept": "medication",
+   "term": "platinum doublet",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "past"
+  },
+  {
+   "id": "concept:medication:platinum doublet",
+   "kind": "concept",
+   "concept": "medication",
+   "term": "platinum doublet"
+  },
+  {
+   "id": "src:SYN-0011-D08:3155-3232",
+   "kind": "source",
+   "doc_id": "SYN-0011-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    3155,
+    3232
+   ],
+   "text": "Treatment to date: one line of platinum doublet, then pemetrexed maintenance."
+  },
+  {
+   "id": "ev:SYN-0011-EV181",
+   "kind": "evidence",
+   "concept": "cancer_stage",
+   "term": null,
+   "value": "stage IV",
+   "unit": null,
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "src:SYN-0011-D08:3282-3382",
+   "kind": "source",
+   "doc_id": "SYN-0011-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    3282,
+    3382
+   ],
+   "text": "Progressive stage IV lung adenocarcinoma, PD-L1 high, previously treated with platinum doublet only."
+  },
+  {
+   "id": "crit:NCT04928846-I10",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Have progressed on at least 1 line of prior therapy for locally advanced/metastatic NSCLC; Participants WITHOUT an actionable gene alteration: must have progressed on (or be considered ineligible for) platinum-based chemotherapy and immune checkpoint inhibitor (as monotherapy or in combination with chemotherapy).; Participants WITH an actionable gene alteration for which immune checkpoint inhibitor therapy is not standard of care (e.g., anaplastic lymphoma kinase [ALK] translocation): must have progressed on (or be considered ineligible for) anti-cancer therapy targeting driver gene alterations and platinum-based chemotherapy.; Participants with gene alterations for which immune checkpoint inhibitor is standard of care must have also progressed on (or be considered ineligible for) immune checkpoint inhibitor (as monotherapy or in combination with chemotherapy).",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT04928846:NCT04928846-I10:r1",
+   "kind": "decision",
+   "trial_id": "NCT04928846",
+   "criterion_id": "NCT04928846-I10",
+   "status": "FAIL",
+   "reason": "VIOLATED",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No actionable alteration; needs progression on or ineligibility for checkpoint inhibitor, but no prior immunotherapy; declined, not ineligible.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0011-EV180",
+   "kind": "evidence",
+   "concept": "medication",
+   "term": "immunotherapy",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "past"
+  },
+  {
+   "id": "concept:medication:immunotherapy",
+   "kind": "concept",
+   "concept": "medication",
+   "term": "immunotherapy"
+  },
+  {
+   "id": "src:SYN-0011-D08:3233-3256",
+   "kind": "source",
+   "doc_id": "SYN-0011-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    3233,
+    3256
+   ],
+   "text": "No prior immunotherapy."
+  },
+  {
+   "id": "crit:NCT04928846-I11",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Must be considered appropriate for docetaxel therapy based on the assessment of the treating physician.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT04928846:NCT04928846-I11:r1",
+   "kind": "decision",
+   "trial_id": "NCT04928846",
+   "criterion_id": "NCT04928846-I11",
+   "status": "UNKNOWN",
+   "reason": "UNSUPPORTED",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Docetaxel-based therapy only discussed as an option; no physician decision of appropriateness.",
+   "missing_fact": "Treating physician's judgment that docetaxel is appropriate",
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0011-EV186",
+   "kind": "evidence",
+   "concept": "treatment_plan",
+   "term": "PD-1 axis immunotherapy",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "planned"
+  },
+  {
+   "id": "concept:treatment_plan:pd-1 axis immunotherapy",
+   "kind": "concept",
+   "concept": "treatment_plan",
+   "term": "PD-1 axis immunotherapy"
+  },
+  {
+   "id": "src:SYN-0011-D08:3406-3498",
+   "kind": "source",
+   "doc_id": "SYN-0011-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    3406,
+    3498
+   ],
+   "text": "Discussed second-line options including PD-1 axis immunotherapy and docetaxel-based therapy."
+  },
+  {
+   "id": "ev:SYN-0011-EV187",
+   "kind": "evidence",
+   "concept": "treatment_plan",
+   "term": "docetaxel-based therapy",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "planned"
+  },
+  {
+   "id": "concept:treatment_plan:docetaxel-based therapy",
+   "kind": "concept",
+   "concept": "treatment_plan",
+   "term": "docetaxel-based therapy"
+  },
+  {
+   "id": "crit:NCT04928846-E01",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Evidence of new, untreated CNS metastases or progressing CNS metastases after treatment.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT04928846:NCT04928846-E01:r1",
+   "kind": "decision",
+   "trial_id": "NCT04928846",
+   "criterion_id": "NCT04928846-E01",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "new_test",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Brain MRI negative in February but expired; repeat not done, only planned. Neuro symptoms negative.",
+   "missing_fact": "Current brain MRI (last 2026-02-16, now >90 days old)",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT04928846-E02",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Evidence of leptomeningeal disease.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT04928846:NCT04928846-E02:r1",
+   "kind": "decision",
+   "trial_id": "NCT04928846",
+   "criterion_id": "NCT04928846-E02",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Leptomeningeal disease never addressed; no neuro symptoms but that does not rule it out.",
+   "missing_fact": "Evidence on leptomeningeal disease (CSF or contrast MRI)",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT04928846-E03",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Participants with adenosquamous or neuroendocrine histology, nor sarcomatoid features.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT04928846:NCT04928846-E03:r1",
+   "kind": "decision",
+   "trial_id": "NCT04928846",
+   "criterion_id": "NCT04928846-E03",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_record_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Pathology says adenocarcinoma, TTF-1 positive; no explicit negation of the excluded histologies.",
+   "missing_fact": "Pathology statement excluding adenosquamous, neuroendocrine, sarcomatoid features",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT04928846-E04",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Epidermal growth factor receptor (EGFR) activating mutations.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT04928846:NCT04928846-E04:r1",
+   "kind": "decision",
+   "trial_id": "NCT04928846",
+   "criterion_id": "NCT04928846-E04",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "EGFR wild type; no activating mutation.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT04928846-E05",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Participants who have received prior c-Met-targeted antibodies, prior telisotuzumab vedotin, or prior antibody-drug conjugates either targeting c-Met or consisting of monomethylauristatin E..",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT04928846:NCT04928846-E05:r1",
+   "kind": "decision",
+   "trial_id": "NCT04928846",
+   "criterion_id": "NCT04928846-E05",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_history_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Treatment history lists only platinum doublet and pemetrexed, 'platinum doublet only', but no explicit ADC denial.",
+   "missing_fact": "Confirmation of no prior c-Met antibody/ADC/MMAE exposure",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT04928846-E06",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Participants who have received prior docetaxel therapy.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT04928846:NCT04928846-E06:r1",
+   "kind": "decision",
+   "trial_id": "NCT04928846",
+   "criterion_id": "NCT04928846-E06",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Treated with platinum doublet only; docetaxel only discussed as planned option, not received.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT04928846-E07",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "A history of other malignancies except: Malignancy treated with curative intent and with no known active disease present for >=2 years before the first dose of study drug and felt to be at low risk for recurrence by investigator. Additionally, participants must not be receiving any ongoing anti-cancer therapy, including maintenance therapy, prior to randomization..; Adequately treated non-melanoma skin cancer or lentigo maligna without evidence of disease.; Adequately treated carcinoma in situ without current evidence of disease.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT04928846:NCT04928846-E07:r1",
+   "kind": "decision",
+   "trial_id": "NCT04928846",
+   "criterion_id": "NCT04928846-E07",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Explicit 'No prior malignancy'.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0011-EV093",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "prior malignancy",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "past"
+  },
+  {
+   "id": "concept:diagnosis:prior malignancy",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "prior malignancy"
+  },
+  {
+   "id": "src:SYN-0011-D08:1126-1146",
+   "kind": "source",
+   "doc_id": "SYN-0011-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    1126,
+    1146
+   ],
+   "text": "No prior malignancy."
+  },
+  {
+   "id": "crit:NCT04928846-E08",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "A history of idiopathic pulmonary fibrosis, organizing pneumonia (e.g., bronchiolitis obliterans), drug-induced pneumonitis, or idiopathic pneumonitis, evidence of active pneumonitis on screening chest computed tomography (CT) scan or prior pneumonectomy. A history of prior radiation pneumonitis in the radiation field (fibrosis) is not permitted.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT04928846:NCT04928846-E08:r1",
+   "kind": "decision",
+   "trial_id": "NCT04928846",
+   "criterion_id": "NCT04928846-E08",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation",
+    "pc:blanket_out_of_scope"
+   ],
+   "note": "[blanket negation out of A1 scope] No other pulmonary history (covers chronic lung disease); no thoracic surgery. Screening CT pneumonitis not assessed but no pointer.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT04928846-E09",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Unresolved nor adverse event (AE) >= Grade 2 from prior anticancer therapy, except for alopecia or anemia. Participants with hormone deficiencies caused by prior anticancer therapy who are asymptomatic and on a stable dose of replacement hormone are eligible for study.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT04928846:NCT04928846-E09:r1",
+   "kind": "decision",
+   "trial_id": "NCT04928846",
+   "criterion_id": "NCT04928846-E09",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Mild fatigue and anemia (excepted) only; no graded AEs documented, so cannot be confirmed absent.",
+   "missing_fact": "Graded unresolved adverse events from carboplatin/pemetrexed",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT04928846-E10",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Major surgery within 21 days prior to randomization.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT04928846:NCT04928846-E10:r1",
+   "kind": "decision",
+   "trial_id": "NCT04928846",
+   "criterion_id": "NCT04928846-E10",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Only procedures: appendectomy 1984, EBUS-TBNA in February; no major surgery within 21 days.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0011-EV096",
+   "kind": "evidence",
+   "concept": "procedure",
+   "term": "thoracic surgery",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "past"
+  },
+  {
+   "id": "concept:procedure:thoracic surgery",
+   "kind": "concept",
+   "concept": "procedure",
+   "term": "thoracic surgery"
+  },
+  {
+   "id": "src:SYN-0011-D08:1224-1244",
+   "kind": "source",
+   "doc_id": "SYN-0011-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    1224,
+    1244
+   ],
+   "text": "No thoracic surgery."
+  },
+  {
+   "id": "ev:SYN-0011-EV094",
+   "kind": "evidence",
+   "concept": "procedure",
+   "term": "appendectomy",
+   "value": true,
+   "unit": null,
+   "observed_date": "1984-01-01",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "past"
+  },
+  {
+   "id": "concept:procedure:appendectomy",
+   "kind": "concept",
+   "concept": "procedure",
+   "term": "appendectomy"
+  },
+  {
+   "id": "src:SYN-0011-D08:1171-1191",
+   "kind": "source",
+   "doc_id": "SYN-0011-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    1171,
+    1191
+   ],
+   "text": "Appendectomy (1984)."
+  },
+  {
+   "id": "crit:NCT04928846-E11",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Clinically significant condition(s) as listed in the protocol.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT04928846:NCT04928846-E11:r1",
+   "kind": "decision",
+   "trial_id": "NCT04928846",
+   "criterion_id": "NCT04928846-E11",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Protocol list not provided; no documented problem, needs investigator judgment.",
+   "missing_fact": "Protocol-listed clinically significant conditions not available to check",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT04928846-I12",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Participants with metastases to the central nervous system (CNS) are eligible only after adequate treatment (such as surgery, radiotherapy, or drug therapy) is provided and: They are asymptomatic and off or on a stable or reducing dose of systemic steroids (on no more than 10 mg per day [QD] prednisone or equivalent) and/or anticonvulsants for at least 2 weeks prior to randomization.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT04928846:NCT04928846-I12:r1",
+   "kind": "decision",
+   "trial_id": "NCT04928846",
+   "criterion_id": "NCT04928846-I12",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": false,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Applies only to patients with CNS metastases; none documented (February MRI negative).",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0011-EV016",
+   "kind": "evidence",
+   "concept": "metastasis",
+   "term": "brain metastases",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-02-14",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:metastasis:brain metastases",
+   "kind": "concept",
+   "concept": "metastasis",
+   "term": "brain metastases"
+  },
+  {
+   "id": "src:SYN-0011-D03:88-124",
+   "kind": "source",
+   "doc_id": "SYN-0011-D03",
+   "doc_type": "imaging_report",
+   "span": [
+    88,
+    124
+   ],
+   "text": "Brain MRI 2026-02-16: no metastases."
+  },
+  {
+   "id": "label:NCT04928846",
+   "kind": "trial_decision",
+   "label": "ineligible",
+   "why": [
+    "FAIL NCT04928846-I10"
+   ],
+   "by": "agent3"
+  },
+  {
+   "id": "trial:NCT06692738",
+   "kind": "trial",
+   "title": "A Global Phase III Study of Rilvegostomig or Pembrolizumab Plus Chemotherapy for First-Line Treatment of Locally Advanced or Metastatic Squamous Non-small Cell Lung Cancer (NSCLC)"
+  },
+  {
+   "id": "crit:NCT06692738-I01",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Histologically or cytologically documented squamous NSCLC.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06692738:NCT06692738-I01:r1",
+   "kind": "decision",
+   "trial_id": "NCT06692738",
+   "criterion_id": "NCT06692738-I01",
+   "status": "FAIL",
+   "reason": "VIOLATED",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Pathology shows adenocarcinoma (TTF-1+), not squamous; the trial requires squamous histology.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06692738-I02",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Stage III B/C or IV mNSCLC (based on the American Joint Committee on Cancer Edition 8) not amenable to curative treatment.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06692738:NCT06692738-I02:r1",
+   "kind": "decision",
+   "trial_id": "NCT06692738",
+   "criterion_id": "NCT06692738-I02",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "structured_categorical"
+   ],
+   "note": "cancer_stage = stage IV vs in ['III B/C', 'IV']",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "calc:NCT06692738:NCT06692738-I02",
+   "kind": "calculation",
+   "concept": "cancer_stage",
+   "operator": "in",
+   "threshold": [
+    "III B/C",
+    "IV"
+   ],
+   "unit": null,
+   "value": "stage IV",
+   "observed_date": "2026-09-28",
+   "note": "cancer_stage = stage IV vs in ['III B/C', 'IV']"
+  },
+  {
+   "id": "crit:NCT06692738-I03",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Absence of documented tumor genomic mutation results from tests conducted as part of standard local practice in any actionable driver oncogenes for which there are locally approved and available targeted 1L therapies.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06692738:NCT06692738-I03:r1",
+   "kind": "decision",
+   "trial_id": "NCT06692738",
+   "criterion_id": "NCT06692738-I03",
+   "status": "FAIL",
+   "reason": "VIOLATED",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "KRAS G12V documented; this is an actionable driver oncogene with targeted therapy (G12C-specific drugs differ), so criterion likely violated. EGFR/ALK/ROS1 negative.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0011-EV269",
+   "kind": "evidence",
+   "concept": "biomarker",
+   "term": "KRAS G12V",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:biomarker:kras g12v",
+   "kind": "concept",
+   "concept": "biomarker",
+   "term": "KRAS G12V"
+  },
+  {
+   "id": "src:SYN-0011-D08:331-340",
+   "kind": "source",
+   "doc_id": "SYN-0011-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    331,
+    340
+   ],
+   "text": "KRAS G12V"
+  },
+  {
+   "id": "crit:NCT06692738-I04",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Provision of acceptable tumor sample to confirm tumor PD-L1 expression TC >= 1%.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06692738:NCT06692738-I04:r1",
+   "kind": "decision",
+   "trial_id": "NCT06692738",
+   "criterion_id": "NCT06692738-I04",
+   "status": "UNKNOWN",
+   "reason": "UNSUPPORTED",
+   "action": "med_record_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "PD-L1 TPS 70% is documented, but sample provision for central confirmation is not documented.",
+   "missing_fact": "Availability of an acceptable tumor sample and PD-L1 tumor cell expression confirmation",
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0011-EV253",
+   "kind": "evidence",
+   "concept": "pd_l1_expression",
+   "term": null,
+   "value": 70.0,
+   "unit": "%",
+   "observed_date": "2026-02-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:pd_l1_expression",
+   "kind": "concept",
+   "concept": "pd_l1_expression",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0011-D02:135-156",
+   "kind": "source",
+   "doc_id": "SYN-0011-D02",
+   "doc_type": "pathology_report",
+   "span": [
+    135,
+    156
+   ],
+   "text": "PD-L1 (22C3) TPS 70%."
+  },
+  {
+   "id": "crit:NCT06692738-I05",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "At least one lesion not previously irradiated that qualifies as a RECIST 1.1 TL at baseline and can be accurately measured at baseline as >= 10 mm in the longest diameter (except lymph nodes, which must have short axis >= 15 mm) with CT or MRI and is suitable for accurate repeated measurements.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06692738:NCT06692738-I05:r1",
+   "kind": "decision",
+   "trial_id": "NCT06692738",
+   "criterion_id": "NCT06692738-I05",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "July CT: RUL mass 5.0 cm and adrenal lesion 2.9 cm, no prior radiotherapy documented. Measurable lesions exist.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06692738-I06",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Adequate organ and bone marrow function.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06692738:NCT06692738-I06:r1",
+   "kind": "decision",
+   "trial_id": "NCT06692738",
+   "criterion_id": "NCT06692738-I06",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Recent WBC, ANC, platelets, creatinine, eGFR 77, ALT/AST and bilirubin normal; Hb 11.3 mildly low but acceptable.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0011-EV196",
+   "kind": "evidence",
+   "concept": "wbc",
+   "term": null,
+   "value": 6.1,
+   "unit": "10^9/L",
+   "observed_date": "2026-09-29",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:wbc",
+   "kind": "concept",
+   "concept": "wbc",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0011-D09:53-79",
+   "kind": "source",
+   "doc_id": "SYN-0011-D09",
+   "doc_type": "lab_result",
+   "span": [
+    53,
+    79
+   ],
+   "text": "WBC 6.1 x10^9/L (4.0-11.0)"
+  },
+  {
+   "id": "ev:SYN-0011-EV205",
+   "kind": "evidence",
+   "concept": "platelet_count",
+   "term": null,
+   "value": 205,
+   "unit": "10^9/L",
+   "observed_date": "2026-09-29",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:platelet_count",
+   "kind": "concept",
+   "concept": "platelet_count",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0011-D09:307-338",
+   "kind": "source",
+   "doc_id": "SYN-0011-D09",
+   "doc_type": "lab_result",
+   "span": [
+    307,
+    338
+   ],
+   "text": "Platelets 205 x10^9/L (150-400)"
+  },
+  {
+   "id": "ev:SYN-0011-EV211",
+   "kind": "evidence",
+   "concept": "creatinine",
+   "term": null,
+   "value": 1.06,
+   "unit": "mg/dL",
+   "observed_date": "2026-09-29",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:creatinine",
+   "kind": "concept",
+   "concept": "creatinine",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0011-D09:509-542",
+   "kind": "source",
+   "doc_id": "SYN-0011-D09",
+   "doc_type": "lab_result",
+   "span": [
+    509,
+    542
+   ],
+   "text": "Creatinine 1.06 mg/dL (0.70-1.30)"
+  },
+  {
+   "id": "ev:SYN-0011-EV218",
+   "kind": "evidence",
+   "concept": "alt",
+   "term": null,
+   "value": 24,
+   "unit": "U/L",
+   "observed_date": "2026-09-29",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:alt",
+   "kind": "concept",
+   "concept": "alt",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0011-D09:739-756",
+   "kind": "source",
+   "doc_id": "SYN-0011-D09",
+   "doc_type": "lab_result",
+   "span": [
+    739,
+    756
+   ],
+   "text": "ALT 24 U/L (7-55)"
+  },
+  {
+   "id": "ev:SYN-0011-EV221",
+   "kind": "evidence",
+   "concept": "bilirubin_total",
+   "term": null,
+   "value": 0.5,
+   "unit": "mg/dL",
+   "observed_date": "2026-09-29",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:bilirubin_total",
+   "kind": "concept",
+   "concept": "bilirubin_total",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0011-D09:812-847",
+   "kind": "source",
+   "doc_id": "SYN-0011-D09",
+   "doc_type": "lab_result",
+   "span": [
+    812,
+    847
+   ],
+   "text": "Total bilirubin 0.5 mg/dL (0.1-1.2)"
+  },
+  {
+   "id": "crit:NCT06692738-E01",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Presence of small cell and neuroendocrine histology components.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06692738:NCT06692738-E01:r1",
+   "kind": "decision",
+   "trial_id": "NCT06692738",
+   "criterion_id": "NCT06692738-E01",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_record_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Pathology reports adenocarcinoma only; no explicit statement about small cell or neuroendocrine components.",
+   "missing_fact": "Pathology statement on absence of small cell or neuroendocrine components",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06692738-E02",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Brain metastases unless asymptomatic, stable, and not requiring steroids or anticonvulsants for at least 7 days prior to randomization. A minimum of 2 weeks must have elapsed between the end of local therapy (brain radiotherapy or surgery) and randomization. Participants must have recovered from the acute toxic effect of radiotherapy (eg, dizziness and signs of increased intracranial pressure) or surgery prior to randomization.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06692738:NCT06692738-E02:r1",
+   "kind": "decision",
+   "trial_id": "NCT06692738",
+   "criterion_id": "NCT06692738-E02",
+   "status": "UNKNOWN",
+   "reason": "EXPIRED",
+   "action": "new_test",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Brain MRI negative in February (-227d), older than 90 days; repeat not done.",
+   "missing_fact": "Current brain imaging (repeat MRI, planned but not done)",
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0011-EV172",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "brain metastases",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-02-16",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:symptom_finding:brain metastases",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "brain metastases"
+  },
+  {
+   "id": "src:SYN-0011-D08:3027-3056",
+   "kind": "source",
+   "doc_id": "SYN-0011-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    3027,
+    3056
+   ],
+   "text": "Brain MRI 2026-02-16 negative"
+  },
+  {
+   "id": "ev:SYN-0011-EV173",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "repeat not yet done.",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:symptom_finding:repeat not yet done.",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "repeat not yet done."
+  },
+  {
+   "id": "src:SYN-0011-D08:3058-3078",
+   "kind": "source",
+   "doc_id": "SYN-0011-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    3058,
+    3078
+   ],
+   "text": "repeat not yet done."
+  },
+  {
+   "id": "crit:NCT06692738-E03",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Any prior systemic, non-curative therapy received for NSCLC.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06692738:NCT06692738-E03:r1",
+   "kind": "decision",
+   "trial_id": "NCT06692738",
+   "criterion_id": "NCT06692738-E03",
+   "status": "FAIL",
+   "reason": "VIOLATED",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Received carboplatin/pemetrexed then pemetrexed maintenance for metastatic disease; prior systemic non-curative therapy.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0011-EV062",
+   "kind": "evidence",
+   "concept": "medication",
+   "term": "carboplatin/pemetrexed",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-03-03",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "past"
+  },
+  {
+   "id": "concept:medication:carboplatin/pemetrexed",
+   "kind": "concept",
+   "concept": "medication",
+   "term": "carboplatin/pemetrexed"
+  },
+  {
+   "id": "src:SYN-0011-D08:363-437",
+   "kind": "source",
+   "doc_id": "SYN-0011-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    363,
+    437
+   ],
+   "text": "He completed 4 cycles of carboplatin/pemetrexed (2026-03-03 to 2026-05-05)"
+  },
+  {
+   "id": "ev:SYN-0011-EV179",
+   "kind": "evidence",
+   "concept": "medication",
+   "term": "pemetrexed maintenance",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "past"
+  },
+  {
+   "id": "concept:medication:pemetrexed maintenance",
+   "kind": "concept",
+   "concept": "medication",
+   "term": "pemetrexed maintenance"
+  },
+  {
+   "id": "crit:NCT06692738-E04",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Any prior treatment with an anti-PD-1 or anti-PD-L1 agent.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06692738:NCT06692738-E04:r1",
+   "kind": "decision",
+   "trial_id": "NCT06692738",
+   "criterion_id": "NCT06692738-E04",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "'No prior immunotherapy' explicitly stated; pembrolizumab was declined, not received.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06692738-E05",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Any prior exposure to an anti-TIGIT therapy or any other anticancer therapy targeting immune-regulatory receptors or mechanisms.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06692738:NCT06692738-E05:r1",
+   "kind": "decision",
+   "trial_id": "NCT06692738",
+   "criterion_id": "NCT06692738-E05",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No prior immunotherapy stated; treatment to date is platinum doublet and pemetrexed only.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06692738-E06",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "History of another primary malignancy except for malignancy treated with curative intent with no known active disease >= 2 years before the first dose of study intervention and of low potential risk for recurrence.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06692738:NCT06692738-E06:r1",
+   "kind": "decision",
+   "trial_id": "NCT06692738",
+   "criterion_id": "NCT06692738-E06",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "'No prior malignancy' explicitly documented.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06692738-E07",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Active or prior documented autoimmune or inflammatory disorders requiring chronic systemic treatment with the use of disease-modifying agents or other immunosuppressive drugs.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06692738:NCT06692738-E07:r1",
+   "kind": "decision",
+   "trial_id": "NCT06692738",
+   "criterion_id": "NCT06692738-E07",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation"
+   ],
+   "note": "No autoimmune or inflammatory bowel history; no systemic steroids.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0011-EV090",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "other autoimmune history",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:other autoimmune history",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "other autoimmune history"
+  },
+  {
+   "id": "src:SYN-0011-D08:1016-1125",
+   "kind": "source",
+   "doc_id": "SYN-0011-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    1016,
+    1125
+   ],
+   "text": "No other cardiac, pulmonary, hepatic, renal, endocrine, autoimmune, inflammatory bowel or neurologic history."
+  },
+  {
+   "id": "ev:SYN-0011-EV091",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "other inflammatory bowel history",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:other inflammatory bowel history",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "other inflammatory bowel history"
+  },
+  {
+   "id": "ev:SYN-0011-EV108",
+   "kind": "evidence",
+   "concept": "medication",
+   "term": "systemic steroids",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:medication:systemic steroids",
+   "kind": "concept",
+   "concept": "medication",
+   "term": "systemic steroids"
+  },
+  {
+   "id": "src:SYN-0011-D08:1595-1616",
+   "kind": "source",
+   "doc_id": "SYN-0011-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    1595,
+    1616
+   ],
+   "text": "No systemic steroids."
+  },
+  {
+   "id": "crit:NCT06692738-E08",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Active primary immunodeficiency/active infectious disease(s).",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06692738:NCT06692738-E08:r1",
+   "kind": "decision",
+   "trial_id": "NCT06692738",
+   "criterion_id": "NCT06692738-E08",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No explicit negation of immunodeficiency or active infection; afebrile and normal labs and HIV negative do not rule it out.",
+   "missing_fact": "Statement on primary immunodeficiency or active infection",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06692738-E09",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Active tuberculosis infection.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06692738:NCT06692738-E09:r1",
+   "kind": "decision",
+   "trial_id": "NCT06692738",
+   "criterion_id": "NCT06692738-E09",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Tuberculosis is not mentioned anywhere in the record.",
+   "missing_fact": "Tuberculosis history or current infection status",
+   "derived_from": null
+  },
+  {
+   "id": "label:NCT06692738",
+   "kind": "trial_decision",
+   "label": "ineligible",
+   "why": [
+    "FAIL NCT06692738-I01",
+    "FAIL NCT06692738-I03",
+    "FAIL NCT06692738-E03"
+   ],
+   "by": "agent3"
+  },
+  {
+   "id": "trial:NCT07144280",
+   "kind": "trial",
+   "title": "A Study to Learn About the Study Medicine Called PF-08046054/SGN-PDL1V Versus Docetaxel in Adult Participants With Previously-Treated Programmed Cell Death Ligand 1 (PD-L1) Positive Non-Small-Cell Lung Cancer (NSCLC)"
+  },
+  {
+   "id": "crit:NCT07144280-I01",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Histologically or cytologically confirmed diagnosis of NSCLC with locally advanced, unresectable Stage IIIB or IIIC not eligible for definitive chemoradiotherapy or metastatic (Stage IV: M1a, M1b, or M1c) disease per the American Joint Committee on Cancer (AJCC) Staging Manual, Version 8.0, and the Union for International Cancer Control (UICC) Staging System. Note: Participants with a neuroendocrine component or histology are not eligible.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07144280:NCT07144280-I01:r1",
+   "kind": "decision",
+   "trial_id": "NCT07144280",
+   "criterion_id": "NCT07144280-I01",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Pathology-confirmed adenocarcinoma, stage IV M1b (adrenal). No neuroendocrine component documented, and none is suggested.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0011-EV166",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "lung adenocarcinoma",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-28",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:diagnosis:lung adenocarcinoma",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "lung adenocarcinoma"
+  },
+  {
+   "id": "src:SYN-0011-D08:2832-2897",
+   "kind": "source",
+   "doc_id": "SYN-0011-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    2832,
+    2897
+   ],
+   "text": "Lung adenocarcinoma cT2b N2 M1b (adrenal), stage IVA at diagnosis"
+  },
+  {
+   "id": "crit:NCT07144280-I02",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "PD-L1 expression on >=1% of tumor cells based on local immunohistochemistry (IHC) testing with an assay utilizing the anti-PD-L1 monoclonal antibody clones 22C3 or SP263.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07144280:NCT07144280-I02:r1",
+   "kind": "decision",
+   "trial_id": "NCT07144280",
+   "criterion_id": "NCT07144280-I02",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "structured_numeric"
+   ],
+   "note": "pd_l1_expression = 70.0 % (2026-02-10, -233d) vs >= 1 -> met",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "calc:NCT07144280:NCT07144280-I02",
+   "kind": "calculation",
+   "concept": "pd_l1_expression",
+   "operator": ">=",
+   "threshold": 1,
+   "unit": "%",
+   "value": 70.0,
+   "value_unit": "%",
+   "observed_date": "2026-02-10",
+   "days_before": 233,
+   "note": "pd_l1_expression = 70.0 % (2026-02-10, -233d) vs >= 1 -> met"
+  },
+  {
+   "id": "crit:NCT07144280-I03",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Participants who have NSCLC with known AGAs are permitted.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07144280:NCT07144280-I03:r1",
+   "kind": "decision",
+   "trial_id": "NCT07144280",
+   "criterion_id": "NCT07144280-I03",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Permissive criterion: patients with or without AGAs are allowed. Patient has no known AGAs, so no barrier.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0011-EV250",
+   "kind": "evidence",
+   "concept": "biomarker",
+   "term": "ALK fusion",
+   "value": "not detected",
+   "unit": null,
+   "observed_date": "2026-02-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:biomarker:alk fusion",
+   "kind": "concept",
+   "concept": "biomarker",
+   "term": "ALK fusion"
+  },
+  {
+   "id": "src:SYN-0011-D02:89-122",
+   "kind": "source",
+   "doc_id": "SYN-0011-D02",
+   "doc_type": "pathology_report",
+   "span": [
+    89,
+    122
+   ],
+   "text": "ALK and ROS1 fusions not detected"
+  },
+  {
+   "id": "crit:NCT07144280-I04",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Able to provide any of the following tumor tissues for biomarker analysis: Archival specimen (preferably collected within 12 months after the last anticancer therapy) (see laboratory manual for details); or; De novo biopsy from a tumor lesion, if medically feasible.",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07144280:NCT07144280-I04:r1",
+   "kind": "decision",
+   "trial_id": "NCT07144280",
+   "criterion_id": "NCT07144280-I04",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_record_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Diagnostic EBUS-TBNA was done, but tissue availability for the trial is not documented.",
+   "missing_fact": "Whether archival tumor tissue is available or a de novo biopsy is feasible",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07144280-I05",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Participants must have received the following therapies and progressed during or relapsed after receiving their most recent prior therapy, or have been intolerant to their most recent therapy:",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07144280:NCT07144280-I05:r1",
+   "kind": "decision",
+   "trial_id": "NCT07144280",
+   "criterion_id": "NCT07144280-I05",
+   "status": "UNKNOWN",
+   "reason": "UNSUPPORTED",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "The criterion's required-therapy list is cut off. The patient progressed on platinum and pemetrexed but had no immunotherapy, so I06 decides it.",
+   "missing_fact": "Which therapies the protocol requires, given no prior PD-(L)1 therapy",
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0011-EV020",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "disease progression",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-06-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:diagnosis:disease progression",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "disease progression"
+  },
+  {
+   "id": "src:SYN-0011-D04:92-164",
+   "kind": "source",
+   "doc_id": "SYN-0011-D04",
+   "doc_type": "medication_record",
+   "span": [
+    92,
+    164
+   ],
+   "text": "Pemetrexed maintenance 2026-05-26 to 2026-06-23, stopped at progression."
+  },
+  {
+   "id": "crit:NCT07144280-I06",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Participants with no known AGAs must fulfill 1 of the following conditions: Received a platinum-based combination therapy for the treatment of metastatic or recurrent disease, and unless contraindicated, a PD-(L)1 monoclonal antibody (concurrently or sequentially with platinum-based chemotherapy).; Experienced disease progression within 6 months of the last dose of platinum-based chemotherapy in the adjuvant, neoadjuvant, or chemoradiotherapy setting and received a PD-(L)1 monoclonal antibody at any time during the course of treatment. Participants with known AGAs (eg, EGFR mutations, ALK translocations, or other relevant actionable mutations) must fulfill the following conditions: Must have received at least 1 relevant AGA-targeted therapy if locally available and, in the opinion of the investigator, additional AGA-targeted therapy is not in the best interest of the participant; Received a platinum-based combination therapy for the treatment of metastatic or recurrent disease, or experienced disease progression within 6 months of the last dose of platinum-based chemotherapy in the adjuvant, neoadjuvant, or chemoradiotherapy setting.; May have received PD-(L)1 monoclonal antibody (concurrently or sequentially with platinum-based chemotherapy).",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07144280:NCT07144280-I06:r1",
+   "kind": "decision",
+   "trial_id": "NCT07144280",
+   "criterion_id": "NCT07144280-I06",
+   "status": "UNKNOWN",
+   "reason": "UNSUPPORTED",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Platinum doublet for metastatic disease is documented. No PD-(L)1 therapy was given; he declined it over a relative's colitis, which is not a documented contraindication.",
+   "missing_fact": "Whether PD-(L)1 antibody is contraindicated for this patient",
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0011-EV017",
+   "kind": "evidence",
+   "concept": "medication",
+   "term": "carboplatin AUC5 + pemetrexed 500 mg/m2 q3w",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-03-03",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "past"
+  },
+  {
+   "id": "concept:medication:carboplatin auc5 + pemetrexed 500 mg/m2 q3w",
+   "kind": "concept",
+   "concept": "medication",
+   "term": "carboplatin AUC5 + pemetrexed 500 mg/m2 q3w"
+  },
+  {
+   "id": "src:SYN-0011-D04:0-43",
+   "kind": "source",
+   "doc_id": "SYN-0011-D04",
+   "doc_type": "medication_record",
+   "span": [
+    0,
+    43
+   ],
+   "text": "Carboplatin AUC5 + pemetrexed 500 mg/m2 q3w"
+  },
+  {
+   "id": "ev:SYN-0011-EV018",
+   "kind": "evidence",
+   "concept": "treatment_plan",
+   "term": "4 cycles of carboplatin + pemetrexed",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-06-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "past"
+  },
+  {
+   "id": "concept:treatment_plan:4 cycles of carboplatin + pemetrexed",
+   "kind": "concept",
+   "concept": "treatment_plan",
+   "term": "4 cycles of carboplatin + pemetrexed"
+  },
+  {
+   "id": "src:SYN-0011-D04:45-91",
+   "kind": "source",
+   "doc_id": "SYN-0011-D04",
+   "doc_type": "medication_record",
+   "span": [
+    45,
+    91
+   ],
+   "text": "4 cycles completed (2026-03-03 to 2026-05-05)."
+  },
+  {
+   "id": "ev:SYN-0011-EV023",
+   "kind": "evidence",
+   "concept": "treatment_plan",
+   "term": "pembrolizumab",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-02-01",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "declined"
+  },
+  {
+   "id": "concept:treatment_plan:pembrolizumab",
+   "kind": "concept",
+   "concept": "treatment_plan",
+   "term": "pembrolizumab"
+  },
+  {
+   "id": "src:SYN-0011-D05:90-188",
+   "kind": "source",
+   "doc_id": "SYN-0011-D05",
+   "doc_type": "clinic_note",
+   "span": [
+    90,
+    188
+   ],
+   "text": "Patient declined pembrolizumab in February because of a relative's severe colitis on immunotherapy"
+  },
+  {
+   "id": "crit:NCT07144280-E01",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "History of another malignancy within 3 years before the first dose of PF-08046054, or any evidence of residual disease from a previously diagnosed malignancy. Exceptions are malignancies with a negligible risk of metastasis or death (eg, 5-year overall survival [OS] >=90%), such as adequately treated carcinoma in situ of the cervix, non-melanoma skin carcinoma, localized prostate cancer, ductal carcinoma in situ, or Stage I uterine cancer.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07144280:NCT07144280-E01:r1",
+   "kind": "decision",
+   "trial_id": "NCT07144280",
+   "criterion_id": "NCT07144280-E01",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "The note explicitly states 'No prior malignancy'.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07144280-E02",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Any central nervous system (CNS) lesions, unless definitively treated with CNS-directed local therapy (surgery and/or radiotherapy). Participants with definitively treated brain metastases are eligible if they meet the following criteria: The participant is on a stable dose of <=10 mg/day of prednisone or equivalent for at least >14 days prior to randomization (if requiring steroid treatment).; No clinical or radiographic progression in the CNS following CNS-directed definitive radiotherapy and/or surgery.; Time since CNS-directed treatment is >=28 days prior to randomization.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07144280:NCT07144280-E02:r1",
+   "kind": "decision",
+   "trial_id": "NCT07144280",
+   "criterion_id": "NCT07144280-E02",
+   "status": "UNKNOWN",
+   "reason": "EXPIRED",
+   "action": "new_test",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Brain MRI in February (-227d) was negative, which is older than the 90-day imaging limit. Repeat not done. Neuro review of systems is negative.",
+   "missing_fact": "Current brain imaging (repeat MRI, already planned)",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07144280-E03",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Participants with a history of leptomeningeal metastasis are excluded.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07144280:NCT07144280-E03:r1",
+   "kind": "decision",
+   "trial_id": "NCT07144280",
+   "criterion_id": "NCT07144280-E03",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Not mentioned. The neurologic blanket negation covers chronic neurologic disease, not metastasis. The old brain MRI does not rule it out.",
+   "missing_fact": "Any history of leptomeningeal metastasis",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07144280-E04",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Prior treatment with an anti-PD-L1 agent (where indicated per protocol) within 5 half-lives.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07144280:NCT07144280-E04:r1",
+   "kind": "decision",
+   "trial_id": "NCT07144280",
+   "criterion_id": "NCT07144280-E04",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "'No prior immunotherapy' is explicitly documented, and the patient declined pembrolizumab.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07144280-E05",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Previous receipt of an MMAE-containing agent or prior docetaxel.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07144280:NCT07144280-E05:r1",
+   "kind": "decision",
+   "trial_id": "NCT07144280",
+   "criterion_id": "NCT07144280-E05",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_history_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "list_inference",
+    "pc:strict_list_inference"
+   ],
+   "note": "[inferable PASS from SYN-0011-EV098] Treatment history is carboplatin/pemetrexed and pemetrexed maintenance only, per the reconciled medication list. No docetaxel or MMAE agent.",
+   "missing_fact": null,
+   "derived_from": "SYN-0011-EV098"
+  },
+  {
+   "id": "label:NCT07144280",
+   "kind": "trial_decision",
+   "label": "potential",
+   "why": [
+    "UNKNOWN/UNSUPPORTED NCT07144280-I05",
+    "UNKNOWN/UNSUPPORTED NCT07144280-I06",
+    "UNKNOWN/EXPIRED NCT07144280-E02"
+   ],
+   "by": "agent3"
+  }
+ ],
+ "edges": [
+  [
+   "trial:NCT04928846",
+   "has_criterion",
+   "crit:NCT04928846-I01"
+  ],
+  [
+   "crit:NCT04928846-I01",
+   "decided_as",
+   "dec:NCT04928846:NCT04928846-I01:r1"
+  ],
+  [
+   "trial:NCT04928846",
+   "has_criterion",
+   "crit:NCT04928846-I02"
+  ],
+  [
+   "crit:NCT04928846-I02",
+   "decided_as",
+   "dec:NCT04928846:NCT04928846-I02:r1"
+  ],
+  [
+   "trial:NCT04928846",
+   "has_criterion",
+   "crit:NCT04928846-I03"
+  ],
+  [
+   "crit:NCT04928846-I03",
+   "decided_as",
+   "dec:NCT04928846:NCT04928846-I03:r1"
+  ],
+  [
+   "trial:NCT04928846",
+   "has_criterion",
+   "crit:NCT04928846-I04"
+  ],
+  [
+   "crit:NCT04928846-I04",
+   "decided_as",
+   "dec:NCT04928846:NCT04928846-I04:r1"
+  ],
+  [
+   "crit:NCT04928846-I04",
+   "requires",
+   "concept:diagnosis:adenocarcinoma"
+  ],
+  [
+   "concept:diagnosis:adenocarcinoma",
+   "observed_as",
+   "ev:SYN-0011-EV005"
+  ],
+  [
+   "ev:SYN-0011-EV005",
+   "derived_from",
+   "src:SYN-0011-D02:11-50"
+  ],
+  [
+   "ev:SYN-0011-EV005",
+   "supports",
+   "dec:NCT04928846:NCT04928846-I04:r1"
+  ],
+  [
+   "crit:NCT04928846-I04",
+   "requires",
+   "concept:procedure:ebus-tbna"
+  ],
+  [
+   "concept:procedure:ebus-tbna",
+   "observed_as",
+   "ev:SYN-0011-EV247"
+  ],
+  [
+   "ev:SYN-0011-EV247",
+   "derived_from",
+   "src:SYN-0011-D02:0-9"
+  ],
+  [
+   "ev:SYN-0011-EV247",
+   "supports",
+   "dec:NCT04928846:NCT04928846-I04:r1"
+  ],
+  [
+   "crit:NCT04928846-I04",
+   "requires",
+   "concept:cancer_stage"
+  ],
+  [
+   "concept:cancer_stage",
+   "observed_as",
+   "ev:SYN-0011-EV045"
+  ],
+  [
+   "ev:SYN-0011-EV045",
+   "derived_from",
+   "src:SYN-0011-D08:58-143"
+  ],
+  [
+   "ev:SYN-0011-EV045",
+   "supports",
+   "dec:NCT04928846:NCT04928846-I04:r1"
+  ],
+  [
+   "trial:NCT04928846",
+   "has_criterion",
+   "crit:NCT04928846-I05"
+  ],
+  [
+   "crit:NCT04928846-I05",
+   "decided_as",
+   "dec:NCT04928846:NCT04928846-I05:r1"
+  ],
+  [
+   "crit:NCT04928846-I05",
+   "requires",
+   "concept:biomarker:egfr"
+  ],
+  [
+   "concept:biomarker:egfr",
+   "observed_as",
+   "ev:SYN-0011-EV249"
+  ],
+  [
+   "ev:SYN-0011-EV249",
+   "derived_from",
+   "src:SYN-0011-D02:73-87"
+  ],
+  [
+   "ev:SYN-0011-EV249",
+   "supports",
+   "dec:NCT04928846:NCT04928846-I05:r1"
+  ],
+  [
+   "crit:NCT04928846-I05",
+   "requires",
+   "concept:biomarker:egfr mutation"
+  ],
+  [
+   "concept:biomarker:egfr mutation",
+   "observed_as",
+   "ev:SYN-0011-EV266"
+  ],
+  [
+   "ev:SYN-0011-EV266",
+   "derived_from",
+   "src:SYN-0011-D08:292-306"
+  ],
+  [
+   "ev:SYN-0011-EV266",
+   "supports",
+   "dec:NCT04928846:NCT04928846-I05:r1"
+  ],
+  [
+   "trial:NCT04928846",
+   "has_criterion",
+   "crit:NCT04928846-I06"
+  ],
+  [
+   "crit:NCT04928846-I06",
+   "decided_as",
+   "dec:NCT04928846:NCT04928846-I06:r1"
+  ],
+  [
+   "crit:NCT04928846-I06",
+   "requires",
+   "concept:biomarker:kras"
+  ],
+  [
+   "concept:biomarker:kras",
+   "observed_as",
+   "ev:SYN-0011-EV252"
+  ],
+  [
+   "ev:SYN-0011-EV252",
+   "derived_from",
+   "src:SYN-0011-D02:124-134"
+  ],
+  [
+   "ev:SYN-0011-EV252",
+   "supports",
+   "dec:NCT04928846:NCT04928846-I06:r1"
+  ],
+  [
+   "trial:NCT04928846",
+   "has_criterion",
+   "crit:NCT04928846-I07"
+  ],
+  [
+   "crit:NCT04928846-I07",
+   "decided_as",
+   "dec:NCT04928846:NCT04928846-I07:r1"
+  ],
+  [
+   "crit:NCT04928846-I07",
+   "requires",
+   "concept:measurable_disease:mass 50 mm"
+  ],
+  [
+   "concept:measurable_disease:mass 50 mm",
+   "observed_as",
+   "ev:SYN-0011-EV302"
+  ],
+  [
+   "ev:SYN-0011-EV302",
+   "derived_from",
+   "src:SYN-0011-D05:10-89"
+  ],
+  [
+   "ev:SYN-0011-EV302",
+   "supports",
+   "dec:NCT04928846:NCT04928846-I07:r1"
+  ],
+  [
+   "crit:NCT04928846-I07",
+   "requires",
+   "concept:symptom_finding:rul 5.0 cm"
+  ],
+  [
+   "concept:symptom_finding:rul 5.0 cm",
+   "observed_as",
+   "ev:SYN-0011-EV170"
+  ],
+  [
+   "ev:SYN-0011-EV170",
+   "derived_from",
+   "src:SYN-0011-D08:2932-3026"
+  ],
+  [
+   "ev:SYN-0011-EV170",
+   "supports",
+   "dec:NCT04928846:NCT04928846-I07:r1"
+  ],
+  [
+   "crit:NCT04928846-I07",
+   "requires",
+   "concept:symptom_finding:adrenal 2.9 cm"
+  ],
+  [
+   "concept:symptom_finding:adrenal 2.9 cm",
+   "observed_as",
+   "ev:SYN-0011-EV171"
+  ],
+  [
+   "ev:SYN-0011-EV171",
+   "derived_from",
+   "src:SYN-0011-D08:2932-3026"
+  ],
+  [
+   "ev:SYN-0011-EV171",
+   "supports",
+   "dec:NCT04928846:NCT04928846-I07:r1"
+  ],
+  [
+   "trial:NCT04928846",
+   "has_criterion",
+   "crit:NCT04928846-I08"
+  ],
+  [
+   "crit:NCT04928846-I08",
+   "decided_as",
+   "dec:NCT04928846:NCT04928846-I08:r1"
+  ],
+  [
+   "crit:NCT04928846-I08",
+   "requires",
+   "concept:ecog"
+  ],
+  [
+   "concept:ecog",
+   "observed_as",
+   "ev:SYN-0011-EV026"
+  ],
+  [
+   "ev:SYN-0011-EV026",
+   "derived_from",
+   "src:SYN-0011-D05:237-244"
+  ],
+  [
+   "ev:SYN-0011-EV026",
+   "supports",
+   "dec:NCT04928846:NCT04928846-I08:r1"
+  ],
+  [
+   "calc:NCT04928846:NCT04928846-I08",
+   "computes",
+   "dec:NCT04928846:NCT04928846-I08:r1"
+  ],
+  [
+   "trial:NCT04928846",
+   "has_criterion",
+   "crit:NCT04928846-I09"
+  ],
+  [
+   "crit:NCT04928846-I09",
+   "decided_as",
+   "dec:NCT04928846:NCT04928846-I09:r1"
+  ],
+  [
+   "crit:NCT04928846-I09",
+   "requires",
+   "concept:medication:platinum doublet"
+  ],
+  [
+   "concept:medication:platinum doublet",
+   "observed_as",
+   "ev:SYN-0011-EV178"
+  ],
+  [
+   "ev:SYN-0011-EV178",
+   "derived_from",
+   "src:SYN-0011-D08:3155-3232"
+  ],
+  [
+   "ev:SYN-0011-EV178",
+   "supports",
+   "dec:NCT04928846:NCT04928846-I09:r1"
+  ],
+  [
+   "crit:NCT04928846-I09",
+   "requires",
+   "concept:cancer_stage"
+  ],
+  [
+   "concept:cancer_stage",
+   "observed_as",
+   "ev:SYN-0011-EV181"
+  ],
+  [
+   "ev:SYN-0011-EV181",
+   "derived_from",
+   "src:SYN-0011-D08:3282-3382"
+  ],
+  [
+   "ev:SYN-0011-EV181",
+   "supports",
+   "dec:NCT04928846:NCT04928846-I09:r1"
+  ],
+  [
+   "trial:NCT04928846",
+   "has_criterion",
+   "crit:NCT04928846-I10"
+  ],
+  [
+   "crit:NCT04928846-I10",
+   "decided_as",
+   "dec:NCT04928846:NCT04928846-I10:r1"
+  ],
+  [
+   "crit:NCT04928846-I10",
+   "requires",
+   "concept:medication:immunotherapy"
+  ],
+  [
+   "concept:medication:immunotherapy",
+   "observed_as",
+   "ev:SYN-0011-EV180"
+  ],
+  [
+   "ev:SYN-0011-EV180",
+   "derived_from",
+   "src:SYN-0011-D08:3233-3256"
+  ],
+  [
+   "ev:SYN-0011-EV180",
+   "supports",
+   "dec:NCT04928846:NCT04928846-I10:r1"
+  ],
+  [
+   "crit:NCT04928846-I10",
+   "requires",
+   "concept:cancer_stage"
+  ],
+  [
+   "ev:SYN-0011-EV181",
+   "supports",
+   "dec:NCT04928846:NCT04928846-I10:r1"
+  ],
+  [
+   "trial:NCT04928846",
+   "has_criterion",
+   "crit:NCT04928846-I11"
+  ],
+  [
+   "crit:NCT04928846-I11",
+   "decided_as",
+   "dec:NCT04928846:NCT04928846-I11:r1"
+  ],
+  [
+   "crit:NCT04928846-I11",
+   "requires",
+   "concept:treatment_plan:pd-1 axis immunotherapy"
+  ],
+  [
+   "concept:treatment_plan:pd-1 axis immunotherapy",
+   "observed_as",
+   "ev:SYN-0011-EV186"
+  ],
+  [
+   "ev:SYN-0011-EV186",
+   "derived_from",
+   "src:SYN-0011-D08:3406-3498"
+  ],
+  [
+   "ev:SYN-0011-EV186",
+   "insufficient_for",
+   "dec:NCT04928846:NCT04928846-I11:r1"
+  ],
+  [
+   "crit:NCT04928846-I11",
+   "requires",
+   "concept:treatment_plan:docetaxel-based therapy"
+  ],
+  [
+   "concept:treatment_plan:docetaxel-based therapy",
+   "observed_as",
+   "ev:SYN-0011-EV187"
+  ],
+  [
+   "ev:SYN-0011-EV187",
+   "derived_from",
+   "src:SYN-0011-D08:3406-3498"
+  ],
+  [
+   "ev:SYN-0011-EV187",
+   "insufficient_for",
+   "dec:NCT04928846:NCT04928846-I11:r1"
+  ],
+  [
+   "trial:NCT04928846",
+   "has_criterion",
+   "crit:NCT04928846-E01"
+  ],
+  [
+   "crit:NCT04928846-E01",
+   "decided_as",
+   "dec:NCT04928846:NCT04928846-E01:r1"
+  ],
+  [
+   "trial:NCT04928846",
+   "has_criterion",
+   "crit:NCT04928846-E02"
+  ],
+  [
+   "crit:NCT04928846-E02",
+   "decided_as",
+   "dec:NCT04928846:NCT04928846-E02:r1"
+  ],
+  [
+   "trial:NCT04928846",
+   "has_criterion",
+   "crit:NCT04928846-E03"
+  ],
+  [
+   "crit:NCT04928846-E03",
+   "decided_as",
+   "dec:NCT04928846:NCT04928846-E03:r1"
+  ],
+  [
+   "trial:NCT04928846",
+   "has_criterion",
+   "crit:NCT04928846-E04"
+  ],
+  [
+   "crit:NCT04928846-E04",
+   "decided_as",
+   "dec:NCT04928846:NCT04928846-E04:r1"
+  ],
+  [
+   "crit:NCT04928846-E04",
+   "requires",
+   "concept:biomarker:egfr"
+  ],
+  [
+   "ev:SYN-0011-EV249",
+   "supports",
+   "dec:NCT04928846:NCT04928846-E04:r1"
+  ],
+  [
+   "crit:NCT04928846-E04",
+   "requires",
+   "concept:biomarker:egfr mutation"
+  ],
+  [
+   "ev:SYN-0011-EV266",
+   "supports",
+   "dec:NCT04928846:NCT04928846-E04:r1"
+  ],
+  [
+   "trial:NCT04928846",
+   "has_criterion",
+   "crit:NCT04928846-E05"
+  ],
+  [
+   "crit:NCT04928846-E05",
+   "decided_as",
+   "dec:NCT04928846:NCT04928846-E05:r1"
+  ],
+  [
+   "trial:NCT04928846",
+   "has_criterion",
+   "crit:NCT04928846-E06"
+  ],
+  [
+   "crit:NCT04928846-E06",
+   "decided_as",
+   "dec:NCT04928846:NCT04928846-E06:r1"
+  ],
+  [
+   "crit:NCT04928846-E06",
+   "requires",
+   "concept:cancer_stage"
+  ],
+  [
+   "ev:SYN-0011-EV181",
+   "supports",
+   "dec:NCT04928846:NCT04928846-E06:r1"
+  ],
+  [
+   "crit:NCT04928846-E06",
+   "requires",
+   "concept:medication:platinum doublet"
+  ],
+  [
+   "ev:SYN-0011-EV178",
+   "supports",
+   "dec:NCT04928846:NCT04928846-E06:r1"
+  ],
+  [
+   "trial:NCT04928846",
+   "has_criterion",
+   "crit:NCT04928846-E07"
+  ],
+  [
+   "crit:NCT04928846-E07",
+   "decided_as",
+   "dec:NCT04928846:NCT04928846-E07:r1"
+  ],
+  [
+   "crit:NCT04928846-E07",
+   "requires",
+   "concept:diagnosis:prior malignancy"
+  ],
+  [
+   "concept:diagnosis:prior malignancy",
+   "observed_as",
+   "ev:SYN-0011-EV093"
+  ],
+  [
+   "ev:SYN-0011-EV093",
+   "derived_from",
+   "src:SYN-0011-D08:1126-1146"
+  ],
+  [
+   "ev:SYN-0011-EV093",
+   "supports",
+   "dec:NCT04928846:NCT04928846-E07:r1"
+  ],
+  [
+   "trial:NCT04928846",
+   "has_criterion",
+   "crit:NCT04928846-E08"
+  ],
+  [
+   "crit:NCT04928846-E08",
+   "decided_as",
+   "dec:NCT04928846:NCT04928846-E08:r1"
+  ],
+  [
+   "trial:NCT04928846",
+   "has_criterion",
+   "crit:NCT04928846-E09"
+  ],
+  [
+   "crit:NCT04928846-E09",
+   "decided_as",
+   "dec:NCT04928846:NCT04928846-E09:r1"
+  ],
+  [
+   "trial:NCT04928846",
+   "has_criterion",
+   "crit:NCT04928846-E10"
+  ],
+  [
+   "crit:NCT04928846-E10",
+   "decided_as",
+   "dec:NCT04928846:NCT04928846-E10:r1"
+  ],
+  [
+   "crit:NCT04928846-E10",
+   "requires",
+   "concept:procedure:thoracic surgery"
+  ],
+  [
+   "concept:procedure:thoracic surgery",
+   "observed_as",
+   "ev:SYN-0011-EV096"
+  ],
+  [
+   "ev:SYN-0011-EV096",
+   "derived_from",
+   "src:SYN-0011-D08:1224-1244"
+  ],
+  [
+   "ev:SYN-0011-EV096",
+   "supports",
+   "dec:NCT04928846:NCT04928846-E10:r1"
+  ],
+  [
+   "crit:NCT04928846-E10",
+   "requires",
+   "concept:procedure:appendectomy"
+  ],
+  [
+   "concept:procedure:appendectomy",
+   "observed_as",
+   "ev:SYN-0011-EV094"
+  ],
+  [
+   "ev:SYN-0011-EV094",
+   "derived_from",
+   "src:SYN-0011-D08:1171-1191"
+  ],
+  [
+   "ev:SYN-0011-EV094",
+   "supports",
+   "dec:NCT04928846:NCT04928846-E10:r1"
+  ],
+  [
+   "trial:NCT04928846",
+   "has_criterion",
+   "crit:NCT04928846-E11"
+  ],
+  [
+   "crit:NCT04928846-E11",
+   "decided_as",
+   "dec:NCT04928846:NCT04928846-E11:r1"
+  ],
+  [
+   "trial:NCT04928846",
+   "has_criterion",
+   "crit:NCT04928846-I12"
+  ],
+  [
+   "crit:NCT04928846-I12",
+   "decided_as",
+   "dec:NCT04928846:NCT04928846-I12:r1"
+  ],
+  [
+   "crit:NCT04928846-I12",
+   "requires",
+   "concept:metastasis:brain metastases"
+  ],
+  [
+   "concept:metastasis:brain metastases",
+   "observed_as",
+   "ev:SYN-0011-EV016"
+  ],
+  [
+   "ev:SYN-0011-EV016",
+   "derived_from",
+   "src:SYN-0011-D03:88-124"
+  ],
+  [
+   "ev:SYN-0011-EV016",
+   "supports",
+   "dec:NCT04928846:NCT04928846-I12:r1"
+  ],
+  [
+   "trial:NCT04928846",
+   "labelled",
+   "label:NCT04928846"
+  ],
+  [
+   "trial:NCT06692738",
+   "has_criterion",
+   "crit:NCT06692738-I01"
+  ],
+  [
+   "crit:NCT06692738-I01",
+   "decided_as",
+   "dec:NCT06692738:NCT06692738-I01:r1"
+  ],
+  [
+   "crit:NCT06692738-I01",
+   "requires",
+   "concept:diagnosis:adenocarcinoma"
+  ],
+  [
+   "ev:SYN-0011-EV005",
+   "supports",
+   "dec:NCT06692738:NCT06692738-I01:r1"
+  ],
+  [
+   "trial:NCT06692738",
+   "has_criterion",
+   "crit:NCT06692738-I02"
+  ],
+  [
+   "crit:NCT06692738-I02",
+   "decided_as",
+   "dec:NCT06692738:NCT06692738-I02:r1"
+  ],
+  [
+   "crit:NCT06692738-I02",
+   "requires",
+   "concept:cancer_stage"
+  ],
+  [
+   "ev:SYN-0011-EV045",
+   "supports",
+   "dec:NCT06692738:NCT06692738-I02:r1"
+  ],
+  [
+   "calc:NCT06692738:NCT06692738-I02",
+   "computes",
+   "dec:NCT06692738:NCT06692738-I02:r1"
+  ],
+  [
+   "trial:NCT06692738",
+   "has_criterion",
+   "crit:NCT06692738-I03"
+  ],
+  [
+   "crit:NCT06692738-I03",
+   "decided_as",
+   "dec:NCT06692738:NCT06692738-I03:r1"
+  ],
+  [
+   "crit:NCT06692738-I03",
+   "requires",
+   "concept:biomarker:kras"
+  ],
+  [
+   "ev:SYN-0011-EV252",
+   "supports",
+   "dec:NCT06692738:NCT06692738-I03:r1"
+  ],
+  [
+   "crit:NCT06692738-I03",
+   "requires",
+   "concept:biomarker:kras g12v"
+  ],
+  [
+   "concept:biomarker:kras g12v",
+   "observed_as",
+   "ev:SYN-0011-EV269"
+  ],
+  [
+   "ev:SYN-0011-EV269",
+   "derived_from",
+   "src:SYN-0011-D08:331-340"
+  ],
+  [
+   "ev:SYN-0011-EV269",
+   "supports",
+   "dec:NCT06692738:NCT06692738-I03:r1"
+  ],
+  [
+   "trial:NCT06692738",
+   "has_criterion",
+   "crit:NCT06692738-I04"
+  ],
+  [
+   "crit:NCT06692738-I04",
+   "decided_as",
+   "dec:NCT06692738:NCT06692738-I04:r1"
+  ],
+  [
+   "crit:NCT06692738-I04",
+   "requires",
+   "concept:pd_l1_expression"
+  ],
+  [
+   "concept:pd_l1_expression",
+   "observed_as",
+   "ev:SYN-0011-EV253"
+  ],
+  [
+   "ev:SYN-0011-EV253",
+   "derived_from",
+   "src:SYN-0011-D02:135-156"
+  ],
+  [
+   "ev:SYN-0011-EV253",
+   "insufficient_for",
+   "dec:NCT06692738:NCT06692738-I04:r1"
+  ],
+  [
+   "trial:NCT06692738",
+   "has_criterion",
+   "crit:NCT06692738-I05"
+  ],
+  [
+   "crit:NCT06692738-I05",
+   "decided_as",
+   "dec:NCT06692738:NCT06692738-I05:r1"
+  ],
+  [
+   "crit:NCT06692738-I05",
+   "requires",
+   "concept:symptom_finding:adrenal 2.9 cm"
+  ],
+  [
+   "ev:SYN-0011-EV171",
+   "supports",
+   "dec:NCT06692738:NCT06692738-I05:r1"
+  ],
+  [
+   "crit:NCT06692738-I05",
+   "requires",
+   "concept:symptom_finding:rul 5.0 cm"
+  ],
+  [
+   "ev:SYN-0011-EV170",
+   "supports",
+   "dec:NCT06692738:NCT06692738-I05:r1"
+  ],
+  [
+   "trial:NCT06692738",
+   "has_criterion",
+   "crit:NCT06692738-I06"
+  ],
+  [
+   "crit:NCT06692738-I06",
+   "decided_as",
+   "dec:NCT06692738:NCT06692738-I06:r1"
+  ],
+  [
+   "crit:NCT06692738-I06",
+   "requires",
+   "concept:wbc"
+  ],
+  [
+   "concept:wbc",
+   "observed_as",
+   "ev:SYN-0011-EV196"
+  ],
+  [
+   "ev:SYN-0011-EV196",
+   "derived_from",
+   "src:SYN-0011-D09:53-79"
+  ],
+  [
+   "ev:SYN-0011-EV196",
+   "supports",
+   "dec:NCT06692738:NCT06692738-I06:r1"
+  ],
+  [
+   "crit:NCT06692738-I06",
+   "requires",
+   "concept:platelet_count"
+  ],
+  [
+   "concept:platelet_count",
+   "observed_as",
+   "ev:SYN-0011-EV205"
+  ],
+  [
+   "ev:SYN-0011-EV205",
+   "derived_from",
+   "src:SYN-0011-D09:307-338"
+  ],
+  [
+   "ev:SYN-0011-EV205",
+   "supports",
+   "dec:NCT06692738:NCT06692738-I06:r1"
+  ],
+  [
+   "crit:NCT06692738-I06",
+   "requires",
+   "concept:creatinine"
+  ],
+  [
+   "concept:creatinine",
+   "observed_as",
+   "ev:SYN-0011-EV211"
+  ],
+  [
+   "ev:SYN-0011-EV211",
+   "derived_from",
+   "src:SYN-0011-D09:509-542"
+  ],
+  [
+   "ev:SYN-0011-EV211",
+   "supports",
+   "dec:NCT06692738:NCT06692738-I06:r1"
+  ],
+  [
+   "crit:NCT06692738-I06",
+   "requires",
+   "concept:alt"
+  ],
+  [
+   "concept:alt",
+   "observed_as",
+   "ev:SYN-0011-EV218"
+  ],
+  [
+   "ev:SYN-0011-EV218",
+   "derived_from",
+   "src:SYN-0011-D09:739-756"
+  ],
+  [
+   "ev:SYN-0011-EV218",
+   "supports",
+   "dec:NCT06692738:NCT06692738-I06:r1"
+  ],
+  [
+   "crit:NCT06692738-I06",
+   "requires",
+   "concept:bilirubin_total"
+  ],
+  [
+   "concept:bilirubin_total",
+   "observed_as",
+   "ev:SYN-0011-EV221"
+  ],
+  [
+   "ev:SYN-0011-EV221",
+   "derived_from",
+   "src:SYN-0011-D09:812-847"
+  ],
+  [
+   "ev:SYN-0011-EV221",
+   "supports",
+   "dec:NCT06692738:NCT06692738-I06:r1"
+  ],
+  [
+   "trial:NCT06692738",
+   "has_criterion",
+   "crit:NCT06692738-E01"
+  ],
+  [
+   "crit:NCT06692738-E01",
+   "decided_as",
+   "dec:NCT06692738:NCT06692738-E01:r1"
+  ],
+  [
+   "trial:NCT06692738",
+   "has_criterion",
+   "crit:NCT06692738-E02"
+  ],
+  [
+   "crit:NCT06692738-E02",
+   "decided_as",
+   "dec:NCT06692738:NCT06692738-E02:r1"
+  ],
+  [
+   "crit:NCT06692738-E02",
+   "requires",
+   "concept:symptom_finding:brain metastases"
+  ],
+  [
+   "concept:symptom_finding:brain metastases",
+   "observed_as",
+   "ev:SYN-0011-EV172"
+  ],
+  [
+   "ev:SYN-0011-EV172",
+   "derived_from",
+   "src:SYN-0011-D08:3027-3056"
+  ],
+  [
+   "ev:SYN-0011-EV172",
+   "expired_for",
+   "dec:NCT06692738:NCT06692738-E02:r1"
+  ],
+  [
+   "crit:NCT06692738-E02",
+   "requires",
+   "concept:symptom_finding:repeat not yet done."
+  ],
+  [
+   "concept:symptom_finding:repeat not yet done.",
+   "observed_as",
+   "ev:SYN-0011-EV173"
+  ],
+  [
+   "ev:SYN-0011-EV173",
+   "derived_from",
+   "src:SYN-0011-D08:3058-3078"
+  ],
+  [
+   "ev:SYN-0011-EV173",
+   "expired_for",
+   "dec:NCT06692738:NCT06692738-E02:r1"
+  ],
+  [
+   "trial:NCT06692738",
+   "has_criterion",
+   "crit:NCT06692738-E03"
+  ],
+  [
+   "crit:NCT06692738-E03",
+   "decided_as",
+   "dec:NCT06692738:NCT06692738-E03:r1"
+  ],
+  [
+   "crit:NCT06692738-E03",
+   "requires",
+   "concept:medication:carboplatin/pemetrexed"
+  ],
+  [
+   "concept:medication:carboplatin/pemetrexed",
+   "observed_as",
+   "ev:SYN-0011-EV062"
+  ],
+  [
+   "ev:SYN-0011-EV062",
+   "derived_from",
+   "src:SYN-0011-D08:363-437"
+  ],
+  [
+   "ev:SYN-0011-EV062",
+   "supports",
+   "dec:NCT06692738:NCT06692738-E03:r1"
+  ],
+  [
+   "crit:NCT06692738-E03",
+   "requires",
+   "concept:medication:pemetrexed maintenance"
+  ],
+  [
+   "concept:medication:pemetrexed maintenance",
+   "observed_as",
+   "ev:SYN-0011-EV179"
+  ],
+  [
+   "ev:SYN-0011-EV179",
+   "derived_from",
+   "src:SYN-0011-D08:3155-3232"
+  ],
+  [
+   "ev:SYN-0011-EV179",
+   "supports",
+   "dec:NCT06692738:NCT06692738-E03:r1"
+  ],
+  [
+   "trial:NCT06692738",
+   "has_criterion",
+   "crit:NCT06692738-E04"
+  ],
+  [
+   "crit:NCT06692738-E04",
+   "decided_as",
+   "dec:NCT06692738:NCT06692738-E04:r1"
+  ],
+  [
+   "crit:NCT06692738-E04",
+   "requires",
+   "concept:medication:immunotherapy"
+  ],
+  [
+   "ev:SYN-0011-EV180",
+   "supports",
+   "dec:NCT06692738:NCT06692738-E04:r1"
+  ],
+  [
+   "trial:NCT06692738",
+   "has_criterion",
+   "crit:NCT06692738-E05"
+  ],
+  [
+   "crit:NCT06692738-E05",
+   "decided_as",
+   "dec:NCT06692738:NCT06692738-E05:r1"
+  ],
+  [
+   "crit:NCT06692738-E05",
+   "requires",
+   "concept:medication:immunotherapy"
+  ],
+  [
+   "ev:SYN-0011-EV180",
+   "supports",
+   "dec:NCT06692738:NCT06692738-E05:r1"
+  ],
+  [
+   "trial:NCT06692738",
+   "has_criterion",
+   "crit:NCT06692738-E06"
+  ],
+  [
+   "crit:NCT06692738-E06",
+   "decided_as",
+   "dec:NCT06692738:NCT06692738-E06:r1"
+  ],
+  [
+   "crit:NCT06692738-E06",
+   "requires",
+   "concept:diagnosis:prior malignancy"
+  ],
+  [
+   "ev:SYN-0011-EV093",
+   "supports",
+   "dec:NCT06692738:NCT06692738-E06:r1"
+  ],
+  [
+   "trial:NCT06692738",
+   "has_criterion",
+   "crit:NCT06692738-E07"
+  ],
+  [
+   "crit:NCT06692738-E07",
+   "decided_as",
+   "dec:NCT06692738:NCT06692738-E07:r1"
+  ],
+  [
+   "crit:NCT06692738-E07",
+   "requires",
+   "concept:diagnosis:other autoimmune history"
+  ],
+  [
+   "concept:diagnosis:other autoimmune history",
+   "observed_as",
+   "ev:SYN-0011-EV090"
+  ],
+  [
+   "ev:SYN-0011-EV090",
+   "derived_from",
+   "src:SYN-0011-D08:1016-1125"
+  ],
+  [
+   "ev:SYN-0011-EV090",
+   "supports",
+   "dec:NCT06692738:NCT06692738-E07:r1"
+  ],
+  [
+   "crit:NCT06692738-E07",
+   "requires",
+   "concept:diagnosis:other inflammatory bowel history"
+  ],
+  [
+   "concept:diagnosis:other inflammatory bowel history",
+   "observed_as",
+   "ev:SYN-0011-EV091"
+  ],
+  [
+   "ev:SYN-0011-EV091",
+   "derived_from",
+   "src:SYN-0011-D08:1016-1125"
+  ],
+  [
+   "ev:SYN-0011-EV091",
+   "supports",
+   "dec:NCT06692738:NCT06692738-E07:r1"
+  ],
+  [
+   "crit:NCT06692738-E07",
+   "requires",
+   "concept:medication:systemic steroids"
+  ],
+  [
+   "concept:medication:systemic steroids",
+   "observed_as",
+   "ev:SYN-0011-EV108"
+  ],
+  [
+   "ev:SYN-0011-EV108",
+   "derived_from",
+   "src:SYN-0011-D08:1595-1616"
+  ],
+  [
+   "ev:SYN-0011-EV108",
+   "supports",
+   "dec:NCT06692738:NCT06692738-E07:r1"
+  ],
+  [
+   "trial:NCT06692738",
+   "has_criterion",
+   "crit:NCT06692738-E08"
+  ],
+  [
+   "crit:NCT06692738-E08",
+   "decided_as",
+   "dec:NCT06692738:NCT06692738-E08:r1"
+  ],
+  [
+   "trial:NCT06692738",
+   "has_criterion",
+   "crit:NCT06692738-E09"
+  ],
+  [
+   "crit:NCT06692738-E09",
+   "decided_as",
+   "dec:NCT06692738:NCT06692738-E09:r1"
+  ],
+  [
+   "trial:NCT06692738",
+   "labelled",
+   "label:NCT06692738"
+  ],
+  [
+   "trial:NCT07144280",
+   "has_criterion",
+   "crit:NCT07144280-I01"
+  ],
+  [
+   "crit:NCT07144280-I01",
+   "decided_as",
+   "dec:NCT07144280:NCT07144280-I01:r1"
+  ],
+  [
+   "crit:NCT07144280-I01",
+   "requires",
+   "concept:diagnosis:adenocarcinoma"
+  ],
+  [
+   "ev:SYN-0011-EV005",
+   "supports",
+   "dec:NCT07144280:NCT07144280-I01:r1"
+  ],
+  [
+   "crit:NCT07144280-I01",
+   "requires",
+   "concept:cancer_stage"
+  ],
+  [
+   "ev:SYN-0011-EV045",
+   "supports",
+   "dec:NCT07144280:NCT07144280-I01:r1"
+  ],
+  [
+   "crit:NCT07144280-I01",
+   "requires",
+   "concept:diagnosis:lung adenocarcinoma"
+  ],
+  [
+   "concept:diagnosis:lung adenocarcinoma",
+   "observed_as",
+   "ev:SYN-0011-EV166"
+  ],
+  [
+   "ev:SYN-0011-EV166",
+   "derived_from",
+   "src:SYN-0011-D08:2832-2897"
+  ],
+  [
+   "ev:SYN-0011-EV166",
+   "supports",
+   "dec:NCT07144280:NCT07144280-I01:r1"
+  ],
+  [
+   "trial:NCT07144280",
+   "has_criterion",
+   "crit:NCT07144280-I02"
+  ],
+  [
+   "crit:NCT07144280-I02",
+   "decided_as",
+   "dec:NCT07144280:NCT07144280-I02:r1"
+  ],
+  [
+   "crit:NCT07144280-I02",
+   "requires",
+   "concept:pd_l1_expression"
+  ],
+  [
+   "ev:SYN-0011-EV253",
+   "supports",
+   "dec:NCT07144280:NCT07144280-I02:r1"
+  ],
+  [
+   "calc:NCT07144280:NCT07144280-I02",
+   "computes",
+   "dec:NCT07144280:NCT07144280-I02:r1"
+  ],
+  [
+   "trial:NCT07144280",
+   "has_criterion",
+   "crit:NCT07144280-I03"
+  ],
+  [
+   "crit:NCT07144280-I03",
+   "decided_as",
+   "dec:NCT07144280:NCT07144280-I03:r1"
+  ],
+  [
+   "crit:NCT07144280-I03",
+   "requires",
+   "concept:biomarker:egfr"
+  ],
+  [
+   "ev:SYN-0011-EV249",
+   "supports",
+   "dec:NCT07144280:NCT07144280-I03:r1"
+  ],
+  [
+   "crit:NCT07144280-I03",
+   "requires",
+   "concept:biomarker:alk fusion"
+  ],
+  [
+   "concept:biomarker:alk fusion",
+   "observed_as",
+   "ev:SYN-0011-EV250"
+  ],
+  [
+   "ev:SYN-0011-EV250",
+   "derived_from",
+   "src:SYN-0011-D02:89-122"
+  ],
+  [
+   "ev:SYN-0011-EV250",
+   "supports",
+   "dec:NCT07144280:NCT07144280-I03:r1"
+  ],
+  [
+   "crit:NCT07144280-I03",
+   "requires",
+   "concept:biomarker:kras"
+  ],
+  [
+   "ev:SYN-0011-EV252",
+   "supports",
+   "dec:NCT07144280:NCT07144280-I03:r1"
+  ],
+  [
+   "trial:NCT07144280",
+   "has_criterion",
+   "crit:NCT07144280-I04"
+  ],
+  [
+   "crit:NCT07144280-I04",
+   "decided_as",
+   "dec:NCT07144280:NCT07144280-I04:r1"
+  ],
+  [
+   "trial:NCT07144280",
+   "has_criterion",
+   "crit:NCT07144280-I05"
+  ],
+  [
+   "crit:NCT07144280-I05",
+   "decided_as",
+   "dec:NCT07144280:NCT07144280-I05:r1"
+  ],
+  [
+   "crit:NCT07144280-I05",
+   "requires",
+   "concept:diagnosis:disease progression"
+  ],
+  [
+   "concept:diagnosis:disease progression",
+   "observed_as",
+   "ev:SYN-0011-EV020"
+  ],
+  [
+   "ev:SYN-0011-EV020",
+   "derived_from",
+   "src:SYN-0011-D04:92-164"
+  ],
+  [
+   "ev:SYN-0011-EV020",
+   "insufficient_for",
+   "dec:NCT07144280:NCT07144280-I05:r1"
+  ],
+  [
+   "crit:NCT07144280-I05",
+   "requires",
+   "concept:medication:platinum doublet"
+  ],
+  [
+   "ev:SYN-0011-EV178",
+   "insufficient_for",
+   "dec:NCT07144280:NCT07144280-I05:r1"
+  ],
+  [
+   "crit:NCT07144280-I05",
+   "requires",
+   "concept:medication:immunotherapy"
+  ],
+  [
+   "ev:SYN-0011-EV180",
+   "insufficient_for",
+   "dec:NCT07144280:NCT07144280-I05:r1"
+  ],
+  [
+   "trial:NCT07144280",
+   "has_criterion",
+   "crit:NCT07144280-I06"
+  ],
+  [
+   "crit:NCT07144280-I06",
+   "decided_as",
+   "dec:NCT07144280:NCT07144280-I06:r1"
+  ],
+  [
+   "crit:NCT07144280-I06",
+   "requires",
+   "concept:medication:carboplatin auc5 + pemetrexed 500 mg/m2 q3w"
+  ],
+  [
+   "concept:medication:carboplatin auc5 + pemetrexed 500 mg/m2 q3w",
+   "observed_as",
+   "ev:SYN-0011-EV017"
+  ],
+  [
+   "ev:SYN-0011-EV017",
+   "derived_from",
+   "src:SYN-0011-D04:0-43"
+  ],
+  [
+   "ev:SYN-0011-EV017",
+   "insufficient_for",
+   "dec:NCT07144280:NCT07144280-I06:r1"
+  ],
+  [
+   "crit:NCT07144280-I06",
+   "requires",
+   "concept:treatment_plan:4 cycles of carboplatin + pemetrexed"
+  ],
+  [
+   "concept:treatment_plan:4 cycles of carboplatin + pemetrexed",
+   "observed_as",
+   "ev:SYN-0011-EV018"
+  ],
+  [
+   "ev:SYN-0011-EV018",
+   "derived_from",
+   "src:SYN-0011-D04:45-91"
+  ],
+  [
+   "ev:SYN-0011-EV018",
+   "insufficient_for",
+   "dec:NCT07144280:NCT07144280-I06:r1"
+  ],
+  [
+   "crit:NCT07144280-I06",
+   "requires",
+   "concept:medication:immunotherapy"
+  ],
+  [
+   "ev:SYN-0011-EV180",
+   "insufficient_for",
+   "dec:NCT07144280:NCT07144280-I06:r1"
+  ],
+  [
+   "crit:NCT07144280-I06",
+   "requires",
+   "concept:treatment_plan:pembrolizumab"
+  ],
+  [
+   "concept:treatment_plan:pembrolizumab",
+   "observed_as",
+   "ev:SYN-0011-EV023"
+  ],
+  [
+   "ev:SYN-0011-EV023",
+   "derived_from",
+   "src:SYN-0011-D05:90-188"
+  ],
+  [
+   "ev:SYN-0011-EV023",
+   "insufficient_for",
+   "dec:NCT07144280:NCT07144280-I06:r1"
+  ],
+  [
+   "trial:NCT07144280",
+   "has_criterion",
+   "crit:NCT07144280-E01"
+  ],
+  [
+   "crit:NCT07144280-E01",
+   "decided_as",
+   "dec:NCT07144280:NCT07144280-E01:r1"
+  ],
+  [
+   "crit:NCT07144280-E01",
+   "requires",
+   "concept:diagnosis:prior malignancy"
+  ],
+  [
+   "ev:SYN-0011-EV093",
+   "supports",
+   "dec:NCT07144280:NCT07144280-E01:r1"
+  ],
+  [
+   "trial:NCT07144280",
+   "has_criterion",
+   "crit:NCT07144280-E02"
+  ],
+  [
+   "crit:NCT07144280-E02",
+   "decided_as",
+   "dec:NCT07144280:NCT07144280-E02:r1"
+  ],
+  [
+   "crit:NCT07144280-E02",
+   "requires",
+   "concept:symptom_finding:brain metastases"
+  ],
+  [
+   "ev:SYN-0011-EV172",
+   "expired_for",
+   "dec:NCT07144280:NCT07144280-E02:r1"
+  ],
+  [
+   "crit:NCT07144280-E02",
+   "requires",
+   "concept:metastasis:brain metastases"
+  ],
+  [
+   "ev:SYN-0011-EV016",
+   "expired_for",
+   "dec:NCT07144280:NCT07144280-E02:r1"
+  ],
+  [
+   "crit:NCT07144280-E02",
+   "requires",
+   "concept:symptom_finding:repeat not yet done."
+  ],
+  [
+   "ev:SYN-0011-EV173",
+   "expired_for",
+   "dec:NCT07144280:NCT07144280-E02:r1"
+  ],
+  [
+   "trial:NCT07144280",
+   "has_criterion",
+   "crit:NCT07144280-E03"
+  ],
+  [
+   "crit:NCT07144280-E03",
+   "decided_as",
+   "dec:NCT07144280:NCT07144280-E03:r1"
+  ],
+  [
+   "trial:NCT07144280",
+   "has_criterion",
+   "crit:NCT07144280-E04"
+  ],
+  [
+   "crit:NCT07144280-E04",
+   "decided_as",
+   "dec:NCT07144280:NCT07144280-E04:r1"
+  ],
+  [
+   "crit:NCT07144280-E04",
+   "requires",
+   "concept:medication:immunotherapy"
+  ],
+  [
+   "ev:SYN-0011-EV180",
+   "supports",
+   "dec:NCT07144280:NCT07144280-E04:r1"
+  ],
+  [
+   "trial:NCT07144280",
+   "has_criterion",
+   "crit:NCT07144280-E05"
+  ],
+  [
+   "crit:NCT07144280-E05",
+   "decided_as",
+   "dec:NCT07144280:NCT07144280-E05:r1"
+  ],
+  [
+   "trial:NCT07144280",
+   "labelled",
+   "label:NCT07144280"
+  ]
+ ]
+}

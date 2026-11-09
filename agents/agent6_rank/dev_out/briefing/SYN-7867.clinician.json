@@ -1,0 +1,366 @@
+{
+ "patient_id": "SYN-7867",
+ "as_of": "2026-10-01",
+ "audience": "clinician",
+ "graph_file": "SYN-7867.json",
+ "ranking": [
+  "NCT06979375"
+ ],
+ "also_mentioned": [
+  "NCT07567001"
+ ],
+ "sentences": [
+  {
+   "text": "환자 SYN-7867, 기준일 2026-10-01",
+   "refs": [],
+   "kind": "meta"
+  },
+  {
+   "text": "1. NCT06979375 A Research Study Comparing CDR132L With Placebo on the Structure and Function of the Heart in People With Heart Failure With Reduced/Mildly Reduced Ejection Fraction and Left Ventricular Hypertrophy",
+   "refs": [
+    "trial:NCT06979375"
+   ],
+   "kind": "heading"
+  },
+  {
+   "text": "시험 판정: potential (남은 항목 12개)",
+   "refs": [
+    "label:NCT06979375"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "국내 모집 기관 7곳",
+   "refs": [
+    "trial:NCT06979375"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "Arms — EXPERIMENTAL: Drug: CDR132L; PLACEBO_COMPARATOR: Drug: Placebo",
+   "refs": [
+    "trial:NCT06979375"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06979375-I01 [inclusion] 충족",
+   "refs": [
+    "crit:NCT06979375-I01",
+    "dec:NCT06979375:NCT06979375-I01:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"DOB 1962-09-03.\" (SYN-7867-D02, 2026-02-19)",
+   "refs": [
+    "ev:SYN-7867-EV004",
+    "src:SYN-7867-D02:6-21"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   계산: age_at_as_of = 64.077 (범위 40.0~84.0)",
+   "refs": [
+    "calc:NCT06979375:NCT06979375-I01"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06979375-I02 [inclusion] 미확인 (근거 불충분) → 다음: clinician_confirmation",
+   "refs": [
+    "crit:NCT06979375-I02",
+    "dec:NCT06979375:NCT06979375-I02:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Date HF was first diagnosed (>=180 days before screening); the record shows HF since 2019 only via ischemic cardiomyopathy/HFrEF 2019",
+   "refs": [
+    "dec:NCT06979375:NCT06979375-I02:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06979375-I03 [inclusion] 미확인 (근거 불충분) → 다음: clinician_confirmation",
+   "refs": [
+    "crit:NCT06979375-I03",
+    "dec:NCT06979375:NCT06979375-I03:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Whether the doses are optimized; bisoprolol is not up-titrated due to fatigue/BP, and the dose stability duration is not documented",
+   "refs": [
+    "dec:NCT06979375:NCT06979375-I03:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06979375-I04 [inclusion] 미확인 (기간 지남) → 다음: new_test",
+   "refs": [
+    "crit:NCT06979375-I04",
+    "dec:NCT06979375:NCT06979375-I04:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   계산: lvef 28 % < 50 %, 측정 2026-01-01 (273일 전, 허용 90일)",
+   "refs": [
+    "calc:NCT06979375:NCT06979375-I04"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06979375-I05 [inclusion] 미확인 (근거 불충분) → 다음: new_test",
+   "refs": [
+    "crit:NCT06979375-I05",
+    "dec:NCT06979375:NCT06979375-I05:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Central-lab screening echo with LVMi or LVEDDi (LVEDD 64 mm / BSA ~2.0 m2 gives ~3.2 cm/m2, but this is not a screening central-lab result)",
+   "refs": [
+    "dec:NCT06979375:NCT06979375-I05:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06979375-I06 [inclusion] 충족",
+   "refs": [
+    "crit:NCT06979375-I06",
+    "dec:NCT06979375:NCT06979375-I06:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"BMI 26.5 kg/m2.\" (SYN-7867-D07, 2026-09-24)",
+   "refs": [
+    "ev:SYN-7867-EV123",
+    "src:SYN-7867-D07:2278-2293"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Weight 84.0 kg.\" (SYN-7867-D07, 2026-09-24)",
+   "refs": [
+    "ev:SYN-7867-EV122",
+    "src:SYN-7867-D07:2262-2277"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06979375-I07 [inclusion] 미확인 (근거 불충분) → 다음: lab_check",
+   "refs": [
+    "crit:NCT06979375-I07",
+    "dec:NCT06979375:NCT06979375-I07:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Central-laboratory NT-proBNP at screening",
+   "refs": [
+    "dec:NCT06979375:NCT06979375-I07:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06979375-E01 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT06979375-E01",
+    "dec:NCT06979375:NCT06979375-E01:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"eGFR 59 mL/min/1.73 m2 (>90) L\" (SYN-7867-D08, 2026-09-24)",
+   "refs": [
+    "ev:SYN-7867-EV212",
+    "src:SYN-7867-D08:592-622"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   계산: egfr 59 mL/min/1.73m2 < 30 mL/min/1.73m2, 측정 2026-09-24 (7일 전)",
+   "refs": [
+    "calc:NCT06979375:NCT06979375-E01"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06979375-E02 [exclusion] 미확인 (기록 없음) → 다음: patient_question",
+   "refs": [
+    "crit:NCT06979375-E02",
+    "dec:NCT06979375:NCT06979375-E02:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06979375-E03 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT06979375-E03",
+    "dec:NCT06979375:NCT06979375-E03:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Since discharge on guideline-directed therapy he has had no further admissions.\" (SYN-7867-D07, 2026-09-24)",
+   "refs": [
+    "ev:SYN-7867-EV048",
+    "src:SYN-7867-D07:339-418"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"No chest pain, syncope, presyncope or palpitations.\" (SYN-7867-D07, 2026-09-24)",
+   "refs": [
+    "ev:SYN-7867-EV053",
+    "src:SYN-7867-D07:549-600"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Admitted 2026-02-14 with acute decompensated HF (diuresed 6 kg).\" (SYN-7867-D07, 2026-02-14)",
+   "refs": [
+    "ev:SYN-7867-EV047",
+    "src:SYN-7867-D07:274-338"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06979375-E04 [exclusion] 미확인 (기록 없음) → 다음: med_history_check",
+   "refs": [
+    "crit:NCT06979375-E04",
+    "dec:NCT06979375:NCT06979375-E04:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06979375-E05 [exclusion] 미확인 (기록 없음) → 다음: clinician_confirmation",
+   "refs": [
+    "crit:NCT06979375-E05",
+    "dec:NCT06979375:NCT06979375-E05:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Whether any revascularization, device, ablation or valve procedure is planned",
+   "refs": [
+    "dec:NCT06979375:NCT06979375-E05:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06979375-E06 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT06979375-E06",
+    "dec:NCT06979375:NCT06979375-E06:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"No stroke or TIA.\" (SYN-7867-D07, 2026-09-24)",
+   "refs": [
+    "ev:SYN-7867-EV077",
+    "src:SYN-7867-D07:1078-1095"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"No stroke or TIA.\" (SYN-7867-D07, 2026-09-24)",
+   "refs": [
+    "ev:SYN-7867-EV078",
+    "src:SYN-7867-D07:1078-1095"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06979375-E07 [exclusion] 미확인 (기록 없음) → 다음: patient_question",
+   "refs": [
+    "crit:NCT06979375-E07",
+    "dec:NCT06979375:NCT06979375-E07:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06979375-E08 [exclusion] 미확인 (기록 없음) → 다음: lab_check",
+   "refs": [
+    "crit:NCT06979375-E08",
+    "dec:NCT06979375:NCT06979375-E08:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: ALT/AST value at screening",
+   "refs": [
+    "dec:NCT06979375:NCT06979375-E08:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06979375-E09 [exclusion] 미확인 (근거 불충분) → 다음: clinician_confirmation",
+   "refs": [
+    "crit:NCT06979375-E09",
+    "dec:NCT06979375:NCT06979375-E09:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Whether genetic testing excluded a genetic cause; the cardiomyopathy is ischemic and family history is negative",
+   "refs": [
+    "dec:NCT06979375:NCT06979375-E09:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06979375-E10 [exclusion] 미확인 (기록 없음) → 다음: med_record_check",
+   "refs": [
+    "crit:NCT06979375-E10",
+    "dec:NCT06979375:NCT06979375-E10:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Any evaluation excluding cardiac amyloidosis or sarcoidosis",
+   "refs": [
+    "dec:NCT06979375:NCT06979375-E10:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "참고: FAIL 하나로 제외된 시험 (순위에는 넣지 않음, 그 기준만 확인하면 판정이 바뀔 수 있음)",
+   "refs": [
+    "trial:NCT07567001"
+   ],
+   "kind": "heading"
+  },
+  {
+   "text": "NCT07567001 A Research Study to Look at How Well NNC0487-0111 Works Compared to Placebo in People With Heart Failure and Obesity: NCT07567001-I01 [inclusion] 불충족",
+   "refs": [
+    "crit:NCT07567001-I01",
+    "dec:NCT07567001:NCT07567001-I01:r1",
+    "label:NCT07567001",
+    "trial:NCT07567001"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   노트: bmi = 26.5 kg/m2 (2026-09-24, -7d) vs >= 30 -> not met",
+   "refs": [
+    "dec:NCT07567001:NCT07567001-I01:r1"
+   ],
+   "kind": "fact"
+  }
+ ],
+ "evidence": {
+  "files": [
+   "evidence_dev_haiku_v14_12.jsonl",
+   "evidence_dev_variants_haiku_v14_12.jsonl"
+  ],
+  "sha256": "daba4f5f1e16ec2eefc47311f5c13f85e6b5f218c85424f08f9af3d9bab09124",
+  "id_series": "haiku",
+  "graph_ev_nodes_checked": 2240
+ },
+ "agent6": "a6-0.4.14"
+}

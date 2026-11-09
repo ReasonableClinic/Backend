@@ -1,0 +1,1627 @@
+{
+ "patient_id": "SYN-0002",
+ "as_of": "2026-10-01",
+ "audience": "clinician",
+ "graph_file": "SYN-0002.json",
+ "ranking": [
+  "NCT07436988",
+  "NCT06582017",
+  "NCT07774247"
+ ],
+ "also_mentioned": [],
+ "sentences": [
+  {
+   "text": "환자 SYN-0002, 기준일 2026-10-01",
+   "refs": [],
+   "kind": "meta"
+  },
+  {
+   "text": "1. NCT07436988 Affordable Made-in-India Microspheres for Liver Cancer Therapy",
+   "refs": [
+    "trial:NCT07436988"
+   ],
+   "kind": "heading"
+  },
+  {
+   "text": "시험 판정: potential (남은 항목 10개)",
+   "refs": [
+    "label:NCT07436988"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "국내 모집 기관 없음 (모집 국가: India)",
+   "refs": [
+    "trial:NCT07436988"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "Arms — EXPERIMENTAL: Device: 188Re-Microspheres; ACTIVE_COMPARATOR: Device: 90Y-Theraspheres",
+   "refs": [
+    "trial:NCT07436988"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07436988-I01 [inclusion] 충족",
+   "refs": [
+    "crit:NCT07436988-I01",
+    "dec:NCT07436988:NCT07436988-I01:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"DOB 1965-03-08.\" (SYN-0002-D01, 2025-11-03)",
+   "refs": [
+    "ev:SYN-0002-EV002",
+    "src:SYN-0002-D01:6-21"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   계산: age_at_as_of = 61.567 (범위 18.0~None)",
+   "refs": [
+    "calc:NCT07436988:NCT07436988-I01"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07436988-I02 [inclusion] 충족",
+   "refs": [
+    "crit:NCT07436988-I02",
+    "dec:NCT07436988:NCT07436988-I02:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Dynamic CT: 3 lesions in right lobe (4.1, 2.6, 2.0 cm) with arterial enhancement and washout\" (SYN-0002-D02, 2025-11-03)",
+   "refs": [
+    "ev:SYN-0002-EV320",
+    "src:SYN-0002-D02:125-217"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"61-year-old man with chronic HBV cirrhosis (Child-Pugh A) and multifocal HCC, BCLC B. Dx 2025-11: 3 right-lobe lesions (4.1, 2.6, 2.0 cm), LI-RADS 5, no portal vein invasion, no extrahepatic spread, AFP 412. cTACE #1 on 2025-12-05 (lipiodol + doxorubicin), uneventful.\" (SYN-0002-D09, 2026-09-15)",
+   "refs": [
+    "ev:SYN-0002-EV335",
+    "src:SYN-0002-D09:164-432"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07436988-I03 [inclusion] 충족",
+   "refs": [
+    "crit:NCT07436988-I03",
+    "dec:NCT07436988:NCT07436988-I03:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Stage: HCC BCLC B (multifocal, confined to right lobe, no macrovascular invasion, no extrahepatic disease)\" (SYN-0002-D09, 2026-09-15)",
+   "refs": [
+    "ev:SYN-0002-EV216",
+    "src:SYN-0002-D09:3157-3263"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"ECOG performance status 0\" (SYN-0002-D09, 2026-09-15)",
+   "refs": [
+    "ev:SYN-0002-EV215",
+    "src:SYN-0002-D09:3129-3154"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07436988-I04 [inclusion] 미확인 (근거 불충분) → 다음: med_record_check",
+   "refs": [
+    "crit:NCT07436988-I04",
+    "dec:NCT07436988:NCT07436988-I04:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: A current lesion with longest diameter >=5 cm",
+   "refs": [
+    "dec:NCT07436988:NCT07436988-I04:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07436988-I05 [inclusion] 충족",
+   "refs": [
+    "crit:NCT07436988-I05",
+    "dec:NCT07436988:NCT07436988-I05:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"No vascular invasion.\" (SYN-0002-D05, 2026-08-20)",
+   "refs": [
+    "ev:SYN-0002-EV020",
+    "src:SYN-0002-D05:112-133"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07436988-I06 [inclusion] 충족",
+   "refs": [
+    "crit:NCT07436988-I06",
+    "dec:NCT07436988:NCT07436988-I06:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Creatinine 0.9 mg/dL (0.7-1.3)\" (SYN-0002-D08, 2026-09-14)",
+   "refs": [
+    "ev:SYN-0002-EV056",
+    "src:SYN-0002-D08:636-666"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Total bilirubin 1.4 mg/dL (0.2-1.2) H\" (SYN-0002-D08, 2026-09-14)",
+   "refs": [
+    "ev:SYN-0002-EV064",
+    "src:SYN-0002-D08:895-932"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"AST 52 U/L (10-40) H\" (SYN-0002-D08, 2026-09-14)",
+   "refs": [
+    "ev:SYN-0002-EV066",
+    "src:SYN-0002-D08:972-992"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"ALT 41 U/L (7-56)\" (SYN-0002-D08, 2026-09-14)",
+   "refs": [
+    "ev:SYN-0002-EV067",
+    "src:SYN-0002-D08:993-1010"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"WBC 4.0 x10^9/L (4.0-11.0)\" (SYN-0002-D08, 2026-09-14)",
+   "refs": [
+    "ev:SYN-0002-EV038",
+    "src:SYN-0002-D08:47-73"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Platelets 88 x10^9/L (150-400) L\" (SYN-0002-D08, 2026-09-14)",
+   "refs": [
+    "ev:SYN-0002-EV045",
+    "src:SYN-0002-D08:235-267"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"INR 1.17 (0.9-1.2)\" (SYN-0002-D08, 2026-09-14)",
+   "refs": [
+    "ev:SYN-0002-EV071",
+    "src:SYN-0002-D08:1089-1107"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07436988-I07 [inclusion] 미확인 (기록 없음) → 다음: clinician_confirmation",
+   "refs": [
+    "crit:NCT07436988-I07",
+    "dec:NCT07436988:NCT07436988-I07:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Karnofsky performance status value",
+   "refs": [
+    "dec:NCT07436988:NCT07436988-I07:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07436988-I08 [inclusion] 미확인 (기록 없음) → 다음: patient_question",
+   "refs": [
+    "crit:NCT07436988-I08",
+    "dec:NCT07436988:NCT07436988-I08:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07436988-E01 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT07436988-E01",
+    "dec:NCT07436988:NCT07436988-E01:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Male.\" (SYN-0002-D01, 2025-11-03)",
+   "refs": [
+    "ev:SYN-0002-EV001",
+    "src:SYN-0002-D01:0-5"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07436988-E02 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT07436988-E02",
+    "dec:NCT07436988:NCT07436988-E02:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"61-year-old man with chronic HBV cirrhosis (Child-Pugh A) and multifocal HCC, BCLC B. Dx 2025-11: 3 right-lobe lesions (4.1, 2.6, 2.0 cm), LI-RADS 5, no portal vein invasion, no extrahepatic spread, AFP 412. cTACE #1 on 2025-12-05 (lipiodol + doxorubicin), uneventful.\" (SYN-0002-D09, 2026-09-15)",
+   "refs": [
+    "ev:SYN-0002-EV296",
+    "src:SYN-0002-D09:164-432"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   계산: child_pugh class A in ['C'] , 측정 2026-09-15",
+   "refs": [
+    "calc:NCT07436988:NCT07436988-E02"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07436988-E03 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT07436988-E03",
+    "dec:NCT07436988:NCT07436988-E03:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Stage: HCC BCLC B (multifocal, confined to right lobe, no macrovascular invasion, no extrahepatic disease)\" (SYN-0002-D09, 2026-09-15)",
+   "refs": [
+    "ev:SYN-0002-EV219",
+    "src:SYN-0002-D09:3157-3263"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"61-year-old man with chronic HBV cirrhosis (Child-Pugh A) and multifocal HCC, BCLC B. Dx 2025-11: 3 right-lobe lesions (4.1, 2.6, 2.0 cm), LI-RADS 5, no portal vein invasion, no extrahepatic spread, AFP 412. cTACE #1 on 2025-12-05 (lipiodol + doxorubicin), uneventful.\" (SYN-0002-D09, 2026-09-15)",
+   "refs": [
+    "ev:SYN-0002-EV337",
+    "src:SYN-0002-D09:164-432"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07436988-E04 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT07436988-E04",
+    "dec:NCT07436988:NCT07436988-E04:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"No other cardiac, pulmonary, renal, autoimmune, endocrine or neurologic history.\" (SYN-0002-D09, 2026-09-15)",
+   "refs": [
+    "ev:SYN-0002-EV131",
+    "src:SYN-0002-D09:1241-1321"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"No other cardiac, pulmonary, renal, autoimmune, endocrine or neurologic history.\" (SYN-0002-D09, 2026-09-15)",
+   "refs": [
+    "ev:SYN-0002-EV132",
+    "src:SYN-0002-D09:1241-1321"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07436988-E05 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT07436988-E05",
+    "dec:NCT07436988:NCT07436988-E05:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"No other cardiac, pulmonary, renal, autoimmune, endocrine or neurologic history.\" (SYN-0002-D09, 2026-09-15)",
+   "refs": [
+    "ev:SYN-0002-EV131",
+    "src:SYN-0002-D09:1241-1321"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07436988-E06 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT07436988-E06",
+    "dec:NCT07436988:NCT07436988-E06:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"No other cardiac, pulmonary, renal, autoimmune, endocrine or neurologic history.\" (SYN-0002-D09, 2026-09-15)",
+   "refs": [
+    "ev:SYN-0002-EV131",
+    "src:SYN-0002-D09:1241-1321"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"CV: no chest pain, palpitations, edema.\" (SYN-0002-D09, 2026-09-15)",
+   "refs": [
+    "ev:SYN-0002-EV166",
+    "src:SYN-0002-D09:2186-2225"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"CV: no chest pain, palpitations, edema.\" (SYN-0002-D09, 2026-09-15)",
+   "refs": [
+    "ev:SYN-0002-EV167",
+    "src:SYN-0002-D09:2186-2225"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07436988-E07 [exclusion] 미확인 (기록 없음) → 다음: clinician_confirmation",
+   "refs": [
+    "crit:NCT07436988-E07",
+    "dec:NCT07436988:NCT07436988-E07:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Investigator opinion on any serious uncontrolled illness",
+   "refs": [
+    "dec:NCT07436988:NCT07436988-E07:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07436988-E08 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT07436988-E08",
+    "dec:NCT07436988:NCT07436988-E08:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"No prior malignancy.\" (SYN-0002-D09, 2026-09-15)",
+   "refs": [
+    "ev:SYN-0002-EV138",
+    "src:SYN-0002-D09:1335-1355"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07436988-E09 [exclusion] 미확인 (기록 없음) → 다음: med_history_check",
+   "refs": [
+    "crit:NCT07436988-E09",
+    "dec:NCT07436988:NCT07436988-E09:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Whether any major surgery occurred in the last 4 weeks",
+   "refs": [
+    "dec:NCT07436988:NCT07436988-E09:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07436988-E10 [exclusion] 미확인 (기록 없음) → 다음: clinician_confirmation",
+   "refs": [
+    "crit:NCT07436988-E10",
+    "dec:NCT07436988:NCT07436988-E10:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Presence of active bacterial infection requiring systemic therapy",
+   "refs": [
+    "dec:NCT07436988:NCT07436988-E10:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07436988-E11 [exclusion] 미확인 (기록 없음) → 다음: med_record_check",
+   "refs": [
+    "crit:NCT07436988-E11",
+    "dec:NCT07436988:NCT07436988-E11:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Imaging statement on capsule penetration, biliary invasion or obstruction",
+   "refs": [
+    "dec:NCT07436988:NCT07436988-E11:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07436988-E12 [exclusion] 미확인 (기록 없음) → 다음: patient_question",
+   "refs": [
+    "crit:NCT07436988-E12",
+    "dec:NCT07436988:NCT07436988-E12:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Hypersensitivity to microsphere components (resin, glass or rhenium-based)",
+   "refs": [
+    "dec:NCT07436988:NCT07436988-E12:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07436988-E13 [exclusion] 미확인 (기록 없음) → 다음: med_history_check",
+   "refs": [
+    "crit:NCT07436988-E13",
+    "dec:NCT07436988:NCT07436988-E13:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07436988-E14 [exclusion] 미확인 (기록 없음) → 다음: clinician_confirmation",
+   "refs": [
+    "crit:NCT07436988-E14",
+    "dec:NCT07436988:NCT07436988-E14:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Clinician estimate of overall survival",
+   "refs": [
+    "dec:NCT07436988:NCT07436988-E14:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "2. NCT06582017 Safety, PK and Efficacy of QXL138AM in Patients With Solid Tumors and Multiple Myeloma",
+   "refs": [
+    "trial:NCT06582017"
+   ],
+   "kind": "heading"
+  },
+  {
+   "text": "시험 판정: potential (남은 항목 14개)",
+   "refs": [
+    "label:NCT06582017"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "재확인 권장: 노트는 해당 조건이 없다고 적었는데 판정은 미확인: NCT06582017-I01",
+   "refs": [
+    "dec:NCT06582017:NCT06582017-I01:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "국내 모집 기관 없음 (모집 국가: United States)",
+   "refs": [
+    "trial:NCT06582017"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "Arms — EXPERIMENTAL: Biological: QXL138AM Injection every 2 weeks by IV Infusion; EXPERIMENTAL: Biological: QXL138AM Injection every 2 weeks by IV Infusion; EXPERIMENTAL: Biological: QXL138AM Injection every 2 weeks by IV Infusion; EXPERIMENTAL: Biological: QXL138AM Injection every 2 weeks by IV Infusion",
+   "refs": [
+    "trial:NCT06582017"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06582017-I01 [inclusion] 미확인 (근거 불충분) → 다음: clinician_confirmation",
+   "refs": [
+    "crit:NCT06582017-I01",
+    "dec:NCT06582017:NCT06582017-I01:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Histopathological confirmation, and whether no therapeutic option with clinical benefit remains (systemic therapy still under discussion)",
+   "refs": [
+    "dec:NCT06582017:NCT06582017-I01:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06582017-I03 [inclusion] 충족",
+   "refs": [
+    "crit:NCT06582017-I03",
+    "dec:NCT06582017:NCT06582017-I03:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"ECOG 0.\" (SYN-0002-D07, 2026-09-02)",
+   "refs": [
+    "ev:SYN-0002-EV034",
+    "src:SYN-0002-D07:61-68"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   계산: ecog 0 points <= 2 , 측정 2026-09-02 (29일 전)",
+   "refs": [
+    "calc:NCT06582017:NCT06582017-I03"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06582017-I04 [inclusion] 충족",
+   "refs": [
+    "crit:NCT06582017-I04",
+    "dec:NCT06582017:NCT06582017-I04:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Liver MRI: persistent viable tumor in segment 7 (2.8 cm) and new 1.5 cm arterial-enhancing lesion in segment 5.\" (SYN-0002-D05, 2026-08-20)",
+   "refs": [
+    "ev:SYN-0002-EV321",
+    "src:SYN-0002-D05:0-111"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"MRI 2026-08-20 showed persistent viable tumor in segment 7 (2.8 cm) and a new 1.5 cm arterial-enhancing lesion in segment 5, with no vascular invasion.\" (SYN-0002-D09, 2026-08-20)",
+   "refs": [
+    "ev:SYN-0002-EV323",
+    "src:SYN-0002-D09:559-710"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06582017-I05 [inclusion] 미확인 (근거 불충분) → 다음: clinician_confirmation",
+   "refs": [
+    "crit:NCT06582017-I05",
+    "dec:NCT06582017:NCT06582017-I05:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Whether the mild abnormalities (platelets 88, bilirubin 1.4, AST 52, Hb 13.2) count as adequate, since no thresholds are given",
+   "refs": [
+    "dec:NCT06582017:NCT06582017-I05:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06582017-I06 [inclusion] 미확인 (기록 없음) → 다음: new_test",
+   "refs": [
+    "crit:NCT06582017-I06",
+    "dec:NCT06582017:NCT06582017-I06:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Left ventricular ejection fraction (echo/MUGA)",
+   "refs": [
+    "dec:NCT06582017:NCT06582017-I06:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06582017-I07 [inclusion] 충족",
+   "refs": [
+    "crit:NCT06582017-I07",
+    "dec:NCT06582017:NCT06582017-I07:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Male.\" (SYN-0002-D01, 2025-11-03)",
+   "refs": [
+    "ev:SYN-0002-EV001",
+    "src:SYN-0002-D01:0-5"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06582017-I08 [inclusion] 미확인 (기록 없음) → 다음: patient_question",
+   "refs": [
+    "crit:NCT06582017-I08",
+    "dec:NCT06582017:NCT06582017-I08:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Patient's agreement to use contraception and refrain from sperm donation",
+   "refs": [
+    "dec:NCT06582017:NCT06582017-I08:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06582017-E01 [exclusion] 미확인 (기록 없음) → 다음: new_test",
+   "refs": [
+    "crit:NCT06582017-E01",
+    "dec:NCT06582017:NCT06582017-E01:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Screening ECG (QTc, ischemia); MI within 6 months and family history of long QT not addressed",
+   "refs": [
+    "dec:NCT06582017:NCT06582017-E01:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06582017-E02 [exclusion] 미확인 (기록 없음) → 다음: med_history_check",
+   "refs": [
+    "crit:NCT06582017-E02",
+    "dec:NCT06582017:NCT06582017-E02:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06582017-E03 [exclusion] 미확인 (기록 없음) → 다음: med_history_check",
+   "refs": [
+    "crit:NCT06582017-E03",
+    "dec:NCT06582017:NCT06582017-E03:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06582017-E04 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT06582017-E04",
+    "dec:NCT06582017:NCT06582017-E04:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"NKDA.\" (SYN-0002-D09, 2026-09-15)",
+   "refs": [
+    "ev:SYN-0002-EV146",
+    "src:SYN-0002-D09:1574-1579"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06582017-E05 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT06582017-E05",
+    "dec:NCT06582017:NCT06582017-E05:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Male.\" (SYN-0002-D01, 2025-11-03)",
+   "refs": [
+    "ev:SYN-0002-EV001",
+    "src:SYN-0002-D01:0-5"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06582017-E06 [exclusion] 미확인 (근거 불충분) → 다음: clinician_confirmation",
+   "refs": [
+    "crit:NCT06582017-E06",
+    "dec:NCT06582017:NCT06582017-E06:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Investigator judgment on whether cirrhosis/portal hypertension/thrombocytopenia are clinically significant comorbidities",
+   "refs": [
+    "dec:NCT06582017:NCT06582017-E06:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06582017-E07 [exclusion] 미확인 (기록 없음) → 다음: med_history_check",
+   "refs": [
+    "crit:NCT06582017-E07",
+    "dec:NCT06582017:NCT06582017-E07:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06582017-E08 [exclusion] 미확인 (기록 없음) → 다음: med_history_check",
+   "refs": [
+    "crit:NCT06582017-E08",
+    "dec:NCT06582017:NCT06582017-E08:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06582017-E09 [exclusion] 미확인 (기록 없음) → 다음: med_history_check",
+   "refs": [
+    "crit:NCT06582017-E09",
+    "dec:NCT06582017:NCT06582017-E09:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06582017-E10 [exclusion] 미확인 (기록 없음) → 다음: med_history_check",
+   "refs": [
+    "crit:NCT06582017-E10",
+    "dec:NCT06582017:NCT06582017-E10:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06582017-E11 [exclusion] 미확인 (근거 불충분) → 다음: clinician_confirmation",
+   "refs": [
+    "crit:NCT06582017-E11",
+    "dec:NCT06582017:NCT06582017-E11:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Whether chronic HBV (HBsAg+, DNA undetectable on entecavir) counts as active, clinically significant liver disease",
+   "refs": [
+    "dec:NCT06582017:NCT06582017-E11:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06582017-E12 [exclusion] 미확인 (기록 없음) → 다음: med_history_check",
+   "refs": [
+    "crit:NCT06582017-E12",
+    "dec:NCT06582017:NCT06582017-E12:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: History of mood disorder/major depression within past 2 years and its control",
+   "refs": [
+    "dec:NCT06582017:NCT06582017-E12:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06582017-E13 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT06582017-E13",
+    "dec:NCT06582017:NCT06582017-E13:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"No other cardiac, pulmonary, renal, autoimmune, endocrine or neurologic history.\" (SYN-0002-D09, 2026-09-15)",
+   "refs": [
+    "ev:SYN-0002-EV134",
+    "src:SYN-0002-D09:1241-1321"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"No other cardiac, pulmonary, renal, autoimmune, endocrine or neurologic history.\" (SYN-0002-D09, 2026-09-15)",
+   "refs": [
+    "ev:SYN-0002-EV131",
+    "src:SYN-0002-D09:1241-1321"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06582017-E14 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT06582017-E14",
+    "dec:NCT06582017:NCT06582017-E14:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"No other cardiac, pulmonary, renal, autoimmune, endocrine or neurologic history.\" (SYN-0002-D09, 2026-09-15)",
+   "refs": [
+    "ev:SYN-0002-EV135",
+    "src:SYN-0002-D09:1241-1321"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"No diabetes.\" (SYN-0002-D09, 2026-09-15)",
+   "refs": [
+    "ev:SYN-0002-EV137",
+    "src:SYN-0002-D09:1322-1334"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Glucose, fasting 96 mg/dL (70-99)\" (SYN-0002-D08, 2026-09-14)",
+   "refs": [
+    "ev:SYN-0002-EV058",
+    "src:SYN-0002-D08:710-743"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"TSH 2.1 mIU/L (0.4-4.0)\" (SYN-0002-D08, 2026-09-14)",
+   "refs": [
+    "ev:SYN-0002-EV085",
+    "src:SYN-0002-D08:1467-1490"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "3. NCT07774247 Atezolizumab, Bevacizumab, and Tocilizumab in Advanced Hepatocellular Carcinoma",
+   "refs": [
+    "trial:NCT07774247"
+   ],
+   "kind": "heading"
+  },
+  {
+   "text": "시험 판정: potential (남은 항목 31개)",
+   "refs": [
+    "label:NCT07774247"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "재확인 권장: 노트는 해당 조건이 없다고 적었는데 판정은 미확인: NCT07774247-I10",
+   "refs": [
+    "dec:NCT07774247:NCT07774247-I10:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "국내 모집 기관 1곳",
+   "refs": [
+    "trial:NCT07774247"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "Arms — EXPERIMENTAL: Drug: Atezolizumab + Drug: Bevacizumab + Drug: Tocilizumab",
+   "refs": [
+    "trial:NCT07774247"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07774247-I01 [inclusion] 충족",
+   "refs": [
+    "crit:NCT07774247-I01",
+    "dec:NCT07774247:NCT07774247-I01:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"61-year-old man with chronic HBV cirrhosis (Child-Pugh A) and multifocal HCC, BCLC B. Dx 2025-11: 3 right-lobe lesions (4.1, 2.6, 2.0 cm), LI-RADS 5, no portal vein invasion, no extrahepatic spread, AFP 412. cTACE #1 on 2025-12-05 (lipiodol + doxorubicin), uneventful.\" (SYN-0002-D09, 2026-09-15)",
+   "refs": [
+    "ev:SYN-0002-EV101",
+    "src:SYN-0002-D09:164-432"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"61-year-old man with chronic HBV cirrhosis (Child-Pugh A) and multifocal HCC, BCLC B. Dx 2025-11: 3 right-lobe lesions (4.1, 2.6, 2.0 cm), LI-RADS 5, no portal vein invasion, no extrahepatic spread, AFP 412. cTACE #1 on 2025-12-05 (lipiodol + doxorubicin), uneventful.\" (SYN-0002-D09, 2026-09-15)",
+   "refs": [
+    "ev:SYN-0002-EV335",
+    "src:SYN-0002-D09:164-432"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Multifocal HCC, BCLC B, progressing after 2 TACE with viable tumor in segments 7 and 5\" (SYN-0002-D09, 2026-09-15)",
+   "refs": [
+    "ev:SYN-0002-EV241",
+    "src:SYN-0002-D09:3642-3728"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07774247-I02 [inclusion] 충족",
+   "refs": [
+    "crit:NCT07774247-I02",
+    "dec:NCT07774247:NCT07774247-I02:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"DOB 1965-03-08.\" (SYN-0002-D01, 2025-11-03)",
+   "refs": [
+    "ev:SYN-0002-EV002",
+    "src:SYN-0002-D01:6-21"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   계산: age_at_as_of = 61.567 (범위 19.0~None)",
+   "refs": [
+    "calc:NCT07774247:NCT07774247-I02"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07774247-I03 [inclusion] 미확인 (기간 지남) → 다음: new_test",
+   "refs": [
+    "crit:NCT07774247-I03",
+    "dec:NCT07774247:NCT07774247-I03:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   계산: ecog 0 points <= 1 , 측정 2026-09-02 (29일 전, 허용 7일)",
+   "refs": [
+    "calc:NCT07774247:NCT07774247-I03"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07774247-I04 [inclusion] 미확인 (기간 지남) → 다음: new_test",
+   "refs": [
+    "crit:NCT07774247-I04",
+    "dec:NCT07774247:NCT07774247-I04:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   계산: child_pugh class A between [5, 6] , 측정 2026-09-15 (16일 전, 허용 7일)",
+   "refs": [
+    "calc:NCT07774247:NCT07774247-I04"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07774247-I05 [inclusion] 충족",
+   "refs": [
+    "crit:NCT07774247-I05",
+    "dec:NCT07774247:NCT07774247-I05:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Multifocal HCC, BCLC B, progressing after 2 TACE with viable tumor in segments 7 and 5\" (SYN-0002-D09, 2026-09-15)",
+   "refs": [
+    "ev:SYN-0002-EV241",
+    "src:SYN-0002-D09:3642-3728"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Liver MRI: persistent viable tumor in segment 7 (2.8 cm) and new 1.5 cm arterial-enhancing lesion in segment 5.\" (SYN-0002-D05, 2026-08-20)",
+   "refs": [
+    "ev:SYN-0002-EV018",
+    "src:SYN-0002-D05:0-111"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Otherwise only the 2 TACE procedures (2025-12-05, 2026-03-10).\" (SYN-0002-D09, 2025-12-05)",
+   "refs": [
+    "ev:SYN-0002-EV143",
+    "src:SYN-0002-D09:1467-1529"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07774247-I06 [inclusion] 미확인 (기록 없음) → 다음: patient_question",
+   "refs": [
+    "crit:NCT07774247-I06",
+    "dec:NCT07774247:NCT07774247-I06:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07774247-I07 [inclusion] 미확인 (기록 없음) → 다음: med_history_check",
+   "refs": [
+    "crit:NCT07774247-I07",
+    "dec:NCT07774247:NCT07774247-I07:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07774247-I08 [inclusion] 미확인 (기록 없음) → 다음: clinician_confirmation",
+   "refs": [
+    "crit:NCT07774247-I08",
+    "dec:NCT07774247:NCT07774247-I08:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Clinician estimate of life expectancy (>=3 months)",
+   "refs": [
+    "dec:NCT07774247:NCT07774247-I08:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07774247-I09 [inclusion] 충족",
+   "refs": [
+    "crit:NCT07774247-I09",
+    "dec:NCT07774247:NCT07774247-I09:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Liver MRI: persistent viable tumor in segment 7 (2.8 cm) and new 1.5 cm arterial-enhancing lesion in segment 5.\" (SYN-0002-D05, 2026-08-20)",
+   "refs": [
+    "ev:SYN-0002-EV321",
+    "src:SYN-0002-D05:0-111"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"MRI 2026-08-20 showed persistent viable tumor in segment 7 (2.8 cm) and a new 1.5 cm arterial-enhancing lesion in segment 5, with no vascular invasion.\" (SYN-0002-D09, 2026-08-20)",
+   "refs": [
+    "ev:SYN-0002-EV323",
+    "src:SYN-0002-D09:559-710"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07774247-I10 [inclusion] 미확인 (기간 지남) → 다음: new_test",
+   "refs": [
+    "crit:NCT07774247-I10",
+    "dec:NCT07774247:NCT07774247-I10:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Hematology, chemistry and coagulation results within 7 days before first dose",
+   "refs": [
+    "dec:NCT07774247:NCT07774247-I10:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07774247-I11 [inclusion] 충족",
+   "refs": [
+    "crit:NCT07774247-I11",
+    "dec:NCT07774247:NCT07774247-I11:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"HBsAg reactive (non-reactive) H\" (SYN-0002-D08, 2026-09-14)",
+   "refs": [
+    "ev:SYN-0002-EV074",
+    "src:SYN-0002-D08:1180-1211"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"HBV DNA not detected (<10 IU/mL)\" (SYN-0002-D08, 2026-09-14)",
+   "refs": [
+    "ev:SYN-0002-EV330",
+    "src:SYN-0002-D08:1250-1282"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Anti-HCV non-reactive\" (SYN-0002-D08, 2026-09-14)",
+   "refs": [
+    "ev:SYN-0002-EV078",
+    "src:SYN-0002-D08:1283-1304"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Entecavir 0.5 mg PO daily (since 2015)\" (SYN-0002-D09, 2026-09-15)",
+   "refs": [
+    "ev:SYN-0002-EV148",
+    "src:SYN-0002-D09:1609-1647"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Adherent to entecavir and carvedilol.\" (SYN-0002-D09, 2026-09-15)",
+   "refs": [
+    "ev:SYN-0002-EV120",
+    "src:SYN-0002-D09:859-896"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07774247-I12 [inclusion] 미확인 (기록 없음) → 다음: patient_question",
+   "refs": [
+    "crit:NCT07774247-I12",
+    "dec:NCT07774247:NCT07774247-I12:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Whether the male patient agrees to use two effective contraception methods",
+   "refs": [
+    "dec:NCT07774247:NCT07774247-I12:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07774247-I13 [inclusion] 미확인 (기록 없음) → 다음: new_test",
+   "refs": [
+    "crit:NCT07774247-I13",
+    "dec:NCT07774247:NCT07774247-I13:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: LVEF by echocardiogram or MUGA",
+   "refs": [
+    "dec:NCT07774247:NCT07774247-I13:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07774247-I14 [inclusion] 미확인 (기록 없음) → 다음: new_test",
+   "refs": [
+    "crit:NCT07774247-I14",
+    "dec:NCT07774247:NCT07774247-I14:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: ECG with QTcF value",
+   "refs": [
+    "dec:NCT07774247:NCT07774247-I14:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07774247-I15 [inclusion] 미확인 (기록 없음) → 다음: patient_question",
+   "refs": [
+    "crit:NCT07774247-I15",
+    "dec:NCT07774247:NCT07774247-I15:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Patient's willingness to provide blood samples",
+   "refs": [
+    "dec:NCT07774247:NCT07774247-I15:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07774247-E01 [exclusion] 미확인 (기록 없음) → 다음: med_history_check",
+   "refs": [
+    "crit:NCT07774247-E01",
+    "dec:NCT07774247:NCT07774247-E01:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07774247-E02 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT07774247-E02",
+    "dec:NCT07774247:NCT07774247-E02:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"No prior malignancy.\" (SYN-0002-D09, 2026-09-15)",
+   "refs": [
+    "ev:SYN-0002-EV138",
+    "src:SYN-0002-D09:1335-1355"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07774247-E03 [exclusion] 미확인 (기록 없음) → 다음: med_record_check",
+   "refs": [
+    "crit:NCT07774247-E03",
+    "dec:NCT07774247:NCT07774247-E03:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Histology or subtype (fibrolamellar, sarcomatoid, mixed HCC-CCA)",
+   "refs": [
+    "dec:NCT07774247:NCT07774247-E03:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07774247-E04 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT07774247-E04",
+    "dec:NCT07774247:NCT07774247-E04:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"EGD 2026-07: small esophageal varices without red signs\" (SYN-0002-D07, 2026-07-01)",
+   "refs": [
+    "ev:SYN-0002-EV035",
+    "src:SYN-0002-D07:69-124"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"EGD 2026-07: small esophageal varices without red signs\" (SYN-0002-D07, 2026-07-01)",
+   "refs": [
+    "ev:SYN-0002-EV036",
+    "src:SYN-0002-D07:69-124"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"No history of ascites, variceal bleeding or hepatic encephalopathy.\" (SYN-0002-D09, 2026-09-15)",
+   "refs": [
+    "ev:SYN-0002-EV140",
+    "src:SYN-0002-D09:1356-1423"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Carvedilol 6.25 mg PO BID (since 2026-07, for small varices)\" (SYN-0002-D09, 2026-09-15)",
+   "refs": [
+    "ev:SYN-0002-EV149",
+    "src:SYN-0002-D09:1650-1710"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07774247-E05 [exclusion] 미확인 (기록 없음) → 다음: clinician_confirmation",
+   "refs": [
+    "crit:NCT07774247-E05",
+    "dec:NCT07774247:NCT07774247-E05:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Investigator judgment on residual toxicity and on whether resection is fully excluded",
+   "refs": [
+    "dec:NCT07774247:NCT07774247-E05:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07774247-E06 [exclusion] 미확인 (기록 없음) → 다음: med_history_check",
+   "refs": [
+    "crit:NCT07774247-E06",
+    "dec:NCT07774247:NCT07774247-E06:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07774247-E07 [exclusion] 미확인 (기록 없음) → 다음: med_history_check",
+   "refs": [
+    "crit:NCT07774247-E07",
+    "dec:NCT07774247:NCT07774247-E07:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07774247-E08 [exclusion] 미확인 (기록 없음) → 다음: patient_question",
+   "refs": [
+    "crit:NCT07774247-E08",
+    "dec:NCT07774247:NCT07774247-E08:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07774247-E09 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT07774247-E09",
+    "dec:NCT07774247:NCT07774247-E09:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Stage: HCC BCLC B (multifocal, confined to right lobe, no macrovascular invasion, no extrahepatic disease)\" (SYN-0002-D09, 2026-09-15)",
+   "refs": [
+    "ev:SYN-0002-EV219",
+    "src:SYN-0002-D09:3157-3263"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"No portal vein invasion, no extrahepatic spread.\" (SYN-0002-D02, 2025-11-03)",
+   "refs": [
+    "ev:SYN-0002-EV012",
+    "src:SYN-0002-D02:230-278"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07774247-E10 [exclusion] 미확인 (기록 없음) → 다음: med_record_check",
+   "refs": [
+    "crit:NCT07774247-E10",
+    "dec:NCT07774247:NCT07774247-E10:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07774247-E11 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT07774247-E11",
+    "dec:NCT07774247:NCT07774247-E11:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Full activity, no abdominal pain, no weight loss, no jaundice, no bleeding.\" (SYN-0002-D09, 2026-09-15)",
+   "refs": [
+    "ev:SYN-0002-EV116",
+    "src:SYN-0002-D09:783-858"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"MSK: no bone pain.\" (SYN-0002-D09, 2026-09-15)",
+   "refs": [
+    "ev:SYN-0002-EV185",
+    "src:SYN-0002-D09:2477-2495"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"No NSAIDs, anticoagulants or antiplatelets.\" (SYN-0002-D09, 2026-09-15)",
+   "refs": [
+    "ev:SYN-0002-EV151",
+    "src:SYN-0002-D09:1744-1787"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07774247-E12 [exclusion] 미확인 (기록 없음) → 다음: med_history_check",
+   "refs": [
+    "crit:NCT07774247-E12",
+    "dec:NCT07774247:NCT07774247-E12:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Whether any TIA or stroke occurred in the last 180 days",
+   "refs": [
+    "dec:NCT07774247:NCT07774247-E12:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07774247-E13 [exclusion] 미확인 (기록 없음) → 다음: med_record_check",
+   "refs": [
+    "crit:NCT07774247-E13",
+    "dec:NCT07774247:NCT07774247-E13:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Absence of MI within 180 days and of significant vascular disease (arterial thrombosis/aneurysm)",
+   "refs": [
+    "dec:NCT07774247:NCT07774247-E13:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07774247-E14 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT07774247-E14",
+    "dec:NCT07774247:NCT07774247-E14:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"No diabetes.\" (SYN-0002-D09, 2026-09-15)",
+   "refs": [
+    "ev:SYN-0002-EV137",
+    "src:SYN-0002-D09:1322-1334"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"HbA1c 5.4 % (<5.7)\" (SYN-0002-D08, 2026-09-14)",
+   "refs": [
+    "ev:SYN-0002-EV080",
+    "src:SYN-0002-D08:1339-1357"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07774247-E15 [exclusion] 미확인 (기록 없음) → 다음: med_history_check",
+   "refs": [
+    "crit:NCT07774247-E15",
+    "dec:NCT07774247:NCT07774247-E15:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07774247-E16 [exclusion] 미확인 (기록 없음) → 다음: med_history_check",
+   "refs": [
+    "crit:NCT07774247-E16",
+    "dec:NCT07774247:NCT07774247-E16:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07774247-E17 [exclusion] 미확인 (기록 없음) → 다음: med_history_check",
+   "refs": [
+    "crit:NCT07774247-E17",
+    "dec:NCT07774247:NCT07774247-E17:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07774247-E18 [exclusion] 미확인 (기록 없음) → 다음: med_history_check",
+   "refs": [
+    "crit:NCT07774247-E18",
+    "dec:NCT07774247:NCT07774247-E18:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07774247-E19 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT07774247-E19",
+    "dec:NCT07774247:NCT07774247-E19:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"No NSAIDs, anticoagulants or antiplatelets.\" (SYN-0002-D09, 2026-09-15)",
+   "refs": [
+    "ev:SYN-0002-EV153",
+    "src:SYN-0002-D09:1744-1787"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"No NSAIDs, anticoagulants or antiplatelets.\" (SYN-0002-D09, 2026-09-15)",
+   "refs": [
+    "ev:SYN-0002-EV151",
+    "src:SYN-0002-D09:1744-1787"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"No NSAIDs, anticoagulants or antiplatelets.\" (SYN-0002-D09, 2026-09-15)",
+   "refs": [
+    "ev:SYN-0002-EV152",
+    "src:SYN-0002-D09:1744-1787"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07774247-E20 [exclusion] 미확인 (기록 없음) → 다음: med_history_check",
+   "refs": [
+    "crit:NCT07774247-E20",
+    "dec:NCT07774247:NCT07774247-E20:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07774247-E21 [exclusion] 미확인 (기록 없음) → 다음: med_history_check",
+   "refs": [
+    "crit:NCT07774247-E21",
+    "dec:NCT07774247:NCT07774247-E21:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07774247-E22 [exclusion] 미확인 (기록 없음) → 다음: med_record_check",
+   "refs": [
+    "crit:NCT07774247-E22",
+    "dec:NCT07774247:NCT07774247-E22:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Whether the patient has received any radiotherapy (palliative or to bone) in the last 28 days",
+   "refs": [
+    "dec:NCT07774247:NCT07774247-E22:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07774247-E23 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT07774247-E23",
+    "dec:NCT07774247:NCT07774247-E23:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"HIV-1/2 Ag/Ab non-reactive\" (SYN-0002-D08, 2026-09-14)",
+   "refs": [
+    "ev:SYN-0002-EV079",
+    "src:SYN-0002-D08:1305-1331"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07774247-E24 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT07774247-E24",
+    "dec:NCT07774247:NCT07774247-E24:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Male.\" (SYN-0002-D01, 2025-11-03)",
+   "refs": [
+    "ev:SYN-0002-EV001",
+    "src:SYN-0002-D01:0-5"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07774247-E25 [exclusion] 미확인 (기록 없음) → 다음: med_history_check",
+   "refs": [
+    "crit:NCT07774247-E25",
+    "dec:NCT07774247:NCT07774247-E25:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Whether any investigational or unapproved agent was received within 28 days before enrollment",
+   "refs": [
+    "dec:NCT07774247:NCT07774247-E25:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07774247-E26 [exclusion] 미확인 (기록 없음) → 다음: patient_question",
+   "refs": [
+    "crit:NCT07774247-E26",
+    "dec:NCT07774247:NCT07774247-E26:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07774247-E27 [exclusion] 미확인 (기록 없음) → 다음: patient_question",
+   "refs": [
+    "crit:NCT07774247-E27",
+    "dec:NCT07774247:NCT07774247-E27:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07774247-E28 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT07774247-E28",
+    "dec:NCT07774247:NCT07774247-E28:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"No other cardiac, pulmonary, renal, autoimmune, endocrine or neurologic history.\" (SYN-0002-D09, 2026-09-15)",
+   "refs": [
+    "ev:SYN-0002-EV136",
+    "src:SYN-0002-D09:1241-1321"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07774247-E29 [exclusion] 미확인 (기록 없음) → 다음: med_history_check",
+   "refs": [
+    "crit:NCT07774247-E29",
+    "dec:NCT07774247:NCT07774247-E29:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Any history of diverticulitis, IBD or symptomatic lower GI condition",
+   "refs": [
+    "dec:NCT07774247:NCT07774247-E29:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07774247-E30 [exclusion] 미확인 (기록 없음) → 다음: med_history_check",
+   "refs": [
+    "crit:NCT07774247-E30",
+    "dec:NCT07774247:NCT07774247-E30:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Whether the patient has a current infection or history of recurrent/TB/zoster infections",
+   "refs": [
+    "dec:NCT07774247:NCT07774247-E30:r1"
+   ],
+   "kind": "fact"
+  }
+ ],
+ "evidence": {
+  "files": [
+   "evidence_dev_haiku_v14_12.jsonl",
+   "evidence_dev_variants_haiku_v14_12.jsonl"
+  ],
+  "sha256": "daba4f5f1e16ec2eefc47311f5c13f85e6b5f218c85424f08f9af3d9bab09124",
+  "id_series": "haiku",
+  "graph_ev_nodes_checked": 2240
+ },
+ "agent6": "a6-0.4.14"
+}

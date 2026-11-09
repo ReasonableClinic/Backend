@@ -1,0 +1,291 @@
+{
+ "patient_id": "SYN-0017",
+ "as_of": "2026-10-01",
+ "audience": "patient",
+ "graph_file": "SYN-0017.json",
+ "ranking": [
+  "NCT06982521",
+  "NCT03424005"
+ ],
+ "sentences": [
+  {
+   "text": "이 안내는 치료 추천이 아니라, 연구(임상시험) 참여를 검토하실 때 참고하실 정보입니다.",
+   "refs": [
+    "rule:research_not_treatment"
+   ],
+   "kind": "rule"
+  },
+  {
+   "text": "1번 시험 — 지금 기록으로는 조건이 맞을 가능성이 높습니다.",
+   "refs": [
+    "label:NCT06982521",
+    "trial:NCT06982521"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "이 시험은 PIK3CA 돌연변이, HER2 음성 유방암, 호르몬 수용체 양성 종양을 연구 대상으로 합니다.",
+   "refs": [
+    "gloss:her2_negative_breast_cancer",
+    "gloss:hormone_receptor_positive_tumor",
+    "gloss:pik3ca_mutation",
+    "trial:NCT06982521"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "3상 연구로, 많은 환자에게서 효과와 안전성을 기존 치료 등과 비교해 확인하는 단계입니다.",
+   "refs": [
+    "rule:phase_PHASE3",
+    "trial:NCT06982521"
+   ],
+   "kind": "rule"
+  },
+  {
+   "text": "시험 치료를 이미 쓰이고 있는 다른 치료와 비교합니다.",
+   "refs": [
+    "rule:active_comparator",
+    "trial:NCT06982521"
+   ],
+   "kind": "rule"
+  },
+  {
+   "text": "이 시험은 참여자가 어느 치료를 받을지 무작위로 정해집니다.",
+   "refs": [
+    "rule:randomized",
+    "trial:NCT06982521"
+   ],
+   "kind": "rule"
+  },
+  {
+   "text": "시험군: Zovegalisib + 풀베스트란트, 비교군: 카피바서팁 + 풀베스트란트.",
+   "refs": [
+    "gloss:capivasertib",
+    "gloss:fulvestrant",
+    "trial:NCT06982521"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "약 540명이 참여할 예정인 연구입니다.",
+   "refs": [
+    "trial:NCT06982521"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "기록에 있는 진단 호르몬 수용체 양성·HER2 음성 유방암이 이 시험의 대상 조건과 맞습니다.",
+   "refs": [
+    "dec:NCT06982521:NCT06982521-I04:r1",
+    "ev:SYN-0017-EV194",
+    "gloss:hr_her2_breast_cancer"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "참여 전에 의료진이 확인할 항목이 4개 남아 있습니다.",
+   "refs": [
+    "dec:NCT06982521:NCT06982521-E01:r1",
+    "dec:NCT06982521:NCT06982521-E04:r1",
+    "dec:NCT06982521:NCT06982521-E05:r1",
+    "dec:NCT06982521:NCT06982521-E08:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "국내 9곳에서 모집 중입니다.",
+   "refs": [
+    "trial:NCT06982521"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "2번 시험 — 아직 확인이 필요한 조건이 있습니다.",
+   "refs": [
+    "label:NCT03424005",
+    "trial:NCT03424005"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "이 시험은 전이성 유방암을 연구 대상으로 합니다.",
+   "refs": [
+    "gloss:metastatic_breast_cancer",
+    "trial:NCT03424005"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "1·2상 연구로, 안전성과 용량을 확인하면서 효과 가능성도 함께 살펴보는 단계입니다.",
+   "refs": [
+    "rule:phase_PHASE1_PHASE2",
+    "trial:NCT03424005"
+   ],
+   "kind": "rule"
+  },
+  {
+   "text": "시험 치료를 이미 쓰이고 있는 다른 치료와 비교합니다.",
+   "refs": [
+    "rule:active_comparator",
+    "trial:NCT03424005"
+   ],
+   "kind": "rule"
+  },
+  {
+   "text": "이 시험은 참여자가 어느 치료를 받을지 무작위로 정해집니다.",
+   "refs": [
+    "rule:randomized",
+    "trial:NCT03424005"
+   ],
+   "kind": "rule"
+  },
+  {
+   "text": "시험군 1: 아테졸리주맙 + 토실리주맙 + 알부민 결합 파클리탁셀, 시험군 2: 아테졸리주맙 + 사시투주맙 고비테칸, 시험군 3: 아테졸리주맙 + 이파타서팁, 시험군 4: 아테졸리주맙 + 시험약 SGN-LIV1A 외 19개 군.",
+   "refs": [
+    "gloss:abemaciclib",
+    "gloss:atezolizumab",
+    "gloss:bevacizumab",
+    "gloss:capecitabine",
+    "gloss:carboplatin",
+    "gloss:chemotherapy",
+    "gloss:empagliflozin",
+    "gloss:eribulin",
+    "gloss:fulvestrant",
+    "gloss:gemcitabine",
+    "gloss:giredestrant",
+    "gloss:inavolisib",
+    "gloss:ipatasertib",
+    "gloss:letrozole",
+    "gloss:metformin",
+    "gloss:nab_paclitaxel",
+    "gloss:palbociclib",
+    "gloss:ribociclib",
+    "gloss:sacituzumab_govitecan",
+    "gloss:tocilizumab",
+    "gloss:trastuzumab_deruxtecan",
+    "trial:NCT03424005"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "약 1132명이 참여할 예정인 연구입니다.",
+   "refs": [
+    "trial:NCT03424005"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "진료 기록에서 찾아볼 것: 2가지.",
+   "refs": [
+    "crit:NCT03424005-I08",
+    "crit:NCT03424005-I09",
+    "dec:NCT03424005:NCT03424005-I08:r1",
+    "dec:NCT03424005:NCT03424005-I09:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "검사 결과가 필요한 것: 1가지.",
+   "refs": [
+    "crit:NCT03424005-I10",
+    "dec:NCT03424005:NCT03424005-I10:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "담당 의사가 판단할 것: 2가지.",
+   "refs": [
+    "crit:NCT03424005-I04",
+    "crit:NCT03424005-I07",
+    "dec:NCT03424005:NCT03424005-I04:r1",
+    "dec:NCT03424005:NCT03424005-I07:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "참여 전에 의료진이 확인할 항목이 14개 남아 있습니다.",
+   "refs": [
+    "dec:NCT03424005:NCT03424005-E01:r1",
+    "dec:NCT03424005:NCT03424005-E02:r1",
+    "dec:NCT03424005:NCT03424005-E03:r1",
+    "dec:NCT03424005:NCT03424005-E04:r1",
+    "dec:NCT03424005:NCT03424005-E05:r1",
+    "dec:NCT03424005:NCT03424005-E06:r1",
+    "dec:NCT03424005:NCT03424005-E07:r1",
+    "dec:NCT03424005:NCT03424005-E09:r1",
+    "dec:NCT03424005:NCT03424005-E10:r1",
+    "dec:NCT03424005:NCT03424005-E12:r1",
+    "dec:NCT03424005:NCT03424005-E13:r1",
+    "dec:NCT03424005:NCT03424005-E14:r1",
+    "dec:NCT03424005:NCT03424005-E15:r1",
+    "dec:NCT03424005:NCT03424005-E17:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "국내 5곳에서 모집 중입니다.",
+   "refs": [
+    "trial:NCT03424005"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "시험약이 효과가 있을지는 아직 모르기 때문에 연구를 하는 것입니다.",
+   "refs": [
+    "rule:no_benefit_promise"
+   ],
+   "kind": "rule"
+  },
+  {
+   "text": "지금 받으실 수 있는 다른 치료 방법이 무엇인지도 의료진에게 물어보실 수 있습니다.",
+   "refs": [
+    "rule:ask_alternatives"
+   ],
+   "kind": "rule"
+  },
+  {
+   "text": "참여하면 방문 횟수, 검사, 기간처럼 해야 하는 일이 무엇인지도 미리 물어보실 수 있습니다.",
+   "refs": [
+    "rule:ask_burden"
+   ],
+   "kind": "rule"
+  },
+  {
+   "text": "최종 참여 가능 여부는 연구 담당 의료진이 직접 확인합니다.",
+   "refs": [
+    "rule:ask_clinician"
+   ],
+   "kind": "rule"
+  },
+  {
+   "text": "참여는 자유이며, 참여하지 않아도 지금 받고 계신 치료는 그대로 받으실 수 있습니다.",
+   "refs": [
+    "rule:voluntary"
+   ],
+   "kind": "rule"
+  },
+  {
+   "text": "참여하더라도 언제든 그만두실 수 있습니다.",
+   "refs": [
+    "rule:withdraw"
+   ],
+   "kind": "rule"
+  }
+ ],
+ "glossary": {
+  "mode": "glossary",
+  "sha256": "bb6135ef988f322486520df16e40f1b58d96404e99d31873c2dea5b8e38d3fed",
+  "rows_used": 27,
+  "draft": 0
+ },
+ "evidence": {
+  "files": [
+   "evidence_dev_haiku_v14_12.jsonl",
+   "evidence_dev_variants_haiku_v14_12.jsonl"
+  ],
+  "sha256": "daba4f5f1e16ec2eefc47311f5c13f85e6b5f218c85424f08f9af3d9bab09124",
+  "id_series": "haiku",
+  "graph_ev_nodes_checked": 2240
+ },
+ "agent6": "a6-0.4.14"
+}

@@ -1,0 +1,3845 @@
+{
+ "patient_id": "SYN-0016",
+ "as_of": "2026-10-01",
+ "version": 1,
+ "nodes": [
+  {
+   "id": "trial:NCT06979375",
+   "kind": "trial",
+   "title": "A Research Study Comparing CDR132L With Placebo on the Structure and Function of the Heart in People With Heart Failure With Reduced/Mildly Reduced Ejection Fraction and Left Ventricular Hypertrophy"
+  },
+  {
+   "id": "crit:NCT06979375-I01",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Age 40-84 years (both inclusive) at the time of signing the informed consent.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06979375:NCT06979375-I01:r1",
+   "kind": "decision",
+   "trial_id": "NCT06979375",
+   "criterion_id": "NCT06979375-I01",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "age_rule"
+   ],
+   "note": "age 64.08 y vs [40.0, 84.0]",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0016-EV005",
+   "kind": "evidence",
+   "concept": "birth_date",
+   "term": null,
+   "value": "1962-09-03",
+   "unit": null,
+   "observed_date": "2026-02-19",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:birth_date",
+   "kind": "concept",
+   "concept": "birth_date",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0016-D02:6-21",
+   "kind": "source",
+   "doc_id": "SYN-0016-D02",
+   "doc_type": "registration",
+   "span": [
+    6,
+    21
+   ],
+   "text": "DOB 1962-09-03."
+  },
+  {
+   "id": "calc:NCT06979375:NCT06979375-I01",
+   "kind": "calculation",
+   "name": "age_at_as_of",
+   "value": 64.077,
+   "lo": 40.0,
+   "hi": 84.0
+  },
+  {
+   "id": "crit:NCT06979375-I02",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Documented symptomatic heart failure (HF) diagnosed greater than or equal to (>=) 180 days prior to screening with at least weekly need for oral diuretic treatment, and New York Heart Association class II-III at screening.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06979375:NCT06979375-I02:r1",
+   "kind": "decision",
+   "trial_id": "NCT06979375",
+   "criterion_id": "NCT06979375-I02",
+   "status": "UNKNOWN",
+   "reason": "UNSUPPORTED",
+   "action": "med_record_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "NYHA III and daily furosemide since 2019 are documented. HFrEF has no explicit diagnosis date; ischemic cardiomyopathy/HFrEF is dated 2019 and the patient was admitted for HF in 2026.",
+   "missing_fact": "Documented HF diagnosis date at least 180 days before screening",
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0016-EV270",
+   "kind": "evidence",
+   "concept": "nyha_class",
+   "term": null,
+   "value": 3,
+   "unit": "points",
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:nyha_class",
+   "kind": "concept",
+   "concept": "nyha_class",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0016-D07:2889-2904",
+   "kind": "source",
+   "doc_id": "SYN-0016-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    2889,
+    2904
+   ],
+   "text": "NYHA class III."
+  },
+  {
+   "id": "ev:SYN-0016-EV087",
+   "kind": "evidence",
+   "concept": "medication",
+   "term": "Furosemide",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:medication:furosemide",
+   "kind": "concept",
+   "concept": "medication",
+   "term": "Furosemide"
+  },
+  {
+   "id": "src:SYN-0016-D07:1430-1465",
+   "kind": "source",
+   "doc_id": "SYN-0016-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    1430,
+    1465
+   ],
+   "text": "Furosemide 40 mg daily (since 2019)"
+  },
+  {
+   "id": "ev:SYN-0016-EV062",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "HFrEF",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:diagnosis:hfref",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "HFrEF"
+  },
+  {
+   "id": "src:SYN-0016-D07:753-832",
+   "kind": "source",
+   "doc_id": "SYN-0016-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    753,
+    832
+   ],
+   "text": "Ischemic cardiomyopathy / HFrEF, 2019 (LVEF 35% at discharge 2019, 28% in 2026)"
+  },
+  {
+   "id": "crit:NCT06979375-I03",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Clinically stable and on optimized doses and unchanged drug classes of guideline-directed HF therapy >= 45 days prior to randomisation.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06979375:NCT06979375-I03:r1",
+   "kind": "decision",
+   "trial_id": "NCT06979375",
+   "criterion_id": "NCT06979375-I03",
+   "status": "UNKNOWN",
+   "reason": "UNSUPPORTED",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Drug classes have been unchanged for years, but bisoprolol was not up-titrated because of fatigue and BP. Whether doses count as optimized is a judgment call.",
+   "missing_fact": "Clinician confirmation that doses are optimized and stable",
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0016-EV083",
+   "kind": "evidence",
+   "concept": "medication",
+   "term": "sacubitril/valsartan 97/103 mg bid",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:medication:sacubitril/valsartan 97/103 mg bid",
+   "kind": "concept",
+   "concept": "medication",
+   "term": "sacubitril/valsartan 97/103 mg bid"
+  },
+  {
+   "id": "src:SYN-0016-D07:1260-1307",
+   "kind": "source",
+   "doc_id": "SYN-0016-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    1260,
+    1307
+   ],
+   "text": "Sacubitril/valsartan 97/103 mg bid (since 2022)"
+  },
+  {
+   "id": "ev:SYN-0016-EV084",
+   "kind": "evidence",
+   "concept": "medication",
+   "term": "bisoprolol 5 mg daily",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:medication:bisoprolol 5 mg daily",
+   "kind": "concept",
+   "concept": "medication",
+   "term": "bisoprolol 5 mg daily"
+  },
+  {
+   "id": "src:SYN-0016-D07:1310-1344",
+   "kind": "source",
+   "doc_id": "SYN-0016-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    1310,
+    1344
+   ],
+   "text": "Bisoprolol 5 mg daily (since 2019)"
+  },
+  {
+   "id": "ev:SYN-0016-EV058",
+   "kind": "evidence",
+   "concept": "medication",
+   "term": "bisoprolol",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:medication:bisoprolol",
+   "kind": "concept",
+   "concept": "medication",
+   "term": "bisoprolol"
+  },
+  {
+   "id": "src:SYN-0016-D07:631-704",
+   "kind": "source",
+   "doc_id": "SYN-0016-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    631,
+    704
+   ],
+   "text": "Bisoprolol has not been up-titrated because of fatigue and low-normal BP."
+  },
+  {
+   "id": "ev:SYN-0016-EV182",
+   "kind": "evidence",
+   "concept": "treatment_plan",
+   "term": "bisoprolol titration",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "planned"
+  },
+  {
+   "id": "concept:treatment_plan:bisoprolol titration",
+   "kind": "concept",
+   "concept": "treatment_plan",
+   "term": "bisoprolol titration"
+  },
+  {
+   "id": "src:SYN-0016-D07:3573-3620",
+   "kind": "source",
+   "doc_id": "SYN-0016-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    3573,
+    3620
+   ],
+   "text": "bisoprolol titration limited by fatigue and BP."
+  },
+  {
+   "id": "crit:NCT06979375-I04",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Left ventricular ejection fraction (LVEF) less than (<) 50 percent (%) as assessed by echocardiography at screening, measured by central laboratory.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06979375:NCT06979375-I04:r1",
+   "kind": "decision",
+   "trial_id": "NCT06979375",
+   "criterion_id": "NCT06979375-I04",
+   "status": "UNKNOWN",
+   "reason": "EXPIRED",
+   "action": "new_test",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "structured_numeric",
+    "expired_default_6.3"
+   ],
+   "note": "lvef = 28 is 273 days old; window 90 days",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0016-EV060",
+   "kind": "evidence",
+   "concept": "lvef",
+   "term": null,
+   "value": 28,
+   "unit": "%",
+   "observed_date": "2026-01-01",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:lvef",
+   "kind": "concept",
+   "concept": "lvef",
+   "term": null
+  },
+  {
+   "id": "calc:NCT06979375:NCT06979375-I04",
+   "kind": "calculation",
+   "concept": "lvef",
+   "operator": "<",
+   "threshold": 50,
+   "unit": "%",
+   "value": 28,
+   "value_unit": "%",
+   "observed_date": "2026-01-01",
+   "days_before": 273,
+   "window_days": 90,
+   "window_source": "default_6.3",
+   "note": "lvef = 28 is 273 days old; window 90 days"
+  },
+  {
+   "id": "crit:NCT06979375-I05",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Left ventricular hypertrophy or left ventricular dilatation assessed by echocardiography at screening measured by central laboratory with any of the following: LVMi greater than (>)88 g/m^2 for female participants and >102 g/m^2 for male participants using the truncated ellipsoid method.; LVMi >95 g/m^2 for female participants and >115 g/m^2 for male participants, using the linear method (cube formula).; Left ventricular end-diastolic diameter indexed to body surface area (LVEDDi) >3.1 cm/m^2 for female participants and >3.0 cm/m^2 for male participants.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06979375:NCT06979375-I05:r1",
+   "kind": "decision",
+   "trial_id": "NCT06979375",
+   "criterion_id": "NCT06979375-I05",
+   "status": "UNKNOWN",
+   "reason": "UNSUPPORTED",
+   "action": "med_record_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "LV is dilated with LVEDD 64 mm; height and weight are available, but indexed values are not documented. The echo is 229 days old and not central lab.",
+   "missing_fact": "Central-lab echo LVMi or LVEDDi meeting the thresholds",
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0016-EV157",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "LV dilated",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-02-14",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:symptom_finding:lv dilated",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "LV dilated"
+  },
+  {
+   "id": "src:SYN-0016-D07:2932-3087",
+   "kind": "source",
+   "doc_id": "SYN-0016-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    2932,
+    3087
+   ],
+   "text": "Echo (2026-02-14): LVEF 28%, LV dilated (LVEDD 64 mm, LVESD 55 mm), moderate functional MR, mildly dilated left atrium, no LV thrombus, normal RV function."
+  },
+  {
+   "id": "ev:SYN-0016-EV156",
+   "kind": "evidence",
+   "concept": "lvef",
+   "term": null,
+   "value": 28,
+   "unit": "%",
+   "observed_date": "2026-02-14",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "ev:SYN-0016-EV123",
+   "kind": "evidence",
+   "concept": "body_height",
+   "term": null,
+   "value": 178,
+   "unit": "cm",
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:body_height",
+   "kind": "concept",
+   "concept": "body_height",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0016-D07:2247-2261",
+   "kind": "source",
+   "doc_id": "SYN-0016-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    2247,
+    2261
+   ],
+   "text": "Height 178 cm."
+  },
+  {
+   "id": "crit:NCT06979375-I06",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Body mass index 18.5-40 kilogram per meter square (kg/m^2) (both inclusive) and body weight less than or equal to (<=) 140 kilogram (kg). Body mass index is calculated in the electronic case report form based on height and body weight at the screening visit (visit 1).",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06979375:NCT06979375-I06:r1",
+   "kind": "decision",
+   "trial_id": "NCT06979375",
+   "criterion_id": "NCT06979375-I06",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "BMI 26.5 is within 18.5-40 and weight 84 kg is at most 140 kg.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0016-EV125",
+   "kind": "evidence",
+   "concept": "bmi",
+   "term": null,
+   "value": 26.5,
+   "unit": "kg/m2",
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:bmi",
+   "kind": "concept",
+   "concept": "bmi",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0016-D07:2278-2293",
+   "kind": "source",
+   "doc_id": "SYN-0016-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    2278,
+    2293
+   ],
+   "text": "BMI 26.5 kg/m2."
+  },
+  {
+   "id": "ev:SYN-0016-EV124",
+   "kind": "evidence",
+   "concept": "body_weight",
+   "term": null,
+   "value": 84.0,
+   "unit": "kg",
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:body_weight",
+   "kind": "concept",
+   "concept": "body_weight",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0016-D07:2262-2277",
+   "kind": "source",
+   "doc_id": "SYN-0016-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    2262,
+    2277
+   ],
+   "text": "Weight 84.0 kg."
+  },
+  {
+   "id": "crit:NCT06979375-I07",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "N-terminal pro B-type natriuretic peptide (NT-proBNP) >= 300 picograms per milliliter (pg/mL); NT-proBNP >=600 pg/mL if atrial fibrillation/flutter is present at time of screening, measured by central laboratory.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06979375:NCT06979375-I07:r1",
+   "kind": "decision",
+   "trial_id": "NCT06979375",
+   "criterion_id": "NCT06979375-I07",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "NT-proBNP 2090 is at least 300 and also exceeds 600. ECG shows sinus rhythm, so the AF threshold does not apply.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0016-EV292",
+   "kind": "evidence",
+   "concept": "nt_probnp",
+   "term": null,
+   "value": 2090,
+   "unit": "pg/mL",
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:nt_probnp",
+   "kind": "concept",
+   "concept": "nt_probnp",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0016-D08:936-966",
+   "kind": "source",
+   "doc_id": "SYN-0016-D08",
+   "doc_type": "lab_result",
+   "span": [
+    936,
+    966
+   ],
+   "text": "NT-proBNP 2,090 pg/mL (<125) H"
+  },
+  {
+   "id": "ev:SYN-0016-EV165",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "sinus rhythm",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-09",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:symptom_finding:sinus rhythm",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "sinus rhythm"
+  },
+  {
+   "id": "src:SYN-0016-D07:3123-3154",
+   "kind": "source",
+   "doc_id": "SYN-0016-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    3123,
+    3154
+   ],
+   "text": "ECG 2026-09-09: sinus rhythm 72"
+  },
+  {
+   "id": "crit:NCT06979375-E01",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Estimated Glomerular Filtration Rate (eGFR) less than (<) 30 milliliter/minute/ 1.73-meter square (mL/min/1.73 m^2) at time of screening, measured by central laboratory.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06979375:NCT06979375-E01:r1",
+   "kind": "decision",
+   "trial_id": "NCT06979375",
+   "criterion_id": "NCT06979375-E01",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "structured_numeric"
+   ],
+   "note": "egfr = 59 mL/min/1.73m2 (2026-09-24, -7d) vs < 30 -> not met",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0016-EV213",
+   "kind": "evidence",
+   "concept": "egfr",
+   "term": null,
+   "value": 59,
+   "unit": "mL/min/1.73m2",
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:egfr",
+   "kind": "concept",
+   "concept": "egfr",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0016-D08:592-622",
+   "kind": "source",
+   "doc_id": "SYN-0016-D08",
+   "doc_type": "lab_result",
+   "span": [
+    592,
+    622
+   ],
+   "text": "eGFR 59 mL/min/1.73 m2 (>90) L"
+  },
+  {
+   "id": "calc:NCT06979375:NCT06979375-E01",
+   "kind": "calculation",
+   "concept": "egfr",
+   "operator": "<",
+   "threshold": 30,
+   "unit": "mL/min/1.73m2",
+   "value": 59,
+   "value_unit": "mL/min/1.73m2",
+   "observed_date": "2026-09-24",
+   "days_before": 7,
+   "note": "egfr = 59 mL/min/1.73m2 (2026-09-24, -7d) vs < 30 -> not met"
+  },
+  {
+   "id": "crit:NCT06979375-E02",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Participants with an episode of acute kidney failure or acute kidney injury, at the discretion of the investigator,within 90 days prior to randomisation.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06979375:NCT06979375-E02:r1",
+   "kind": "decision",
+   "trial_id": "NCT06979375",
+   "criterion_id": "NCT06979375-E02",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_record_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Renal function is stable (eGFR 58-59). The blanket negation covers chronic renal history, not an acute AKI event within a window.",
+   "missing_fact": "Whether any AKI episode occurred in the last 90 days",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06979375-E03",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Myocardial infarction, unstable angina pectoris or HF hospitalization within 30 days prior to screening.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06979375:NCT06979375-E03:r1",
+   "kind": "decision",
+   "trial_id": "NCT06979375",
+   "criterion_id": "NCT06979375-E03",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "The HF admission was in 2026-02 (229 days ago) and the MI was in 2019. There have been no admissions since discharge and no chest pain.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0016-EV046",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "HF admissions",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:symptom_finding:hf admissions",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "HF admissions"
+  },
+  {
+   "id": "src:SYN-0016-D07:339-418",
+   "kind": "source",
+   "doc_id": "SYN-0016-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    339,
+    418
+   ],
+   "text": "Since discharge on guideline-directed therapy he has had no further admissions."
+  },
+  {
+   "id": "ev:SYN-0016-EV045",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "acute decompensated heart failure",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-02-14",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "past"
+  },
+  {
+   "id": "concept:diagnosis:acute decompensated heart failure",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "acute decompensated heart failure"
+  },
+  {
+   "id": "src:SYN-0016-D07:274-338",
+   "kind": "source",
+   "doc_id": "SYN-0016-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    274,
+    338
+   ],
+   "text": "Admitted 2026-02-14 with acute decompensated HF (diuresed 6 kg)."
+  },
+  {
+   "id": "ev:SYN-0016-EV052",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "chest pain",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:symptom_finding:chest pain",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "chest pain"
+  },
+  {
+   "id": "src:SYN-0016-D07:549-600",
+   "kind": "source",
+   "doc_id": "SYN-0016-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    549,
+    600
+   ],
+   "text": "No chest pain, syncope, presyncope or palpitations."
+  },
+  {
+   "id": "crit:NCT06979375-E04",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Participants receiving intravenous HF medications within 45 days prior to randomisation.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06979375:NCT06979375-E04:r1",
+   "kind": "decision",
+   "trial_id": "NCT06979375",
+   "criterion_id": "NCT06979375-E04",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_history_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "The reconciled list shows only oral drugs, but it does not explicitly rule out IV therapy. IV iron is only considered, not given.",
+   "missing_fact": "Any IV HF medication in the last 45 days",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06979375-E05",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Planned coronary revascularization, pacemaker/cardioverter-defibrillator/cardiac resynchronization therapy (CRT) implantation, ablation of cardiac arrythmias or valve repair/replacement at the time of randomisation.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06979375:NCT06979375-E05:r1",
+   "kind": "decision",
+   "trial_id": "NCT06979375",
+   "criterion_id": "NCT06979375-E05",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "The plan lists medication, diet and IV iron only. No procedure is mentioned, but absence of a plan is not stated explicitly.",
+   "missing_fact": "Confirmation of no planned revascularization, device, ablation or valve procedure",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06979375-E06",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Stroke or transient ischemic attack within 12 months prior to randomisation.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06979375:NCT06979375-E06:r1",
+   "kind": "decision",
+   "trial_id": "NCT06979375",
+   "criterion_id": "NCT06979375-E06",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Explicit 'No stroke or TIA'.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0016-EV076",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "stroke",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:stroke",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "stroke"
+  },
+  {
+   "id": "src:SYN-0016-D07:1078-1095",
+   "kind": "source",
+   "doc_id": "SYN-0016-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    1078,
+    1095
+   ],
+   "text": "No stroke or TIA."
+  },
+  {
+   "id": "ev:SYN-0016-EV077",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "TIA",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:tia",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "TIA"
+  },
+  {
+   "id": "crit:NCT06979375-E07",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Participants with potential disruption of the blood-brain barrier (e.g., multiple sclerosis), in the opinion of the investigator.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06979375:NCT06979375-E07:r1",
+   "kind": "decision",
+   "trial_id": "NCT06979375",
+   "criterion_id": "NCT06979375-E07",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation",
+    "pc:blanket_out_of_scope"
+   ],
+   "note": "[blanket negation out of A1 scope] The negation of other neurologic history covers chronic disease such as MS. No blood-brain barrier disruption is documented.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06979375-E08",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Known history of severe liver disease and/or alanine aminotransferase or aspartate aminotransferase greater than (>) 2.5x upper limit of normal at screening, measured by central laboratory.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06979375:NCT06979375-E08:r1",
+   "kind": "decision",
+   "trial_id": "NCT06979375",
+   "criterion_id": "NCT06979375-E08",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation"
+   ],
+   "note": "There is no hepatic history. ALT 24 (ref 7-56) and AST 26 (ref 10-40) are well below 2.5x ULN, 7 days ago.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0016-EV070",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "other hepatic history",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:other hepatic history",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "other hepatic history"
+  },
+  {
+   "id": "src:SYN-0016-D07:965-1043",
+   "kind": "source",
+   "doc_id": "SYN-0016-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    965,
+    1043
+   ],
+   "text": "No other cardiac, pulmonary, hepatic, renal, autoimmune or neurologic history."
+  },
+  {
+   "id": "ev:SYN-0016-EV220",
+   "kind": "evidence",
+   "concept": "alt",
+   "term": null,
+   "value": 24,
+   "unit": "U/L",
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:alt",
+   "kind": "concept",
+   "concept": "alt",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0016-D08:796-813",
+   "kind": "source",
+   "doc_id": "SYN-0016-D08",
+   "doc_type": "lab_result",
+   "span": [
+    796,
+    813
+   ],
+   "text": "ALT 24 U/L (7-56)"
+  },
+  {
+   "id": "ev:SYN-0016-EV219",
+   "kind": "evidence",
+   "concept": "ast",
+   "term": null,
+   "value": 26,
+   "unit": "U/L",
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:ast",
+   "kind": "concept",
+   "concept": "ast",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0016-D08:777-795",
+   "kind": "source",
+   "doc_id": "SYN-0016-D08",
+   "doc_type": "lab_result",
+   "span": [
+    777,
+    795
+   ],
+   "text": "AST 26 U/L (10-40)"
+  },
+  {
+   "id": "crit:NCT06979375-E09",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Known genetic (or highly suspected due to family history) cause of increased cardiac mass (including dilated cardiomyopathy, Fabry disease and likely pathogenic or pathogenic variants within hypertrophic cardiomyopathy (HCM).",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06979375:NCT06979375-E09:r1",
+   "kind": "decision",
+   "trial_id": "NCT06979375",
+   "criterion_id": "NCT06979375-E09",
+   "status": "UNKNOWN",
+   "reason": "UNSUPPORTED",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "The cardiomyopathy is ischemic and there is no family history of cardiomyopathy. The LV is dilated, but no genetic testing is documented, so a genetic cause is not fully ruled out.",
+   "missing_fact": "Whether a genetic cause of cardiomyopathy has been excluded",
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0016-EV042",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "ischemic cardiomyopathy",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:diagnosis:ischemic cardiomyopathy",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "ischemic cardiomyopathy"
+  },
+  {
+   "id": "src:SYN-0016-D07:127-222",
+   "kind": "source",
+   "doc_id": "SYN-0016-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    127,
+    222
+   ],
+   "text": "64-year-old man with ischemic cardiomyopathy (anterior STEMI 2019, primary PCI to proximal LAD)"
+  },
+  {
+   "id": "ev:SYN-0016-EV099",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "cardiomyopathy",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "family",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:cardiomyopathy",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "cardiomyopathy"
+  },
+  {
+   "id": "src:SYN-0016-D07:1866-1918",
+   "kind": "source",
+   "doc_id": "SYN-0016-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    1866,
+    1918
+   ],
+   "text": "no family history of cardiomyopathy or sudden death."
+  },
+  {
+   "id": "crit:NCT06979375-E10",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Participants with suspected or diagnosed cardiac amyloidosis or sarcoidosis.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06979375:NCT06979375-E10:r1",
+   "kind": "decision",
+   "trial_id": "NCT06979375",
+   "criterion_id": "NCT06979375-E10",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_record_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No mention of either. The ischemic etiology is documented, but the negation of other cardiac history is not specific to these conditions.",
+   "missing_fact": "Whether amyloidosis or sarcoidosis was ever evaluated or diagnosed",
+   "derived_from": null
+  },
+  {
+   "id": "label:NCT06979375",
+   "kind": "trial_decision",
+   "label": "potential",
+   "why": [
+    "UNKNOWN/UNSUPPORTED NCT06979375-I02",
+    "UNKNOWN/UNSUPPORTED NCT06979375-I03",
+    "UNKNOWN/EXPIRED NCT06979375-I04",
+    "UNKNOWN/UNSUPPORTED NCT06979375-I05",
+    "UNKNOWN/UNSUPPORTED NCT06979375-E09"
+   ],
+   "by": "agent3"
+  },
+  {
+   "id": "trial:NCT07567001",
+   "kind": "trial",
+   "title": "A Research Study to Look at How Well NNC0487-0111 Works Compared to Placebo in People With Heart Failure and Obesity"
+  },
+  {
+   "id": "crit:NCT07567001-I01",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Body Mass Index (BMI) greater than or equal to (>=) 30 kilograms per square metre (kg/m^2) at screening.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07567001:NCT07567001-I01:r1",
+   "kind": "decision",
+   "trial_id": "NCT07567001",
+   "criterion_id": "NCT07567001-I01",
+   "status": "FAIL",
+   "reason": "VIOLATED",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "structured_numeric"
+   ],
+   "note": "bmi = 26.5 kg/m2 (2026-09-24, -7d) vs >= 30 -> not met",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "calc:NCT07567001:NCT07567001-I01",
+   "kind": "calculation",
+   "concept": "bmi",
+   "operator": ">=",
+   "threshold": 30,
+   "unit": "kg/m2",
+   "value": 26.5,
+   "value_unit": "kg/m2",
+   "observed_date": "2026-09-24",
+   "days_before": 7,
+   "note": "bmi = 26.5 kg/m2 (2026-09-24, -7d) vs >= 30 -> not met"
+  },
+  {
+   "id": "crit:NCT07567001-I02",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Diagnosis of HF with New York Heart Association (NYHA) class II-IV and in stable condition at screening, at the discretion of the investigator.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07567001:NCT07567001-I02:r1",
+   "kind": "decision",
+   "trial_id": "NCT07567001",
+   "criterion_id": "NCT07567001-I02",
+   "status": "UNKNOWN",
+   "reason": "UNSUPPORTED",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "HFrEF NYHA III documented and euvolemic with no admissions since February, but 'stable at investigator's discretion' is a clinician judgment.",
+   "missing_fact": "Investigator's judgment that the patient is in stable condition at screening",
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0016-EV273",
+   "kind": "evidence",
+   "concept": "nyha_class",
+   "term": null,
+   "value": 3,
+   "unit": "points",
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "src:SYN-0016-D07:3424-3548",
+   "kind": "source",
+   "doc_id": "SYN-0016-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    3424,
+    3548
+   ],
+   "text": "Chronic HFrEF due to ischemic cardiomyopathy, LVEF 28%, NYHA III, euvolemic, on ARNI, beta-blocker, MRA and SGLT2 inhibitor."
+  },
+  {
+   "id": "ev:SYN-0016-EV173",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "euvolemic.",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:symptom_finding:euvolemic.",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "euvolemic."
+  },
+  {
+   "id": "src:SYN-0016-D07:3377-3402",
+   "kind": "source",
+   "doc_id": "SYN-0016-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    3377,
+    3402
+   ],
+   "text": "Volume status: euvolemic."
+  },
+  {
+   "id": "crit:NCT07567001-E01",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "MI, stroke, unstable angina pectoris or worsening HF leading to either hospitalization or intravenous loop diuretics within 30 days prior to the day of screening and until randomization.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07567001:NCT07567001-E01:r1",
+   "kind": "decision",
+   "trial_id": "NCT07567001",
+   "criterion_id": "NCT07567001-E01",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Only HF admission was 2026-02-14 (-229d), outside 30 days; no further admissions. No recent MI, stroke or angina documented (stroke/TIA denied, STEMI 2019).",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07567001-E02",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "HF due to infiltrative cardiomyopathy (e.g., sarcoid, amyloid), arrhythmogenic right ventricular cardiomyopathy, Takutsubo cardiomyopathy, Chagas cardiomyopathy, genetic hypertrophic cardiomyopathy or obstructive cardiomyopathy, active myocarditis, constrictive pericarditis, cardiac tamponade, or uncorrected primary valve disease of moderate or severe degree.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07567001:NCT07567001-E02:r1",
+   "kind": "decision",
+   "trial_id": "NCT07567001",
+   "criterion_id": "NCT07567001-E02",
+   "status": "UNKNOWN",
+   "reason": "UNSUPPORTED",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Ischemic cause and other cardiac history denied, but moderate functional MR is present; it is secondary, not clearly primary valve disease.",
+   "missing_fact": "Whether moderate functional MR counts as uncorrected primary valve disease (it is functional/secondary)",
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0016-EV160",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "moderate functional mitral regurgitation",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-02-14",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:symptom_finding:moderate functional mitral regurgitation",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "moderate functional mitral regurgitation"
+  },
+  {
+   "id": "crit:NCT07567001-E03",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Severe pulmonary disease including primary pulmonary hypertension, chronic pulmonary embolism, or severe chronic obstructive pulmonary disease (COPD) defined as:",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07567001:NCT07567001-E03:r1",
+   "kind": "decision",
+   "trial_id": "NCT07567001",
+   "criterion_id": "NCT07567001-E03",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation"
+   ],
+   "note": "No other pulmonary history (chronic disease) documented; blanket negation covers COPD, pulmonary hypertension and chronic PE.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0016-EV069",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "other pulmonary history",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:other pulmonary history",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "other pulmonary history"
+  },
+  {
+   "id": "crit:NCT07567001-E04",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "requiring home oxygen; or - ongoing oral corticosteroid therapy; or - hospital for COPD Exacerbation within 12 months prior to screening.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07567001:NCT07567001-E04:r1",
+   "kind": "decision",
+   "trial_id": "NCT07567001",
+   "criterion_id": "NCT07567001-E04",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_history_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Reconciled med list shows no corticosteroid, but absence is only inference; home oxygen not addressed (SpO2 on room air does not settle it). No pulmonary history.",
+   "missing_fact": "Whether patient uses home oxygen or oral corticosteroids",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT07567001-E05",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Any other condition judged by the investigator to be the cause of HF symptoms (e.g., anaemia, hypothyroidism).",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07567001:NCT07567001-E05:r1",
+   "kind": "decision",
+   "trial_id": "NCT07567001",
+   "criterion_id": "NCT07567001-E05",
+   "status": "UNKNOWN",
+   "reason": "UNSUPPORTED",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Mild low Hb 13.2 and iron deficiency are present; TSH normal. HF cause is documented as ischemic, but contribution of these is a clinician judgment.",
+   "missing_fact": "Investigator's judgment whether iron deficiency or mild anaemia contributes to HF symptoms",
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0016-EV196",
+   "kind": "evidence",
+   "concept": "hemoglobin",
+   "term": null,
+   "value": 13.2,
+   "unit": "g/dL",
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:hemoglobin",
+   "kind": "concept",
+   "concept": "hemoglobin",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0016-D08:105-139",
+   "kind": "source",
+   "doc_id": "SYN-0016-D08",
+   "doc_type": "lab_result",
+   "span": [
+    105,
+    139
+   ],
+   "text": "Hemoglobin 13.2 g/dL (13.5-17.5) L"
+  },
+  {
+   "id": "ev:SYN-0016-EV183",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "iron deficiency",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:diagnosis:iron deficiency",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "iron deficiency"
+  },
+  {
+   "id": "src:SYN-0016-D07:3624-3736",
+   "kind": "source",
+   "doc_id": "SYN-0016-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    3624,
+    3736
+   ],
+   "text": "Iron deficiency with ferritin 88 and TSAT 16%: repeat iron indices with routine labs today and consider IV iron."
+  },
+  {
+   "id": "ev:SYN-0016-EV236",
+   "kind": "evidence",
+   "concept": "tsh",
+   "term": null,
+   "value": 2.1,
+   "unit": "mIU/L",
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:tsh",
+   "kind": "concept",
+   "concept": "tsh",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0016-D08:1290-1313",
+   "kind": "source",
+   "doc_id": "SYN-0016-D08",
+   "doc_type": "lab_result",
+   "span": [
+    1290,
+    1313
+   ],
+   "text": "TSH 2.1 mIU/L (0.4-4.0)"
+  },
+  {
+   "id": "crit:NCT07567001-E06",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Glycaemia-related: History of type 1 diabetes.; Participant with diabetic retinopathy or maculopathy who received treatment with retinal photocoagulation, vitrectomy or anti-Vascular Endothelial Growth Factor (anti-VEGF) within 180 days before screening or who, at the time of screening, are expected to require treatment within 180 days after screening. Diabetic retinopathy or maculopathy must be verified by an eye examination performed within 90 days before screening or in the period between screening and randomization. Pharmacological pupil-dilation is a requirement unless using a digital fundus photography camera specified for non-dilated examination.; Glycated haemoglobin (HbA1c) greater than (>) 10 percent (%) (86 [millimoles per mole] mmol/mol) as measured by local or central laboratory at screening.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT07567001:NCT07567001-E06:r1",
+   "kind": "decision",
+   "trial_id": "NCT07567001",
+   "criterion_id": "NCT07567001-E06",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No diabetes documented, so no type 1 diabetes or retinopathy; HbA1c 5.8% is not above 10%.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0016-EV074",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "diabetes",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:diabetes",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "diabetes"
+  },
+  {
+   "id": "src:SYN-0016-D07:1044-1056",
+   "kind": "source",
+   "doc_id": "SYN-0016-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    1044,
+    1056
+   ],
+   "text": "No diabetes."
+  },
+  {
+   "id": "ev:SYN-0016-EV235",
+   "kind": "evidence",
+   "concept": "hba1c",
+   "term": null,
+   "value": 5.8,
+   "unit": "%",
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:hba1c",
+   "kind": "concept",
+   "concept": "hba1c",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0016-D08:1266-1289",
+   "kind": "source",
+   "doc_id": "SYN-0016-D08",
+   "doc_type": "lab_result",
+   "span": [
+    1266,
+    1289
+   ],
+   "text": "HbA1c 5.8 % (4.0-5.6) H"
+  },
+  {
+   "id": "crit:NCT07567001-I03",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Diagnosed with T2D >= 30 days before screening.",
+   "administrative": false,
+   "cohort": "For participants with Type 2 Diabetes (T2D) at screening"
+  },
+  {
+   "id": "dec:NCT07567001:NCT07567001-I03:r1",
+   "kind": "decision",
+   "trial_id": "NCT07567001",
+   "criterion_id": "NCT07567001-I03",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": false,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Cohort is for participants with T2D; the patient has no diabetes, so he belongs to the non-T2D cohort.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "label:NCT07567001",
+   "kind": "trial_decision",
+   "label": "ineligible",
+   "why": [
+    "FAIL NCT07567001-I01"
+   ],
+   "by": "agent3"
+  },
+  {
+   "id": "trial:NCT06935370",
+   "kind": "trial",
+   "title": "A Study to Test Whether Vicadrostat (BI 690517) in Combination With Empagliflozin Helps People With Heart Failure and a Weak Pumping Function of the Left Side of the Heart"
+  },
+  {
+   "id": "crit:NCT06935370-I01",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "At least 18 years old and at least at the legal age of consent in countries where it is greater than 18 years",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06935370:NCT06935370-I01:r1",
+   "kind": "decision",
+   "trial_id": "NCT06935370",
+   "criterion_id": "NCT06935370-I01",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "age_rule"
+   ],
+   "note": "age 64.08 y vs [18.0, None]",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "calc:NCT06935370:NCT06935370-I01",
+   "kind": "calculation",
+   "name": "age_at_as_of",
+   "value": 64.077,
+   "lo": 18.0,
+   "hi": null
+  },
+  {
+   "id": "crit:NCT06935370-I02",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Signed and dated written informed consent in accordance with International Council for Harmonisation of Technical Requirements for Pharmaceuticals for Human Use - Good Clinical Practice (ICH-GCP) and local legislation prior to admission to the trial",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06935370:NCT06935370-I02:r1",
+   "kind": "decision",
+   "trial_id": "NCT06935370",
+   "criterion_id": "NCT06935370-I02",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "admin"
+   ],
+   "note": "consent/compliance item: not decidable from the record",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06935370-I03",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Male or female participants. Women of childbearing potential (WOCBP) must be ready and able to use highly effective methods of birth control per ICH M3 (R2) that result in a low failure rate of less than 1% per year when used consistently and correctly. A list of contraception methods meeting these criteria and instructions on the duration of their use is provided in the protocol.",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06935370:NCT06935370-I03:r1",
+   "kind": "decision",
+   "trial_id": "NCT06935370",
+   "criterion_id": "NCT06935370-I03",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "impossible_condition"
+   ],
+   "note": "Male patient; male participants allowed and WOCBP contraception requirement cannot apply.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0016-EV004",
+   "kind": "evidence",
+   "concept": "sex",
+   "term": null,
+   "value": "male",
+   "unit": null,
+   "observed_date": "2026-02-19",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:sex",
+   "kind": "concept",
+   "concept": "sex",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0016-D02:0-5",
+   "kind": "source",
+   "doc_id": "SYN-0016-D02",
+   "doc_type": "registration",
+   "span": [
+    0,
+    5
+   ],
+   "text": "Male."
+  },
+  {
+   "id": "crit:NCT06935370-I04",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Chronic heart failure (HF) diagnosed at least 3 months before Visit 1, and in New York Heart Association (NYHA) classes II to IV at Visit 1, with left ventricular ejection fraction (LVEF) < 40% per local reading (obtained by echocardiography, radionuclide ventriculography, invasive angiography, magnetic resonance imaging (MRI), or computed tomography (CT)).",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06935370:NCT06935370-I04:r1",
+   "kind": "decision",
+   "trial_id": "NCT06935370",
+   "criterion_id": "NCT06935370-I04",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Chronic HFrEF since 2019, NYHA III on 2026-09-24, LVEF 28% (echo 2026-02 and recent note).",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0016-EV010",
+   "kind": "evidence",
+   "concept": "lvef",
+   "term": null,
+   "value": 28,
+   "unit": "%",
+   "observed_date": "2026-02-19",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "src:SYN-0016-D03:91-142",
+   "kind": "source",
+   "doc_id": "SYN-0016-D03",
+   "doc_type": "discharge_summary",
+   "span": [
+    91,
+    142
+   ],
+   "text": "Echo: LVEF 28%, LV dilated, moderate functional MR."
+  },
+  {
+   "id": "ev:SYN-0016-EV043",
+   "kind": "evidence",
+   "concept": "lvef",
+   "term": null,
+   "value": 28,
+   "unit": "%",
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "src:SYN-0016-D07:224-232",
+   "kind": "source",
+   "doc_id": "SYN-0016-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    224,
+    232
+   ],
+   "text": "LVEF 28%"
+  },
+  {
+   "id": "crit:NCT06935370-I05",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Elevated N-terminal pro-brain natriuretic peptide (NT-proBNP) at Visit 1, analysed at the central laboratory",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06935370:NCT06935370-I05:r1",
+   "kind": "decision",
+   "trial_id": "NCT06935370",
+   "criterion_id": "NCT06935370-I05",
+   "status": "UNKNOWN",
+   "reason": "EXPIRED",
+   "action": "new_test",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "NT-proBNP 2090 pg/mL is clearly elevated, but the criterion requires a central-lab value at Visit 1, not yet done.",
+   "missing_fact": "NT-proBNP at Visit 1 from the central laboratory",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06935370-I06",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Treated according to best possible standard of care (SOC) (disregarding sodium-dependent glucose co-transporter 2 inhibitor (SGLT2i) and mineralocorticoid receptor antagonist (MRA)) in accordance with applicable heart failure (HF) local/international guidelines and judgement of the investigator.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06935370:NCT06935370-I06:r1",
+   "kind": "decision",
+   "trial_id": "NCT06935370",
+   "criterion_id": "NCT06935370-I06",
+   "status": "UNKNOWN",
+   "reason": "UNSUPPORTED",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "On ARNI and beta-blocker but bisoprolol dose limited; adequacy of SOC is an investigator judgement.",
+   "missing_fact": "Investigator judgement that therapy is best possible SOC (beta-blocker not up-titrated)",
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0016-EV177",
+   "kind": "evidence",
+   "concept": "medication",
+   "term": "ARNI",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:medication:arni",
+   "kind": "concept",
+   "concept": "medication",
+   "term": "ARNI"
+  },
+  {
+   "id": "ev:SYN-0016-EV178",
+   "kind": "evidence",
+   "concept": "medication",
+   "term": "beta-blocker",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:medication:beta-blocker",
+   "kind": "concept",
+   "concept": "medication",
+   "term": "beta-blocker"
+  },
+  {
+   "id": "crit:NCT06935370-E01",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Treatment with an MRA (e.g. spironolactone, eplerenone, finerenone) within 14 days prior to Visit 1 or requiring such treatment before randomisation or planned during the trial based on the judgment of the investigator. Treatment with an MRA should not be discontinued with the intention of study enrolment.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06935370:NCT06935370-E01:r1",
+   "kind": "decision",
+   "trial_id": "NCT06935370",
+   "criterion_id": "NCT06935370-E01",
+   "status": "FAIL",
+   "reason": "VIOLATED",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Currently on spironolactone 25 mg daily (MRA), reconciled list 7 days ago.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0016-EV085",
+   "kind": "evidence",
+   "concept": "medication",
+   "term": "Spironolactone",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:medication:spironolactone",
+   "kind": "concept",
+   "concept": "medication",
+   "term": "Spironolactone"
+  },
+  {
+   "id": "src:SYN-0016-D07:1347-1386",
+   "kind": "source",
+   "doc_id": "SYN-0016-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    1347,
+    1386
+   ],
+   "text": "Spironolactone 25 mg daily (since 2019)"
+  },
+  {
+   "id": "ev:SYN-0016-EV179",
+   "kind": "evidence",
+   "concept": "medication",
+   "term": "MRA",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:medication:mra",
+   "kind": "concept",
+   "concept": "medication",
+   "term": "MRA"
+  },
+  {
+   "id": "crit:NCT06935370-E02",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Treatment with amiloride or other potassium-sparing diuretic within 14 days prior to Visit 1 or requiring such treatment before randomisation or planned during the trial based on the judgment of the investigator.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06935370:NCT06935370-E02:r1",
+   "kind": "decision",
+   "trial_id": "NCT06935370",
+   "criterion_id": "NCT06935370-E02",
+   "status": "FAIL",
+   "reason": "VIOLATED",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Spironolactone is a potassium-sparing diuretic, taken currently within 14 days.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06935370-E03",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Receiving the following treatments: A direct renin inhibitor (e.g. aliskiren) at Visit 2; More than one angiotensin-converting enzyme inhibitor (ACEi), angiotensin receptor blocker (ARB) or angiotensin receptor-neprilysin inhibitor (ARNi) used simultaneously at Visit 2; Other aldosterone synthase inhibitors, e.g. baxdrostat at Visit 2 or planned during the trial; Systemic mineralocorticoid replacement therapy (e.g. fludrocortisone) at Visit 2; In case of acute decompensated HF: i.v. inotrope, i.v. vasodilating drug (e.g. nitrate, nitroprusside), or i.v. natriuretic peptide (e.g. nesiritide, carperitide), or mechanical support (e.g. intra-aortic balloon pump, endotracheal intubation, mechanical ventilation, any ventricular assist device) within 24 hours prior to randomisation; i.v. diuretic with a dose that has been increased/intensified within 6 hours prior to randomisation (a stable dose of an i.v. diuretic is not exclusionary)",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06935370:NCT06935370-E03:r1",
+   "kind": "decision",
+   "trial_id": "NCT06935370",
+   "criterion_id": "NCT06935370-E03",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_record_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Only one ARNI documented, but other listed components are not explicitly denied and Visit 2 is future.",
+   "missing_fact": "Absence of aliskiren, fludrocortisone, other aldosterone synthase inhibitors; Visit 2 treatments",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06935370-E04",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Myocardial infarction (MI), transient ischemic attack (TIA), stroke, coronary artery bypass graft surgery (CABG), heart valve surgery/intervention or any other major surgery (major according to the investigator's assessment) within 90 days prior to Visit 2, or scheduled for major elective surgery (e.g. hip replacement, CABG)",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06935370:NCT06935370-E04:r1",
+   "kind": "decision",
+   "trial_id": "NCT06935370",
+   "criterion_id": "NCT06935370-E04",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "STEMI and PCI in 2019, no stroke/TIA; no recent event or scheduled surgery documented, only appendectomy in adolescence.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0016-EV262",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "anterior STEMI",
+   "value": true,
+   "unit": null,
+   "observed_date": "2019-01-01",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "past"
+  },
+  {
+   "id": "concept:diagnosis:anterior stemi",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "anterior STEMI"
+  },
+  {
+   "id": "crit:NCT06935370-E05",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Percutaneous coronary intervention (PCI) or any angiography using iodinated contrast agents in the 7 days prior to Visit 2",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06935370:NCT06935370-E05:r1",
+   "kind": "decision",
+   "trial_id": "NCT06935370",
+   "criterion_id": "NCT06935370-E05",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Only PCI documented was in 2019, far outside the 7-day window.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0016-EV078",
+   "kind": "evidence",
+   "concept": "procedure",
+   "term": "PCI with stent to proximal LAD",
+   "value": true,
+   "unit": null,
+   "observed_date": "2019-01-01",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "past"
+  },
+  {
+   "id": "concept:procedure:pci with stent to proximal lad",
+   "kind": "concept",
+   "concept": "procedure",
+   "term": "PCI with stent to proximal LAD"
+  },
+  {
+   "id": "src:SYN-0016-D07:1120-1158",
+   "kind": "source",
+   "doc_id": "SYN-0016-D07",
+   "doc_type": "clinic_note",
+   "span": [
+    1120,
+    1158
+   ],
+   "text": "PCI with stent to proximal LAD (2019)."
+  },
+  {
+   "id": "crit:NCT06935370-E06",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Heart transplant recipient, awaiting heart transplant, or currently implanted left ventricular assist device (LVAD)",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06935370:NCT06935370-E06:r1",
+   "kind": "decision",
+   "trial_id": "NCT06935370",
+   "criterion_id": "NCT06935370-E06",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "ICD only; no transplant or LVAD mentioned; the cardiac blanket negation covers history only, not procedures.",
+   "missing_fact": "Transplant listing or LVAD status",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06935370-E07",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Known cardiomyopathy based on infiltrative diseases (e.g. amyloidosis), accumulation diseases (e.g. haemochromatosis, Fabry disease), muscular dystrophies, hypertrophic obstructive cardiomyopathy or known pericardial constriction, or cardiomyopathy with potentially reversible cause such as stress or peripartum cardiomyopathy or cardiomyopathy induced by chemotherapy within 12 months prior to Visit 1 and until Visit 2",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06935370:NCT06935370-E07:r1",
+   "kind": "decision",
+   "trial_id": "NCT06935370",
+   "criterion_id": "NCT06935370-E07",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation"
+   ],
+   "note": "Ischemic cardiomyopathy only; no other cardiac history, so no infiltrative, reversible or other excluded cardiomyopathy.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0016-EV068",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "other cardiac history",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-24",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:other cardiac history",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "other cardiac history"
+  },
+  {
+   "id": "crit:NCT06935370-E08",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Acute inflammatory heart disease, such as acute myocarditis, within 90 days preceding prior to Visit 1 and until Visit 2 Further exclusion criteria apply.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06935370:NCT06935370-E08:r1",
+   "kind": "decision",
+   "trial_id": "NCT06935370",
+   "criterion_id": "NCT06935370-E08",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation",
+    "pc:blanket_out_of_scope"
+   ],
+   "note": "[blanket negation out of A1 scope] No other cardiac history documented, covering myocarditis as a chronic cardiac diagnosis.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "label:NCT06935370",
+   "kind": "trial_decision",
+   "label": "ineligible",
+   "why": [
+    "FAIL NCT06935370-E01",
+    "FAIL NCT06935370-E02"
+   ],
+   "by": "agent3"
+  }
+ ],
+ "edges": [
+  [
+   "trial:NCT06979375",
+   "has_criterion",
+   "crit:NCT06979375-I01"
+  ],
+  [
+   "crit:NCT06979375-I01",
+   "decided_as",
+   "dec:NCT06979375:NCT06979375-I01:r1"
+  ],
+  [
+   "crit:NCT06979375-I01",
+   "requires",
+   "concept:birth_date"
+  ],
+  [
+   "concept:birth_date",
+   "observed_as",
+   "ev:SYN-0016-EV005"
+  ],
+  [
+   "ev:SYN-0016-EV005",
+   "derived_from",
+   "src:SYN-0016-D02:6-21"
+  ],
+  [
+   "ev:SYN-0016-EV005",
+   "supports",
+   "dec:NCT06979375:NCT06979375-I01:r1"
+  ],
+  [
+   "calc:NCT06979375:NCT06979375-I01",
+   "computes",
+   "dec:NCT06979375:NCT06979375-I01:r1"
+  ],
+  [
+   "trial:NCT06979375",
+   "has_criterion",
+   "crit:NCT06979375-I02"
+  ],
+  [
+   "crit:NCT06979375-I02",
+   "decided_as",
+   "dec:NCT06979375:NCT06979375-I02:r1"
+  ],
+  [
+   "crit:NCT06979375-I02",
+   "requires",
+   "concept:nyha_class"
+  ],
+  [
+   "concept:nyha_class",
+   "observed_as",
+   "ev:SYN-0016-EV270"
+  ],
+  [
+   "ev:SYN-0016-EV270",
+   "derived_from",
+   "src:SYN-0016-D07:2889-2904"
+  ],
+  [
+   "ev:SYN-0016-EV270",
+   "insufficient_for",
+   "dec:NCT06979375:NCT06979375-I02:r1"
+  ],
+  [
+   "crit:NCT06979375-I02",
+   "requires",
+   "concept:medication:furosemide"
+  ],
+  [
+   "concept:medication:furosemide",
+   "observed_as",
+   "ev:SYN-0016-EV087"
+  ],
+  [
+   "ev:SYN-0016-EV087",
+   "derived_from",
+   "src:SYN-0016-D07:1430-1465"
+  ],
+  [
+   "ev:SYN-0016-EV087",
+   "insufficient_for",
+   "dec:NCT06979375:NCT06979375-I02:r1"
+  ],
+  [
+   "crit:NCT06979375-I02",
+   "requires",
+   "concept:diagnosis:hfref"
+  ],
+  [
+   "concept:diagnosis:hfref",
+   "observed_as",
+   "ev:SYN-0016-EV062"
+  ],
+  [
+   "ev:SYN-0016-EV062",
+   "derived_from",
+   "src:SYN-0016-D07:753-832"
+  ],
+  [
+   "ev:SYN-0016-EV062",
+   "insufficient_for",
+   "dec:NCT06979375:NCT06979375-I02:r1"
+  ],
+  [
+   "trial:NCT06979375",
+   "has_criterion",
+   "crit:NCT06979375-I03"
+  ],
+  [
+   "crit:NCT06979375-I03",
+   "decided_as",
+   "dec:NCT06979375:NCT06979375-I03:r1"
+  ],
+  [
+   "crit:NCT06979375-I03",
+   "requires",
+   "concept:medication:sacubitril/valsartan 97/103 mg bid"
+  ],
+  [
+   "concept:medication:sacubitril/valsartan 97/103 mg bid",
+   "observed_as",
+   "ev:SYN-0016-EV083"
+  ],
+  [
+   "ev:SYN-0016-EV083",
+   "derived_from",
+   "src:SYN-0016-D07:1260-1307"
+  ],
+  [
+   "ev:SYN-0016-EV083",
+   "insufficient_for",
+   "dec:NCT06979375:NCT06979375-I03:r1"
+  ],
+  [
+   "crit:NCT06979375-I03",
+   "requires",
+   "concept:medication:bisoprolol 5 mg daily"
+  ],
+  [
+   "concept:medication:bisoprolol 5 mg daily",
+   "observed_as",
+   "ev:SYN-0016-EV084"
+  ],
+  [
+   "ev:SYN-0016-EV084",
+   "derived_from",
+   "src:SYN-0016-D07:1310-1344"
+  ],
+  [
+   "ev:SYN-0016-EV084",
+   "insufficient_for",
+   "dec:NCT06979375:NCT06979375-I03:r1"
+  ],
+  [
+   "crit:NCT06979375-I03",
+   "requires",
+   "concept:medication:bisoprolol"
+  ],
+  [
+   "concept:medication:bisoprolol",
+   "observed_as",
+   "ev:SYN-0016-EV058"
+  ],
+  [
+   "ev:SYN-0016-EV058",
+   "derived_from",
+   "src:SYN-0016-D07:631-704"
+  ],
+  [
+   "ev:SYN-0016-EV058",
+   "insufficient_for",
+   "dec:NCT06979375:NCT06979375-I03:r1"
+  ],
+  [
+   "crit:NCT06979375-I03",
+   "requires",
+   "concept:treatment_plan:bisoprolol titration"
+  ],
+  [
+   "concept:treatment_plan:bisoprolol titration",
+   "observed_as",
+   "ev:SYN-0016-EV182"
+  ],
+  [
+   "ev:SYN-0016-EV182",
+   "derived_from",
+   "src:SYN-0016-D07:3573-3620"
+  ],
+  [
+   "ev:SYN-0016-EV182",
+   "insufficient_for",
+   "dec:NCT06979375:NCT06979375-I03:r1"
+  ],
+  [
+   "trial:NCT06979375",
+   "has_criterion",
+   "crit:NCT06979375-I04"
+  ],
+  [
+   "crit:NCT06979375-I04",
+   "decided_as",
+   "dec:NCT06979375:NCT06979375-I04:r1"
+  ],
+  [
+   "crit:NCT06979375-I04",
+   "requires",
+   "concept:lvef"
+  ],
+  [
+   "concept:lvef",
+   "observed_as",
+   "ev:SYN-0016-EV060"
+  ],
+  [
+   "ev:SYN-0016-EV060",
+   "derived_from",
+   "src:SYN-0016-D07:753-832"
+  ],
+  [
+   "ev:SYN-0016-EV060",
+   "expired_for",
+   "dec:NCT06979375:NCT06979375-I04:r1"
+  ],
+  [
+   "calc:NCT06979375:NCT06979375-I04",
+   "computes",
+   "dec:NCT06979375:NCT06979375-I04:r1"
+  ],
+  [
+   "trial:NCT06979375",
+   "has_criterion",
+   "crit:NCT06979375-I05"
+  ],
+  [
+   "crit:NCT06979375-I05",
+   "decided_as",
+   "dec:NCT06979375:NCT06979375-I05:r1"
+  ],
+  [
+   "crit:NCT06979375-I05",
+   "requires",
+   "concept:symptom_finding:lv dilated"
+  ],
+  [
+   "concept:symptom_finding:lv dilated",
+   "observed_as",
+   "ev:SYN-0016-EV157"
+  ],
+  [
+   "ev:SYN-0016-EV157",
+   "derived_from",
+   "src:SYN-0016-D07:2932-3087"
+  ],
+  [
+   "ev:SYN-0016-EV157",
+   "insufficient_for",
+   "dec:NCT06979375:NCT06979375-I05:r1"
+  ],
+  [
+   "crit:NCT06979375-I05",
+   "requires",
+   "concept:lvef"
+  ],
+  [
+   "concept:lvef",
+   "observed_as",
+   "ev:SYN-0016-EV156"
+  ],
+  [
+   "ev:SYN-0016-EV156",
+   "derived_from",
+   "src:SYN-0016-D07:2932-3087"
+  ],
+  [
+   "ev:SYN-0016-EV156",
+   "insufficient_for",
+   "dec:NCT06979375:NCT06979375-I05:r1"
+  ],
+  [
+   "crit:NCT06979375-I05",
+   "requires",
+   "concept:body_height"
+  ],
+  [
+   "concept:body_height",
+   "observed_as",
+   "ev:SYN-0016-EV123"
+  ],
+  [
+   "ev:SYN-0016-EV123",
+   "derived_from",
+   "src:SYN-0016-D07:2247-2261"
+  ],
+  [
+   "ev:SYN-0016-EV123",
+   "insufficient_for",
+   "dec:NCT06979375:NCT06979375-I05:r1"
+  ],
+  [
+   "trial:NCT06979375",
+   "has_criterion",
+   "crit:NCT06979375-I06"
+  ],
+  [
+   "crit:NCT06979375-I06",
+   "decided_as",
+   "dec:NCT06979375:NCT06979375-I06:r1"
+  ],
+  [
+   "crit:NCT06979375-I06",
+   "requires",
+   "concept:bmi"
+  ],
+  [
+   "concept:bmi",
+   "observed_as",
+   "ev:SYN-0016-EV125"
+  ],
+  [
+   "ev:SYN-0016-EV125",
+   "derived_from",
+   "src:SYN-0016-D07:2278-2293"
+  ],
+  [
+   "ev:SYN-0016-EV125",
+   "supports",
+   "dec:NCT06979375:NCT06979375-I06:r1"
+  ],
+  [
+   "crit:NCT06979375-I06",
+   "requires",
+   "concept:body_weight"
+  ],
+  [
+   "concept:body_weight",
+   "observed_as",
+   "ev:SYN-0016-EV124"
+  ],
+  [
+   "ev:SYN-0016-EV124",
+   "derived_from",
+   "src:SYN-0016-D07:2262-2277"
+  ],
+  [
+   "ev:SYN-0016-EV124",
+   "supports",
+   "dec:NCT06979375:NCT06979375-I06:r1"
+  ],
+  [
+   "trial:NCT06979375",
+   "has_criterion",
+   "crit:NCT06979375-I07"
+  ],
+  [
+   "crit:NCT06979375-I07",
+   "decided_as",
+   "dec:NCT06979375:NCT06979375-I07:r1"
+  ],
+  [
+   "crit:NCT06979375-I07",
+   "requires",
+   "concept:nt_probnp"
+  ],
+  [
+   "concept:nt_probnp",
+   "observed_as",
+   "ev:SYN-0016-EV292"
+  ],
+  [
+   "ev:SYN-0016-EV292",
+   "derived_from",
+   "src:SYN-0016-D08:936-966"
+  ],
+  [
+   "ev:SYN-0016-EV292",
+   "supports",
+   "dec:NCT06979375:NCT06979375-I07:r1"
+  ],
+  [
+   "crit:NCT06979375-I07",
+   "requires",
+   "concept:symptom_finding:sinus rhythm"
+  ],
+  [
+   "concept:symptom_finding:sinus rhythm",
+   "observed_as",
+   "ev:SYN-0016-EV165"
+  ],
+  [
+   "ev:SYN-0016-EV165",
+   "derived_from",
+   "src:SYN-0016-D07:3123-3154"
+  ],
+  [
+   "ev:SYN-0016-EV165",
+   "supports",
+   "dec:NCT06979375:NCT06979375-I07:r1"
+  ],
+  [
+   "trial:NCT06979375",
+   "has_criterion",
+   "crit:NCT06979375-E01"
+  ],
+  [
+   "crit:NCT06979375-E01",
+   "decided_as",
+   "dec:NCT06979375:NCT06979375-E01:r1"
+  ],
+  [
+   "crit:NCT06979375-E01",
+   "requires",
+   "concept:egfr"
+  ],
+  [
+   "concept:egfr",
+   "observed_as",
+   "ev:SYN-0016-EV213"
+  ],
+  [
+   "ev:SYN-0016-EV213",
+   "derived_from",
+   "src:SYN-0016-D08:592-622"
+  ],
+  [
+   "ev:SYN-0016-EV213",
+   "supports",
+   "dec:NCT06979375:NCT06979375-E01:r1"
+  ],
+  [
+   "calc:NCT06979375:NCT06979375-E01",
+   "computes",
+   "dec:NCT06979375:NCT06979375-E01:r1"
+  ],
+  [
+   "trial:NCT06979375",
+   "has_criterion",
+   "crit:NCT06979375-E02"
+  ],
+  [
+   "crit:NCT06979375-E02",
+   "decided_as",
+   "dec:NCT06979375:NCT06979375-E02:r1"
+  ],
+  [
+   "trial:NCT06979375",
+   "has_criterion",
+   "crit:NCT06979375-E03"
+  ],
+  [
+   "crit:NCT06979375-E03",
+   "decided_as",
+   "dec:NCT06979375:NCT06979375-E03:r1"
+  ],
+  [
+   "crit:NCT06979375-E03",
+   "requires",
+   "concept:symptom_finding:hf admissions"
+  ],
+  [
+   "concept:symptom_finding:hf admissions",
+   "observed_as",
+   "ev:SYN-0016-EV046"
+  ],
+  [
+   "ev:SYN-0016-EV046",
+   "derived_from",
+   "src:SYN-0016-D07:339-418"
+  ],
+  [
+   "ev:SYN-0016-EV046",
+   "supports",
+   "dec:NCT06979375:NCT06979375-E03:r1"
+  ],
+  [
+   "crit:NCT06979375-E03",
+   "requires",
+   "concept:diagnosis:acute decompensated heart failure"
+  ],
+  [
+   "concept:diagnosis:acute decompensated heart failure",
+   "observed_as",
+   "ev:SYN-0016-EV045"
+  ],
+  [
+   "ev:SYN-0016-EV045",
+   "derived_from",
+   "src:SYN-0016-D07:274-338"
+  ],
+  [
+   "ev:SYN-0016-EV045",
+   "supports",
+   "dec:NCT06979375:NCT06979375-E03:r1"
+  ],
+  [
+   "crit:NCT06979375-E03",
+   "requires",
+   "concept:symptom_finding:chest pain"
+  ],
+  [
+   "concept:symptom_finding:chest pain",
+   "observed_as",
+   "ev:SYN-0016-EV052"
+  ],
+  [
+   "ev:SYN-0016-EV052",
+   "derived_from",
+   "src:SYN-0016-D07:549-600"
+  ],
+  [
+   "ev:SYN-0016-EV052",
+   "supports",
+   "dec:NCT06979375:NCT06979375-E03:r1"
+  ],
+  [
+   "trial:NCT06979375",
+   "has_criterion",
+   "crit:NCT06979375-E04"
+  ],
+  [
+   "crit:NCT06979375-E04",
+   "decided_as",
+   "dec:NCT06979375:NCT06979375-E04:r1"
+  ],
+  [
+   "trial:NCT06979375",
+   "has_criterion",
+   "crit:NCT06979375-E05"
+  ],
+  [
+   "crit:NCT06979375-E05",
+   "decided_as",
+   "dec:NCT06979375:NCT06979375-E05:r1"
+  ],
+  [
+   "trial:NCT06979375",
+   "has_criterion",
+   "crit:NCT06979375-E06"
+  ],
+  [
+   "crit:NCT06979375-E06",
+   "decided_as",
+   "dec:NCT06979375:NCT06979375-E06:r1"
+  ],
+  [
+   "crit:NCT06979375-E06",
+   "requires",
+   "concept:diagnosis:stroke"
+  ],
+  [
+   "concept:diagnosis:stroke",
+   "observed_as",
+   "ev:SYN-0016-EV076"
+  ],
+  [
+   "ev:SYN-0016-EV076",
+   "derived_from",
+   "src:SYN-0016-D07:1078-1095"
+  ],
+  [
+   "ev:SYN-0016-EV076",
+   "supports",
+   "dec:NCT06979375:NCT06979375-E06:r1"
+  ],
+  [
+   "crit:NCT06979375-E06",
+   "requires",
+   "concept:diagnosis:tia"
+  ],
+  [
+   "concept:diagnosis:tia",
+   "observed_as",
+   "ev:SYN-0016-EV077"
+  ],
+  [
+   "ev:SYN-0016-EV077",
+   "derived_from",
+   "src:SYN-0016-D07:1078-1095"
+  ],
+  [
+   "ev:SYN-0016-EV077",
+   "supports",
+   "dec:NCT06979375:NCT06979375-E06:r1"
+  ],
+  [
+   "trial:NCT06979375",
+   "has_criterion",
+   "crit:NCT06979375-E07"
+  ],
+  [
+   "crit:NCT06979375-E07",
+   "decided_as",
+   "dec:NCT06979375:NCT06979375-E07:r1"
+  ],
+  [
+   "trial:NCT06979375",
+   "has_criterion",
+   "crit:NCT06979375-E08"
+  ],
+  [
+   "crit:NCT06979375-E08",
+   "decided_as",
+   "dec:NCT06979375:NCT06979375-E08:r1"
+  ],
+  [
+   "crit:NCT06979375-E08",
+   "requires",
+   "concept:diagnosis:other hepatic history"
+  ],
+  [
+   "concept:diagnosis:other hepatic history",
+   "observed_as",
+   "ev:SYN-0016-EV070"
+  ],
+  [
+   "ev:SYN-0016-EV070",
+   "derived_from",
+   "src:SYN-0016-D07:965-1043"
+  ],
+  [
+   "ev:SYN-0016-EV070",
+   "supports",
+   "dec:NCT06979375:NCT06979375-E08:r1"
+  ],
+  [
+   "crit:NCT06979375-E08",
+   "requires",
+   "concept:alt"
+  ],
+  [
+   "concept:alt",
+   "observed_as",
+   "ev:SYN-0016-EV220"
+  ],
+  [
+   "ev:SYN-0016-EV220",
+   "derived_from",
+   "src:SYN-0016-D08:796-813"
+  ],
+  [
+   "ev:SYN-0016-EV220",
+   "supports",
+   "dec:NCT06979375:NCT06979375-E08:r1"
+  ],
+  [
+   "crit:NCT06979375-E08",
+   "requires",
+   "concept:ast"
+  ],
+  [
+   "concept:ast",
+   "observed_as",
+   "ev:SYN-0016-EV219"
+  ],
+  [
+   "ev:SYN-0016-EV219",
+   "derived_from",
+   "src:SYN-0016-D08:777-795"
+  ],
+  [
+   "ev:SYN-0016-EV219",
+   "supports",
+   "dec:NCT06979375:NCT06979375-E08:r1"
+  ],
+  [
+   "trial:NCT06979375",
+   "has_criterion",
+   "crit:NCT06979375-E09"
+  ],
+  [
+   "crit:NCT06979375-E09",
+   "decided_as",
+   "dec:NCT06979375:NCT06979375-E09:r1"
+  ],
+  [
+   "crit:NCT06979375-E09",
+   "requires",
+   "concept:diagnosis:ischemic cardiomyopathy"
+  ],
+  [
+   "concept:diagnosis:ischemic cardiomyopathy",
+   "observed_as",
+   "ev:SYN-0016-EV042"
+  ],
+  [
+   "ev:SYN-0016-EV042",
+   "derived_from",
+   "src:SYN-0016-D07:127-222"
+  ],
+  [
+   "ev:SYN-0016-EV042",
+   "insufficient_for",
+   "dec:NCT06979375:NCT06979375-E09:r1"
+  ],
+  [
+   "crit:NCT06979375-E09",
+   "requires",
+   "concept:diagnosis:cardiomyopathy"
+  ],
+  [
+   "concept:diagnosis:cardiomyopathy",
+   "observed_as",
+   "ev:SYN-0016-EV099"
+  ],
+  [
+   "ev:SYN-0016-EV099",
+   "derived_from",
+   "src:SYN-0016-D07:1866-1918"
+  ],
+  [
+   "ev:SYN-0016-EV099",
+   "insufficient_for",
+   "dec:NCT06979375:NCT06979375-E09:r1"
+  ],
+  [
+   "crit:NCT06979375-E09",
+   "requires",
+   "concept:symptom_finding:lv dilated"
+  ],
+  [
+   "ev:SYN-0016-EV157",
+   "insufficient_for",
+   "dec:NCT06979375:NCT06979375-E09:r1"
+  ],
+  [
+   "trial:NCT06979375",
+   "has_criterion",
+   "crit:NCT06979375-E10"
+  ],
+  [
+   "crit:NCT06979375-E10",
+   "decided_as",
+   "dec:NCT06979375:NCT06979375-E10:r1"
+  ],
+  [
+   "trial:NCT06979375",
+   "labelled",
+   "label:NCT06979375"
+  ],
+  [
+   "trial:NCT07567001",
+   "has_criterion",
+   "crit:NCT07567001-I01"
+  ],
+  [
+   "crit:NCT07567001-I01",
+   "decided_as",
+   "dec:NCT07567001:NCT07567001-I01:r1"
+  ],
+  [
+   "crit:NCT07567001-I01",
+   "requires",
+   "concept:bmi"
+  ],
+  [
+   "ev:SYN-0016-EV125",
+   "supports",
+   "dec:NCT07567001:NCT07567001-I01:r1"
+  ],
+  [
+   "calc:NCT07567001:NCT07567001-I01",
+   "computes",
+   "dec:NCT07567001:NCT07567001-I01:r1"
+  ],
+  [
+   "trial:NCT07567001",
+   "has_criterion",
+   "crit:NCT07567001-I02"
+  ],
+  [
+   "crit:NCT07567001-I02",
+   "decided_as",
+   "dec:NCT07567001:NCT07567001-I02:r1"
+  ],
+  [
+   "crit:NCT07567001-I02",
+   "requires",
+   "concept:nyha_class"
+  ],
+  [
+   "concept:nyha_class",
+   "observed_as",
+   "ev:SYN-0016-EV273"
+  ],
+  [
+   "ev:SYN-0016-EV273",
+   "derived_from",
+   "src:SYN-0016-D07:3424-3548"
+  ],
+  [
+   "ev:SYN-0016-EV273",
+   "insufficient_for",
+   "dec:NCT07567001:NCT07567001-I02:r1"
+  ],
+  [
+   "crit:NCT07567001-I02",
+   "requires",
+   "concept:symptom_finding:euvolemic."
+  ],
+  [
+   "concept:symptom_finding:euvolemic.",
+   "observed_as",
+   "ev:SYN-0016-EV173"
+  ],
+  [
+   "ev:SYN-0016-EV173",
+   "derived_from",
+   "src:SYN-0016-D07:3377-3402"
+  ],
+  [
+   "ev:SYN-0016-EV173",
+   "insufficient_for",
+   "dec:NCT07567001:NCT07567001-I02:r1"
+  ],
+  [
+   "crit:NCT07567001-I02",
+   "requires",
+   "concept:symptom_finding:hf admissions"
+  ],
+  [
+   "ev:SYN-0016-EV046",
+   "insufficient_for",
+   "dec:NCT07567001:NCT07567001-I02:r1"
+  ],
+  [
+   "trial:NCT07567001",
+   "has_criterion",
+   "crit:NCT07567001-E01"
+  ],
+  [
+   "crit:NCT07567001-E01",
+   "decided_as",
+   "dec:NCT07567001:NCT07567001-E01:r1"
+  ],
+  [
+   "crit:NCT07567001-E01",
+   "requires",
+   "concept:symptom_finding:hf admissions"
+  ],
+  [
+   "ev:SYN-0016-EV046",
+   "supports",
+   "dec:NCT07567001:NCT07567001-E01:r1"
+  ],
+  [
+   "crit:NCT07567001-E01",
+   "requires",
+   "concept:diagnosis:acute decompensated heart failure"
+  ],
+  [
+   "ev:SYN-0016-EV045",
+   "supports",
+   "dec:NCT07567001:NCT07567001-E01:r1"
+  ],
+  [
+   "trial:NCT07567001",
+   "has_criterion",
+   "crit:NCT07567001-E02"
+  ],
+  [
+   "crit:NCT07567001-E02",
+   "decided_as",
+   "dec:NCT07567001:NCT07567001-E02:r1"
+  ],
+  [
+   "crit:NCT07567001-E02",
+   "requires",
+   "concept:symptom_finding:moderate functional mitral regurgitation"
+  ],
+  [
+   "concept:symptom_finding:moderate functional mitral regurgitation",
+   "observed_as",
+   "ev:SYN-0016-EV160"
+  ],
+  [
+   "ev:SYN-0016-EV160",
+   "derived_from",
+   "src:SYN-0016-D07:2932-3087"
+  ],
+  [
+   "ev:SYN-0016-EV160",
+   "insufficient_for",
+   "dec:NCT07567001:NCT07567001-E02:r1"
+  ],
+  [
+   "trial:NCT07567001",
+   "has_criterion",
+   "crit:NCT07567001-E03"
+  ],
+  [
+   "crit:NCT07567001-E03",
+   "decided_as",
+   "dec:NCT07567001:NCT07567001-E03:r1"
+  ],
+  [
+   "crit:NCT07567001-E03",
+   "requires",
+   "concept:diagnosis:other pulmonary history"
+  ],
+  [
+   "concept:diagnosis:other pulmonary history",
+   "observed_as",
+   "ev:SYN-0016-EV069"
+  ],
+  [
+   "ev:SYN-0016-EV069",
+   "derived_from",
+   "src:SYN-0016-D07:965-1043"
+  ],
+  [
+   "ev:SYN-0016-EV069",
+   "supports",
+   "dec:NCT07567001:NCT07567001-E03:r1"
+  ],
+  [
+   "trial:NCT07567001",
+   "has_criterion",
+   "crit:NCT07567001-E04"
+  ],
+  [
+   "crit:NCT07567001-E04",
+   "decided_as",
+   "dec:NCT07567001:NCT07567001-E04:r1"
+  ],
+  [
+   "trial:NCT07567001",
+   "has_criterion",
+   "crit:NCT07567001-E05"
+  ],
+  [
+   "crit:NCT07567001-E05",
+   "decided_as",
+   "dec:NCT07567001:NCT07567001-E05:r1"
+  ],
+  [
+   "crit:NCT07567001-E05",
+   "requires",
+   "concept:hemoglobin"
+  ],
+  [
+   "concept:hemoglobin",
+   "observed_as",
+   "ev:SYN-0016-EV196"
+  ],
+  [
+   "ev:SYN-0016-EV196",
+   "derived_from",
+   "src:SYN-0016-D08:105-139"
+  ],
+  [
+   "ev:SYN-0016-EV196",
+   "insufficient_for",
+   "dec:NCT07567001:NCT07567001-E05:r1"
+  ],
+  [
+   "crit:NCT07567001-E05",
+   "requires",
+   "concept:diagnosis:iron deficiency"
+  ],
+  [
+   "concept:diagnosis:iron deficiency",
+   "observed_as",
+   "ev:SYN-0016-EV183"
+  ],
+  [
+   "ev:SYN-0016-EV183",
+   "derived_from",
+   "src:SYN-0016-D07:3624-3736"
+  ],
+  [
+   "ev:SYN-0016-EV183",
+   "insufficient_for",
+   "dec:NCT07567001:NCT07567001-E05:r1"
+  ],
+  [
+   "crit:NCT07567001-E05",
+   "requires",
+   "concept:tsh"
+  ],
+  [
+   "concept:tsh",
+   "observed_as",
+   "ev:SYN-0016-EV236"
+  ],
+  [
+   "ev:SYN-0016-EV236",
+   "derived_from",
+   "src:SYN-0016-D08:1290-1313"
+  ],
+  [
+   "ev:SYN-0016-EV236",
+   "insufficient_for",
+   "dec:NCT07567001:NCT07567001-E05:r1"
+  ],
+  [
+   "trial:NCT07567001",
+   "has_criterion",
+   "crit:NCT07567001-E06"
+  ],
+  [
+   "crit:NCT07567001-E06",
+   "decided_as",
+   "dec:NCT07567001:NCT07567001-E06:r1"
+  ],
+  [
+   "crit:NCT07567001-E06",
+   "requires",
+   "concept:diagnosis:diabetes"
+  ],
+  [
+   "concept:diagnosis:diabetes",
+   "observed_as",
+   "ev:SYN-0016-EV074"
+  ],
+  [
+   "ev:SYN-0016-EV074",
+   "derived_from",
+   "src:SYN-0016-D07:1044-1056"
+  ],
+  [
+   "ev:SYN-0016-EV074",
+   "supports",
+   "dec:NCT07567001:NCT07567001-E06:r1"
+  ],
+  [
+   "crit:NCT07567001-E06",
+   "requires",
+   "concept:hba1c"
+  ],
+  [
+   "concept:hba1c",
+   "observed_as",
+   "ev:SYN-0016-EV235"
+  ],
+  [
+   "ev:SYN-0016-EV235",
+   "derived_from",
+   "src:SYN-0016-D08:1266-1289"
+  ],
+  [
+   "ev:SYN-0016-EV235",
+   "supports",
+   "dec:NCT07567001:NCT07567001-E06:r1"
+  ],
+  [
+   "trial:NCT07567001",
+   "has_criterion",
+   "crit:NCT07567001-I03"
+  ],
+  [
+   "crit:NCT07567001-I03",
+   "decided_as",
+   "dec:NCT07567001:NCT07567001-I03:r1"
+  ],
+  [
+   "crit:NCT07567001-I03",
+   "requires",
+   "concept:diagnosis:diabetes"
+  ],
+  [
+   "ev:SYN-0016-EV074",
+   "supports",
+   "dec:NCT07567001:NCT07567001-I03:r1"
+  ],
+  [
+   "trial:NCT07567001",
+   "labelled",
+   "label:NCT07567001"
+  ],
+  [
+   "trial:NCT06935370",
+   "has_criterion",
+   "crit:NCT06935370-I01"
+  ],
+  [
+   "crit:NCT06935370-I01",
+   "decided_as",
+   "dec:NCT06935370:NCT06935370-I01:r1"
+  ],
+  [
+   "crit:NCT06935370-I01",
+   "requires",
+   "concept:birth_date"
+  ],
+  [
+   "ev:SYN-0016-EV005",
+   "supports",
+   "dec:NCT06935370:NCT06935370-I01:r1"
+  ],
+  [
+   "calc:NCT06935370:NCT06935370-I01",
+   "computes",
+   "dec:NCT06935370:NCT06935370-I01:r1"
+  ],
+  [
+   "trial:NCT06935370",
+   "has_criterion",
+   "crit:NCT06935370-I02"
+  ],
+  [
+   "crit:NCT06935370-I02",
+   "decided_as",
+   "dec:NCT06935370:NCT06935370-I02:r1"
+  ],
+  [
+   "trial:NCT06935370",
+   "has_criterion",
+   "crit:NCT06935370-I03"
+  ],
+  [
+   "crit:NCT06935370-I03",
+   "decided_as",
+   "dec:NCT06935370:NCT06935370-I03:r1"
+  ],
+  [
+   "crit:NCT06935370-I03",
+   "requires",
+   "concept:sex"
+  ],
+  [
+   "concept:sex",
+   "observed_as",
+   "ev:SYN-0016-EV004"
+  ],
+  [
+   "ev:SYN-0016-EV004",
+   "derived_from",
+   "src:SYN-0016-D02:0-5"
+  ],
+  [
+   "ev:SYN-0016-EV004",
+   "supports",
+   "dec:NCT06935370:NCT06935370-I03:r1"
+  ],
+  [
+   "trial:NCT06935370",
+   "has_criterion",
+   "crit:NCT06935370-I04"
+  ],
+  [
+   "crit:NCT06935370-I04",
+   "decided_as",
+   "dec:NCT06935370:NCT06935370-I04:r1"
+  ],
+  [
+   "crit:NCT06935370-I04",
+   "requires",
+   "concept:diagnosis:hfref"
+  ],
+  [
+   "ev:SYN-0016-EV062",
+   "supports",
+   "dec:NCT06935370:NCT06935370-I04:r1"
+  ],
+  [
+   "crit:NCT06935370-I04",
+   "requires",
+   "concept:lvef"
+  ],
+  [
+   "concept:lvef",
+   "observed_as",
+   "ev:SYN-0016-EV010"
+  ],
+  [
+   "ev:SYN-0016-EV010",
+   "derived_from",
+   "src:SYN-0016-D03:91-142"
+  ],
+  [
+   "ev:SYN-0016-EV010",
+   "supports",
+   "dec:NCT06935370:NCT06935370-I04:r1"
+  ],
+  [
+   "concept:lvef",
+   "observed_as",
+   "ev:SYN-0016-EV043"
+  ],
+  [
+   "ev:SYN-0016-EV043",
+   "derived_from",
+   "src:SYN-0016-D07:224-232"
+  ],
+  [
+   "ev:SYN-0016-EV043",
+   "supports",
+   "dec:NCT06935370:NCT06935370-I04:r1"
+  ],
+  [
+   "crit:NCT06935370-I04",
+   "requires",
+   "concept:nyha_class"
+  ],
+  [
+   "ev:SYN-0016-EV270",
+   "supports",
+   "dec:NCT06935370:NCT06935370-I04:r1"
+  ],
+  [
+   "trial:NCT06935370",
+   "has_criterion",
+   "crit:NCT06935370-I05"
+  ],
+  [
+   "crit:NCT06935370-I05",
+   "decided_as",
+   "dec:NCT06935370:NCT06935370-I05:r1"
+  ],
+  [
+   "crit:NCT06935370-I05",
+   "requires",
+   "concept:nt_probnp"
+  ],
+  [
+   "ev:SYN-0016-EV292",
+   "expired_for",
+   "dec:NCT06935370:NCT06935370-I05:r1"
+  ],
+  [
+   "trial:NCT06935370",
+   "has_criterion",
+   "crit:NCT06935370-I06"
+  ],
+  [
+   "crit:NCT06935370-I06",
+   "decided_as",
+   "dec:NCT06935370:NCT06935370-I06:r1"
+  ],
+  [
+   "crit:NCT06935370-I06",
+   "requires",
+   "concept:medication:arni"
+  ],
+  [
+   "concept:medication:arni",
+   "observed_as",
+   "ev:SYN-0016-EV177"
+  ],
+  [
+   "ev:SYN-0016-EV177",
+   "derived_from",
+   "src:SYN-0016-D07:3424-3548"
+  ],
+  [
+   "ev:SYN-0016-EV177",
+   "insufficient_for",
+   "dec:NCT06935370:NCT06935370-I06:r1"
+  ],
+  [
+   "crit:NCT06935370-I06",
+   "requires",
+   "concept:medication:beta-blocker"
+  ],
+  [
+   "concept:medication:beta-blocker",
+   "observed_as",
+   "ev:SYN-0016-EV178"
+  ],
+  [
+   "ev:SYN-0016-EV178",
+   "derived_from",
+   "src:SYN-0016-D07:3424-3548"
+  ],
+  [
+   "ev:SYN-0016-EV178",
+   "insufficient_for",
+   "dec:NCT06935370:NCT06935370-I06:r1"
+  ],
+  [
+   "crit:NCT06935370-I06",
+   "requires",
+   "concept:treatment_plan:bisoprolol titration"
+  ],
+  [
+   "ev:SYN-0016-EV182",
+   "insufficient_for",
+   "dec:NCT06935370:NCT06935370-I06:r1"
+  ],
+  [
+   "trial:NCT06935370",
+   "has_criterion",
+   "crit:NCT06935370-E01"
+  ],
+  [
+   "crit:NCT06935370-E01",
+   "decided_as",
+   "dec:NCT06935370:NCT06935370-E01:r1"
+  ],
+  [
+   "crit:NCT06935370-E01",
+   "requires",
+   "concept:medication:spironolactone"
+  ],
+  [
+   "concept:medication:spironolactone",
+   "observed_as",
+   "ev:SYN-0016-EV085"
+  ],
+  [
+   "ev:SYN-0016-EV085",
+   "derived_from",
+   "src:SYN-0016-D07:1347-1386"
+  ],
+  [
+   "ev:SYN-0016-EV085",
+   "supports",
+   "dec:NCT06935370:NCT06935370-E01:r1"
+  ],
+  [
+   "crit:NCT06935370-E01",
+   "requires",
+   "concept:medication:mra"
+  ],
+  [
+   "concept:medication:mra",
+   "observed_as",
+   "ev:SYN-0016-EV179"
+  ],
+  [
+   "ev:SYN-0016-EV179",
+   "derived_from",
+   "src:SYN-0016-D07:3424-3548"
+  ],
+  [
+   "ev:SYN-0016-EV179",
+   "supports",
+   "dec:NCT06935370:NCT06935370-E01:r1"
+  ],
+  [
+   "trial:NCT06935370",
+   "has_criterion",
+   "crit:NCT06935370-E02"
+  ],
+  [
+   "crit:NCT06935370-E02",
+   "decided_as",
+   "dec:NCT06935370:NCT06935370-E02:r1"
+  ],
+  [
+   "crit:NCT06935370-E02",
+   "requires",
+   "concept:medication:spironolactone"
+  ],
+  [
+   "ev:SYN-0016-EV085",
+   "supports",
+   "dec:NCT06935370:NCT06935370-E02:r1"
+  ],
+  [
+   "trial:NCT06935370",
+   "has_criterion",
+   "crit:NCT06935370-E03"
+  ],
+  [
+   "crit:NCT06935370-E03",
+   "decided_as",
+   "dec:NCT06935370:NCT06935370-E03:r1"
+  ],
+  [
+   "trial:NCT06935370",
+   "has_criterion",
+   "crit:NCT06935370-E04"
+  ],
+  [
+   "crit:NCT06935370-E04",
+   "decided_as",
+   "dec:NCT06935370:NCT06935370-E04:r1"
+  ],
+  [
+   "crit:NCT06935370-E04",
+   "requires",
+   "concept:diagnosis:anterior stemi"
+  ],
+  [
+   "concept:diagnosis:anterior stemi",
+   "observed_as",
+   "ev:SYN-0016-EV262"
+  ],
+  [
+   "ev:SYN-0016-EV262",
+   "derived_from",
+   "src:SYN-0016-D07:127-222"
+  ],
+  [
+   "ev:SYN-0016-EV262",
+   "supports",
+   "dec:NCT06935370:NCT06935370-E04:r1"
+  ],
+  [
+   "crit:NCT06935370-E04",
+   "requires",
+   "concept:diagnosis:stroke"
+  ],
+  [
+   "ev:SYN-0016-EV076",
+   "supports",
+   "dec:NCT06935370:NCT06935370-E04:r1"
+  ],
+  [
+   "crit:NCT06935370-E04",
+   "requires",
+   "concept:diagnosis:tia"
+  ],
+  [
+   "ev:SYN-0016-EV077",
+   "supports",
+   "dec:NCT06935370:NCT06935370-E04:r1"
+  ],
+  [
+   "trial:NCT06935370",
+   "has_criterion",
+   "crit:NCT06935370-E05"
+  ],
+  [
+   "crit:NCT06935370-E05",
+   "decided_as",
+   "dec:NCT06935370:NCT06935370-E05:r1"
+  ],
+  [
+   "crit:NCT06935370-E05",
+   "requires",
+   "concept:procedure:pci with stent to proximal lad"
+  ],
+  [
+   "concept:procedure:pci with stent to proximal lad",
+   "observed_as",
+   "ev:SYN-0016-EV078"
+  ],
+  [
+   "ev:SYN-0016-EV078",
+   "derived_from",
+   "src:SYN-0016-D07:1120-1158"
+  ],
+  [
+   "ev:SYN-0016-EV078",
+   "supports",
+   "dec:NCT06935370:NCT06935370-E05:r1"
+  ],
+  [
+   "trial:NCT06935370",
+   "has_criterion",
+   "crit:NCT06935370-E06"
+  ],
+  [
+   "crit:NCT06935370-E06",
+   "decided_as",
+   "dec:NCT06935370:NCT06935370-E06:r1"
+  ],
+  [
+   "trial:NCT06935370",
+   "has_criterion",
+   "crit:NCT06935370-E07"
+  ],
+  [
+   "crit:NCT06935370-E07",
+   "decided_as",
+   "dec:NCT06935370:NCT06935370-E07:r1"
+  ],
+  [
+   "crit:NCT06935370-E07",
+   "requires",
+   "concept:diagnosis:other cardiac history"
+  ],
+  [
+   "concept:diagnosis:other cardiac history",
+   "observed_as",
+   "ev:SYN-0016-EV068"
+  ],
+  [
+   "ev:SYN-0016-EV068",
+   "derived_from",
+   "src:SYN-0016-D07:965-1043"
+  ],
+  [
+   "ev:SYN-0016-EV068",
+   "supports",
+   "dec:NCT06935370:NCT06935370-E07:r1"
+  ],
+  [
+   "crit:NCT06935370-E07",
+   "requires",
+   "concept:diagnosis:ischemic cardiomyopathy"
+  ],
+  [
+   "ev:SYN-0016-EV042",
+   "supports",
+   "dec:NCT06935370:NCT06935370-E07:r1"
+  ],
+  [
+   "trial:NCT06935370",
+   "has_criterion",
+   "crit:NCT06935370-E08"
+  ],
+  [
+   "crit:NCT06935370-E08",
+   "decided_as",
+   "dec:NCT06935370:NCT06935370-E08:r1"
+  ],
+  [
+   "trial:NCT06935370",
+   "labelled",
+   "label:NCT06935370"
+  ]
+ ]
+}

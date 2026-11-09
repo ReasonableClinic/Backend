@@ -1,0 +1,56 @@
+{
+ "patient_id": "SYN-0006",
+ "as_of": "2026-10-01",
+ "audience": "clinician",
+ "graph_file": "SYN-0006.json",
+ "ranking": [],
+ "also_mentioned": [
+  "NCT07589595"
+ ],
+ "sentences": [
+  {
+   "text": "환자 SYN-0006, 기준일 2026-10-01",
+   "refs": [],
+   "kind": "meta"
+  },
+  {
+   "text": "추천할 시험 없음 (eligible·potential 없음)",
+   "refs": [],
+   "kind": "meta"
+  },
+  {
+   "text": "참고: FAIL 하나로 제외된 시험 (순위에는 넣지 않음, 그 기준만 확인하면 판정이 바뀔 수 있음)",
+   "refs": [
+    "trial:NCT07589595"
+   ],
+   "kind": "heading"
+  },
+  {
+   "text": "NCT07589595 A Study of Donanemab (LY3002813) in Participants With Early Cognitive Decline (TRAILBLAZER-ALZ 7): NCT07589595-I03 [inclusion] 불충족",
+   "refs": [
+    "crit:NCT07589595-I03",
+    "dec:NCT07589595:NCT07589595-I03:r1",
+    "label:NCT07589595",
+    "trial:NCT07589595"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   노트: moca = 19 points (2026-09-22, -9d) vs >= 20 -> not met",
+   "refs": [
+    "dec:NCT07589595:NCT07589595-I03:r1"
+   ],
+   "kind": "fact"
+  }
+ ],
+ "evidence": {
+  "files": [
+   "evidence_dev_haiku_v14_12.jsonl",
+   "evidence_dev_variants_haiku_v14_12.jsonl"
+  ],
+  "sha256": "daba4f5f1e16ec2eefc47311f5c13f85e6b5f218c85424f08f9af3d9bab09124",
+  "id_series": "haiku",
+  "graph_ev_nodes_checked": 2240
+ },
+ "agent6": "a6-0.4.14"
+}

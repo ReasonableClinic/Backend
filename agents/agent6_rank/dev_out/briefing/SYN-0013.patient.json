@@ -1,0 +1,345 @@
+{
+ "patient_id": "SYN-0013",
+ "as_of": "2026-10-01",
+ "audience": "patient",
+ "graph_file": "SYN-0013.json",
+ "ranking": [
+  "NCT06883305",
+  "NCT07190222",
+  "NCT07053423"
+ ],
+ "sentences": [
+  {
+   "text": "이 안내는 치료 추천이 아니라, 연구(임상시험) 참여를 검토하실 때 참고하실 정보입니다.",
+   "refs": [
+    "rule:research_not_treatment"
+   ],
+   "kind": "rule"
+  },
+  {
+   "text": "1번 시험 — 지금 기록으로는 조건이 맞을 가능성이 높습니다.",
+   "refs": [
+    "label:NCT06883305",
+    "trial:NCT06883305"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "이 시험은 만성 폐쇄성 폐질환(COPD)을 연구 대상으로 합니다.",
+   "refs": [
+    "gloss:chronic_obstructive_pulmonary_disease_copd",
+    "trial:NCT06883305"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "3상 연구로, 많은 환자에게서 효과와 안전성을 기존 치료 등과 비교해 확인하는 단계입니다.",
+   "refs": [
+    "rule:phase_PHASE3",
+    "trial:NCT06883305"
+   ],
+   "kind": "rule"
+  },
+  {
+   "text": "이 시험은 참여자가 어느 치료를 받을지 무작위로 정해집니다.",
+   "refs": [
+    "rule:randomized",
+    "trial:NCT06883305"
+   ],
+   "kind": "rule"
+  },
+  {
+   "text": "참여자 일부는 시험약 대신 위약(효과가 없는 가짜 약)을 받을 수 있습니다.",
+   "refs": [
+    "rule:placebo",
+    "trial:NCT06883305"
+   ],
+   "kind": "rule"
+  },
+  {
+   "text": "참여자나 의료진이 누가 어떤 치료를 받는지 모르게 진행됩니다.",
+   "refs": [
+    "rule:blinded",
+    "trial:NCT06883305"
+   ],
+   "kind": "rule"
+  },
+  {
+   "text": "시험군: 테제펠루맙, 위약군: 위약.",
+   "refs": [
+    "gloss:placebo",
+    "gloss:tezepelumab",
+    "trial:NCT06883305"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "약 990명이 참여할 예정인 연구입니다.",
+   "refs": [
+    "trial:NCT06883305"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "기록에 있는 진단 만성 폐쇄성 폐질환(COPD), 만성 폐쇄성 폐질환 악화가 이 시험의 대상 조건과 맞습니다.",
+   "refs": [
+    "dec:NCT06883305:NCT06883305-I02:r1",
+    "dec:NCT06883305:NCT06883305-I05:r1",
+    "ev:SYN-0013-EV005",
+    "ev:SYN-0013-EV037",
+    "gloss:copd",
+    "gloss:copd_exacerbation"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "참여 전에 의료진이 확인할 항목이 3개 남아 있습니다.",
+   "refs": [
+    "dec:NCT06883305:NCT06883305-E03:r1",
+    "dec:NCT06883305:NCT06883305-E04:r1",
+    "dec:NCT06883305:NCT06883305-E06:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "국내 10곳에서 모집 중입니다.",
+   "refs": [
+    "trial:NCT06883305"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "2번 시험 — 지금 기록으로는 조건이 맞을 가능성이 높습니다.",
+   "refs": [
+    "label:NCT07190222",
+    "trial:NCT07190222"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "이 시험은 만성 폐쇄성 폐질환(COPD)을 연구 대상으로 합니다.",
+   "refs": [
+    "gloss:chronic_obstructive_pulmonary_disease",
+    "trial:NCT07190222"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "3상 연구로, 많은 환자에게서 효과와 안전성을 기존 치료 등과 비교해 확인하는 단계입니다.",
+   "refs": [
+    "rule:phase_PHASE3",
+    "trial:NCT07190222"
+   ],
+   "kind": "rule"
+  },
+  {
+   "text": "이 시험은 참여자가 어느 치료를 받을지 무작위로 정해집니다.",
+   "refs": [
+    "rule:randomized",
+    "trial:NCT07190222"
+   ],
+   "kind": "rule"
+  },
+  {
+   "text": "참여자 일부는 시험약 대신 위약(효과가 없는 가짜 약)을 받을 수 있습니다.",
+   "refs": [
+    "rule:placebo",
+    "trial:NCT07190222"
+   ],
+   "kind": "rule"
+  },
+  {
+   "text": "참여자나 의료진이 누가 어떤 치료를 받는지 모르게 진행됩니다.",
+   "refs": [
+    "rule:blinded",
+    "trial:NCT07190222"
+   ],
+   "kind": "rule"
+  },
+  {
+   "text": "시험군: Lunsekimig, 위약군: 위약.",
+   "refs": [
+    "gloss:placebo",
+    "trial:NCT07190222"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "약 942명이 참여할 예정인 연구입니다.",
+   "refs": [
+    "trial:NCT07190222"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "참여 전에 의료진이 확인할 항목이 3개 남아 있습니다.",
+   "refs": [
+    "dec:NCT07190222:NCT07190222-E04:r1",
+    "dec:NCT07190222:NCT07190222-E05:r1",
+    "dec:NCT07190222:NCT07190222-E07:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "국내 7곳에서 모집 중입니다.",
+   "refs": [
+    "trial:NCT07190222"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "3번 시험 — 아직 확인이 필요한 조건이 있습니다.",
+   "refs": [
+    "label:NCT07053423",
+    "trial:NCT07053423"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "이 시험은 만성 폐쇄성 폐질환(COPD)을 연구 대상으로 합니다.",
+   "refs": [
+    "gloss:chronic_obstructive_pulmonary_disease",
+    "trial:NCT07053423"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "4상 연구로, 이미 허가된 치료를 실제 진료에 가까운 상황에서 더 살펴보는 단계입니다.",
+   "refs": [
+    "rule:phase_PHASE4",
+    "trial:NCT07053423"
+   ],
+   "kind": "rule"
+  },
+  {
+   "text": "이 시험은 참여자가 어느 치료를 받을지 무작위로 정해집니다.",
+   "refs": [
+    "rule:randomized",
+    "trial:NCT07053423"
+   ],
+   "kind": "rule"
+  },
+  {
+   "text": "참여자 일부는 시험약 대신 위약(효과가 없는 가짜 약)을 받을 수 있습니다.",
+   "refs": [
+    "rule:placebo",
+    "trial:NCT07053423"
+   ],
+   "kind": "rule"
+  },
+  {
+   "text": "참여자나 의료진이 누가 어떤 치료를 받는지 모르게 진행됩니다.",
+   "refs": [
+    "rule:blinded",
+    "trial:NCT07053423"
+   ],
+   "kind": "rule"
+  },
+  {
+   "text": "시험군: 두필루맙, 위약군: 위약.",
+   "refs": [
+    "gloss:dupilumab",
+    "gloss:placebo",
+    "trial:NCT07053423"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "약 218명이 참여할 예정인 연구입니다.",
+   "refs": [
+    "trial:NCT07053423"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "진료 기록에서 찾아볼 것: 1가지.",
+   "refs": [
+    "crit:NCT07053423-I06",
+    "dec:NCT07053423:NCT07053423-I06:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "검사 결과가 필요한 것: 1가지.",
+   "refs": [
+    "crit:NCT07053423-I08",
+    "dec:NCT07053423:NCT07053423-I08:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "참여 전에 의료진이 확인할 항목이 3개 남아 있습니다.",
+   "refs": [
+    "dec:NCT07053423:NCT07053423-E03:r1",
+    "dec:NCT07053423:NCT07053423-E05:r1",
+    "dec:NCT07053423:NCT07053423-E06:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "국내 4곳에서 모집 중입니다.",
+   "refs": [
+    "trial:NCT07053423"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "시험약이 효과가 있을지는 아직 모르기 때문에 연구를 하는 것입니다.",
+   "refs": [
+    "rule:no_benefit_promise"
+   ],
+   "kind": "rule"
+  },
+  {
+   "text": "지금 받으실 수 있는 다른 치료 방법이 무엇인지도 의료진에게 물어보실 수 있습니다.",
+   "refs": [
+    "rule:ask_alternatives"
+   ],
+   "kind": "rule"
+  },
+  {
+   "text": "참여하면 방문 횟수, 검사, 기간처럼 해야 하는 일이 무엇인지도 미리 물어보실 수 있습니다.",
+   "refs": [
+    "rule:ask_burden"
+   ],
+   "kind": "rule"
+  },
+  {
+   "text": "최종 참여 가능 여부는 연구 담당 의료진이 직접 확인합니다.",
+   "refs": [
+    "rule:ask_clinician"
+   ],
+   "kind": "rule"
+  },
+  {
+   "text": "참여는 자유이며, 참여하지 않아도 지금 받고 계신 치료는 그대로 받으실 수 있습니다.",
+   "refs": [
+    "rule:voluntary"
+   ],
+   "kind": "rule"
+  },
+  {
+   "text": "참여하더라도 언제든 그만두실 수 있습니다.",
+   "refs": [
+    "rule:withdraw"
+   ],
+   "kind": "rule"
+  }
+ ],
+ "glossary": {
+  "mode": "glossary",
+  "sha256": "bb6135ef988f322486520df16e40f1b58d96404e99d31873c2dea5b8e38d3fed",
+  "rows_used": 7,
+  "draft": 0
+ },
+ "evidence": {
+  "files": [
+   "evidence_dev_haiku_v14_12.jsonl",
+   "evidence_dev_variants_haiku_v14_12.jsonl"
+  ],
+  "sha256": "daba4f5f1e16ec2eefc47311f5c13f85e6b5f218c85424f08f9af3d9bab09124",
+  "id_series": "haiku",
+  "graph_ev_nodes_checked": 2240
+ },
+ "agent6": "a6-0.4.14"
+}

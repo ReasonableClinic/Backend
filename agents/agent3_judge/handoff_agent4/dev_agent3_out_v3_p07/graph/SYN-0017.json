@@ -1,0 +1,5102 @@
+{
+ "patient_id": "SYN-0017",
+ "as_of": "2026-10-01",
+ "version": 1,
+ "nodes": [
+  {
+   "id": "trial:NCT06757634",
+   "kind": "trial",
+   "title": "Phase 3 Study of Gedatolisib as First-Line Treatment for Patients With HR-Positive, HER2-Negative Advanced Breast Cancer (VIKTORIA-2)"
+  },
+  {
+   "id": "crit:NCT06757634-I01",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Histologically or cytologically confirmed diagnosis of metastatic or locally advanced HR+/HER2- breast cancer",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06757634:NCT06757634-I01:r1",
+   "kind": "decision",
+   "trial_id": "NCT06757634",
+   "criterion_id": "NCT06757634-I01",
+   "status": "UNKNOWN",
+   "reason": "UNSUPPORTED",
+   "action": "med_record_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Iliac bone biopsy ER+/HER2 0 confirms metastatic disease histologically, but HR+/HER2- is described rather than fully documented; liver lesions unconfirmed.",
+   "missing_fact": "Histologic/cytologic confirmation of metastatic HR+/HER2- disease (bone biopsy ER+, HER2 0 is in the record; PR status of metastasis not documented)",
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0017-EV263",
+   "kind": "evidence",
+   "concept": "biomarker",
+   "term": "ER",
+   "value": "ER+",
+   "unit": null,
+   "observed_date": "2026-01-15",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:biomarker:er",
+   "kind": "concept",
+   "concept": "biomarker",
+   "term": "ER"
+  },
+  {
+   "id": "src:SYN-0017-D04:175-211",
+   "kind": "source",
+   "doc_id": "SYN-0017-D04",
+   "doc_type": "clinic_note",
+   "span": [
+    175,
+    211
+   ],
+   "text": "Biopsy of iliac lesion: ER+, HER2 0."
+  },
+  {
+   "id": "ev:SYN-0017-EV280",
+   "kind": "evidence",
+   "concept": "biomarker",
+   "term": "HER2",
+   "value": "HER2 0",
+   "unit": null,
+   "observed_date": "2026-09-14",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:biomarker:her2",
+   "kind": "concept",
+   "concept": "biomarker",
+   "term": "HER2"
+  },
+  {
+   "id": "src:SYN-0017-D09:334-418",
+   "kind": "source",
+   "doc_id": "SYN-0017-D09",
+   "doc_type": "clinic_note",
+   "span": [
+    334,
+    418
+   ],
+   "text": "Recurrence in bone 01/2026 after ~4 years on anastrozole (iliac biopsy ER+, HER2 0)."
+  },
+  {
+   "id": "ev:SYN-0017-EV031",
+   "kind": "evidence",
+   "concept": "metastasis",
+   "term": "liver lesions suspicious for metastases",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-03",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:metastasis:liver lesions suspicious for metastases",
+   "kind": "concept",
+   "concept": "metastasis",
+   "term": "liver lesions suspicious for metastases"
+  },
+  {
+   "id": "src:SYN-0017-D06:0-87",
+   "kind": "source",
+   "doc_id": "SYN-0017-D06",
+   "doc_type": "imaging_report",
+   "span": [
+    0,
+    87
+   ],
+   "text": "CT chest/abdomen/pelvis: new 1.6 cm and 0.9 cm liver lesions suspicious for metastases."
+  },
+  {
+   "id": "crit:NCT06757634-I02",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Adult females, pre- and/or post-menopausal, and adult males. Pre-menopausal (and peri-menopausal) women can be enrolled if amenable to treatment with an LHRH agonist. Patients are to have commenced concomitant treatment with LHRH agonist prior to or on Cycle 1, Day 1 and must be willing to continue for the duration of the study.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06757634:NCT06757634-I02:r1",
+   "kind": "decision",
+   "trial_id": "NCT06757634",
+   "criterion_id": "NCT06757634-I02",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "impossible_condition"
+   ],
+   "note": "Adult postmenopausal female meets the criterion; LHRH agonist requirement applies only to pre-/peri-menopausal women, so it is void here.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06757634-I03",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Negative pregnancy test for females of childbearing potential. Female subjects who are not surgically sterile must use a medically effective contraceptive method from screening until 2 years after the last dose of study treatment.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06757634:NCT06757634-I03:r1",
+   "kind": "decision",
+   "trial_id": "NCT06757634",
+   "criterion_id": "NCT06757634-I03",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "impossible_condition"
+   ],
+   "note": "Postmenopausal, no childbearing potential, not pregnant; pregnancy test and contraception requirement does not apply.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0017-EV266",
+   "kind": "evidence",
+   "concept": "childbearing_potential",
+   "term": null,
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-01-15",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:childbearing_potential",
+   "kind": "concept",
+   "concept": "childbearing_potential",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0017-D04:254-312",
+   "kind": "source",
+   "doc_id": "SYN-0017-D04",
+   "doc_type": "clinic_note",
+   "span": [
+    254,
+    312
+   ],
+   "text": "Menopause since age 49 (chemo-induced, confirmed by labs)."
+  },
+  {
+   "id": "ev:SYN-0017-EV117",
+   "kind": "evidence",
+   "concept": "pregnancy",
+   "term": null,
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-14",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:pregnancy",
+   "kind": "concept",
+   "concept": "pregnancy",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0017-D09:2143-2181",
+   "kind": "source",
+   "doc_id": "SYN-0017-D09",
+   "doc_type": "clinic_note",
+   "span": [
+    2143,
+    2181
+   ],
+   "text": "Not pregnant, no contraception needed."
+  },
+  {
+   "id": "crit:NCT06757634-I04",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Progression of disease during or within 12 months of completing (neo)adjuvant endocrine therapy (ET) or progression of disease after 12 months of completing (neo)adjuvant ET.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06757634:NCT06757634-I04:r1",
+   "kind": "decision",
+   "trial_id": "NCT06757634",
+   "criterion_id": "NCT06757634-I04",
+   "status": "UNKNOWN",
+   "reason": "UNSUPPORTED",
+   "action": "med_record_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Recurred on anastrozole after ~4 years, stopped 2026-01 at recurrence; adjuvant ET progression criterion (on ET) not clearly matched.",
+   "missing_fact": "Whether anastrozole was (neo)adjuvant ET and timing of completion relative to recurrence",
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0017-EV018",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "recurrence on anastrozole",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-01-15",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "past"
+  },
+  {
+   "id": "concept:diagnosis:recurrence on anastrozole",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "recurrence on anastrozole"
+  },
+  {
+   "id": "src:SYN-0017-D04:131-174",
+   "kind": "source",
+   "doc_id": "SYN-0017-D04",
+   "doc_type": "clinic_note",
+   "span": [
+    131,
+    174
+   ],
+   "text": "Recurrence on anastrozole (after ~4 years)."
+  },
+  {
+   "id": "ev:SYN-0017-EV102",
+   "kind": "evidence",
+   "concept": "medication",
+   "term": "anastrozole 1 mg daily",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-01-01",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "stopped"
+  },
+  {
+   "id": "concept:medication:anastrozole 1 mg daily",
+   "kind": "concept",
+   "concept": "medication",
+   "term": "anastrozole 1 mg daily"
+  },
+  {
+   "id": "src:SYN-0017-D09:1682-1746",
+   "kind": "source",
+   "doc_id": "SYN-0017-D09",
+   "doc_type": "clinic_note",
+   "span": [
+    1682,
+    1746
+   ],
+   "text": "Anastrozole 1 mg daily (2021 to 2026-01), stopped for recurrence"
+  },
+  {
+   "id": "crit:NCT06757634-I05",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Adequate archival, fresh tumor tissue, or liquid biopsy for the analysis of PIK3CA mutational status.",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06757634:NCT06757634-I05:r1",
+   "kind": "decision",
+   "trial_id": "NCT06757634",
+   "criterion_id": "NCT06757634-I05",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "ctDNA liquid biopsy PIK3CA H1047R detected, so PIK3CA status is available from liquid biopsy.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0017-EV269",
+   "kind": "evidence",
+   "concept": "biomarker",
+   "term": "PIK3CA H1047R",
+   "value": "PIK3CA H1047R",
+   "unit": null,
+   "observed_date": "2026-09-03",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:biomarker:pik3ca h1047r",
+   "kind": "concept",
+   "concept": "biomarker",
+   "term": "PIK3CA H1047R"
+  },
+  {
+   "id": "src:SYN-0017-D07:0-45",
+   "kind": "source",
+   "doc_id": "SYN-0017-D07",
+   "doc_type": "lab_result",
+   "span": [
+    0,
+    45
+   ],
+   "text": "ctDNA (liquid biopsy): PIK3CA H1047R detected"
+  },
+  {
+   "id": "ev:SYN-0017-EV284",
+   "kind": "evidence",
+   "concept": "biomarker",
+   "term": "PIK3CA H1047R",
+   "value": "PIK3CA H1047R",
+   "unit": null,
+   "observed_date": "2026-09-14",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "src:SYN-0017-D09:551-608",
+   "kind": "source",
+   "doc_id": "SYN-0017-D09",
+   "doc_type": "clinic_note",
+   "span": [
+    551,
+    608
+   ],
+   "text": "bone lesions stable. ctDNA: PIK3CA H1047R and ESR1 Y537S."
+  },
+  {
+   "id": "crit:NCT06757634-I06",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Permitted prior therapies: (neo)adjuvant fulvestrant only if the treatment duration < 6 months; (neo)adjuvant chemotherapy; (neo)adjuvant CDK4/6 inhibitor, unless PD was on or within 6 months of discontinuation of CDK4/6i; Study 1: if disease progression was on or within event occurred >6 months of discontinuation after completion of CDK4/6 inhibitor portion of treatment.; Study 2: if disease progression event occurred >12 months after completion of CDK4/6 inhibitor portion of treatment.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06757634:NCT06757634-I06:r1",
+   "kind": "decision",
+   "trial_id": "NCT06757634",
+   "criterion_id": "NCT06757634-I06",
+   "status": "FAIL",
+   "reason": "VIOLATED",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "CDK4/6i (palbociclib) was given in metastatic setting, with progression on it; not a permitted prior therapy, and PD occurred on treatment.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0017-EV037",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "progression on CDK4/6 inhibitor + aromatase inhibitor",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:diagnosis:progression on cdk4/6 inhibitor + aromatase inhibitor",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "progression on CDK4/6 inhibitor + aromatase inhibitor"
+  },
+  {
+   "id": "src:SYN-0017-D08:0-65",
+   "kind": "source",
+   "doc_id": "SYN-0017-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    0,
+    65
+   ],
+   "text": "Progression on CDK4/6 inhibitor + AI after 8 months (liver mets)."
+  },
+  {
+   "id": "ev:SYN-0017-EV098",
+   "kind": "evidence",
+   "concept": "medication",
+   "term": "palbociclib 125 mg d1-21 q28d",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "stopped"
+  },
+  {
+   "id": "concept:medication:palbociclib 125 mg d1-21 q28d",
+   "kind": "concept",
+   "concept": "medication",
+   "term": "palbociclib 125 mg d1-21 q28d"
+  },
+  {
+   "id": "src:SYN-0017-D09:1511-1605",
+   "kind": "source",
+   "doc_id": "SYN-0017-D09",
+   "doc_type": "clinic_note",
+   "span": [
+    1511,
+    1605
+   ],
+   "text": "Palbociclib 125 mg d1-21 q28d (2026-01 to 2026-09-10), stopped for progression (liver lesions)"
+  },
+  {
+   "id": "ev:SYN-0017-EV061",
+   "kind": "evidence",
+   "concept": "medication",
+   "term": "palbociclib",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "stopped"
+  },
+  {
+   "id": "concept:medication:palbociclib",
+   "kind": "concept",
+   "concept": "medication",
+   "term": "palbociclib"
+  },
+  {
+   "id": "src:SYN-0017-D09:609-678",
+   "kind": "source",
+   "doc_id": "SYN-0017-D09",
+   "doc_type": "clinic_note",
+   "span": [
+    609,
+    678
+   ],
+   "text": "Palbociclib and letrozole were stopped on 2026-09-10 for progression."
+  },
+  {
+   "id": "crit:NCT06757634-I07",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Subject has radiologically measurable disease according to RECIST v1.1, per local assessment. Patients with nonmeasurable bone-only disease are not eligible. Patients with bone-only disease that has lytic or mixed lytic/blastic lesions and at least one measurable soft tissue component per RECIST v1.1 may be eligible.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06757634:NCT06757634-I07:r1",
+   "kind": "decision",
+   "trial_id": "NCT06757634",
+   "criterion_id": "NCT06757634-I07",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "CT 28 days ago shows measurable 1.6 cm liver lesion, so not bone-only; though suspicious, not biopsied.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0017-EV323",
+   "kind": "evidence",
+   "concept": "measurable_disease",
+   "term": "lesions 16 mm",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-03",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:measurable_disease:lesions 16 mm",
+   "kind": "concept",
+   "concept": "measurable_disease",
+   "term": "lesions 16 mm"
+  },
+  {
+   "id": "ev:SYN-0017-EV267",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "liver lesions 1.6 cm and 0.9 cm",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-03",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:symptom_finding:liver lesions 1.6 cm and 0.9 cm",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "liver lesions 1.6 cm and 0.9 cm"
+  },
+  {
+   "id": "crit:NCT06757634-I08",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Eastern Cooperative Oncology Group (ECOG) performance status of 0-2.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06757634:NCT06757634-I08:r1",
+   "kind": "decision",
+   "trial_id": "NCT06757634",
+   "criterion_id": "NCT06757634-I08",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "structured_numeric"
+   ],
+   "note": "ecog = 0 points (2026-09-10, -21d) vs between [0, 2] -> met",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0017-EV038",
+   "kind": "evidence",
+   "concept": "ecog",
+   "term": null,
+   "value": 0,
+   "unit": "points",
+   "observed_date": "2026-09-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:ecog",
+   "kind": "concept",
+   "concept": "ecog",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0017-D08:66-73",
+   "kind": "source",
+   "doc_id": "SYN-0017-D08",
+   "doc_type": "clinic_note",
+   "span": [
+    66,
+    73
+   ],
+   "text": "ECOG 0."
+  },
+  {
+   "id": "calc:NCT06757634:NCT06757634-I08",
+   "kind": "calculation",
+   "concept": "ecog",
+   "operator": "between",
+   "threshold": [
+    0,
+    2
+   ],
+   "unit": null,
+   "value": 0,
+   "value_unit": "points",
+   "observed_date": "2026-09-10",
+   "days_before": 21,
+   "note": "ecog = 0 points (2026-09-10, -21d) vs between [0, 2] -> met"
+  },
+  {
+   "id": "crit:NCT06757634-I09",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Life expectancy of at least >6 months.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06757634:NCT06757634-I09:r1",
+   "kind": "decision",
+   "trial_id": "NCT06757634",
+   "criterion_id": "NCT06757634-I09",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No life expectancy documented.",
+   "missing_fact": "Clinician estimate of life expectancy",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06757634-I10",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Adequate bone marrow, hepatic, renal and coagulation function.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06757634:NCT06757634-I10:r1",
+   "kind": "decision",
+   "trial_id": "NCT06757634",
+   "criterion_id": "NCT06757634-I10",
+   "status": "UNKNOWN",
+   "reason": "UNSUPPORTED",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Marrow, renal, INR normal; AST 41/ALT 46 mildly high with liver lesions; no thresholds stated, adequacy not decided.",
+   "missing_fact": "Trial-defined adequacy thresholds; AST/ALT mildly elevated (<1.5x ULN)",
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0017-EV207",
+   "kind": "evidence",
+   "concept": "anc",
+   "term": null,
+   "value": 2.0,
+   "unit": "10^9/L",
+   "observed_date": "2026-09-14",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:anc",
+   "kind": "concept",
+   "concept": "anc",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0017-D10:90-115",
+   "kind": "source",
+   "doc_id": "SYN-0017-D10",
+   "doc_type": "lab_result",
+   "span": [
+    90,
+    115
+   ],
+   "text": "ANC 2.0 x10^9/L (1.8-7.5)"
+  },
+  {
+   "id": "ev:SYN-0017-EV215",
+   "kind": "evidence",
+   "concept": "platelet_count",
+   "term": null,
+   "value": 172,
+   "unit": "10^9/L",
+   "observed_date": "2026-09-14",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:platelet_count",
+   "kind": "concept",
+   "concept": "platelet_count",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0017-D10:328-359",
+   "kind": "source",
+   "doc_id": "SYN-0017-D10",
+   "doc_type": "lab_result",
+   "span": [
+    328,
+    359
+   ],
+   "text": "Platelets 172 x10^9/L (150-400)"
+  },
+  {
+   "id": "ev:SYN-0017-EV212",
+   "kind": "evidence",
+   "concept": "hemoglobin",
+   "term": null,
+   "value": 12.1,
+   "unit": "g/dL",
+   "observed_date": "2026-09-14",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:hemoglobin",
+   "kind": "concept",
+   "concept": "hemoglobin",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0017-D10:250-282",
+   "kind": "source",
+   "doc_id": "SYN-0017-D10",
+   "doc_type": "lab_result",
+   "span": [
+    250,
+    282
+   ],
+   "text": "Hemoglobin 12.1 g/dL (12.0-16.0)"
+  },
+  {
+   "id": "ev:SYN-0017-EV221",
+   "kind": "evidence",
+   "concept": "creatinine",
+   "term": null,
+   "value": 0.8,
+   "unit": "mg/dL",
+   "observed_date": "2026-09-14",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:creatinine",
+   "kind": "concept",
+   "concept": "creatinine",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0017-D10:530-560",
+   "kind": "source",
+   "doc_id": "SYN-0017-D10",
+   "doc_type": "lab_result",
+   "span": [
+    530,
+    560
+   ],
+   "text": "Creatinine 0.8 mg/dL (0.5-1.0)"
+  },
+  {
+   "id": "ev:SYN-0017-EV222",
+   "kind": "evidence",
+   "concept": "egfr",
+   "term": null,
+   "value": 89,
+   "unit": "mL/min/1.73m2",
+   "observed_date": "2026-09-14",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:egfr",
+   "kind": "concept",
+   "concept": "egfr",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0017-D10:561-588",
+   "kind": "source",
+   "doc_id": "SYN-0017-D10",
+   "doc_type": "lab_result",
+   "span": [
+    561,
+    588
+   ],
+   "text": "eGFR 89 mL/min/1.73m2 (>60)"
+  },
+  {
+   "id": "ev:SYN-0017-EV229",
+   "kind": "evidence",
+   "concept": "ast",
+   "term": null,
+   "value": 41,
+   "unit": "U/L",
+   "observed_date": "2026-09-14",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:ast",
+   "kind": "concept",
+   "concept": "ast",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0017-D10:772-792",
+   "kind": "source",
+   "doc_id": "SYN-0017-D10",
+   "doc_type": "lab_result",
+   "span": [
+    772,
+    792
+   ],
+   "text": "AST 41 U/L (10-35) H"
+  },
+  {
+   "id": "ev:SYN-0017-EV230",
+   "kind": "evidence",
+   "concept": "alt",
+   "term": null,
+   "value": 46,
+   "unit": "U/L",
+   "observed_date": "2026-09-14",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:alt",
+   "kind": "concept",
+   "concept": "alt",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0017-D10:793-812",
+   "kind": "source",
+   "doc_id": "SYN-0017-D10",
+   "doc_type": "lab_result",
+   "span": [
+    793,
+    812
+   ],
+   "text": "ALT 46 U/L (7-35) H"
+  },
+  {
+   "id": "ev:SYN-0017-EV232",
+   "kind": "evidence",
+   "concept": "bilirubin_total",
+   "term": null,
+   "value": 0.7,
+   "unit": "mg/dL",
+   "observed_date": "2026-09-14",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:bilirubin_total",
+   "kind": "concept",
+   "concept": "bilirubin_total",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0017-D10:853-888",
+   "kind": "source",
+   "doc_id": "SYN-0017-D10",
+   "doc_type": "lab_result",
+   "span": [
+    853,
+    888
+   ],
+   "text": "Total bilirubin 0.7 mg/dL (0.2-1.2)"
+  },
+  {
+   "id": "ev:SYN-0017-EV241",
+   "kind": "evidence",
+   "concept": "inr",
+   "term": null,
+   "value": 1.0,
+   "unit": "ratio",
+   "observed_date": "2026-09-14",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:inr",
+   "kind": "concept",
+   "concept": "inr",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0017-D10:1127-1144",
+   "kind": "source",
+   "doc_id": "SYN-0017-D10",
+   "doc_type": "lab_result",
+   "span": [
+    1127,
+    1144
+   ],
+   "text": "INR 1.0 (0.9-1.2)"
+  },
+  {
+   "id": "crit:NCT06757634-E01",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Concurrent malignancies other than adequately treated non-melanoma skin cancer. Previous malignancies in remission but curatively treated with no evidence of disease progression and judged by local Investigator to be at low risk of impacting health or survival while on study.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06757634:NCT06757634-E01:r1",
+   "kind": "decision",
+   "trial_id": "NCT06757634",
+   "criterion_id": "NCT06757634-E01",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "'No other malignancy' documented; only the breast cancer under study.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0017-EV089",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "prior malignancy",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-14",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:prior malignancy",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "prior malignancy"
+  },
+  {
+   "id": "src:SYN-0017-D09:1186-1206",
+   "kind": "source",
+   "doc_id": "SYN-0017-D09",
+   "doc_type": "clinic_note",
+   "span": [
+    1186,
+    1206
+   ],
+   "text": "No other malignancy."
+  },
+  {
+   "id": "crit:NCT06757634-E02",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Prior treatment with a phosphoinositide 3-kinase (PI3K) inhibitor, a protein kinase B (Akt) inhibitor, or a mechanistic target of rapamycin (mTOR) inhibitor or any other selective estrogen receptor degrader (SERD), except fulvestrant, used in (neo)adjuvant setting.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06757634:NCT06757634-E02:r1",
+   "kind": "decision",
+   "trial_id": "NCT06757634",
+   "criterion_id": "NCT06757634-E02",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_history_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "list_inference",
+    "pc:strict_list_inference"
+   ],
+   "note": "[inferable PASS from SYN-0017-EV093] Reconciled medication list shows no PI3K, Akt, mTOR inhibitor or SERD; prior drugs were AI, CDK4/6i, AC-T.",
+   "missing_fact": null,
+   "derived_from": "SYN-0017-EV093"
+  },
+  {
+   "id": "crit:NCT06757634-E03",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Prior treatment with systemic anticancer therapy for ABC",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06757634:NCT06757634-E03:r1",
+   "kind": "decision",
+   "trial_id": "NCT06757634",
+   "criterion_id": "NCT06757634-E03",
+   "status": "FAIL",
+   "reason": "VIOLATED",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Received palbociclib + letrozole for advanced breast cancer (2026-01 to 2026-09-10), which is prior systemic therapy for ABC.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0017-EV100",
+   "kind": "evidence",
+   "concept": "medication",
+   "term": "letrozole 2.5 mg daily",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-10",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "stopped"
+  },
+  {
+   "id": "concept:medication:letrozole 2.5 mg daily",
+   "kind": "concept",
+   "concept": "medication",
+   "term": "letrozole 2.5 mg daily"
+  },
+  {
+   "id": "src:SYN-0017-D09:1608-1679",
+   "kind": "source",
+   "doc_id": "SYN-0017-D09",
+   "doc_type": "clinic_note",
+   "span": [
+    1608,
+    1679
+   ],
+   "text": "Letrozole 2.5 mg daily (2026-01 to 2026-09-10), stopped for progression"
+  },
+  {
+   "id": "crit:NCT06757634-E04",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Subjects with type 1 diabetes, or uncontrolled type 2 diabetes requiring daily insulin therapy.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06757634:NCT06757634-E04:r1",
+   "kind": "decision",
+   "trial_id": "NCT06757634",
+   "criterion_id": "NCT06757634-E04",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "'No diabetes' stated; HbA1c 5.6%.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0017-EV087",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "diabetes",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-14",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:diabetes",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "diabetes"
+  },
+  {
+   "id": "src:SYN-0017-D09:1147-1159",
+   "kind": "source",
+   "doc_id": "SYN-0017-D09",
+   "doc_type": "clinic_note",
+   "span": [
+    1147,
+    1159
+   ],
+   "text": "No diabetes."
+  },
+  {
+   "id": "ev:SYN-0017-EV234",
+   "kind": "evidence",
+   "concept": "hba1c",
+   "term": null,
+   "value": 5.6,
+   "unit": "%",
+   "observed_date": "2026-09-14",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:hba1c",
+   "kind": "concept",
+   "concept": "hba1c",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0017-D10:917-938",
+   "kind": "source",
+   "doc_id": "SYN-0017-D10",
+   "doc_type": "lab_result",
+   "span": [
+    917,
+    938
+   ],
+   "text": "HbA1c 5.6 % (4.0-5.6)"
+  },
+  {
+   "id": "crit:NCT06757634-E05",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Known and untreated, or active, brain or leptomeningeal metastases",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06757634:NCT06757634-E05:r1",
+   "kind": "decision",
+   "trial_id": "NCT06757634",
+   "criterion_id": "NCT06757634-E05",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_record_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No brain imaging or statement; absent neuro symptoms and neurologic history do not rule out CNS metastases.",
+   "missing_fact": "Brain imaging or statement on brain/leptomeningeal metastases",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06757634-E06",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "History of clinically significant cardiovascular abnormalities",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06757634:NCT06757634-E06:r1",
+   "kind": "decision",
+   "trial_id": "NCT06757634",
+   "criterion_id": "NCT06757634-E06",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation"
+   ],
+   "note": "No cardiac history documented in blanket negation of chronic cardiac disease.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0017-EV080",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "cardiac history",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-14",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:cardiac history",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "cardiac history"
+  },
+  {
+   "id": "src:SYN-0017-D09:1057-1146",
+   "kind": "source",
+   "doc_id": "SYN-0017-D09",
+   "doc_type": "clinic_note",
+   "span": [
+    1057,
+    1146
+   ],
+   "text": "No other cardiac, pulmonary, hepatic, renal, autoimmune, endocrine or neurologic history."
+  },
+  {
+   "id": "crit:NCT06757634-E07",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Known, clinically significant ophthalmic conditions",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06757634:NCT06757634-E07:r1",
+   "kind": "decision",
+   "trial_id": "NCT06757634",
+   "criterion_id": "NCT06757634-E07",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No ophthalmic history mentioned; blanket negation does not cover eyes.",
+   "missing_fact": "Ophthalmic history or eye exam",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06757634-E08",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "History of drug-induced symptomatic interstitial lung disease (pneumonitis) or hepatitis",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06757634:NCT06757634-E08:r1",
+   "kind": "decision",
+   "trial_id": "NCT06757634",
+   "criterion_id": "NCT06757634-E08",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation"
+   ],
+   "note": "No pulmonary or hepatic history; hepatitis serologies nonreactive; no drug-induced ILD or hepatitis recorded.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0017-EV081",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "pulmonary history",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-14",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:pulmonary history",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "pulmonary history"
+  },
+  {
+   "id": "ev:SYN-0017-EV082",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "hepatic history",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-14",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:hepatic history",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "hepatic history"
+  },
+  {
+   "id": "label:NCT06757634",
+   "kind": "trial_decision",
+   "label": "ineligible",
+   "why": [
+    "FAIL NCT06757634-I06",
+    "FAIL NCT06757634-E03"
+   ],
+   "by": "agent3"
+  },
+  {
+   "id": "trial:NCT06982521",
+   "kind": "trial",
+   "title": "Phase 3 Study of RLY-2608 + Fulvestrant vs Capivasertib + Fulvestrant as Treatment for Locally Advanced or Metastatic PIK3CA-mutant HR+/HER2- Breast Cancer"
+  },
+  {
+   "id": "crit:NCT06982521-I01",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Patient has ECOG performance status of 0-1",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06982521:NCT06982521-I01:r1",
+   "kind": "decision",
+   "trial_id": "NCT06982521",
+   "criterion_id": "NCT06982521-I01",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "structured_numeric"
+   ],
+   "note": "ecog = 0 points (2026-09-10, -21d) vs between [0, 1] -> met",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "calc:NCT06982521:NCT06982521-I01",
+   "kind": "calculation",
+   "concept": "ecog",
+   "operator": "between",
+   "threshold": [
+    0,
+    1
+   ],
+   "unit": null,
+   "value": 0,
+   "value_unit": "points",
+   "observed_date": "2026-09-10",
+   "days_before": 21,
+   "note": "ecog = 0 points (2026-09-10, -21d) vs between [0, 1] -> met"
+  },
+  {
+   "id": "crit:NCT06982521-I02",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "One or more known primary oncogenic PIK3CA mutation(s)",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06982521:NCT06982521-I02:r1",
+   "kind": "decision",
+   "trial_id": "NCT06982521",
+   "criterion_id": "NCT06982521-I02",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "ctDNA detected PIK3CA H1047R, a known oncogenic hotspot mutation, 28 days ago.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06982521-I03",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Adult females, pre- and/or post-menopausal, and adult males. Pre-menopausal (and peri-menopausal) women can be enrolled if amenable to treatment with a gonadotropin-releasing hormone (GnRH) agonist. Patients are to have commenced treatment with a GnRH agonist at least 2 weeks prior to randomization and must be willing to continue on it for the duration of the study.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06982521:NCT06982521-I03:r1",
+   "kind": "decision",
+   "trial_id": "NCT06982521",
+   "criterion_id": "NCT06982521-I03",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Adult postmenopausal female; the GnRH agonist requirement applies only to pre- or peri-menopausal women.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0017-EV012",
+   "kind": "evidence",
+   "concept": "sex",
+   "term": null,
+   "value": "female",
+   "unit": null,
+   "observed_date": "2026-01-15",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:sex",
+   "kind": "concept",
+   "concept": "sex",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0017-D03:0-7",
+   "kind": "source",
+   "doc_id": "SYN-0017-D03",
+   "doc_type": "registration",
+   "span": [
+    0,
+    7
+   ],
+   "text": "Female."
+  },
+  {
+   "id": "ev:SYN-0017-EV265",
+   "kind": "evidence",
+   "concept": "menopausal_status",
+   "term": null,
+   "value": "postmenopausal",
+   "unit": null,
+   "observed_date": "2026-01-15",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:menopausal_status",
+   "kind": "concept",
+   "concept": "menopausal_status",
+   "term": null
+  },
+  {
+   "id": "crit:NCT06982521-I04",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Histologically or cytologically confirmed diagnosis of HR+/HER2- locally advanced or metastatic breast cancer (ABC) with radiological or objective evidence of recurrence or progression; locally advanced disease must not be amenable to resection with curative intent",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06982521:NCT06982521-I04:r1",
+   "kind": "decision",
+   "trial_id": "NCT06982521",
+   "criterion_id": "NCT06982521-I04",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Biopsy-proven ER+/HER2 0 bone recurrence; stage IV with progression on CDK4/6 inhibitor + AI, documented on imaging.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0017-EV195",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "progression on first-line CDK4/6 inhibitor + aromatase inhibitor",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-14",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:diagnosis:progression on first-line cdk4/6 inhibitor + aromatase inhibitor",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "progression on first-line CDK4/6 inhibitor + aromatase inhibitor"
+  },
+  {
+   "id": "src:SYN-0017-D09:3948-4035",
+   "kind": "source",
+   "doc_id": "SYN-0017-D09",
+   "doc_type": "clinic_note",
+   "span": [
+    3948,
+    4035
+   ],
+   "text": "Metastatic HR+/HER2- breast cancer with progression on first-line CDK4/6 inhibitor + AI"
+  },
+  {
+   "id": "ev:SYN-0017-EV175",
+   "kind": "evidence",
+   "concept": "cancer_stage",
+   "term": null,
+   "value": "Stage IV",
+   "unit": null,
+   "observed_date": "2026-09-14",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:cancer_stage",
+   "kind": "concept",
+   "concept": "cancer_stage",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0017-D09:3335-3458",
+   "kind": "source",
+   "doc_id": "SYN-0017-D09",
+   "doc_type": "clinic_note",
+   "span": [
+    3335,
+    3458
+   ],
+   "text": "Stage IV (recurrent metastatic) HR+/HER2- breast cancer: multiple osteoblastic bone lesions (thoracic/lumbar spine, pelvis)"
+  },
+  {
+   "id": "ev:SYN-0017-EV022",
+   "kind": "evidence",
+   "concept": "biomarker",
+   "term": "HER2",
+   "value": "HER2 0",
+   "unit": null,
+   "observed_date": "2026-01-15",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "crit:NCT06982521-I05",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Measurable disease per RECIST v1.1 or evaluable bone-only disease.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06982521:NCT06982521-I05:r1",
+   "kind": "decision",
+   "trial_id": "NCT06982521",
+   "criterion_id": "NCT06982521-I05",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Measurable disease: 1.6 cm liver lesion on CT 28 days ago, within the 90-day imaging window.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06982521-I06",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Must have radiological evidence of progression on or after previous treatment for HR+/HER2- ABC with: At least 1 and no more than 2 lines of endocrine therapy (ET) in the (neo)adjuvant setting with recurrence on or within 12 months of completion or in the ABC setting; Only 1 prior line of CDK4/6 inhibitor therapy in one of the following settings: CDK4/6 inhibitor + ET in the ABC setting; CDK4/6 inhibitor therapy in the adjuvant setting if progression occurred during or within 12 months of completion of adjuvant CDK4/6 inhibitor with ET; Patients who progressed during or within 12 months of completion of adjuvant CDK4/6 inhibitor and after receiving CDK4/6 inhibitor therapy in the advanced setting are considered to have had >1 prior line of CDK4/6 inhibitor and are not eligible",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06982521:NCT06982521-I06:r1",
+   "kind": "decision",
+   "trial_id": "NCT06982521",
+   "criterion_id": "NCT06982521-I06",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Adjuvant anastrozole (one ET line) with recurrence on it, then first-line palbociclib + letrozole with progression; only one CDK4/6 line.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06982521-E01",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Prior treatment with any of the following: CDK2 inhibitors. Prior treatment with other investigational CDK inhibitors could be permitted upon discussion and approval from the Sponsor; PIK3, AKT, or mTOR inhibitors or any agent whose mechanism of action is the inhibit the PIK3/AKT/mTOR pathway; Immunotherapy; Antibody drug conjugates",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06982521:NCT06982521-E01:r1",
+   "kind": "decision",
+   "trial_id": "NCT06982521",
+   "criterion_id": "NCT06982521-E01",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_history_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Listed treatments (AC-T, AI, palbociclib, denosumab) are none of the excluded classes, but no explicit statement rules out the rest; the list is not clearly complete.",
+   "missing_fact": "Confirmation that the patient never received CDK2, PI3K/AKT/mTOR inhibitors, immunotherapy or ADCs",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06982521-E02",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Type 1 diabetes, or Type 2 diabetes requiring antihyperglycemic medication, or fasting plasma glucose >= 140 mg/dL (7.8 mmol/L), or glycosylated hemoglobin (HbA1c) >=7.0% (>= 53 mmol/mol).",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06982521:NCT06982521-E02:r1",
+   "kind": "decision",
+   "trial_id": "NCT06982521",
+   "criterion_id": "NCT06982521-E02",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No diabetes, fasting glucose 94 mg/dL, HbA1c 5.6%, no antihyperglycemic medication.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0017-EV223",
+   "kind": "evidence",
+   "concept": "glucose",
+   "term": null,
+   "value": 94,
+   "unit": "mg/dL",
+   "observed_date": "2026-09-14",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:glucose",
+   "kind": "concept",
+   "concept": "glucose",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0017-D10:589-622",
+   "kind": "source",
+   "doc_id": "SYN-0017-D10",
+   "doc_type": "lab_result",
+   "span": [
+    589,
+    622
+   ],
+   "text": "Glucose, fasting 94 mg/dL (70-99)"
+  },
+  {
+   "id": "crit:NCT06982521-E03",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Clinically significant, uncontrolled cardiovascular disease",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06982521:NCT06982521-E03:r1",
+   "kind": "decision",
+   "trial_id": "NCT06982521",
+   "criterion_id": "NCT06982521-E03",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation"
+   ],
+   "note": "No cardiac history (blanket negation); BP 122/76, no cardiac symptoms.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06982521-E04",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Any factors that increase the risk of QTc prolongation or risk of arrhythmic events",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06982521:NCT06982521-E04:r1",
+   "kind": "decision",
+   "trial_id": "NCT06982521",
+   "criterion_id": "NCT06982521-E04",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "new_test",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No ECG or QTc in the record; cardiac history denial does not cover ECG values or risk factors.",
+   "missing_fact": "Current ECG with QTc and review of QT-prolonging medications",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06982521-E05",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Known active uncontrolled or symptomatic CNS metastases associated with progressive neurological symptoms or requiring ongoing corticosteroids or anticonvulsants for symptomatic control",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06982521:NCT06982521-E05:r1",
+   "kind": "decision",
+   "trial_id": "NCT06982521",
+   "criterion_id": "NCT06982521-E05",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_record_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No CNS metastases mentioned; normal neuro exam and no headache do not prove absence.",
+   "missing_fact": "Brain imaging or an explicit statement on CNS metastases",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT06982521-E06",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Past medical history of interstitial lung disease, drug-induced interstitial lung disease, radiation pneumonitis which required steroid treatment, or any evidence of clinically active interstitial lung disease",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06982521:NCT06982521-E06:r1",
+   "kind": "decision",
+   "trial_id": "NCT06982521",
+   "criterion_id": "NCT06982521-E06",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation"
+   ],
+   "note": "No pulmonary history and no lung disease; this covers chronic ILD history.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0017-EV179",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "lung disease",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-14",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:diagnosis:lung disease",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "lung disease"
+  },
+  {
+   "id": "src:SYN-0017-D09:3513-3529",
+   "kind": "source",
+   "doc_id": "SYN-0017-D09",
+   "doc_type": "clinic_note",
+   "span": [
+    3513,
+    3529
+   ],
+   "text": "no lung disease."
+  },
+  {
+   "id": "crit:NCT06982521-E07",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "History of hypersensitivity to fulvestrant or drugs in a similar class as fulvestrant, zovegalisib, or capivasertib, including their excipients",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06982521:NCT06982521-E07:r1",
+   "kind": "decision",
+   "trial_id": "NCT06982521",
+   "criterion_id": "NCT06982521-E07",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "NKDA documented; only seasonal allergic rhinitis recorded.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0017-EV092",
+   "kind": "evidence",
+   "concept": "allergy",
+   "term": "no known drug allergies",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-14",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:allergy:no known drug allergies",
+   "kind": "concept",
+   "concept": "allergy",
+   "term": "no known drug allergies"
+  },
+  {
+   "id": "src:SYN-0017-D09:1322-1327",
+   "kind": "source",
+   "doc_id": "SYN-0017-D09",
+   "doc_type": "clinic_note",
+   "span": [
+    1322,
+    1327
+   ],
+   "text": "NKDA."
+  },
+  {
+   "id": "crit:NCT06982521-E08",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Known activating AKT mutations, loss-of-function PTEN mutations, or loss of PTEN expression resulting in oncogenic pathway activation downstream of PI3K",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT06982521:NCT06982521-E08:r1",
+   "kind": "decision",
+   "trial_id": "NCT06982521",
+   "criterion_id": "NCT06982521-E08",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "lab_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "ctDNA lists only PIK3CA and ESR1 findings; AKT and PTEN status are not reported.",
+   "missing_fact": "AKT/PTEN mutation or PTEN expression results",
+   "derived_from": null
+  },
+  {
+   "id": "label:NCT06982521",
+   "kind": "trial_decision",
+   "label": "eligible",
+   "why": [],
+   "by": "agent3"
+  },
+  {
+   "id": "trial:NCT03424005",
+   "kind": "trial",
+   "title": "A Study Evaluating the Efficacy and Safety of Multiple Treatment Combinations in Patients With Metastatic or Locally Advanced Breast Cancer"
+  },
+  {
+   "id": "crit:NCT03424005-I01",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Patients must meet all of the following criteria to qualify for Stage 1 (all cohorts) and to qualify for Stage 2 (2L CIT-naïve cohort):",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT03424005:NCT03424005-I01:r1",
+   "kind": "decision",
+   "trial_id": "NCT03424005",
+   "criterion_id": "NCT03424005-I01",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Header line only; it is decided by the individual criteria below it.",
+   "missing_fact": "Outcome of the sub-criteria that this header introduces",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT03424005-I02",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Age >/= 18 years at the time of signing Informed Consent Form",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT03424005:NCT03424005-I02:r1",
+   "kind": "decision",
+   "trial_id": "NCT03424005",
+   "criterion_id": "NCT03424005-I02",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "structured_numeric"
+   ],
+   "note": "age = 52 years (2026-09-14, -17d) vs >= 18 -> met",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0017-EV046",
+   "kind": "evidence",
+   "concept": "age",
+   "term": null,
+   "value": 52,
+   "unit": "years",
+   "observed_date": "2026-09-14",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:age",
+   "kind": "concept",
+   "concept": "age",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0017-D09:141-203",
+   "kind": "source",
+   "doc_id": "SYN-0017-D09",
+   "doc_type": "clinic_note",
+   "span": [
+    141,
+    203
+   ],
+   "text": "52-year-old postmenopausal woman with HR+/HER2- breast cancer."
+  },
+  {
+   "id": "calc:NCT03424005:NCT03424005-I02",
+   "kind": "calculation",
+   "concept": "age",
+   "operator": ">=",
+   "threshold": 18,
+   "unit": "years",
+   "value": 52,
+   "value_unit": "years",
+   "observed_date": "2026-09-14",
+   "days_before": 17,
+   "note": "age = 52 years (2026-09-14, -17d) vs >= 18 -> met"
+  },
+  {
+   "id": "crit:NCT03424005-I03",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Eastern cooperative oncology group (ECOG) performance status of 0 or 1",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT03424005:NCT03424005-I03:r1",
+   "kind": "decision",
+   "trial_id": "NCT03424005",
+   "criterion_id": "NCT03424005-I03",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "structured_categorical"
+   ],
+   "note": "ecog = 0 vs in [0, 1]",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "calc:NCT03424005:NCT03424005-I03",
+   "kind": "calculation",
+   "concept": "ecog",
+   "operator": "in",
+   "threshold": [
+    0,
+    1
+   ],
+   "unit": null,
+   "value": 0,
+   "observed_date": "2026-09-10",
+   "note": "ecog = 0 vs in [0, 1]"
+  },
+  {
+   "id": "crit:NCT03424005-I04",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Able to comply with the study protocol, in the investigator's judgment",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT03424005:NCT03424005-I04:r1",
+   "kind": "decision",
+   "trial_id": "NCT03424005",
+   "criterion_id": "NCT03424005-I04",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "admin"
+   ],
+   "note": "consent/compliance item: not decidable from the record",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT03424005-I05",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Metastatic or inoperable locally advanced adenocarcinoma of the breast",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT03424005:NCT03424005-I05:r1",
+   "kind": "decision",
+   "trial_id": "NCT03424005",
+   "criterion_id": "NCT03424005-I05",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Stage IV metastatic HR+/HER2- breast cancer; invasive ductal carcinoma is an adenocarcinoma.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0017-EV193",
+   "kind": "evidence",
+   "concept": "metastasis",
+   "term": null,
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-14",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:metastasis",
+   "kind": "concept",
+   "concept": "metastasis",
+   "term": null
+  },
+  {
+   "id": "ev:SYN-0017-EV002",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "invasive ductal carcinoma",
+   "value": true,
+   "unit": null,
+   "observed_date": "2021-04-02",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "past"
+  },
+  {
+   "id": "concept:diagnosis:invasive ductal carcinoma",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "invasive ductal carcinoma"
+  },
+  {
+   "id": "src:SYN-0017-D01:13-50",
+   "kind": "source",
+   "doc_id": "SYN-0017-D01",
+   "doc_type": "pathology_report",
+   "span": [
+    13,
+    50
+   ],
+   "text": "mastectomy: invasive ductal carcinoma"
+  },
+  {
+   "id": "crit:NCT03424005-I06",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Measurable disease (at least one target lesion) according to RECIST v1.1",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT03424005:NCT03424005-I06:r1",
+   "kind": "decision",
+   "trial_id": "NCT03424005",
+   "criterion_id": "NCT03424005-I06",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Measurable liver lesion 1.6 cm (16 mm) on CT 28 days ago, within the 90-day imaging window.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0017-EV178",
+   "kind": "evidence",
+   "concept": "metastasis",
+   "term": "liver lesions 1.6 cm and 0.9 cm",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-03",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:metastasis:liver lesions 1.6 cm and 0.9 cm",
+   "kind": "concept",
+   "concept": "metastasis",
+   "term": "liver lesions 1.6 cm and 0.9 cm"
+  },
+  {
+   "id": "src:SYN-0017-D09:3460-3511",
+   "kind": "source",
+   "doc_id": "SYN-0017-D09",
+   "doc_type": "clinic_note",
+   "span": [
+    3460,
+    3511
+   ],
+   "text": "new liver lesions 1.6 cm and 0.9 cm (CT 2026-09-03)"
+  },
+  {
+   "id": "crit:NCT03424005-I07",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Life expectancy >/= 3 months, as determined by the investigator",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT03424005:NCT03424005-I07:r1",
+   "kind": "decision",
+   "trial_id": "NCT03424005",
+   "criterion_id": "NCT03424005-I07",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No life expectancy statement in the record; ECOG 0 is not an estimate.",
+   "missing_fact": "Investigator estimate of life expectancy (>=3 months)",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT03424005-I08",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Tumor accessible for biopsy, unless archival tissue is available",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT03424005:NCT03424005-I08:r1",
+   "kind": "decision",
+   "trial_id": "NCT03424005",
+   "criterion_id": "NCT03424005-I08",
+   "status": "UNKNOWN",
+   "reason": "UNSUPPORTED",
+   "action": "med_record_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Liver biopsy only 'considered'; a 2021 mastectomy pathology exists, but tissue availability is not stated.",
+   "missing_fact": "Whether a lesion is accessible for biopsy or archival tissue is available",
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0017-EV198",
+   "kind": "evidence",
+   "concept": "treatment_plan",
+   "term": "liver lesion biopsy",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-14",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "planned"
+  },
+  {
+   "id": "concept:treatment_plan:liver lesion biopsy",
+   "kind": "concept",
+   "concept": "treatment_plan",
+   "term": "liver lesion biopsy"
+  },
+  {
+   "id": "src:SYN-0017-D09:4218-4303",
+   "kind": "source",
+   "doc_id": "SYN-0017-D09",
+   "doc_type": "clinic_note",
+   "span": [
+    4218,
+    4303
+   ],
+   "text": "Consider biopsy of liver lesion to confirm metastatic disease and re-check receptors."
+  },
+  {
+   "id": "ev:SYN-0017-EV001",
+   "kind": "evidence",
+   "concept": "procedure",
+   "term": "mastectomy",
+   "value": true,
+   "unit": null,
+   "observed_date": "2021-04-02",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "past"
+  },
+  {
+   "id": "concept:procedure:mastectomy",
+   "kind": "concept",
+   "concept": "procedure",
+   "term": "mastectomy"
+  },
+  {
+   "id": "crit:NCT03424005-I09",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Availability of a representative tumor specimen that is suitable for biomarker analysis via central testing",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT03424005:NCT03424005-I09:r1",
+   "kind": "decision",
+   "trial_id": "NCT03424005",
+   "criterion_id": "NCT03424005-I09",
+   "status": "UNKNOWN",
+   "reason": "UNSUPPORTED",
+   "action": "med_record_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Past mastectomy and iliac biopsy were done; specimen availability or suitability is not documented.",
+   "missing_fact": "Availability of a specimen suitable for central biomarker testing",
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0017-EV020",
+   "kind": "evidence",
+   "concept": "procedure",
+   "term": "biopsy of iliac lesion",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-01-15",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "past"
+  },
+  {
+   "id": "concept:procedure:biopsy of iliac lesion",
+   "kind": "concept",
+   "concept": "procedure",
+   "term": "biopsy of iliac lesion"
+  },
+  {
+   "id": "crit:NCT03424005-I10",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "Adequate hematologic and end-organ function, defined by the following laboratory test results, obtained within 14 days prior to initiation of study treatment",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT03424005:NCT03424005-I10:r1",
+   "kind": "decision",
+   "trial_id": "NCT03424005",
+   "criterion_id": "NCT03424005-I10",
+   "status": "UNKNOWN",
+   "reason": "EXPIRED",
+   "action": "new_test",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Labs are 17 days old, outside the 14-day window; AST/ALT only mildly high.",
+   "missing_fact": "Hematology and organ-function labs within 14 days before study treatment",
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0017-EV206",
+   "kind": "evidence",
+   "concept": "wbc",
+   "term": null,
+   "value": 4.3,
+   "unit": "10^9/L",
+   "observed_date": "2026-09-14",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "concept:wbc",
+   "kind": "concept",
+   "concept": "wbc",
+   "term": null
+  },
+  {
+   "id": "src:SYN-0017-D10:63-89",
+   "kind": "source",
+   "doc_id": "SYN-0017-D10",
+   "doc_type": "lab_result",
+   "span": [
+    63,
+    89
+   ],
+   "text": "WBC 4.3 x10^9/L (4.0-11.0)"
+  },
+  {
+   "id": "crit:NCT03424005-I11",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "For women of childbearing potential: agreement to remain abstinent (refrain from heterosexual intercourse) or use contraceptive measures and agreement to refrain from breastfeeding and donating eggs, as outlined for each specific treatment arm",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT03424005:NCT03424005-I11:r1",
+   "kind": "decision",
+   "trial_id": "NCT03424005",
+   "criterion_id": "NCT03424005-I11",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "impossible_condition"
+   ],
+   "note": "Postmenopausal since chemo-induced menopause, no childbearing potential; item does not apply.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0017-EV296",
+   "kind": "evidence",
+   "concept": "childbearing_potential",
+   "term": null,
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-14",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": null
+  },
+  {
+   "id": "src:SYN-0017-D09:2067-2081",
+   "kind": "source",
+   "doc_id": "SYN-0017-D09",
+   "doc_type": "clinic_note",
+   "span": [
+    2067,
+    2081
+   ],
+   "text": "Postmenopausal"
+  },
+  {
+   "id": "crit:NCT03424005-I12",
+   "kind": "criterion",
+   "type": "inclusion",
+   "text": "For men: agreement to remain abstinent (refrain from heterosexual intercourse) or use contraceptive measures, and agreement to refrain from donating sperm, as outlined for each specific treatment arm",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT03424005:NCT03424005-I12:r1",
+   "kind": "decision",
+   "trial_id": "NCT03424005",
+   "criterion_id": "NCT03424005-I12",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "rule",
+   "round": 1,
+   "rule_tags": [
+    "impossible",
+    "sex_rule"
+   ],
+   "note": "applies only to men; patient is female",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT03424005-E01",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Prior treatment with T-cell co-stimulating or immune checkpoint blockade therapies, including anti-CTLA-4, anti-PD-1, and anti-PD-L1 therapeutic antibodies, CD40 agonists or interleukin-2 (IL-2) or IL-2-like compounds",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT03424005:NCT03424005-E01:r1",
+   "kind": "decision",
+   "trial_id": "NCT03424005",
+   "criterion_id": "NCT03424005-E01",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_history_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Documented therapies include no immunotherapy, but no explicit denial and the list is not stated complete.",
+   "missing_fact": "Any prior checkpoint inhibitor, CD40 agonist or IL-2 therapy",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT03424005-E02",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Biologic treatment (e.g., bevacizumab) within 2 weeks prior to initiation of study treatment, or other systemic treatment for TNBC within 2 weeks or 5 half-lives of the drug (whichever is longer) prior to initiation of study treatment",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT03424005:NCT03424005-E02:r1",
+   "kind": "decision",
+   "trial_id": "NCT03424005",
+   "criterion_id": "NCT03424005-E02",
+   "status": "UNKNOWN",
+   "reason": "UNSUPPORTED",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Denosumab q4w is current and a biologic; last dose date not given. Palbociclib/letrozole stopped 21 days ago, outside 14 days.",
+   "missing_fact": "Whether current denosumab (a monoclonal antibody) counts as biologic treatment, and date of last dose",
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0017-EV189",
+   "kind": "evidence",
+   "concept": "medication",
+   "term": "denosumab",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-14",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:medication:denosumab",
+   "kind": "concept",
+   "concept": "medication",
+   "term": "denosumab"
+  },
+  {
+   "id": "src:SYN-0017-D09:3794-3899",
+   "kind": "source",
+   "doc_id": "SYN-0017-D09",
+   "doc_type": "clinic_note",
+   "span": [
+    3794,
+    3899
+   ],
+   "text": "Bone health: on denosumab, calcium 9.4 on 2026-09-10, no skeletal-related events, no pathologic fracture."
+  },
+  {
+   "id": "ev:SYN-0017-EV201",
+   "kind": "evidence",
+   "concept": "medication",
+   "term": "denosumab q4w",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-14",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:medication:denosumab q4w",
+   "kind": "concept",
+   "concept": "medication",
+   "term": "denosumab q4w"
+  },
+  {
+   "id": "src:SYN-0017-D09:4307-4369",
+   "kind": "source",
+   "doc_id": "SYN-0017-D09",
+   "doc_type": "clinic_note",
+   "span": [
+    4307,
+    4369
+   ],
+   "text": "Bone metastases: continue denosumab q4w with calcium/vitamin D"
+  },
+  {
+   "id": "crit:NCT03424005-E03",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Treatment with systemic immunosuppressive medication (including, but not limited to, corticosteroids, cyclophosphamide, azathioprine, methotrexate, thalidomide, and anti-tumor necrosis factor alpha agents) within 2 weeks prior to initiation of study treatment, or anticipation of need for systemic immunosuppressive medication during the course of the study",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT03424005:NCT03424005-E03:r1",
+   "kind": "decision",
+   "trial_id": "NCT03424005",
+   "criterion_id": "NCT03424005-E03",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_history_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "list_inference",
+    "pc:strict_list_inference"
+   ],
+   "note": "[inferable PASS from SYN-0017-EV093] Reconciled list has denosumab, calcium/vitamin D and acetaminophen only; no immunosuppressant. No planned need documented.",
+   "missing_fact": null,
+   "derived_from": "SYN-0017-EV093"
+  },
+  {
+   "id": "crit:NCT03424005-E04",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Eligibility only for the control arm",
+   "administrative": true,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT03424005:NCT03424005-E04:r1",
+   "kind": "decision",
+   "trial_id": "NCT03424005",
+   "criterion_id": "NCT03424005-E04",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Arm eligibility is not decided by the record; the patient matches the HR+/PIK3CA-mutant experimental cohorts.",
+   "missing_fact": "Whether the patient qualifies only for the control arm",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT03424005-E05",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Adverse events from prior anti-cancer therapy that have not resolved to Grade </= 1 or better with the exception of alopecia of any grade and Grade </= 2 peripheral neuropathy",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT03424005:NCT03424005-E05:r1",
+   "kind": "decision",
+   "trial_id": "NCT03424005",
+   "criterion_id": "NCT03424005-E05",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Mild fatigue and mildly raised AST/ALT are not graded or attributed to therapy; no adverse event is documented.",
+   "missing_fact": "CTCAE grade of any residual toxicity from prior therapy",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT03424005-E06",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Treatment with investigational therapy within 28 days prior to initiation of study treatment",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT03424005:NCT03424005-E06:r1",
+   "kind": "decision",
+   "trial_id": "NCT03424005",
+   "criterion_id": "NCT03424005-E06",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_history_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "list_inference",
+    "pc:strict_list_inference"
+   ],
+   "note": "[inferable PASS from SYN-0017-EV093] Reconciled list shows only standard agents (palbociclib/letrozole stopped 21 days ago); no investigational drug.",
+   "missing_fact": null,
+   "derived_from": "SYN-0017-EV093"
+  },
+  {
+   "id": "crit:NCT03424005-E07",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Uncontrolled pleural effusion, pericardial effusion, or ascites requiring recurrent drainage procedures (once monthly or more frequently)",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT03424005:NCT03424005-E07:r1",
+   "kind": "decision",
+   "trial_id": "NCT03424005",
+   "criterion_id": "NCT03424005-E07",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation",
+    "pc:blanket_out_of_scope"
+   ],
+   "note": "[blanket negation out of A1 scope] No ascites on exam; no cardiac or pulmonary history; no dyspnea; no drainage procedures documented.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT03424005-E08",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Uncontrolled tumor-related pain",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT03424005:NCT03424005-E08:r1",
+   "kind": "decision",
+   "trial_id": "NCT03424005",
+   "criterion_id": "NCT03424005-E08",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Back pain mild, stable and controlled with occasional acetaminophen; not uncontrolled.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0017-EV063",
+   "kind": "evidence",
+   "concept": "symptom_finding",
+   "term": "back pain mild and stable",
+   "value": true,
+   "unit": null,
+   "observed_date": "2026-09-14",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "current"
+  },
+  {
+   "id": "concept:symptom_finding:back pain mild and stable",
+   "kind": "concept",
+   "concept": "symptom_finding",
+   "term": "back pain mild and stable"
+  },
+  {
+   "id": "src:SYN-0017-D09:679-750",
+   "kind": "source",
+   "doc_id": "SYN-0017-D09",
+   "doc_type": "clinic_note",
+   "span": [
+    679,
+    750
+   ],
+   "text": "Back pain is mild and stable, controlled with occasional acetaminophen."
+  },
+  {
+   "id": "crit:NCT03424005-E09",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Symptomatic, untreated, or actively progressing central nervous system (CNS) metastases",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT03424005:NCT03424005-E09:r1",
+   "kind": "decision",
+   "trial_id": "NCT03424005",
+   "criterion_id": "NCT03424005-E09",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_record_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No CNS imaging or statement; normal neuro exam and no headache do not exclude CNS metastases.",
+   "missing_fact": "Brain imaging or an explicit statement about CNS metastases",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT03424005-E10",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "History of leptomeningeal disease",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT03424005:NCT03424005-E10:r1",
+   "kind": "decision",
+   "trial_id": "NCT03424005",
+   "criterion_id": "NCT03424005-E10",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_record_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Not mentioned; normal neuro exam does not rule it out.",
+   "missing_fact": "Any history of leptomeningeal disease",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT03424005-E11",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Active or history of autoimmune disease or immune deficiency",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT03424005:NCT03424005-E11:r1",
+   "kind": "decision",
+   "trial_id": "NCT03424005",
+   "criterion_id": "NCT03424005-E11",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Autoimmune history denied, but immune deficiency is not explicitly covered beyond negative HIV.",
+   "missing_fact": "History of immune deficiency (autoimmune disease denied, HIV negative)",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT03424005-E12",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "History of idiopathic pulmonary fibrosis, organizing pneumonia (e.g., bronchiolitis obliterans), drug-induced pneumonitis, or idiopathic pneumonitis, or evidence of active pneumonitis on screening chest computed tomography (CT) scan. History of radiation pneumonitis in the radiation field (fibrosis) is permitted.",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT03424005:NCT03424005-E12:r1",
+   "kind": "decision",
+   "trial_id": "NCT03424005",
+   "criterion_id": "NCT03424005-E12",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation",
+    "pc:blanket_out_of_scope"
+   ],
+   "note": "[blanket negation out of A1 scope] No pulmonary history or lung disease documented; no lung lesions on recent CT.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT03424005-E13",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Active tuberculosis",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT03424005:NCT03424005-E13:r1",
+   "kind": "decision",
+   "trial_id": "NCT03424005",
+   "criterion_id": "NCT03424005-E13",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Infections are not covered by the pulmonary blanket negation; tuberculosis is not mentioned.",
+   "missing_fact": "Presence or absence of active tuberculosis",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT03424005-E14",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Severe infection within 4 weeks prior to initiation of study treatment",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT03424005:NCT03424005-E14:r1",
+   "kind": "decision",
+   "trial_id": "NCT03424005",
+   "criterion_id": "NCT03424005-E14",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "clinician_confirmation",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "No infection documented; absence of fever and normal WBC do not prove absence of severe infection.",
+   "missing_fact": "Any severe infection in the last 4 weeks",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT03424005-E15",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Treatment with therapeutic oral or IV antibiotics within 2 weeks prior to initiation of study treatment",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT03424005:NCT03424005-E15:r1",
+   "kind": "decision",
+   "trial_id": "NCT03424005",
+   "criterion_id": "NCT03424005-E15",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "med_history_check",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "list_inference",
+    "pc:strict_list_inference"
+   ],
+   "note": "[inferable PASS from SYN-0017-EV093] Reconciled medication list contains no antibiotic.",
+   "missing_fact": null,
+   "derived_from": "SYN-0017-EV093"
+  },
+  {
+   "id": "crit:NCT03424005-E16",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Significant cardiovascular disease",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT03424005:NCT03424005-E16:r1",
+   "kind": "decision",
+   "trial_id": "NCT03424005",
+   "criterion_id": "NCT03424005-E16",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [
+    "blanket_negation"
+   ],
+   "note": "No cardiac history and no thromboembolism; BP 122/76, no cardiac symptoms.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "ev:SYN-0017-EV088",
+   "kind": "evidence",
+   "concept": "diagnosis",
+   "term": "thromboembolism",
+   "value": false,
+   "unit": null,
+   "observed_date": "2026-09-14",
+   "certainty": "confirmed",
+   "subject": "patient",
+   "status": "observed"
+  },
+  {
+   "id": "concept:diagnosis:thromboembolism",
+   "kind": "concept",
+   "concept": "diagnosis",
+   "term": "thromboembolism"
+  },
+  {
+   "id": "src:SYN-0017-D09:1160-1185",
+   "kind": "source",
+   "doc_id": "SYN-0017-D09",
+   "doc_type": "clinic_note",
+   "span": [
+    1160,
+    1185
+   ],
+   "text": "No prior thromboembolism."
+  },
+  {
+   "id": "crit:NCT03424005-E17",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Prior allogeneic stem cell or solid organ transplantation",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT03424005:NCT03424005-E17:r1",
+   "kind": "decision",
+   "trial_id": "NCT03424005",
+   "criterion_id": "NCT03424005-E17",
+   "status": "UNKNOWN",
+   "reason": "MISSING",
+   "action": "patient_question",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Documented procedures (mastectomy, cesarean) list no transplant, but there is no explicit denial.",
+   "missing_fact": "Any prior allogeneic stem cell or solid organ transplant",
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT03424005-E18",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "History of malignancy other than breast cancer within 2 years prior to screening, with the exception of those with a negligible risk of metastasis or death",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT03424005:NCT03424005-E18:r1",
+   "kind": "decision",
+   "trial_id": "NCT03424005",
+   "criterion_id": "NCT03424005-E18",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "'No other malignancy' documented.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "crit:NCT03424005-E19",
+   "kind": "criterion",
+   "type": "exclusion",
+   "text": "Pregnancy or breastfeeding, or intention of becoming pregnant during the study",
+   "administrative": false,
+   "cohort": null
+  },
+  {
+   "id": "dec:NCT03424005:NCT03424005-E19:r1",
+   "kind": "decision",
+   "trial_id": "NCT03424005",
+   "criterion_id": "NCT03424005-E19",
+   "status": "PASS",
+   "reason": "VALID",
+   "action": "none",
+   "applicable": true,
+   "by": "agent3",
+   "judged_by": "llm",
+   "round": 1,
+   "rule_tags": [],
+   "note": "Not pregnant; postmenopausal, no childbearing potential, so no intention of pregnancy.",
+   "missing_fact": null,
+   "derived_from": null
+  },
+  {
+   "id": "label:NCT03424005",
+   "kind": "trial_decision",
+   "label": "potential",
+   "why": [
+    "UNKNOWN/MISSING NCT03424005-I01",
+    "UNKNOWN/MISSING NCT03424005-I07",
+    "UNKNOWN/UNSUPPORTED NCT03424005-I08",
+    "UNKNOWN/UNSUPPORTED NCT03424005-I09",
+    "UNKNOWN/EXPIRED NCT03424005-I10",
+    "UNKNOWN/UNSUPPORTED NCT03424005-E02"
+   ],
+   "by": "agent3"
+  }
+ ],
+ "edges": [
+  [
+   "trial:NCT06757634",
+   "has_criterion",
+   "crit:NCT06757634-I01"
+  ],
+  [
+   "crit:NCT06757634-I01",
+   "decided_as",
+   "dec:NCT06757634:NCT06757634-I01:r1"
+  ],
+  [
+   "crit:NCT06757634-I01",
+   "requires",
+   "concept:biomarker:er"
+  ],
+  [
+   "concept:biomarker:er",
+   "observed_as",
+   "ev:SYN-0017-EV263"
+  ],
+  [
+   "ev:SYN-0017-EV263",
+   "derived_from",
+   "src:SYN-0017-D04:175-211"
+  ],
+  [
+   "ev:SYN-0017-EV263",
+   "insufficient_for",
+   "dec:NCT06757634:NCT06757634-I01:r1"
+  ],
+  [
+   "crit:NCT06757634-I01",
+   "requires",
+   "concept:biomarker:her2"
+  ],
+  [
+   "concept:biomarker:her2",
+   "observed_as",
+   "ev:SYN-0017-EV280"
+  ],
+  [
+   "ev:SYN-0017-EV280",
+   "derived_from",
+   "src:SYN-0017-D09:334-418"
+  ],
+  [
+   "ev:SYN-0017-EV280",
+   "insufficient_for",
+   "dec:NCT06757634:NCT06757634-I01:r1"
+  ],
+  [
+   "crit:NCT06757634-I01",
+   "requires",
+   "concept:metastasis:liver lesions suspicious for metastases"
+  ],
+  [
+   "concept:metastasis:liver lesions suspicious for metastases",
+   "observed_as",
+   "ev:SYN-0017-EV031"
+  ],
+  [
+   "ev:SYN-0017-EV031",
+   "derived_from",
+   "src:SYN-0017-D06:0-87"
+  ],
+  [
+   "ev:SYN-0017-EV031",
+   "insufficient_for",
+   "dec:NCT06757634:NCT06757634-I01:r1"
+  ],
+  [
+   "trial:NCT06757634",
+   "has_criterion",
+   "crit:NCT06757634-I02"
+  ],
+  [
+   "crit:NCT06757634-I02",
+   "decided_as",
+   "dec:NCT06757634:NCT06757634-I02:r1"
+  ],
+  [
+   "trial:NCT06757634",
+   "has_criterion",
+   "crit:NCT06757634-I03"
+  ],
+  [
+   "crit:NCT06757634-I03",
+   "decided_as",
+   "dec:NCT06757634:NCT06757634-I03:r1"
+  ],
+  [
+   "crit:NCT06757634-I03",
+   "requires",
+   "concept:childbearing_potential"
+  ],
+  [
+   "concept:childbearing_potential",
+   "observed_as",
+   "ev:SYN-0017-EV266"
+  ],
+  [
+   "ev:SYN-0017-EV266",
+   "derived_from",
+   "src:SYN-0017-D04:254-312"
+  ],
+  [
+   "ev:SYN-0017-EV266",
+   "supports",
+   "dec:NCT06757634:NCT06757634-I03:r1"
+  ],
+  [
+   "crit:NCT06757634-I03",
+   "requires",
+   "concept:pregnancy"
+  ],
+  [
+   "concept:pregnancy",
+   "observed_as",
+   "ev:SYN-0017-EV117"
+  ],
+  [
+   "ev:SYN-0017-EV117",
+   "derived_from",
+   "src:SYN-0017-D09:2143-2181"
+  ],
+  [
+   "ev:SYN-0017-EV117",
+   "supports",
+   "dec:NCT06757634:NCT06757634-I03:r1"
+  ],
+  [
+   "trial:NCT06757634",
+   "has_criterion",
+   "crit:NCT06757634-I04"
+  ],
+  [
+   "crit:NCT06757634-I04",
+   "decided_as",
+   "dec:NCT06757634:NCT06757634-I04:r1"
+  ],
+  [
+   "crit:NCT06757634-I04",
+   "requires",
+   "concept:diagnosis:recurrence on anastrozole"
+  ],
+  [
+   "concept:diagnosis:recurrence on anastrozole",
+   "observed_as",
+   "ev:SYN-0017-EV018"
+  ],
+  [
+   "ev:SYN-0017-EV018",
+   "derived_from",
+   "src:SYN-0017-D04:131-174"
+  ],
+  [
+   "ev:SYN-0017-EV018",
+   "insufficient_for",
+   "dec:NCT06757634:NCT06757634-I04:r1"
+  ],
+  [
+   "crit:NCT06757634-I04",
+   "requires",
+   "concept:medication:anastrozole 1 mg daily"
+  ],
+  [
+   "concept:medication:anastrozole 1 mg daily",
+   "observed_as",
+   "ev:SYN-0017-EV102"
+  ],
+  [
+   "ev:SYN-0017-EV102",
+   "derived_from",
+   "src:SYN-0017-D09:1682-1746"
+  ],
+  [
+   "ev:SYN-0017-EV102",
+   "insufficient_for",
+   "dec:NCT06757634:NCT06757634-I04:r1"
+  ],
+  [
+   "trial:NCT06757634",
+   "has_criterion",
+   "crit:NCT06757634-I05"
+  ],
+  [
+   "crit:NCT06757634-I05",
+   "decided_as",
+   "dec:NCT06757634:NCT06757634-I05:r1"
+  ],
+  [
+   "crit:NCT06757634-I05",
+   "requires",
+   "concept:biomarker:pik3ca h1047r"
+  ],
+  [
+   "concept:biomarker:pik3ca h1047r",
+   "observed_as",
+   "ev:SYN-0017-EV269"
+  ],
+  [
+   "ev:SYN-0017-EV269",
+   "derived_from",
+   "src:SYN-0017-D07:0-45"
+  ],
+  [
+   "ev:SYN-0017-EV269",
+   "supports",
+   "dec:NCT06757634:NCT06757634-I05:r1"
+  ],
+  [
+   "concept:biomarker:pik3ca h1047r",
+   "observed_as",
+   "ev:SYN-0017-EV284"
+  ],
+  [
+   "ev:SYN-0017-EV284",
+   "derived_from",
+   "src:SYN-0017-D09:551-608"
+  ],
+  [
+   "ev:SYN-0017-EV284",
+   "supports",
+   "dec:NCT06757634:NCT06757634-I05:r1"
+  ],
+  [
+   "trial:NCT06757634",
+   "has_criterion",
+   "crit:NCT06757634-I06"
+  ],
+  [
+   "crit:NCT06757634-I06",
+   "decided_as",
+   "dec:NCT06757634:NCT06757634-I06:r1"
+  ],
+  [
+   "crit:NCT06757634-I06",
+   "requires",
+   "concept:diagnosis:progression on cdk4/6 inhibitor + aromatase inhibitor"
+  ],
+  [
+   "concept:diagnosis:progression on cdk4/6 inhibitor + aromatase inhibitor",
+   "observed_as",
+   "ev:SYN-0017-EV037"
+  ],
+  [
+   "ev:SYN-0017-EV037",
+   "derived_from",
+   "src:SYN-0017-D08:0-65"
+  ],
+  [
+   "ev:SYN-0017-EV037",
+   "supports",
+   "dec:NCT06757634:NCT06757634-I06:r1"
+  ],
+  [
+   "crit:NCT06757634-I06",
+   "requires",
+   "concept:medication:palbociclib 125 mg d1-21 q28d"
+  ],
+  [
+   "concept:medication:palbociclib 125 mg d1-21 q28d",
+   "observed_as",
+   "ev:SYN-0017-EV098"
+  ],
+  [
+   "ev:SYN-0017-EV098",
+   "derived_from",
+   "src:SYN-0017-D09:1511-1605"
+  ],
+  [
+   "ev:SYN-0017-EV098",
+   "supports",
+   "dec:NCT06757634:NCT06757634-I06:r1"
+  ],
+  [
+   "crit:NCT06757634-I06",
+   "requires",
+   "concept:medication:palbociclib"
+  ],
+  [
+   "concept:medication:palbociclib",
+   "observed_as",
+   "ev:SYN-0017-EV061"
+  ],
+  [
+   "ev:SYN-0017-EV061",
+   "derived_from",
+   "src:SYN-0017-D09:609-678"
+  ],
+  [
+   "ev:SYN-0017-EV061",
+   "supports",
+   "dec:NCT06757634:NCT06757634-I06:r1"
+  ],
+  [
+   "trial:NCT06757634",
+   "has_criterion",
+   "crit:NCT06757634-I07"
+  ],
+  [
+   "crit:NCT06757634-I07",
+   "decided_as",
+   "dec:NCT06757634:NCT06757634-I07:r1"
+  ],
+  [
+   "crit:NCT06757634-I07",
+   "requires",
+   "concept:measurable_disease:lesions 16 mm"
+  ],
+  [
+   "concept:measurable_disease:lesions 16 mm",
+   "observed_as",
+   "ev:SYN-0017-EV323"
+  ],
+  [
+   "ev:SYN-0017-EV323",
+   "derived_from",
+   "src:SYN-0017-D06:0-87"
+  ],
+  [
+   "ev:SYN-0017-EV323",
+   "supports",
+   "dec:NCT06757634:NCT06757634-I07:r1"
+  ],
+  [
+   "crit:NCT06757634-I07",
+   "requires",
+   "concept:symptom_finding:liver lesions 1.6 cm and 0.9 cm"
+  ],
+  [
+   "concept:symptom_finding:liver lesions 1.6 cm and 0.9 cm",
+   "observed_as",
+   "ev:SYN-0017-EV267"
+  ],
+  [
+   "ev:SYN-0017-EV267",
+   "derived_from",
+   "src:SYN-0017-D06:0-87"
+  ],
+  [
+   "ev:SYN-0017-EV267",
+   "supports",
+   "dec:NCT06757634:NCT06757634-I07:r1"
+  ],
+  [
+   "trial:NCT06757634",
+   "has_criterion",
+   "crit:NCT06757634-I08"
+  ],
+  [
+   "crit:NCT06757634-I08",
+   "decided_as",
+   "dec:NCT06757634:NCT06757634-I08:r1"
+  ],
+  [
+   "crit:NCT06757634-I08",
+   "requires",
+   "concept:ecog"
+  ],
+  [
+   "concept:ecog",
+   "observed_as",
+   "ev:SYN-0017-EV038"
+  ],
+  [
+   "ev:SYN-0017-EV038",
+   "derived_from",
+   "src:SYN-0017-D08:66-73"
+  ],
+  [
+   "ev:SYN-0017-EV038",
+   "supports",
+   "dec:NCT06757634:NCT06757634-I08:r1"
+  ],
+  [
+   "calc:NCT06757634:NCT06757634-I08",
+   "computes",
+   "dec:NCT06757634:NCT06757634-I08:r1"
+  ],
+  [
+   "trial:NCT06757634",
+   "has_criterion",
+   "crit:NCT06757634-I09"
+  ],
+  [
+   "crit:NCT06757634-I09",
+   "decided_as",
+   "dec:NCT06757634:NCT06757634-I09:r1"
+  ],
+  [
+   "trial:NCT06757634",
+   "has_criterion",
+   "crit:NCT06757634-I10"
+  ],
+  [
+   "crit:NCT06757634-I10",
+   "decided_as",
+   "dec:NCT06757634:NCT06757634-I10:r1"
+  ],
+  [
+   "crit:NCT06757634-I10",
+   "requires",
+   "concept:anc"
+  ],
+  [
+   "concept:anc",
+   "observed_as",
+   "ev:SYN-0017-EV207"
+  ],
+  [
+   "ev:SYN-0017-EV207",
+   "derived_from",
+   "src:SYN-0017-D10:90-115"
+  ],
+  [
+   "ev:SYN-0017-EV207",
+   "insufficient_for",
+   "dec:NCT06757634:NCT06757634-I10:r1"
+  ],
+  [
+   "crit:NCT06757634-I10",
+   "requires",
+   "concept:platelet_count"
+  ],
+  [
+   "concept:platelet_count",
+   "observed_as",
+   "ev:SYN-0017-EV215"
+  ],
+  [
+   "ev:SYN-0017-EV215",
+   "derived_from",
+   "src:SYN-0017-D10:328-359"
+  ],
+  [
+   "ev:SYN-0017-EV215",
+   "insufficient_for",
+   "dec:NCT06757634:NCT06757634-I10:r1"
+  ],
+  [
+   "crit:NCT06757634-I10",
+   "requires",
+   "concept:hemoglobin"
+  ],
+  [
+   "concept:hemoglobin",
+   "observed_as",
+   "ev:SYN-0017-EV212"
+  ],
+  [
+   "ev:SYN-0017-EV212",
+   "derived_from",
+   "src:SYN-0017-D10:250-282"
+  ],
+  [
+   "ev:SYN-0017-EV212",
+   "insufficient_for",
+   "dec:NCT06757634:NCT06757634-I10:r1"
+  ],
+  [
+   "crit:NCT06757634-I10",
+   "requires",
+   "concept:creatinine"
+  ],
+  [
+   "concept:creatinine",
+   "observed_as",
+   "ev:SYN-0017-EV221"
+  ],
+  [
+   "ev:SYN-0017-EV221",
+   "derived_from",
+   "src:SYN-0017-D10:530-560"
+  ],
+  [
+   "ev:SYN-0017-EV221",
+   "insufficient_for",
+   "dec:NCT06757634:NCT06757634-I10:r1"
+  ],
+  [
+   "crit:NCT06757634-I10",
+   "requires",
+   "concept:egfr"
+  ],
+  [
+   "concept:egfr",
+   "observed_as",
+   "ev:SYN-0017-EV222"
+  ],
+  [
+   "ev:SYN-0017-EV222",
+   "derived_from",
+   "src:SYN-0017-D10:561-588"
+  ],
+  [
+   "ev:SYN-0017-EV222",
+   "insufficient_for",
+   "dec:NCT06757634:NCT06757634-I10:r1"
+  ],
+  [
+   "crit:NCT06757634-I10",
+   "requires",
+   "concept:ast"
+  ],
+  [
+   "concept:ast",
+   "observed_as",
+   "ev:SYN-0017-EV229"
+  ],
+  [
+   "ev:SYN-0017-EV229",
+   "derived_from",
+   "src:SYN-0017-D10:772-792"
+  ],
+  [
+   "ev:SYN-0017-EV229",
+   "insufficient_for",
+   "dec:NCT06757634:NCT06757634-I10:r1"
+  ],
+  [
+   "crit:NCT06757634-I10",
+   "requires",
+   "concept:alt"
+  ],
+  [
+   "concept:alt",
+   "observed_as",
+   "ev:SYN-0017-EV230"
+  ],
+  [
+   "ev:SYN-0017-EV230",
+   "derived_from",
+   "src:SYN-0017-D10:793-812"
+  ],
+  [
+   "ev:SYN-0017-EV230",
+   "insufficient_for",
+   "dec:NCT06757634:NCT06757634-I10:r1"
+  ],
+  [
+   "crit:NCT06757634-I10",
+   "requires",
+   "concept:bilirubin_total"
+  ],
+  [
+   "concept:bilirubin_total",
+   "observed_as",
+   "ev:SYN-0017-EV232"
+  ],
+  [
+   "ev:SYN-0017-EV232",
+   "derived_from",
+   "src:SYN-0017-D10:853-888"
+  ],
+  [
+   "ev:SYN-0017-EV232",
+   "insufficient_for",
+   "dec:NCT06757634:NCT06757634-I10:r1"
+  ],
+  [
+   "crit:NCT06757634-I10",
+   "requires",
+   "concept:inr"
+  ],
+  [
+   "concept:inr",
+   "observed_as",
+   "ev:SYN-0017-EV241"
+  ],
+  [
+   "ev:SYN-0017-EV241",
+   "derived_from",
+   "src:SYN-0017-D10:1127-1144"
+  ],
+  [
+   "ev:SYN-0017-EV241",
+   "insufficient_for",
+   "dec:NCT06757634:NCT06757634-I10:r1"
+  ],
+  [
+   "trial:NCT06757634",
+   "has_criterion",
+   "crit:NCT06757634-E01"
+  ],
+  [
+   "crit:NCT06757634-E01",
+   "decided_as",
+   "dec:NCT06757634:NCT06757634-E01:r1"
+  ],
+  [
+   "crit:NCT06757634-E01",
+   "requires",
+   "concept:diagnosis:prior malignancy"
+  ],
+  [
+   "concept:diagnosis:prior malignancy",
+   "observed_as",
+   "ev:SYN-0017-EV089"
+  ],
+  [
+   "ev:SYN-0017-EV089",
+   "derived_from",
+   "src:SYN-0017-D09:1186-1206"
+  ],
+  [
+   "ev:SYN-0017-EV089",
+   "supports",
+   "dec:NCT06757634:NCT06757634-E01:r1"
+  ],
+  [
+   "trial:NCT06757634",
+   "has_criterion",
+   "crit:NCT06757634-E02"
+  ],
+  [
+   "crit:NCT06757634-E02",
+   "decided_as",
+   "dec:NCT06757634:NCT06757634-E02:r1"
+  ],
+  [
+   "trial:NCT06757634",
+   "has_criterion",
+   "crit:NCT06757634-E03"
+  ],
+  [
+   "crit:NCT06757634-E03",
+   "decided_as",
+   "dec:NCT06757634:NCT06757634-E03:r1"
+  ],
+  [
+   "crit:NCT06757634-E03",
+   "requires",
+   "concept:medication:palbociclib 125 mg d1-21 q28d"
+  ],
+  [
+   "ev:SYN-0017-EV098",
+   "supports",
+   "dec:NCT06757634:NCT06757634-E03:r1"
+  ],
+  [
+   "crit:NCT06757634-E03",
+   "requires",
+   "concept:medication:letrozole 2.5 mg daily"
+  ],
+  [
+   "concept:medication:letrozole 2.5 mg daily",
+   "observed_as",
+   "ev:SYN-0017-EV100"
+  ],
+  [
+   "ev:SYN-0017-EV100",
+   "derived_from",
+   "src:SYN-0017-D09:1608-1679"
+  ],
+  [
+   "ev:SYN-0017-EV100",
+   "supports",
+   "dec:NCT06757634:NCT06757634-E03:r1"
+  ],
+  [
+   "crit:NCT06757634-E03",
+   "requires",
+   "concept:medication:palbociclib"
+  ],
+  [
+   "ev:SYN-0017-EV061",
+   "supports",
+   "dec:NCT06757634:NCT06757634-E03:r1"
+  ],
+  [
+   "trial:NCT06757634",
+   "has_criterion",
+   "crit:NCT06757634-E04"
+  ],
+  [
+   "crit:NCT06757634-E04",
+   "decided_as",
+   "dec:NCT06757634:NCT06757634-E04:r1"
+  ],
+  [
+   "crit:NCT06757634-E04",
+   "requires",
+   "concept:diagnosis:diabetes"
+  ],
+  [
+   "concept:diagnosis:diabetes",
+   "observed_as",
+   "ev:SYN-0017-EV087"
+  ],
+  [
+   "ev:SYN-0017-EV087",
+   "derived_from",
+   "src:SYN-0017-D09:1147-1159"
+  ],
+  [
+   "ev:SYN-0017-EV087",
+   "supports",
+   "dec:NCT06757634:NCT06757634-E04:r1"
+  ],
+  [
+   "crit:NCT06757634-E04",
+   "requires",
+   "concept:hba1c"
+  ],
+  [
+   "concept:hba1c",
+   "observed_as",
+   "ev:SYN-0017-EV234"
+  ],
+  [
+   "ev:SYN-0017-EV234",
+   "derived_from",
+   "src:SYN-0017-D10:917-938"
+  ],
+  [
+   "ev:SYN-0017-EV234",
+   "supports",
+   "dec:NCT06757634:NCT06757634-E04:r1"
+  ],
+  [
+   "trial:NCT06757634",
+   "has_criterion",
+   "crit:NCT06757634-E05"
+  ],
+  [
+   "crit:NCT06757634-E05",
+   "decided_as",
+   "dec:NCT06757634:NCT06757634-E05:r1"
+  ],
+  [
+   "trial:NCT06757634",
+   "has_criterion",
+   "crit:NCT06757634-E06"
+  ],
+  [
+   "crit:NCT06757634-E06",
+   "decided_as",
+   "dec:NCT06757634:NCT06757634-E06:r1"
+  ],
+  [
+   "crit:NCT06757634-E06",
+   "requires",
+   "concept:diagnosis:cardiac history"
+  ],
+  [
+   "concept:diagnosis:cardiac history",
+   "observed_as",
+   "ev:SYN-0017-EV080"
+  ],
+  [
+   "ev:SYN-0017-EV080",
+   "derived_from",
+   "src:SYN-0017-D09:1057-1146"
+  ],
+  [
+   "ev:SYN-0017-EV080",
+   "supports",
+   "dec:NCT06757634:NCT06757634-E06:r1"
+  ],
+  [
+   "trial:NCT06757634",
+   "has_criterion",
+   "crit:NCT06757634-E07"
+  ],
+  [
+   "crit:NCT06757634-E07",
+   "decided_as",
+   "dec:NCT06757634:NCT06757634-E07:r1"
+  ],
+  [
+   "trial:NCT06757634",
+   "has_criterion",
+   "crit:NCT06757634-E08"
+  ],
+  [
+   "crit:NCT06757634-E08",
+   "decided_as",
+   "dec:NCT06757634:NCT06757634-E08:r1"
+  ],
+  [
+   "crit:NCT06757634-E08",
+   "requires",
+   "concept:diagnosis:pulmonary history"
+  ],
+  [
+   "concept:diagnosis:pulmonary history",
+   "observed_as",
+   "ev:SYN-0017-EV081"
+  ],
+  [
+   "ev:SYN-0017-EV081",
+   "derived_from",
+   "src:SYN-0017-D09:1057-1146"
+  ],
+  [
+   "ev:SYN-0017-EV081",
+   "supports",
+   "dec:NCT06757634:NCT06757634-E08:r1"
+  ],
+  [
+   "crit:NCT06757634-E08",
+   "requires",
+   "concept:diagnosis:hepatic history"
+  ],
+  [
+   "concept:diagnosis:hepatic history",
+   "observed_as",
+   "ev:SYN-0017-EV082"
+  ],
+  [
+   "ev:SYN-0017-EV082",
+   "derived_from",
+   "src:SYN-0017-D09:1057-1146"
+  ],
+  [
+   "ev:SYN-0017-EV082",
+   "supports",
+   "dec:NCT06757634:NCT06757634-E08:r1"
+  ],
+  [
+   "trial:NCT06757634",
+   "labelled",
+   "label:NCT06757634"
+  ],
+  [
+   "trial:NCT06982521",
+   "has_criterion",
+   "crit:NCT06982521-I01"
+  ],
+  [
+   "crit:NCT06982521-I01",
+   "decided_as",
+   "dec:NCT06982521:NCT06982521-I01:r1"
+  ],
+  [
+   "crit:NCT06982521-I01",
+   "requires",
+   "concept:ecog"
+  ],
+  [
+   "ev:SYN-0017-EV038",
+   "supports",
+   "dec:NCT06982521:NCT06982521-I01:r1"
+  ],
+  [
+   "calc:NCT06982521:NCT06982521-I01",
+   "computes",
+   "dec:NCT06982521:NCT06982521-I01:r1"
+  ],
+  [
+   "trial:NCT06982521",
+   "has_criterion",
+   "crit:NCT06982521-I02"
+  ],
+  [
+   "crit:NCT06982521-I02",
+   "decided_as",
+   "dec:NCT06982521:NCT06982521-I02:r1"
+  ],
+  [
+   "crit:NCT06982521-I02",
+   "requires",
+   "concept:biomarker:pik3ca h1047r"
+  ],
+  [
+   "ev:SYN-0017-EV269",
+   "supports",
+   "dec:NCT06982521:NCT06982521-I02:r1"
+  ],
+  [
+   "trial:NCT06982521",
+   "has_criterion",
+   "crit:NCT06982521-I03"
+  ],
+  [
+   "crit:NCT06982521-I03",
+   "decided_as",
+   "dec:NCT06982521:NCT06982521-I03:r1"
+  ],
+  [
+   "crit:NCT06982521-I03",
+   "requires",
+   "concept:sex"
+  ],
+  [
+   "concept:sex",
+   "observed_as",
+   "ev:SYN-0017-EV012"
+  ],
+  [
+   "ev:SYN-0017-EV012",
+   "derived_from",
+   "src:SYN-0017-D03:0-7"
+  ],
+  [
+   "ev:SYN-0017-EV012",
+   "supports",
+   "dec:NCT06982521:NCT06982521-I03:r1"
+  ],
+  [
+   "crit:NCT06982521-I03",
+   "requires",
+   "concept:menopausal_status"
+  ],
+  [
+   "concept:menopausal_status",
+   "observed_as",
+   "ev:SYN-0017-EV265"
+  ],
+  [
+   "ev:SYN-0017-EV265",
+   "derived_from",
+   "src:SYN-0017-D04:254-312"
+  ],
+  [
+   "ev:SYN-0017-EV265",
+   "supports",
+   "dec:NCT06982521:NCT06982521-I03:r1"
+  ],
+  [
+   "trial:NCT06982521",
+   "has_criterion",
+   "crit:NCT06982521-I04"
+  ],
+  [
+   "crit:NCT06982521-I04",
+   "decided_as",
+   "dec:NCT06982521:NCT06982521-I04:r1"
+  ],
+  [
+   "crit:NCT06982521-I04",
+   "requires",
+   "concept:diagnosis:progression on first-line cdk4/6 inhibitor + aromatase inhibitor"
+  ],
+  [
+   "concept:diagnosis:progression on first-line cdk4/6 inhibitor + aromatase inhibitor",
+   "observed_as",
+   "ev:SYN-0017-EV195"
+  ],
+  [
+   "ev:SYN-0017-EV195",
+   "derived_from",
+   "src:SYN-0017-D09:3948-4035"
+  ],
+  [
+   "ev:SYN-0017-EV195",
+   "supports",
+   "dec:NCT06982521:NCT06982521-I04:r1"
+  ],
+  [
+   "crit:NCT06982521-I04",
+   "requires",
+   "concept:cancer_stage"
+  ],
+  [
+   "concept:cancer_stage",
+   "observed_as",
+   "ev:SYN-0017-EV175"
+  ],
+  [
+   "ev:SYN-0017-EV175",
+   "derived_from",
+   "src:SYN-0017-D09:3335-3458"
+  ],
+  [
+   "ev:SYN-0017-EV175",
+   "supports",
+   "dec:NCT06982521:NCT06982521-I04:r1"
+  ],
+  [
+   "crit:NCT06982521-I04",
+   "requires",
+   "concept:biomarker:her2"
+  ],
+  [
+   "concept:biomarker:her2",
+   "observed_as",
+   "ev:SYN-0017-EV022"
+  ],
+  [
+   "ev:SYN-0017-EV022",
+   "derived_from",
+   "src:SYN-0017-D04:175-211"
+  ],
+  [
+   "ev:SYN-0017-EV022",
+   "supports",
+   "dec:NCT06982521:NCT06982521-I04:r1"
+  ],
+  [
+   "crit:NCT06982521-I04",
+   "requires",
+   "concept:biomarker:er"
+  ],
+  [
+   "ev:SYN-0017-EV263",
+   "supports",
+   "dec:NCT06982521:NCT06982521-I04:r1"
+  ],
+  [
+   "trial:NCT06982521",
+   "has_criterion",
+   "crit:NCT06982521-I05"
+  ],
+  [
+   "crit:NCT06982521-I05",
+   "decided_as",
+   "dec:NCT06982521:NCT06982521-I05:r1"
+  ],
+  [
+   "crit:NCT06982521-I05",
+   "requires",
+   "concept:measurable_disease:lesions 16 mm"
+  ],
+  [
+   "ev:SYN-0017-EV323",
+   "supports",
+   "dec:NCT06982521:NCT06982521-I05:r1"
+  ],
+  [
+   "crit:NCT06982521-I05",
+   "requires",
+   "concept:metastasis:liver lesions suspicious for metastases"
+  ],
+  [
+   "ev:SYN-0017-EV031",
+   "supports",
+   "dec:NCT06982521:NCT06982521-I05:r1"
+  ],
+  [
+   "trial:NCT06982521",
+   "has_criterion",
+   "crit:NCT06982521-I06"
+  ],
+  [
+   "crit:NCT06982521-I06",
+   "decided_as",
+   "dec:NCT06982521:NCT06982521-I06:r1"
+  ],
+  [
+   "crit:NCT06982521-I06",
+   "requires",
+   "concept:diagnosis:progression on first-line cdk4/6 inhibitor + aromatase inhibitor"
+  ],
+  [
+   "ev:SYN-0017-EV195",
+   "supports",
+   "dec:NCT06982521:NCT06982521-I06:r1"
+  ],
+  [
+   "crit:NCT06982521-I06",
+   "requires",
+   "concept:diagnosis:progression on cdk4/6 inhibitor + aromatase inhibitor"
+  ],
+  [
+   "ev:SYN-0017-EV037",
+   "supports",
+   "dec:NCT06982521:NCT06982521-I06:r1"
+  ],
+  [
+   "crit:NCT06982521-I06",
+   "requires",
+   "concept:medication:anastrozole 1 mg daily"
+  ],
+  [
+   "ev:SYN-0017-EV102",
+   "supports",
+   "dec:NCT06982521:NCT06982521-I06:r1"
+  ],
+  [
+   "crit:NCT06982521-I06",
+   "requires",
+   "concept:medication:palbociclib 125 mg d1-21 q28d"
+  ],
+  [
+   "ev:SYN-0017-EV098",
+   "supports",
+   "dec:NCT06982521:NCT06982521-I06:r1"
+  ],
+  [
+   "trial:NCT06982521",
+   "has_criterion",
+   "crit:NCT06982521-E01"
+  ],
+  [
+   "crit:NCT06982521-E01",
+   "decided_as",
+   "dec:NCT06982521:NCT06982521-E01:r1"
+  ],
+  [
+   "trial:NCT06982521",
+   "has_criterion",
+   "crit:NCT06982521-E02"
+  ],
+  [
+   "crit:NCT06982521-E02",
+   "decided_as",
+   "dec:NCT06982521:NCT06982521-E02:r1"
+  ],
+  [
+   "crit:NCT06982521-E02",
+   "requires",
+   "concept:diagnosis:diabetes"
+  ],
+  [
+   "ev:SYN-0017-EV087",
+   "supports",
+   "dec:NCT06982521:NCT06982521-E02:r1"
+  ],
+  [
+   "crit:NCT06982521-E02",
+   "requires",
+   "concept:glucose"
+  ],
+  [
+   "concept:glucose",
+   "observed_as",
+   "ev:SYN-0017-EV223"
+  ],
+  [
+   "ev:SYN-0017-EV223",
+   "derived_from",
+   "src:SYN-0017-D10:589-622"
+  ],
+  [
+   "ev:SYN-0017-EV223",
+   "supports",
+   "dec:NCT06982521:NCT06982521-E02:r1"
+  ],
+  [
+   "crit:NCT06982521-E02",
+   "requires",
+   "concept:hba1c"
+  ],
+  [
+   "ev:SYN-0017-EV234",
+   "supports",
+   "dec:NCT06982521:NCT06982521-E02:r1"
+  ],
+  [
+   "trial:NCT06982521",
+   "has_criterion",
+   "crit:NCT06982521-E03"
+  ],
+  [
+   "crit:NCT06982521-E03",
+   "decided_as",
+   "dec:NCT06982521:NCT06982521-E03:r1"
+  ],
+  [
+   "crit:NCT06982521-E03",
+   "requires",
+   "concept:diagnosis:cardiac history"
+  ],
+  [
+   "ev:SYN-0017-EV080",
+   "supports",
+   "dec:NCT06982521:NCT06982521-E03:r1"
+  ],
+  [
+   "trial:NCT06982521",
+   "has_criterion",
+   "crit:NCT06982521-E04"
+  ],
+  [
+   "crit:NCT06982521-E04",
+   "decided_as",
+   "dec:NCT06982521:NCT06982521-E04:r1"
+  ],
+  [
+   "trial:NCT06982521",
+   "has_criterion",
+   "crit:NCT06982521-E05"
+  ],
+  [
+   "crit:NCT06982521-E05",
+   "decided_as",
+   "dec:NCT06982521:NCT06982521-E05:r1"
+  ],
+  [
+   "trial:NCT06982521",
+   "has_criterion",
+   "crit:NCT06982521-E06"
+  ],
+  [
+   "crit:NCT06982521-E06",
+   "decided_as",
+   "dec:NCT06982521:NCT06982521-E06:r1"
+  ],
+  [
+   "crit:NCT06982521-E06",
+   "requires",
+   "concept:diagnosis:pulmonary history"
+  ],
+  [
+   "ev:SYN-0017-EV081",
+   "supports",
+   "dec:NCT06982521:NCT06982521-E06:r1"
+  ],
+  [
+   "crit:NCT06982521-E06",
+   "requires",
+   "concept:diagnosis:lung disease"
+  ],
+  [
+   "concept:diagnosis:lung disease",
+   "observed_as",
+   "ev:SYN-0017-EV179"
+  ],
+  [
+   "ev:SYN-0017-EV179",
+   "derived_from",
+   "src:SYN-0017-D09:3513-3529"
+  ],
+  [
+   "ev:SYN-0017-EV179",
+   "supports",
+   "dec:NCT06982521:NCT06982521-E06:r1"
+  ],
+  [
+   "trial:NCT06982521",
+   "has_criterion",
+   "crit:NCT06982521-E07"
+  ],
+  [
+   "crit:NCT06982521-E07",
+   "decided_as",
+   "dec:NCT06982521:NCT06982521-E07:r1"
+  ],
+  [
+   "crit:NCT06982521-E07",
+   "requires",
+   "concept:allergy:no known drug allergies"
+  ],
+  [
+   "concept:allergy:no known drug allergies",
+   "observed_as",
+   "ev:SYN-0017-EV092"
+  ],
+  [
+   "ev:SYN-0017-EV092",
+   "derived_from",
+   "src:SYN-0017-D09:1322-1327"
+  ],
+  [
+   "ev:SYN-0017-EV092",
+   "supports",
+   "dec:NCT06982521:NCT06982521-E07:r1"
+  ],
+  [
+   "trial:NCT06982521",
+   "has_criterion",
+   "crit:NCT06982521-E08"
+  ],
+  [
+   "crit:NCT06982521-E08",
+   "decided_as",
+   "dec:NCT06982521:NCT06982521-E08:r1"
+  ],
+  [
+   "trial:NCT06982521",
+   "labelled",
+   "label:NCT06982521"
+  ],
+  [
+   "trial:NCT03424005",
+   "has_criterion",
+   "crit:NCT03424005-I01"
+  ],
+  [
+   "crit:NCT03424005-I01",
+   "decided_as",
+   "dec:NCT03424005:NCT03424005-I01:r1"
+  ],
+  [
+   "trial:NCT03424005",
+   "has_criterion",
+   "crit:NCT03424005-I02"
+  ],
+  [
+   "crit:NCT03424005-I02",
+   "decided_as",
+   "dec:NCT03424005:NCT03424005-I02:r1"
+  ],
+  [
+   "crit:NCT03424005-I02",
+   "requires",
+   "concept:age"
+  ],
+  [
+   "concept:age",
+   "observed_as",
+   "ev:SYN-0017-EV046"
+  ],
+  [
+   "ev:SYN-0017-EV046",
+   "derived_from",
+   "src:SYN-0017-D09:141-203"
+  ],
+  [
+   "ev:SYN-0017-EV046",
+   "supports",
+   "dec:NCT03424005:NCT03424005-I02:r1"
+  ],
+  [
+   "calc:NCT03424005:NCT03424005-I02",
+   "computes",
+   "dec:NCT03424005:NCT03424005-I02:r1"
+  ],
+  [
+   "trial:NCT03424005",
+   "has_criterion",
+   "crit:NCT03424005-I03"
+  ],
+  [
+   "crit:NCT03424005-I03",
+   "decided_as",
+   "dec:NCT03424005:NCT03424005-I03:r1"
+  ],
+  [
+   "crit:NCT03424005-I03",
+   "requires",
+   "concept:ecog"
+  ],
+  [
+   "ev:SYN-0017-EV038",
+   "supports",
+   "dec:NCT03424005:NCT03424005-I03:r1"
+  ],
+  [
+   "calc:NCT03424005:NCT03424005-I03",
+   "computes",
+   "dec:NCT03424005:NCT03424005-I03:r1"
+  ],
+  [
+   "trial:NCT03424005",
+   "has_criterion",
+   "crit:NCT03424005-I04"
+  ],
+  [
+   "crit:NCT03424005-I04",
+   "decided_as",
+   "dec:NCT03424005:NCT03424005-I04:r1"
+  ],
+  [
+   "trial:NCT03424005",
+   "has_criterion",
+   "crit:NCT03424005-I05"
+  ],
+  [
+   "crit:NCT03424005-I05",
+   "decided_as",
+   "dec:NCT03424005:NCT03424005-I05:r1"
+  ],
+  [
+   "crit:NCT03424005-I05",
+   "requires",
+   "concept:metastasis"
+  ],
+  [
+   "concept:metastasis",
+   "observed_as",
+   "ev:SYN-0017-EV193"
+  ],
+  [
+   "ev:SYN-0017-EV193",
+   "derived_from",
+   "src:SYN-0017-D09:3948-4035"
+  ],
+  [
+   "ev:SYN-0017-EV193",
+   "supports",
+   "dec:NCT03424005:NCT03424005-I05:r1"
+  ],
+  [
+   "crit:NCT03424005-I05",
+   "requires",
+   "concept:cancer_stage"
+  ],
+  [
+   "ev:SYN-0017-EV175",
+   "supports",
+   "dec:NCT03424005:NCT03424005-I05:r1"
+  ],
+  [
+   "crit:NCT03424005-I05",
+   "requires",
+   "concept:diagnosis:invasive ductal carcinoma"
+  ],
+  [
+   "concept:diagnosis:invasive ductal carcinoma",
+   "observed_as",
+   "ev:SYN-0017-EV002"
+  ],
+  [
+   "ev:SYN-0017-EV002",
+   "derived_from",
+   "src:SYN-0017-D01:13-50"
+  ],
+  [
+   "ev:SYN-0017-EV002",
+   "supports",
+   "dec:NCT03424005:NCT03424005-I05:r1"
+  ],
+  [
+   "trial:NCT03424005",
+   "has_criterion",
+   "crit:NCT03424005-I06"
+  ],
+  [
+   "crit:NCT03424005-I06",
+   "decided_as",
+   "dec:NCT03424005:NCT03424005-I06:r1"
+  ],
+  [
+   "crit:NCT03424005-I06",
+   "requires",
+   "concept:measurable_disease:lesions 16 mm"
+  ],
+  [
+   "ev:SYN-0017-EV323",
+   "supports",
+   "dec:NCT03424005:NCT03424005-I06:r1"
+  ],
+  [
+   "crit:NCT03424005-I06",
+   "requires",
+   "concept:metastasis:liver lesions 1.6 cm and 0.9 cm"
+  ],
+  [
+   "concept:metastasis:liver lesions 1.6 cm and 0.9 cm",
+   "observed_as",
+   "ev:SYN-0017-EV178"
+  ],
+  [
+   "ev:SYN-0017-EV178",
+   "derived_from",
+   "src:SYN-0017-D09:3460-3511"
+  ],
+  [
+   "ev:SYN-0017-EV178",
+   "supports",
+   "dec:NCT03424005:NCT03424005-I06:r1"
+  ],
+  [
+   "trial:NCT03424005",
+   "has_criterion",
+   "crit:NCT03424005-I07"
+  ],
+  [
+   "crit:NCT03424005-I07",
+   "decided_as",
+   "dec:NCT03424005:NCT03424005-I07:r1"
+  ],
+  [
+   "trial:NCT03424005",
+   "has_criterion",
+   "crit:NCT03424005-I08"
+  ],
+  [
+   "crit:NCT03424005-I08",
+   "decided_as",
+   "dec:NCT03424005:NCT03424005-I08:r1"
+  ],
+  [
+   "crit:NCT03424005-I08",
+   "requires",
+   "concept:treatment_plan:liver lesion biopsy"
+  ],
+  [
+   "concept:treatment_plan:liver lesion biopsy",
+   "observed_as",
+   "ev:SYN-0017-EV198"
+  ],
+  [
+   "ev:SYN-0017-EV198",
+   "derived_from",
+   "src:SYN-0017-D09:4218-4303"
+  ],
+  [
+   "ev:SYN-0017-EV198",
+   "insufficient_for",
+   "dec:NCT03424005:NCT03424005-I08:r1"
+  ],
+  [
+   "crit:NCT03424005-I08",
+   "requires",
+   "concept:procedure:mastectomy"
+  ],
+  [
+   "concept:procedure:mastectomy",
+   "observed_as",
+   "ev:SYN-0017-EV001"
+  ],
+  [
+   "ev:SYN-0017-EV001",
+   "derived_from",
+   "src:SYN-0017-D01:13-50"
+  ],
+  [
+   "ev:SYN-0017-EV001",
+   "insufficient_for",
+   "dec:NCT03424005:NCT03424005-I08:r1"
+  ],
+  [
+   "trial:NCT03424005",
+   "has_criterion",
+   "crit:NCT03424005-I09"
+  ],
+  [
+   "crit:NCT03424005-I09",
+   "decided_as",
+   "dec:NCT03424005:NCT03424005-I09:r1"
+  ],
+  [
+   "crit:NCT03424005-I09",
+   "requires",
+   "concept:procedure:mastectomy"
+  ],
+  [
+   "ev:SYN-0017-EV001",
+   "insufficient_for",
+   "dec:NCT03424005:NCT03424005-I09:r1"
+  ],
+  [
+   "crit:NCT03424005-I09",
+   "requires",
+   "concept:procedure:biopsy of iliac lesion"
+  ],
+  [
+   "concept:procedure:biopsy of iliac lesion",
+   "observed_as",
+   "ev:SYN-0017-EV020"
+  ],
+  [
+   "ev:SYN-0017-EV020",
+   "derived_from",
+   "src:SYN-0017-D04:175-211"
+  ],
+  [
+   "ev:SYN-0017-EV020",
+   "insufficient_for",
+   "dec:NCT03424005:NCT03424005-I09:r1"
+  ],
+  [
+   "trial:NCT03424005",
+   "has_criterion",
+   "crit:NCT03424005-I10"
+  ],
+  [
+   "crit:NCT03424005-I10",
+   "decided_as",
+   "dec:NCT03424005:NCT03424005-I10:r1"
+  ],
+  [
+   "crit:NCT03424005-I10",
+   "requires",
+   "concept:wbc"
+  ],
+  [
+   "concept:wbc",
+   "observed_as",
+   "ev:SYN-0017-EV206"
+  ],
+  [
+   "ev:SYN-0017-EV206",
+   "derived_from",
+   "src:SYN-0017-D10:63-89"
+  ],
+  [
+   "ev:SYN-0017-EV206",
+   "expired_for",
+   "dec:NCT03424005:NCT03424005-I10:r1"
+  ],
+  [
+   "crit:NCT03424005-I10",
+   "requires",
+   "concept:creatinine"
+  ],
+  [
+   "ev:SYN-0017-EV221",
+   "expired_for",
+   "dec:NCT03424005:NCT03424005-I10:r1"
+  ],
+  [
+   "crit:NCT03424005-I10",
+   "requires",
+   "concept:ast"
+  ],
+  [
+   "ev:SYN-0017-EV229",
+   "expired_for",
+   "dec:NCT03424005:NCT03424005-I10:r1"
+  ],
+  [
+   "crit:NCT03424005-I10",
+   "requires",
+   "concept:alt"
+  ],
+  [
+   "ev:SYN-0017-EV230",
+   "expired_for",
+   "dec:NCT03424005:NCT03424005-I10:r1"
+  ],
+  [
+   "trial:NCT03424005",
+   "has_criterion",
+   "crit:NCT03424005-I11"
+  ],
+  [
+   "crit:NCT03424005-I11",
+   "decided_as",
+   "dec:NCT03424005:NCT03424005-I11:r1"
+  ],
+  [
+   "crit:NCT03424005-I11",
+   "requires",
+   "concept:childbearing_potential"
+  ],
+  [
+   "ev:SYN-0017-EV266",
+   "supports",
+   "dec:NCT03424005:NCT03424005-I11:r1"
+  ],
+  [
+   "concept:childbearing_potential",
+   "observed_as",
+   "ev:SYN-0017-EV296"
+  ],
+  [
+   "ev:SYN-0017-EV296",
+   "derived_from",
+   "src:SYN-0017-D09:2067-2081"
+  ],
+  [
+   "ev:SYN-0017-EV296",
+   "supports",
+   "dec:NCT03424005:NCT03424005-I11:r1"
+  ],
+  [
+   "trial:NCT03424005",
+   "has_criterion",
+   "crit:NCT03424005-I12"
+  ],
+  [
+   "crit:NCT03424005-I12",
+   "decided_as",
+   "dec:NCT03424005:NCT03424005-I12:r1"
+  ],
+  [
+   "crit:NCT03424005-I12",
+   "requires",
+   "concept:sex"
+  ],
+  [
+   "ev:SYN-0017-EV012",
+   "supports",
+   "dec:NCT03424005:NCT03424005-I12:r1"
+  ],
+  [
+   "trial:NCT03424005",
+   "has_criterion",
+   "crit:NCT03424005-E01"
+  ],
+  [
+   "crit:NCT03424005-E01",
+   "decided_as",
+   "dec:NCT03424005:NCT03424005-E01:r1"
+  ],
+  [
+   "trial:NCT03424005",
+   "has_criterion",
+   "crit:NCT03424005-E02"
+  ],
+  [
+   "crit:NCT03424005-E02",
+   "decided_as",
+   "dec:NCT03424005:NCT03424005-E02:r1"
+  ],
+  [
+   "crit:NCT03424005-E02",
+   "requires",
+   "concept:medication:denosumab"
+  ],
+  [
+   "concept:medication:denosumab",
+   "observed_as",
+   "ev:SYN-0017-EV189"
+  ],
+  [
+   "ev:SYN-0017-EV189",
+   "derived_from",
+   "src:SYN-0017-D09:3794-3899"
+  ],
+  [
+   "ev:SYN-0017-EV189",
+   "insufficient_for",
+   "dec:NCT03424005:NCT03424005-E02:r1"
+  ],
+  [
+   "crit:NCT03424005-E02",
+   "requires",
+   "concept:medication:denosumab q4w"
+  ],
+  [
+   "concept:medication:denosumab q4w",
+   "observed_as",
+   "ev:SYN-0017-EV201"
+  ],
+  [
+   "ev:SYN-0017-EV201",
+   "derived_from",
+   "src:SYN-0017-D09:4307-4369"
+  ],
+  [
+   "ev:SYN-0017-EV201",
+   "insufficient_for",
+   "dec:NCT03424005:NCT03424005-E02:r1"
+  ],
+  [
+   "trial:NCT03424005",
+   "has_criterion",
+   "crit:NCT03424005-E03"
+  ],
+  [
+   "crit:NCT03424005-E03",
+   "decided_as",
+   "dec:NCT03424005:NCT03424005-E03:r1"
+  ],
+  [
+   "trial:NCT03424005",
+   "has_criterion",
+   "crit:NCT03424005-E04"
+  ],
+  [
+   "crit:NCT03424005-E04",
+   "decided_as",
+   "dec:NCT03424005:NCT03424005-E04:r1"
+  ],
+  [
+   "trial:NCT03424005",
+   "has_criterion",
+   "crit:NCT03424005-E05"
+  ],
+  [
+   "crit:NCT03424005-E05",
+   "decided_as",
+   "dec:NCT03424005:NCT03424005-E05:r1"
+  ],
+  [
+   "trial:NCT03424005",
+   "has_criterion",
+   "crit:NCT03424005-E06"
+  ],
+  [
+   "crit:NCT03424005-E06",
+   "decided_as",
+   "dec:NCT03424005:NCT03424005-E06:r1"
+  ],
+  [
+   "trial:NCT03424005",
+   "has_criterion",
+   "crit:NCT03424005-E07"
+  ],
+  [
+   "crit:NCT03424005-E07",
+   "decided_as",
+   "dec:NCT03424005:NCT03424005-E07:r1"
+  ],
+  [
+   "trial:NCT03424005",
+   "has_criterion",
+   "crit:NCT03424005-E08"
+  ],
+  [
+   "crit:NCT03424005-E08",
+   "decided_as",
+   "dec:NCT03424005:NCT03424005-E08:r1"
+  ],
+  [
+   "crit:NCT03424005-E08",
+   "requires",
+   "concept:symptom_finding:back pain mild and stable"
+  ],
+  [
+   "concept:symptom_finding:back pain mild and stable",
+   "observed_as",
+   "ev:SYN-0017-EV063"
+  ],
+  [
+   "ev:SYN-0017-EV063",
+   "derived_from",
+   "src:SYN-0017-D09:679-750"
+  ],
+  [
+   "ev:SYN-0017-EV063",
+   "supports",
+   "dec:NCT03424005:NCT03424005-E08:r1"
+  ],
+  [
+   "trial:NCT03424005",
+   "has_criterion",
+   "crit:NCT03424005-E09"
+  ],
+  [
+   "crit:NCT03424005-E09",
+   "decided_as",
+   "dec:NCT03424005:NCT03424005-E09:r1"
+  ],
+  [
+   "trial:NCT03424005",
+   "has_criterion",
+   "crit:NCT03424005-E10"
+  ],
+  [
+   "crit:NCT03424005-E10",
+   "decided_as",
+   "dec:NCT03424005:NCT03424005-E10:r1"
+  ],
+  [
+   "trial:NCT03424005",
+   "has_criterion",
+   "crit:NCT03424005-E11"
+  ],
+  [
+   "crit:NCT03424005-E11",
+   "decided_as",
+   "dec:NCT03424005:NCT03424005-E11:r1"
+  ],
+  [
+   "trial:NCT03424005",
+   "has_criterion",
+   "crit:NCT03424005-E12"
+  ],
+  [
+   "crit:NCT03424005-E12",
+   "decided_as",
+   "dec:NCT03424005:NCT03424005-E12:r1"
+  ],
+  [
+   "trial:NCT03424005",
+   "has_criterion",
+   "crit:NCT03424005-E13"
+  ],
+  [
+   "crit:NCT03424005-E13",
+   "decided_as",
+   "dec:NCT03424005:NCT03424005-E13:r1"
+  ],
+  [
+   "trial:NCT03424005",
+   "has_criterion",
+   "crit:NCT03424005-E14"
+  ],
+  [
+   "crit:NCT03424005-E14",
+   "decided_as",
+   "dec:NCT03424005:NCT03424005-E14:r1"
+  ],
+  [
+   "trial:NCT03424005",
+   "has_criterion",
+   "crit:NCT03424005-E15"
+  ],
+  [
+   "crit:NCT03424005-E15",
+   "decided_as",
+   "dec:NCT03424005:NCT03424005-E15:r1"
+  ],
+  [
+   "trial:NCT03424005",
+   "has_criterion",
+   "crit:NCT03424005-E16"
+  ],
+  [
+   "crit:NCT03424005-E16",
+   "decided_as",
+   "dec:NCT03424005:NCT03424005-E16:r1"
+  ],
+  [
+   "crit:NCT03424005-E16",
+   "requires",
+   "concept:diagnosis:cardiac history"
+  ],
+  [
+   "ev:SYN-0017-EV080",
+   "supports",
+   "dec:NCT03424005:NCT03424005-E16:r1"
+  ],
+  [
+   "crit:NCT03424005-E16",
+   "requires",
+   "concept:diagnosis:thromboembolism"
+  ],
+  [
+   "concept:diagnosis:thromboembolism",
+   "observed_as",
+   "ev:SYN-0017-EV088"
+  ],
+  [
+   "ev:SYN-0017-EV088",
+   "derived_from",
+   "src:SYN-0017-D09:1160-1185"
+  ],
+  [
+   "ev:SYN-0017-EV088",
+   "supports",
+   "dec:NCT03424005:NCT03424005-E16:r1"
+  ],
+  [
+   "trial:NCT03424005",
+   "has_criterion",
+   "crit:NCT03424005-E17"
+  ],
+  [
+   "crit:NCT03424005-E17",
+   "decided_as",
+   "dec:NCT03424005:NCT03424005-E17:r1"
+  ],
+  [
+   "trial:NCT03424005",
+   "has_criterion",
+   "crit:NCT03424005-E18"
+  ],
+  [
+   "crit:NCT03424005-E18",
+   "decided_as",
+   "dec:NCT03424005:NCT03424005-E18:r1"
+  ],
+  [
+   "crit:NCT03424005-E18",
+   "requires",
+   "concept:diagnosis:prior malignancy"
+  ],
+  [
+   "ev:SYN-0017-EV089",
+   "supports",
+   "dec:NCT03424005:NCT03424005-E18:r1"
+  ],
+  [
+   "trial:NCT03424005",
+   "has_criterion",
+   "crit:NCT03424005-E19"
+  ],
+  [
+   "crit:NCT03424005-E19",
+   "decided_as",
+   "dec:NCT03424005:NCT03424005-E19:r1"
+  ],
+  [
+   "crit:NCT03424005-E19",
+   "requires",
+   "concept:pregnancy"
+  ],
+  [
+   "ev:SYN-0017-EV117",
+   "supports",
+   "dec:NCT03424005:NCT03424005-E19:r1"
+  ],
+  [
+   "crit:NCT03424005-E19",
+   "requires",
+   "concept:childbearing_potential"
+  ],
+  [
+   "ev:SYN-0017-EV296",
+   "supports",
+   "dec:NCT03424005:NCT03424005-E19:r1"
+  ],
+  [
+   "trial:NCT03424005",
+   "labelled",
+   "label:NCT03424005"
+  ]
+ ]
+}

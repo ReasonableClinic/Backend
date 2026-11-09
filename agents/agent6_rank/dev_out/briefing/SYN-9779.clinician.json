@@ -1,0 +1,482 @@
+{
+ "patient_id": "SYN-9779",
+ "as_of": "2026-10-01",
+ "audience": "clinician",
+ "graph_file": "SYN-9779.json",
+ "ranking": [
+  "NCT06600412"
+ ],
+ "also_mentioned": [],
+ "sentences": [
+  {
+   "text": "환자 SYN-9779, 기준일 2026-10-01",
+   "refs": [],
+   "kind": "meta"
+  },
+  {
+   "text": "1. NCT06600412 The Evaluation of the Drug R3R01 for the Excretion of Protein in the Urine in Patients With Diabetic Kidney Disease.",
+   "refs": [
+    "trial:NCT06600412"
+   ],
+   "kind": "heading"
+  },
+  {
+   "text": "시험 판정: potential (남은 항목 13개)",
+   "refs": [
+    "label:NCT06600412"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "국내 모집 기관 없음 (모집 국가: Denmark)",
+   "refs": [
+    "trial:NCT06600412"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "Arms — EXPERIMENTAL: Drug: R3R01; PLACEBO_COMPARATOR: Drug: Placebo",
+   "refs": [
+    "trial:NCT06600412"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06600412-I01 [inclusion] 충족",
+   "refs": [
+    "crit:NCT06600412-I01",
+    "dec:NCT06600412:NCT06600412-I01:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"HbA1c 7.3% (4.0-5.6) H\" (SYN-9779-D08, 2026-09-24)",
+   "refs": [
+    "ev:SYN-9779-EV217",
+    "src:SYN-9779-D08:923-945"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"T2DM\" (SYN-9779-D07, 2026-09-24)",
+   "refs": [
+    "ev:SYN-9779-EV168",
+    "src:SYN-9779-D07:3648-3652"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"71 y/o woman with T2DM x 22 yrs\" (SYN-9779-D07, 2026-09-24)",
+   "refs": [
+    "ev:SYN-9779-EV045",
+    "src:SYN-9779-D07:139-170"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06600412-I02 [inclusion] 충족",
+   "refs": [
+    "crit:NCT06600412-I02",
+    "dec:NCT06600412:NCT06600412-I02:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Amlodipine 10 mg PO daily (since 2015)\" (SYN-9779-D07, 2026-09-24)",
+   "refs": [
+    "ev:SYN-9779-EV098",
+    "src:SYN-9779-D07:1427-1465"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Ramipril 10 mg PO daily (since 2010)\" (SYN-9779-D07, 2026-09-24)",
+   "refs": [
+    "ev:SYN-9779-EV095",
+    "src:SYN-9779-D07:1316-1352"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Continue amlodipine and ramipril.\" (SYN-9779-D07, 2026-09-24)",
+   "refs": [
+    "ev:SYN-9779-EV163",
+    "src:SYN-9779-D07:3484-3517"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06600412-I03 [inclusion] 충족",
+   "refs": [
+    "crit:NCT06600412-I03",
+    "dec:NCT06600412:NCT06600412-I03:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Albuminuria has risen despite max-dose ramipril (UACR 980 -> 1,120 mg/g). eGFR stable at 37-38.\" (SYN-9779-D07, 2026-09-24)",
+   "refs": [
+    "ev:SYN-9779-EV052",
+    "src:SYN-9779-D07:205-300"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Ramipril 10 mg PO daily (since 2010)\" (SYN-9779-D07, 2026-09-24)",
+   "refs": [
+    "ev:SYN-9779-EV095",
+    "src:SYN-9779-D07:1316-1352"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06600412-I04 [inclusion] 미확인 (근거 불충분) → 다음: clinician_confirmation",
+   "refs": [
+    "crit:NCT06600412-I04",
+    "dec:NCT06600412:NCT06600412-I04:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Whether the patient is on a stable lipid-lowering agent for at least 4 weeks (statin only planned)",
+   "refs": [
+    "dec:NCT06600412:NCT06600412-I04:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06600412-I05 [inclusion] 충족",
+   "refs": [
+    "crit:NCT06600412-I05",
+    "dec:NCT06600412:NCT06600412-I05:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Stopped: empagliflozin, stopped 2025 because of two genital mycotic infections.\" (SYN-9779-D07, 2025-01-01)",
+   "refs": [
+    "ev:SYN-9779-EV100",
+    "src:SYN-9779-D07:1521-1600"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Will discuss restarting an SGLT2 inhibitor with genital hygiene measures and a clear plan for early symptoms.\" (SYN-9779-D07, 2026-09-24)",
+   "refs": [
+    "ev:SYN-9779-EV159",
+    "src:SYN-9779-D07:3266-3375"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06600412-I06 [inclusion] 충족",
+   "refs": [
+    "crit:NCT06600412-I06",
+    "dec:NCT06600412:NCT06600412-I06:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"UACR 980 -> 1,120 -> 1,150 mg/g (04/2026, 08/2026, 09/2026).\" (SYN-9779-D07, 2026-09-24)",
+   "refs": [
+    "ev:SYN-9779-EV180",
+    "src:SYN-9779-D07:2687-2747"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Urine albumin/creatinine ratio 1,150 mg/g (<30) H\" (SYN-9779-D08, 2026-09-24)",
+   "refs": [
+    "ev:SYN-9779-EV218",
+    "src:SYN-9779-D08:946-995"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"urine albumin/creatinine 1,120 mg/g\" (SYN-9779-D04, 2026-08-27)",
+   "refs": [
+    "ev:SYN-9779-EV027",
+    "src:SYN-9779-D04:68-103"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06600412-I07 [inclusion] 충족",
+   "refs": [
+    "crit:NCT06600412-I07",
+    "dec:NCT06600412:NCT06600412-I07:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"eGFR 37 mL/min/1.73m2 (>60) L\" (SYN-9779-D08, 2026-09-24)",
+   "refs": [
+    "ev:SYN-9779-EV204",
+    "src:SYN-9779-D08:578-607"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   계산: egfr 37 mL/min/1.73m2 > 30 mL/min/1.73m2, 측정 2026-09-24 (7일 전)",
+   "refs": [
+    "calc:NCT06600412:NCT06600412-I07"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06600412-I08 [inclusion] 미확인 (기록 없음) → 다음: new_test",
+   "refs": [
+    "crit:NCT06600412-I08",
+    "dec:NCT06600412:NCT06600412-I08:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Waist circumference (>80 cm for women)",
+   "refs": [
+    "dec:NCT06600412:NCT06600412-I08:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06600412-I09 [inclusion] 충족",
+   "refs": [
+    "crit:NCT06600412-I09",
+    "dec:NCT06600412:NCT06600412-I09:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"BP 144/80 mmHg (right arm, seated).\" (SYN-9779-D07, 2026-09-24)",
+   "refs": [
+    "ev:SYN-9779-EV173",
+    "src:SYN-9779-D07:693-728"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   계산: systolic_bp 144 mmHg between [110, 160] mmHg, 측정 2026-09-24 (7일 전)",
+   "refs": [
+    "calc:NCT06600412:NCT06600412-I09"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06600412-I10 [inclusion] 미확인 (기록 없음) → 다음: patient_question",
+   "refs": [
+    "crit:NCT06600412-I10",
+    "dec:NCT06600412:NCT06600412-I10:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Whether the patient is of child-bearing potential and willing to avoid pregnancy",
+   "refs": [
+    "dec:NCT06600412:NCT06600412-I10:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06600412-E01 [exclusion] 미확인 (기록 없음) → 다음: med_record_check",
+   "refs": [
+    "crit:NCT06600412-E01",
+    "dec:NCT06600412:NCT06600412-E01:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Explicit absence of polycystic kidney disease, ANCA vasculitis, lupus nephritis",
+   "refs": [
+    "dec:NCT06600412:NCT06600412-E01:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06600412-E02 [exclusion] 미확인 (기록 없음) → 다음: med_history_check",
+   "refs": [
+    "crit:NCT06600412-E02",
+    "dec:NCT06600412:NCT06600412-E02:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06600412-E03 [exclusion] 미확인 (기록 없음) → 다음: med_history_check",
+   "refs": [
+    "crit:NCT06600412-E03",
+    "dec:NCT06600412:NCT06600412-E03:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06600412-E04 [exclusion] 미확인 (근거 불충분) → 다음: clinician_confirmation",
+   "refs": [
+    "crit:NCT06600412-E04",
+    "dec:NCT06600412:NCT06600412-E04:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Whether nephrotic syndrome is diagnosed",
+   "refs": [
+    "dec:NCT06600412:NCT06600412-E04:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06600412-E05 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT06600412-E05",
+    "dec:NCT06600412:NCT06600412-E05:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"No other cardiac, pulmonary, hepatic, autoimmune or neurologic history.\" (SYN-9779-D07, 2026-09-24)",
+   "refs": [
+    "ev:SYN-9779-EV080",
+    "src:SYN-9779-D07:1012-1083"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"AST 22 U/L (10-35)\" (SYN-9779-D08, 2026-09-24)",
+   "refs": [
+    "ev:SYN-9779-EV211",
+    "src:SYN-9779-D08:794-812"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"ALT 19 U/L (7-35)\" (SYN-9779-D08, 2026-09-24)",
+   "refs": [
+    "ev:SYN-9779-EV212",
+    "src:SYN-9779-D08:813-830"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Total bilirubin 0.5 mg/dL (0.2-1.2)\" (SYN-9779-D08, 2026-09-24)",
+   "refs": [
+    "ev:SYN-9779-EV214",
+    "src:SYN-9779-D08:868-903"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06600412-E06 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT06600412-E06",
+    "dec:NCT06600412:NCT06600412-E06:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"DOB 1955-04-17.\" (SYN-9779-D01, 2026-10-01)",
+   "refs": [
+    "ev:SYN-9779-EV005",
+    "src:SYN-9779-D01:8-23"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06600412-E07 [exclusion] 미확인 (기록 없음) → 다음: clinician_confirmation",
+   "refs": [
+    "crit:NCT06600412-E07",
+    "dec:NCT06600412:NCT06600412-E07:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Investigator assessment of understanding and collaboration",
+   "refs": [
+    "dec:NCT06600412:NCT06600412-E07:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06600412-E08 [exclusion] 미확인 (기록 없음) → 다음: patient_question",
+   "refs": [
+    "crit:NCT06600412-E08",
+    "dec:NCT06600412:NCT06600412-E08:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Menopausal or sterilization status",
+   "refs": [
+    "dec:NCT06600412:NCT06600412-E08:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06600412-E09 [exclusion] 미확인 (기록 없음) → 다음: clinician_confirmation",
+   "refs": [
+    "crit:NCT06600412-E09",
+    "dec:NCT06600412:NCT06600412-E09:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Hypersensitivity to study drug R3R01 or its excipients",
+   "refs": [
+    "dec:NCT06600412:NCT06600412-E09:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06600412-E10 [exclusion] 미확인 (기록 없음) → 다음: patient_question",
+   "refs": [
+    "crit:NCT06600412-E10",
+    "dec:NCT06600412:NCT06600412-E10:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Presence of galactose intolerance, lactase deficiency or malabsorption",
+   "refs": [
+    "dec:NCT06600412:NCT06600412-E10:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06600412-E11 [exclusion] 미확인 (기록 없음) → 다음: clinician_confirmation",
+   "refs": [
+    "crit:NCT06600412-E11",
+    "dec:NCT06600412:NCT06600412-E11:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Which drugs interact with R3R01 and whether current medications are among them",
+   "refs": [
+    "dec:NCT06600412:NCT06600412-E11:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT06600412-E12 [exclusion] 미확인 (기록 없음) → 다음: clinician_confirmation",
+   "refs": [
+    "crit:NCT06600412-E12",
+    "dec:NCT06600412:NCT06600412-E12:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Investigator opinion on risk or suitability",
+   "refs": [
+    "dec:NCT06600412:NCT06600412-E12:r1"
+   ],
+   "kind": "fact"
+  }
+ ],
+ "evidence": {
+  "files": [
+   "evidence_dev_haiku_v14_12.jsonl",
+   "evidence_dev_variants_haiku_v14_12.jsonl"
+  ],
+  "sha256": "daba4f5f1e16ec2eefc47311f5c13f85e6b5f218c85424f08f9af3d9bab09124",
+  "id_series": "haiku",
+  "graph_ev_nodes_checked": 2240
+ },
+ "agent6": "a6-0.4.14"
+}

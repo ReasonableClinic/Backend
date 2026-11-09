@@ -1,0 +1,1179 @@
+{
+ "patient_id": "SYN-3028",
+ "as_of": "2026-10-01",
+ "audience": "clinician",
+ "graph_file": "SYN-3028.json",
+ "ranking": [
+  "NCT02714634",
+  "NCT05428488"
+ ],
+ "also_mentioned": [],
+ "sentences": [
+  {
+   "text": "환자 SYN-3028, 기준일 2026-10-01",
+   "refs": [],
+   "kind": "meta"
+  },
+  {
+   "text": "1. NCT02714634 Clinical Trial Evaluating Methotrexate or Leflunomide + Targeted Therapy Versus Methotrexate or Leflunomide + Sulfasalazine + Hydroxychloroquine in Patients With Rheumatoid Arthritis and Insufficient Response to Methotrexate or Leflunomide",
+   "refs": [
+    "trial:NCT02714634"
+   ],
+   "kind": "heading"
+  },
+  {
+   "text": "시험 판정: potential (남은 항목 9개)",
+   "refs": [
+    "label:NCT02714634"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "모집 상태가 19개월 동안 확인되지 않음 (status_verified 2025-03)",
+   "refs": [
+    "trial:NCT02714634"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "국내 모집 기관 없음 (모집 국가: France)",
+   "refs": [
+    "trial:NCT02714634"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "Arms — EXPERIMENTAL: Drug: Methotrexate + targeted therapy administration; ACTIVE_COMPARATOR: Drug: methotrexate or leflunomide + sulfasalazine + hydroxychloroquine administration",
+   "refs": [
+    "trial:NCT02714634"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT02714634-I01 [inclusion] 충족",
+   "refs": [
+    "crit:NCT02714634-I01",
+    "dec:NCT02714634:NCT02714634-I01:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Seropositive RA with persistent active synovitis despite methotrexate\" (SYN-3028-D07, 2026-09-10)",
+   "refs": [
+    "ev:SYN-3028-EV103",
+    "src:SYN-3028-D07:76-145"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"RA diagnosed 2026-03 (symmetric polyarthritis of MCPs, PIPs, wrists\" (SYN-3028-D07, 2026-09-10)",
+   "refs": [
+    "ev:SYN-3028-EV111",
+    "src:SYN-3028-D07:244-311"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT02714634-I02 [inclusion] 충족",
+   "refs": [
+    "crit:NCT02714634-I02",
+    "dec:NCT02714634:NCT02714634-I02:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"DAS28-CRP 5.1 (high).\" (SYN-3028-D05, 2026-09-10)",
+   "refs": [
+    "ev:SYN-3028-EV037",
+    "src:SYN-3028-D05:106-127"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   계산: das28 5.1 points > 3.2 , 측정 2026-09-10 (21일 전)",
+   "refs": [
+    "calc:NCT02714634:NCT02714634-I02"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT02714634-I03 [inclusion] 충족",
+   "refs": [
+    "crit:NCT02714634-I03",
+    "dec:NCT02714634:NCT02714634-I03:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Methotrexate 20 mg weekly for 5 months, adherent.\" (SYN-3028-D05, 2026-09-10)",
+   "refs": [
+    "ev:SYN-3028-EV030",
+    "src:SYN-3028-D05:0-49"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Methotrexate started 15 mg weekly, up-titrated to 20 mg weekly on 2026-04-02, adherent, taken orally.\" (SYN-3028-D07, 2026-09-10)",
+   "refs": [
+    "ev:SYN-3028-EV114",
+    "src:SYN-3028-D07:355-456"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Seropositive RA with high disease activity despite 5 months of methotrexate 20 mg weekly plus low dose prednisolone.\" (SYN-3028-D07, 2026-09-10)",
+   "refs": [
+    "ev:SYN-3028-EV224",
+    "src:SYN-3028-D07:3138-3254"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT02714634-I04 [inclusion] 충족",
+   "refs": [
+    "crit:NCT02714634-I04",
+    "dec:NCT02714634:NCT02714634-I04:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Hand X-ray: periarticular osteopenia, one erosion at right MCP2.\" (SYN-3028-D02, 2026-03-05)",
+   "refs": [
+    "ev:SYN-3028-EV011",
+    "src:SYN-3028-D02:133-197"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"RF 128 IU/mL\" (SYN-3028-D02, 2026-03-05)",
+   "refs": [
+    "ev:SYN-3028-EV008",
+    "src:SYN-3028-D02:99-111"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"anti-CCP >300 U/mL.\" (SYN-3028-D02, 2026-03-05)",
+   "refs": [
+    "ev:SYN-3028-EV009",
+    "src:SYN-3028-D02:113-132"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT02714634-I05 [inclusion] 충족",
+   "refs": [
+    "crit:NCT02714634-I05",
+    "dec:NCT02714634:NCT02714634-I05:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"DOB 1980-05-11.\" (SYN-3028-D01, 2026-03-05)",
+   "refs": [
+    "ev:SYN-3028-EV002",
+    "src:SYN-3028-D01:8-23"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   계산: age_at_as_of = 46.392 (범위 18.0~None)",
+   "refs": [
+    "calc:NCT02714634:NCT02714634-I05"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT02714634-I06 [inclusion] 미확인 (기록 없음) → 다음: patient_question",
+   "refs": [
+    "crit:NCT02714634-I06",
+    "dec:NCT02714634:NCT02714634-I06:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT02714634-I07 [inclusion] 미확인 (기록 없음) → 다음: patient_question",
+   "refs": [
+    "crit:NCT02714634-I07",
+    "dec:NCT02714634:NCT02714634-I07:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Whether the patient is affiliated to a social insurance system",
+   "refs": [
+    "dec:NCT02714634:NCT02714634-I07:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT02714634-I08 [inclusion] 충족",
+   "refs": [
+    "crit:NCT02714634-I08",
+    "dec:NCT02714634:NCT02714634-I08:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Urine hCG negative today.\" (SYN-3028-D07, 2026-09-10)",
+   "refs": [
+    "ev:SYN-3028-EV177",
+    "src:SYN-3028-D07:2090-2115"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Urine hCG negative.\" (SYN-3028-D08, 2026-09-10)",
+   "refs": [
+    "ev:SYN-3028-EV097",
+    "src:SYN-3028-D08:1755-1774"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT02714634-I09 [inclusion] 충족",
+   "refs": [
+    "crit:NCT02714634-I09",
+    "dec:NCT02714634:NCT02714634-I09:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Progestin implant for contraception (since 2024)\" (SYN-3028-D07, 2026-09-10)",
+   "refs": [
+    "ev:SYN-3028-EV157",
+    "src:SYN-3028-D07:1490-1538"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Contraception: progestin implant in place, not planning pregnancy.\" (SYN-3028-D07, 2026-09-10)",
+   "refs": [
+    "ev:SYN-3028-EV243",
+    "src:SYN-3028-D07:3628-3694"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT02714634-E01 [exclusion] 미확인 (근거 불충분) → 다음: clinician_confirmation",
+   "refs": [
+    "crit:NCT02714634-E01",
+    "dec:NCT02714634:NCT02714634-E01:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Whether a contraindication to biologics/JAK inhibitors exists (TB screening pending)",
+   "refs": [
+    "dec:NCT02714634:NCT02714634-E01:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT02714634-E02 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT02714634-E02",
+    "dec:NCT02714634:NCT02714634-E02:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"No NSAIDs or other DMARDs used.\" (SYN-3028-D07, 2026-09-10)",
+   "refs": [
+    "ev:SYN-3028-EV161",
+    "src:SYN-3028-D07:1620-1651"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"No NSAIDs or other DMARDs used.\" (SYN-3028-D07, 2026-09-10)",
+   "refs": [
+    "ev:SYN-3028-EV162",
+    "src:SYN-3028-D07:1620-1651"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT02714634-E03 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT02714634-E03",
+    "dec:NCT02714634:NCT02714634-E03:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"No other cardiac, pulmonary, hepatic, renal, autoimmune or neurologic history.\" (SYN-3028-D07, 2026-09-10)",
+   "refs": [
+    "ev:SYN-3028-EV143",
+    "src:SYN-3028-D07:998-1076"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT02714634-E04 [exclusion] 미확인 (근거 불충분) → 다음: clinician_confirmation",
+   "refs": [
+    "crit:NCT02714634-E04",
+    "dec:NCT02714634:NCT02714634-E04:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Whether any contraindication to all biologics/JAK inhibitors or to all conventional DMARDs exists",
+   "refs": [
+    "dec:NCT02714634:NCT02714634-E04:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT02714634-E05 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT02714634-E05",
+    "dec:NCT02714634:NCT02714634-E05:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Prednisolone 5 mg PO daily (started 2026-03 at 7.5 mg, 5 mg since 2026-04)\" (SYN-3028-D07, 2026-09-10)",
+   "refs": [
+    "ev:SYN-3028-EV156",
+    "src:SYN-3028-D07:1413-1487"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"now 5 mg daily.\" (SYN-3028-D07, 2026-09-10)",
+   "refs": [
+    "ev:SYN-3028-EV117",
+    "src:SYN-3028-D07:487-502"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT02714634-E06 [exclusion] 미확인 (근거 불충분) → 다음: lab_check",
+   "refs": [
+    "crit:NCT02714634-E06",
+    "dec:NCT02714634:NCT02714634-E06:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: QuantiFERON-TB result (screening started: chest X-ray clear, IGRA sent but pending)",
+   "refs": [
+    "dec:NCT02714634:NCT02714634-E06:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT02714634-E07 [exclusion] 미확인 (기록 없음) → 다음: patient_question",
+   "refs": [
+    "crit:NCT02714634-E07",
+    "dec:NCT02714634:NCT02714634-E07:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Whether the patient can be followed for 12 months",
+   "refs": [
+    "dec:NCT02714634:NCT02714634-E07:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT02714634-E08 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT02714634-E08",
+    "dec:NCT02714634:NCT02714634-E08:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Not pregnant, not planning pregnancy.\" (SYN-3028-D07, 2026-09-10)",
+   "refs": [
+    "ev:SYN-3028-EV176",
+    "src:SYN-3028-D07:2052-2089"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Urine hCG negative today.\" (SYN-3028-D07, 2026-09-10)",
+   "refs": [
+    "ev:SYN-3028-EV177",
+    "src:SYN-3028-D07:2090-2115"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT02714634-E09 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT02714634-E09",
+    "dec:NCT02714634:NCT02714634-E09:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"No recreational substances.\" (SYN-3028-D07, 2026-09-10)",
+   "refs": [
+    "ev:SYN-3028-EV167",
+    "src:SYN-3028-D07:1815-1842"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Alcohol rare, under 2 drinks per month, advised to keep minimal on methotrexate.\" (SYN-3028-D07, 2026-09-10)",
+   "refs": [
+    "ev:SYN-3028-EV166",
+    "src:SYN-3028-D07:1734-1814"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT02714634-E10 [exclusion] 미확인 (기록 없음) → 다음: patient_question",
+   "refs": [
+    "crit:NCT02714634-E10",
+    "dec:NCT02714634:NCT02714634-E10:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Participation in any investigational product study within the last 4 weeks",
+   "refs": [
+    "dec:NCT02714634:NCT02714634-E10:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT02714634-E11 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT02714634-E11",
+    "dec:NCT02714634:NCT02714634-E11:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Progestin implant for contraception (since 2024)\" (SYN-3028-D07, 2026-09-10)",
+   "refs": [
+    "ev:SYN-3028-EV157",
+    "src:SYN-3028-D07:1490-1538"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Contraception: progestin implant in place, not planning pregnancy.\" (SYN-3028-D07, 2026-09-10)",
+   "refs": [
+    "ev:SYN-3028-EV243",
+    "src:SYN-3028-D07:3628-3694"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT02714634-E12 [exclusion] 미확인 (기록 없음) → 다음: patient_question",
+   "refs": [
+    "crit:NCT02714634-E12",
+    "dec:NCT02714634:NCT02714634-E12:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Whether the patient is under law protection (guardianship)",
+   "refs": [
+    "dec:NCT02714634:NCT02714634-E12:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT02714634-E13 [exclusion] 미확인 (기록 없음) → 다음: patient_question",
+   "refs": [
+    "crit:NCT02714634-E13",
+    "dec:NCT02714634:NCT02714634-E13:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Whether the patient is a prisoner",
+   "refs": [
+    "dec:NCT02714634:NCT02714634-E13:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "2. NCT05428488 Efficacy of a Sequential Treatment Strategy in Rheumatoid Arthritis",
+   "refs": [
+    "trial:NCT05428488"
+   ],
+   "kind": "heading"
+  },
+  {
+   "text": "시험 판정: potential (남은 항목 15개)",
+   "refs": [
+    "label:NCT05428488"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "모집 상태가 19개월 동안 확인되지 않음 (status_verified 2025-03)",
+   "refs": [
+    "trial:NCT05428488"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "국내 모집 기관 없음 (모집 국가: France, Monaco)",
+   "refs": [
+    "trial:NCT05428488"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "Arms — EXPERIMENTAL: Drug: Abatacept (W12-W48) + Drug: TNF Inhibitor (W0-W12); ACTIVE_COMPARATOR: Drug: TNF Inhibitor (W12-W48) + Drug: TNF Inhibitor (W0-W12)",
+   "refs": [
+    "trial:NCT05428488"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT05428488-I01 [inclusion] 충족",
+   "refs": [
+    "crit:NCT05428488-I01",
+    "dec:NCT05428488:NCT05428488-I01:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"DOB 1980-05-11.\" (SYN-3028-D01, 2026-03-05)",
+   "refs": [
+    "ev:SYN-3028-EV002",
+    "src:SYN-3028-D01:8-23"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   계산: age_at_as_of = 46.392 (범위 18.0~None)",
+   "refs": [
+    "calc:NCT05428488:NCT05428488-I01"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT05428488-I02 [inclusion] 충족",
+   "refs": [
+    "crit:NCT05428488-I02",
+    "dec:NCT05428488:NCT05428488-I02:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"RA diagnosed 2026-03 (symmetric polyarthritis of MCPs, PIPs, wrists\" (SYN-3028-D07, 2026-09-10)",
+   "refs": [
+    "ev:SYN-3028-EV111",
+    "src:SYN-3028-D07:244-311"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"RF 128 IU/mL\" (SYN-3028-D02, 2026-03-05)",
+   "refs": [
+    "ev:SYN-3028-EV008",
+    "src:SYN-3028-D02:99-111"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"anti-CCP >300 U/mL.\" (SYN-3028-D02, 2026-03-05)",
+   "refs": [
+    "ev:SYN-3028-EV009",
+    "src:SYN-3028-D02:113-132"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"RA diagnosed 2026-03 (symmetric polyarthritis of MCPs, PIPs, wrists\" (SYN-3028-D07, 2026-09-10)",
+   "refs": [
+    "ev:SYN-3028-EV112",
+    "src:SYN-3028-D07:244-311"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT05428488-I03 [inclusion] 충족",
+   "refs": [
+    "crit:NCT05428488-I03",
+    "dec:NCT05428488:NCT05428488-I03:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"anti-CCP >300 U/mL\" (SYN-3028-D07, 2026-09-10)",
+   "refs": [
+    "ev:SYN-3028-EV110",
+    "src:SYN-3028-D07:224-242"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT05428488-I04 [inclusion] 충족",
+   "refs": [
+    "crit:NCT05428488-I04",
+    "dec:NCT05428488:NCT05428488-I04:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Methotrexate started 15 mg weekly, up-titrated to 20 mg weekly on 2026-04-02, adherent, taken orally.\" (SYN-3028-D07, 2026-09-10)",
+   "refs": [
+    "ev:SYN-3028-EV114",
+    "src:SYN-3028-D07:355-456"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Methotrexate 20 mg weekly for 5 months, adherent.\" (SYN-3028-D05, 2026-09-10)",
+   "refs": [
+    "ev:SYN-3028-EV030",
+    "src:SYN-3028-D05:0-49"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT05428488-I05 [inclusion] 미확인 (기간 지남) → 다음: new_test",
+   "refs": [
+    "crit:NCT05428488-I05",
+    "dec:NCT05428488:NCT05428488-I05:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   계산: das28 5.1 points > 3.2 , 측정 2026-09-10 (21일 전, 허용 7일)",
+   "refs": [
+    "calc:NCT05428488:NCT05428488-I05"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT05428488-I06 [inclusion] 충족",
+   "refs": [
+    "crit:NCT05428488-I06",
+    "dec:NCT05428488:NCT05428488-I06:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"CRP 2.3 mg/dL (<0.5, H)\" (SYN-3028-D08, 2026-09-10)",
+   "refs": [
+    "ev:SYN-3028-EV066",
+    "src:SYN-3028-D08:952-975"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"ESR 44 mm/h (0-20, H)\" (SYN-3028-D08, 2026-09-10)",
+   "refs": [
+    "ev:SYN-3028-EV067",
+    "src:SYN-3028-D08:976-997"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"CRP 2.4 mg/dL\" (SYN-3028-D04, 2026-09-08)",
+   "refs": [
+    "ev:SYN-3028-EV021",
+    "src:SYN-3028-D04:0-13"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT05428488-I07 [inclusion] 충족",
+   "refs": [
+    "crit:NCT05428488-I07",
+    "dec:NCT05428488:NCT05428488-I07:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"No prior biologic or JAK inhibitor.\" (SYN-3028-D07, 2026-09-10)",
+   "refs": [
+    "ev:SYN-3028-EV163",
+    "src:SYN-3028-D07:1652-1687"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT05428488-I08 [inclusion] 미확인 (근거 불충분) → 다음: clinician_confirmation",
+   "refs": [
+    "crit:NCT05428488-I08",
+    "dec:NCT05428488:NCT05428488-I08:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Clinician's documented indication specifically for a TNF inhibitor",
+   "refs": [
+    "dec:NCT05428488:NCT05428488-I08:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT05428488-E01 [exclusion] 미확인 (기록 없음) → 다음: patient_question",
+   "refs": [
+    "crit:NCT05428488-E01",
+    "dec:NCT05428488:NCT05428488-E01:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT05428488-E02 [exclusion] 미확인 (기록 없음) → 다음: patient_question",
+   "refs": [
+    "crit:NCT05428488-E02",
+    "dec:NCT05428488:NCT05428488-E02:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT05428488-E03 [exclusion] 미확인 (기록 없음) → 다음: patient_question",
+   "refs": [
+    "crit:NCT05428488-E03",
+    "dec:NCT05428488:NCT05428488-E03:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT05428488-E04 [exclusion] 미확인 (기록 없음) → 다음: patient_question",
+   "refs": [
+    "crit:NCT05428488-E04",
+    "dec:NCT05428488:NCT05428488-E04:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Whether the patient is covered by public health insurance",
+   "refs": [
+    "dec:NCT05428488:NCT05428488-E04:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT05428488-E05 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT05428488-E05",
+    "dec:NCT05428488:NCT05428488-E05:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"No other cardiac, pulmonary, hepatic, renal, autoimmune or neurologic history.\" (SYN-3028-D07, 2026-09-10)",
+   "refs": [
+    "ev:SYN-3028-EV144",
+    "src:SYN-3028-D07:998-1076"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Neuro: grossly intact.\" (SYN-3028-D07, 2026-09-10)",
+   "refs": [
+    "ev:SYN-3028-EV257",
+    "src:SYN-3028-D07:2873-2895"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT05428488-E06 [exclusion] 미확인 (기록 없음) → 다음: clinician_confirmation",
+   "refs": [
+    "crit:NCT05428488-E06",
+    "dec:NCT05428488:NCT05428488-E06:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Whether fibromyalgia has been diagnosed",
+   "refs": [
+    "dec:NCT05428488:NCT05428488-E06:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT05428488-E07 [exclusion] 미확인 (근거 불충분) → 다음: lab_check",
+   "refs": [
+    "crit:NCT05428488-E07",
+    "dec:NCT05428488:NCT05428488-E07:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: QuantiFERON-TB result (pending) to exclude active or latent TB as a contraindication",
+   "refs": [
+    "dec:NCT05428488:NCT05428488-E07:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT05428488-E08 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT05428488-E08",
+    "dec:NCT05428488:NCT05428488-E08:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"QuantiFERON-TB: sent, result pending\" (SYN-3028-D08, 2026-09-10)",
+   "refs": [
+    "ev:SYN-3028-EV086",
+    "src:SYN-3028-D08:1523-1559"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Chest X-ray clear.\" (SYN-3028-D05, 2026-09-10)",
+   "refs": [
+    "ev:SYN-3028-EV247",
+    "src:SYN-3028-D05:260-278"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT05428488-E09 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT05428488-E09",
+    "dec:NCT05428488:NCT05428488-E09:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Latent TB infection, 2018, treated with isoniazid for 9 months, completed.\" (SYN-3028-D07, 2018-01-01)",
+   "refs": [
+    "ev:SYN-3028-EV137",
+    "src:SYN-3028-D07:923-997"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Latent TB infection, 2018, treated with isoniazid for 9 months, completed.\" (SYN-3028-D07, 2026-09-10)",
+   "refs": [
+    "ev:SYN-3028-EV138",
+    "src:SYN-3028-D07:923-997"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Chest X-ray clear.\" (SYN-3028-D07, 2026-09-10)",
+   "refs": [
+    "ev:SYN-3028-EV223",
+    "src:SYN-3028-D07:3098-3116"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT05428488-E10 [exclusion] 미확인 (기록 없음) → 다음: patient_question",
+   "refs": [
+    "crit:NCT05428488-E10",
+    "dec:NCT05428488:NCT05428488-E10:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Whether the patient can attend follow-up for 48 weeks",
+   "refs": [
+    "dec:NCT05428488:NCT05428488-E10:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT05428488-E11 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT05428488-E11",
+    "dec:NCT05428488:NCT05428488-E11:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"No recreational substances.\" (SYN-3028-D07, 2026-09-10)",
+   "refs": [
+    "ev:SYN-3028-EV167",
+    "src:SYN-3028-D07:1815-1842"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Alcohol rare, under 2 drinks per month, advised to keep minimal on methotrexate.\" (SYN-3028-D07, 2026-09-10)",
+   "refs": [
+    "ev:SYN-3028-EV166",
+    "src:SYN-3028-D07:1734-1814"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT05428488-E12 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT05428488-E12",
+    "dec:NCT05428488:NCT05428488-E12:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Not pregnant, not planning pregnancy.\" (SYN-3028-D07, 2026-09-10)",
+   "refs": [
+    "ev:SYN-3028-EV176",
+    "src:SYN-3028-D07:2052-2089"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Urine hCG negative today.\" (SYN-3028-D07, 2026-09-10)",
+   "refs": [
+    "ev:SYN-3028-EV177",
+    "src:SYN-3028-D07:2090-2115"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT05428488-E13 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT05428488-E13",
+    "dec:NCT05428488:NCT05428488-E13:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Progestin implant for contraception (since 2024)\" (SYN-3028-D07, 2026-09-10)",
+   "refs": [
+    "ev:SYN-3028-EV157",
+    "src:SYN-3028-D07:1490-1538"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Premenopausal.\" (SYN-3028-D07, 2026-09-10)",
+   "refs": [
+    "ev:SYN-3028-EV172",
+    "src:SYN-3028-D07:1978-1992"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT05428488-E14 [exclusion] 미확인 (기록 없음) → 다음: patient_question",
+   "refs": [
+    "crit:NCT05428488-E14",
+    "dec:NCT05428488:NCT05428488-E14:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Whether the patient is under legal protection",
+   "refs": [
+    "dec:NCT05428488:NCT05428488-E14:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT05428488-E15 [exclusion] 미확인 (기록 없음) → 다음: patient_question",
+   "refs": [
+    "crit:NCT05428488-E15",
+    "dec:NCT05428488:NCT05428488-E15:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Whether the patient is a prisoner",
+   "refs": [
+    "dec:NCT05428488:NCT05428488-E15:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT05428488-E16 [exclusion] 미확인 (기록 없음) → 다음: patient_question",
+   "refs": [
+    "crit:NCT05428488-E16",
+    "dec:NCT05428488:NCT05428488-E16:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Whether the patient is employed by or dependent on the sponsor or investigator",
+   "refs": [
+    "dec:NCT05428488:NCT05428488-E16:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT05428488-E17 [exclusion] 미확인 (기록 없음) → 다음: patient_question",
+   "refs": [
+    "crit:NCT05428488-E17",
+    "dec:NCT05428488:NCT05428488-E17:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Participation in another interventional trial or investigational product in last 4 weeks",
+   "refs": [
+    "dec:NCT05428488:NCT05428488-E17:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT05428488-E18 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT05428488-E18",
+    "dec:NCT05428488:NCT05428488-E18:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"No other cardiac, pulmonary, hepatic, renal, autoimmune or neurologic history.\" (SYN-3028-D07, 2026-09-10)",
+   "refs": [
+    "ev:SYN-3028-EV139",
+    "src:SYN-3028-D07:998-1076"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT05428488-E19 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT05428488-E19",
+    "dec:NCT05428488:NCT05428488-E19:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"No other cardiac, pulmonary, hepatic, renal, autoimmune or neurologic history.\" (SYN-3028-D07, 2026-09-10)",
+   "refs": [
+    "ev:SYN-3028-EV140",
+    "src:SYN-3028-D07:998-1076"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Never smoker (0 pack-years).\" (SYN-3028-D07, 2026-09-10)",
+   "refs": [
+    "ev:SYN-3028-EV165",
+    "src:SYN-3028-D07:1705-1733"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT05428488-E20 [exclusion] 미확인 (기록 없음) → 다음: patient_question",
+   "refs": [
+    "crit:NCT05428488-E20",
+    "dec:NCT05428488:NCT05428488-E20:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Whether any surgery is planned",
+   "refs": [
+    "dec:NCT05428488:NCT05428488-E20:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT05428488-E21 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT05428488-E21",
+    "dec:NCT05428488:NCT05428488-E21:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"No prior biologic or JAK inhibitor.\" (SYN-3028-D07, 2026-09-10)",
+   "refs": [
+    "ev:SYN-3028-EV163",
+    "src:SYN-3028-D07:1652-1687"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"NKDA.\" (SYN-3028-D07, 2026-09-10)",
+   "refs": [
+    "ev:SYN-3028-EV152",
+    "src:SYN-3028-D07:1247-1252"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT05428488-E22 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT05428488-E22",
+    "dec:NCT05428488:NCT05428488-E22:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"NKDA.\" (SYN-3028-D07, 2026-09-10)",
+   "refs": [
+    "ev:SYN-3028-EV152",
+    "src:SYN-3028-D07:1247-1252"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT05428488-E23 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT05428488-E23",
+    "dec:NCT05428488:NCT05428488-E23:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Hepatitis B surface antigen negative\" (SYN-3028-D08, 2026-09-10)",
+   "refs": [
+    "ev:SYN-3028-EV080",
+    "src:SYN-3028-D08:1352-1388"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Hepatitis B core antibody (total) negative\" (SYN-3028-D08, 2026-09-10)",
+   "refs": [
+    "ev:SYN-3028-EV081",
+    "src:SYN-3028-D08:1389-1431"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT05428488-E24 [exclusion] 미확인 (기록 없음) → 다음: patient_question",
+   "refs": [
+    "crit:NCT05428488-E24",
+    "dec:NCT05428488:NCT05428488-E24:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   필요한 정보: Whether a live vaccine was given in the last 30 days",
+   "refs": [
+    "dec:NCT05428488:NCT05428488-E24:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT05428488-E25 [exclusion] 제외 사유 없음",
+   "refs": [
+    "crit:NCT05428488-E25",
+    "dec:NCT05428488:NCT05428488-E25:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"No other cardiac, pulmonary, hepatic, renal, autoimmune or neurologic history.\" (SYN-3028-D07, 2026-09-10)",
+   "refs": [
+    "ev:SYN-3028-EV143",
+    "src:SYN-3028-D07:998-1076"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   근거: \"Negative for fever, night sweats, weight loss, cough, hemoptysis, dyspnea, chest pain, abdominal pain, diarrhea, dysuria, rash, dry eyes or mouth, Raynaud, oral ulcers, headache, focal weakness or numbness.\" (SYN-3028-D07, 2026-09-10)",
+   "refs": [
+    "ev:SYN-3028-EV189",
+    "src:SYN-3028-D07:2167-2373"
+   ],
+   "kind": "fact"
+  }
+ ],
+ "evidence": {
+  "files": [
+   "evidence_dev_haiku_v14_12.jsonl",
+   "evidence_dev_variants_haiku_v14_12.jsonl"
+  ],
+  "sha256": "daba4f5f1e16ec2eefc47311f5c13f85e6b5f218c85424f08f9af3d9bab09124",
+  "id_series": "haiku",
+  "graph_ev_nodes_checked": 2240
+ },
+ "agent6": "a6-0.4.14"
+}

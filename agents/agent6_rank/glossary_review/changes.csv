@@ -1,0 +1,24 @@
+﻿data_row,csv_line,en,field,before,after,reason
+40,41,rhegmatogenous retinal detachment superior bullous involving macula OD,ko,오른쪽 눈 황반을 침범한 열공원성 망막박리,오른쪽 눈 황반을 침범하고 위쪽 망막이 물집처럼 부푼 열공원성 망막박리,원문에서 빠진 superior bullous(상부 수포성)를 환자용 설명으로 복원하고 OD(오른쪽 눈)·황반 침범도 보존.
+49,50,Acute Pancreatitis (AP),abbr,,AP,원문에 명시된 AP를 약어 열에 분리.
+51,52,Advance Solid Tumors,ko,진행성 고형암,진행성 고형 종양,solid tumor만으로 악성임을 확정하지 않도록 '고형암'을 '고형 종양'으로 변경. 진행성·전이성·유전자 변이·절제 불가 등 원문 수식어는 유지.
+54,55,Advanced Solid Tumor,ko,진행성 고형암,진행성 고형 종양,solid tumor만으로 악성임을 확정하지 않도록 '고형암'을 '고형 종양'으로 변경. 진행성·전이성·유전자 변이·절제 불가 등 원문 수식어는 유지.
+55,56,Advanced Solid Tumors,ko,진행성 고형암,진행성 고형 종양,solid tumor만으로 악성임을 확정하지 않도록 '고형암'을 '고형 종양'으로 변경. 진행성·전이성·유전자 변이·절제 불가 등 원문 수식어는 유지.
+56,57,Advanced Solid Tumors With KRAS G12C Mutations,ko,KRAS G12C 돌연변이가 있는 진행성 고형암,KRAS G12C 돌연변이가 있는 진행성 고형 종양,solid tumor만으로 악성임을 확정하지 않도록 '고형암'을 '고형 종양'으로 변경. 진행성·전이성·유전자 변이·절제 불가 등 원문 수식어는 유지.
+67,68,Biliary Pancreatitis,ko,담석성 췌장염,담도 질환으로 인한 췌장염,biliary는 담도 관련 원인을 뜻하며 담석으로만 한정되지 않으므로 원인 범위를 보존.
+68,69,"Bladder (Urothelial, Transitional Cell) Cancer",ko,방광암(요로상피암),방광암(요로상피암·이행세포암),원문에 병기된 transitional cell(이행세포)도 보존.
+74,75,Cardiovascular Risk,ko,심혈관 위험,심혈관질환 위험,환자에게 위험의 대상을 더 명확히 표현.
+102,103,EBV,ko,엡스타인-바 바이러스 감염,엡스타인-바 바이러스,EBV 단독은 바이러스명이며 감염 진단이 아님. 원문에 없는 감염을 제거하고 병원체는 기존 kind 중 other로 분류.
+102,103,EBV,kind,disease,other,EBV 단독은 바이러스명이며 감염 진단이 아님. 원문에 없는 감염을 제거하고 병원체는 기존 kind 중 other로 분류.
+103,104,EEG Brain Oscillations,ko,뇌파(EEG) 진동,뇌파 진동,약어를 ko에 중복 포함하지 않고 abbr로 분리.
+103,104,EEG Brain Oscillations,abbr,,EEG,약어를 ko에 중복 포함하지 않고 abbr로 분리.
+139,140,ILM Peeling,abbr,,ILM,원문에 명시된 ILM을 약어 열에 보존.
+145,146,KRAS Altered Advanced or Metastatic Solid Tumors,ko,KRAS 변이가 있는 진행성 또는 전이성 고형암,KRAS 변이가 있는 진행성 또는 전이성 고형 종양,solid tumor만으로 악성임을 확정하지 않도록 '고형암'을 '고형 종양'으로 변경. 진행성·전이성·유전자 변이·절제 불가 등 원문 수식어는 유지.
+150,151,Localized Muscle Invasive Bladder Urothelial Carcinoma,ko,국소 근침윤성 방광 요로상피암,국한성 근침윤성 방광 요로상피암,localized와 locally advanced를 구별하도록 '국소'를 '국한성'으로 구체화.
+152,153,Locally Advanced Solid Tumor,ko,국소 진행성 고형암,국소 진행성 고형 종양,solid tumor만으로 악성임을 확정하지 않도록 '고형암'을 '고형 종양'으로 변경. 진행성·전이성·유전자 변이·절제 불가 등 원문 수식어는 유지.
+158,159,Metastatic Solid Tumor,ko,전이성 고형암,전이성 고형 종양,solid tumor만으로 악성임을 확정하지 않도록 '고형암'을 '고형 종양'으로 변경. 진행성·전이성·유전자 변이·절제 불가 등 원문 수식어는 유지.
+159,160,Metastatic Solid Tumors,ko,전이성 고형암,전이성 고형 종양,solid tumor만으로 악성임을 확정하지 않도록 '고형암'을 '고형 종양'으로 변경. 진행성·전이성·유전자 변이·절제 불가 등 원문 수식어는 유지.
+176,177,Non-diabetic Chronic Kidney Disease,ko,당뇨병이 없는 만성 콩팥병,비당뇨병성 만성 콩팥병,non-diabetic CKD는 비당뇨병성 원인을 뜻할 수 있어 '당뇨병이 없는'으로 단정하지 않음. 실제 당뇨병 동반 허용 여부는 선정·제외 기준에서 확인.
+210,211,Solid Tumor,ko,고형암,고형 종양,solid tumor만으로 악성임을 확정하지 않도록 '고형암'을 '고형 종양'으로 변경. 진행성·전이성·유전자 변이·절제 불가 등 원문 수식어는 유지.
+211,212,"Solid Tumor, Adult",ko,성인 고형암,성인 고형 종양,solid tumor만으로 악성임을 확정하지 않도록 '고형암'을 '고형 종양'으로 변경. 진행성·전이성·유전자 변이·절제 불가 등 원문 수식어는 유지.
+233,234,Unresectable Solid Tumor,ko,수술로 제거할 수 없는 고형암,수술로 제거할 수 없는 고형 종양,solid tumor만으로 악성임을 확정하지 않도록 '고형암'을 '고형 종양'으로 변경. 진행성·전이성·유전자 변이·절제 불가 등 원문 수식어는 유지.

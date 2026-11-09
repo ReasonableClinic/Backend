@@ -1,0 +1,75 @@
+{
+ "patient_id": "SYN-0011",
+ "as_of": "2026-10-01",
+ "audience": "clinician",
+ "graph_file": "SYN-0011.json",
+ "ranking": [],
+ "also_mentioned": [
+  "NCT04928846",
+  "NCT07144280"
+ ],
+ "sentences": [
+  {
+   "text": "환자 SYN-0011, 기준일 2026-10-01",
+   "refs": [],
+   "kind": "meta"
+  },
+  {
+   "text": "추천할 시험 없음 (eligible·potential 없음)",
+   "refs": [],
+   "kind": "meta"
+  },
+  {
+   "text": "참고: FAIL 하나로 제외된 시험 (순위에는 넣지 않음, 그 기준만 확인하면 판정이 바뀔 수 있음)",
+   "refs": [
+    "trial:NCT04928846",
+    "trial:NCT07144280"
+   ],
+   "kind": "heading"
+  },
+  {
+   "text": "NCT04928846 A Study to Assess Disease Activity and Adverse Events of Intravenous (IV) Telisotuzumab Vedotin Compared to IV Docetaxel in Adult Participants With Previously Treated Non-Squamous Non-Small Cell Lung Cancer (NSCLC): NCT04928846-I10 [inclusion] 불충족",
+   "refs": [
+    "crit:NCT04928846-I10",
+    "dec:NCT04928846:NCT04928846-I10:r1",
+    "label:NCT04928846",
+    "trial:NCT04928846"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   노트: No actionable driver; requires prior platinum and checkpoint inhibitor, but 'No prior immunotherapy'; ICI only planned/declined.",
+   "refs": [
+    "dec:NCT04928846:NCT04928846-I10:r1"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "NCT07144280 A Study to Learn About the Study Medicine Called PF-08046054/SGN-PDL1V Versus Docetaxel in Adult Participants With Previously-Treated Programmed Cell Death Ligand 1 (PD-L1) Positive Non-Small-Cell Lung Cancer (NSCLC): NCT07144280-I06 [inclusion] 불충족",
+   "refs": [
+    "crit:NCT07144280-I06",
+    "dec:NCT07144280:NCT07144280-I06:r1",
+    "label:NCT07144280",
+    "trial:NCT07144280"
+   ],
+   "kind": "fact"
+  },
+  {
+   "text": "   노트: No known AGAs; received platinum doublet but explicitly no prior PD-(L)1 antibody and no contraindication documented (declined pembrolizumab for personal reasons).",
+   "refs": [
+    "dec:NCT07144280:NCT07144280-I06:r1"
+   ],
+   "kind": "fact"
+  }
+ ],
+ "evidence": {
+  "files": [
+   "evidence_dev_haiku_v14_12.jsonl",
+   "evidence_dev_variants_haiku_v14_12.jsonl"
+  ],
+  "sha256": "daba4f5f1e16ec2eefc47311f5c13f85e6b5f218c85424f08f9af3d9bab09124",
+  "id_series": "haiku",
+  "graph_ev_nodes_checked": 2240
+ },
+ "agent6": "a6-0.4.14"
+}

@@ -31,3 +31,11 @@ data/dev/*
 **/gold_variants_test*.jsonl
 id_map*
 *private*
+
+# demo build and replay pack contents (Release zip replay_pack.zip, unpacked over the repo; see REPRODUCE.md)
+build/
+_repro/
+replay/
+*.zip
+agents/agent3_judge/data/
+agents/agent3_judge/agent3_kit/
