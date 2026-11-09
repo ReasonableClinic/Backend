@@ -21,7 +21,7 @@ B는 보고서와 **같은 숫자**가 나와야 합니다(다른 줄은 5장). 
 | 받을 것 | 위치 | 내용 |
 | --- | --- | --- |
 | backend 레포 | https://github.com/ReasonableClinic/Backend | 에이전트 코드(고정 버전 그대로), 통합 파이프라인 `pipeline/`, API `api/`, `reproduce.sh` |
-| 웹 화면 레포 | https://github.com/ReasonableClinic/Healthcare-web | 웹 화면 web_demo_v3.11 (`index.html`, `app.js`, 번역 `data/ko.json`·`card_ko.json`, backend-0.1.1과 같은 데모 묶음) |
+| 웹 화면 레포 | https://github.com/ReasonableClinic/Healthcare-web | 웹 화면 web_demo_v3.11 (`index.html`, `app.js`, 번역 `data/ko.json`·`card_ko.json`, 통합 최종과 같은 데모 묶음) |
 | `replay_pack.zip` | backend 레포 Release | dev 데이터·정답, Agent 1 캐시, Agent 3 LLM 답 캐시, 원본 실행 출력, 데모 데이터. **test 파일 없음** |
 | `test_pack.zip` (선택) | https://github.com/ReasonableClinic/data-eval Release | test 입력·정답(기본 30명 + 변형 34명), 변형 순위 정답, Agent 2 test 근거 v14.9, Agent 3 test 출력·캐시, 채점 기록 |
 
@@ -41,7 +41,7 @@ unzip -q <받은 곳>/test_pack.zip -d ../trialtrace_test        # test 단계�
 trialtrace/                        (backend 레포)
   REPRODUCE.md  reproduce.sh
   agents/agent1_criteria/ … agent6_rank/   에이전트 패키지 (아래 표의 고정 버전 그대로, runs/·캐시 제외)
-  pipeline/ api/                   통합 파이프라인(backend-0.1.1), API
+  pipeline/ api/                   통합 파이프라인(통합 최종 11/09), API
   scripts/make_packs.sh            Release zip 2개를 만든 스크립트 (팀 내부용)
   replay/                          replay_pack.zip을 푼 곳 (git에 없음)
 ```
@@ -54,21 +54,21 @@ trialtrace/                        (backend 레포)
 | Agent 4 검증 | v2 (LLM 없음) | `agents/agent4_verify/` |
 | Agent 5 추가 정보 카드 | a5u-0.2.0 + a5j-0.3.1 | `agents/agent5_acquire/` |
 | Agent 6 순위·설명 | a6-0.4.14 (dev·데모), a6-0.4.0 + 용어 사전 06fc5ffa… (test) | `agents/agent6_rank/`, a6-0.4.0은 replay `extra/agent6_a6-0.4.0/` |
-| 통합 | backend-0.1.1 | `pipeline/`, `api/` |
-| 웹 화면 | web_demo_v3.11 (데이터는 backend-0.1.1 출력과 같음) | 별도 레포 Healthcare-web |
+| 통합 | 통합 최종 (11/09, `통합_최종.zip` sha256 a2456c45e1cf, backend-0.1.1 다음 판) | `pipeline/`, `api/` |
+| 웹 화면 | web_demo_v3.11 (데이터는 통합 최종 출력과 같음) | 별도 레포 Healthcare-web |
 
 ## 3. A. 데모
 
 ```bash
 cp -R replay/. .                   # replay_pack을 레포 위에 덮음 (git에 안 잡히는 경로들)
-python3 -m pipeline.build_demo     # data/ 에 데모 묶음 생성, API 호출 없음
-cp ../Healthcare-web/data/ko.json ../Healthcare-web/data/card_ko.json data/   # 화면 번역 (서버는 /data/를 data/에서 읽음)
-python3 -m api.server              # ../Healthcare-web 화면을 http://localhost:8000 에서 띄움 (다른 곳이면 --web <폴더>)
+python3 -m pipeline.build_demo     # data/ 에 데모 묶음 + Healthcare-web 번역 2개 복사, API 호출 없음
+python3 -m api.server              # ../Healthcare-web 화면을 http://localhost:8000 에서 띄움
 ```
 
+- Healthcare-web을 다른 곳에 두었으면 두 명령 앞에 `TRIALTRACE_WEB=<폴더>`를 붙입니다. `reproduce.sh`도 이 화면 레포의 번역 파일을 읽으므로 같은 위치에 있어야 합니다.
 - 환자 SYN-0010: 1차 판정 → 결핵 검사 결과(새 정보 1건) 입력 → 2차 판정. 답한 기준만 다시 판정하고, 결과를 자동 확정하지 않고 의료진 확인으로 넘깁니다.
 - 환자 모드와 의료진 모드를 오른쪽 위에서 바꿉니다.
-- 빌드 없이 보기: `cd ../Healthcare-web && python3 -m http.server 8000` (그 레포의 `data/`, backend-0.1.1이 만든 묶음 그대로).
+- 빌드 없이 보기: `cd ../Healthcare-web && python3 -m http.server 8000` (그 레포의 `data/`, 통합 최종이 만든 묶음과 같음).
 
 ## 4. B. 보고 수치 재현 (키 없음)
 
@@ -89,12 +89,12 @@ TRIALTRACE_TEST_DIR=../trialtrace_test bash reproduce.sh     # + test
 | Agent 4 v2 | `cd agents/agent4_verify && PYTHONPATH=. python3 -m agent4 --patients … --trials … --criteria … --evidence <v14.12 기본> --verdicts $D/agent3_out_a031/agent3_out.jsonl --out runs/repro_dev` | 판정 1,044, 바꾼 판정 8, CONFLICT 0→3, 시험 판정 변경 0, evidence_id_mismatch 0 |
 | Agent 5 | `cd agents/agent5_acquire && python3 -m agent5.lookup_run cards --agent3 <Agent 4 출력> --split dev --patients … --criteria … --evidence …` (+ `agent5.run cards`, `--include-ineligible` → `eval/score_lookup.py`) | 카드 167장(환자 15명), 환자 114 / 의료진·연구기관 53, 정답 MISSING 커버 80.9%, 새 구역 72.0% |
 | Agent 6 | `cd agents/agent6_rank && K=<_repro>/data bash run_dev.sh` | 테스트 46개, 순위 41/55, 첫 시험 43/55, 근거·내용 검사 실패 0, a6_error 0 |
-| 데모 | `python3 -m pipeline.build_demo` | SYN-0010 답 후 바뀐 판정 1건(NCT05428488-E09 → UNKNOWN/MISSING), 시험 판정 변화 없음, 카드 24→24, Agent 6 검사 실패 0, 묶음이 backend-0.1.1 원본(replay `results/backend-0.1.1_data/`)과 같음 |
+| 데모 | `python3 -m pipeline.build_demo` | SYN-0010 답 후 바뀐 판정 1건(NCT05428488-E09 → UNKNOWN/MISSING), 시험 판정 변화 없음, 카드 24→24, Agent 6 검사 실패 0, 묶음이 통합 최종 원본(replay `results/integration_final_data/`)과 같음, 번역 2개가 Healthcare-web과 같음 |
 | test (`TRIALTRACE_TEST_DIR`) | a3-0.3.0 test 출력 채점(`score_dev.py --gold <test gold> --criteria <test criteria>`) → Agent 4 v2 → a6-0.4.0 `run_test.sh` (순위 채점 `data/dev/eval/eval_variants.py --data <test>` + 변형 순위 정답) | Agent 3 엄격 80.2%, 시험 판정 75.6%, 반대 방향 오류 12 (0.7%) / Agent 6 순위 39/64, 첫 시험 50/64, 괄호 밖 영어 6.8%·22.9% (사전 있음·없음) / Agent 4 v2를 거친 Agent 6 (새로 기록): 순위 35/64, 첫 시험 49/64, 괄호 밖 영어 6.8%·22.4%, 검사 실패 0 |
 
 ### 2026-11-09 빈 폴더 검증
 
-레포 파일 + Release zip 2개만으로 `TRIALTRACE_TEST_DIR=… bash reproduce.sh`를 돌린 결과(macOS, Python 3.13, 약 35초): 45줄 중 41줄 OK, 4줄 KNOWN(5.1·5.2), DIFF 0. Agent 3 dev 재생은 공식 출력과 바이트 단위로 같고 API 호출 0입니다.
+레포 파일 + Release zip 2개만으로 `TRIALTRACE_TEST_DIR=… bash reproduce.sh`를 돌린 결과(macOS, Python 3.13, 약 35초): 46줄 중 42줄 OK, 4줄 KNOWN(5.1·5.2), DIFF 0. Agent 3 dev 재생은 공식 출력과 바이트 단위로 같고 API 호출 0입니다.
 
 ## 5. 알려진 차이와 한계
 
@@ -112,7 +112,7 @@ TRIALTRACE_TEST_DIR=../trialtrace_test bash reproduce.sh     # + test
 - `agents/agent5_acquire/scripts/run_loop.py`(C 단계 갱신 고리)의 Agent 4 경로는 `../agent4_v1`입니다. 데모 데이터는 v2로 돌려도 같습니다(SYN-0010 바꾼 판정 0).
 - a6-0.4.14 변조 숫자 검출 72.6%: 새 문장 "국내 N곳", "N상 연구"의 숫자를 내용 검사가 대조하지 않습니다. 틀 문장 데모는 영향 없습니다.
 - 웹 화면 v3.11은 v3.2에서 남았던 3가지(`answered_review` 카드를 원래 카드의 후속으로 짝짓기, 환자 모드 "할 일 카드 없이 남음" 태그 제거, `answered_review` 이름표)를 v3.9에서 반영했고, v3.11에서 면책 고지 문구를 확정했습니다. 화면 데이터는 backend-0.1.1 `data/`와 바이트 단위로 같습니다.
-- backend-0.1.1 원본 묶음은 Windows에서 만들어져 줄바꿈이 CRLF라, 묶음 안 `evidence_sha256` 값만 다시 만든 묶음과 다릅니다(내용은 같음, `reproduce.sh`가 확인).
+- 통합 최종(backend-0.1.1과 같은 묶음) 원본은 Windows에서 만들어져 줄바꿈이 CRLF라, 묶음 안 `evidence_sha256` 값만 다시 만든 묶음과 다릅니다(내용은 같음, `reproduce.sh`가 확인).
 - Agent 6 용어 사전은 AI 언어 검토만 거쳤습니다(임상 전문가 검토 전).
 - test 점수는 a3-0.3.0 + a6-0.4.0 고정 조합입니다. dev 수치와 버전이 다릅니다. a3-0.3.0 test 실행의 LLM 답 캐시(224개)는 test_pack `agent3_llm_cache_test/`에 기록용으로 있고, 코드가 바뀐 a3-0.3.1로는 재생되지 않습니다.
 - 문서 몇 곳(Agent 2·3 README)에 test 환자 ID 하나(SYN-6332)가 기록 수정 사례로 적혀 있습니다. test 파일은 아닙니다.

@@ -9,6 +9,8 @@ ROOT=$(cd "$(dirname "$0")" && pwd)
 REPLAY=$(cd "${1:-$ROOT/replay}" 2>/dev/null && pwd) || { echo "no replay folder: unzip replay_pack.zip -d replay"; exit 2; }
 [ -f "$REPLAY/MANIFEST.txt" ] || { echo "$REPLAY has no MANIFEST.txt (not replay_pack)"; exit 2; }
 PY=${PYTHON:-python3}
+export TRIALTRACE_WEB=$(cd "${TRIALTRACE_WEB:-$ROOT/../Healthcare-web}" 2>/dev/null && pwd) \
+  || { echo "web screen repo not found: git clone https://github.com/ReasonableClinic/Healthcare-web.git next to this repo (or set TRIALTRACE_WEB)"; exit 2; }
 if [ -n "${TRIALTRACE_TEST_DIR:-}" ]; then
   TD=$(cd "$TRIALTRACE_TEST_DIR" 2>/dev/null && pwd) || { echo "TRIALTRACE_TEST_DIR not found: $TRIALTRACE_TEST_DIR"; exit 2; }
 fi
@@ -139,7 +141,7 @@ row agent6 "ranking exact order / same first trial" "41/55, 43/55" "$(grep -m1 '
 row agent6 "grounding + content checks failing" "0 0 0 0" "$(grep -E 'briefings, [0-9]+ failing' "$L/agent6_dev.log" | sed -E 's/.*briefings, ([0-9]+) failing.*/\1/' | tr '\n' ' ' | sed 's/ $//')"
 row agent6 "a6_error (clinician, patient)" "0 0" "$(grep -oE 'a6_error [0-9]+' "$L/agent6_dev.log" | awk '{print $2}' | tr '\n' ' ' | sed 's/ $//')"
 
-# ---------- demo (backend-0.1.1 pipeline) ----------
+# ---------- demo (integration final pipeline) ----------
 cd "$W"
 "$PY" -m pipeline.build_demo > "$L/demo.log" 2>&1
 demo=$(py <<'PY'
@@ -154,13 +156,13 @@ labels = sum(b[t]["trial_label"] != a[t]["trial_label"] for t in b)
 cards = lambda s: sum(len(jl(f"build/SYN-0010/{s}/{p}/cards.jsonl")) for p in ("a5u", "a5j"))
 fails = sum(int(l.split(" failing")[0].split()[-1]) for v in json.load(open("data/manifest.json"))["agent6_checks"].values()
             for k in v.values() for l in k)
-# same bundles as backend-0.1.1 (Release copy in results/), apart from paths, build time and file hashes
+# same bundles as the integration final build (Release copy in results/), apart from paths, build time and file hashes
 def strip(x):
     x = dict(x); x.pop("meta", None)
     if "briefing" in x:
         x["briefing"] = {k: {**v, "evidence": {**v.get("evidence", {}), "sha256": None}} for k, v in x["briefing"].items()}
     return x
-same = all(strip(json.load(open(f"data/{n}", encoding="utf-8"))) == strip(json.load(open(f"results/backend-0.1.1_data/{n}", encoding="utf-8")))
+same = all(strip(json.load(open(f"data/{n}", encoding="utf-8"))) == strip(json.load(open(f"results/integration_final_data/{n}", encoding="utf-8")))
            for n in ("SYN-0010.before.json", "SYN-0010.after.json", "SYN-0017.before.json"))
 print(f"{len(ch)}|{';'.join(ch)}|{labels}|{cards('before')}->{cards('after')}|{fails}|{'same' if same else 'differ'}")
 PY
@@ -171,7 +173,8 @@ row demo "changed verdict" "NCT05428488-E09->UNKNOWN/MISSING" "${dlist:-}"
 row demo "SYN-0010 trial labels changed" "0" "${dlab:-}"
 row demo "SYN-0010 cards before->after (a5u+a5j)" "24->24" "${dcards:-}"
 row demo "Agent 6 checks failing (3 states)" "0" "${dfail:-}"
-row demo "bundles = backend-0.1.1 Release data" "same" "${dsame:-}"
+row demo "bundles = integration final data" "same" "${dsame:-}"
+row demo "translations copied from Healthcare-web" "same same" "$(for f in ko.json card_ko.json; do cmp -s "$W/data/$f" "$TRIALTRACE_WEB/data/$f" && printf same || printf differ; [ $f = ko.json ] && printf ' '; done)"
 
 # ---------- test (optional) ----------
 if [ -n "${TRIALTRACE_TEST_DIR:-}" ]; then

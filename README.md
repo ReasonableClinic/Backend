@@ -70,7 +70,7 @@ python3 -m unittest discover -s tests                      # 뼈대 규칙 검�
 | 4 | v2 (LLM 없음) | |
 | 5 | a5u-0.2.0 + a5j-0.3.1 | |
 | 6 | a6-0.4.14 (데모·dev), a6-0.4.0 + 사전 06fc5ffa… (test) | a6-0.4.0은 `replay_pack.zip`의 `extra/` |
-| 통합 | backend-0.1.1 (`pipeline/`, `api/`) | 경로만 레포 안으로 바꿈 (`pipeline/config.py`) |
-| 웹 | web_demo_v3.11 (별도 레포 Healthcare-web) | 데이터는 backend-0.1.1 출력과 같음. `api.server`가 옆 폴더 `../Healthcare-web`을 `/`로 띄움 |
+| 통합 | 통합 최종 11/09 (`pipeline/`, `api/`, backend-0.1.1 다음 판) | 경로만 레포 안으로, 화면 폴더는 `../Healthcare-web` (`pipeline/config.py`) |
+| 웹 | web_demo_v3.11 (별도 레포 Healthcare-web) | 데이터는 통합 최종 출력과 같음. `api.server`가 옆 폴더 `../Healthcare-web`을 `/`로 띄우고, `build_demo`가 그 번역 2개를 `data/`로 복사 |
 
 평가자 실행·재현 방법: [REPRODUCE.md](REPRODUCE.md) (`bash reproduce.sh`, API 키 없음).
