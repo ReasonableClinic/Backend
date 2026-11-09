@@ -1,5 +1,9 @@
 # Agent 5 — Information (MISSING / 기록 찾기 담당, 준상) `a5j-0.3.1`
 
+> **backend 파이프라인 진입점 (`run.py`, 레포 루트에서 dev 한 줄):**
+> `python3 -m agents.agent5_acquire.run --input judgments=runs/a4/agent3_out.jsonl --input patients=data/dev/input/patients.jsonl --input criteria=data/dev/reference/criteria.jsonl --input evidence=data/dev/evidence/evidence_dev_haiku_v14_12.jsonl --out runs/a5   # a5u + a5j 카드`
+> 전체는 `python3 -m pipeline.run_pipeline` (REPRODUCE.md). 아래는 받은 패키지의 원래 README입니다.
+
 ## a5j-0.3.1 (11/08): QA 요청 반영 (답한 기준 다시 묻지 않기)
 
 | QA 요청 | 반영 |

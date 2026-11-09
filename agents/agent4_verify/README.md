@@ -1,5 +1,9 @@
 # Agent 4 — Verifier + Evidence Graph
 
+> **backend 파이프라인 진입점 (`run.py`, 레포 루트에서 dev 한 줄):**
+> `python3 -m agents.agent4_verify.run --input judgments=runs/a3/agent3_out.jsonl --input evidence=data/dev/evidence/evidence_dev_haiku_v14_12.jsonl --input patients=data/dev/input/patients.jsonl --input criteria=data/dev/reference/criteria.jsonl --input trials=data/dev/reference/trials.jsonl --out runs/a4`
+> 전체는 `python3 -m pipeline.run_pipeline` (REPRODUCE.md). 아래는 받은 패키지의 원래 README입니다.
+
 Agent 3의 판정을 **근거 그래프 위에서 검사**하고, 근거가 뒷받침하지 못하는 확정 판정을 내린다(격하만, 승격 없음). LLM을 쓰지 않는다.
 결과물은 환자 1명의 후보 시험 전체를 담은 `graph_<patient_id>.json` — 화면(시각화), Agent 5(질문), Agent 6(브리핑)이 이 파일만 읽는다.
 
