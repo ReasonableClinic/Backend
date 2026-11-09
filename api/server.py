@@ -1,6 +1,6 @@
 """Small REST API over the demo bundles (replay mode), plus the web page itself. Standard library only.
 
-  python -m api.server                          # http://localhost:8000  (page from ../Healthcare-web if present)
+  python -m api.server                          # http://localhost:8000  (page from ../Healthcare-web or $TRIALTRACE_WEB)
   python -m api.server --web <web folder> --port 8000
 
   GET  /api/health                     {"status": "ok", "version", "built_at"}
@@ -28,7 +28,7 @@ import re
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 
 from pipeline import VERSION
-from pipeline.config import OUT, PROJ
+from pipeline.config import OUT, WEB
 
 SAFE = re.compile(r"^[A-Za-z0-9_.-]+$")
 MAX_BODY = 64 * 1024
@@ -180,7 +180,7 @@ class Handler(SimpleHTTPRequestHandler):
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--port", type=int, default=8000)
-    ap.add_argument("--web", default=os.path.join(os.path.dirname(PROJ), "Healthcare-web"), help="web page folder served at / (optional)")
+    ap.add_argument("--web", default=WEB, help="web page folder served at / (optional)")
     ap.add_argument("--cors-origin", help="allow this one origin (e.g. http://localhost:5173) when the page is served "
                                           "elsewhere; default: no CORS header (same origin only)")
     a = ap.parse_args()

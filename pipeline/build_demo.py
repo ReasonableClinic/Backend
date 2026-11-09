@@ -245,7 +245,7 @@ def versions():
             "agent3": {k: a3.get(k) for k in ("agent3_version", "prompt_version", "model", "llm")},
             "agent4": "not in the demo bundle (Agent 3 graph format is the screen format, 11/04 decision)",
             "agent5": {"a5u": A5U, "a5j": LOOKUP_VERSION}, "agent6": os.path.basename(C.A6),
-            "briefing": "template sentences (no LLM)"}
+            "briefing": "template sentences (no LLM)", "web": C.WEB_LABEL}
 
 
 def main():
@@ -253,7 +253,7 @@ def main():
     ap.add_argument("--run-loop", action="store_true",
                     help="first redo the after-answer cards of the update loop (run_loop.py --cards-only, no API)")
     a = ap.parse_args()
-    for need in (C.A3_RUN, C.EVIDENCE, C.LOOP, C.A6, C.TRIALS):
+    for need in (C.A3_RUN, C.EVIDENCE, C.LOOP, C.A6, C.TRIALS, *C.TRANSLATIONS):
         if not os.path.exists(need):
             sys.exit(f"missing: {need}")
     if a.run_loop:
@@ -273,7 +273,9 @@ def main():
     for f in glob.glob(os.path.join(C.OUT, "*.json")):     # no stale bundles from an earlier STATES list
         os.remove(f)
     index = bundle.write_all(built, C.OUT, C.A6, C.TRIALS)
-    inputs = hashes([C.EVIDENCE, os.path.join(C.A3_RUN, "agent3_out.jsonl"),
+    for t in C.TRANSLATIONS:                                # the screen reads these from data/ as well
+        shutil.copyfile(t, os.path.join(C.OUT, os.path.basename(t)))
+    inputs = hashes([*C.TRANSLATIONS, C.EVIDENCE, os.path.join(C.A3_RUN, "agent3_out.jsonl"),
                      os.path.join(C.LOOP, "a3_rejudge", "agent3_out.jsonl"), os.path.join(C.LOOP, "a2_upd", "evidence.jsonl"),
                      os.path.join(C.LOOP, "answered.jsonl"), C.LOOP_ANSWERS, C.TRIALS, C.CRITERIA])
     manifest = {"built_at": datetime.datetime.now().isoformat(timespec="seconds"), "run_id": RUN_ID,

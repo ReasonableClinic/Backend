@@ -7,6 +7,7 @@
 # ends up in replay_pack, or a key in test_pack.
 set -euo pipefail
 S=${S:-$HOME/Downloads/stage1_patients}
+INTEG_ZIP=${INTEG_ZIP:-$HOME/Downloads/통합_최종.zip}     # integration final (11/09), replaces backend-0.1.1
 OUT=$(mkdir -p "${1:-dist}" && cd "${1:-dist}" && pwd)
 TMP=$(mktemp -d); trap 'rm -rf "$TMP"' EXIT
 R=$TMP/replay; T=$TMP/test; X=$TMP/src
@@ -19,7 +20,7 @@ check agent2_workspace/received/agent3_test_kit_v14_9.zip 28b920646792
 check agent3_workspace/received/agent3_a3-0.3.1.zip 74c01e9adcb2
 check agent5_workspace/received/agent5_a5j-0.3.1.zip bec3d9a02ad6
 check agent6_workspace/received/agent6_a6-0.4.0.zip 96e9a3c9f352
-check integration_workspace/received/backend-0.1.1.zip f181dd3cbf43
+[ "$(shasum -a 256 "$INTEG_ZIP" | cut -c1-12)" = a2456c45e1cf ] || { echo "STOP: $INTEG_ZIP is not 통합 최종 (a2456c45e1cf)"; exit 1; }
 check handoff/for_agent456_v6.zip d353b4d75b4d
 up() { mkdir -p "$X/$1"; unzip -q "$2" -d "$X/$1"; rm -rf "$X/$1/__MACOSX"; }
 up a1 "$S/agent1_workspace/received/agent1.zip"
@@ -28,7 +29,7 @@ up a3 "$S/agent3_workspace/received/agent3_a3-0.3.1.zip"
 up a3t "$S/agent3_workspace/received/agent3_test_v10_kit149_p07.zip"
 up a5 "$S/agent5_workspace/received/agent5_a5j-0.3.1.zip"
 up a6t "$S/agent6_workspace/received/agent6_a6-0.4.0.zip"
-up be "$S/integration_workspace/received/backend-0.1.1.zip"
+up be "$INTEG_ZIP"
 up kit "$S/handoff/for_agent456_v6.zip"
 up test "$S/handoff/synthetic_test_v11.zip"
 KIT=$X/kit/for_agent456_v6; A3=$X/a3/agent3_a3-0.3.1
@@ -50,7 +51,7 @@ cp "$KIT/README.md" "$R/data/dev/KIT_README_for_agent456_v6.md"
 cp -R "$X/a1/agent1/cache" "$X/a1/agent1/runs" "$R/agents/agent1_criteria/"
 cp -R "$A3/runs" "$R/agents/agent3_judge/"
 cp -R "$X/a5/runs" "$R/agents/agent5_acquire/"
-mkdir -p "$R/results/backend-0.1.1_data"; cp "$X"/be/data/*.json "$R/results/backend-0.1.1_data/"
+mkdir -p "$R/results/integration_final_data"; cp "$X"/be/data/*.json "$R/results/integration_final_data/"
 cp -R "$X/a6t/agent6_a6-0.4.0" "$R/extra/agent6_a6-0.4.0"     # frozen Agent 6 for the test step (code only)
 rm -rf "$R/extra/agent6_a6-0.4.0/runs"
 
